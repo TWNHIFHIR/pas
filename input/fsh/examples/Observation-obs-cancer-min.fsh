@@ -24,8 +24,8 @@ Usage: #example
 
 Instance: obs-cancer-cns
 InstanceOf: ObservationCancerStageTWPAS
-Title: "癌症分期量表-GLES"
-Description: "依據癌症分期量表-Observation Cancer Stage TWPAS Profile呈現癌症分期量表CNS之範例"
+Title: "癌症分期量表-CNS"
+Description: "依據癌症分期量表-Observation Cancer Stage TWPAS Profile呈現癌症分期量表WHO CNS之範例"
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code.coding = http://snomed.info/sct#277460003

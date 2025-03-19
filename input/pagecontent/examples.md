@@ -47,7 +47,7 @@
 
 #### Observation
 - [癌症分期量表-FIGO](Observation-obs-cancer-figo.html)：依據癌症分期量表-Observation Cancer Stage TWPAS Profile呈現癌症分期量表FIGO之範例 (疾病資訊)
-- [癌症分期量表-GLES](Observation-obs-cancer-cns.html)：依據癌症分期量表-Observation Cancer Stage TWPAS Profile呈現癌症分期量表CNS之範例 (疾病資訊)
+- [癌症分期量表-CNS](Observation-obs-cancer-cns.html)：依據癌症分期量表-Observation Cancer Stage TWPAS Profile呈現癌症分期量表CNS之範例 (疾病資訊)
 - [<span class="bg-success">癌症分期量表-TNM</span>](Observation-obs-cancer-tnm.html)：依據癌症分期量表-Observation Cancer Stage TWPAS Profile呈現癌症分期量表TNM之範例 (疾病資訊)
 - [基因資訊](Observation-obs-diagnostic-min.html)：依據基因資訊-Observation Diagnostic TWPAS Profile呈現基因資訊之範例
 - [檢驗檢查-單項](Observation-obs-lab-min.html)：依據檢驗檢查-Observation Laboratory Result TWPAS Profile呈現單項檢驗檢查之範例 (評估資訊)
