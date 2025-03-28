@@ -11,8 +11,8 @@ Usage: #definition
 * date = "2024-12-06"
 * kind = #requirements
 * fhirVersion = #4.0.1
-* format[0] = #xml
-* format[+] = #json
+* format[0] = #application/fhir+json
+* format[+] = #application/fhir+xml
 * patchFormat = #application/json-patch+json
 * implementationGuide = "https://twcore.mohw.gov.tw/ig/pas/ImplementationGuide/tw.gov.mohw.nhi.pas"
 * description = "臺灣健保癌症用藥事前審查實作指引(TWPAS IG)伺服端(Server)之能力聲明"
