@@ -18,10 +18,10 @@ GitHub允許使用者訂閱Repository，以接收有關該專案的更新通知�
 
 1. 在Repository頁面的右上方，找到 `Watch` 按鈕。
 2. 點擊 `Watch` 按鈕，將會看到以下選項：
-   - **Participating and @mentions**: 只有當您被提起或在issue/comment中有互動時才會收到通知。
-   - **All Activity**: 您會收到所有通知，無論是關於新提交、issue、pull request或任何變更。
-   - **Ignore**: 您將不會收到來自此Repository的任何通知。
-   - **Custom**: 自定義通知，可自行選擇希望收到通知的特定事件類型，例如`Pull requests`（有更新內容）或`Releases`（發佈新版本）。
+   - **Participating and @mentions**：只有當您被提起或在issue/comment中有互動時才會收到通知。
+   - **All Activity**：您會收到所有通知，無論是關於新提交、issue、pull request或任何變更。
+   - **Ignore**：您將不會收到來自此Repository的任何通知。
+   - **Custom**：自定義通知，可自行選擇希望收到通知的特定事件類型，例如`Pull requests`（有更新內容）或`Releases`（發佈新版本）。
 
 
 ### 4. 查看通知
