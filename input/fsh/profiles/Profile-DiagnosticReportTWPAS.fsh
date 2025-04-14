@@ -26,7 +26,7 @@ Description:    "此檢查報告-DiagnosticReport TWPAS Profile說明本IG如何
 * category 0..1
 * category.coding 1..1
 * conclusion 1..1 MS
-* conclusion obeys pas-2
+//* conclusion obeys pas-2
 * presentedForm obeys UploadContent
 * code ^short = "報告類型"
 * code.text ^short = "檢體種類"

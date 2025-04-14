@@ -33,7 +33,7 @@ Description:    "此影像報告-DiagnosticReport Image TWPAS Profile說明本IG
 * subject 1..1
 * subject only Reference(PatientTWPAS) 
 * conclusion 1..1 MS
-* conclusion obeys pas-2
+//* conclusion obeys pas-2
 * effectiveDateTime 1..1 MS
 * imagingStudy 0.. MS
 * imagingStudy only Reference(ImagingStudyTWPAS)

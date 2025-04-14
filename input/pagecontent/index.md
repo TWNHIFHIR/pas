@@ -6,7 +6,20 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/2/25異動以下內容：
+因考量實作需求，於2025/4/14異動以下內容：
+    <ol>  
+        <li>修改<a href="StructureDefinition-DiagnosticReport-twpas.html">Profile: 檢查報告-DiagnosticReport TWPAS</a>：
+            <ol>
+               <li>檢查報告結果(conclusion)取消字數限制。</li>
+            </ol>
+        </li>
+        <li>修改<a href="StructureDefinition-DiagnosticReport-image-twpas.html">Profile: 影像報告-DiagnosticReport Image TWPAS</a>：
+            <ol>
+               <li>影像報告結果(conclusion)取消字數限制。</li>
+            </ol>
+        </li>
+	</ol>
+    於2025/2/25異動以下內容：
     <ol>  
         <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 事前審查-Bundle TWPAS</a>：
             <ol>
