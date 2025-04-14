@@ -8,6 +8,11 @@
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
 因考量實作需求，於2025/4/14異動以下內容：
     <ol>  
+        <li>修改<a href="StructureDefinition-Observation-diagnostic-twpas.html">Profile: 基因資訊-Observation Diagnostic TWPAS</a>：
+            <ol>
+               <li>基因報告(derivedFrom)改為非必填。</li>
+            </ol>
+        </li>
         <li>修改<a href="StructureDefinition-DiagnosticReport-twpas.html">Profile: 檢查報告-DiagnosticReport TWPAS</a>：
             <ol>
                <li>檢查報告結果(conclusion)取消字數限制。</li>
