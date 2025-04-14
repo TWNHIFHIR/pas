@@ -15,6 +15,7 @@ WARNING: Bundle/bun-uuid-example: Bundle.entry[7].resource/*ImagingStudy/inline-
 # 使用預設的 HL7 代碼系統，但 HL7 validator 無法辨識代碼系統，此屬於HL7 validator 程式本身問題，非IG 設計問題，此提示訊息不影響實作與實際代碼驗證。（INFORMATION後方的藍色字樣(1 uses) 是指INFORMATION在此Profile中有被使用到）
 INFORMATION: OperationOutcome/error-example: OperationOutcome.issue[0].details: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/operation-outcome|3.0.0
 % There are multiple different potential matches for the url%
+% Reference to draft CodeSystem%
 
 # 此條件可能回傳多個集合，但Bundle中已限制可填次數故不影響驗證。（WARNING後方的藍色字樣(1 uses) 是指WARNING在此Profile中有被使用到）
 WARNING: StructureDefinition/Claim-twpas: StructureDefinition.snapshot.element[0].constraint[6]: supportingInfo: The left side is inherently a collection, and so the expression 'coding.code = 'examinationReport'' may fail or return false if there is more than one item in the content being evaluated
@@ -38,7 +39,6 @@ INFORMATION: ValueSet.where(id = 'icd-10-pcs-2023-image'): The value set expansi
 INFORMATION: ValueSet.where(id = 'icd-10-pcs-2023-radiotherapy'): The value set expansion is too large, and only a subset has been displayed
 INFORMATION: ValueSet.where(id = 'nhi-organization'): The value set expansion is too large, and only a subset has been displayed
 
-# GA代碼
 
 
 # Misleadeable UCUM codes，不影響驗證。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
@@ -71,3 +71,7 @@ WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, s
 # deprecated extension，IG中未使用，不影響驗證。（後方的藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
 INFORMATION: StructureDefinition/Bundle-response-twpas: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 INFORMATION: StructureDefinition/Patient-twpas: StructureDefinition.snapshot.element[28].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex
+
+# validated無法辨識URL，不影響驗證。（WARNING後方的 藍色字樣(1uses) 是指WARNING在此Profile中有被使用到）
+% Canonical URL%
+% URL value % does not resolve

@@ -24,9 +24,9 @@ Description:    "此DICOM影像-ImagingStudy TWPAS Profile說明本IG如何進�
 * identifier[study-uid].value ^example[+].label = "General"
 * identifier[study-uid].value ^example[=].valueString = "urn:oid:2.16.886.2102.54.4546465747.0.46546546"
 
-/* modality from http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html (extensible)
-* series.modality from http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html (extensible)
-*/
+* modality from https://twcore.mohw.gov.tw/ig/pas/ValueSet/dicom-cid-29-AcquisitionModality (extensible)
+* series.modality from https://twcore.mohw.gov.tw/ig/pas/ValueSet/dicom-cid-29-AcquisitionModality (extensible)
+
 Invariant:   StudyUID
 Description: "以`urn:oid:`開頭，後接一串由數字`0`-`9`及`.`組成的字串。第一個數字須為個位數，每個數字不得為`0`開頭（除非為單一的`0`），整體(不含`urn:oid:`)長度不得超過64 bytes。"
 Expression:  "value.matches('^urn:oid:(0|[1-9])(.(0|[1-9][0-9]*)){0,63}$')"
@@ -68,3 +68,69 @@ Description: "HL7-非DICOM影像MimeType值集"
 * urn:ietf:bcp:13#video/mpeg
 * urn:ietf:bcp:13#video/mpg
 * urn:ietf:bcp:13#video/mp4
+
+
+
+Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
+
+ValueSet: AcquisitionModality
+Id: dicom-cid-29-AcquisitionModality
+Description: "原值集因總會工具問題無法正常顯示，故先自建值集。"
+
+* ^version = "2024.2.20240331"
+* ^status = #active
+* ^experimental = false
+* ^date = "2024-03-31"
+* ^publisher = "NEMA MITA DICOM"
+* ^copyright = "© 2024 NEMA"
+* $DCM#BMD "Bone Mineral Densitometry"
+* $DCM#EOG "Electrooculography"
+* $DCM#SM "Slide Microscopy"
+* $DCM#OP "Ophthalmic Photography"
+* $DCM#ECG "Electrocardiography"
+* $DCM#GM "General Microscopy"
+* $DCM#XA "X-Ray Angiography"
+* $DCM#XC "External-camera Photography"
+* $DCM#DMS "Dermoscopy"
+* $DCM#IVUS "Intravascular Ultrasound"
+* $DCM#CR "Computed Radiography"
+* $DCM#CT "Computed Tomography"
+* $DCM#PA "Photoacoustic"
+* $DCM#OSS "Optical Surface Scanner"
+* $DCM#TG "Thermography"
+* $DCM#LEN "Lensometry"
+* $DCM#OPTENF "Ophthalmic Tomography En Face"
+* $DCM#HD "Hemodynamic Waveform"
+* $DCM#OCT "Optical Coherence Tomography"
+* $DCM#BDUS "Ultrasound Bone Densitometry"
+* $DCM#DG "Diaphanography"
+* $DCM#PT "Positron emission tomography"
+* $DCM#EPS "Cardiac Electrophysiology"
+* $DCM#LS "Laser Scan"
+* $DCM#PX "Panoramic X-Ray"
+* $DCM#OPM "Ophthalmic Mapping"
+* $DCM#OPTBSV "Ophthalmic Tomography B-scan Volume Analysis"
+* $DCM#OPV "Ophthalmic Visual Field"
+* $DCM#DX "Digital Radiography"
+* $DCM#OPT "Ophthalmic Tomography"
+* $DCM#MG "Mammography"
+* $DCM#US "Ultrasound"
+* $DCM#EMG "Electromyography"
+* $DCM#IVOCT "Intravascular Optical Coherence Tomography"
+* $DCM#MR "Magnetic Resonance"
+* $DCM#IO "Intra-oral Radiography"
+* $DCM#EEG "Electroencephalography"
+* $DCM#RTIMAGE "RT Image"
+* $DCM#VA "Visual Acuity"
+* $DCM#RESP "Respiratory Waveform"
+* $DCM#ES "Endoscopy"
+* $DCM#AR "Autorefraction"
+* $DCM#POS "Position Sensor"
+* $DCM#RG "Radiographic imaging"
+* $DCM#RF "Radiofluoroscopy"
+* $DCM#KER "Keratometry"
+* $DCM#OAM "Ophthalmic Axial Measurements"
+* $DCM#NM "Nuclear Medicine"
+* $DCM#BI "Biomagnetic Imaging"
+* $DCM#SRF "Subjective Refraction"
+* $DCM#CFM "Confocal Microscopy"
