@@ -75,6 +75,7 @@ Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
 
 ValueSet: AcquisitionModality
 Id: dicom-cid-29-AcquisitionModality
+Title: "HL7-AcquisitionModality值集"
 Description: "原值集因總會工具問題無法正常顯示，故先自建值集。"
 
 * ^version = "2024.2.20240331"
@@ -95,7 +96,7 @@ Description: "原值集因總會工具問題無法正常顯示，故先自建值
 * $DCM#IVUS "Intravascular Ultrasound"
 * $DCM#CR "Computed Radiography"
 * $DCM#CT "Computed Tomography"
-* $DCM#PA "Photoacoustic"
+//* $DCM#PA "Photoacoustic"
 * $DCM#OSS "Optical Surface Scanner"
 * $DCM#TG "Thermography"
 * $DCM#LEN "Lensometry"
@@ -133,4 +134,4 @@ Description: "原值集因總會工具問題無法正常顯示，故先自建值
 * $DCM#NM "Nuclear Medicine"
 * $DCM#BI "Biomagnetic Imaging"
 * $DCM#SRF "Subjective Refraction"
-* $DCM#CFM "Confocal Microscopy"
+//* $DCM#CFM "Confocal Microscopy"

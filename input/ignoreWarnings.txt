@@ -74,4 +74,4 @@ INFORMATION: StructureDefinition/Patient-twpas: StructureDefinition.snapshot.ele
 
 # validated無法辨識URL，不影響驗證。（WARNING後方的 藍色字樣(1uses) 是指WARNING在此Profile中有被使用到）
 % Canonical URL%
-% URL value % does not resolve
+% URL value%
