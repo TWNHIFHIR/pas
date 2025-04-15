@@ -6,8 +6,24 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/4/14異動以下內容：
+因考量實作需求，於2025/4/15異動以下內容：
     <ol>  
+        <li>修改<a href="StructureDefinition-ClaimResponse-twpas.html">Profile: 事前審查回覆-ClaimResponse TWPAS</a>：
+            <ol>
+               <li>原核定註記(item.adjudication.reason)改為「受理審查案件核定註記」。</li>
+            </ol>
+            <ol>
+               <li>新增個別醫令核定註記(item.detail.adjudication.reason)。</li>
+            </ol>
+        </li>
+        <li>修改<a href="StructureDefinition-ClaimResponse-self-assessment-twpas.html">Profile: 自主審查報備-ClaimResponse Self Assessment TWPASS</a>：
+            <ol>
+               <li>原核定註記(item.adjudication.reason)改為「受理審查案件核定註記」。</li>
+            </ol>
+            <ol>
+               <li>新增個別醫令核定註記(item.detail.adjudication.reason)。</li>
+            </ol>
+        </li>
         <li>修改<a href="StructureDefinition-Observation-diagnostic-twpas.html">Profile: 基因資訊-Observation Diagnostic TWPAS</a>：
             <ol>
                <li>基因報告(derivedFrom)改為非必填。</li>
