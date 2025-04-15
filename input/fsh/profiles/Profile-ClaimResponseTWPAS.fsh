@@ -46,17 +46,7 @@ Profile:        ClaimResponseTWPAS
 Parent:         ClaimResponse
 Id:             ClaimResponse-twpas
 Title:          "事前審查回覆-ClaimResponse TWPAS"
-Description:    "此事前審查回覆-ClaimResponse TWPAS Profile說明本IG如何進一步定義FHIR的ClaimResponse Resource以呈現癌藥事前審查回覆之內容  
-
-
-案件核定結果係綜合該申請案件醫令審核結果做為判斷依據，規則說明如下：  
-(1).所有醫令皆核定為1-同意，則該案件審查結果為1-同意。  
-(2).非所有醫令核定為1-同意，其中有一醫令核定為1-同意或3-部分同意，則該案件審查結果為3-部分同意。  
-(3).所有醫令皆核定為2-不同意或6-不予同意，則該案件審查結果為2-不同意。  
-(4).排除上述(1)、(2)、(3)規則，案件中有一醫令核定為補件，則該案件審查結果為4-補件。  
-(5).排除上述(1)、(2)、(3)規則，案件中有一醫令核定為退件，則該案件審查結果為5-退件。  
-(6).若核定註記為7-改核:如審查核定意見，則判斷申請量與核定數量，若核定同總申請量，該醫令核定註記視為  
-  1.同意;若核定量為0(空值視同0)，該醫令核定註記視為2-不同意;核定量小於總申請量，該醫令核定註記視為3-部分同意。並綜合該申請案件醫令審核結果，作為該案件審查結果(同上述五點)。"
+Description:    "此事前審查回覆-ClaimResponse TWPAS Profile說明本IG如何進一步定義FHIR的ClaimResponse Resource以呈現癌藥事前審查回覆之內容"
 
 * status = http://hl7.org/fhir/fm-status#active
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
