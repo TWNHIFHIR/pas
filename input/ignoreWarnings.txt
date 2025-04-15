@@ -38,7 +38,7 @@ INFORMATION: ValueSet.where(id = 'icd-10-pcs-2014-radiotherapy'): The value set 
 INFORMATION: ValueSet.where(id = 'icd-10-pcs-2023-image'): The value set expansion is too large, and only a subset has been displayed
 INFORMATION: ValueSet.where(id = 'icd-10-pcs-2023-radiotherapy'): The value set expansion is too large, and only a subset has been displayed
 INFORMATION: ValueSet.where(id = 'nhi-organization'): The value set expansion is too large, and only a subset has been displayed
-
+The value set 'https://twcore.mohw.gov.tw/ig/pas/ValueSet/icd-10-pcs-2023-radiotherapy|1.0.2' expansion (local) took too long to process (>60sec) (and Error from http://tx.fhir.org/r4: Unable to provide support for code system https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw)
 
 
 # Misleadeable UCUM codes，不影響驗證。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
