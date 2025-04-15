@@ -53,10 +53,11 @@ Usage: #example
             <tr>
                 <td style=\"display: none\">*</td>
                 <td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/adjudication submitted}\">Submitted Amount</span></td>
-                <td><span title=\"Codes:{https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-approve-comment 1}\">同意備查</span></td>
+                <td>同意備查 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">( <a href=\"CodeSystem-nhi-approve-comment.html\">NHI-健保事前審查-核定註記</a>#1) </span>)</td>
                 <td>2</td>
             </tr>
-        </table><h3>受理審查案件核定註記</h3>
+        </table>
+        <h3>個別醫令核定註記</h3>
         <table class=\"grid\">
             <tr>
                 <td style=\"display: none\">-</td>
@@ -68,13 +69,13 @@ Usage: #example
                 <td style=\"display: none\">*</td>
                 <td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/adjudication submitted}\">Submitted Amount</span></td>
                 <td>1</td>
-                <td><span title=\"Codes:{https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-approve-comment 1}\">同意備查</span></td>
+                <td>同意備查 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">( <a href=\"CodeSystem-nhi-approve-comment.html\">NHI-健保事前審查-核定註記</a>#1) </span>)</td>
             </tr>
             <tr>
                 <td style=\"display: none\">*</td>
                 <td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/adjudication submitted}\">Submitted Amount</span></td>
                 <td>2</td>
-                <td><span title=\"Codes:{https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-approve-comment 1}\">同意備查</span></td>
+                <td>同意備查 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">( <a href=\"CodeSystem-nhi-approve-comment.html\">NHI-健保事前審查-核定註記</a>#1) </span>)</td>
             </tr>
         </table>
     </blockquote>
