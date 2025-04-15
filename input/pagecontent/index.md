@@ -11,16 +11,12 @@
         <li>修改<a href="StructureDefinition-ClaimResponse-twpas.html">Profile: 事前審查回覆-ClaimResponse TWPAS</a>：
             <ol>
                <li>原核定註記(item.adjudication.reason)改為「受理審查案件核定註記」。</li>
-            </ol>
-            <ol>
                <li>新增個別醫令核定註記(item.detail.adjudication.reason)。</li>
             </ol>
         </li>
         <li>修改<a href="StructureDefinition-ClaimResponse-self-assessment-twpas.html">Profile: 自主審查報備-ClaimResponse Self Assessment TWPASS</a>：
             <ol>
                <li>原核定註記(item.adjudication.reason)改為「受理審查案件核定註記」。</li>
-            </ol>
-            <ol>
                <li>新增個別醫令核定註記(item.detail.adjudication.reason)。</li>
             </ol>
         </li>
