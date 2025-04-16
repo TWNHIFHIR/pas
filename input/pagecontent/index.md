@@ -6,7 +6,37 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/2/25異動以下內容：
+因考量實作需求，於2025/4/15異動以下內容：
+    <ol>  
+        <li>修改<a href="StructureDefinition-ClaimResponse-twpas.html">Profile: 事前審查回覆-ClaimResponse TWPAS</a>：
+            <ol>
+               <li>原核定註記(item.adjudication.reason)改為「受理審查案件核定註記」。</li>
+               <li>新增個別醫令核定註記(item.detail.adjudication.reason)。</li>
+            </ol>
+        </li>
+        <li>修改<a href="StructureDefinition-ClaimResponse-self-assessment-twpas.html">Profile: 自主審查報備-ClaimResponse Self Assessment TWPASS</a>：
+            <ol>
+               <li>原核定註記(item.adjudication.reason)改為「受理審查案件核定註記」。</li>
+               <li>新增個別醫令核定註記(item.detail.adjudication.reason)。</li>
+            </ol>
+        </li>
+        <li>修改<a href="StructureDefinition-Observation-diagnostic-twpas.html">Profile: 基因資訊-Observation Diagnostic TWPAS</a>：
+            <ol>
+               <li>基因報告(derivedFrom)改為非必填。</li>
+            </ol>
+        </li>
+        <li>修改<a href="StructureDefinition-DiagnosticReport-twpas.html">Profile: 檢查報告-DiagnosticReport TWPAS</a>：
+            <ol>
+               <li>檢查報告結果(conclusion)取消字數限制。</li>
+            </ol>
+        </li>
+        <li>修改<a href="StructureDefinition-DiagnosticReport-image-twpas.html">Profile: 影像報告-DiagnosticReport Image TWPAS</a>：
+            <ol>
+               <li>影像報告結果(conclusion)取消字數限制。</li>
+            </ol>
+        </li>
+	</ol>
+    於2025/2/25異動以下內容：
     <ol>  
         <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 事前審查-Bundle TWPAS</a>：
             <ol>

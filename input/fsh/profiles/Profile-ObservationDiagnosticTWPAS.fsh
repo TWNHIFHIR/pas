@@ -90,7 +90,7 @@ Description:    "此基因資訊-Observation Diagnostic TWPAS Profile說明本IG
 * effective[x] 1..1
 * effective[x] only dateTime
 * effectiveDateTime MS
-* derivedFrom 1..1 MS
+* derivedFrom MS
 * derivedFrom only Reference(DocumentReferenceTWPAS)
 * interpretation 0..1 MS
 

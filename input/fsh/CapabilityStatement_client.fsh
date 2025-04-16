@@ -18,6 +18,7 @@ Usage: #definition
 * description = "臺灣健保癌症用藥事前審查實作指引(TWPAS IG)用戶端(Client)之能力聲明"
 * rest.mode = #client
 * rest.documentation = "臺灣癌藥事前審查-用戶端(TWPAS Client)必須（SHALL）使用臺灣癌藥事前審查伺服端（TWPAS Server）能力聲明中的查詢參數，支援讀取和查詢一個或多個臺灣癌藥事前審查Profile(s)。"
+* rest.security.description = "有關要求和建議，請參閱[安全性](security.html)。"
 
 * rest.resource[+].type = #Bundle
 * rest.resource[=].supportedProfile[0] = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Bundle-twpas"

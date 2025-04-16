@@ -18,6 +18,9 @@ Usage: #definition
 * description = "臺灣健保癌症用藥事前審查實作指引(TWPAS IG)伺服端(Server)之能力聲明"
 * rest.mode = #server
 * rest.documentation = "臺灣癌藥事前審查-伺服端(TWPAS Server)必須(SHALL)：(1)支援本實作指引中所有profiles (2)根據FHIR規範實作RESTful (3)回傳狀態碼-①(Status 400)：無效參數(invalid parameter)、②(Status 401/4xx)：未經授權的請求(unauthorized request)、③(Status 403)：未充分授權的資料存取範圍(insufficient premission scope)、④(Status 404)：未知的resource(unknown resource) (4)支援JSON格式 (5)可識別每個新增到Server的實例(instance)之meta.profile是否為臺灣癌藥事前審查Profiles Defining URL，並確認實例是否依循Profile製作。臺灣癌藥事前審查-伺服端建議應該(SHOULD)：(1)支援XML格式。"
+* rest.security.service[0] = http://terminology.hl7.org/CodeSystem/restful-security-service#SMART-on-FHIR
+* rest.security.description = "Server必須(SHALL)透過回傳 HTTP 401「未授權」， HTTP 403「禁止」，或 HTTP 404 「未找到」，來拒絕任何未經授權的請求。"
+
 * rest.interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.interaction[=].extension.valueCode = #SHOULD
 * rest.interaction[=].code = #transaction
