@@ -7,6 +7,7 @@ Description:    "此用藥品項-MedicationRequest Treat TWPAS Profile說明本I
 * category from NHIDrugCategory
 * category 0..1
 * medication[x] only CodeableConceptTW
+* medicationCodeableConcept MS
 * medicationCodeableConcept.coding 1..1
 * medicationCodeableConcept.coding[rxnorm-medication-us-core] 0..0
 * medicationCodeableConcept.coding[atc-medication-code] 0..0
