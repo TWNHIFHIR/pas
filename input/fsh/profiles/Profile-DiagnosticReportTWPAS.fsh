@@ -12,7 +12,7 @@ Description:    "此檢查報告-DiagnosticReport TWPAS Profile說明本IG如何
 * code ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-72275-c37534eb968943109de663267c439d9a-1.ods)。"
 * subject 1..1
 * subject only Reference(PatientTWPAS)
-* presentedForm 1.. MS
+* presentedForm MS
 * presentedForm.contentType 1..1 MS
 //* presentedForm.data 0..1
 * presentedForm.url 1..1 MS

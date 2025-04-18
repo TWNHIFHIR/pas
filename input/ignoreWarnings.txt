@@ -27,9 +27,8 @@ INFORMATION: ConceptMap/nhi-loinc: ConceptMap: The concept map has too many code
 INFORMATION: ConceptMap/nhi-sct-body-site: ConceptMap.group[0].target: Target Code System http://snomed.info/sct is only supported on the terminology server, so the target codes are not validated for performance reasons
 
 # 此條件可能回傳多個集合，但已限制可填次數故不影響驗證。（WARNING後方的 藍色字樣(1uses) 是指WARNING在此Profile中有被使用到）
-WARNING: StructureDefinition/DocumentReference-twpas: StructureDefinition.snapshot.element[0].constraint[5]: report-title: The left side is inherently a collection, and so the expression 'content.attachment.title = '免疫檢查點抑制劑治療計畫'' may fail or return false if there is more than one item in the content being evaluated
-WARNING: StructureDefinition/DocumentReference-twpas: StructureDefinition.snapshot.element[0].constraint[5]: report-title: The left side is inherently a collection, and so the expression 'content.attachment.title = 'CAR-T多團隊會議紀錄'' may fail or return false if there is more than one item in the content being evaluated
-WARNING: StructureDefinition/DocumentReference-twpas: StructureDefinition.snapshot.element[0].constraint[5]: report-title: The left side is inherently a collection, and so the expression 'content.attachment.title = '造血幹細胞移植計畫書'' may fail or return false if there is more than one item in the content being evaluated
+% report-title: The left side is inherently a collection, and so the expression 'content.attachment.title %
+% The left side is inherently a collection, and so the expression 'extension.value.ofType(Reference).resolve().medication.coding.code %
 
 # 值集中的代碼量太多，Expansion僅列出前1,000筆。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
 % The value set include has too many codes to validate %
@@ -75,3 +74,6 @@ INFORMATION: StructureDefinition/Patient-twpas: StructureDefinition.snapshot.ele
 # validated無法辨識URL，不影響驗證。（WARNING後方的 藍色字樣(1uses) 是指WARNING在此Profile中有被使用到）
 % Canonical URL%
 % URL value%
+
+# 繼承TW Core IG的Profile，無法取消欄位原有的MS(Must Support)註記，不影響驗證。（WARNING後方的 藍色字樣(1uses) 是指WARNING在此Profile中有被使用到）
+% The slice 'medicationReference' on path 'MedicationRequest.medication[x]'%

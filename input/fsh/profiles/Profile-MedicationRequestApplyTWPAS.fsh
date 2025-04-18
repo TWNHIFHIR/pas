@@ -10,6 +10,7 @@ Description:    "此事前審查品項-MedicationRequest Apply TWPAS Profile說�
 * medication[x] ^condition[1] = "applyReason-2"
 * medication[x] ^condition[2] = "applyReason-3"
 * medicationReference 0..0
+* medicationCodeableConcept MS
 * medicationCodeableConcept.coding[fda-medication-tw] 0..0
 * medicationCodeableConcept.coding[rxnorm-medication-us-core] 0..0
 * medicationCodeableConcept.coding[nhi-medication-tw] 1..1
