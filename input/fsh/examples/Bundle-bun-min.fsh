@@ -4,7 +4,7 @@ Title: "事前審查-送核、套組檢驗、多事前審查癌藥品項"
 Description: "依據事前審查-Bundle TWPAS Profile呈現癌藥事前審查之範例"
 Usage: #example
 * type = http://hl7.org/fhir/bundle-type#collection
-* timestamp = "2024-05-30T13:50:58.000+08:00"
+//* timestamp = "2024-05-30T13:50:58.000+08:00"
 
 * entry[0].fullUrl = "https://twcore.mohw.gov.tw/ig/pas/Claim/cla-1"
 * entry[0].resource = cla-1
@@ -97,7 +97,7 @@ Description: "依據事前審查-Bundle TWPAS Profile呈現癌藥事前審查之
 Usage: #example
 //* identifier.value = "202405301000002"
 * type = http://hl7.org/fhir/bundle-type#collection
-* timestamp = "2024-05-30T13:50:58.000+08:00"
+//* timestamp = "2024-05-30T13:50:58.000+08:00"
 
 * entry[0].fullUrl = "https://twcore.mohw.gov.tw/ig/pas/Claim/cla-3"
 * entry[0].resource = cla-3
