@@ -62,7 +62,7 @@ Usage: #example
 * item[=].extension[requestedService].valueReference.reference = "MedicationRequest/medReq-apply" 
 * item[=].modifier[continuation] = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-continuation-status#1 "初次使用"
 * item[=].modifier[lot] = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-line-of-therapy#1 "第一線治療"
-* item[=].programCode.text = "停經後雌激素接受器為陽性或不清楚之局部晚期或轉移性乳癌第一線治療"
+* item[=].programCode.text = "ALK陽性的晚期非小細胞肺癌第一線治療"
 * item[=].quantity.value = 52
 * item[=].quantity.code = #{tbl}
 * item[=].quantity.system = "http://unitsofmeasure.org"
@@ -191,7 +191,7 @@ Usage: #example
     <p><b>簡要病摘</b>：Adenocarcinoma, descending colon, cT3N2M1a, cStage IVA, KRAS G12V, with multiple liver metastases, status post FOLFIRI</p>
     <h3>Procedures</h3>
     <p><b>手術(或其他處置)日期</b>：2024-01-01</p>
-    <p><b>手術(或其他處置)項目</b>：2024-01-01<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw\">臺灣健保署2023年中文版ICD-10-PCS值集</a>#3E0Y704)</span></p>
+    <p><b>手術(或其他處置)項目</b>：經由自體開口或人工造口心包腔近接放射性同位素抗腫瘤液態藥劑輸入<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw\">臺灣健保署2023年中文版ICD-10-PCS值集</a>#3E0Y704)</span></p>
     <h3>Insurances</h3>
     <p><b>sequence</b>：1</p>
     <p><b>coverage</b>：<a href=\"Coverage-cov-min.html\">Coverage/cov-min</a></p>
@@ -202,7 +202,7 @@ Usage: #example
         <p><b>醫令類別</b>：藥品<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-order-type.html\">NHI-健保事前審查-醫令類別值集</a>#1)</span></p>
         <p><b>續用註記</b>：初次使用<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-continuation-status.html\">NHI-續用註記值集</a>#1)</span></p>
         <p><b>用藥線別</b>：第一線治療<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-line-of-therapy.html\">NHI-用藥線別值集</a>#1)</span></p>
-        <p><b>給付適應症</b>：停經後雌激素接受器為陽性或不清楚之局部晚期或轉移性乳癌第一線治療</p>
+        <p><b>給付適應症</b>：ALK陽性的晚期非小細胞肺癌第一線治療</p>
     </blockquote>
     <blockquote>
         <p><b>事前審查品項</b>：<a href=\"MedicationRequest-medReq-apply-2.html\">MedicationRequest/medReq-apply-2</a></p>
@@ -394,7 +394,7 @@ Usage: #example
     <p><b>簡要病摘</b>：Adenocarcinoma, descending colon, cT3N2M1a, cStage IVA, KRAS G12V, with multiple liver metastases, status post FOLFIRI</p>
     <h3>Procedures</h3>
     <p><b>手術(或其他處置)日期</b>：2024-01-01</p>
-    <p><b>手術(或其他處置)項目</b>：2024-01-01<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw\">臺灣健保署2023年中文版ICD-10-PCS值集</a>#3E0Y704)</span></p>
+    <p><b>手術(或其他處置)項目</b>：經由自體開口或人工造口心包腔近接放射性同位素抗腫瘤液態藥劑輸入<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw\">臺灣健保署2023年中文版ICD-10-PCS值集</a>#3E0Y704)</span></p>
     <h3>Insurances</h3>
     <p><b>sequence</b>：1</p>
     <p><b>coverage</b>：<a href=\"Coverage-cov-min.html\">Coverage/cov-min</a></p>

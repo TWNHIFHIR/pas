@@ -157,7 +157,7 @@ Usage: #inline
 * item[=].extension[requestedService].valueReference.reference = "urn:uuid:46b3230a-d641-4e45-be42-2c84a5c04d67" 
 * item[=].modifier[continuation] = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-continuation-status#1 "初次使用"
 * item[=].modifier[lot] = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-line-of-therapy#1 "第一線治療"
-* item[=].programCode.text = "退行性星狀細胞瘤經手術或放射線治療後復發"
+* item[=].programCode.text = "ALK陽性的晚期非小細胞肺癌第一線治療"
 * item[=].quantity.value = 52
 * item[=].quantity.code = #{tbl}
 * item[=].quantity.system = "http://unitsofmeasure.org"
@@ -304,7 +304,7 @@ Usage: #inline
         <p><b>醫令類別</b>：藥品<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-order-type.html\">NHI-健保事前審查-醫令類別值集</a>#1)</span></p>
         <p><b>續用註記</b>：初次使用<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-continuation-status.html\">NHI-續用註記值集</a>#1)</span></p>
         <p><b>用藥線別</b>：第一線治療<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-line-of-therapy.html\">NHI-用藥線別值集</a>#1)</span></p>
-        <p><b>給付適應症</b>：退行性星狀細胞瘤經手術或放射線治療後復發</p>
+        <p><b>給付適應症</b>：ALK陽性的晚期非小細胞肺癌第一線治療</p>
     </blockquote>
     <blockquote>
         <p><b>事前審查品項</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-de63572a-412b-4004-8fd6-93612a22e673\">urn:uuid:de63572a-412b-4004-8fd6-93612a22e673</a></p>
@@ -746,7 +746,7 @@ InstanceOf: MedicationRequestApplyTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/CodeSystem/medicationrequest-status#on-hold
 * intent = #plan
-* medicationCodeableConcept = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-nhi-tw#BC23324100
+* medicationCodeableConcept = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-nhi-tw#BC27730100
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * dosageInstruction[0].timing.repeat.boundsPeriod.start = "2024-01-01"
 * dosageInstruction[=].timing.repeat.boundsPeriod.end = "2024-02-11"
@@ -780,7 +780,7 @@ Usage: #inline
     </div>
     <p><b>狀態</b>：On Hold</p>
     <p><b>目的</b>：Plan</p>
-    <p><b>事前審查品項代碼</b>：TEMODAL CAPSULES 100MG 60ML<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-nhi-tw\">臺灣健保署健保用藥品項代碼值集</a>#BC23324100)</span></p>
+    <p><b>事前審查品項代碼</b>：Alunbrig film-coated tablets 30mg<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-nhi-tw\">臺灣健保署健保用藥品項代碼值集</a>#BC27730100)</span></p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <blockquote>
         <p><b>事前審查藥物預定處方起始日期</b>：2024-01-01</p>
