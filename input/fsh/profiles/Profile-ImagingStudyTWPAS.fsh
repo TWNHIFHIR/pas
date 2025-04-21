@@ -8,7 +8,7 @@ Description:    "此DICOM影像-ImagingStudy TWPAS Profile說明本IG如何進�
 * series.bodySite 0..1 MS
 * series.bodySite from SNOMEDCTBodySite
 * series.bodySite  ^short = "影像檢查的身體部位"
-* series.instance.uid ^short = "DICOM影像"
+* series.instance.uid ^short = "DICOM影像。1.填寫DICOM欄位至ImagingStudy: Study Instance UID, Series Instance UID, SOP Instance, Modality, SOP Class UID。2.其餘資訊需額外填寫，包含: Status，影像檢查的身體部位 (SNOMED CT)、Procedure Code等。3.上傳影像需打包成DICOMDIR且壓縮成DCF。"
 * identifier 1..
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
@@ -47,7 +47,7 @@ Description:    "此非DICOM影像-Media TWPAS Profile說明本IG如何進一步
 * bodySite from SNOMEDCTBodySite
 * bodySite  ^short = "影像檢查的身體部位"
 //* content.data ^short = "Data inline, base64 encoded。上傳至健保署時不得填入，若醫院不小心上傳，需要先擋掉。"
-* content.url ^short = "非DICOM影像（請填寫完整檔案路徑）"
+* content.url ^short = "非DICOM影像（請填寫完整檔案路徑）。填寫上傳附件檔名，例如：file://US01.jpg，且需上傳壓縮後的影像圖檔。"
 * content.url ^example.valueUrl = "file://US01.jpg"
 
 Invariant:   UploadContent
