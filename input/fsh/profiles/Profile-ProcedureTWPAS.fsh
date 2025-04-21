@@ -47,5 +47,5 @@ Description:    "此放射治療-Procedure TWPAS Profile說明本IG如何進一�
 
 * status ^short = "放射治療狀態"
 * code ^short = "放射治療項目。ICD-10-PCS。"
-* usedReference ^short = "放射治療總劑量，整個放射治療療程之劑量(cGy)。"
+* usedReference ^short = "放射治療總劑量，整個放射治療療程之劑量。"
 * performedDateTime ^short = "放射治療日期，YYYY-MM-DD。"
