@@ -32,7 +32,7 @@ INFORMATION: ConceptMap/nhi-sct-body-site: ConceptMap.group[0].target: Target Co
 
 # 值集中的代碼量太多，Expansion僅列出前1,000筆。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
 % The value set include has too many codes to validate %
-
+% The value set expansion is too large, and only a subset has been displayed%
 
 # Misleadeable UCUM codes，不影響驗證。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
 WARNING: Bundle/bun-1: Bundle.entry[17].resource/*MedicationRequest/medReq-treat*/.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): UCUM Codes that contain human readable annotations like {tbl} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit 'tablets' SHOULD contain the annotation (it does not)
