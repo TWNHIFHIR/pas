@@ -11,7 +11,7 @@ Description:    "此癌症分期量表-Observation Cancer Stage TWPAS Profile說
 * code from CancerStage (extensible)
 * code.coding 1..1
 * code.coding.code 1..1
-* code ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-72275-c37534eb968943109de663267c439d9a-1.ods)。"
+* code ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
 * code.coding.system 1..1
 * category 1..1
 * category ^short = "因設計而須必填。"

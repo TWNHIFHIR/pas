@@ -9,7 +9,7 @@ Description:    "此檢查報告-DiagnosticReport TWPAS Profile說明本IG如何
 * code.coding.system 1..1
 * code.coding.system = "http://loinc.org"
 * code from ReportType (extensible)
-* code ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-72275-c37534eb968943109de663267c439d9a-1.ods)。"
+* code ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
 * subject 1..1
 * subject only Reference(PatientTWPAS)
 * presentedForm MS

@@ -12,7 +12,7 @@ Description:    "此放射治療總劑量-Substance TWPAS Profile說明本IG如�
 * ingredient.quantity.numerator.system 1..1
 * ingredient.quantity.numerator.system = "http://unitsofmeasure.org"
 * code from ICD10PCS2023Radiotherapy (preferred)
-* code ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-72275-c37534eb968943109de663267c439d9a-1.ods)。"
+* code ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
 * code.coding 1..1
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
@@ -24,12 +24,12 @@ Description:    "此放射治療總劑量-Substance TWPAS Profile說明本IG如�
 * code.coding[ICD10PCS2014Radiotherapy].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2014-tw"
 * code.coding[ICD10PCS2014Radiotherapy].system MS
 * code.coding[ICD10PCS2014Radiotherapy].code 1..1 MS
-* code.coding[ICD10PCS2014Radiotherapy] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-72275-c37534eb968943109de663267c439d9a-1.ods)。"
+* code.coding[ICD10PCS2014Radiotherapy] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
 * code.coding[ICD10PCS2023Radiotherapy] from ICD10PCS2023Radiotherapy (extensible)
 * code.coding[ICD10PCS2023Radiotherapy].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw"
 * code.coding[ICD10PCS2023Radiotherapy].system MS
 * code.coding[ICD10PCS2023Radiotherapy].code 1..1 MS
-* code.coding[ICD10PCS2023Radiotherapy] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-72275-c37534eb968943109de663267c439d9a-1.ods)。"
+* code.coding[ICD10PCS2023Radiotherapy] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
 
 * code ^short = "放射治療項目，伽傌射線、高能量X光、質子治療、碘-123、鎝-99m、碘-131、銦-111等。ICD-PCS。"
 * ingredient.quantity.numerator.value ^short = "放射治療總劑量"
@@ -37,7 +37,7 @@ Description:    "此放射治療總劑量-Substance TWPAS Profile說明本IG如�
 * ingredient.quantity.numerator.system ^short = "放射治療總劑量單位之代碼系統，固定為「http://unitsofmeasure.org」。"
 * ingredient.substance[x] ^short = "因FHIR設計而需必填"
 * ingredient.substance[x] from ICD10PCS2023Radiotherapy (preferred)
-* ingredient.substance[x] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-72275-c37534eb968943109de663267c439d9a-1.ods)。"
+* ingredient.substance[x] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
 * ingredient.substanceCodeableConcept.coding ^slicing.discriminator.type = #value
 * ingredient.substanceCodeableConcept.coding ^slicing.discriminator.path = "system"
 * ingredient.substanceCodeableConcept.coding ^slicing.rules = #open
@@ -48,9 +48,9 @@ Description:    "此放射治療總劑量-Substance TWPAS Profile說明本IG如�
 * ingredient.substanceCodeableConcept.coding[ICD10PCS2014Radiotherapy].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2014-tw"
 * ingredient.substanceCodeableConcept.coding[ICD10PCS2014Radiotherapy].system MS
 * ingredient.substanceCodeableConcept.coding[ICD10PCS2014Radiotherapy].code 1..1 MS
-* ingredient.substanceCodeableConcept.coding[ICD10PCS2014Radiotherapy] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-72275-c37534eb968943109de663267c439d9a-1.ods)。"
+* ingredient.substanceCodeableConcept.coding[ICD10PCS2014Radiotherapy] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
 * ingredient.substanceCodeableConcept.coding[ICD10PCS2023Radiotherapy] from ICD10PCS2023Radiotherapy (extensible)
 * ingredient.substanceCodeableConcept.coding[ICD10PCS2023Radiotherapy].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw"
 * ingredient.substanceCodeableConcept.coding[ICD10PCS2023Radiotherapy].system MS
 * ingredient.substanceCodeableConcept.coding[ICD10PCS2023Radiotherapy].code 1..1 MS
-* ingredient.substanceCodeableConcept.coding[ICD10PCS2023Radiotherapy] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-72275-c37534eb968943109de663267c439d9a-1.ods)。"
+* ingredient.substanceCodeableConcept.coding[ICD10PCS2023Radiotherapy] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"

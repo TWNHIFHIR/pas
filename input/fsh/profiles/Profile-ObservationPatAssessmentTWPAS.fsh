@@ -7,7 +7,7 @@ Description:    "此病人狀態評估-Observation Patient Assessment TWPAS Prof
 * effective[x] only dateTime
 * code MS
 * code from PatAst (extensible)
-* code ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-72275-c37534eb968943109de663267c439d9a-1.ods)。"
+* code ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
 * code.coding 1..1
 * code.coding.code 1..1
 * code.coding.system 1..1
