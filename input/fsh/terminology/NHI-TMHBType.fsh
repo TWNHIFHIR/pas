@@ -5,7 +5,7 @@ Description: "臺灣衛生福利部中央健康保險署「申請案件類別」
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2024-12-06"
-* ^version = "1.0.2"
+* ^version = "1.0.3"
 * ^experimental = false
 * #1 "一般事前審查申請"
 * #3 "自主審查報備"
@@ -16,6 +16,6 @@ Id: nhi-tmhb-type
 Title: "NHI-健保事前審查-申請案件類別值集"
 Description: "NHI-健保事前審查-申請案件類別值集"
 * ^date = "2024-12-06"
-* ^version = "1.0.2"
+* ^version = "1.0.3"
 * ^experimental = false
 * include codes from system NHITMHBType

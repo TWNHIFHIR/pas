@@ -3,7 +3,7 @@ Id: dna-change-type
 Title: "LOINC-健保事前審查-基因突變類型值集"
 Description: "LOINC-健保事前審查-基因突變類型值集"
 * ^date = "2024-12-06"
-* ^version = "1.0.2"
+* ^version = "1.0.3"
 * ^experimental = false
 * $loinc#LA6692-3 "Deletion"
 * $loinc#LA6686-5 "Duplication"
@@ -24,6 +24,6 @@ Description: "INCa-健保事前審查-基因突變類型，資料所屬單位：
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2024-12-06"
-* ^version = "1.0.2"
+* ^version = "1.0.3"
 * ^experimental = false
 * #O55-2 "Delins"

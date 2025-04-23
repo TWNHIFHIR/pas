@@ -3,7 +3,7 @@ Id: icd-10-pcs-2014-image
 Title: "健保事前審查-臺灣健保署2014年中文版ICD 10 PCS-影像報告值集"
 Description: "健保事前審查-臺灣健保署2014年中文版ICD 10 PCS-影像報告值集"
 * ^date = "2024-12-06"
-* ^version = "1.0.2"
+* ^version = "1.0.3"
 * ^experimental = false
 * TW2014ICD10PCS#B00BZZZ "脊髓一般放射線攝影"
 * TW2014ICD10PCS#B01BZZZ "脊髓透視攝影"

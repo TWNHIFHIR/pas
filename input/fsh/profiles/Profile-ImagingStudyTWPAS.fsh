@@ -60,7 +60,7 @@ Id: media-mimetypes
 Title: "HL7-非DICOM影像MimeType值集"
 Description: "HL7-非DICOM影像MimeType值集"
 * ^date = "2024-12-06"
-* ^version = "1.0.2"
+* ^version = "1.0.3"
 * ^experimental = false
 * urn:ietf:bcp:13#image/jpeg
 * urn:ietf:bcp:13#image/jpg
