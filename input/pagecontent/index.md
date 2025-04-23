@@ -8,9 +8,9 @@
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
 因考量實作需求，於2025/4/23異動以下內容：
     <ol>  
-        <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 事前審查-Bundle TWPAS</a>：
+        <li>修改<a href="StructureDefinition-Claim-twpas.html">Profile: 事前審查-Claim TWPAS</a>：
             <ol>
-               <li>修改給付適應症條件(item.programCode)說明：當事前審查品項代碼為KC009612B5、KC010892B5、KC011112DE、KC011162B5、KC011362B5、KC01013229、KC01013230、KC01025219、KC01050238、KC01085229、KC00958229、JC00154261、<b>KC01088229</b>時，才可填寫。</li>
+               <li>修改給付適應症條件(item.programCode)說明：當事前審查品項代碼為KC009612B5、KC010892B5、KC011112DE、KC011162B5、KC011362B5、KC01013229、KC01013230、KC01025219、KC01050238、KC01085229、KC00958229、<s>KC011592DE</s>、JC00154261、<b>KC01088229</b>時，才可填寫。</li>
             </ol>
         </li>
 	</ol>
