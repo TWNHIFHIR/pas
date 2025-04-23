@@ -2,7 +2,7 @@
     <tbody>
     <tr>
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://twcore.mohw.gov.tw/ig/pas/ImplementationGuide/tw.gov.mohw.nhi.pas<button title="" class="btn-copy" data-clipboard-text="https://twcore.mohw.gov.tw/ig/pas/ImplementationGuide/tw.gov.mohw.nhi.pas" data-original-title="複製URL"></button></span></td>
-      <td><i>Version</i>:<span class="copy-text">1.0.2 <button title="" class="btn-copy" data-clipboard-text="https://twcore.mohw.gov.tw/ig/pas/ImplementationGuide/tw.gov.mohw.nhi.pas|1.0.2" data-original-title="複製含版本資訊的URL"></button></span></td>
+      <td><i>Version</i>:<span class="copy-text">1.0.3 <button title="" class="btn-copy" data-clipboard-text="https://twcore.mohw.gov.tw/ig/pas/ImplementationGuide/tw.gov.mohw.nhi.pas|1.0.3" data-original-title="複製含版本資訊的URL"></button></span></td>
     </tr>
     <tr>
       <td colspan="4"><i>NPM package name</i>: tw.gov.mohw.nhi.pas</td>
