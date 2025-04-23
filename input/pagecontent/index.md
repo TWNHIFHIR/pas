@@ -1,59 +1,18 @@
 <div class="bg-danger" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.0.1版內容，因而會比衛生福利部的IG版本V1.0.1(https://twcore.mohw.gov.tw/ig/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為114年4月21日，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
+<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.0.2版內容，因而會比衛生福利部的IG版本V1.0.2(https://twcore.mohw.gov.tw/ig/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為114年6月，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
 <br/>
-<b>醫院實作時請以V1.0.1為主進行實例驗證，目前健保署端的伺服器採用V1.0.1版規格。</b></p>
+<b>醫院實作時請以V1.0.2為主進行實例驗證，目前健保署端的伺服器採用V1.0.2版規格。</b></p>
 </div>
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/4/21異動以下內容：
+因考量實作需求，於2025/4/23異動以下內容：
     <ol>  
         <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 事前審查-Bundle TWPAS</a>：
             <ol>
-               <li>修改Constraint(applyReason)寫法</li>
-               <li>事前審查品項(<code>entry:medicationRequestApply</code>)原為0..*，改為1..*。</li>
+               <li>修改給付適應症條件(item.programCode)說明：當事前審查品項代碼為KC009612B5、KC010892B5、KC011112DE、KC011162B5、KC011362B5、KC01013229、KC01013230、KC01025219、KC01050238、KC01085229、KC00958229、JC00154261、<b>KC01088229</b>時，才可填寫。</li>
             </ol>
         </li>
-        <li>修改<a href="StructureDefinition-Claim-twpas.html">Profile: 事前審查-Claim TWPAS</a>：
-            <ol>
-                <li>事前審查申請數量單位(<code>item.quantity.code</code>)，限制只能使用來自<a href="https://hl7.org/fhir/R4/valueset-ucum-common.html">Common UCUM units</a>中的代碼。</li>
-                <li><code>item.quantity.system</code>改為1..1，且固定填「http://unitsofmeasure.org」。</li>
-                <li>給付適應症條件代碼(<code>item.programCode.coding</code>)原為0..*，改為0..1。</li>
-            </ol>
-        </li>
-        <li>修改<a href="StructureDefinition-ClaimResponse-twpas.html">Profile: 事前審查回覆-ClaimResponse TWPAS</a>：
-            <ol>
-               <li>原核定註記(item.adjudication.reason)改為「受理審查案件核定註記」。</li>
-               <li>新增個別醫令核定註記(item.detail.adjudication.reason)。</li>
-            </ol>
-        </li>
-        <li>修改<a href="StructureDefinition-ClaimResponse-self-assessment-twpas.html">Profile: 自主審查報備-ClaimResponse Self Assessment TWPAS</a>：
-            <ol>
-               <li>原核定註記(item.adjudication.reason)改為「受理審查案件核定註記」。</li>
-               <li>新增個別醫令核定註記(item.detail.adjudication.reason)。</li>
-            </ol>
-        </li>
-        <li>修改<a href="StructureDefinition-Observation-diagnostic-twpas.html">Profile: 基因資訊-Observation Diagnostic TWPAS</a>：基因報告(derivedFrom)改為非必填。
-            </ol>
-        </li>
-        <li>修改<a href="StructureDefinition-DiagnosticReport-twpas.html">Profile: 檢查報告-DiagnosticReport TWPAS</a>：
-            <ol>
-               <li>檢查報告結果(conclusion)取消字數限制。</li>
-               <li>報告結果-MIMEType(presentedForm)改為非必填。</li>
-            </ol>
-        </li>
-        <li>修改<a href="StructureDefinition-DiagnosticReport-image-twpas.html">Profile: 影像報告-DiagnosticReport Image TWPAS</a>：影像報告結果(conclusion)取消字數限制。
-            </ol>
-        </li>
-        <li>修改<a href="StructureDefinition-Substance-twpas.html">Profile: 放射治療總劑量-Substance TWPAS</a>：
-            <ol>
-                <li>放射治療總劑量單位原為<code>ingredient.quantity.numerator.unit</code>，改為<code>ingredient.quantity.numerator.code</code>，並限制只能使用來自<a href="https://hl7.org/fhir/R4/valueset-ucum-common.html">Common UCUM units</a>中的代碼。</li>
-                <li><code>ingredient.quantity.numerator.system</code>改為1..1，且固定填「http://unitsofmeasure.org」。</li>
-            </ol>
-        </li>
-        <li>修改<a href="StructureDefinition-MedicationRequest-apply-twpas.html">Profile: 事前審查品項-MedicationRequest Apply TWPAS</a>：<code>dosageInstruction.doseAndRate.doseQuantity.system</code>改為1..1，且固定填「http://unitsofmeasure.org」。</li>
-        <li>修改<a href="StructureDefinition-MedicationRequest-treat-twpas.html">Profile: 用藥品項-MedicationRequest Treat TWPAS</a>：<code>dosageInstruction.doseAndRate.doseQuantity.system</code>改為1..1，且固定填「http://unitsofmeasure.org」。</li>
-        <li>新增<a href="Observation-obs-cancer-tnm.html">Example Observation: 癌症分期量表-TNM</a>範例。</li>
 	</ol>
     請留意這些異動，以避免影響您的實作。
 </div>

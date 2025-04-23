@@ -245,8 +245,8 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
 * item.productOrService ^short = "醫令類別"
 * item.extension[requestedService] ^short = "事前審查品項【此為參考Da Vinci PAS IG的extension設計】"
 * item.programCode ^short = "給付適應症條件，藥品給付規定內所規範之適應症或條件，若有特定事前審查品項代碼應以代碼填報。"
-* item.programCode.coding ^short = "給付適應症條件，當事前審查品項代碼為KC009612B5、KC010892B5、KC011112DE、KC011162B5、KC011362B5、KC01013229、KC01013230、KC01025219、KC01050238、KC01085229、KC00958229、KC011592DE、JC00154261時，才可填寫。"
-* item.programCode.text ^short = "給付適應症條件，事前審查品項代碼不為KC009612B5、KC010892B5、KC011112DE、KC011162B5、KC011362B5、KC01013229、KC01013230、KC01025219、KC01050238、KC01085229、KC00958229、KC011592DE、JC00154261時，請自行輸入文字。"
+* item.programCode.coding ^short = "給付適應症條件，當事前審查品項代碼為KC009612B5、KC010892B5、KC011112DE、KC011162B5、KC011362B5、KC01013229、KC01013230、KC01025219、KC01050238、KC01085229、KC00958229、JC00154261、KC01088229時，才可填寫。"
+* item.programCode.text ^short = "給付適應症條件，事前審查品項代碼不為KC009612B5、KC010892B5、KC011112DE、KC011162B5、KC011362B5、KC01013229、KC01013230、KC01025219、KC01050238、KC01085229、KC00958229、JC00154261、KC01088229時，請自行輸入文字。"
 * item.bodySite ^short = "申請部位，R:右側 | L:左側 | B:兩側。(此專案暫不檢核，未來待確認)"
 
 * item.quantity.value ^short = "事前審查申請數量"
