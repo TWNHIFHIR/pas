@@ -12,6 +12,7 @@ status: active
 version: 1.0.3
 fhirVersion: 4.0.1  # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
+#releaseLabel: release
 releaseLabel: ci-build # release | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 publisher:

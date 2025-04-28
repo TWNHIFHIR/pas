@@ -6,16 +6,32 @@ Description:    "此事前審查品項-MedicationRequest Apply TWPAS Profile說�
 * status =  http://hl7.org/fhir/CodeSystem/medicationrequest-status#on-hold
 * intent =  http://hl7.org/fhir/CodeSystem/medicationrequest-intent#plan
 * medication[x] only CodeableConceptTW
+* medication[x] from https://twcore.mohw.gov.tw/ig/pas/ValueSet/nhi-medication (example)
 * medication[x] ^condition[0] = "applyReason-1"
 * medication[x] ^condition[1] = "applyReason-2"
 * medication[x] ^condition[2] = "applyReason-3"
+* medication[x] ^condition[3] = "applyReason-4"
+* medication[x] ^condition[4] = "applyReason-5"
+* medication[x] ^condition[5] = "applyReason-6"
+* medication[x] ^condition[6] = "applyReason-7"
+* medication[x] ^condition[7] = "applyReason-8"
+* medication[x] ^condition[8] = "applyReason-9"
+* medication[x] ^condition[9] = "applyReason-10"
+* medication[x] ^condition[10] = "applyReason-11"
+* medication[x] ^condition[11] = "applyReason-12"
+* medication[x] ^condition[12] = "applyReason-13"
 * medicationReference 0..0
-* medicationCodeableConcept MS
+* medicationCodeableConcept 1.. MS
+* medicationCodeableConcept from https://twcore.mohw.gov.tw/ig/pas/ValueSet/nhi-medication (example)
+* medicationCodeableConcept.coding contains nhi-medication 1..1 MS
 * medicationCodeableConcept.coding[fda-medication-tw] 0..0
 * medicationCodeableConcept.coding[rxnorm-medication-us-core] 0..0
-* medicationCodeableConcept.coding[nhi-medication-tw] 1..1
+* medicationCodeableConcept.coding[nhi-medication-tw] 0..0
+* medicationCodeableConcept.coding[nhi-medication-ch-herb-tw] 0..0
 * medicationCodeableConcept.coding[atc-medication-code] 0..0
 * medicationCodeableConcept.coding[snomedct-medication-codes] 0..0
+* medicationCodeableConcept.coding[nhi-medication] from https://twcore.mohw.gov.tw/ig/pas/ValueSet/nhi-medication
+
 * subject only Reference(PatientTWPAS)
 
 * dosageInstruction 1..*
@@ -25,13 +41,12 @@ Description:    "此事前審查品項-MedicationRequest Apply TWPAS Profile說�
 * dosageInstruction.timing.code.coding 1..* MS
 * dosageInstruction.timing.code.coding from https://twcore.mohw.gov.tw/ig/pas/ValueSet/medication-frequency-hl7-nhi
 * dosageInstruction.timing.repeat 1..
-
 * dosageInstruction.timing.repeat.bounds[x] only Period
-* dosageInstruction.doseAndRate 1..1
+
+* dosageInstruction.doseAndRate 1..1 MS
 * dosageInstruction.doseAndRate.dose[x] 1..1
 * dosageInstruction.doseAndRate.dose[x] only SimpleQuantity
-* dosageInstruction.doseAndRate MS
-* dosageInstruction.doseAndRate.doseQuantity MS
+* dosageInstruction.doseAndRate.doseQuantity 1..1 MS
 * dosageInstruction.doseAndRate.doseQuantity.value 1..1 MS
 * dosageInstruction.doseAndRate.doseQuantity.system 1..1
 * dosageInstruction.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
@@ -64,6 +79,7 @@ Description:    "此事前審查品項-MedicationRequest Apply TWPAS Profile說�
 * category[orderType] ^short = "醫令類別"*/
 
 * medication[x] ^short = "事前審查品項代碼，事前審查醫令代碼。"
+* medicationCodeableConcept.coding[nhi-medication] ^short = "事前審查品項代碼。"
 * dosageInstruction.timing.code ^short = "事前審查藥品使用頻率及服用時間。"
 * dosageInstruction.timing.code.coding ^short = "事前審查藥品使用頻率及服用時間。"
 

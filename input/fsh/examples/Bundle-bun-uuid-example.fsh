@@ -746,7 +746,7 @@ InstanceOf: MedicationRequestApplyTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/CodeSystem/medicationrequest-status#on-hold
 * intent = #plan
-* medicationCodeableConcept = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-nhi-tw#BC27730100
+* medicationCodeableConcept = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-medication#BC27730100
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * dosageInstruction[0].timing.repeat.boundsPeriod.start = "2024-01-01"
 * dosageInstruction[=].timing.repeat.boundsPeriod.end = "2024-02-11"
@@ -780,7 +780,7 @@ Usage: #inline
     </div>
     <p><b>狀態</b>：On Hold</p>
     <p><b>目的</b>：Plan</p>
-    <p><b>事前審查品項代碼</b>：Alunbrig film-coated tablets 30mg<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-nhi-tw\">臺灣健保署健保用藥品項代碼值集</a>#BC27730100)</span></p>
+    <p><b>事前審查品項代碼</b>：Alunbrig film-coated tablets 30mg<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-medication\">NHI-健保事前審查-用藥品項代碼值集</a>#BC27730100)</span></p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <blockquote>
         <p><b>事前審查藥物預定處方起始日期</b>：2024-01-01</p>
@@ -805,7 +805,7 @@ InstanceOf: MedicationRequestApplyTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/CodeSystem/medicationrequest-status#on-hold
 * intent = #plan
-* medicationCodeableConcept = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-nhi-tw#KC009612B5
+* medicationCodeableConcept = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-medication#KC009612B5
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * dosageInstruction.timing.repeat.boundsPeriod.start = "2024-03-11"
 * dosageInstruction.timing.repeat.boundsPeriod.end = "2024-07-28"
@@ -830,7 +830,7 @@ Usage: #inline
     </div>
     <p><b>狀態</b>：On Hold</p>
     <p><b>目的</b>：Plan</p>
-    <p><b>事前審查品項代碼</b>：TEMODAL CAPSULES 20MG <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-nhi-tw\">臺灣健保署健保用藥品項代碼值集</a>#KC009612B5)</span></p>
+    <p><b>事前審查品項代碼</b>：TEMODAL CAPSULES 20MG <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-medication\">NHI-健保事前審查-用藥品項代碼值集</a>#KC009612B5)</span></p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <p><b>事前審查藥物預定處方起始日期</b>：2024-03-11</p>
     <p><b>事前審查藥物預定處方終止日期</b>：2024-07-28</p>
@@ -848,7 +848,7 @@ Usage: #inline
 * statusReason = http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason#altchoice
 * intent = #order
 * category = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-drug-category#nhi
-* medicationCodeableConcept = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-nhi-tw#A000755151
+* medicationCodeableConcept = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-medication#A000755151
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * dosageInstruction.timing.code.text = "1W3D"
 * dosageInstruction.doseAndRate.doseQuantity.value = 4
@@ -869,7 +869,7 @@ Usage: #inline
     <p><b>藥物處方終止原因</b>：Try another treatment first <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://hl7.org/fhir/R4/codesystem-medicationrequest-status-reason.html\">MedicationRequest Status Reason Codes</a>#altchoice)</span></p>
     <p><b>意圖</b>：Order <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">( <a href=\"http://hl7.org/fhir/CodeSystem/medicationrequest-intent\">medicationRequest Intent</a>#order)</span></p>
     <p><b>自費註記</b>：健保 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-drug-category.html\">NHI-藥物類型</a>#nhi)</span></p>
-    <p><b>藥品代碼</b>：ANTI-CUGH SYRUP 60ML <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.3.2/CodeSystem-medication-nhi-tw.html\">臺灣健保用藥品項</a>#A000755151)</span></p>
+    <p><b>藥品代碼</b>：ANTI-CUGH SYRUP 60ML <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-medication\">NHI-健保事前審查-用藥品項代碼值集</a>#A000755151)</span></p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;&quot;</p>
     <p><b>藥品使用頻率及服用時間</b>：1W3D</p>
     <p><b>藥物每次處方劑量(單位)</b>：4 (tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://hl7.org/fhir/R4/valueset-ucum-common.html\">Common UCUM units</a>#{tbl})</span>)</p>
