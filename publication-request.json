@@ -5,17 +5,9 @@
   "mode": "milestone",
   "status": "ci-build",
   "sequence": "STU1",
-  "desc": "修改Profile、新增及修改範例。",
-  "descmd": "2025/4/21 (詳細說明請參照[應用說明](index.html))：  
-  1. 修改Profile: 事前審查-Bundle TWPAS
+  "desc": "修改Profile。",
+  "descmd": "2025/4/30 (詳細說明請參照[應用說明](index.html))：  
   1. 修改Profile: 事前審查-Claim TWPAS
-  1. 修改Profile: 事前審查回覆-ClaimResponse TWPAS
-  1. 修改Profile: 自主審查報備-ClaimResponse Self Assessment TWPAS
-  1. 修改Profile: 基因資訊-Observation Diagnostic TWPAS
-  1. 修改Profile: 檢查報告-DiagnosticReport TWPAS
-  1. 修改Profile: 影像報告-DiagnosticReport Image TWPAS
-  1. 修改Profile: 放射治療總劑量-Substance TWPAS
-  1. 修改Profile: 用藥品項-MedicationRequest Treat TWPA
-  1. 修改Profile: 事前審查品項-MedicationRequest Apply TWPAS
-  1. 新增Example Observation: 癌症分期量表-TNM"
+  2. 修改Profile: 用藥品項-MedicationRequest Treat TWPA
+  3. 修改Profile: 事前審查品項-MedicationRequest Apply TWPAS"
 }
