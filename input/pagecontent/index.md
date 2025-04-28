@@ -6,24 +6,21 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/4/28異動以下內容：
-    <ol>  
-        <li>修改<a href="StructureDefinition-MedicationRequest-treat-twpas.html">Profile: 用藥品項-MedicationRequest Treat TWPAS</a>：
-            <ol>
-               <li>事前審查品項代碼(medicationCodeableConcept.coding[nhi-medication])因版本維護問題，先於本IG令建值集與代碼系統(<a href="https://twcore.mohw.gov.tw/ig/pas/CodeSystem-nhi-medication.html">https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-medication</a>)。</li>
-            </ol>
-        </li>
-        <li>修改<a href="StructureDefinition-MedicationRequest-apply-twpas.html">Profile: 事前審查品項-MedicationRequest Apply TWPAS</a>：
-            <ol>
-               <li>藥品代碼(medicationCodeableConcept.coding[nhi-medication])因版本維護問題，先於本IG令建值集與代碼系統(<a href="https://twcore.mohw.gov.tw/ig/pas/CodeSystem-nhi-medication.html">https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-medication</a>)。</li>
-            </ol>
-        </li>
-	</ol>
-    於2025/4/23異動以下內容：
+因考量實作需求，於2025/4/30異動以下內容：
     <ol>  
         <li>修改<a href="StructureDefinition-Claim-twpas.html">Profile: 事前審查-Claim TWPAS</a>：
             <ol>
                <li>修改給付適應症條件(item.programCode)說明：當事前審查品項代碼為KC009612B5、KC010892B5、KC011112DE、KC011162B5、KC011362B5、KC01013229、KC01013230、KC01025219、KC01050238、KC01085229、KC00958229、<s>KC011592DE</s>、JC00154261、<b>KC01088229</b>時，才可填寫。</li>
+            </ol>
+        </li>
+        <li>修改<a href="StructureDefinition-MedicationRequest-treat-twpas.html">Profile: 用藥品項-MedicationRequest Treat TWPAS</a>：
+            <ol>
+               <li>事前審查品項代碼(medicationCodeableConcept.coding[nhi-medication])因版本維護問題，先於本IG另建值集與代碼系統。</li>
+            </ol>
+        </li>
+        <li>修改<a href="StructureDefinition-MedicationRequest-apply-twpas.html">Profile: 事前審查品項-MedicationRequest Apply TWPAS</a>：
+            <ol>
+               <li>藥品代碼(medicationCodeableConcept.coding[nhi-medication])因版本維護問題，先於本IG另建值集與代碼系統。</li>
             </ol>
         </li>
 	</ol>
