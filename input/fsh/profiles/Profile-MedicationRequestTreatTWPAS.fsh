@@ -7,23 +7,31 @@ Description:    "此用藥品項-MedicationRequest Treat TWPAS Profile說明本I
 * category from NHIDrugCategory
 * category 0..1
 * medication[x] only CodeableConceptTW
-* medicationCodeableConcept MS
+* medication[x] from https://twcore.mohw.gov.tw/ig/pas/ValueSet/nhi-medication (example)
+* medicationReference 0..0
+* medicationCodeableConcept 1.. MS
+* medicationCodeableConcept from https://twcore.mohw.gov.tw/ig/pas/ValueSet/nhi-medication (example)
 * medicationCodeableConcept.coding 1..1
+* medicationCodeableConcept.coding contains nhi-medication 1..1 MS
 * medicationCodeableConcept.coding[rxnorm-medication-us-core] 0..0
 * medicationCodeableConcept.coding[atc-medication-code] 0..0
 * medicationCodeableConcept.coding[snomedct-medication-codes] 0..0
-* medicationReference 0..0
+* medicationCodeableConcept.coding[nhi-medication-tw] 0..0
+* medicationCodeableConcept.coding[nhi-medication-ch-herb-tw] 0..0
+* medicationCodeableConcept.coding[nhi-medication] from https://twcore.mohw.gov.tw/ig/pas/ValueSet/nhi-medication
 * subject only Reference(PatientTWPAS)
 * dosageInstruction 1..*
 * dosageInstruction.timing 1..1
+* dosageInstruction.timing.code 1..
+* dosageInstruction.timing.code from https://twcore.mohw.gov.tw/ig/pas/ValueSet/medication-frequency-hl7-nhi
+* dosageInstruction.timing.code.coding MS
+* dosageInstruction.timing.code.coding from https://twcore.mohw.gov.tw/ig/pas/ValueSet/medication-frequency-hl7-nhi
 * dosageInstruction.timing.repeat 1..1
-//* dosageInstruction.timing.code from TWMedicationFrequencyHL7
-//* dosageInstruction.timing.code from TWMedicationFrequencyHL7
-* dosageInstruction.timing.code.text 1..1
-//* dosageInstruction.timing.code.coding from TWMedicationFrequencyHL7
 * dosageInstruction.timing.repeat.bounds[x] only Period
-* dosageInstruction.doseAndRate.dose[x] only SimpleQuantity
+
 * dosageInstruction.doseAndRate 1..1 MS
+* dosageInstruction.doseAndRate.dose[x] 1..1
+* dosageInstruction.doseAndRate.dose[x] only SimpleQuantity
 * dosageInstruction.doseAndRate.doseQuantity 1..1 MS
 * dosageInstruction.doseAndRate.doseQuantity.value 1..1 MS
 * dosageInstruction.doseAndRate.doseQuantity.system 1..1
@@ -31,6 +39,7 @@ Description:    "此用藥品項-MedicationRequest Treat TWPAS Profile說明本I
 * dosageInstruction.doseAndRate.doseQuantity.code 1..1 MS
 * dosageInstruction.doseAndRate.doseQuantity.code from http://hl7.org/fhir/ValueSet/ucum-common
 * dosageInstruction.doseAndRate.doseQuantity.code ^binding.description = "用藥單位的代碼範圍請參考[Common UCUM units](https://hl7.org/fhir/R4/valueset-ucum-common.html)。"
+
 * dosageInstruction.timing.repeat MS
 * dosageInstruction.timing.repeat.boundsPeriod 1..1 MS
 * dosageInstruction.timing.repeat.boundsPeriod.start 1..1 MS
@@ -44,6 +53,8 @@ Description:    "此用藥品項-MedicationRequest Treat TWPAS Profile說明本I
 * statusReason ^short = "藥物處方終止原因"
 * category ^short = "自費註記"
 * medication[x] ^short = "藥品代碼"
+* dosageInstruction.timing.code ^short = "藥品使用頻率及服用時間。"
+* dosageInstruction.timing.code.coding ^short = "藥品使用頻率及服用時間。"
 * dosageInstruction.timing.code.text ^short = "藥品使用頻率及服用時間。"
 
 * dosageInstruction.doseAndRate.doseQuantity.value ^short = "藥物每次處方劑量，數字，每次使用之顆數、支數等，依產品規格。"

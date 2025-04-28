@@ -6,7 +6,20 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/4/23異動以下內容：
+因考量實作需求，於2025/4/28異動以下內容：
+    <ol>  
+        <li>修改<a href="StructureDefinition-MedicationRequest-treat-twpas.html">Profile: 用藥品項-MedicationRequest Treat TWPAS</a>：
+            <ol>
+               <li>事前審查品項代碼(medicationCodeableConcept.coding[nhi-medication])因版本維護問題，先於本IG令建值集與代碼系統(<a href="https://twcore.mohw.gov.tw/ig/pas/CodeSystem-nhi-medication.html">https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-medication</a>)。</li>
+            </ol>
+        </li>
+        <li>修改<a href="StructureDefinition-MedicationRequest-apply-twpas.html">Profile: 事前審查品項-MedicationRequest Apply TWPAS</a>：
+            <ol>
+               <li>藥品代碼(medicationCodeableConcept.coding[nhi-medication])因版本維護問題，先於本IG令建值集與代碼系統(<a href="https://twcore.mohw.gov.tw/ig/pas/CodeSystem-nhi-medication.html">https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-medication</a>)。</li>
+            </ol>
+        </li>
+	</ol>
+    於2025/4/23異動以下內容：
     <ol>  
         <li>修改<a href="StructureDefinition-Claim-twpas.html">Profile: 事前審查-Claim TWPAS</a>：
             <ol>

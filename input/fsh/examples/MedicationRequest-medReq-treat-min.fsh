@@ -7,7 +7,7 @@ Usage: #example
 * statusReason = http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason#altchoice
 * intent = #order
 * category = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-drug-category#nhi
-* medicationCodeableConcept = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-nhi-tw#A000755151
+* medicationCodeableConcept = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-medication#A000755151
 * subject.reference = "Patient/pat-min"
 * dosageInstruction.timing.code.text = "1W3D"
 * dosageInstruction.doseAndRate.doseQuantity.value = 4
@@ -30,7 +30,7 @@ Usage: #example
     <p><b>藥物處方終止原因</b>：Try another treatment first <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://hl7.org/fhir/R4/codesystem-medicationrequest-status-reason.html\">MedicationRequest Status Reason Codes</a>#altchoice)</span></p>
     <p><b>意圖</b>：Order <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">( <a href=\"http://hl7.org/fhir/CodeSystem/medicationrequest-intent\">medicationRequest Intent</a>#order)</span></p>
     <p><b>自費註記</b>：健保 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-drug-category.html\">NHI-藥物類型</a>#nhi)</span></p>
-    <p><b>藥品代碼</b>：ANTI-CUGH SYRUP 60ML <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.3.2/CodeSystem-medication-nhi-tw.html\">臺灣健保用藥品項</a>#A000755151)</span></p>
+    <p><b>藥品代碼</b>：ANTI-CUGH SYRUP 60ML <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-medication\">NHI-健保事前審查-用藥品項代碼值集</a>#A000755151)</span></p>
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a> &quot;&quot;</p>
     <p><b>藥品使用頻率及服用時間</b>：1W3D</p>
     <p><b>藥物每次處方劑量(單位)</b>：4 (tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://hl7.org/fhir/R4/valueset-ucum-common.html\">Common UCUM units</a>#{tbl})</span>)</p>
