@@ -44,7 +44,7 @@ Description: "申請(Apply)癌症用藥癌藥事前審查之資料模型，此�
 * diagnosis.cancerStage.assessDate 0..1 date "癌症分期量表評估日期" "癌症分期量表評估日期"
 * diagnosis.cancerStage.assessPerformer 0..* string "簽發癌症分期報告醫師身分證號" "簽發癌症分期報告醫師身分證號"
 * diagnosis.examinationReport 0..1 BackboneElement "檢查報告" "檢查報告"
-* diagnosis.examinationReport.reportType 0..1 CodeableConcept "報告類型" "報告類型"
+* diagnosis.examinationReport.reportType 0..1 CodeableConcept "報告類型" "報告類型。當LOINC無法具體描述檢體種類（例如：`47526-9`時），請填寫及補充說明檢體種類。"
 * diagnosis.examinationReport.speType 0..1 string "檢體種類" "檢體種類"
 * diagnosis.examinationReport.reportResult 0..1 BackboneElement "檢查報告結果" "檢查報告結果"
 * diagnosis.examinationReport.reportResult.reportResultString 0..* string "檢查報告結果（文數字）" "檢查報告結果-文數字與base64Binary應擇一填寫"
