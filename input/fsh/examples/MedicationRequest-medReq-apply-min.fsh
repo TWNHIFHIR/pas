@@ -39,7 +39,7 @@ Usage: #example
     </div>
     <p><b>狀態</b>：On Hold</p>
     <p><b>目的</b>：Plan</p>
-    <p><b>事前審查品項代碼</b>：Alunbrig film-coated tablets 30mgL<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-medication\">NHI-健保事前審查-用藥品項代碼值集</a>#BC27730100)</span></p>
+    <p><b>事前審查品項代碼</b>：Alunbrig film-coated tablets 30mgL<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-medication.html\">NHI-健保事前審查-用藥品項代碼值集</a>#BC27730100)</span></p>
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a> &quot;王大明&quot;</p>
     <blockquote>
         <p><b>事前審查藥物預定處方起始日期</b>：2024-01-01</p>
@@ -91,7 +91,7 @@ Usage: #example
     </div>
     <p><b>狀態</b>：On Hold</p>
     <p><b>目的</b>：Plan</p>
-    <p><b>事前審查品項代碼</b>：Herzuma Inj. 440mg <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-medication\">NHI-健保事前審查-用藥品項代碼值集</a>#KC011162B5)</span></p>
+    <p><b>事前審查品項代碼</b>：Herzuma Inj. 440mg <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-medication.html\">NHI-健保事前審查-用藥品項代碼值集</a>#KC011162B5)</span></p>
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a> &quot;王大明&quot;</p>
     <p><b>事前審查藥物預定處方起始日期</b>：2024-03-11</p>
     <p><b>事前審查藥物預定處方終止日期</b>：2024-07-28</p>

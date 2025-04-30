@@ -1,10 +1,10 @@
 CodeSystem: NHIApplyReason
 Id: nhi-apply-reason
 Title: "NHI-健保事前審查-給付適應症"
-Description: "臺灣衛生福利部中央健康保險署「給付適應症」代碼，代碼出版日期：2024-12-06；資料所屬單位：臺灣衛生福利部中央健康保險署。"
+Description: "臺灣衛生福利部中央健康保險署「給付適應症」代碼，代碼出版日期：2025-04-30；資料所屬單位：臺灣衛生福利部中央健康保險署。"
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2024-12-06"
+* ^date = "2025-04-30"
 * ^version = "1.0.3"
 * ^experimental = false
 * #C50P1 "早期乳癌-未發生腋下淋巴結轉移"
@@ -36,7 +36,7 @@ ValueSet: NHIApplyReason
 Id: nhi-apply-reason
 Title: "NHI-健保事前審查-給付適應症值集"
 Description: "NHI-健保事前審查-給付適應症值集"
-* ^date = "2024-12-06"
+* ^date = "2025-04-30"
 * ^version = "1.0.3"
 * ^experimental = false
 * include codes from system NHIApplyReason
