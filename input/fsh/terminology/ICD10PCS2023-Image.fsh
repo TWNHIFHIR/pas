@@ -3,7 +3,7 @@ ValueSet: ICD10PCS2023Image
 Id: icd-10-pcs-2023-image
 Title: "健保事前審查-臺灣健保署2023年中文版ICD 10 PCS-影像報告值集"
 Description: "健保事前審查-臺灣健保署2023年中文版ICD 10 PCS-影像報告值集"
-* ^date = "2025-04-30"
+* ^date = "2025-05-05"
 * ^version = "1.0.3"
 * ^experimental = false
 * $icd-10-pcs-2023#B00BZZZ "脊髓一般放射線攝影"

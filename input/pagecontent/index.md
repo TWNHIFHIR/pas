@@ -1,21 +1,17 @@
 <div class="bg-danger" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.0.2版內容，因而會比衛生福利部的IG版本V1.0.2(https://twcore.mohw.gov.tw/ig/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為114年4月30日，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
+<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.0.2版內容，因而會比衛生福利部的IG版本V1.0.2(https://twcore.mohw.gov.tw/ig/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為114年5月6日，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
 <br/>
 <b>醫院實作時請以V1.0.2為主進行實例驗證，目前健保署端的伺服器採用V1.0.2版規格。</b></p>
 </div>
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/4/30異動以下內容：
+因考量實作需求，於2025/5/5異動以下內容：
     <ol>  
-        <li>修改<a href="StructureDefinition-Claim-twpas.html">Profile: 事前審查-Claim TWPAS</a>：
-            <ol>
-               <li>修改給付適應症條件(item.programCode)說明：當事前審查品項代碼為KC009612B5、KC010892B5、KC011112DE、KC011162B5、KC011362B5、KC01013229、KC01013230、KC01025219、KC01050238、KC01085229、KC00958229、<s>KC011592DE</s>、JC00154261、<b>KC01088229</b>時，才可填寫。</li>
-            </ol>
-        </li>
         <li>修改<a href="StructureDefinition-MedicationRequest-treat-twpas.html">Profile: 用藥品項-MedicationRequest Treat TWPAS</a>：
             <ol>
                <li>事前審查品項代碼(medicationCodeableConcept.coding[nhi-medication])因版本維護問題，先於本IG另建值集與代碼系統。</li>
+               <li>藥品使用頻率及服用時間(dosageInstruction.timing.code)，可自行決定要使用代碼(coding)或純文字(text)呈現。</li>
             </ol>
         </li>
         <li>修改<a href="StructureDefinition-MedicationRequest-apply-twpas.html">Profile: 事前審查品項-MedicationRequest Apply TWPAS</a>：

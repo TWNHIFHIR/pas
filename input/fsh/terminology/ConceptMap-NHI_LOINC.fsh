@@ -4,7 +4,7 @@ Title: "健保事前審查-臺灣健保署醫療服務給付項目對應LOINC"
 Usage: #definition
 * experimental = false
 * status = #active
-* date = "2025-04-30"
+* date = "2025-05-05"
 * version = "1.0.3"
 * name = "NHILoinc"
 * title = "臺灣健保署醫療服務給付項目對應LOINC"
