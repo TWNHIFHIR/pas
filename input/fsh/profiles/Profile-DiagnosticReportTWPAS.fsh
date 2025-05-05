@@ -28,7 +28,7 @@ Description:    "此檢查報告-DiagnosticReport TWPAS Profile說明本IG如何
 * conclusion 1..1 MS
 //* conclusion obeys pas-2
 * presentedForm obeys UploadContent
-* code ^short = "報告類型"
+* code ^short = "報告類型，當LOINC無法具體描述檢體種類（例如：`47526-9`時），請填寫及補充說明檢體種類(code.text)。"
 * code.text ^short = "檢體種類"
 * conclusion ^short = "報告結果-文數字，請勿將醫事機構名稱、病人及醫師姓名等資訊列入結果中上傳，且不得包含HTML或XML等語法。"
 * presentedForm ^short = "報告結果-MIMEType"

@@ -631,7 +631,7 @@ Description: "臺灣健保署藥品使用頻率，參照至[健保署檔案譯�
 //* ^url = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-frequency-nhi-tw"
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2024-12-06"
+* ^date = "2025-05-05"
 * ^version = "1.0.3"
 * ^experimental = false
 * #QW(1) "每週一使用"
