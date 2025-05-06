@@ -288,8 +288,8 @@ Source: ApplyModel
 Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/ClaimResponse-self-assessment-twpas"
 * apply -> "(申請項目)"
 * apply.approveDate -> "created (核定日期)"
-* apply.approveNum -> "item.adjudication.reason.coding.code (核定數量)"
-* apply.approveComment -> "item.adjudication.value (核定註記)"
+* apply.approveNum -> "item.adjudication.value (核定數量)"
+* apply.approveComment -> "item.adjudication.reason.coding.code (核定註記)"
 * apply.acceptanceStatus -> "disposition (案件受理狀態)"
 
 Mapping: TWPASPractitioner
