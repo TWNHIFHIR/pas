@@ -11,7 +11,7 @@ Usage: #definition
 * description = "此對應表為臺灣健保署身體部位代碼對應SNOMED CT，供實作者於撰寫程式以自動化對應或轉代碼時使用。"
 * sourceUri = "https://twcore.mohw.gov.tw/ig/pas/ValueSet/nhi-body-site"
 * targetUri = "https://twcore.mohw.gov.tw/ig/pas/ValueSet/body-site"
-* group.source = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/nhi-body-site"
+* group.source = "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-body-site"
 * group.sourceVersion = "1.0.4"
 * group.target = "http://snomed.info/sct"
 //* group.targetVersion = "2.77"
