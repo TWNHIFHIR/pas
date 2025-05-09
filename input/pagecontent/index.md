@@ -6,17 +6,11 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/5/5異動以下內容：
+因考量實作需求，於2025/5/9異動以下內容：
     <ol>  
-        <li>修改<a href="StructureDefinition-MedicationRequest-treat-twpas.html">Profile: 用藥品項-MedicationRequest Treat TWPAS</a>：
+        <li>修改<a href="StructureDefinition-MedicationRequest-treat-twpas.html">ValueSet: SNOMEDCT-健保事前審查-身體部位值集</a>：
             <ol>
-               <li>事前審查品項代碼(medicationCodeableConcept.coding[nhi-medication])因版本維護問題，先於本IG另建值集與代碼系統，原使用之代碼系統「https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-nhi-tw」，需修改成「https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-medication」。</li>
-               <li>藥品使用頻率及服用時間(dosageInstruction.timing.code)，可自行決定要使用代碼(coding)或純文字(text)呈現。</li>
-            </ol>
-        </li>
-        <li>修改<a href="StructureDefinition-MedicationRequest-apply-twpas.html">Profile: 事前審查品項-MedicationRequest Apply TWPAS</a>：
-            <ol>
-               <li>藥品代碼(medicationCodeableConcept.coding[nhi-medication])因版本維護問題，先於本IG另建值集與代碼系統，原使用之代碼系統「https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-nhi-tw」，需修改成「https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-medication」。</li>
+               <li>新增代碼<code>243928005</code>以代表影像檢查身體部位的「全身」。</li>
             </ol>
         </li>
 	</ol>

@@ -5,7 +5,7 @@ Description: "臺灣衛生福利部中央健康保險署「案件受理狀態」
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2025-05-05"
-* ^version = "1.0.3"
+* ^version = "1.0.4"
 * ^experimental = false
 * #待處理
 * #處理中
@@ -28,6 +28,6 @@ Id: nhi-acceptance-status
 Title: "NHI-健保事前審查-案件受理狀態值集"
 Description: "NHI-健保事前審查-案件受理狀態值集"
 * ^date = "2025-05-05"
-* ^version = "1.0.3"
+* ^version = "1.0.4"
 * ^experimental = false
 * include codes from system NHIAcceptanceStatus

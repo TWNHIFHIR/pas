@@ -5,7 +5,7 @@ Description: "臺灣衛生福利部中央健康保險署「給付適應症」代
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2025-05-05"
-* ^version = "1.0.3"
+* ^version = "1.0.4"
 * ^experimental = false
 * #C50P1 "早期乳癌-未發生腋下淋巴結轉移"
 * #C50P2 "早期乳癌-具腋下淋巴結轉移"
@@ -37,6 +37,6 @@ Id: nhi-apply-reason
 Title: "NHI-健保事前審查-給付適應症值集"
 Description: "NHI-健保事前審查-給付適應症值集"
 * ^date = "2025-05-05"
-* ^version = "1.0.3"
+* ^version = "1.0.4"
 * ^experimental = false
 * include codes from system NHIApplyReason
