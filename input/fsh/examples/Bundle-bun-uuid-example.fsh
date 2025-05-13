@@ -956,7 +956,7 @@ Usage: #inline
 * interpretation.text = "高"
 * referenceRange.low = 2.9 'mmol/L' "mmol/l"
 * referenceRange.high = 4.9 'mmol/L' "mmol/l"
-* category = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type#examinationReport
+* category = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type#tests
 * derivedFrom.reference = "urn:uuid:a1aa65c7-c464-41a5-aa1a-fe5cddf487cf"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
@@ -964,7 +964,7 @@ Usage: #inline
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-laboratory-result-twpas.html\">檢驗檢查-Observation Laboratory Result TWPAS</a></p>
     </div>
     <p><b>狀態</b>：final</p>
-    <p><b>類型</b>：檢查報告<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-supporting-info-type.html/\">NHI-補充資訊類別值集</a>#examinationReport)</span></p>
+    <p><b>類型</b>：檢驗(查)<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-supporting-info-type.html/\">NHI-補充資訊類別值集</a>#tests)</span></p>
     <p><b>檢驗(查)名稱</b>：Platelets [#/volume] in Blood by Automated count <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINCCodes</a>#777-3)</span></p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
     <p><b>檢驗(查)報告日期</b>：2024-01-01</p>
@@ -980,7 +980,7 @@ Instance: inline-obs-lab-cbc
 InstanceOf: ObservationLaboratoryResultTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* category = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type#examinationReport
+* category = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type#tests
 * code.coding = http://loinc.org#58410-2
 * component[0].code.coding = http://loinc.org#6690-2
 * component[=].valueQuantity.value = 3.6
@@ -1027,7 +1027,7 @@ Usage: #inline
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-laboratory-result-twpas.html\">檢驗檢查-Observation Laboratory Result TWPAS</a></p>
     </div>
     <p><b>狀態</b>：final</p>
-    <p><b>類型</b>：檢查報告<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-supporting-info-type.html/\">NHI-補充資訊類別值集</a>#examinationReport)</span></p>
+    <p><b>類型</b>：檢驗(查)<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-supporting-info-type.html/\">NHI-補充資訊類別值集</a>#tests)</span></p>
     <p><b>套組代碼</b>：CBC panel - Blood by Automated count <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINCCodes</a>#58410-2)</span></p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
     <p><b>檢驗(查)報告日期</b>：2024-01-01</p>
