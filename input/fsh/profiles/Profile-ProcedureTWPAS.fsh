@@ -14,7 +14,7 @@ Description:    "此放射治療-Procedure TWPAS Profile說明本IG如何進一�
 * code.coding 1..1
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
-* code.coding ^slicing.rules = #open
+* code.coding ^slicing.rules = #closed
 * code.coding contains
     ICD10PCS2023Radiotherapy 0..1 MS and
     ICD10PCS2014Radiotherapy 0..1 MS

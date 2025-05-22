@@ -16,7 +16,7 @@ Description:    "此放射治療總劑量-Substance TWPAS Profile說明本IG如�
 * code.coding 1..1
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
-* code.coding ^slicing.rules = #open
+* code.coding ^slicing.rules = #closed
 * code.coding contains
     ICD10PCS2023Radiotherapy 0..1 MS and
     ICD10PCS2014Radiotherapy 0..1 MS
@@ -40,7 +40,7 @@ Description:    "此放射治療總劑量-Substance TWPAS Profile說明本IG如�
 * ingredient.substance[x] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
 * ingredient.substanceCodeableConcept.coding ^slicing.discriminator.type = #value
 * ingredient.substanceCodeableConcept.coding ^slicing.discriminator.path = "system"
-* ingredient.substanceCodeableConcept.coding ^slicing.rules = #open
+* ingredient.substanceCodeableConcept.coding ^slicing.rules = #closed
 * ingredient.substanceCodeableConcept.coding contains
     ICD10PCS2023Radiotherapy 0..1 MS and
     ICD10PCS2014Radiotherapy 0..1 MS

@@ -63,21 +63,6 @@ Description:    "此事前審查品項-MedicationRequest Apply TWPAS Profile說�
 * dosageInstruction.route from TWPCSMedicationPathSCT
 * dosageInstruction.route.coding from TWPCSMedicationPathSCT
 
-/** category 1..* MS
-* category ^slicing.discriminator.type = #value
-* category ^slicing.discriminator.path = "coding.system"
-* category ^slicing.ordered = false
-* category ^slicing.rules = #open
-* category contains
-    orderType 1..1 MS
-
-* category[orderType] from NHIOrderType
-* category[orderType].coding 1..1
-* category[orderType].coding.system = "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-order-type"
-* category[orderType].coding.code 1.. 
-* category[orderType].coding.code = #4
-* category[orderType] ^short = "醫令類別"*/
-
 * medication[x] ^short = "事前審查品項代碼，事前審查醫令代碼。"
 * medicationCodeableConcept.coding[nhi-medication] ^short = "事前審查品項代碼。"
 * dosageInstruction.timing.code ^short = "事前審查藥品使用頻率及服用時間。"

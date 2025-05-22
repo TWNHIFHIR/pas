@@ -22,7 +22,7 @@ body{font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !impor
 <p>於「<a href="downloads.html">結構定義與範例檔案下載</a>」頁下載<a href="package.tgz">整個 TWPAS IG 的 Package</a>。</p>
 <img src="validate/1-1.png" alt="Downloading the Pacakge" style="display: block;margin-left: auto;margin-right: auto;width: 80%;margin-bottom: 15px;" class="figure-img img-responsive img-rounded center-block"/>
 <div class="bg-warning">
-<p><b>下載下來的package.tgz檔案，請先解壓縮成Packag資料夾檔案！<br/>
+<p><b>下載下來的package.tgz檔案，請先解壓縮成package資料夾檔案！<br/>
   解壓縮第一次還是package.tar壓縮檔案，解壓縮第二次才是package資料夾。</b></p>
 
 <img src="validate/1-2.gif" alt="Unzip the Pacakge" style="display: block;margin-left: auto;margin-right: auto;width: 70%;" class="figure-img img-responsive img-rounded center-block"/>

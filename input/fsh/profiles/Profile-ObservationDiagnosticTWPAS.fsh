@@ -3,12 +3,6 @@ Parent:         Observation
 Id:             Observation-diagnostic-twpas
 Title:          "基因資訊-Observation Diagnostic TWPAS"
 Description:    "此基因資訊-Observation Diagnostic TWPAS Profile說明本IG如何進一步定義FHIR的Observation Resource以呈現癌藥事前審查之基因資訊"
-/* extension ^slicing.discriminator.type = #pattern
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension contains
-    http://hl7.org/fhir/StructureDefinition/bodySite named body-structure 0..1*/
-
 * effective[x] only dateTime
 * code.coding 1..1
 * code.coding.code 1..1 MS
@@ -24,10 +18,8 @@ Description:    "此基因資訊-Observation Diagnostic TWPAS Profile說明本IG
 * component ^slicing.discriminator.path = "code.coding.system"
 * component ^slicing.rules = #closed
 * component contains
-    gene-test-code 0..* MS /*and
-    coding-change-type 0..* MS and
-    chromosome-identifier 0..1 MS and
-    exact-start-end 0..1 MS*/
+    gene-test-code 0..* MS
+    
 * component[gene-test-code] ^short = "基因檢測代碼"
 * component[gene-test-code].code MS
 * component[gene-test-code].code from GeneTestCode (extensible)
@@ -48,24 +40,6 @@ Description:    "此基因資訊-Observation Diagnostic TWPAS Profile說明本IG
 * component[gene-test-code].interpretation.text ^condition = "pas-1"
 * component[gene-test-code].interpretation.coding ^condition = "pas-1"
 
-//* component[coding-change-type].value[x] ^binding.description = "Concepts in sequence ontology under SO:0002072"
-
-/* component[chromosome-identifier].code = http://loinc.org#48000-4
-* component[chromosome-identifier].code ^short = "48000-4"
-* component[chromosome-identifier] ^short = "基因位點 Chromosome Identifier (待確認)"
-* component[chromosome-identifier] ^definition = "An indicator, enumerated in humans by numbers 1-22, X, and Y, representing the chromosome on which the variant is located."
-* component[chromosome-identifier].value[x] only CodeableConcept
-* component[chromosome-identifier].value[x] 1..1
-* component[chromosome-identifier].value[x] ^short = "Chromosome 1 | Chromosome 2 | ... | Chromosome 22 | Chromosome X | Chromosome Y"
-* component[chromosome-identifier].value[x] from http://loinc.org/vs/LL2938-0 (required)
-
-* component[exact-start-end].code = http://loinc.org#81254-5
-* component[exact-start-end].code ^short = "81254-5"
-* component[exact-start-end] ^short = "基因位點 Exact Start-End (待確認)"
-* component[exact-start-end] ^definition = "The exact integer-based genomic coordinates of the start and end of the variant region."
-* component[exact-start-end].value[x] only Range
-* component[exact-start-end].value[x] ^short = "Range in question. 'High' can be omitted for single nucleotide variants."
-*/
 * value[x] 1..1 MS
 * value[x] only string or CodeableConcept or Quantity or boolean or integer or Range or Ratio or SampledData or time or dateTime or Period
 * value[x] MS
@@ -73,11 +47,7 @@ Description:    "此基因資訊-Observation Diagnostic TWPAS Profile說明本IG
 * value[x] ^type[=].extension.valueBoolean = true
 * value[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * value[x] ^type[=].extension.valueBoolean = true
-/* value[x] only CodeableConcept
-* valueCodeableConcept MS
-* valueCodeableConcept.coding 1..1 MS
-* valueCodeableConcept.coding.code 1..1 MS
-* valueCodeableConcept from http://loinc.org/vs/LL1971-2*/
+
 * performer 1..1 MS
 * performer only Reference(OrganizationGeneticTestingTWPAS)
 * subject only Reference(PatientTWPAS)
@@ -98,7 +68,6 @@ Description:    "此基因資訊-Observation Diagnostic TWPAS Profile說明本IG
 * interpretation ^short = "基因臨床判讀結果，醫師判讀結果。請勿將醫事機構名稱、病人及醫師姓名等資訊列入結果中上傳，且不得包含HTML或XML等語法。"
 
 * performer ^short = "基因檢測機構，衛福部公告名冊或LDTs核定函上之「案件編號」。"
-//* extension[body-structure] ^short = "基因檢測檢體部位"
 * specimen ^short = "基因檢測檢體類型"
 * derivedFrom ^short = "基因報告"
 * method ^short = "基因檢測方法"

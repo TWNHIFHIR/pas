@@ -4,7 +4,7 @@ Id:             Patient-twpas
 Title:          "病人資訊-Patient TWPAS"
 Description:    "此病人資訊-Patient TWPAS Profile說明本IG如何進一步定義臺灣核心-病人(TW Core Patient) Profile以呈現癌藥事前審查之病人基本資料"
 * identifier 1..2
-
+* identifier ^slicing.rules = #closed
 * identifier[idCardNumber] 1..1
 * identifier[residentNumber] 0..0
 * identifier[passportNumber] 0..0
