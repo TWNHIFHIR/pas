@@ -13,7 +13,7 @@ Description:    "此事前審查-Bundle TWPAS Profile說明本IG如何進一步�
 * entry 6..* MS
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
-* entry ^slicing.rules = #open
+* entry ^slicing.rules = #closed
 * entry contains
 	claim 1..1 MS and
 	encounter 1..1 MS and

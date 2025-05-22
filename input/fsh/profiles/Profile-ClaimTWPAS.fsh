@@ -49,7 +49,7 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
 * diagnosis.type.text obeys pas-2
 * supportingInfo ^slicing.discriminator.type = #value
 * supportingInfo ^slicing.discriminator.path = "category"
-* supportingInfo ^slicing.rules = #open
+* supportingInfo ^slicing.rules = #closed
 * supportingInfo.category from NHIPASSupportingInfoType
 * supportingInfo contains
     weight 1..1 and
@@ -185,7 +185,7 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
 * item.modifier ^slicing.discriminator.type = #value
 * item.modifier ^slicing.discriminator.path = "coding.system"
 * item.modifier ^slicing.ordered = false
-* item.modifier ^slicing.rules = #open
+* item.modifier ^slicing.rules = #closed
 * item.modifier contains
     continuation 1..1 MS and
     lot 0..1 MS
@@ -256,7 +256,7 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
 * procedure.procedureCodeableConcept
 * procedure.procedureCodeableConcept.coding ^slicing.discriminator.type = #value
 * procedure.procedureCodeableConcept.coding ^slicing.discriminator.path = "system"
-* procedure.procedureCodeableConcept.coding ^slicing.rules = #open
+* procedure.procedureCodeableConcept.coding ^slicing.rules = #closed
 * procedure.procedureCodeableConcept.coding contains
     icd10-pcs-2023 0..1 MS and
     icd10-pcs-2014 0..1 MS and

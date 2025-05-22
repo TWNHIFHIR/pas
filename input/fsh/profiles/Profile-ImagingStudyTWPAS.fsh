@@ -12,7 +12,7 @@ Description:    "此DICOM影像-ImagingStudy TWPAS Profile說明本IG如何進�
 * identifier 1..
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
+* identifier ^slicing.rules = #closed
 * identifier contains
     study-uid 1..1 MS
 * identifier[study-uid].system 1..1 MS

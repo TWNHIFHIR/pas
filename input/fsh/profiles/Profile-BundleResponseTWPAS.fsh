@@ -11,7 +11,7 @@ Description:    "此事前審查回覆-Bundle Response TWPAS Profile說明本IG�
 * entry 1.. MS
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
-* entry ^slicing.rules = #open
+* entry ^slicing.rules = #closed
 * entry contains
 	claimResponse 1..1 MS
 

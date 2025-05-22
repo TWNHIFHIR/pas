@@ -13,6 +13,7 @@
                <li>新增代碼<code>243928005</code>以代表影像檢查身體部位的「全身」。</li>
             </ol>
         </li>
+        <li>將所有profile中有使用slice設計的欄位，設為不允許使用未定義的slice（<code>slicing.rule = closed</code>）。</li>
 	</ol>
     請留意這些異動，以避免影響您的實作。
 </div>
