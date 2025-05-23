@@ -10,7 +10,7 @@ Description:    "此基因資訊-Observation Diagnostic TWPAS Profile說明本IG
 * code.coding.code = #69548-6
 * category  1..1
 * category.coding  1..1
-* category.coding.system = "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type"
+* category.coding.system = "https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-supporting-info-type"
 * category.coding.code = #geneInfo
 * category ^short = "因FHIR設計而需必填"
 

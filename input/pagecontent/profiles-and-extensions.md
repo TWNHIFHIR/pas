@@ -15,7 +15,7 @@
 #### Organization
 - [醫事機構-Organization TWPAS](StructureDefinition-Organization-twpas.html)
 - [基因檢測機構-Organization Genetic Testing TWPAS](StructureDefinition-Organization-genetic-testing-twpas.html)
-- [TW Core Organization Government](https://twcore.mohw.gov.tw/ig/twcore/0.3.2/StructureDefinition-Organization-govt-twcore.html)
+- [TW Core Organization Government](https://fhir-ig.nhi.org.tw/twcore/0.3.2/StructureDefinition-Organization-govt-twcore.html)
 
 #### Encounter
 - [就醫科別-Encounter TWPAS](StructureDefinition-Encounter-twpas.html)

@@ -19,12 +19,12 @@ Description:    "此影像報告-DiagnosticReport Image TWPAS Profile說明本IG
 
 * code.coding[TW2014ICD10PCS].code 1..1 MS
 * code.coding[TW2014ICD10PCS].system 1..1 MS
-* code.coding[TW2014ICD10PCS].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2014-tw"
+* code.coding[TW2014ICD10PCS].system = "https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2014-tw"
 * code.coding[TW2014ICD10PCS] from ICD10PCSImage (extensible)
 * code.coding[TW2014ICD10PCS] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
 * code.coding[TW2023ICD10PCS].code 1..1 MS
 * code.coding[TW2023ICD10PCS].system 1..1 MS
-* code.coding[TW2023ICD10PCS].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw"
+* code.coding[TW2023ICD10PCS].system = "https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw"
 * code.coding[TW2023ICD10PCS] from ICD10PCS2023Image (extensible)
 * code.coding[TW2023ICD10PCS] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
 * code.text 0..1 MS

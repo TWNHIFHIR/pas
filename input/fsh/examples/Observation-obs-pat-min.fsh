@@ -29,7 +29,7 @@ Title: "病人狀態評估-PDAI"
 Description: "依據病人狀態評估-Observation Patient Assessment TWPAS Profile呈現病人狀態評估之範例"
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* code.coding = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-pat-ast#PDAI
+* code.coding = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-pat-ast#PDAI
 * effectiveDateTime = "2024-01-01"
 * performer.reference = "Practitioner/pra-min"
 * subject.reference = "Patient/pat-min"

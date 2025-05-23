@@ -5,7 +5,7 @@ Title:          "事前審查-Claim TWPAS"
 Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步定義FHIR的Claim Resource以呈現癌藥事前審查之內容"
 * identifier and provider and subType and enterer and created and priority and patient MS
 * extension contains
-    https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/extension-claim-encounter named encounter 1..1 MS
+    https://fhir-ig.nhi.org.tw/pas/StructureDefinition/extension-claim-encounter named encounter 1..1 MS
 
 * identifier 0..1
 * provider 1..1
@@ -15,7 +15,7 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
 * subType from NHIApplyType
 * subType.coding 1..1
 * subType.coding.system 1..1
-* subType.coding.system = "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-apply-type"
+* subType.coding.system = "https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-apply-type"
 * subType.coding.code 1..1
 * subType.coding.code ^short = "申報類別，1:送核 | 2:送核補件 | 3:申復 | 4:爭議審議 | 5:申復補件 。當申報類別為2(送核補件)、3(申復)、4(爭議審議)、5(申復補件)時，院所才需於Claim.identifier填寫原送核案件之受理編號。"
 * enterer 1..1
@@ -35,11 +35,11 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
     icd10-cm-2023 0..1 MS and
     icd10-cm-2014 0..1 MS
 * diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2023] from TW2023ICD10CM (extensible)
-* diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2023].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2023-tw"
+* diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2023].system = "https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-cm-2023-tw"
 * diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2023].system 1..1 MS
 * diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2023].code 1..1 MS
 * diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2014] from TW2014ICD10CM (extensible)
-* diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2014].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2014-tw"
+* diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2014].system = "https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-cm-2014-tw"
 * diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2014].system 1..1 MS
 * diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2014].code 1..1 MS
 * diagnosis.extension contains 
@@ -171,10 +171,10 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
 * item 1..*
 * item.productOrService MS
 * item.productOrService from NHIOrderType
-//* item.productOrService = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-order-type#4
+//* item.productOrService = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-order-type#4
 * item.bodySite from NHIApplySide
 * item.extension contains
-    https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/extension-requestedService named requestedService 1..1 MS
+    https://fhir-ig.nhi.org.tw/pas/StructureDefinition/extension-requestedService named requestedService 1..1 MS
 * item.programCode 1..1 MS
 * item.programCode.coding 0..1
 * item.programCode.coding from NHIApplyReason
@@ -192,13 +192,13 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
 
 * item.modifier[continuation] from NHIContinuationStatus
 * item.modifier[continuation].coding 1..1
-* item.modifier[continuation].coding.system = "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-continuation-status"
+* item.modifier[continuation].coding.system = "https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-continuation-status"
 * item.modifier[continuation].coding.code 1..
 * item.modifier[continuation] ^short = "續用註記，1:初次使用 | 2:申請再次使用"
 * item.modifier[continuation].coding.code ^short = "1:初次使用 | 2:申請再次使用"
 * item.modifier[lot] from NHILOT
 * item.modifier[lot].coding 1..1
-* item.modifier[lot].coding.system = "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-line-of-therapy"
+* item.modifier[lot].coding.system = "https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-line-of-therapy"
 * item.modifier[lot].coding.code 1.. MS
 * item.modifier[lot] ^short = "用藥線別，0:不適用 | 1:第一線治療 | 2:第二線治療 | 3:第三線治療 | 4:第四線治療 | 5:第五線治療"
 * item.modifier[lot].coding.code ^short = "0:不適用 | 1:第一線治療 | 2:第二線治療 | 3:第三線治療 | 4:第四線治療 | 5:第五線治療"
@@ -263,13 +263,13 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
     medical-service-payment 0..1 MS
 * procedure.procedureCodeableConcept.coding[icd10-pcs-2023] from TW2023ICD10PCS
 * procedure.procedureCodeableConcept.coding[icd10-pcs-2023].code 1..1 MS
-* procedure.procedureCodeableConcept.coding[icd10-pcs-2023].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw"
+* procedure.procedureCodeableConcept.coding[icd10-pcs-2023].system = "https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw"
 * procedure.procedureCodeableConcept.coding[icd10-pcs-2014] from TW2014ICD10PCS
 * procedure.procedureCodeableConcept.coding[icd10-pcs-2014].code 1..1 MS
-* procedure.procedureCodeableConcept.coding[icd10-pcs-2014].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2014-tw"
+* procedure.procedureCodeableConcept.coding[icd10-pcs-2014].system = "https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2014-tw"
 * procedure.procedureCodeableConcept.coding[medical-service-payment] from TWMedicalServicePayment
 * procedure.procedureCodeableConcept.coding[medical-service-payment].code 1..1 MS
-* procedure.procedureCodeableConcept.coding[medical-service-payment].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"
+* procedure.procedureCodeableConcept.coding[medical-service-payment].system = "https://fhir-ig.nhi.org.tw/twcore/CodeSystem/medical-service-payment-tw"
 
 * supportingInfo[weight].valueQuantity.value obeys HTWT
 * supportingInfo[height].valueQuantity.value obeys HTWT

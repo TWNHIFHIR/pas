@@ -2,7 +2,7 @@
 Instance: Bundle-id
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Bundle-id"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Bundle-id"
 * name = "BundleID"
 * status = #active
 * version = "1.0.4"
@@ -18,7 +18,7 @@ Usage: #definition
 /*Instance: Bundle-identifier
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Bundle-identifier"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Bundle-identifier"
 * name = "BundleIdentifier"
 * status = #active
 * version = "1.0.4"
@@ -33,7 +33,7 @@ Usage: #definition
 Instance: Claim-identifier
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Claim-identifier"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Claim-identifier"
 * name = "ClaimIdentifier"
 * status = #active
 * version = "1.0.4"
@@ -51,7 +51,7 @@ Usage: #definition
 Instance: ClaimResponse-adjudication-reason
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/ClaimResponse-adjudication-reason"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/ClaimResponse-adjudication-reason"
 * name = "ClaimResponseAdjudicationReason"
 * status = #active
 * version = "1.0.4"
@@ -67,7 +67,7 @@ Usage: #definition
 Instance: ClaimResponse-created
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/ClaimResponse-created"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/ClaimResponse-created"
 * name = "ClaimResponseCreated"
 * status = #active
 * version = "1.0.4"
@@ -82,7 +82,7 @@ Usage: #definition
 Instance: ClaimResponse-disposition
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/ClaimResponse-disposition"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/ClaimResponse-disposition"
 * name = "ClaimResponseDisposition"
 * status = #active
 * version = "1.0.4"
@@ -97,7 +97,7 @@ Usage: #definition
 Instance: ClaimResponse-request
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/ClaimResponse-request"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/ClaimResponse-request"
 * name = "ClaimResponseRequest"
 * status = #active
 * version = "1.0.4"
@@ -116,7 +116,7 @@ Usage: #definition
 Instance: Claim-patient
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Claim-patient"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Claim-patient"
 * name = "ClaimID"
 * status = #active
 * version = "1.0.4"
@@ -135,7 +135,7 @@ Usage: #definition
 Instance: Patient-name
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Patient-name"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Patient-name"
 * name = "PatientName"
 * status = #active
 * version = "1.0.4"
@@ -150,7 +150,7 @@ Usage: #definition
 Instance: Patient-identifier
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Patient-identifier"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Patient-identifier"
 * name = "PatientIdentifier"
 * status = #active
 * version = "1.0.4"
@@ -166,7 +166,7 @@ Usage: #definition
 Instance: Claim-func-type
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Claim-func-type"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Claim-func-type"
 * name = "ClaimFuncType"
 * status = #active
 * version = "1.0.4"
@@ -175,7 +175,7 @@ Usage: #definition
 * description = "事前審查(Claim)的就醫科別(extension: encounter)"
 * code = #func-type
 * base = #Claim
-* expression = "Claim.extension.where(url = 'https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/extension-claim-encounter').value.ofType(Reference)"
+* expression = "Claim.extension.where(url = 'https://fhir-ig.nhi.org.tw/pas/StructureDefinition/extension-claim-encounter').value.ofType(Reference)"
 * type = #reference
 * chain[0] = "service-type"
 
@@ -183,7 +183,7 @@ Usage: #definition
 Instance: Encounter-service-type
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Encounter-service-type"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Encounter-service-type"
 * name = "EncounterServiceType"
 * status = #active
 * version = "1.0.4"
@@ -200,7 +200,7 @@ Usage: #definition
 Instance: Claim-id
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Claim-id"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Claim-id"
 * name = "ClaimID"
 * status = #active
 * version = "1.0.4"
@@ -216,7 +216,7 @@ Usage: #definition
 Instance: Organization-id
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Organization-id"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Organization-id"
 * name = "OrganizationID"
 * status = #active
 * version = "1.0.4"
@@ -232,7 +232,7 @@ Usage: #definition
 Instance: Encounter-id
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Encounter-id"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Encounter-id"
 * name = "EncounterID"
 * status = #active
 * version = "1.0.4"
@@ -249,7 +249,7 @@ Usage: #definition
 Instance: Patient-id
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Patient-id"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Patient-id"
 * name = "PatientID"
 * status = #active
 * version = "1.0.4"
@@ -265,7 +265,7 @@ Usage: #definition
 Instance: Practitioner-id
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Practitioner-id"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Practitioner-id"
 * name = "PractitioneID"
 * status = #active
 * version = "1.0.4"
@@ -281,7 +281,7 @@ Usage: #definition
 Instance: ImagingStudy-id
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/ImagingStudy-id"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/ImagingStudy-id"
 * name = "ImagingStudyID"
 * status = #active
 * version = "1.0.4"
@@ -297,7 +297,7 @@ Usage: #definition
 Instance: Media-id
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Media-id"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Media-id"
 * name = "MediaID"
 * status = #active
 * version = "1.0.4"
@@ -313,7 +313,7 @@ Usage: #definition
 Instance: DiagnosticReport-id
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/DiagnosticReport-id"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/DiagnosticReport-id"
 * name = "DiagnosticReportID"
 * status = #active
 * version = "1.0.4"
@@ -329,7 +329,7 @@ Usage: #definition
 Instance: Observation-id
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Observation-id"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Observation-id"
 * name = "ObservationID"
 * status = #active
 * version = "1.0.4"
@@ -345,7 +345,7 @@ Usage: #definition
 Instance: MedicationRequest-id
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/MedicationRequest-id"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/MedicationRequest-id"
 * name = "MedicationRequestID"
 * status = #active
 * version = "1.0.4"
@@ -361,7 +361,7 @@ Usage: #definition
 Instance: Procedure-id
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Procedure-id"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Procedure-id"
 * name = "ProcedureID"
 * status = #active
 * version = "1.0.4"
@@ -377,7 +377,7 @@ Usage: #definition
 Instance: Substance-id
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Substance-id"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Substance-id"
 * name = "SubstanceID"
 * status = #active
 * version = "1.0.4"
@@ -393,7 +393,7 @@ Usage: #definition
 Instance: Specimen-id
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Specimen-id"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Specimen-id"
 * name = "SpecimenID"
 * status = #active
 * version = "1.0.4"
@@ -409,7 +409,7 @@ Usage: #definition
 Instance: DocumentReference-id
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/DocumentReference-id"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/DocumentReference-id"
 * name = "DocumentReferenceID"
 * status = #active
 * version = "1.0.4"
@@ -425,7 +425,7 @@ Usage: #definition
 Instance: Coverage-id
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Coverage-id"
+* url = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Coverage-id"
 * name = "CoverageID"
 * status = #active
 * version = "1.0.4"

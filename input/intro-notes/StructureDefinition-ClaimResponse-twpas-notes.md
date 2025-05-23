@@ -41,7 +41,7 @@
 
     例子：  
       (1) GET [base]/ClaimResponse?request.func-type.service-type=AJ  
-      (2) GET [base]/ClaimResponse?request.func-type.service-type=https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-consultation-department-nhi-tw|AJ
+      (2) GET [base]/ClaimResponse?request.func-type.service-type=https://fhir-ig.nhi.org.tw/twcore/CodeSystem/medical-consultation-department-nhi-tw|AJ
 
 6. **必須（SHALL）** 支援透過查詢參數 **[`created`](SearchParameter-ClaimResponse-created.html)** 及 **[`disposition`](SearchParameter-ClaimResponse-disposition.html)**查詢所有ClaimResponse：               
     ([如何透過date查詢](https://hl7.org/fhir/R4/search.html#date))     

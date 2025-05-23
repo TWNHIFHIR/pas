@@ -1,4 +1,4 @@
-Alias: $icd-10-pcs-2023 = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw
+Alias: $icd-10-pcs-2023 = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw
 ValueSet: ICD10PCS2023Image
 Id: icd-10-pcs-2023-image
 Title: "健保事前審查-臺灣健保署2023年中文版ICD 10 PCS-影像報告值集"

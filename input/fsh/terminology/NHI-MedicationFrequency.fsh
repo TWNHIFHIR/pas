@@ -628,7 +628,7 @@ Description: "臺灣健保署藥品使用頻率，參照至[健保署檔案譯�
 代碼出版日期：2024-05-27；資料所屬單位：衛生福利部中央健康保險署。
 
 *因原始資料無代碼版本資訊，故使用其「更新日期」作為版本資訊。*"
-//* ^url = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-frequency-nhi-tw"
+//* ^url = "https://fhir-ig.nhi.org.tw/twcore/CodeSystem/medication-frequency-nhi-tw"
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2025-05-05"

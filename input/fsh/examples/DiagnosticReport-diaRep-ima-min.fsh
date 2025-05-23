@@ -4,7 +4,7 @@ Title: "影像報告"
 Description: "依據影像報告-DiagnosticReport Image TWPAS Profile呈現影像報告之範例"
 Usage: #example
 * status = http://hl7.org/fhir/diagnostic-report-status#final
-* code.coding[TW2023ICD10PCS] = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw#B34JZZ3
+* code.coding[TW2023ICD10PCS] = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw#B34JZZ3
 * subject.reference = "Patient/pat-min"
 * effectiveDateTime = "2024-05-07"
 * performer.reference = "Practitioner/pra-min"
@@ -23,7 +23,7 @@ Usage: #example
     </div>
     <p><b>狀態</b>：final</p>
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a> &quot;王大明&quot;</p>
-    <p><b>影像報告</b>：左上肢動脈血管內超音波 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw\">臺灣健保署2023年中文版ICD-10-PCS值集</a>#B34JZZ3)</span></p>
+    <p><b>影像報告</b>：左上肢動脈血管內超音波 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw\">臺灣健保署2023年中文版ICD-10-PCS值集</a>#B34JZZ3)</span></p>
     <p><b>影像報告日期</b>：2024-05-07</p>
     <p><b>簽發影像報告醫師</b>：<a href=\"Practitioner-pra-min.html\">Practitioner/pra-min</a></p>
     <p><b>影像檢查的身體部位／DICOM影像</b>：<a href=\"ImagingStudy-imaStu-min.html\">ImagingStudy/imaStu-min</a></p>
