@@ -146,11 +146,11 @@ Usage: #inline
 * supportingInfo[treatmentAssessment].sequence = 16
 * supportingInfo[treatmentAssessment].valueReference.reference = "urn:uuid:63cabc24-a403-4522-9226-1c96968590bd"
 * diagnosis.sequence = 1
-* diagnosis.diagnosisCodeableConcept  = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-cm-2023-tw#I50.812
+* diagnosis.diagnosisCodeableConcept  = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2023-tw#I50.812
 * diagnosis.extension[recordedDate].valueDate = "2024-01-01"
 * diagnosis.type.text = "Adenocarcinoma, descending colon, cT3N2M1a, cStage IVA, KRAS G12V, with multiple liver metastases, status post FOLFIRI"
 * procedure.sequence = 1
-* procedure.procedureCodeableConcept = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw#3E0Y704
+* procedure.procedureCodeableConcept = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw#3E0Y704
 * procedure.date = "2024-01-01"
 * item[0].sequence = 1
 * item[=].productOrService = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-order-type#1 "藥品"
@@ -289,11 +289,11 @@ Usage: #inline
     </blockquote>
     <h3>Diagnoses</h3>
     <p><b>診斷日期</b>：2024-01-01</p>
-    <p><b>國際疾病分類代碼</b>：慢性右心臟衰竭<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-cm-2023-tw\">臺灣健保署2023年中文版ICD-10-CM值集</a>#I50.812)</span></p>
+    <p><b>國際疾病分類代碼</b>：慢性右心臟衰竭<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2023-tw\">臺灣健保署2023年中文版ICD-10-CM值集</a>#I50.812)</span></p>
     <p><b>簡要病摘</b>：Adenocarcinoma, descending colon, cT3N2M1a, cStage IVA, KRAS G12V, with multiple liver metastases, status post FOLFIRI</p>
     <h3>Procedures</h3>
     <p><b>手術(或其他處置)日期</b>：2024-01-01</p>
-    <p><b>手術(或其他處置)項目</b>：2024-01-01<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw\">臺灣健保署2023年中文版ICD-10-PCS值集</a>#3E0Y704)</span></p>
+    <p><b>手術(或其他處置)項目</b>：2024-01-01<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw\">臺灣健保署2023年中文版ICD-10-PCS值集</a>#3E0Y704)</span></p>
     <h3>Insurances</h3>
     <p><b>sequence</b>：1</p>
     <p><b>coverage</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-79ee2767-54d9-4682-bbd4-d0add0576388\">urn:uuid:79ee2767-54d9-4682-bbd4-d0add0576388</a></p>
@@ -368,7 +368,7 @@ InstanceOf: EncounterTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/encounter-status#planned
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB
-* serviceType = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/medical-consultation-department-nhi-tw#AJ
+* serviceType = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-consultation-department-nhi-tw#AJ
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4;
@@ -381,7 +381,7 @@ Usage: #inline
     <p><b>就醫分類</b>：ambulatory  <span style=\"background: LightGoldenRodYellow; margin:
             4px; border: 1px solid khaki\"> (<a href=\"https://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html\">ActEncounterCode
                 CT</a>#AMB)</span></p>
-    <p><b>就醫科別</b>：胸腔暨重症加護 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir-ig.nhi.org.tw/twcore/CodeSystem/medical-consultation-department-nhi-tw/\">臺灣健保署就醫科別</a>#AJ)</span></p>
+    <p><b>就醫科別</b>：胸腔暨重症加護 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-consultation-department-nhi-tw/\">臺灣健保署就醫科別</a>#AJ)</span></p>
 </div>"
 
 Instance: inline-patient
@@ -498,7 +498,7 @@ Instance: inline-diaRep-ima
 InstanceOf: DiagnosticReportImageTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/diagnostic-report-status#final
-* code.coding[TW2023ICD10PCS] = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw#B34JZZ3
+* code.coding[TW2023ICD10PCS] = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw#B34JZZ3
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * effectiveDateTime = "2024-05-07"
 * performer.reference = "urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020"
@@ -511,7 +511,7 @@ Usage: #inline
     </div>
     <p><b>狀態</b>：final</p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
-    <p><b>影像報告</b>：左上肢動脈血管內超音波 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw\">臺灣健保署2023年中文版ICD-10-PCS值集</a>#B34JZZ3)</span></p>
+    <p><b>影像報告</b>：左上肢動脈血管內超音波 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw\">臺灣健保署2023年中文版ICD-10-PCS值集</a>#B34JZZ3)</span></p>
     <p><b>影像報告日期</b>：2024-05-07</p>
     <p><b>簽發影像報告醫師</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
     <p><b>影像檢查的身體部位／DICOM影像</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-4213460c-db7c-4a32-8129-157c9f3a4cc3\">urn:uuid:4213460c-db7c-4a32-8129-157c9f3a4cc3</a></p>
@@ -522,7 +522,7 @@ Instance: inline-diaRep-ima-2
 InstanceOf: DiagnosticReportImageTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/diagnostic-report-status#final
-* code.coding[TW2023ICD10PCS] = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw#B34JZZZ
+* code.coding[TW2023ICD10PCS] = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw#B34JZZZ
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * effectiveDateTime = "2024-05-07"
 * performer.reference = "urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020"
@@ -541,7 +541,7 @@ Usage: #inline
     </div>
     <p><b>狀態</b>：final</p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
-    <p><b>影像報告</b>：左上肢動脈超音波 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw\">臺灣健保署2023年中文版ICD-10-PCS值集</a>#B34JZZZ)</span></p>
+    <p><b>影像報告</b>：左上肢動脈超音波 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw\">臺灣健保署2023年中文版ICD-10-PCS值集</a>#B34JZZZ)</span></p>
     <p><b>影像報告日期</b>：2024-05-07</p>
     <p><b>簽發影像報告醫師</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
     <p><b>影像檢查的身體部位／DICOM影像</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-4213460c-db7c-4a32-8129-157c9f3a4cc3\">urn:uuid:4213460c-db7c-4a32-8129-157c9f3a4cc3</a></p>
@@ -646,19 +646,19 @@ Usage: #inline
 * identifier.use = #official
 * identifier.system = "https://oid.nat.gov.tw/"
 * identifier.value = "A21030000I"
-* identifier.type = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/v2-0203#GOI
+* identifier.type = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203#GOI
 * type =  http://terminology.hl7.org/CodeSystem/organization-type#govt
 * name = "衛生福利部中央健康保險署"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
   <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">
-    <p style=\"margin-bottom: 0px\">Profile: <a href=\"https://fhir-ig.nhi.org.tw/twcore/0.3.2/StructureDefinition-Organization-govt-twcore.html\">臺灣核心-政府機構（TW Core Organization Government）</a></p>
+    <p style=\"margin-bottom: 0px\">Profile: <a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.3.2/StructureDefinition-Organization-govt-twcore.html\">臺灣核心-政府機構（TW Core Organization Government）</a></p>
   </div>
   <p>
     <b>機構名稱</b>：衛生福利部中央健康保險署
   </p>
   <p>
-    <b>識別碼型別</b>：Government Organization Identifier<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">（ <a href=\"https://fhir-ig.nhi.org.tw/twcore/CodeSystem/v2-0203\">臺灣識別碼類型值集</a>#GOI） </span>  <br/>
+    <b>識別碼型別</b>：Government Organization Identifier<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">（ <a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203\">臺灣識別碼類型值集</a>#GOI） </span>  <br/>
     <b>機關代號（official）</b>：A21030000I (https://oid.nat.gov.tw/)
   </p>
   <p>
@@ -1138,7 +1138,7 @@ Instance: inline-procedure
 InstanceOf: ProcedureTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/event-status#completed
-* code.coding = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw#D7Y08ZZ
+* code.coding = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw#D7Y08ZZ
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * performedDateTime = "2024-05-06T09:00:00.000Z"
 * usedReference.reference = "urn:uuid:b3c91f1b-14e3-4f44-8fa2-72f27b1d28c8"
@@ -1150,7 +1150,7 @@ Usage: #inline
     </div>
     <p><b>放射治療狀態</b>：completed</p>
     <p><b>放射治療項目</b>：骨髓高溫療法 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">
-            (<a href=\"https://fhir-ig.nhi.org.tw/twcore/0.3.2/CodeSystem-icd-10-pcs-2023-tw.html\">臺灣2023年中文版ICD-10-PCS</a>#D7Y08ZZ)</span>
+            (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.3.2/CodeSystem-icd-10-pcs-2023-tw.html\">臺灣2023年中文版ICD-10-PCS</a>#D7Y08ZZ)</span>
     </p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <p><b>放射治療日期</b>：2024-05-06 09:00:00+0000</p>
@@ -1160,12 +1160,12 @@ Usage: #inline
 Instance: inline-substance
 InstanceOf: SubstanceTWPAS
 Usage: #inline
-* code.coding = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw#D7Y08ZZ
+* code.coding = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw#D7Y08ZZ
 * ingredient.quantity.numerator.value = 5000
 * ingredient.quantity.numerator.code = #mg
 * ingredient.quantity.numerator.system = "http://unitsofmeasure.org"
 * ingredient.quantity.denominator.value = 0
-* ingredient.substanceCodeableConcept = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw#D7Y08ZZ
+* ingredient.substanceCodeableConcept = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw#D7Y08ZZ
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4;
@@ -1173,7 +1173,7 @@ Usage: #inline
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Substance-twpas.html\">放射治療總劑量-Substance TWPAS</a></p>
     </div>
     <p><b>放射治療項目</b>：骨髓高溫療法 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">
-            (<a href=\"https://fhir-ig.nhi.org.tw/twcore/0.3.2/CodeSystem-icd-10-pcs-2023-tw.html\">臺灣2023年中文版ICD-10-PCS</a>#D7Y08ZZ)</span></p>
+            (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.3.2/CodeSystem-icd-10-pcs-2023-tw.html\">臺灣2023年中文版ICD-10-PCS</a>#D7Y08ZZ)</span></p>
     <p><b>放射治療總劑量(單位)</b>：5000 (mg)</p>
 </div>"
 

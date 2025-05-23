@@ -19,12 +19,12 @@ Description:    "此放射治療-Procedure TWPAS Profile說明本IG如何進一�
     ICD10PCS2023Radiotherapy 0..1 MS and
     ICD10PCS2014Radiotherapy 0..1 MS
 * code.coding[ICD10PCS2014Radiotherapy] from ICD10PCSRadiotherapy (extensible)
-* code.coding[ICD10PCS2014Radiotherapy].system = "https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2014-tw"
+* code.coding[ICD10PCS2014Radiotherapy].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2014-tw"
 * code.coding[ICD10PCS2014Radiotherapy].system 1..1 MS
 * code.coding[ICD10PCS2014Radiotherapy].code 1..1 MS
 * code.coding[ICD10PCS2014Radiotherapy] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
 * code.coding[ICD10PCS2023Radiotherapy] from ICD10PCS2023Radiotherapy (extensible)
-* code.coding[ICD10PCS2023Radiotherapy].system = "https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw"
+* code.coding[ICD10PCS2023Radiotherapy].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw"
 * code.coding[ICD10PCS2023Radiotherapy].system 1..1 MS
 * code.coding[ICD10PCS2023Radiotherapy].code 1..1 MS
 * code.coding[ICD10PCS2023Radiotherapy] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"

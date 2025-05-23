@@ -1,4 +1,4 @@
-Alias: $TWMedicationPath = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/medication-path-tw
+Alias: $TWMedicationPath = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-path-tw
 
 ValueSet: TWPCSMedicationPathSCT
 Id: medication-path-sct-tw

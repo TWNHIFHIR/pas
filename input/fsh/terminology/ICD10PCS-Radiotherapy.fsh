@@ -1,4 +1,4 @@
-Alias: $icd-10-pcs-2014 = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2014-tw
+Alias: $icd-10-pcs-2014 = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2014-tw
 ValueSet: ICD10PCSRadiotherapy
 Id: icd-10-pcs-2014-radiotherapy
 Title: "健保事前審查-臺灣健保署2014年中文版ICD 10 PCS-放射治療項目值集"

@@ -51,11 +51,11 @@ Usage: #example
 * supportingInfo[treatmentAssessment].sequence = 15
 * supportingInfo[treatmentAssessment].valueReference.reference = "Observation/obs-tx-min"
 * diagnosis.sequence = 1
-* diagnosis.diagnosisCodeableConcept  = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-cm-2023-tw#I50.812
+* diagnosis.diagnosisCodeableConcept  = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2023-tw#I50.812
 * diagnosis.extension[recordedDate].valueDate = "2024-01-01"
 * diagnosis.type.text = "Adenocarcinoma, descending colon, cT3N2M1a, cStage IVA, KRAS G12V, with multiple liver metastases, status post FOLFIRI"
 * procedure.sequence = 1
-* procedure.procedureCodeableConcept = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw#3E0Y704
+* procedure.procedureCodeableConcept = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw#3E0Y704
 * procedure.date = "2024-01-01"
 * item[0].sequence = 1
 * item[=].productOrService = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-order-type#1 "藥品"
@@ -187,11 +187,11 @@ Usage: #example
     </blockquote>
     <h3>Diagnoses</h3>
     <p><b>診斷日期</b>：2024-01-01</p>
-    <p><b>國際疾病分類代碼</b>：慢性右心臟衰竭<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-cm-2023-tw\">臺灣健保署2023年中文版ICD-10-CM值集</a>#I50.812)</span></p>
+    <p><b>國際疾病分類代碼</b>：慢性右心臟衰竭<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2023-tw\">臺灣健保署2023年中文版ICD-10-CM值集</a>#I50.812)</span></p>
     <p><b>簡要病摘</b>：Adenocarcinoma, descending colon, cT3N2M1a, cStage IVA, KRAS G12V, with multiple liver metastases, status post FOLFIRI</p>
     <h3>Procedures</h3>
     <p><b>手術(或其他處置)日期</b>：2024-01-01</p>
-    <p><b>手術(或其他處置)項目</b>：經由自體開口或人工造口心包腔近接放射性同位素抗腫瘤液態藥劑輸入<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw\">臺灣健保署2023年中文版ICD-10-PCS值集</a>#3E0Y704)</span></p>
+    <p><b>手術(或其他處置)項目</b>：經由自體開口或人工造口心包腔近接放射性同位素抗腫瘤液態藥劑輸入<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw\">臺灣健保署2023年中文版ICD-10-PCS值集</a>#3E0Y704)</span></p>
     <h3>Insurances</h3>
     <p><b>sequence</b>：1</p>
     <p><b>coverage</b>：<a href=\"Coverage-cov-min.html\">Coverage/cov-min</a></p>
@@ -265,13 +265,13 @@ Usage: #example
 * supportingInfo[treatmentAssessment].sequence = 14
 * supportingInfo[treatmentAssessment].valueReference.reference = "Observation/obs-tx-min"
 * diagnosis[0].sequence = 1
-* diagnosis[=].diagnosisCodeableConcept  = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-cm-2023-tw#I50.812
+* diagnosis[=].diagnosisCodeableConcept  = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2023-tw#I50.812
 * diagnosis[=].extension[recordedDate].valueDate = "2024-01-01"
 * diagnosis[=].type.text = "Adenocarcinoma, descending colon, cT3N2M1a, cStage IVA, KRAS G12V, with multiple liver metastases, status post FOLFIRI"
 * diagnosis[+].sequence = 2
-* diagnosis[=].diagnosisCodeableConcept  = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-cm-2023-tw#E10.40
+* diagnosis[=].diagnosisCodeableConcept  = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2023-tw#E10.40
 * procedure.sequence = 1
-* procedure.procedureCodeableConcept = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw#3E0Y704
+* procedure.procedureCodeableConcept = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw#3E0Y704
 * procedure.date = "2024-01-01"
 * item.sequence = 1
 * item.productOrService = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-order-type#1 "藥品"
@@ -389,12 +389,12 @@ Usage: #example
     </blockquote>
     <h3>Diagnoses</h3>
     <p><b>診斷日期</b>：2024-01-01</p>
-    <p><b>國際疾病分類代碼</b>：慢性右心臟衰竭<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-cm-2023-tw\">臺灣健保署2023年中文版ICD-10-CM值集</a>#I50.812)</span></p>
-    <p><b>共病</b>：第一型糖尿病，伴有糖尿病的神經病變<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-cm-2023-tw\">臺灣健保署2023年中文版ICD-10-CM值集</a>#E10.40)</span></p>
+    <p><b>國際疾病分類代碼</b>：慢性右心臟衰竭<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2023-tw\">臺灣健保署2023年中文版ICD-10-CM值集</a>#I50.812)</span></p>
+    <p><b>共病</b>：第一型糖尿病，伴有糖尿病的神經病變<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2023-tw\">臺灣健保署2023年中文版ICD-10-CM值集</a>#E10.40)</span></p>
     <p><b>簡要病摘</b>：Adenocarcinoma, descending colon, cT3N2M1a, cStage IVA, KRAS G12V, with multiple liver metastases, status post FOLFIRI</p>
     <h3>Procedures</h3>
     <p><b>手術(或其他處置)日期</b>：2024-01-01</p>
-    <p><b>手術(或其他處置)項目</b>：經由自體開口或人工造口心包腔近接放射性同位素抗腫瘤液態藥劑輸入<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw\">臺灣健保署2023年中文版ICD-10-PCS值集</a>#3E0Y704)</span></p>
+    <p><b>手術(或其他處置)項目</b>：經由自體開口或人工造口心包腔近接放射性同位素抗腫瘤液態藥劑輸入<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw\">臺灣健保署2023年中文版ICD-10-PCS值集</a>#3E0Y704)</span></p>
     <h3>Insurances</h3>
     <p><b>sequence</b>：1</p>
     <p><b>coverage</b>：<a href=\"Coverage-cov-min.html\">Coverage/cov-min</a></p>

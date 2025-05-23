@@ -20,7 +20,7 @@ Description:    "此就醫科別-Encounter TWPAS Profile說明本IG如何進一�
 * status ^short = "就醫現況。【因FHIR設計而需必填】"
 * status = http://hl7.org/fhir/encounter-status#planned
 /*
-Alias: $medical-consultation-department-nhi-tw = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/medical-consultation-department-nhi-tw
+Alias: $medical-consultation-department-nhi-tw = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-consultation-department-nhi-tw
 
 
 
@@ -37,9 +37,9 @@ Usage: #definition
 * name = "TWHealthDepartmentNHI"
 * title = "臺灣健保署就醫科別代碼對應SNOMED CT"
 * description = "此對應表為臺灣健保署就醫科別代碼對應至國際標準碼SNOMED CT，供實作者於撰寫程式以自動化對應或轉代碼時使用。"
-* sourceUri = "https://fhir-ig.nhi.org.tw/twcore/ValueSet/medical-consultation-department-nhi-tw"
+* sourceUri = "https://twcore.mohw.gov.tw/ig/twcore/ValueSet/medical-consultation-department-nhi-tw"
 * targetUri = "https://fhir-ig.nhi.org.tw/pas/ValueSet/medical-consultation-department-sct-tw"
-* group[0].source = "https://fhir-ig.nhi.org.tw/twcore/CodeSystem/medical-consultation-department-nhi-tw"
+* group[0].source = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-consultation-department-nhi-tw"
 * group[=].target = "http://snomed.info/sct"
 * group.element[0].code = #01
 * group.element[=].display = "家醫科"

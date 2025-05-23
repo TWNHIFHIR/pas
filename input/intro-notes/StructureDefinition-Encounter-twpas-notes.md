@@ -9,4 +9,4 @@
 
     例子：  
       (1) GET [base]/Encounter?service-type=AJ  
-      (2) GET [base]/Encounter?service-type=https://fhir-ig.nhi.org.tw/twcore/CodeSystem/medical-consultation-department-nhi-tw|AJ
+      (2) GET [base]/Encounter?service-type=https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-consultation-department-nhi-tw|AJ

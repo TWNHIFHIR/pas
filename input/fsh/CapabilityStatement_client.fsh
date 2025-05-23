@@ -108,7 +108,7 @@ Usage: #definition
 * rest.resource[+].type = #Organization
 * rest.resource[=].supportedProfile[0] = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Organization-twpas"
 * rest.resource[=].supportedProfile[1] = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Organization-genetic-testing-twpas"
-* rest.resource[=].supportedProfile[2] = "https://fhir-ig.nhi.org.tw/twcore/StructureDefinition/Organization-govt-twcore"
+* rest.resource[=].supportedProfile[2] = "https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Organization-govt-twcore"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -448,7 +448,7 @@ Usage: #definition
                     <td>支援的Profiles<br />\u00a0\u00a0
                         <a href=\"StructureDefinition-Organization-twpas.html\">機構-Organization TWPAS</a><br />\u00a0\u00a0
                         <a href=\"StructureDefinition-Organization-genetic-testing-twpas.html\">基因檢測機構-Organization Genetic Testing TWPAS</a><br />\u00a0\u00a0
-                        <a href=\"https://fhir-ig.nhi.org.tw/twcore/0.3.2/StructureDefinition-Organization-govt-twcore.html\">TW Core Organization Government</a></td>
+                        <a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.3.2/StructureDefinition-Organization-govt-twcore.html\">TW Core Organization Government</a></td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
@@ -825,7 +825,7 @@ Usage: #definition
                     <div class=\"col-6\"><span class=\"lead\">支援的Profiles</span>
                         <p><a href=\"StructureDefinition-Organization-twpas.html\">機構-Organization TWPAS</a><br />
                             <a href=\"StructureDefinition-Organization-genetic-testing-twpas.html\">基因檢測機構-Organization Genetic Testing TWPAS</a><br />
-                            <a href=\"https://fhir-ig.nhi.org.tw/twcore/0.3.2/StructureDefinition-Organization-govt-twcore.html\">TW Core Organization Government</a>
+                            <a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.3.2/StructureDefinition-Organization-govt-twcore.html\">TW Core Organization Government</a>
                         </p>
                     </div>
                 </div>

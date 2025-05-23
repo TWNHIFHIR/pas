@@ -35,11 +35,11 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
     icd10-cm-2023 0..1 MS and
     icd10-cm-2014 0..1 MS
 * diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2023] from TW2023ICD10CM (extensible)
-* diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2023].system = "https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-cm-2023-tw"
+* diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2023].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2023-tw"
 * diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2023].system 1..1 MS
 * diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2023].code 1..1 MS
 * diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2014] from TW2014ICD10CM (extensible)
-* diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2014].system = "https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-cm-2014-tw"
+* diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2014].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2014-tw"
 * diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2014].system 1..1 MS
 * diagnosis.diagnosisCodeableConcept.coding[icd10-cm-2014].code 1..1 MS
 * diagnosis.extension contains 
@@ -263,13 +263,13 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
     medical-service-payment 0..1 MS
 * procedure.procedureCodeableConcept.coding[icd10-pcs-2023] from TW2023ICD10PCS
 * procedure.procedureCodeableConcept.coding[icd10-pcs-2023].code 1..1 MS
-* procedure.procedureCodeableConcept.coding[icd10-pcs-2023].system = "https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2023-tw"
+* procedure.procedureCodeableConcept.coding[icd10-pcs-2023].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw"
 * procedure.procedureCodeableConcept.coding[icd10-pcs-2014] from TW2014ICD10PCS
 * procedure.procedureCodeableConcept.coding[icd10-pcs-2014].code 1..1 MS
-* procedure.procedureCodeableConcept.coding[icd10-pcs-2014].system = "https://fhir-ig.nhi.org.tw/twcore/CodeSystem/icd-10-pcs-2014-tw"
+* procedure.procedureCodeableConcept.coding[icd10-pcs-2014].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2014-tw"
 * procedure.procedureCodeableConcept.coding[medical-service-payment] from TWMedicalServicePayment
 * procedure.procedureCodeableConcept.coding[medical-service-payment].code 1..1 MS
-* procedure.procedureCodeableConcept.coding[medical-service-payment].system = "https://fhir-ig.nhi.org.tw/twcore/CodeSystem/medical-service-payment-tw"
+* procedure.procedureCodeableConcept.coding[medical-service-payment].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"
 
 * supportingInfo[weight].valueQuantity.value obeys HTWT
 * supportingInfo[height].valueQuantity.value obeys HTWT

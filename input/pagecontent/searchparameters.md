@@ -47,7 +47,7 @@
 `GET [base]/ClaimResponse?request.func-type.service-type=[就醫科別]`  
 例子：  
       (1) GET [base]/ClaimResponse?request.func-type.service-type=AJ  
-      (2) GET [base]/ClaimResponse?request.func-type.service-type=https://fhir-ig.nhi.org.tw/twcore/CodeSystem/medical-consultation-department-nhi-tw|AJ
+      (2) GET [base]/ClaimResponse?request.func-type.service-type=https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-consultation-department-nhi-tw|AJ
 
 ##### 受理日期：[ClaimResponse.created](SearchParameter-ClaimResponse-created.html) & [ClaimResponse.disposition](SearchParameter-ClaimResponse-disposition.html) 
 `GET [base]/ClaimResponse?created={gt|lt|ge|le}[date]{&created={gt|lt|ge|le}[date]}&disposition=已受理`   

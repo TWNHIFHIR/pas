@@ -27,7 +27,7 @@ publisher:
 dependencies:
    tw.gov.mohw.twcore:
     id: TWCore
-    uri: https://fhir-ig.nhi.org.tw/twcore/ImplementationGuide/tw.gov.mohw.twcore
+    uri: https://twcore.mohw.gov.tw/ig/twcore/ImplementationGuide/tw.gov.mohw.twcore
     version: 0.3.2
 #   hl7.fhir.us.mcode:
 #    id: MinimalCommonOncologyDataElements

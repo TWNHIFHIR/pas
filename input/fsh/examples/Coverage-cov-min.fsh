@@ -25,19 +25,19 @@ Usage: #example
 * identifier.use = #official
 * identifier.system = "https://oid.nat.gov.tw/"
 * identifier.value = "A21030000I"
-* identifier.type = https://fhir-ig.nhi.org.tw/twcore/CodeSystem/v2-0203#GOI
+* identifier.type = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203#GOI
 * type =  http://terminology.hl7.org/CodeSystem/organization-type#govt
 * name = "衛生福利部中央健康保險署"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
   <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">
-    <p style=\"margin-bottom: 0px\">Profile: <a href=\"https://fhir-ig.nhi.org.tw/twcore/0.3.2/StructureDefinition-Organization-govt-twcore.html\">臺灣核心-政府機構（TW Core Organization Government）</a></p>
+    <p style=\"margin-bottom: 0px\">Profile: <a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.3.2/StructureDefinition-Organization-govt-twcore.html\">臺灣核心-政府機構（TW Core Organization Government）</a></p>
   </div>
   <p>
     <b>機構名稱</b>：衛生福利部中央健康保險署
   </p>
   <p>
-    <b>識別碼型別</b>：Government Organization Identifier<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">（ <a href=\"https://fhir-ig.nhi.org.tw/twcore/CodeSystem/v2-0203\">臺灣識別碼類型值集</a>#GOI） </span>  <br/>
+    <b>識別碼型別</b>：Government Organization Identifier<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">（ <a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203\">臺灣識別碼類型值集</a>#GOI） </span>  <br/>
     <b>機關代號（official）</b>：A21030000I (https://oid.nat.gov.tw/)
   </p>
   <p>
