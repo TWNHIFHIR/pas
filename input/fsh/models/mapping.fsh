@@ -2,11 +2,11 @@ Mapping: TWPASClaim
 Id: TWPASClaim
 Title: "Mapping to TWPAS Claim"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Claim-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Claim-twpas"
 * hosp -> "(院所資訊)"
 * hosp.hospId -> "provider.reference(OrganizationTWPAS) (醫事機構代碼)"
 * hosp.applType -> "subType.coding.code (申報類別)"
-* hosp.funcType -> "extension.where(url = 'https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/extension-claim-encounter').valueReference.reference(EncounterTWPAS) (就醫科別)"
+* hosp.funcType -> "extension.where(url = 'https://fhir-ig.nhi.org.tw/pas/StructureDefinition/extension-claim-encounter').valueReference.reference(EncounterTWPAS) (就醫科別)"
 * hosp.applPrsnId -> "enterer.reference(PractitionerTWPAS) (申請醫師身分證號)"
 * hosp.applDate -> "created (申請日期)"
 * hosp.tmhbType -> "priority.coding.code (申請案件類型)"
@@ -49,9 +49,9 @@ Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Claim-twpas"
 * treat.opDate -> "procedure.date (手術(或其他處置)日期)"
 * apply -> "(申請項目)"
 * apply.orderType -> "item.productOrService.coding.code (醫令類別)"
-* apply.continuation -> "item.modifier.where(coding.system = 'https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-continuation-status').coding.code (續用註記)"
-* apply.lot -> "item.modifier.where(coding.system = 'https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-line-of-therapy').coding.code (用藥線別)"
-* apply.cancerDrugType -> "item.extension.where(url = 'https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/extension-requestedService').valueReference.reference (事前審查品項代碼)"
+* apply.continuation -> "item.modifier.where(coding.system = 'https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-continuation-status').coding.code (續用註記)"
+* apply.lot -> "item.modifier.where(coding.system = 'https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-line-of-therapy').coding.code (用藥線別)"
+* apply.cancerDrugType -> "item.extension.where(url = 'https://fhir-ig.nhi.org.tw/pas/StructureDefinition/extension-requestedService').valueReference.reference (事前審查品項代碼)"
 * apply.applyReason -> "item.programCode (給付適應症條件)"
 * apply.applySide -> "item.bodySite (申請部位)"
 * apply.applQty -> "item.quantity.value (事前審查申請數量)"
@@ -61,7 +61,7 @@ Mapping: TWPASOrganization
 Id: TWPASOrganization
 Title: "Mapping to TWPAS Organization"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Organization-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Organization-twpas"
 * hosp -> "(院所資訊)"
 * hosp.hospId -> "identifier.value (醫事機構代碼)"
 * gene -> "(基因資訊)"
@@ -71,7 +71,7 @@ Mapping: TWPASEncounter
 Id: TWPASEncounter
 Title: "Mapping to TWPAS Encounter"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Encounter-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Encounter-twpas"
 * hosp -> "(院所資訊)"
 * hosp.funcType -> "serviceType.coding.code (就醫科別)"
 
@@ -79,7 +79,7 @@ Mapping: TWPASPatient
 Id: TWPASPatient
 Title: "Mapping to TWPAS Patient"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Patient-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Patient-twpas"
 * patient -> "(病人資訊)"
 * patient.name -> "name.text (姓名)"
 * patient.idCard -> "identifier.where(type.coding.code = 'NNxxx').value (身分證字號)"
@@ -91,7 +91,7 @@ Mapping: TWPASDiagnosticReportImage
 Id: TWPASDiagnosticReportImage
 Title: "Mapping to TWPAS DiagnosticReportImage"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/DiagnosticReport-image-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/DiagnosticReport-image-twpas"
 * diagnosis -> "(疾病資訊)"
 * diagnosis.imageStudy -> "(影像報告)"
 * diagnosis.imageStudy.imgInterpreter -> "performer.reference(PractitionerTWPAS) (簽發影像報告醫師身分證號)"
@@ -106,7 +106,7 @@ Mapping: TWPASImagingStudy
 Id: TWPASImagingStudy
 Title: "Mapping to TWPAS ImagingStudy"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/ImagingStudy-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/ImagingStudy-twpas"
 * diagnosis -> "(疾病資訊)"
 * diagnosis.imageStudy -> "(影像報告)"
 * diagnosis.imageStudy.imgBodySite -> "series.bodySite.code (影像檢查的身體部位)"
@@ -116,7 +116,7 @@ Mapping: TWPASMedia
 Id: TWPASMedia
 Title: "Mapping to TWPAS Media"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Media-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Media-twpas"
 * diagnosis -> "(疾病資訊)"
 * diagnosis.imageStudy -> "(影像報告)"
 * diagnosis.imageStudy.imgBodySite -> "bodySite.coding.code (影像檢查的身體部位)"
@@ -126,7 +126,7 @@ Mapping: TWPASObservationCancerStage
 Id: TWPASObservationCancerStage
 Title: "Mapping to TWPAS ObservationCancerStage"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Observation-cancer-stage-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Observation-cancer-stage-twpas"
 * diagnosis -> "(疾病資訊)"
 * diagnosis.cancerStage -> "(癌症分期量表)"
 * diagnosis.cancerStage.assessItem  -> "code.coding.code (癌症分期量表項目)"
@@ -138,7 +138,7 @@ Mapping: TWPASDiagnosticReport
 Id: TWPASDiagnosticReport
 Title: "Mapping to TWPAS DiagnosticReport"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/DiagnosticReport-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/DiagnosticReport-twpas"
 * diagnosis -> "(疾病資訊)"
 * diagnosis.examinationReport -> "(檢查報告)"
 * diagnosis.examinationReport.reportType -> "code.coding.code (報告類型)"
@@ -154,7 +154,7 @@ Mapping: TWPASObservationDiagnostic
 Id: TWPASObservationDiagnostic
 Title: "Mapping to TWPAS ObservationDiagnostic"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Observation-diagnostic-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Observation-diagnostic-twpas"
 * gene -> "(基因資訊)"
 * gene.genTestCode -> "component.code.coding.code (基因檢測代碼)"
 * gene.mutationType -> "component.where(code.coding.code = '48019-4').valueCodeableConcept.coding.code (基因突變類型)"
@@ -170,7 +170,7 @@ Mapping: TWPASObservationLaboratoryResult
 Id: TWPASObservationLaboratoryResult
 Title: "Mapping to TWPAS ObservationLaboratoryResult"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Observation-laboratory-result-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Observation-laboratory-result-twpas"
 * evaluate -> "(評估資訊)"
 * evaluate.tests -> "(檢驗(查))"
 * evaluate.tests.inspect -> "code.coding.code (檢驗(查)名稱或套組代碼)"
@@ -189,7 +189,7 @@ Mapping: TWPASObservationPatientAssessment
 Id: TWPASObservationPatientAssessment
 Title: "Mapping to TWPAS ObservationPatientAssessment"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Observation-pat-assessment-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Observation-pat-assessment-twpas"
 * evaluate -> "(評估資訊)"
 * evaluate.patientAssessment -> "(病人狀態評估)"
 * evaluate.patientAssessment.patAst -> "code.coding.code (病人狀態評估項目代碼)"
@@ -201,7 +201,7 @@ Mapping: TWPASMedicationRequestTreat
 Id: TWPASMedicationRequestTreat
 Title: "Mapping to TWPAS MedicationRequestTreatTWPAS"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/MedicationRequest-treat-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/MedicationRequest-treat-twpas"
 * treat -> "(治療資訊)"
 * treat.medicationRequest -> "(用藥品項)"
 * treat.medicationRequest.drugStatus -> "status (藥物使用狀態)"
@@ -219,7 +219,7 @@ Mapping: TWPASProcedure
 Id: TWPASProcedure
 Title: "Mapping to TWPAS Procedure"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Procedure-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Procedure-twpas"
 * treat -> "(治療資訊)"
 * treat.radiotherapy -> "(放射治療)"
 * treat.radiotherapy.rtStatus -> "status (放射治療狀態)"
@@ -231,7 +231,7 @@ Mapping: TWPASSubstance
 Id: TWPASSubstance
 Title: "Mapping to TWPAS Substance"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Substance-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Substance-twpas"
 * treat -> "(治療資訊)"
 * treat.radiotherapy -> "(放射治療)"
 * treat.radiotherapy.rtDose -> "ingredient.quantity.numerator.value (放射治療總劑量)"
@@ -241,7 +241,7 @@ Mapping: TWPASDocumentReference
 Id: TWPASDocumentReference
 Title: "Mapping to TWPAS DocumentReference"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/DocumentReference-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/DocumentReference-twpas"
 * gene -> "(基因資訊)"
 * gene.genPdf -> "content.attachment.url (基因報告（檔案路徑）)"
 * treat -> "(治療資訊)"
@@ -260,7 +260,7 @@ Mapping: TWPASObservationTreatmentAssessment
 Id: TWPASObservationTreatmentAssessment
 Title: "Mapping to TWPAS ObservationTreatmentAssessment"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Observation-tx-assessment-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Observation-tx-assessment-twpas"
 * result -> "(結果資訊)"
 * result.txAst -> "code.coding.code (治療後疾病狀態評估項目)"
 * result.txAstResult -> "valueString (治療後疾病狀態評估結果)"
@@ -270,7 +270,7 @@ Mapping: TWPASMedicationRequestApply
 Id: TWPASMedicationRequestApply
 Title: "Mapping to TWPAS MedicationRequestApply"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/MedicationRequest-apply-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/MedicationRequest-apply-twpas"
 * apply -> "(申請項目)"
 * apply.cancerDrugType -> "medicationCodeableConcept.coding.code (事前審查品項代碼)"
 * apply.applDrugFre -> "dosageInstruction.timing.code.coding.code (事前審查藥品使用頻率及服用時間)"
@@ -285,7 +285,7 @@ Mapping: TWPASClaimResponseSelfAssessment
 Id: TWPASClaimResponseSelfAssessment
 Title: "Mapping to TWPAS ClaimResponse Self Assessment"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/ClaimResponse-self-assessment-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/ClaimResponse-self-assessment-twpas"
 * apply -> "(申請項目)"
 * apply.approveDate -> "created (核定日期)"
 * apply.approveNum -> "item.adjudication.value (核定數量)"
@@ -296,7 +296,7 @@ Mapping: TWPASPractitioner
 Id: TWPASPractitioner
 Title: "Mapping to TWPAS Practitioner"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Practitioner-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Practitioner-twpas"
 * hosp -> "(院所資訊)"
 * hosp.applPrsnId -> "identifier.value (申請醫師身分證號)"
 * diagnosis -> "(疾病資訊)"

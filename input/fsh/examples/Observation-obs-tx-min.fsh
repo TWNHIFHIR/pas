@@ -4,7 +4,7 @@ Title: "治療後疾病狀態評估"
 Description: "依據治療後疾病狀態評估-Observation Treatment Assessment TWPAS Profile呈現治療後疾病狀態評估之範例"
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* code.coding = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-tx-ast#IWGC "International Working Group(IWG) Consensus Criteria"
+* code.coding = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-tx-ast#IWGC "International Working Group(IWG) Consensus Criteria"
 * effectiveDateTime = "2024-05-07"
 * performer.reference = "Practitioner/pra-min"
 * subject.reference = "Patient/pat-min"
@@ -27,7 +27,7 @@ Title: "治療後疾病狀態評估-IREC"
 Description: "依據治療後疾病狀態評估-Observation Treatment Assessment TWPAS Profile呈現治療後疾病狀態評估之範例"
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* code.coding = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-tx-ast#IREC
+* code.coding = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-tx-ast#IREC
 * effectiveDateTime = "2024-05-07"
 * performer.reference = "Practitioner/pra-min"
 * subject.reference = "Patient/pat-min"
@@ -39,7 +39,7 @@ Title: "治療後疾病狀態評估-ICLL"
 Description: "依據治療後疾病狀態評估-Observation Treatment Assessment TWPAS Profile呈現治療後疾病狀態評估之範例"
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* code.coding = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-tx-ast#ICLL
+* code.coding = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-tx-ast#ICLL
 * effectiveDateTime = "2024-05-07"
 * performer.reference = "Practitioner/pra-min"
 * subject.reference = "Patient/pat-min"
@@ -51,7 +51,7 @@ Title: "治療後疾病狀態評估-MREC"
 Description: "依據治療後疾病狀態評估-Observation Treatment Assessment TWPAS Profile呈現治療後疾病狀態評估之範例"
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* code.coding = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-tx-ast#MREC
+* code.coding = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-tx-ast#MREC
 * effectiveDateTime = "2024-05-07"
 * performer.reference = "Practitioner/pra-min"
 * subject.reference = "Patient/pat-min"
@@ -63,7 +63,7 @@ Title: "治療後疾病狀態評估-REC1"
 Description: "依據治療後疾病狀態評估-Observation Treatment Assessment TWPAS Profile呈現治療後疾病狀態評估之範例"
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* code.coding = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-tx-ast#REC1
+* code.coding = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-tx-ast#REC1
 * effectiveDateTime = "2024-05-07"
 * performer.reference = "Practitioner/pra-min"
 * subject.reference = "Patient/pat-min"
@@ -75,7 +75,7 @@ Title: "治療後疾病狀態評估-IWGC"
 Description: "依據治療後疾病狀態評估-Observation Treatment Assessment TWPAS Profile呈現治療後疾病狀態評估之範例"
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* code.coding = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-tx-ast#IWGC
+* code.coding = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-tx-ast#IWGC
 * effectiveDateTime = "2024-05-07"
 * performer.reference = "Practitioner/pra-min"
 * subject.reference = "Patient/pat-min"

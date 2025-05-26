@@ -14,7 +14,7 @@ Mapping: TWPASClaimResponse
 Id: TWPASClaimResponse
 Title: "Mapping to TWPAS ClaimResponse"
 Source: ResponseModel
-Target: "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/ClaimResponse-twpas"
+Target: "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/ClaimResponse-twpas"
 * approveDate -> "created (核定日期)"
 * acptNo -> "disposition (案件受理狀態)"
 * approveClaimComment -> "item.adjudication.reason (受理審查案件核定註記)"

@@ -1,7 +1,7 @@
 Instance: CapabilityStatementTWPASClient
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/pas/CapabilityStatement/CapabilityStatementTWPASClient"
+* url = "https://fhir-ig.nhi.org.tw/pas/CapabilityStatement/CapabilityStatementTWPASClient"
 * version = "1.0.4"
 * name = "CapabilityStatementTWPASClient"
 * title = "臺灣癌藥事前審查-用戶端(TWPAS Client)"
@@ -14,15 +14,15 @@ Usage: #definition
 * format[0] = #application/fhir+json
 * format[+] = #application/fhir+xml
 * patchFormat = #application/json-patch+json
-* implementationGuide = "https://twcore.mohw.gov.tw/ig/pas/ImplementationGuide/tw.gov.mohw.nhi.pas"
+* implementationGuide = "https://fhir-ig.nhi.org.tw/pas/ImplementationGuide/tw.gov.mohw.nhi.pas"
 * description = "臺灣健保癌症用藥事前審查實作指引(TWPAS IG)用戶端(Client)之能力聲明"
 * rest.mode = #client
 * rest.documentation = "臺灣癌藥事前審查-用戶端(TWPAS Client)必須（SHALL）使用臺灣癌藥事前審查伺服端（TWPAS Server）能力聲明中的查詢參數，支援讀取和查詢一個或多個臺灣癌藥事前審查Profile(s)。"
 * rest.security.description = "有關要求和建議，請參閱[安全性](security.html)。"
 
 * rest.resource[+].type = #Bundle
-* rest.resource[=].supportedProfile[0] = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Bundle-twpas"
-* rest.resource[=].supportedProfile[1] = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Bundle-response-twpas"
+* rest.resource[=].supportedProfile[0] = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Bundle-twpas"
+* rest.resource[=].supportedProfile[1] = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Bundle-response-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -38,7 +38,7 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #Claim
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Claim-twpas"
+* rest.resource[=].profile = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Claim-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -53,24 +53,24 @@ Usage: #definition
 * rest.resource[=].interaction[=].code = #delete
 * rest.resource[=].referencePolicy = #resolves
 * rest.resource[=].searchParam[0].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Claim-identifier"
+* rest.resource[=].searchParam[=].definition = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Claim-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 * rest.resource[=].searchParam[+].name = "patient"
-* rest.resource[=].searchParam[=].definition = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Claim-patient"
+* rest.resource[=].searchParam[=].definition = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Claim-patient"
 * rest.resource[=].searchParam[=].type = #reference
 * rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 * rest.resource[=].searchParam[+].name = "func-type"
-* rest.resource[=].searchParam[=].definition = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Claim-func-type"
+* rest.resource[=].searchParam[=].definition = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Claim-func-type"
 * rest.resource[=].searchParam[=].type = #reference
 * rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 
 * rest.resource[+].type = #ClaimResponse
-* rest.resource[=].supportedProfile[0] = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/ClaimResponse-self-assessment-twpas"
-* rest.resource[=].supportedProfile[1] = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/ClaimResponse-twpas"
+* rest.resource[=].supportedProfile[0] = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/ClaimResponse-self-assessment-twpas"
+* rest.resource[=].supportedProfile[1] = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/ClaimResponse-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -85,29 +85,29 @@ Usage: #definition
 * rest.resource[=].interaction[=].code = #delete
 * rest.resource[=].referencePolicy = #resolves
 * rest.resource[=].searchParam[0].name = "request"
-* rest.resource[=].searchParam[=].definition = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/ClaimResponse-request"
+* rest.resource[=].searchParam[=].definition = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/ClaimResponse-request"
 * rest.resource[=].searchParam[=].type = #reference
 * rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 * rest.resource[=].searchParam[+].name = "created"
-* rest.resource[=].searchParam[=].definition = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/ClaimResponse-created"
+* rest.resource[=].searchParam[=].definition = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/ClaimResponse-created"
 * rest.resource[=].searchParam[=].type = #date
 * rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 * rest.resource[=].searchParam[+].name = "disposition"
-* rest.resource[=].searchParam[=].definition = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/ClaimResponse-disposition"
+* rest.resource[=].searchParam[=].definition = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/ClaimResponse-disposition"
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 * rest.resource[=].searchParam[+].name = "adjudication-reason"
-* rest.resource[=].searchParam[=].definition = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/ClaimResponse-adjudication-reason"
+* rest.resource[=].searchParam[=].definition = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/ClaimResponse-adjudication-reason"
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 
 * rest.resource[+].type = #Organization
-* rest.resource[=].supportedProfile[0] = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Organization-twpas"
-* rest.resource[=].supportedProfile[1] = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Organization-genetic-testing-twpas"
+* rest.resource[=].supportedProfile[0] = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Organization-twpas"
+* rest.resource[=].supportedProfile[1] = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Organization-genetic-testing-twpas"
 * rest.resource[=].supportedProfile[2] = "https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Organization-govt-twcore"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
@@ -124,7 +124,7 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #Encounter
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Encounter-twpas"
+* rest.resource[=].profile = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Encounter-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -139,13 +139,13 @@ Usage: #definition
 * rest.resource[=].interaction[=].code = #delete
 * rest.resource[=].referencePolicy = #resolves
 * rest.resource[=].searchParam[0].name = "service-type"
-* rest.resource[=].searchParam[=].definition = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Encounter-service-type"
+* rest.resource[=].searchParam[=].definition = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Encounter-service-type"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 
 * rest.resource[+].type = #Patient
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Patient-twpas"
+* rest.resource[=].profile = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Patient-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -160,18 +160,18 @@ Usage: #definition
 * rest.resource[=].interaction[=].code = #delete
 * rest.resource[=].referencePolicy = #resolves
 * rest.resource[=].searchParam[0].name = "name"
-* rest.resource[=].searchParam[=].definition = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Patient-name"
+* rest.resource[=].searchParam[=].definition = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Patient-name"
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "https://twcore.mohw.gov.tw/ig/pas/SearchParameter/Patient-identifier"
+* rest.resource[=].searchParam[=].definition = "https://fhir-ig.nhi.org.tw/pas/SearchParameter/Patient-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 
 * rest.resource[+].type = #Practitioner
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Practitioner-twpas"
+* rest.resource[=].profile = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Practitioner-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -187,7 +187,7 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #ImagingStudy
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/ImagingStudy-twpas"
+* rest.resource[=].profile = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/ImagingStudy-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -203,7 +203,7 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #Media
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Media-twpas"
+* rest.resource[=].profile = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Media-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -219,8 +219,8 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #DiagnosticReport
-* rest.resource[=].supportedProfile[0] = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/DiagnosticReport-image-twpas"
-* rest.resource[=].supportedProfile[1] = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/DiagnosticReport-twpas"
+* rest.resource[=].supportedProfile[0] = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/DiagnosticReport-image-twpas"
+* rest.resource[=].supportedProfile[1] = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/DiagnosticReport-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -236,11 +236,11 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #Observation
-* rest.resource[=].supportedProfile[0] = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Observation-cancer-stage-twpas"
-* rest.resource[=].supportedProfile[1] = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Observation-diagnostic-twpas"
-* rest.resource[=].supportedProfile[2] = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Observation-laboratory-result-twpas"
-* rest.resource[=].supportedProfile[3] = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Observation-pat-assessment-twpas"
-* rest.resource[=].supportedProfile[4] = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Observation-tx-assessment-twpas"
+* rest.resource[=].supportedProfile[0] = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Observation-cancer-stage-twpas"
+* rest.resource[=].supportedProfile[1] = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Observation-diagnostic-twpas"
+* rest.resource[=].supportedProfile[2] = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Observation-laboratory-result-twpas"
+* rest.resource[=].supportedProfile[3] = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Observation-pat-assessment-twpas"
+* rest.resource[=].supportedProfile[4] = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Observation-tx-assessment-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -256,8 +256,8 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #MedicationRequest
-* rest.resource[=].supportedProfile[0] = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/MedicationRequest-treat-twpas"
-* rest.resource[=].supportedProfile[1] = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/MedicationRequest-apply-twpas"
+* rest.resource[=].supportedProfile[0] = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/MedicationRequest-treat-twpas"
+* rest.resource[=].supportedProfile[1] = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/MedicationRequest-apply-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -273,7 +273,7 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #Procedure
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Procedure-twpas"
+* rest.resource[=].profile = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Procedure-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -289,7 +289,7 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #Substance
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Substance-twpas"
+* rest.resource[=].profile = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Substance-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -305,7 +305,7 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #Specimen
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Specimen-twpas"
+* rest.resource[=].profile = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Specimen-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -321,7 +321,7 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #DocumentReference
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/DocumentReference-twpas"
+* rest.resource[=].profile = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/DocumentReference-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -337,7 +337,7 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #Coverage
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Coverage-twpas"
+* rest.resource[=].profile = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/Coverage-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -353,7 +353,7 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #OperationOutcome
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/OperationOutcome-twpas"
+* rest.resource[=].profile = "https://fhir-ig.nhi.org.tw/pas/StructureDefinition/OperationOutcome-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create

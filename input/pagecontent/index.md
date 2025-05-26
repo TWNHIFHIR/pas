@@ -1,13 +1,14 @@
 <div class="bg-danger" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.0.3版內容，因而會比衛生福利部的IG版本V1.0.3(https://twcore.mohw.gov.tw/ig/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為114年5月30日，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
+<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.0.3版內容，因而會比衛生福利部的IG版本V1.0.3(https://twcore.mohw.gov.tw/ig/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為114年6月2日，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
 <br/>
 <b>醫院實作時請以V1.0.3為主進行實例驗證，目前健保署端的伺服器採用V1.0.3版規格。</b></p>
 </div>
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/5/9異動以下內容：
+因考量實作需求，於2025/5/23異動以下內容：
     <ol>  
+        <li>修改IG的canonical為<code>https://fhir-ig.nhi.org.tw/pas</code>。</li>
         <li>修改<a href="StructureDefinition-MedicationRequest-treat-twpas.html">ValueSet: SNOMEDCT-健保事前審查-身體部位值集</a>：
             <ol>
                <li>新增代碼<code>243928005</code>以代表影像檢查身體部位的「全身」。</li>
@@ -99,7 +100,7 @@
 	<li><strong><a href="downloads.html">結構定義與範例檔下載</a></strong>：實作者若不偏好使用FHIR RESTful API驗證資料是否符合Profiles，可直接下載所需的格式驗證檔，包括XML、JSON及Turtle三種格式，亦可於此下載完整範例檔。</li>
 	<li><strong><a href="security.html">安全性</a></strong>：主要說明採用TWPAS IG網站進行實作時，有關資料存取授權的作法。</li>
 	<li><strong><a href="validate.html">驗證教學</a></strong>：如何驗證實作檔是否遵從TWPAS IG規範。</li>
-	<li><strong><a href="https://twcore.mohw.gov.tw/ig/pas/history.html">版本異動說明頁</a></strong>：若TWPAS IG網站的版本有所異動，皆可透過<a href="https://twcore.mohw.gov.tw/ig/pas/history.html">異動說明頁</a>得以瞭解版本間的異動差異。</li>
+	<li><strong><a href="https://fhir-ig.nhi.org.tw/pas/history.html">版本異動說明頁</a></strong>：若TWPAS IG網站的版本有所異動，皆可透過<a href="https://fhir-ig.nhi.org.tw/pas/history.html">異動說明頁</a>得以瞭解版本間的異動差異。</li>
 </ul>
 </div>
 

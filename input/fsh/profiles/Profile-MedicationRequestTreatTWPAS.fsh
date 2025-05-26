@@ -7,10 +7,10 @@ Description:    "此用藥品項-MedicationRequest Treat TWPAS Profile說明本I
 * category from NHIDrugCategory
 * category 0..1
 * medication[x] only CodeableConceptTW
-* medication[x] from https://twcore.mohw.gov.tw/ig/pas/ValueSet/nhi-medication (example)
+* medication[x] from https://fhir-ig.nhi.org.tw/pas/ValueSet/nhi-medication (example)
 * medicationReference 0..0
 * medicationCodeableConcept 1.. MS
-* medicationCodeableConcept from https://twcore.mohw.gov.tw/ig/pas/ValueSet/nhi-medication (example)
+* medicationCodeableConcept from https://fhir-ig.nhi.org.tw/pas/ValueSet/nhi-medication (example)
 * medicationCodeableConcept.coding 1..1
 * medicationCodeableConcept.coding contains nhi-medication 0..1 MS
 * medicationCodeableConcept.coding[rxnorm-medication-us-core] 0..0
@@ -18,14 +18,14 @@ Description:    "此用藥品項-MedicationRequest Treat TWPAS Profile說明本I
 * medicationCodeableConcept.coding[snomedct-medication-codes] 0..0
 * medicationCodeableConcept.coding[nhi-medication-tw] 0..0
 * medicationCodeableConcept.coding[nhi-medication-ch-herb-tw] 0..0
-* medicationCodeableConcept.coding[nhi-medication] from https://twcore.mohw.gov.tw/ig/pas/ValueSet/nhi-medication
+* medicationCodeableConcept.coding[nhi-medication] from https://fhir-ig.nhi.org.tw/pas/ValueSet/nhi-medication
 * subject only Reference(PatientTWPAS)
 * dosageInstruction 1..*
 * dosageInstruction.timing 1..1
 * dosageInstruction.timing.code 1..
-* dosageInstruction.timing.code from https://twcore.mohw.gov.tw/ig/pas/ValueSet/medication-frequency-hl7-nhi (extensible)
+* dosageInstruction.timing.code from https://fhir-ig.nhi.org.tw/pas/ValueSet/medication-frequency-hl7-nhi (extensible)
 * dosageInstruction.timing.code.coding MS
-* dosageInstruction.timing.code.coding from https://twcore.mohw.gov.tw/ig/pas/ValueSet/medication-frequency-hl7-nhi
+* dosageInstruction.timing.code.coding from https://fhir-ig.nhi.org.tw/pas/ValueSet/medication-frequency-hl7-nhi
 * dosageInstruction.timing.repeat 1..1
 * dosageInstruction.timing.repeat.bounds[x] only Period
 

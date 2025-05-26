@@ -40,7 +40,7 @@ Usage: #example
             <tr>
                 <td style=\"display: none\">*</td>
                 <td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/adjudication submitted}\">Submitted Amount</span></td>
-                <td><span title=\"Codes:{https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-approve-comment 1}\">同意備查</span></td>
+                <td><span title=\"Codes:{https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-approve-comment 1}\">同意備查</span></td>
                 <td>5</td>
             </tr>
         </table>

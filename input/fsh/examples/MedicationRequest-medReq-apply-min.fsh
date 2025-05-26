@@ -5,13 +5,13 @@ Description: "依據事前審查品項-MedicationRequest Apply TWPAS Profile呈�
 Usage: #example
 * status = http://hl7.org/fhir/CodeSystem/medicationrequest-status#on-hold
 * intent = #plan
-* medicationCodeableConcept = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-medication#BC27730100
+* medicationCodeableConcept = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-medication#BC27730100
 * subject.reference = "Patient/pat-min"
 * dosageInstruction[0].timing.repeat.boundsPeriod.start = "2024-01-01"
 * dosageInstruction[=].timing.repeat.boundsPeriod.end = "2024-02-11"
 * dosageInstruction[=].timing.repeat.count = 42
 * dosageInstruction[=].timing.code[0].coding[0] = http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation#QD
-* dosageInstruction[=].timing.code[=].coding[+] = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/medication-frequency-nhi-tw#AC1H
+* dosageInstruction[=].timing.code[=].coding[+] = https://fhir-ig.nhi.org.tw/pas/CodeSystem/medication-frequency-nhi-tw#AC1H
 * dosageInstruction[=].doseAndRate.doseQuantity.value = 75
 * dosageInstruction[=].doseAndRate.doseQuantity.code = #mg/m2
 * dosageInstruction[=].doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
@@ -20,18 +20,18 @@ Usage: #example
 * dosageInstruction[1].timing.repeat.boundsPeriod.start = "2024-02-12"
 * dosageInstruction[=].timing.repeat.boundsPeriod.end = "2024-03-10"
 * dosageInstruction[=].timing.repeat.count = 1
-* dosageInstruction[=].timing.code[0].coding[0] = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD1
-* dosageInstruction[=].timing.code[=].coding[+] = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD2
-* dosageInstruction[=].timing.code[=].coding[+] = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD3
-* dosageInstruction[=].timing.code[=].coding[+] = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD4
-* dosageInstruction[=].timing.code[=].coding[+] = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD5
-* dosageInstruction[=].timing.code[=].coding[+] = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/medication-frequency-nhi-tw#AC1H
+* dosageInstruction[=].timing.code[0].coding[0] = https://fhir-ig.nhi.org.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD1
+* dosageInstruction[=].timing.code[=].coding[+] = https://fhir-ig.nhi.org.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD2
+* dosageInstruction[=].timing.code[=].coding[+] = https://fhir-ig.nhi.org.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD3
+* dosageInstruction[=].timing.code[=].coding[+] = https://fhir-ig.nhi.org.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD4
+* dosageInstruction[=].timing.code[=].coding[+] = https://fhir-ig.nhi.org.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD5
+* dosageInstruction[=].timing.code[=].coding[+] = https://fhir-ig.nhi.org.tw/pas/CodeSystem/medication-frequency-nhi-tw#AC1H
 * dosageInstruction[=].doseAndRate.doseQuantity.value = 150
 * dosageInstruction[=].doseAndRate.doseQuantity.code = #mg/m2
 * dosageInstruction[=].doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 * dosageInstruction[=].route = http://snomed.info/sct#26643006
 
-//* category[orderType] = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-order-type#4 "癌症用藥"
+//* category[orderType] = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-order-type#4 "癌症用藥"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">
@@ -66,24 +66,24 @@ Description: "依據事前審查品項-MedicationRequest Apply TWPAS Profile呈�
 Usage: #example
 * status = http://hl7.org/fhir/CodeSystem/medicationrequest-status#on-hold
 * intent = #plan
-* medicationCodeableConcept = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-medication#KC011162B5
+* medicationCodeableConcept = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-medication#KC011162B5
 * subject.reference = "Patient/pat-min"
 * dosageInstruction.timing.repeat.boundsPeriod.start = "2024-03-11"
 * dosageInstruction.timing.repeat.boundsPeriod.end = "2024-07-28"
 * dosageInstruction.timing.repeat.count = 1
-* dosageInstruction.timing.code[0].coding[0] = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD1
-* dosageInstruction.timing.code[=].coding[+] = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD2
-* dosageInstruction.timing.code[=].coding[+] = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD3
-* dosageInstruction.timing.code[=].coding[+] = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD4
-* dosageInstruction.timing.code[=].coding[+] = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD5
-* dosageInstruction.timing.code[=].coding[+] = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/medication-frequency-nhi-tw#AC1H
+* dosageInstruction.timing.code[0].coding[0] = https://fhir-ig.nhi.org.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD1
+* dosageInstruction.timing.code[=].coding[+] = https://fhir-ig.nhi.org.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD2
+* dosageInstruction.timing.code[=].coding[+] = https://fhir-ig.nhi.org.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD3
+* dosageInstruction.timing.code[=].coding[+] = https://fhir-ig.nhi.org.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD4
+* dosageInstruction.timing.code[=].coding[+] = https://fhir-ig.nhi.org.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD5
+* dosageInstruction.timing.code[=].coding[+] = https://fhir-ig.nhi.org.tw/pas/CodeSystem/medication-frequency-nhi-tw#AC1H
 * dosageInstruction.route = http://snomed.info/sct#26643006
 * dosageInstruction.doseAndRate.doseQuantity.value = 200
 * dosageInstruction.doseAndRate.doseQuantity.code = #mg/m2
 * dosageInstruction.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 
 * dispenseRequest.quantity.system = "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"
-//* category[orderType] = https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-order-type#4 "癌症用藥"
+//* category[orderType] = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-order-type#4 "癌症用藥"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">

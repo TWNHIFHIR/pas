@@ -8,6 +8,6 @@ Usage: #example
 * total = 1
 * link.relation = "self"
 * link.url = "https://twcore.mohw.gov.tw/fhir/ClaimResponse?request.patient.identifier=A123456789"
-* entry.fullUrl = "https://twcore.mohw.gov.tw/ig/pas/ClaimResponse/claim-response-example"
+* entry.fullUrl = "https://fhir-ig.nhi.org.tw/pas/ClaimResponse/claim-response-example"
 * entry.resource = claim-response-example
 * entry.search.mode = #match
