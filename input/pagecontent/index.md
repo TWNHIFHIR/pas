@@ -16,6 +16,7 @@
         </li>
         <li>修改<a href="StructureDefinition-Observation-laboratory-result-twpas.html">Profile: 檢驗檢查-Observation Laboratory Result TWPAS</a>：將<code>category.coding.code</code>之固定值改為<code>tests</code>。</li>
         <li>將所有profile中有使用slice設計的欄位，設為不允許使用未定義的slice（<code>slicing.rule = closed</code>）。</li>
+        <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
 	</ol>
     請留意這些異動，以避免影響您的實作。
 </div>
