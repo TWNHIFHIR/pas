@@ -5,7 +5,7 @@ Description: "依據基因資訊-Observation Diagnostic TWPAS Profile呈現基�
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code.coding = http://loinc.org#69548-6
-* category = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-supporting-info-type#geneInfo
+* category = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type#geneInfo
 * effectiveDateTime = "2024-05-07"
 * performer.reference = "Organization/org-gene-example"
 * subject.reference = "Patient/pat-min"

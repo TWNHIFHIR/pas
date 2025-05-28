@@ -6,8 +6,8 @@ Usage: #example
 * status = http://hl7.org/fhir/CodeSystem/medicationrequest-status#completed
 * statusReason = http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason#altchoice
 * intent = #order
-* category = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-drug-category#nhi
-* medicationCodeableConcept = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-medication#A000755151
+* category = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-drug-category#nhi
+* medicationCodeableConcept = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-medication#A000755151
 * subject.reference = "Patient/pat-min"
 * dosageInstruction.timing.code.text = "1W3D"
 * dosageInstruction.doseAndRate.doseQuantity.value = 4
