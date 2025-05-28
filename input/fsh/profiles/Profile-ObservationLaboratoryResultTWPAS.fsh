@@ -37,7 +37,7 @@ Description:    "此檢驗檢查-Observation Laboratory Result TWPAS Profile說�
 * derivedFrom MS
 * derivedFrom only Reference(DocumentReferenceTWPAS)
 * category 1..1
-* category = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-supporting-info-type#tests
+* category = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type#tests
 * category ^short = "因FHIR設計而需必填"
 
 * effectiveDateTime 1..1

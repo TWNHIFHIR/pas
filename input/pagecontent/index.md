@@ -8,7 +8,7 @@
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
 因考量實作需求，於2025/5/27異動以下內容：
     <ol>  
-        <li>修改IG的canonical為<code>https://fhir-ig.nhi.org.tw/pas</code>。</li>
+        <li>修改IG的canonical為<code>https://nhicore.nhi.gov.tw/pas</code>。</li>
         <li>修改<a href="StructureDefinition-MedicationRequest-treat-twpas.html">ValueSet: SNOMEDCT-健保事前審查-身體部位值集</a>：
             <ol>
                <li>新增代碼<code>243928005</code>以代表影像檢查身體部位的「全身」。</li>
@@ -101,7 +101,7 @@
 	<li><strong><a href="downloads.html">結構定義與範例檔下載</a></strong>：實作者若不偏好使用FHIR RESTful API驗證資料是否符合Profiles，可直接下載所需的格式驗證檔，包括XML、JSON及Turtle三種格式，亦可於此下載完整範例檔。</li>
 	<li><strong><a href="security.html">安全性</a></strong>：主要說明採用TWPAS IG網站進行實作時，有關資料存取授權的作法。</li>
 	<li><strong><a href="validate.html">驗證教學</a></strong>：如何驗證實作檔是否遵從TWPAS IG規範。</li>
-	<li><strong><a href="https://fhir-ig.nhi.org.tw/pas/history.html">版本異動說明頁</a></strong>：若TWPAS IG網站的版本有所異動，皆可透過<a href="https://fhir-ig.nhi.org.tw/pas/history.html">異動說明頁</a>得以瞭解版本間的異動差異。</li>
+	<li><strong><a href="https://nhicore.nhi.gov.tw/pas/history.html">版本異動說明頁</a></strong>：若TWPAS IG網站的版本有所異動，皆可透過<a href="https://nhicore.nhi.gov.tw/pas/history.html">異動說明頁</a>得以瞭解版本間的異動差異。</li>
 </ul>
 </div>
 

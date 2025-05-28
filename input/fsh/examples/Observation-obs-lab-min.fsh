@@ -14,7 +14,7 @@ Usage: #example
 * interpretation.text = "高"
 * referenceRange.low = 2.9 'mmol/L' "mmol/l"
 * referenceRange.high = 4.9 'mmol/L' "mmol/l"
-* category = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-supporting-info-type#tests
+* category = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type#tests
 * derivedFrom.reference = "DocumentReference/doc-test-min"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
@@ -40,7 +40,7 @@ Title: "檢驗檢查-套組(全套血液檢查)"
 Description: "依據檢驗檢查-Observation Laboratory Result TWPAS Profile呈現套組檢驗檢查之範例"
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* category = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nhi-supporting-info-type#tests
+* category = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type#tests
 * code.coding = http://loinc.org#58410-2
 * component[0].code.coding = http://loinc.org#6690-2
 * component[=].valueQuantity.value = 3.6

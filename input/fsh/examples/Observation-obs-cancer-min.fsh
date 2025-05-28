@@ -8,7 +8,7 @@ Usage: #example
 * effectiveDateTime = "2024-05-07"
 * performer.reference = "Practitioner/pra-min"
 * subject.reference = "Patient/pat-min"
-* valueCodeableConcept.coding = https://fhir-ig.nhi.org.tw/pas/CodeSystem/nci-thesaurus#C96244
+* valueCodeableConcept.coding = https://nhicore.nhi.gov.tw/pas/CodeSystem/nci-thesaurus#C96244
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">

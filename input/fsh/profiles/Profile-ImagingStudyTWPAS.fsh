@@ -24,8 +24,8 @@ Description:    "此DICOM影像-ImagingStudy TWPAS Profile說明本IG如何進�
 * identifier[study-uid].value ^example[+].label = "General"
 * identifier[study-uid].value ^example[=].valueString = "urn:oid:2.16.886.2102.54.4546465747.0.46546546"
 
-* modality from https://fhir-ig.nhi.org.tw/pas/ValueSet/dicom-cid-29-AcquisitionModality (extensible)
-* series.modality from https://fhir-ig.nhi.org.tw/pas/ValueSet/dicom-cid-29-AcquisitionModality (extensible)
+* modality from https://nhicore.nhi.gov.tw/pas/ValueSet/dicom-cid-29-AcquisitionModality (extensible)
+* series.modality from https://nhicore.nhi.gov.tw/pas/ValueSet/dicom-cid-29-AcquisitionModality (extensible)
 
 Invariant:   StudyUID
 Description: "以`urn:oid:`開頭，後接一串由數字`0`-`9`及`.`組成的字串。第一個數字須為個位數，每個數字不得為`0`開頭（除非為單一的`0`），整體(不含`urn:oid:`)長度不得超過64 bytes。"

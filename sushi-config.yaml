@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: tw.gov.mohw.nhi.pas
-canonical: https://fhir-ig.nhi.org.tw/pas
+canonical: https://nhicore.nhi.gov.tw/pas
 name: TWPAS
 title: 臺灣健保癌症用藥事前審查實作指引
 description: 臺灣健保癌症用藥事前審查實作指引(Taiwan NHI Cancer Prior Authorization Support Implementation Guide，TWPAS IG)
