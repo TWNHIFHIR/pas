@@ -2,7 +2,7 @@ Instance: CapabilityStatementTWPASClient
 InstanceOf: CapabilityStatement
 Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/CapabilityStatement/CapabilityStatementTWPASClient"
-* version = "1.0.4"
+* version = "1.0.5"
 * name = "CapabilityStatementTWPASClient"
 * title = "臺灣癌藥事前審查-用戶端(TWPAS Client)"
 * status = #active
@@ -371,7 +371,7 @@ Usage: #definition
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <h2 id=\"title\">臺灣癌藥事前審查-用戶端(TWPAS Client)</h2>
     <ul>
-        <li>實作指引版本：1.0.4</li>
+        <li>實作指引版本：1.0.5</li>
         <li>FHIR版本：4.0.1</li>
         <li>支援格式：<code>json</code></li>
         <li>發佈日：2025-05-05</li>
