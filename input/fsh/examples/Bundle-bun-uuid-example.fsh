@@ -909,7 +909,7 @@ Usage: #inline
 * effectiveDateTime = "2024-05-07"
 * performer.reference = "urn:uuid:41d0fbf1-850a-4c96-be9e-54ca2053c6b8"
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
-* valueCodeableConcept.coding = http://loinc.org#LA9634-2 "Absent"
+* valueString = "基因檢測報告結果"
 * interpretation.coding = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#POS
 * method = http://loinc.org#LA26418-6
 * specimen.reference = "urn:uuid:60d143e9-1637-4668-abdb-34fbdfee5d00"
@@ -935,7 +935,7 @@ Usage: #inline
 		</p>
 	</blockquote>
     <p><b>基因檢測機構</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-41d0fbf1-850a-4c96-be9e-54ca2053c6b8\">Organization 2023LDTB0002</a></p>
-    <p><b>基因檢測分析結果</b>：Absent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINC Answer List LL1971-2 </a>#LA9634-2)</span></p>
+    <p><b>基因檢測分析結果</b>：基因檢測報告結果</p>
     <p><b>基因臨床判讀結果</b>：Positive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation/\">ObservationInterpretationCodes  </a>#POS)</span></p>
     <p><b>基因檢測方法</b>：PCR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINC Answer List LL4048-6  </a>#LA26418-6)</span></p>
     <p><b>基因檢測檢體類型</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-60d143e9-1637-4668-abdb-34fbdfee5d00\">urn:uuid:60d143e9-1637-4668-abdb-34fbdfee5d00</a></p>

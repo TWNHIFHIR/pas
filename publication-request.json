@@ -1,7 +1,7 @@
 {
   "package-id": "tw.gov.mohw.nhi.pas",
-  "version": "1.0.4",
-  "path": "https://nhicore.nhi.gov.tw/pas/1.0.4",
+  "version": "1.0.5",
+  "path": "https://nhicore.nhi.gov.tw/pas/1.0.5",
   "mode": "milestone",
   "status": "ci-build",
   "sequence": "STU1",

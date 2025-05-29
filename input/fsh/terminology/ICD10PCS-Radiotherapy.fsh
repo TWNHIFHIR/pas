@@ -4,7 +4,7 @@ Id: icd-10-pcs-2014-radiotherapy
 Title: "健保事前審查-臺灣健保署2014年中文版ICD 10 PCS-放射治療項目值集"
 Description: "健保事前審查-臺灣健保署2014年中文版ICD 10 PCS-放射治療項目值集"
 * ^date = "2025-05-05"
-* ^version = "1.0.4"
+* ^version = "1.0.5"
 * ^experimental = false
 * $icd-10-pcs-2014#D0000ZZ 
 * $icd-10-pcs-2014#D0001ZZ 

@@ -41,7 +41,7 @@ Description:    "此基因資訊-Observation Diagnostic TWPAS Profile說明本IG
 * component[gene-test-code].interpretation.coding ^condition = "pas-1"
 
 * value[x] 1..1 MS
-* value[x] only string or CodeableConcept or Quantity or boolean or integer or Range or Ratio or SampledData or time or dateTime or Period
+* value[x] only string
 * value[x] MS
 * value[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * value[x] ^type[=].extension.valueBoolean = true

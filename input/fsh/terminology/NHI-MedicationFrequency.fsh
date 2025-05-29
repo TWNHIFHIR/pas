@@ -632,7 +632,7 @@ Description: "臺灣健保署藥品使用頻率，參照至[健保署檔案譯�
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2025-05-05"
-* ^version = "1.0.4"
+* ^version = "1.0.5"
 * ^experimental = false
 * #QW(1) "每週一使用"
 * #QW(2) "每週二使用"

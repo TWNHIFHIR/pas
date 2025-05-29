@@ -9,7 +9,7 @@ Usage: #example
 * effectiveDateTime = "2024-05-07"
 * performer.reference = "Organization/org-gene-example"
 * subject.reference = "Patient/pat-min"
-* valueCodeableConcept.coding = http://loinc.org#LA9634-2 "Absent"
+* valueString = "基因檢測報告結果"
 * interpretation.coding = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#POS
 * method = http://loinc.org#LA26418-6
 * specimen.reference = "Specimen/spe-min"
@@ -35,7 +35,7 @@ Usage: #example
 		</p>
 	</blockquote>
     <p><b>基因檢測機構</b>：<a href=\"Organization-org-gene-example.html\">Organization 2023LDTB0002</a></p>
-    <p><b>基因檢測分析結果</b>：Absent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINC Answer List LL1971-2 </a>#LA9634-2)</span></p>
+    <p><b>基因檢測分析結果</b>：基因檢測報告結果</p>
     <p><b>基因臨床判讀結果</b>：Positive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation/\">ObservationInterpretationCodes  </a>#POS)</span></p>
     <p><b>基因檢測方法</b>：PCR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINC Answer List LL4048-6  </a>#LA26418-6)</span></p>
     <p><b>基因檢測檢體類型</b>：<a href=\"Specimen-spe-min.html\">Specimen/spe-min</a></p>
