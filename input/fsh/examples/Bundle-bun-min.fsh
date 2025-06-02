@@ -87,8 +87,8 @@ Usage: #example
 * entry[26].fullUrl = "https://nhicore.nhi.gov.tw/pas/Organization/org-gene-example"
 * entry[26].resource = org-gene-example
 
-* entry[+].fullUrl = "https://nhicore.nhi.gov.tw/pas/DocumentReference/doc-medicalRecord-min"
-* entry[=].resource = doc-medicalRecord-min
+* entry[27].fullUrl = "https://nhicore.nhi.gov.tw/pas/DocumentReference/doc-medicalRecord-min"
+* entry[27].resource = doc-medicalRecord-min
 
 Instance: bun-3
 InstanceOf: BundleTWPAS
@@ -174,5 +174,5 @@ Usage: #example
 * entry[24].fullUrl = "https://nhicore.nhi.gov.tw/pas/Organization/org-gene-example"
 * entry[24].resource = org-gene-example
 
-* entry[+].fullUrl = "https://nhicore.nhi.gov.tw/pas/DocumentReference/doc-medicalRecord-min"
-* entry[=].resource = doc-medicalRecord-min
+* entry[25].fullUrl = "https://nhicore.nhi.gov.tw/pas/DocumentReference/doc-medicalRecord-min"
+* entry[25].resource = doc-medicalRecord-min
