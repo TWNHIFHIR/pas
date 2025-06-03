@@ -1173,10 +1173,6 @@ Usage: #definition
 * group.element[=].target.equivalence = #relatedto
 * group.element[+].code = #08013C
 * group.element[=].display = "白血球分類計數"
-* group.element[=].target.code = #24318-8
-* group.element[=].target.equivalence = #relatedto
-* group.element[+].code = #08013C
-* group.element[=].display = "白血球分類計數"
 * group.element[=].target.code = #26508-2
 * group.element[=].target.equivalence = #relatedto
 * group.element[+].code = #08013C
