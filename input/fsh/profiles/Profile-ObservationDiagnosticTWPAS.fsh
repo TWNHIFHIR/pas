@@ -42,10 +42,7 @@ Description:    "此基因資訊-Observation Diagnostic TWPAS Profile說明本IG
 
 * value[x] 1..1 MS
 * value[x] only string
-* value[x] MS
 * value[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* value[x] ^type[=].extension.valueBoolean = true
-* value[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * value[x] ^type[=].extension.valueBoolean = true
 
 * performer 1..1 MS
