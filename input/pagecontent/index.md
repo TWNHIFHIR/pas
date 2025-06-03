@@ -9,6 +9,8 @@
 因考量實作需求，於2025/5/29異動以下內容：
     <ol>  
         <li>修改<a href="StructureDefinition-Observation-diagnostic-twpas.html">Profile: 基因資訊-Observation Diagnostic TWPAS</a>：將基因檢測分析結果(<code>value[x]</code>)限定資料類型僅可為<code>string</code>。</li>
+        <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 事前審查-Bundle TWPAS</a>：修改Constraints: applyReason-9。</li>
+        <li>修改<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：新增代碼<code>P131</code>、<code>P141</code>。</li>
 	</ol>
     請留意這些異動，以避免影響您的實作。
 </div>
