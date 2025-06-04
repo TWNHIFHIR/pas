@@ -5,7 +5,7 @@ Usage: #definition
 * experimental = false
 * status = #active
 * date = "2025-05-05"
-* version = "1.0.4"
+* version = "1.0.5"
 * name = "NHILoinc"
 * title = "臺灣健保署醫療服務給付項目對應LOINC"
 * description = "此對應表為臺灣健保署醫療服務給付項目對應LOINC，供實作者於撰寫程式以自動化對應或轉代碼時使用。"
@@ -1170,10 +1170,6 @@ Usage: #definition
 * group.element[+].code = #08013C
 * group.element[=].display = "白血球分類計數"
 * group.element[=].target.code = #26511-6
-* group.element[=].target.equivalence = #relatedto
-* group.element[+].code = #08013C
-* group.element[=].display = "白血球分類計數"
-* group.element[=].target.code = #24318-8
 * group.element[=].target.equivalence = #relatedto
 * group.element[+].code = #08013C
 * group.element[=].display = "白血球分類計數"

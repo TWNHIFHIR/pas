@@ -4,7 +4,7 @@ Id: pat-ast
 Title: "LOINC + NHI-健保事前審查-病人狀態評估項目值集"
 Description: "LOINC + NHI-病人狀態評估項目值集"
 * ^date = "2025-05-05"
-* ^version = "1.0.4"
+* ^version = "1.0.5"
 * ^experimental = false
 * $loinc#88020-3
 * $loinc#98153-0
@@ -24,7 +24,7 @@ Description: "臺灣衛生福利部中央健康保險署「病人狀態評估項
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2025-05-05"
-* ^version = "1.0.4"
+* ^version = "1.0.5"
 * ^experimental = false
 * #IPS "International Prognostic Score" "IPS (International Prognostic Score)"
 * #PDAI "Pemphigus Disease Area Index" "PDAI評估指數"

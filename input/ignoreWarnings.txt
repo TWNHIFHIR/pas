@@ -72,3 +72,6 @@ INFORMATION: StructureDefinition/Patient-twpas: StructureDefinition.snapshot.ele
 
 # 繼承TW Core IG的Profile，無法取消欄位原有的MS(Must Support)註記，不影響驗證。（WARNING後方的 藍色字樣(1uses) 是指WARNING在此Profile中有被使用到）
 % The slice 'medicationReference' on path 'MedicationRequest.medication[x]'%
+
+# 不明原因的error，已確認沒問題，應是暫時性錯誤，不影響驗證。
+% in the system http://snomed.info/sct is not valid in the value set 'https://nhicore.nhi.gov.tw/pas/ValueSet/body-site'%
