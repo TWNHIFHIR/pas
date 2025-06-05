@@ -6,8 +6,9 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/5/29異動以下內容：
+因考量實作需求，於2025/6/5異動以下內容：
     <ol>  
+        <li>修改<a href="StructureDefinition-Practitioner-twpas.html">Profile: 醫事人員-Practitioner TWPAS</a>：將醫師證號的命名空間（namespace）(<code>identifier[medicalLicenseNumber].system</code>)設為固定值<code>https://dep.mohw.gov.tw/DOMA</code>。</li>
         <li>修改<a href="StructureDefinition-Observation-diagnostic-twpas.html">Profile: 基因資訊-Observation Diagnostic TWPAS</a>：將基因檢測分析結果(<code>value[x]</code>)限定資料類型僅可為<code>string</code>。</li>
         <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 事前審查-Bundle TWPAS</a>：修改Constraints: applyReason-9。</li>
         <li>修改<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：新增代碼<code>P131</code>、<code>P141</code>。</li>

@@ -13,3 +13,4 @@ Description:    "此醫事人員-Practitioner TWPAS Profile說明本IG如何進�
 //* identifier[idCardNumber] obeys id-card-number
 
 * identifier[medicalLicenseNumber].system = "https://dep.mohw.gov.tw/DOMA"
+* identifier[medicalLicenseNumber].system ^short  = "醫師證號的管理單位，請固定填「https://dep.mohw.gov.tw/DOMA」。"
