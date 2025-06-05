@@ -1,5 +1,5 @@
 ValueSet: SNOMEDCTBodySite
-Id: body-site
+Id: sct-body-site
 Title: "SNOMEDCT-健保事前審查-身體部位值集"
 Description: "SNOMEDCT-健保事前審查-身體部位值集，代碼對應請參考[臺灣健保署身體部位代碼對應SNOMED CT](ConceptMap-nhi-sct-body-site.html)。"
 * ^date = "2025-05-05"

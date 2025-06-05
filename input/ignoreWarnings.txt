@@ -74,4 +74,4 @@ INFORMATION: StructureDefinition/Patient-twpas: StructureDefinition.snapshot.ele
 % The slice 'medicationReference' on path 'MedicationRequest.medication[x]'%
 
 # 不明原因的error，已確認沒問題，應是暫時性錯誤，不影響驗證。
-% in the system http://snomed.info/sct is not valid in the value set 'https://nhicore.nhi.gov.tw/pas/ValueSet/body-site'%
+% in the system http://snomed.info/sct is not valid in the value set 'https://nhicore.nhi.gov.tw/pas/ValueSet/sct-body-site'%
