@@ -30,7 +30,10 @@ Description:    "此癌症分期量表-Observation Cancer Stage TWPAS Profile說
 * subject 1.. MS
 
 * code ^short = "癌症分期量表項目"
+* value[x] ^short = "癌症分期分數或結果。請勿將醫事機構名稱、病人及醫師姓名等資訊列入結果中上傳，且不得包含HTML或XML等語法。"
 * valueCodeableConcept ^short = "癌症分期分數或結果。請勿將醫事機構名稱、病人及醫師姓名等資訊列入結果中上傳，且不得包含HTML或XML等語法。"
+* valueString ^short = "癌症分期分數或結果。請勿將醫事機構名稱、病人及醫師姓名等資訊列入結果中上傳，且不得包含HTML或XML等語法。"
+* valueInteger ^short = "癌症分期分數或結果。"
 * effectiveDateTime ^short = "癌症分期量表評估日期，YYYY-MM-DD，西元年月日。"
 * performer ^short = "簽發癌症分期報告醫師"
 /*

@@ -16,7 +16,7 @@ Description:    "此自主審查報備-ClaimResponse TWPAS Profile說明本IG如
 * item.adjudication.reason 1..1
 * item.detail.adjudication.reason from NHIApproveItemComment
 * item.detail.adjudication.reason 1..1
-* created and item.adjudication.reason and item.adjudication.value and disposition MS
+* created and item.adjudication.reason and item.adjudication.value MS
 * created ^short = "核定日期。若申請案件類別為3時須填寫。YYYY-MM-DD，西元年月日。"
 * item.adjudication.value ^short = "核定數量，若申請案件類別為3時須填寫。"
 * item.adjudication.reason ^short = "受理審查案件核定註記。若申請案件類別為3時須填寫。1:同意 | 2:不予同意 | 3:部份同意 | 4:補件 | 5:退件"
