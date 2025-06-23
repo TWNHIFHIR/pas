@@ -9,7 +9,7 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-twpas"
 * hosp.funcType -> "extension.where(url = 'https://nhicore.nhi.gov.tw/pas/StructureDefinition/extension-claim-encounter').valueReference.reference(EncounterTWPAS) (就醫科別)"
 * hosp.applPrsnId -> "enterer.reference(PractitionerTWPAS) (申請醫師身分證號)"
 * hosp.applDate -> "created (申請日期)"
-* hosp.tmhbType -> "priority.coding.code (申請案件類型)"
+* hosp.tmhbType -> "priority.coding.code (申請案件類別)"
 * hosp.oldAcptNo -> "identifier.value (原受理編號)"
 
 * patient -> "(病人資訊)"
