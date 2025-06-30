@@ -14,7 +14,7 @@ Id: nhi-medication
 Title: "NHI-健保事前審查-用藥品項"
 Description: "NHI-健保事前審查-用藥品項，參照自[健保用藥品項](https://www.nhi.gov.tw/ch/lp-2466-1.html)中的「健保用藥品項114年4月查詢檔(帶走所有壓縮檔114.4.2更新)」。  
 
-代碼出版日期：2025-05-26；資料所屬單位：衛生福利部中央健康保險署。
+代碼出版日期：2025-04-30；資料所屬單位：衛生福利部中央健康保險署。
 
 *因原始資料無代碼版本資訊，故使用其「更新日期」作為版本資訊。*  
 
@@ -22,9 +22,12 @@ Description: "NHI-健保事前審查-用藥品項，參照自[健保用藥品項
 
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2025-04-29"
-* ^version = "2025-04-29"
+* ^date = "2025-06-26"
+* ^version = "2025-06-26"
 * ^experimental = false
+/*2025-6 add*/
+* #X000350421 "CYSTADROPS 3.8MG/ML EYE DROPS SOLUTION"
+* #BC28902100 "VILGLAD (VILDAGLIPTIN TABLETS 50 MG)"
 
 /*2025-5 add*/
 * #AC61916100 "ADCIRCA FILM-COATED TABLETS 20 MG"
