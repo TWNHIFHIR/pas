@@ -37,8 +37,8 @@ Description:    "此用藥品項-MedicationRequest Treat TWPAS Profile說明本I
 * dosageInstruction.doseAndRate.doseQuantity.system 1..1
 * dosageInstruction.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 * dosageInstruction.doseAndRate.doseQuantity.code 1..1 MS
-* dosageInstruction.doseAndRate.doseQuantity.code from http://hl7.org/fhir/ValueSet/ucum-common
-* dosageInstruction.doseAndRate.doseQuantity.code ^binding.description = "用藥單位的代碼範圍請參考[Common UCUM units](https://hl7.org/fhir/R4/valueset-ucum-common.html)。"
+* dosageInstruction.doseAndRate.doseQuantity.code from https://nhicore.nhi.gov.tw/pas/ValueSet/ucum-units
+* dosageInstruction.doseAndRate.doseQuantity.code ^binding.description = "用藥單位的代碼範圍請參考[UCUM-健保事前審查-UCUM單位值集](https://nhicore.nhi.gov.tw/pas/valueset-ucum-units.html)。"
 
 * dosageInstruction.timing.repeat MS
 * dosageInstruction.timing.repeat.boundsPeriod 1..1 MS

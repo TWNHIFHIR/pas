@@ -1,10 +1,10 @@
 CodeSystem: NHIApplyReason
 Id: nhi-apply-reason
 Title: "NHI-健保事前審查-給付適應症"
-Description: "臺灣衛生福利部中央健康保險署「給付適應症」代碼，代碼出版日期：2025-05-05；資料所屬單位：臺灣衛生福利部中央健康保險署。"
+Description: "臺灣衛生福利部中央健康保險署「給付適應症」代碼，代碼出版日期：2025-07-01；資料所屬單位：臺灣衛生福利部中央健康保險署。"
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2025-05-05"
+* ^date = "2025-07-01"
 * ^version = "1.0.5"
 * ^experimental = false
 * #C50P1 "早期乳癌-未發生腋下淋巴結轉移" "事前審查品項代碼為KC010892B5、KC011162B5、JC00154261、KC009612B5(自113年12月擴增)、KC011112DE(114年1月起擴增)才可填寫"
@@ -37,7 +37,7 @@ ValueSet: NHIApplyReason
 Id: nhi-apply-reason
 Title: "NHI-健保事前審查-給付適應症值集"
 Description: "NHI-健保事前審查-給付適應症值集"
-* ^date = "2025-05-05"
+* ^date = "2025-07-01"
 * ^version = "1.0.5"
 * ^experimental = false
 * include codes from system NHIApplyReason
