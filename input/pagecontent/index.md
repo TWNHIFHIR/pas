@@ -8,6 +8,7 @@
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
 因考量實作需求，於2025/6/27異動以下內容：
     <ol>  
+        <li>新增值集：<a href="CodeSystem-nhi-medication.html">ValueSet: UCUM-健保事前審查-UCUM單位值集</a>，以涵蓋所有UCUM Units代碼，供「事前審查申請數量單位」、「用藥單位」及「放射治療總劑量單位」綁定。</li>
         <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
         <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 事前審查-Bundle TWPAS</a>：
             <ol>

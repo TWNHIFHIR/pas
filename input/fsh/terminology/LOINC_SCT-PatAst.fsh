@@ -3,7 +3,7 @@ ValueSet: PatAst
 Id: pat-ast
 Title: "LOINC + NHI-健保事前審查-病人狀態評估項目值集"
 Description: "LOINC + NHI-病人狀態評估項目值集"
-* ^date = "2025-05-05"
+* ^date = "2025-07-01"
 * ^version = "1.0.5"
 * ^experimental = false
 * $loinc#88020-3
@@ -20,10 +20,10 @@ Description: "LOINC + NHI-病人狀態評估項目值集"
 CodeSystem: PatAst
 Id: nhi-pat-ast
 Title: "NHI-健保事前審查-病人狀態評估項目"
-Description: "臺灣衛生福利部中央健康保險署「病人狀態評估項目」代碼，代碼出版日期：2025-05-05；資料所屬單位：臺灣衛生福利部中央健康保險署。"
+Description: "臺灣衛生福利部中央健康保險署「病人狀態評估項目」代碼，代碼出版日期：2025-07-01；資料所屬單位：臺灣衛生福利部中央健康保險署。"
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2025-05-05"
+* ^date = "2025-07-01"
 * ^version = "1.0.5"
 * ^experimental = false
 * #IPS "International Prognostic Score" "IPS (International Prognostic Score)"
