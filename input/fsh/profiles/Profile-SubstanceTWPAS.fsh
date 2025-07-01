@@ -8,7 +8,7 @@ Description:    "此放射治療總劑量-Substance TWPAS Profile說明本IG如�
 * ingredient.quantity.numerator.value 1..1 MS
 * ingredient.quantity.numerator.code 1..1 MS
 * ingredient.quantity.numerator.code from https://nhicore.nhi.gov.tw/pas/ValueSet/ucum-units
-* ingredient.quantity.numerator.code ^binding.description = "放射治療總劑量單位的代碼範圍請參考[UCUM-健保事前審查-UCUM單位值集](https://nhicore.nhi.gov.tw/pas/valueset-ucum-units.html)。"
+* ingredient.quantity.numerator.code ^binding.description = "放射治療總劑量單位的代碼範圍請參考[Common UCUM units](https://hl7.org/fhir/R4/valueset-ucum-common.html)。"
 * ingredient.quantity.numerator.system 1..1
 * ingredient.quantity.numerator.system = "http://unitsofmeasure.org"
 * code from ICD10PCS2023Radiotherapy (preferred)
