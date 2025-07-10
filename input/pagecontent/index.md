@@ -1,24 +1,14 @@
 <div class="bg-danger" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.0.4版內容，因而會比健保署的IG版本V1.0.4(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為114年7月，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
+<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.0.5版內容，因而會比健保署的IG版本V1.0.5(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為114年8月，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
 <br/>
-<b>醫院實作時請以V1.0.4為主進行實例驗證，目前健保署端的伺服器採用V1.0.4版規格。</b></p>
+<b>醫院實作時請以V1.0.5為主進行實例驗證，目前健保署端的伺服器採用V1.0.5版規格。</b></p>
 </div>
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/6/27異動以下內容：
+因考量實作需求，於2025/7/10異動以下內容：
     <ol>  
-        <li>新增值集：<a href="ValueSet-ucum-units.html">ValueSet: UCUM-健保事前審查-UCUM單位值集</a>，以涵蓋所有UCUM Units代碼，供「事前審查申請數量單位」、「用藥單位」及「放射治療總劑量單位」綁定。</li>
-        <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
-        <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 事前審查-Bundle TWPAS</a>：
-            <ol>
-                <li>新增Constraints: applyReason-14。</li>
-                <li>修改Constraints: applyReason-9。</li>
-            </ol>
-        </li>
-        <li>修改<a href="StructureDefinition-Practitioner-twpas.html">Profile: 醫事人員-Practitioner TWPAS</a>：將醫師證號的命名空間（namespace）(<code>identifier[medicalLicenseNumber].system</code>)設為固定值<code>https://dep.mohw.gov.tw/DOMA</code>。</li>
-        <li>修改<a href="StructureDefinition-Observation-diagnostic-twpas.html">Profile: 基因資訊-Observation Diagnostic TWPAS</a>：將基因檢測分析結果(<code>value[x]</code>)限定資料類型僅可為<code>string</code>。</li>
-        <li>修改<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：新增代碼<code>P131</code>、<code>P141</code>。</li>
+        <li>修改<a href="StructureDefinition-Claim-twpas.html">Profile: 事前審查-Claim TWPAS</a>：修改Constraint-supportingInfo: 當Claim.priority(案件類別)為1(一般事前審查申請)、3(自主審查報備)時，至少還需提供檢查報告、影像報告、基因資訊中任一樣資訊。。</li>
 	</ol>
     請留意這些異動，以避免影響您的實作。
 </div>

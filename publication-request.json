@@ -1,11 +1,11 @@
 {
   "package-id": "tw.gov.mohw.nhi.pas",
-  "version": "1.0.5",
-  "path": "https://nhicore.nhi.gov.tw/pas/1.0.5",
+  "version": "1.0.6",
+  "path": "https://nhicore.nhi.gov.tw/pas/1.0.6",
   "mode": "milestone",
   "status": "ci-build",
-  "sequence": "STU1",
+  "sequence": "STU1.0.6",
   "ci-build" : "https://build.fhir.org/ig/TWNHIFHIR/pas",
-  "desc": "修改Profiles，新增代碼系統、值集，修改canonical。",
+  "desc": "修改Profiles。",
   "descmd": "詳細說明請參照[應用說明](index.html)"
 }

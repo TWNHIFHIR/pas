@@ -182,7 +182,7 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-laborato
 * evaluate.tests.consultValueDesc -> "referenceRange.text (檢驗(查)結果之參考範圍說明)"
 * evaluate.tests.inspectSet -> "component (套組中的的檢驗)"
 * evaluate.tests.caseTime -> "effectiveDateTime (檢驗(查)報告日期)"
-* evaluate.tests.inspectPerformer -> "performer.reference(OrganizationTWPAS) (簽發檢驗(查)報告醫事人員身分證號)"
+* evaluate.tests.inspectPerformer -> "performer.reference(PractitionerTWPAS) (簽發檢驗(查)報告醫事人員身分證號)"
 * evaluate.tests.inspectPdf -> "derivedFrom.reference(DocumentReferenceTWPAS) (檢驗(查)附件（檔案路徑）)"
 
 Mapping: TWPASObservationPatientAssessment
@@ -195,7 +195,7 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-pat-asse
 * evaluate.patientAssessment.patAst -> "code.coding.code (病人狀態評估項目代碼)"
 * evaluate.patientAssessment.patAstResult -> "value (病人狀態評估結果)"
 * evaluate.patientAssessment.patAstDate -> "effectiveDateTime (病人狀態評估日期)"
-* evaluate.patientAssessment.patAstPerformer -> "performer.reference(OrganizationTWPAS) (評估項目醫事人員身分證號)"
+* evaluate.patientAssessment.patAstPerformer -> "performer.reference(PractitionerTWPAS) (評估項目醫事人員身分證號)"
 
 Mapping: TWPASMedicationRequestTreat
 Id: TWPASMedicationRequestTreat

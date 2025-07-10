@@ -5,7 +5,7 @@ Description: "臺灣衛生福利部中央健康保險署「續用註記」代碼
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2025-07-01"
-* ^version = "1.0.5"
+* ^version = "1.0.6"
 * ^experimental = false
 * #1 "初次使用"
 * #2 "申請再次使用"
@@ -15,6 +15,6 @@ Id: nhi-continuation-status
 Title: "NHI-健保事前審查-續用註記值集"
 Description: "NHI-健保事前審查-續用註記值集"
 * ^date = "2025-07-01"
-* ^version = "1.0.5"
+* ^version = "1.0.6"
 * ^experimental = false
 * include codes from system NHIContinuationStatus
