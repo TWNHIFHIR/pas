@@ -5,7 +5,7 @@ Usage: #definition
 * experimental = false
 * status = #active
 * date = "2025-07-01"
-* version = "1.0.5"
+* version = "1.0.6"
 * name = "NHILoinc"
 * title = "臺灣健保署醫療服務給付項目對應LOINC"
 * description = "此對應表為臺灣健保署醫療服務給付項目對應LOINC，供實作者於撰寫程式以自動化對應或轉代碼時使用。"

@@ -5,7 +5,7 @@ Description: "臺灣衛生福利部中央健康保險署「補充資訊類別」
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2025-07-01"
-* ^version = "1.0.5"
+* ^version = "1.0.6"
 * ^experimental = false
 * #weight "病人體重"
 * #height "病人身高"
@@ -27,6 +27,6 @@ Id: nhi-supporting-info-type
 Title: "NHI-健保事前審查-補充資訊類別值集"
 Description: "NHI-健保事前審查-補充資訊類別值集"
 * ^date = "2025-07-01"
-* ^version = "1.0.5"
+* ^version = "1.0.6"
 * ^experimental = false
 * include codes from system NHIPASSupportingInfoType
