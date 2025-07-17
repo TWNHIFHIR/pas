@@ -40,7 +40,7 @@ WARNING: Bundle/bun-3: Bundle.entry[16].resource/*MedicationRequest/medReq-treat
 WARNING: MedicationRequest/medReq-treat: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): UCUM Codes that contain human readable annotations like {tbl} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit 'tablets' SHOULD contain the annotation (it does not)
 
 # 提醒slice雖有多筆，但實際只能填一筆，不影響驗證。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
-The slice definition for DiagnosticReport.code.coding has a maximum of 1 but the slices add up to a maximum of 2. Check that this is what is intended
+The slice definition for DiagnosticReport.code.coding has a maximum of 1 but the slices add up to a maximum of 3. Check that this is what is intended
 The slice definition for Encounter.serviceType.coding has a maximum of 1 but the slices add up to a maximum of 3. Check that this is what is intended
 The slice definition for Procedure.code.coding has a maximum of 1 but the slices add up to a maximum of 2. Check that this is what is intended
 The slice definition for Substance.code.coding has a maximum of 1 but the slices add up to a maximum of 2. Check that this is what is intended
@@ -72,6 +72,3 @@ INFORMATION: StructureDefinition/Patient-twpas: StructureDefinition.snapshot.ele
 
 # 繼承TW Core IG的Profile，無法取消欄位原有的MS(Must Support)註記，不影響驗證。（WARNING後方的 藍色字樣(1uses) 是指WARNING在此Profile中有被使用到）
 % The slice 'medicationReference' on path 'MedicationRequest.medication[x]'%
-
-# 不明原因的error，已確認沒問題，應是暫時性錯誤，不影響驗證。
-% in the system http://snomed.info/sct is not valid in the value set 'https://nhicore.nhi.gov.tw/pas/ValueSet/sct-body-site'%

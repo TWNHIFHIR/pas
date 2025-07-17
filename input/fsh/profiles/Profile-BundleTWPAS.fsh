@@ -138,7 +138,7 @@ Description:    "此事前審查-Bundle TWPAS Profile說明本IG如何進一步�
 
 
 
-* . obeys applyReason-1 and applyReason-2 and applyReason-3 and applyReason-4 and applyReason-5 and applyReason-6 and applyReason-7 and applyReason-8 and applyReason-9 and applyReason-10 and applyReason-11 and applyReason-12 and applyReason-13 and applyReason-14 and applyReason-15 and claimResponse
+* . obeys applyReason-1 and applyReason-2 and applyReason-3 and applyReason-4 and applyReason-5 and applyReason-6 and applyReason-7 and applyReason-8 and applyReason-9 and applyReason-10 and applyReason-11 and applyReason-12 and applyReason-13 and applyReason-14 and applyReason-15 and applyReason-16 and claimResponse
 
 /*Invariant:   oldAcptNo
 Description: "若申報類別(Claim.subType)為申復(#3)，則填寫原送核階段受理編號。"
@@ -224,6 +224,11 @@ Severity:    #error
 Invariant:   applyReason-15
 Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 BC28160100，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C83N2、C88N3 或 C82N3"
 Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'BC28160100').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC00958229').all(programCode.coding.code.matches('C83N2|C88N3|C82N3'))"
+Severity:    #error
+
+Invariant:   applyReason-16
+Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01242235，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P072"
+Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01242235').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC00958229').all(programCode.coding.code.matches('P072'))"
 Severity:    #error
 
 
