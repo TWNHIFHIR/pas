@@ -6,15 +6,22 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/7/16異動以下內容：
+因考量實作需求，於2025/7/17異動以下內容：
     <ol>  
-        <li>修改<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：新增代碼<code>P015</code>、<code>C83N2</code>、<code>C88N3</code>、<code>C82N3</code>。</li>
+        <li>修改<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：
+            <ol>
+               <li>新增代碼<code>P015</code>、<code>C83N2</code>、<code>C88N3</code>、<code>C82N3</code>。</li>
+               <li>修改代碼說明，詳請參考<a href="https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods">完整代碼系統_1140716</a></li>
+            </ol>
+        </li>
         <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 事前審查-Bundle TWPAS</a>：
             <ol>
                <li>修改Constraint: applyReason-11：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01088229，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 <b>P015</b>、P021、P072 或 P121</li>
                <li>新增Constraint: applyReason-15：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 BC28160100，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C83N2、C88N3 或 C82N3</li>
+               <li>新增Constraint: applyReason-16：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01242235，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P072</li>
             </ol>
         </li>
+        <li>修改<a href="StructureDefinition-DiagnosticReport-image-twpas.html">Profile: 影像報告-DiagnosticReport Image TWPAS</a>：新增影像報告slice(<code>code.coding:LOINC</code>)：外院報告請依ICD-10-PCS填寫，若無法對應，可使用LOINC代碼<code>18748-4</code>呈現。</li>
         <li>修改<a href="StructureDefinition-Claim-twpas.html">Profile: 事前審查-Claim TWPAS</a>：修改Constraint: supportingInfo：當Claim.priority(案件類別)為1(一般事前審查申請)、3(自主審查報備)時，至少還需提供檢查報告、影像報告、基因資訊中任一樣資訊。</li>
 	</ol>
     請留意這些異動，以避免影響您的實作。

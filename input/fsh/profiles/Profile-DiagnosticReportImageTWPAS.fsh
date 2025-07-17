@@ -12,21 +12,30 @@ Description:    "此影像報告-DiagnosticReport Image TWPAS Profile說明本IG
 * code ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
 * code.coding contains 
     TW2023ICD10PCS 0..1 MS and
-    TW2014ICD10PCS 0..1 MS
+    TW2014ICD10PCS 0..1 MS and
+    LOINC 0..1 MS
 /* code.coding[LOINCObservationCode] 0..0
 * code.coding[TWLaboratoryCategory] 0..0
 * code.coding[TW2021ICD10PCS] 0..0*/
 
+* code.coding[TW2014ICD10PCS] ^short = "2014年中文版ICD 10 PCS-影像報告值集"
 * code.coding[TW2014ICD10PCS].code 1..1 MS
 * code.coding[TW2014ICD10PCS].system 1..1 MS
 * code.coding[TW2014ICD10PCS].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2014-tw"
 * code.coding[TW2014ICD10PCS] from ICD10PCSImage (extensible)
 * code.coding[TW2014ICD10PCS] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
+* code.coding[TW2023ICD10PCS] ^short = "2023年中文版ICD 10 PCS-影像報告值集"
 * code.coding[TW2023ICD10PCS].code 1..1 MS
 * code.coding[TW2023ICD10PCS].system 1..1 MS
 * code.coding[TW2023ICD10PCS].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw"
 * code.coding[TW2023ICD10PCS] from ICD10PCS2023Image (extensible)
 * code.coding[TW2023ICD10PCS] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
+* code.coding[LOINC] ^short = "外院報告請依ICD-10-PCS填寫，若無法對應，可使用LOINC代碼#18748-4呈現。"
+* code.coding[LOINC].code 1..1 MS
+* code.coding[LOINC].system 1..1 MS
+* code.coding[LOINC].system = "http://loinc.org"
+* code.coding[LOINC].code = #18748-4 
+* code.coding[LOINC] from http://hl7.org/fhir/ValueSet/report-codes (extensible)
 * code.text 0..1 MS
 * performer 1..1 MS
 * performer only Reference(PractitionerTWPAS) 
@@ -43,7 +52,7 @@ Description:    "此影像報告-DiagnosticReport Image TWPAS Profile說明本IG
 * category 0..1
 * category.coding 1..1
 
-* code  ^short = "影像報告，ICD10-PCS"
+* code  ^short = "影像報告，ICD-10-PCS。外院報告請依ICD-10-PCS填寫，若無法對應，可使用LOINC代碼#18748-4呈現。"
 * code.text  ^short = "影像檢查的身體部位"
 * conclusion  ^short = "影像報告結果，請勿將醫事機構名稱、病人及醫師姓名等資訊列入結果中上傳，且不得包含HTML或XML等語法。"
 * effectiveDateTime  ^short = "影像報告日期，YYYY-MM-DD"
