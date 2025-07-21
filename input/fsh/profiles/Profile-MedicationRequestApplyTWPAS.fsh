@@ -57,7 +57,7 @@ Description:    "此事前審查品項-MedicationRequest Apply TWPAS Profile說�
 * dosageInstruction.timing.repeat.boundsPeriod 1..1 MS
 * dosageInstruction.timing.repeat.boundsPeriod.start 1..1 MS
 * dosageInstruction.timing.repeat.boundsPeriod.end 1..1 MS
-* dosageInstruction.timing.repeat.count 1..1 MS
+* dosageInstruction.timing.repeat.count 0..1 MS
 * dosageInstruction.route 1..1 MS
 * dosageInstruction.route.coding 1..1 MS
 * dosageInstruction.route from TWPCSMedicationPathSCT
@@ -75,4 +75,4 @@ Description:    "此事前審查品項-MedicationRequest Apply TWPAS Profile說�
 * dosageInstruction.timing.repeat.boundsPeriod.end ^short = "事前審查藥物預定處方終止日期，YYYY-MM-DD，西元年月日。"
 * dosageInstruction.route  ^short = "給藥途徑／作用部位。"
 * dosageInstruction.route.coding  ^short = "給藥途徑／作用部位。"
-* dosageInstruction.timing.repeat.count  ^short = "事前審查藥品處方頻次(cycles)。"
+* dosageInstruction.timing.repeat.count  ^short = "事前審查藥品療程／週期數。"

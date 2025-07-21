@@ -787,7 +787,7 @@ Usage: #inline
         <p><b>事前審查藥物預定處方終止日期</b>：2024-02-11</p>
         <p><b>事前審查藥品使用頻率及服用時間</b>：Every day at institution specified times.、飯前1小時使用<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"ValueSet-medication-frequency-hl7-nhi.html\">HL7 TimingAbbreviation + 臺灣健保署藥品使用頻率值集</a>#BIW、#AC1H)</span></p>
         <p><b>事前審查藥品每次處方劑量</b>：75 mg/m2</p>
-        <p><b>事前審查藥品處方頻次(cycles)</b>：42</p>
+        <p><b>事前審查藥品療程／週期數</b>：42</p>
         <p><b>給藥途徑／作用部位</b>：Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://snomed.info/sct/\">SNOMED CT + 臺灣健保署給藥途徑值集</a>#26643006)</span></p>
     </blockquote>
     <blockquote>
@@ -795,7 +795,7 @@ Usage: #inline
         <p><b>事前審查藥物預定處方終止日期</b>：2024-03-10</p>
         <p><b>事前審查藥品使用頻率及服用時間</b>：每4週的第1天、每4週的第2天、每4週的第3天、每4週的第4天、每4週的第5天、飯前1小時使用<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"ValueSet-medication-frequency-hl7-nhi.html\">HL7 TimingAbbreviation + 臺灣健保署藥品使用頻率值集</a>#Q4WD1、#Q4WD2、#Q4WD3、#Q4WD4、#Q4WD5、#AC1H)</span></p>
         <p><b>事前審查藥品每次處方劑量</b>：150 mg/m2</p>
-        <p><b>事前審查藥品處方頻次(cycles)</b>：1</p>
+        <p><b>事前審查藥品療程／週期數</b>：1</p>
         <p><b>給藥途徑／作用部位</b>：Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://snomed.info/sct/\">SNOMED CT + 臺灣健保署給藥途徑值集</a>#26643006)</span></p>
     </blockquote>
 </div>"
@@ -836,7 +836,7 @@ Usage: #inline
     <p><b>事前審查藥物預定處方終止日期</b>：2024-07-28</p>
     <p><b>事前審查藥品使用頻率及服用時間</b>：每4週的第1天、每4週的第2天、每4週的第3天、每4週的第4天、每4週的第5天、飯前1小時使用<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"ValueSet-medication-frequency-hl7-nhi.html\">HL7 TimingAbbreviation + 臺灣健保署藥品使用頻率值集</a>#Q4WD1、#Q4WD2、#Q4WD3、#Q4WD4、#Q4WD5、#AC1H)</span></p>
     <p><b>事前審查藥品每次處方劑量</b>：200 mg/m2</p>
-    <p><b>事前審查藥品處方頻次(cycles)</b>：1</p>
+    <p><b>事前審查藥品療程／週期數</b>：1</p>
     <p><b>給藥途徑／作用部位</b>：Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://snomed.info/sct/\">SNOMED CT + 臺灣健保署給藥途徑值集</a>#26643006)</span></p>
 </div>"
 

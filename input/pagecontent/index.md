@@ -6,8 +6,9 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/7/17異動以下內容：
+因考量實作需求，於2025/7/21異動以下內容：
     <ol>  
+        <li>修改<a href="StructureDefinition-MedicationRequest-apply-twpas.html">Profile: 事前審查品項-MedicationRequest Apply TWPAS</a>：原「事前審查藥品處方頻次(cycles)」(<code>dosageInstruction.timing.repeat.count</code>)修改為「事前審查藥品療程／週期數」，並改為非必填。</li>
         <li>修改<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：
             <ol>
                <li>新增代碼<code>P015</code>、<code>C83N2</code>、<code>C88N3</code>、<code>C82N3</code>。</li>
