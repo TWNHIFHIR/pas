@@ -278,7 +278,7 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/MedicationRequest-ap
 * apply.applDosageUnit -> "dosageInstruction.doseAndRate.doseQuantity.unit (事前審查藥品每次處方劑量單位)"
 * apply.useSdate -> "dosageInstruction.timing.repeat.boundsPeriod.start (事前審查藥物預定處方起始日期)"
 * apply.useEdate -> "dosageInstruction.timing.repeat.boundsPeriod.end (事前審查藥物預定處方終止日期)"
-* apply.applDrugCycle -> "dosageInstruction.timing.repeat.count (事前審查藥品處方頻次)"
+* apply.applDrugCycle -> "dosageInstruction.timing.repeat.count (事前審查藥品療程／週期數)"
 * apply.applDrugRoute -> "dosageInstruction.route (給藥途徑／作用部位)"
 
 Mapping: TWPASClaimResponseSelfAssessment
