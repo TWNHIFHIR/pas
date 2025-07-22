@@ -6,13 +6,14 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/7/21異動以下內容：
+因考量實作需求，於2025/7/22異動以下內容：
     <ol>  
+        <li>修改<a href="CodeSystem-medication-frequency-nhi-tw.html">CodeSystem: NHI-健保事前審查-藥品使用頻率</a>：新增代碼，<code>Q3WD1</code>(每3週的第1天)~<code>Q3WD21</code>(每3週的第21天)。</li>
         <li>修改<a href="StructureDefinition-MedicationRequest-apply-twpas.html">Profile: 事前審查品項-MedicationRequest Apply TWPAS</a>：原「事前審查藥品處方頻次(cycles)」(<code>dosageInstruction.timing.repeat.count</code>)修改為「事前審查藥品療程／週期數」，並改為非必填。</li>
         <li>修改<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：
             <ol>
                <li>新增代碼<code>P015</code>、<code>C83N2</code>、<code>C88N3</code>、<code>C82N3</code>。</li>
-               <li>修改代碼說明，詳請參考<a href="https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods">完整代碼系統_1140716</a></li>
+               <li>修改代碼說明，詳請參考<a href="https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods">完整代碼系統_1140716</a>。</li>
             </ol>
         </li>
         <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 事前審查-Bundle TWPAS</a>：
