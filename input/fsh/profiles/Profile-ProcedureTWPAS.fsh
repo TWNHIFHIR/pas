@@ -3,7 +3,7 @@ Parent:         Procedure
 //Parent:         TWCoreProcedure
 Id:             Procedure-twpas
 Title:          "放射治療-Procedure TWPAS"
-Description:    "此放射治療-Procedure TWPAS Profile說明本IG如何進一步定義臺灣核心-處置或手術(TW Core Procedure) Profile以呈現癌藥事前審查中治療資訊之放射治療"
+Description:    "此放射治療-Procedure TWPAS Profile說明本IG如何進一步定義FHIR的Procedure Resource以呈現癌藥事前審查中治療資訊之放射治療"
 * subject only Reference(PatientTWPAS)
 * performed[x] only dateTime
 * performed[x] 1..1 MS
