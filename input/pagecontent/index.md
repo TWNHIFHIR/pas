@@ -18,6 +18,8 @@
         </li>
         <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 事前審查-Bundle TWPAS</a>：
             <ol>
+               <li>修改Constraint: applyReason-7：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01013229，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P001、P011、P012、P031、P041、P061 或 P081</li>
+               <li>修改Constraint: applyReason-8：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01013230，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P001、P011、P012、P031、P041、P052、P061、P081、P101 或 P111</li>
                <li>修改Constraint: applyReason-11：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01088229，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 <b>P015</b>、P021、P072 或 P121</li>
                <li>新增Constraint: applyReason-15：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 BC28160100，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C83N2、C88N3 或 C82N3</li>
                <li>新增Constraint: applyReason-16：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01242235，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P072</li>
