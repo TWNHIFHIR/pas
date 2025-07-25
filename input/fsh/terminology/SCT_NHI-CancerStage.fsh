@@ -44,6 +44,7 @@ Description: "SCT + NCI-健保事前審查-癌症分期量表項目值集"
 * http://snomed.info/sct#254363005
 * http://snomed.info/sct#1149163003
 * http://snomed.info/sct#399390009
+* http://snomed.info/sct#254372002
 * NciThesaurus#C139007
 * NciThesaurus#C141392
 * NciThesaurus#C133427

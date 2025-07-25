@@ -6,8 +6,10 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/7/22異動以下內容：
+因考量實作需求，於2025/7/25異動以下內容：
     <ol>  
+        <li>修改<a href="StructureDefinition-Observation-diagnostic-twpas.html">Profile: 基因資訊-Observation Diagnostic TWPAS</a>：基因檢測代碼(<code>component:gene-test-code</code>)、基因突變類型(<code>component:gene-test-code.interpretation</code>)改為必填。</li>
+        <li>修改<a href="ValueSet-cancer-stage.html">ValueSet: SCT + NCI-健保事前審查-癌症分期量表項目值集</a>：新增SCT代碼<code>254372002</code>(Ann Arbor lymphoma staging system)。</li>
         <li>修改<a href="CodeSystem-medication-frequency-nhi-tw.html">CodeSystem: NHI-健保事前審查-藥品使用頻率</a>：新增代碼，<code>Q3WD1</code>(每3週的第1天)~<code>Q3WD21</code>(每3週的第21天)。</li>
         <li>修改<a href="StructureDefinition-MedicationRequest-apply-twpas.html">Profile: 事前審查品項-MedicationRequest Apply TWPAS</a>：原「事前審查藥品處方頻次(cycles)」(<code>dosageInstruction.timing.repeat.count</code>)修改為「事前審查藥品療程／週期數」，並改為非必填。</li>
         <li>修改<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：

@@ -14,13 +14,15 @@ Description:    "此基因資訊-Observation Diagnostic TWPAS Profile說明本IG
 * category.coding.code = #geneInfo
 * category ^short = "因FHIR設計而需必填"
 
+* component 1..
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code.coding.system"
 * component ^slicing.rules = #closed
 * component contains
-    gene-test-code 0..* MS
+    gene-test-code 1..* MS
     
 * component[gene-test-code] ^short = "基因檢測代碼"
+* component[gene-test-code].code ^short = "基因檢測代碼"
 * component[gene-test-code].code MS
 * component[gene-test-code].code from GeneTestCode (extensible)
 * component[gene-test-code].code ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
@@ -28,7 +30,7 @@ Description:    "此基因資訊-Observation Diagnostic TWPAS Profile說明本IG
 * component[gene-test-code].code.coding.system 1..1
 * component[gene-test-code].code.coding.system = "http://loinc.org"
 * component[gene-test-code].value[x] 1.. MS
-* component[gene-test-code].interpretation 0..1 MS
+* component[gene-test-code].interpretation 1..1 MS
 * component[gene-test-code].interpretation from DNAChangeType (extensible)
 * component[gene-test-code].interpretation obeys pas-1
 * component[gene-test-code].interpretation.coding.code 1..1
