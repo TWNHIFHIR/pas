@@ -1,14 +1,15 @@
 <div class="bg-danger" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.0.5版內容，因而會比健保署的IG版本V1.0.5(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為114年8月，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
+<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.0.5版內容，因而會比健保署的IG版本V1.0.5(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為114年8月4日，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
 <br/>
 <b>醫院實作時請以V1.0.5為主進行實例驗證，目前健保署端的伺服器採用V1.0.5版規格。</b></p>
 </div>
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/7/25異動以下內容：
+因考量實作需求，於2025/7/29異動以下內容：
     <ol>  
-        <li>修改<a href="StructureDefinition-Observation-diagnostic-twpas.html">Profile: 基因資訊-Observation Diagnostic TWPAS</a>：基因檢測代碼(<code>component:gene-test-code</code>)、基因突變類型(<code>component:gene-test-code.interpretation</code>)改為必填。</li>
+        <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
+        <li>修改<a href="StructureDefinition-Observation-diagnostic-twpas.html">Profile: 基因資訊-Observation Diagnostic TWPAS</a>：基因檢測代碼(<code>component:gene-test-code</code>)改為必填。</li>
         <li>修改<a href="ValueSet-cancer-stage.html">ValueSet: SCT + NCI-健保事前審查-癌症分期量表項目值集</a>：新增SCT代碼<code>254372002</code>(Ann Arbor lymphoma staging system)。</li>
         <li>修改<a href="CodeSystem-medication-frequency-nhi-tw.html">CodeSystem: NHI-健保事前審查-藥品使用頻率</a>：新增代碼，<code>Q3WD1</code>(每3週的第1天)~<code>Q3WD21</code>(每3週的第21天)。</li>
         <li>修改<a href="StructureDefinition-MedicationRequest-apply-twpas.html">Profile: 事前審查品項-MedicationRequest Apply TWPAS</a>：原「事前審查藥品處方頻次(cycles)」(<code>dosageInstruction.timing.repeat.count</code>)修改為「事前審查藥品療程／週期數」，並改為非必填。</li>
