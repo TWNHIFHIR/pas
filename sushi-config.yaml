@@ -9,7 +9,7 @@ name: TWPAS
 title: 臺灣健保癌症用藥事前審查實作指引
 description: 臺灣健保癌症用藥事前審查實作指引(Taiwan NHI Cancer Prior Authorization Support Implementation Guide，TWPAS IG)
 status: active
-version: 1.0.6
+version: 1.0.7
 fhirVersion: 4.0.1  # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 #releaseLabel: release

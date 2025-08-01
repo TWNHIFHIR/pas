@@ -1,36 +1,15 @@
 <div class="bg-danger" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.0.5版內容，因而會比健保署的IG版本V1.0.5(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為114年8月4日，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
+<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.0.6版內容，因而會比健保署的IG版本V1.0.6(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為114年9月，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
 <br/>
-<b>醫院實作時請以V1.0.5為主進行實例驗證，目前健保署端的伺服器採用V1.0.5版規格。</b></p>
+<b>醫院實作時請以V1.0.6為主進行實例驗證，目前健保署端的伺服器採用V1.0.6版規格。</b></p>
 </div>
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/7/29異動以下內容：
+因考量實作需求，於2025/8/1異動以下內容：
     <ol>  
-        <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
-        <li>修改<a href="StructureDefinition-Observation-diagnostic-twpas.html">Profile: 基因資訊-Observation Diagnostic TWPAS</a>：基因檢測代碼(<code>component:gene-test-code</code>)改為必填。</li>
-        <li>修改<a href="ValueSet-cancer-stage.html">ValueSet: SCT + NCI-健保事前審查-癌症分期量表項目值集</a>：新增SCT代碼<code>254372002</code>(Ann Arbor lymphoma staging system)。</li>
-        <li>修改<a href="CodeSystem-medication-frequency-nhi-tw.html">CodeSystem: NHI-健保事前審查-藥品使用頻率</a>：新增代碼，<code>Q3WD1</code>(每3週的第1天)~<code>Q3WD21</code>(每3週的第21天)。</li>
-        <li>修改<a href="StructureDefinition-MedicationRequest-apply-twpas.html">Profile: 事前審查品項-MedicationRequest Apply TWPAS</a>：原「事前審查藥品處方頻次(cycles)」(<code>dosageInstruction.timing.repeat.count</code>)修改為「事前審查藥品療程／週期數」，並改為非必填。</li>
-        <li>修改<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：
-            <ol>
-               <li>新增代碼<code>P015</code>、<code>C83N2</code>、<code>C88N3</code>、<code>C82N3</code>。</li>
-               <li>修改代碼說明，詳請參考<a href="https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods">完整代碼系統_1140716</a>。</li>
-            </ol>
-        </li>
-        <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 事前審查-Bundle TWPAS</a>：
-            <ol>
-               <li>修改Constraint: applyReason-7：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01013229，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P001、P011、P012、P031、P041、P061 或 P081</li>
-               <li>修改Constraint: applyReason-8：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01013230，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P001、P011、P012、P031、P041、P052、P061、P081、P101 或 P111</li>
-               <li>修改Constraint: applyReason-11：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01088229，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 <b>P015</b>、P021、P072 或 P121</li>
-               <li>新增Constraint: applyReason-15：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 BC28160100，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C83N2、C88N3 或 C82N3</li>
-               <li>新增Constraint: applyReason-16：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01242235，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P072</li>
-            </ol>
-        </li>
-        <li>修改<a href="StructureDefinition-DiagnosticReport-image-twpas.html">Profile: 影像報告-DiagnosticReport Image TWPAS</a>：新增影像報告slice(<code>code.coding:LOINC</code>)：外院報告請依ICD-10-PCS填寫，若無法對應，可使用LOINC代碼<code>18748-4</code>呈現。</li>
-        <li>修改<a href="StructureDefinition-Claim-twpas.html">Profile: 事前審查-Claim TWPAS</a>：修改Constraint: supportingInfo：當Claim.priority(案件類別)為1(一般事前審查申請)、3(自主審查報備)時，至少還需提供檢查報告、影像報告、基因資訊中任一樣資訊。</li>
-	</ol>
+        <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li> -->
+        <li>修改<a href="StructureDefinition-DiagnosticReport-image-twpas.html">Profile: 影像報告-DiagnosticReport Image TWPAS</a>：補充影像報告(<code>code</code>)說明：「內視鏡檢查報告，請使用LOINC代碼呈現。」。</li>
     請留意這些異動，以避免影響您的實作。
 </div>
 <br/>

@@ -5,7 +5,7 @@ Description: "臺灣衛生福利部中央健康保險署「申請部位」代碼
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2025-07-01"
-* ^version = "1.0.6"
+* ^version = "1.0.7"
 * ^experimental = false
 * #R "右側"
 * #L "左側"
@@ -16,6 +16,6 @@ Id: nhi-apply-side
 Title: "NHI-健保事前審查-申請部位值集"
 Description: "NHI-健保事前審查-申請部位值集"
 * ^date = "2025-07-01"
-* ^version = "1.0.6"
+* ^version = "1.0.7"
 * ^experimental = false
 * include codes from system NHIApplySide
