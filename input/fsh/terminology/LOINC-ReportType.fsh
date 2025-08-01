@@ -4,7 +4,7 @@ Id: report-type
 Title: "LOINC-健保事前審查-報告類型值集"
 Description: "LOINC-健保事前審查-報告類型值集"
 * ^date = "2025-07-01"
-* ^version = "1.0.6"
+* ^version = "1.0.7"
 * ^experimental = false
 * $loinc#47522-8
 * $loinc#47520-2
