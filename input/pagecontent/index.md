@@ -6,7 +6,7 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/8/1異動以下內容：
+因考量實作需求，於2025/8/8異動以下內容：
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li> -->
         <li>修改<a href="StructureDefinition-DiagnosticReport-twpas.html">Profile: 檢查報告-DiagnosticReport TWPAS</a>：<code>category</code>綁定固定值<code>https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type#examinationReport</code>，並設為必填。</li>
