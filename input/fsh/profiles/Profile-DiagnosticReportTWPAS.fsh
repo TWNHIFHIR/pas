@@ -23,8 +23,9 @@ Description:    "此檢查報告-DiagnosticReport TWPAS Profile說明本IG如何
 * performer 1..1 MS
 * performer only Reference(PractitionerTWPAS)
 //* presentedForm.title = "病理報告"
-* category 0..1
+* category 1..1
 * category.coding 1..1
+* category = NHIPASSupportingInfoType#examinationReport
 * conclusion 1..1 MS
 //* conclusion obeys pas-2
 * presentedForm obeys UploadContent

@@ -9,7 +9,13 @@
 因考量實作需求，於2025/8/1異動以下內容：
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li> -->
-        <li>修改<a href="StructureDefinition-DiagnosticReport-image-twpas.html">Profile: 影像報告-DiagnosticReport Image TWPAS</a>：補充影像報告(<code>code</code>)說明：「內視鏡檢查報告，請使用LOINC代碼呈現。」。</li>
+        <li>修改<a href="StructureDefinition-DiagnosticReport-twpas.html">Profile: 檢查報告-DiagnosticReport TWPAS</a>：<code>category</code>綁定固定值<code>https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type#examinationReport</code>，並設為必填。</li>
+        <li>修改<a href="StructureDefinition-DiagnosticReport-image-twpas.html">Profile: 影像報告-DiagnosticReport Image TWPAS</a>：
+            <ol>
+                <li><code>category</code>綁定固定值<code>https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type#imagingReport</code>，並設為必填。</li>
+                <li>補充影像報告(<code>code</code>)說明：「內視鏡檢查報告，請使用LOINC代碼呈現。」。</li>
+            </ol>
+        </li>
     請留意這些異動，以避免影響您的實作。
 </div>
 <br/>
