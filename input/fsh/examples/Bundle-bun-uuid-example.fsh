@@ -27,6 +27,9 @@ Usage: #example
 * entry[+].fullUrl = "urn:uuid:e13ae26f-836f-402b-a40f-b2c19dd1dc06"
 * entry[=].resource = inline-diaRep-ima-2
 
+* entry[+].fullUrl = "https://nhicore.nhi.gov.tw/pas/DiagnosticReport/diaRep-ima-loinc"
+* entry[=].resource = diaRep-ima-loinc
+
 * entry[+].fullUrl = "urn:uuid:4213460c-db7c-4a32-8129-157c9f3a4cc3"
 * entry[=].resource = inline-imaStu
 
@@ -498,6 +501,7 @@ Instance: inline-diaRep-ima
 InstanceOf: DiagnosticReportImageTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/diagnostic-report-status#final
+* category = NHIPASSupportingInfoType#imagingReport
 * code.coding[TW2023ICD10PCS] = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw#B34JZZ3
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * effectiveDateTime = "2024-05-07"
@@ -522,6 +526,7 @@ Instance: inline-diaRep-ima-2
 InstanceOf: DiagnosticReportImageTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/diagnostic-report-status#final
+* category = NHIPASSupportingInfoType#imagingReport
 * code.coding[TW2023ICD10PCS] = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw#B34JZZZ
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * effectiveDateTime = "2024-05-07"
@@ -560,6 +565,7 @@ Instance: inline-diaRep
 InstanceOf: DiagnosticReportTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/diagnostic-report-status#final
+* category = NHIPASSupportingInfoType#examinationReport
 * code.coding = http://loinc.org#66117-3
 * code.text = "Prostate"
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
