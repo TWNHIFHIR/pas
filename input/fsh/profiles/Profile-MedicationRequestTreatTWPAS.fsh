@@ -19,6 +19,7 @@ Description:    "此用藥品項-MedicationRequest Treat TWPAS Profile說明本I
 * medicationCodeableConcept.coding[nhi-medication-tw] 0..0
 * medicationCodeableConcept.coding[nhi-medication-ch-herb-tw] 0..0
 * medicationCodeableConcept.coding[nhi-medication] from https://nhicore.nhi.gov.tw/pas/ValueSet/nhi-medication
+* medicationCodeableConcept.coding[fda-medication-tw] from https://nhicore.nhi.gov.tw/pas/ValueSet/nhi-medication-fda
 * subject only Reference(PatientTWPAS)
 * dosageInstruction 1..*
 * dosageInstruction.timing 1..1

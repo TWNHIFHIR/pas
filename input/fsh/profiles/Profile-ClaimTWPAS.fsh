@@ -168,6 +168,25 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
 * procedure.procedureCodeableConcept.coding 1..1
 * procedure.procedureCodeableConcept from TW2023ICD10PCS (preferred)
 * procedure.date 1..1 MS
+
+* procedure.procedureCodeableConcept
+* procedure.procedureCodeableConcept.coding ^slicing.discriminator.type = #value
+* procedure.procedureCodeableConcept.coding ^slicing.discriminator.path = "system"
+* procedure.procedureCodeableConcept.coding ^slicing.rules = #closed
+* procedure.procedureCodeableConcept.coding contains
+    icd10-pcs-2023 0..1 MS and
+    icd10-pcs-2014 0..1 MS and
+    medical-service-payment 0..1 MS
+* procedure.procedureCodeableConcept.coding[icd10-pcs-2023] from TW2023ICD10PCS
+* procedure.procedureCodeableConcept.coding[icd10-pcs-2023].code 1..1 MS
+* procedure.procedureCodeableConcept.coding[icd10-pcs-2023].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw"
+* procedure.procedureCodeableConcept.coding[icd10-pcs-2014] from TW2014ICD10PCS
+* procedure.procedureCodeableConcept.coding[icd10-pcs-2014].code 1..1 MS
+* procedure.procedureCodeableConcept.coding[icd10-pcs-2014].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2014-tw"
+* procedure.procedureCodeableConcept.coding[medical-service-payment] from NHIMedicalServicePayment
+* procedure.procedureCodeableConcept.coding[medical-service-payment].code 1..1 MS
+* procedure.procedureCodeableConcept.coding[medical-service-payment].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"
+
 * item 1..*
 * item.productOrService MS
 * item.productOrService from NHIOrderType
@@ -252,24 +271,6 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
 * item.quantity.value ^short = "事前審查申請數量"
 * item.quantity.code ^short = "事前審查申請數量單位"
 * item.quantity.system ^short = "事前審查申請數量單位之代碼系統，固定為「http://unitsofmeasure.org」。"
-
-* procedure.procedureCodeableConcept
-* procedure.procedureCodeableConcept.coding ^slicing.discriminator.type = #value
-* procedure.procedureCodeableConcept.coding ^slicing.discriminator.path = "system"
-* procedure.procedureCodeableConcept.coding ^slicing.rules = #closed
-* procedure.procedureCodeableConcept.coding contains
-    icd10-pcs-2023 0..1 MS and
-    icd10-pcs-2014 0..1 MS and
-    medical-service-payment 0..1 MS
-* procedure.procedureCodeableConcept.coding[icd10-pcs-2023] from TW2023ICD10PCS
-* procedure.procedureCodeableConcept.coding[icd10-pcs-2023].code 1..1 MS
-* procedure.procedureCodeableConcept.coding[icd10-pcs-2023].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw"
-* procedure.procedureCodeableConcept.coding[icd10-pcs-2014] from TW2014ICD10PCS
-* procedure.procedureCodeableConcept.coding[icd10-pcs-2014].code 1..1 MS
-* procedure.procedureCodeableConcept.coding[icd10-pcs-2014].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2014-tw"
-* procedure.procedureCodeableConcept.coding[medical-service-payment] from TWMedicalServicePayment
-* procedure.procedureCodeableConcept.coding[medical-service-payment].code 1..1 MS
-* procedure.procedureCodeableConcept.coding[medical-service-payment].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw"
 
 * supportingInfo[weight].valueQuantity.value obeys HTWT
 * supportingInfo[height].valueQuantity.value obeys HTWT
