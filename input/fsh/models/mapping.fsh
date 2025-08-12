@@ -1,4 +1,4 @@
-/*Mapping: TWPASClaim
+Mapping: TWPASClaim
 Id: TWPASClaim
 Title: "Mapping to TWPAS Claim"
 Source: ApplyModel
@@ -310,4 +310,4 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Practitioner-twpas"
 * evaluate.tests -> "(檢驗(查))"
 * evaluate.tests.inspectPerformer -> "identifier.value (簽發檢驗(查)報告醫事人員身分證號)"
 * evaluate.patientAssessment -> "(病人狀態評估)"
-* evaluate.patientAssessment.patAstPerformer -> "identifier.value (評估項目醫事人員身分證號)"*/
+* evaluate.patientAssessment.patAstPerformer -> "identifier.value (評估項目醫事人員身分證號)"

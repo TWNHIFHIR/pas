@@ -1,7 +1,14 @@
 == Suppressed Messages ==
 
 # 使用預設的 HL7 值集，但 HL7 validator 無法辨識值集，此屬於HL7 validator 程式本身問題，非IG 設計問題，此提示訊息不影響實作與實際代碼驗證。（WARNING後方的藍色字樣(1 uses) 是指WARNING在此Profile中有被使用到）
-% ValueSet&
+WARNING: Bundle/bun-1: Bundle.entry[6].resource/*ImagingStudy/imaStu-min*/.series[0].instance[0].sopClass: ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found
+WARNING: Bundle/bun-1: Bundle.entry[6].resource/*ImagingStudy/imaStu-min*/.series[0].instance[1].sopClass: ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found
+WARNING: Bundle/bun-3: Bundle.entry[6].resource/*ImagingStudy/imaStu-min*/.series[0].instance[0].sopClass: ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found
+WARNING: Bundle/bun-3: Bundle.entry[6].resource/*ImagingStudy/imaStu-min*/.series[0].instance[1].sopClass: ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found
+WARNING: Bundle/bun-uuid-example: Bundle.entry[8].resource/*ImagingStudy/inline-imaStu*/.series[0].instance[0].sopClass: ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found
+WARNING: Bundle/bun-uuid-example: Bundle.entry[8].resource/*ImagingStudy/inline-imaStu*/.series[0].instance[1].sopClass: ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found
+WARNING: ImagingStudy/imaStu-min: ImagingStudy.series[0].instance[0].sopClass: ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found
+WARNING: ImagingStudy/imaStu-min: ImagingStudy.series[0].instance[1].sopClass: ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found
 % which is experimental, but this structure is not labeled as experimental%
 % UCUM Codes that contain human readable annotations like {tbl} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation%
 
@@ -25,7 +32,6 @@ INFORMATION: ConceptMap/nhi-sct-body-site: ConceptMap.group[0].target: Target Co
 
 # 值集中的代碼量太多，Expansion僅列出前1,000筆。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
 % The value set include has too many codes to validate %
-% The value set expansion is too large, and only a subset has been displayed%
 % value set is too large to check%
 
 # Misleadeable UCUM codes，不影響驗證。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
