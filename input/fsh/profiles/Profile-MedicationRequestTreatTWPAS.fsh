@@ -13,6 +13,7 @@ Description:    "此用藥品項-MedicationRequest Treat TWPAS Profile說明本I
 * medicationCodeableConcept from https://nhicore.nhi.gov.tw/pas/ValueSet/nhi-medication (example)
 * medicationCodeableConcept.coding 1..1
 * medicationCodeableConcept.coding contains nhi-medication 0..1 MS
+* medicationCodeableConcept.coding ^slicing.rules = #closed
 * medicationCodeableConcept.coding[rxnorm-medication-us-core] 0..0
 * medicationCodeableConcept.coding[atc-medication-code] 0..0
 * medicationCodeableConcept.coding[snomedct-medication-codes] 0..0
