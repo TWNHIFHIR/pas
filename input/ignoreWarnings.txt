@@ -58,6 +58,7 @@ INFORMATION: StructureDefinition/MedicationRequest-treat-twpas: StructureDefinit
 INFORMATION: StructureDefinition/Observation-diagnostic-twpas: StructureDefinition.differential.element[15].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/Observation-diagnostic-twpas: StructureDefinition.snapshot.element[63].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/Patient-twpas: StructureDefinition.snapshot.element[97].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/MedicationRequest-treat-twpas: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 
 # SCT版本
 WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
