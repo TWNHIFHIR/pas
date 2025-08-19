@@ -31,6 +31,7 @@
 
 #### Patient
 - [病人資訊](Patient-pat-min.html)：依據病人資訊-Patient TWPAS Profile呈現病人資訊之範例
+- [<span class="bg-success">病人資訊-使用居留證號</span>](Patient-pat-resident.html)：依據病人資訊-Patient TWPAS Profile呈現病人資訊之範例
 
 #### Practitioner
 - [醫事人員](Practitioner-pra-min.html)：依據醫事人員-Practitioner TWPAS Profile呈現醫事人員之範例
