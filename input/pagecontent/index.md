@@ -6,9 +6,10 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/8/11異動以下內容：
+因考量實作需求，於2025/8/21異動以下內容：
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li> -->
+        <li>新增代碼：<a href="ValueSet-pat-ast.html">LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集</a>：新增SCT代碼<code>277460003</code>。</li>
         <li>修改<a href="StructureDefinition-Patient-twpas.html">Profile: 病人資訊-Patient TWPAS</a>：<code>identifier</code>可填居留證號。</li>
         <li>新增<a href="ValueSet-nhi-medical-service-payment.html">ValueSet: NHI-健保事前審查-醫療服務給付項目值集</a>：供手術(或其他處置)項目(Claim.procedure.procedureCodeableConcept.coding[medical-service-payment])綁定。</li>
         <li>新增<a href="ValueSet-nhi-medication-fda.html">ValueSet: NHI-健保事前審查-臺灣食藥署藥品及醫療器材代碼值集</a>：供用藥品項的藥品代碼(MedicationRequest.medicationCodeableConcept.coding[fda-medication-tw])綁定。</li>
