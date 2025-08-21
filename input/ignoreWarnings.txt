@@ -47,7 +47,7 @@ The slice definition for Procedure.code.coding has a maximum of 1 but the slices
 The slice definition for Substance.code.coding has a maximum of 1 but the slices add up to a maximum of 2. Check that this is what is intended
 The slice definition for Claim.procedure.procedure[x].coding has a maximum of 1 but the slices add up to a maximum of 3. Check that this is what is intended
 The slice definition for MedicationRequest.medication[x]:medicationCodeableConcept.coding has a maximum of 1 but the slices add up to a maximum of 2. Check that this is what is intended
-
+The slice definition for Patient.identifier has a maximum of 2 but the slices add up to a maximum of 3. Check that this is what is intended
 
 # 提醒slice的pattern寫法將於R5版本不再支援，不影響驗證。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
 INFORMATION: StructureDefinition/Encounter-twpas: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)

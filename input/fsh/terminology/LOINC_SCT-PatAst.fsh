@@ -1,8 +1,8 @@
 Alias: $loinc = http://loinc.org
 ValueSet: PatAst
 Id: pat-ast
-Title: "LOINC + NHI-健保事前審查-病人狀態評估項目值集"
-Description: "LOINC + NHI-病人狀態評估項目值集"
+Title: "LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集"
+Description: "LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集"
 * ^date = "2025-07-01"
 * ^version = "1.0.7"
 * ^experimental = false
@@ -10,12 +10,12 @@ Description: "LOINC + NHI-病人狀態評估項目值集"
 * $loinc#98153-0
 * $loinc#89247-1
 * $loinc#89243-0
-//* http://snomed.info/sct#441870009
 * PatAst#IPS
 * PatAst#PDAI
 * PatAst#CIRS
 * $loinc#75633-8
 * PatAst#HCTCI
+* http://snomed.info/sct#277460003
 
 CodeSystem: PatAst
 Id: nhi-pat-ast

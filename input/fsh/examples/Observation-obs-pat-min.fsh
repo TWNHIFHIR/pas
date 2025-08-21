@@ -16,7 +16,7 @@ Usage: #example
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-pat-assessment-twpas.html\">病人狀態評估-Observation Patient Assessment TWPAS</a></p>
     </div>
     <p><b>狀態</b>：final</p>
-    <p><b>病人狀態評估項目代碼</b>：Functional capacity NYHA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org\">LOINC + NHI-病人狀態評估項目值集 </a>#88020-3)</span></p>
+    <p><b>病人狀態評估項目代碼</b>：Functional capacity NYHA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org\">LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集 </a>#88020-3)</span></p>
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a></p>
     <p><b>病人狀態評估日期</b>：2024-01-01</p>
     <p><b>評估項目醫事人員身分證號</b>：<a href=\"Practitioner-pra-min.html\">Practitioner/pra-min</a></p>
@@ -40,7 +40,7 @@ Usage: #example
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-pat-assessment-twpas.html\">病人狀態評估-Observation Patient Assessment TWPAS</a></p>
     </div>
     <p><b>狀態</b>：final</p>
-    <p><b>病人狀態評估項目代碼</b>：Pemphigus Disease Area Index <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pat-ast.html\">LOINC + NHI-病人狀態評估項目值集 </a>#PDAI)</span></p>
+    <p><b>病人狀態評估項目代碼</b>：Pemphigus Disease Area Index <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pat-ast.html\">LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集 </a>#PDAI)</span></p>
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a></p>
     <p><b>病人狀態評估日期</b>：2024-01-01</p>
     <p><b>評估項目醫事人員身分證號</b>：<a href=\"Practitioner-pra-min.html\">Practitioner/pra-min</a></p>
