@@ -227,7 +227,7 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
 * item.quantity.system 1..1
 * item.quantity.system = "http://unitsofmeasure.org"
 * item.quantity.code 1..1 MS
-* item.quantity.code from https://nhicore.nhi.gov.tw/pas/ValueSet/ucum-units
+* item.quantity.code from http://hl7.org/fhir/ValueSet/ucum-units
 * item.quantity.code ^binding.description = "事前審查申請數量單位的代碼範圍請參考[Common UCUM units](https://hl7.org/fhir/R4/valueset-ucum-common.html)。"
 * insurance.sequence = 1
 * insurance.coverage only Reference(CoverageTWPAS) 
