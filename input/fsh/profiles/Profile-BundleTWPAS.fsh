@@ -20,7 +20,7 @@ Description:    "此事前審查-Bundle TWPAS Profile說明本IG如何進一步�
 	patient 1..1 MS and
 	practitioner 1..* MS and
 	organization 1..1 MS and
-	organizationGen 0..1 MS and
+	organizationGen 0..* MS and
 	diagnosticReportImage 0..* MS and
 	imageStudy 0..* MS and
 	media 0..* MS and
