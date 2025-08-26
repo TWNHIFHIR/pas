@@ -8,7 +8,7 @@ Usage: #definition
 * status = #active
 * experimental = false
 * publisher = "衛生福利部中央健康保險署"
-* date = "2025-07-01"
+* date = "2025-09-01"
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+json
@@ -387,7 +387,7 @@ Usage: #definition
         <li>實作指引版本：1.0.7</li>
         <li>FHIR版本：4.0.1</li>
         <li>支援格式：<code>json</code></li>
-        <li>發佈日：2025-07-01</li>
+        <li>發佈日：2025-09-01</li>
         <li>發佈者：衛生福利部中央健康保險署</li>
     </ul>
     <h3 id=\"shallIGs\">必須（SHALL）支援以下實作指引</h3>

@@ -34,7 +34,7 @@ INFORMATION: ConceptMap/nhi-sct-body-site: ConceptMap.group[0].target: Target Co
 % The value set include has too many codes to validate %
 % value set is too large to check%
 % The value set expansion is too large, and only a subset has been displayed%
-The value set 'https://nhicore.nhi.gov.tw/pas/ValueSet/icd-10-pcs-2023-radiotherapy|1.0.7' expansion (local) took too long to process (>60sec) (and Error from https://tx.fhir.org/r4: Unable to provide support for code system https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw)
+% expansion (local) took too long to process (>60sec) (and Error from https://tx.fhir.org/r4%
 
 # Misleadeable UCUM codes，不影響驗證。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
 WARNING: Bundle/bun-1: Bundle.entry[17].resource/*MedicationRequest/medReq-treat*/.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): UCUM Codes that contain human readable annotations like {tbl} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit 'tablets' SHOULD contain the annotation (it does not)

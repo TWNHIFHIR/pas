@@ -3,7 +3,7 @@ ValueSet: GeneTestCode
 Id: gene-test-code
 Title: "LOINC-健保事前審查-基因檢測代碼值集"
 Description: "LOINC-健保事前審查-基因檢測代碼值集"
-* ^date = "2025-07-01"
+* ^date = "2025-09-01"
 * ^version = "1.0.7"
 * ^experimental = false
 * $loinc#99965-6
