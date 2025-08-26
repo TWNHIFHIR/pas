@@ -34,9 +34,17 @@ Description: "NHI-健保事前審查-用藥品項，參照自[健保用藥品項
 
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2025-07-25"
-* ^version = "2025-07-25"
+* ^date = "2025-08-25"
+* ^version = "2025-08-25"
 * ^experimental = false
+/*2025-8 add*/
+* #AC61845421 "XINCLAME OPHTHALMIC SOLUTION"
+* #KC01155257 "Remsima Solution for injection"
+* #BC28556100 "SCEMBLIX 40MG FILM-COATED TABLETS"
+* #JC00089206 "\"TETANUS TOXOID ALUM PRECIPITATED \"KUO KWANG\"\""
+* #BC28106148 "QINLOCK TABLET 50MG"
+* #KC01142235 "Darzalex 1800mg solution for subcutaneous injection"
+
 /*2025-7 add*/
 * #BC28878100 "GLINSIP 50 (SITAGLIPTIN TABLETS 50 MG)"
 * #BC28877100 "GLINSIP 25 (Sitagliptin Tablets 25 mg)"
