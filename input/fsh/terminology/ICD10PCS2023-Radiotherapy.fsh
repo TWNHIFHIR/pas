@@ -2,7 +2,7 @@ ValueSet: ICD10PCS2023Radiotherapy
 Id: icd-10-pcs-2023-radiotherapy
 Title: "NHI-臺灣健保署2023年中文版ICD 10 PCS-放射治療項目值集"
 Description: "NHI-臺灣健保署2023年中文版ICD 10 PCS-放射治療項目值集"
-* ^date = "2025-07-01"
+* ^date = "2025-09-01"
 * ^version = "1.0.7"
 * ^experimental = false
 * $icd-10-pcs-2023#D0000ZZ 

@@ -59,7 +59,7 @@ ValueSet: MediaMimeTypes
 Id: media-mimetypes
 Title: "HL7-非DICOM影像MimeType值集"
 Description: "HL7-非DICOM影像MimeType值集"
-* ^date = "2025-07-01"
+* ^date = "2025-09-01"
 * ^version = "1.0.7"
 * ^experimental = false
 * urn:ietf:bcp:13#image/jpeg

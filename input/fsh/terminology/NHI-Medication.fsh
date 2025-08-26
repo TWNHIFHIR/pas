@@ -3,8 +3,8 @@ Id: nhi-medication-fda
 Title: "NHI-健保事前審查-臺灣食藥署藥品及醫療器材代碼值集"
 Description: "NHI-健保事前審查-臺灣食藥署藥品及醫療器材代碼值集。  
 此值集所涵蓋代碼量較大會使載入頁面時間較長，完整代碼可至[全國專門術語服務平臺－值集(Value Set)](https://fhir.mohw.gov.tw/ts/valueset.jsp)查閱。"
-* ^date = "2025-07-01"
-* ^version = "2025-07-01"
+* ^date = "2025-09-01"
+* ^version = "2025-09-01"
 * ^experimental = false
 * include codes from system https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-fda-tw
 * include codes from system https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-device-fda-tw
@@ -34,9 +34,17 @@ Description: "NHI-健保事前審查-用藥品項，參照自[健保用藥品項
 
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2025-07-25"
-* ^version = "2025-07-25"
+* ^date = "2025-08-25"
+* ^version = "2025-08-25"
 * ^experimental = false
+/*2025-8 add*/
+* #AC61845421 "XINCLAME OPHTHALMIC SOLUTION"
+* #KC01155257 "Remsima Solution for injection"
+* #BC28556100 "SCEMBLIX 40MG FILM-COATED TABLETS"
+* #JC00089206 "\"TETANUS TOXOID ALUM PRECIPITATED \"KUO KWANG\"\""
+* #BC28106148 "QINLOCK TABLET 50MG"
+* #KC01142235 "Darzalex 1800mg solution for subcutaneous injection"
+
 /*2025-7 add*/
 * #BC28878100 "GLINSIP 50 (SITAGLIPTIN TABLETS 50 MG)"
 * #BC28877100 "GLINSIP 25 (Sitagliptin Tablets 25 mg)"

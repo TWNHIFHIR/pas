@@ -4,7 +4,7 @@ Title: "健保事前審查-臺灣健保署身體部位代碼對應SNOMED CT"
 Usage: #definition
 * experimental = false
 * status = #active
-* date = "2025-07-01"
+* date = "2025-09-01"
 * version = "1.0.7"
 * name = "NHISNOMEDCT"
 * title = "臺灣健保署身體部位代碼對應SNOMED CT"
