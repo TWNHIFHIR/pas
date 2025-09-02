@@ -22,7 +22,7 @@ Description: "NHI-健保事前審查-藥品使用頻率，參照至[健保署檔
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2025-09-01"
-* ^version = "1.0.7"
+* ^version = "1.0.8"
 * ^experimental = false
 * #QW(1) "每週一使用"
 * #QW(2) "每週二使用"

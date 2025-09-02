@@ -3,6 +3,9 @@ Parent:         Claim
 Id:             Claim-twpas
 Title:          "事前審查-Claim TWPAS"
 Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步定義FHIR的Claim Resource以呈現癌藥事前審查之內容"
+* meta 1..1
+* meta.profile 1..1
+* meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-twpas"
 * identifier and provider and subType and enterer and created and priority and patient MS
 * extension contains
     https://nhicore.nhi.gov.tw/pas/StructureDefinition/extension-claim-encounter named encounter 1..1 MS

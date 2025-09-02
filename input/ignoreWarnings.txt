@@ -51,22 +51,14 @@ The slice definition for MedicationRequest.medication[x]:medicationCodeableConce
 The slice definition for Patient.identifier has a maximum of 2 but the slices add up to a maximum of 3. Check that this is what is intended
 
 # 提醒slice的pattern寫法將於R5版本不再支援，不影響驗證。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
-INFORMATION: StructureDefinition/Encounter-twpas: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/Encounter-twpas: StructureDefinition.snapshot.element[36].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/ImagingStudy-twpas: StructureDefinition.snapshot.element[34].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/MedicationRequest-apply-twpas: StructureDefinition.snapshot.element[22].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/MedicationRequest-treat-twpas: StructureDefinition.snapshot.element[22].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/Observation-diagnostic-twpas: StructureDefinition.differential.element[15].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/Observation-diagnostic-twpas: StructureDefinition.snapshot.element[63].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/Patient-twpas: StructureDefinition.snapshot.element[97].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/MedicationRequest-treat-twpas: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+% The discriminator type 'pattern' is deprecated in R5%
 
 # SCT版本
 WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
 
 
 # deprecated extension，IG中未使用，不影響驗證。（後方的藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
-INFORMATION: StructureDefinition/Bundle-response-twpas: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+% The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated%
 % The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note%
 
 # validated無法辨識URL，不影響驗證。（WARNING後方的 藍色字樣(1uses) 是指WARNING在此Profile中有被使用到）

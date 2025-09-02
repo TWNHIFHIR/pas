@@ -4,6 +4,9 @@ Parent:         DiagnosticReport
 Id:             DiagnosticReport-image-twpas
 Title:          "影像報告-DiagnosticReport Image TWPAS"
 Description:    "此影像報告-DiagnosticReport Image TWPAS Profile說明本IG如何進一步定義臺灣核心-診斷報告(TW Core DiagnosticReport) Profile以呈現癌藥事前審查之影像報告"
+* meta 1..1
+* meta.profile 1..1
+* meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/DiagnosticReport-image-twpas"
 * code from ICD10PCS2023Image (preferred)
 * code.coding 1..1
 * code.coding ^slicing.rules = #closed
@@ -30,12 +33,12 @@ Description:    "此影像報告-DiagnosticReport Image TWPAS Profile說明本IG
 * code.coding[TW2023ICD10PCS].system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw"
 * code.coding[TW2023ICD10PCS] from ICD10PCS2023Image (extensible)
 * code.coding[TW2023ICD10PCS] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
-* code.coding[LOINC] ^short = "外院報告請依ICD-10-PCS填寫，若無法對應，可使用LOINC代碼#18748-4呈現。內視鏡檢查報告，請使用LOINC代碼呈現。"
+* code.coding[LOINC] ^short = "外院報告請依ICD-10-PCS填寫，若無法對應，可使用LOINC代碼呈現。"
 * code.coding[LOINC].code 1..1 MS
 * code.coding[LOINC].system 1..1 MS
 * code.coding[LOINC].system = "http://loinc.org"
-* code.coding[LOINC].code = #18748-4 
-* code.coding[LOINC] from http://hl7.org/fhir/ValueSet/report-codes (extensible)
+//* code.coding[LOINC].code = #18748-4 
+* code.coding[LOINC] from ImagingReport (extensible)
 * code.text 0..1 MS
 * performer 1..1 MS
 * performer only Reference(PractitionerTWPAS) 
@@ -52,7 +55,7 @@ Description:    "此影像報告-DiagnosticReport Image TWPAS Profile說明本IG
 * category 1..1
 * category.coding 1..1
 * category = NHIPASSupportingInfoType#imagingReport
-* code  ^short = "影像報告，ICD-10-PCS。外院報告請依ICD-10-PCS填寫，若無法對應，可使用LOINC代碼#18748-4呈現。內視鏡檢查報告，請使用LOINC代碼呈現。"
+* code  ^short = "影像報告，ICD-10-PCS。外院報告請依ICD-10-PCS填寫，若無法對應，可使用LOINC代碼呈現。"
 * code.text  ^short = "影像檢查的身體部位"
 * conclusion  ^short = "影像報告結果，請勿將醫事機構名稱、病人及醫師姓名等資訊列入結果中上傳，且不得包含HTML或XML等語法。"
 * effectiveDateTime  ^short = "影像報告日期，YYYY-MM-DD"
