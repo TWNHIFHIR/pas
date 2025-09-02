@@ -3,6 +3,7 @@ Parent:         TWCorePatient
 Id:             Patient-twpas
 Title:          "病人資訊-Patient TWPAS"
 Description:    "此病人資訊-Patient TWPAS Profile說明本IG如何進一步定義臺灣核心-病人(TW Core Patient) Profile以呈現癌藥事前審查之病人基本資料"
+* meta.profile 1..1
 * identifier 1..2
 * identifier ^slicing.rules = #closed
 * identifier[idCardNumber] 0..1

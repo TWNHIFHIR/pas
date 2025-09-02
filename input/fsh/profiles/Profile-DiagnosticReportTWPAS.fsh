@@ -4,6 +4,7 @@ Parent:         DiagnosticReport
 Id:             DiagnosticReport-twpas
 Title:          "檢查報告-DiagnosticReport TWPAS"
 Description:    "此檢查報告-DiagnosticReport TWPAS Profile說明本IG如何進一步定義臺灣核心-診斷報告(TW Core DiagnosticReport) Profile以呈現癌藥事前審查中疾病資訊之檢查報告"
+* meta.profile 1..1
 * code.coding 1..1
 * code.coding.code 1..1
 * code.coding.system 1..1

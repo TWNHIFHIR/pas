@@ -3,6 +3,7 @@ Parent:         TWCoreBundle
 Id:             Bundle-twpas
 Title:          "事前審查-Bundle TWPAS"
 Description:    "此事前審查-Bundle TWPAS Profile說明本IG如何進一步定義資料交換基本單位(TW Core Bundle) Profile以呈現癌藥事前審查之內容"
+* meta.profile 1..1
 * type = #collection
 //* identifier ^short = "原受理編號"
 * timestamp ^short = "緊急報備日期，YYYY-MM-DDTHH:MM:SS (需包含時區)；若本案件前已緊急報備過，本次為檢送完整資訊申請送件者，由機構將前次緊急報備時所填之申請日期，自填為緊急報備日期。"

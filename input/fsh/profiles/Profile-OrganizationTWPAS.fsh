@@ -3,6 +3,7 @@ Parent:         TWCoreOrganization
 Id:             Organization-twpas
 Title:          "醫事機構-Organization TWPAS"
 Description:    "此醫事機構-Organization TWPAS Profile說明本IG如何進一步定義臺灣核心-機構(TW Core Organization) Profile以呈現癌藥事前審查之醫事機構基本資料"
+* meta.profile 1..1
 * identifier 1..1
 * identifier.value 1..1
 * identifier.system 1..1
@@ -18,6 +19,7 @@ Parent:         TWCoreOrganization
 Id:             Organization-genetic-testing-twpas
 Title:          "基因檢測機構-Organization Genetic Testing TWPAS"
 Description:    "此基因檢測機構-Organization Genetic Testing TWPAS Profile說明本IG如何進一步定義臺灣核心-機構(TW Core Organization) Profile以呈現癌藥事前審查之基因檢測機構基本資料"
+* meta.profile 1..1
 * identifier 1..1
 * identifier.value 1..1
 //* identifier.system 1..1

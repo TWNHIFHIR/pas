@@ -3,6 +3,7 @@ Parent:         TWCoreDocumentReference
 Id:             DocumentReference-twpas
 Title:          "文件參照-DocumentReference TWPAS"
 Description:    "此文件參照-DocumentReference TWPAS Profile說明本IG如何進一步定義臺灣核心-文件參照(TW Core DocumentReference) Profile以呈現癌藥事前審查之治療計畫文件及基因報告"
+* meta.profile 1..1
 * status = http://hl7.org/fhir/document-reference-status#current
 * category 1..1
 * category.coding 1..1
