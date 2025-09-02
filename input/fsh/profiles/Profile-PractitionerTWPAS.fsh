@@ -5,7 +5,7 @@ Title:          "醫事人員-Practitioner TWPAS"
 Description:    "此醫事人員-Practitioner TWPAS Profile說明本IG如何進一步定義臺灣核心-健康照護服務提供者(TW Core Practitioner) Profile以呈現癌藥事前審查之申請醫師、簽發影像報告醫師、簽發癌症分期報告醫師、檢查報告醫師、簽發檢驗(查)報告醫事人員及評估項目醫事人員基本資料"
 * meta 1..1
 * meta.profile 1..1
-* meta.profile = $sd/Practitioner-twpas
+* meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Practitioner-twpas"
 * identifier 1..2
 * identifier ^slicing.rules = #closed
 * identifier[idCardNumber] ^short  = "醫師身分證號"

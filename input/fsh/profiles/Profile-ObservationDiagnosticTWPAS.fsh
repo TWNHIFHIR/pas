@@ -5,7 +5,7 @@ Title:          "基因資訊-Observation Diagnostic TWPAS"
 Description:    "此基因資訊-Observation Diagnostic TWPAS Profile說明本IG如何進一步定義FHIR的Observation Resource以呈現癌藥事前審查之基因資訊"
 * meta 1..1
 * meta.profile 1..1
-* meta.profile = $sd/Observation-diagnostic-twpas
+* meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-diagnostic-twpas"
 * effective[x] only dateTime
 * code.coding 1..1
 * code.coding.code 1..1 MS

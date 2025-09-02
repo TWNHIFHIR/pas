@@ -6,7 +6,7 @@ Title:          "檢驗檢查-Observation Laboratory Result TWPAS"
 Description:    "此檢驗檢查-Observation Laboratory Result TWPAS Profile說明本IG如何進一步定義臺灣核心-檢驗檢查(TW Core Observation Laboratory Result) Profile以呈現癌藥事前審查中評估資訊之檢驗(查)相關資料"
 * meta 1..1
 * meta.profile 1..1
-* meta.profile = $sd/Observation-laboratory-result-twpas
+* meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-laboratory-result-twpas"
 * code and subject and effective[x] and performer and value[x] MS
 * effective[x] only dateTime
 * code from LOINCCodes

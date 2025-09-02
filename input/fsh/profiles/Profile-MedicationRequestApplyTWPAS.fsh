@@ -5,7 +5,7 @@ Title:          "事前審查品項-MedicationRequest Apply TWPAS"
 Description:    "此事前審查品項-MedicationRequest Apply TWPAS Profile說明本IG如何進一步定義臺灣核心-藥品請求(TW Core MedicationRequest) Profile以呈現癌藥事前審查中申請項目之事前審查品項"
 * meta 1..1
 * meta.profile 1..1
-* meta.profile = $sd/MedicationRequest-apply-twpas
+* meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/MedicationRequest-apply-twpas"
 * status =  http://hl7.org/fhir/CodeSystem/medicationrequest-status#on-hold
 * intent =  http://hl7.org/fhir/CodeSystem/medicationrequest-intent#plan
 * medication[x] only CodeableConceptTW

@@ -5,7 +5,7 @@ Title:          "放射治療總劑量-Substance TWPAS"
 Description:    "此放射治療總劑量-Substance TWPAS Profile說明本IG如何進一步定義FHIR的Substance Resource以呈現癌藥事前審查中治療資訊之放射治療總劑量"
 * meta 1..1
 * meta.profile 1..1
-* meta.profile = $sd/Substance-twpas
+* meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Substance-twpas"
 * ingredient 0..1 MS
 * ingredient.quantity.numerator 1..1 
 * ingredient.quantity.numerator.value 1..1 MS

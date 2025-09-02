@@ -5,7 +5,7 @@ Title:          "就醫科別-Encounter TWPAS"
 Description:    "此就醫科別-Encounter TWPAS Profile說明本IG如何進一步定義臺灣核心-就醫事件(TW Core Encounter) Profile以呈現癌藥事前審查中院所資訊之就醫科別"
 * meta 1..1
 * meta.profile 1..1
-* meta.profile = $sd/Encounter-twpas
+* meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Encounter-twpas"
 * serviceType 1..1
 * serviceType ^short = "就醫科別，完整代碼對應表請參照就醫科別對應表。"
 * serviceType from TWMedicalDepartmentSCT (preferred)
