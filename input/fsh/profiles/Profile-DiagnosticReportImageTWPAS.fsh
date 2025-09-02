@@ -4,7 +4,9 @@ Parent:         DiagnosticReport
 Id:             DiagnosticReport-image-twpas
 Title:          "影像報告-DiagnosticReport Image TWPAS"
 Description:    "此影像報告-DiagnosticReport Image TWPAS Profile說明本IG如何進一步定義臺灣核心-診斷報告(TW Core DiagnosticReport) Profile以呈現癌藥事前審查之影像報告"
+* meta 1..1
 * meta.profile 1..1
+* meta.profile = $sd/DiagnosticReport-image-twpas
 * code from ICD10PCS2023Image (preferred)
 * code.coding 1..1
 * code.coding ^slicing.rules = #closed
