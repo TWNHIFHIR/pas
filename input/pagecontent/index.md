@@ -9,13 +9,11 @@
 因考量實作需求，於2025/9/2異動以下內容：
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li> -->
-        <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 事前審查-Bundle TWPAS</a>：基因檢測機構(<code>entry:organizationGen</code>)可填多筆。</li>
-        <li>新增代碼：<a href="ValueSet-pat-ast.html">LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集</a>：新增SCT代碼<code>277460003</code>。</li>
-        <li>修改<a href="StructureDefinition-Patient-twpas.html">Profile: 病人資訊-Patient TWPAS</a>：<code>identifier</code>可填居留證號。</li>
-        <li>新增<a href="ValueSet-nhi-medical-service-payment.html">ValueSet: NHI-健保事前審查-醫療服務給付項目值集</a>：供手術(或其他處置)項目(Claim.procedure.procedureCodeableConcept.coding[medical-service-payment])綁定。</li>
+        <li>修改<a href="StructureDefinition-DiagnosticReport-image-twpas.html">Profile: 影像報告-DiagnosticReport Image TWPAS</a>：<code>code.coding:LOINC</code>(影像報告)取消固定值，綁定<a href="ValueSet-imaging-report.html">LOINC-健保事前審查-影像報告值集</a>。</li>
+        <!-- <li>新增<a href="ValueSet-nhi-medical-service-payment.html">ValueSet: NHI-健保事前審查-醫療服務給付項目值集</a>：供手術(或其他處置)項目(Claim.procedure.procedureCodeableConcept.coding[medical-service-payment])綁定。</li>
         <li>新增<a href="ValueSet-nhi-medication-fda.html">ValueSet: NHI-健保事前審查-臺灣食藥署藥品及醫療器材代碼值集</a>：供用藥品項的藥品代碼(MedicationRequest.medicationCodeableConcept.coding[fda-medication-tw])綁定。</li>
         <li>修改<a href="StructureDefinition-DiagnosticReport-twpas.html">Profile: 檢查報告-DiagnosticReport TWPAS</a>：<code>category</code>綁定固定值<code>https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type#examinationReport</code>，並設為必填。</li>
-        <!-- <li>修改<a href="StructureDefinition-DiagnosticReport-image-twpas.html">Profile: 影像報告-DiagnosticReport Image TWPAS</a>：
+        <li>修改<a href="StructureDefinition-DiagnosticReport-image-twpas.html">Profile: 影像報告-DiagnosticReport Image TWPAS</a>：
             <ol>
                 <li><code>category</code>綁定固定值<code>https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type#imagingReport</code>，並設為必填。</li>
                 <li>補充影像報告(<code>code</code>)說明：「內視鏡檢查報告，請使用LOINC代碼呈現。」。</li>
