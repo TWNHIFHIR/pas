@@ -10,6 +10,7 @@
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li> -->
         <li>每個Profile中的<code>meta.profile</code>改為必填。</li>
+        <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li>
         <li>修改<a href="StructureDefinition-DiagnosticReport-image-twpas.html">Profile: 影像報告-DiagnosticReport Image TWPAS</a>：<code>code.coding:LOINC</code>(影像報告)取消固定值，綁定<a href="ValueSet-imaging-report.html">LOINC-健保事前審查-影像報告值集</a>。</li>
         <!-- <li>新增<a href="ValueSet-nhi-medical-service-payment.html">ValueSet: NHI-健保事前審查-醫療服務給付項目值集</a>：供手術(或其他處置)項目(Claim.procedure.procedureCodeableConcept.coding[medical-service-payment])綁定。</li>
         <li>新增<a href="ValueSet-nhi-medication-fda.html">ValueSet: NHI-健保事前審查-臺灣食藥署藥品及醫療器材代碼值集</a>：供用藥品項的藥品代碼(MedicationRequest.medicationCodeableConcept.coding[fda-medication-tw])綁定。</li>

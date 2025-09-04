@@ -27,8 +27,11 @@ Usage: #example
 * entry[+].fullUrl = "urn:uuid:e13ae26f-836f-402b-a40f-b2c19dd1dc06"
 * entry[=].resource = inline-diaRep-ima-2
 
-* entry[+].fullUrl = "https://nhicore.nhi.gov.tw/pas/DiagnosticReport/diaRep-ima-loinc"
-* entry[=].resource = diaRep-ima-loinc
+* entry[+].fullUrl = "urn:uuid:fd9d86d3-df40-45a9-a636-4f5b1710e1c5"
+* entry[=].resource = inline-diaRep-ima-loinc
+
+/** entry[+].fullUrl = "https://nhicore.nhi.gov.tw/pas/DiagnosticReport/diaRep-ima-loinc"
+* entry[=].resource = diaRep-ima-loinc*/
 
 * entry[+].fullUrl = "urn:uuid:4213460c-db7c-4a32-8129-157c9f3a4cc3"
 * entry[=].resource = inline-imaStu
@@ -125,28 +128,30 @@ Usage: #inline
 * supportingInfo[imagingReport][=].valueReference.reference = "urn:uuid:75f8540e-ace9-47d4-afd8-0a3ec81ad656" 
 * supportingInfo[imagingReport][+].sequence = 5
 * supportingInfo[imagingReport][=].valueReference.reference = "urn:uuid:e13ae26f-836f-402b-a40f-b2c19dd1dc06" 
-* supportingInfo[cancerStage].sequence = 6
+* supportingInfo[imagingReport][+].sequence = 6
+* supportingInfo[imagingReport][=].valueReference.reference = "urn:uuid:fd9d86d3-df40-45a9-a636-4f5b1710e1c5" 
+* supportingInfo[cancerStage].sequence = 7
 * supportingInfo[cancerStage].valueReference.reference = "urn:uuid:2b42533e-3004-4f1d-abd1-c3e55fa9981f" 
-* supportingInfo[examinationReport].sequence = 7
+* supportingInfo[examinationReport].sequence = 8
 * supportingInfo[examinationReport].valueReference.reference = "urn:uuid:96dd114f-c596-4dab-9483-a94300e37e20" 
-* supportingInfo[geneInfo].sequence = 8
+* supportingInfo[geneInfo].sequence = 9
 * supportingInfo[geneInfo].valueReference.reference = "urn:uuid:a7f410d8-a646-4ec5-b32a-e4c50dd9db4c" 
-* supportingInfo[tests][0].sequence = 9
+* supportingInfo[tests][0].sequence = 10
 * supportingInfo[tests][=].valueReference.reference = "urn:uuid:e731f6b1-aac7-4b3f-9a72-1d71f25e664c" 
-* supportingInfo[tests][+].sequence = 10
+* supportingInfo[tests][+].sequence = 11
 * supportingInfo[tests][=].valueReference.reference = "urn:uuid:e9dfe919-52dd-4691-96bf-1a3d244a30a3" 
-* supportingInfo[patientAssessment].sequence = 11
+* supportingInfo[patientAssessment].sequence = 12
 * supportingInfo[patientAssessment].valueReference.reference = "urn:uuid:f08b0bfb-d26b-4118-aa30-5abbd391f762" 
-* supportingInfo[medicationRequest].sequence = 12
+* supportingInfo[medicationRequest].sequence = 13
 * supportingInfo[medicationRequest].valueReference.reference = "urn:uuid:da01d9f1-5945-46d8-b493-18a72a7976a0" 
 //* supportingInfo[medicationRequest].code = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-line-of-therapy#1 "第一線治療"
-* supportingInfo[radiotherapy].sequence = 13
+* supportingInfo[radiotherapy].sequence = 14
 * supportingInfo[radiotherapy].valueReference.reference = "urn:uuid:0a37e990-e3ad-4b35-88c7-13b4283bdf10" 
-* supportingInfo[carePlanDocument].sequence = 14
+* supportingInfo[carePlanDocument].sequence = 15
 * supportingInfo[carePlanDocument].valueReference.reference = "urn:uuid:3a625041-5d1f-4e98-81c1-dff54adcc110" 
-* supportingInfo[medicalRecord].sequence = 15
+* supportingInfo[medicalRecord].sequence = 16
 * supportingInfo[medicalRecord].valueReference.reference = "urn:uuid:931cd8ec-705b-4ac7-ad72-43728045f278"
-* supportingInfo[treatmentAssessment].sequence = 16
+* supportingInfo[treatmentAssessment].sequence = 17
 * supportingInfo[treatmentAssessment].valueReference.reference = "urn:uuid:63cabc24-a403-4522-9226-1c96968590bd"
 * diagnosis.sequence = 1
 * diagnosis.diagnosisCodeableConcept  = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2023-tw#I50.812
@@ -227,66 +232,72 @@ Usage: #inline
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：6</p>
+        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type imagingReport}\">影像報告</span></p>
+        <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-fd9d86d3-df40-45a9-a636-4f5b1710e1c5\">urn:uuid:fd9d86d3-df40-45a9-a636-4f5b1710e1c5</a></p>
+    </blockquote>
+    <blockquote>
+        <p><b>supportingInfo</b></p>
+        <p><b>sequence</b>：7</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type cancerStage}\">癌症分期量表</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-2b42533e-3004-4f1d-abd1-c3e55fa9981f\">urn:uuid:2b42533e-3004-4f1d-abd1-c3e55fa9981f</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
-        <p><b>sequence</b>：7</p>
+        <p><b>sequence</b>：8</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type examinationReport}\">檢查報告</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-96dd114f-c596-4dab-9483-a94300e37e20\">urn:uuid:96dd114f-c596-4dab-9483-a94300e37e20</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
-        <p><b>sequence</b>：8</p>
+        <p><b>sequence</b>：9</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type geneInfo}\">基因資訊</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-a7f410d8-a646-4ec5-b32a-e4c50dd9db4c\">urn:uuid:a7f410d8-a646-4ec5-b32a-e4c50dd9db4c</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
-        <p><b>sequence</b>：9</p>
+        <p><b>sequence</b>：10</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type tests}\">檢驗(查)</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-e731f6b1-aac7-4b3f-9a72-1d71f25e664c\">urn:uuid:e731f6b1-aac7-4b3f-9a72-1d71f25e664c</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
-        <p><b>sequence</b>：10</p>
+        <p><b>sequence</b>：11</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type tests}\">檢驗(查)</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-e9dfe919-52dd-4691-96bf-1a3d244a30a3\">urn:uuid:e9dfe919-52dd-4691-96bf-1a3d244a30a3</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
-        <p><b>sequence</b>：11</p>
+        <p><b>sequence</b>：12</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type patientAssessment}\">病人狀態評估</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-f08b0bfb-d26b-4118-aa30-5abbd391f762\">urn:uuid:f08b0bfb-d26b-4118-aa30-5abbd391f762</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
-        <p><b>sequence</b>：12</p>
+        <p><b>sequence</b>：13</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type medicationRequest}\">用藥品項</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-da01d9f1-5945-46d8-b493-18a72a7976a0\">urn:uuid:da01d9f1-5945-46d8-b493-18a72a7976a0</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
-        <p><b>sequence</b>：13</p>
+        <p><b>sequence</b>：14</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type radiotherapy}\">放射治療</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-0a37e990-e3ad-4b35-88c7-13b4283bdf10\">urn:uuid:0a37e990-e3ad-4b35-88c7-13b4283bdf10</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
-        <p><b>sequence</b>：14</p>
+        <p><b>sequence</b>：15</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type carePlanDocument}\">治療計畫文件</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-3a625041-5d1f-4e98-81c1-dff54adcc110\">urn:uuid:3a625041-5d1f-4e98-81c1-dff54adcc110</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
-        <p><b>sequence</b>：15</p>
+        <p><b>sequence</b>：16</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type medicalRecord}\">病歷資料</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-931cd8ec-705b-4ac7-ad72-43728045f278\">urn:uuid:931cd8ec-705b-4ac7-ad72-43728045f278</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
-        <p><b>sequence</b>：16</p>
+        <p><b>sequence</b>：17</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type treatmentAssessment}\">結果資訊</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-63cabc24-a403-4522-9226-1c96968590bd\">urn:uuid:63cabc24-a403-4522-9226-1c96968590bd</a></p>
     </blockquote>
@@ -552,11 +563,52 @@ Usage: #inline
     <p><b>影像檢查的身體部位／DICOM影像</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-4213460c-db7c-4a32-8129-157c9f3a4cc3\">urn:uuid:4213460c-db7c-4a32-8129-157c9f3a4cc3</a></p>
     <p><b>影像報告結果</b>：影像報告結果</p>
     <blockquote>
-        <p><b>影像報告名稱</b>：影像報告03</p>
+        <p><b>影像報告名稱</b>：影像報告</p>
         <p><b>影像報告</b>：file://ImagingDiagnosticReport01.pdf</p>
     </blockquote>
     <blockquote>
-        <p><b>影像報告名稱</b>：影像報告04</p>
+        <p><b>影像報告名稱</b>：影像報告</p>
+        <p><b>影像報告</b>：file://ImagingDiagnosticReport02.pdf</p>
+    </blockquote>
+</div>"
+
+Instance: inline-diaRep-ima-loinc
+InstanceOf: DiagnosticReportImageTWPAS
+Title: "影像報告-使用LOINC代碼"
+Description: "依據影像報告-DiagnosticReport Image TWPAS Profile呈現外院報告無法對應ICD-10-PCS之影像報告之範例"
+Usage: #example
+* status = http://hl7.org/fhir/diagnostic-report-status#final
+* category = NHIPASSupportingInfoType#imagingReport
+* code.coding[LOINC] = http://loinc.org#18748-4
+* subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
+* effectiveDateTime = "2024-05-07"
+* performer.reference = "urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020"
+* imagingStudy.reference = "urn:uuid:4213460c-db7c-4a32-8129-157c9f3a4cc3"
+* conclusion = "影像報告結果"
+* presentedForm[0].contentType = #application/pdf
+* presentedForm[=].title = "影像報告"
+* presentedForm[=].url =  "file://ImagingDiagnosticReport01.pdf"
+* presentedForm[+].contentType = #application/pdf
+* presentedForm[=].title = "影像報告"
+* presentedForm[=].url =  "file://ImagingDiagnosticReport02.pdf"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+    <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">
+        <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DiagnosticReport-image-twpas.html\">影像報告-DiagnosticReport Image TWPAS</a></p>
+    </div>
+    <p><b>狀態</b>：final</p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
+    <p><b>影像報告</b>：Diagnostic imaging study <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINCDiagnosticReportCodes </a>#18748-4)</span></p>
+    <p><b>影像報告日期</b>：2024-05-07</p>
+    <p><b>簽發影像報告醫師</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
+    <p><b>影像檢查的身體部位／DICOM影像</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-4213460c-db7c-4a32-8129-157c9f3a4cc3\">urn:uuid:4213460c-db7c-4a32-8129-157c9f3a4cc3</a></p>
+    <p><b>影像報告結果</b>：影像報告結果</p>
+    <blockquote>
+        <p><b>影像報告名稱</b>：影像報告</p>
+        <p><b>影像報告</b>：file://ImagingDiagnosticReport01.pdf</p>
+    </blockquote>
+    <blockquote>
+        <p><b>影像報告名稱</b>：影像報告</p>
         <p><b>影像報告</b>：file://ImagingDiagnosticReport02.pdf</p>
     </blockquote>
 </div>"
