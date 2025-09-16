@@ -20,6 +20,9 @@
 			<li>
 				<a href="terminologies.html">專門術語</a>
 			</li>
+			<li>
+				<a href="scopes.html">SMART on FHIR規範要求與支援能力</a>
+			</li>
 		</ul>
 	</li>
  	<li><a href="examples.html">範例</a></li>

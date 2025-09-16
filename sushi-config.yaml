@@ -79,6 +79,8 @@ pages:
     title: TWPAS ImplementationGuide Resource
   validate.md:
     title: 驗證教學
+  scopes.md:
+    title: SMART on FHIR規範要求與支援能力
 
 
 
