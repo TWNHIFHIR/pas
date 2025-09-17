@@ -1,12 +1,12 @@
-[SMART App Launch](http://hl7.org/fhir/smart-app-launch/STU2.2){:target="_blank"}實作指引定義了一套基於OAuth 2.0的授權與驗證模式，讓應用程式能與FHIR系統安全地整合。本章節說明TWPAS服務在支援前端應用程式（User-Facing Applications）與後端服務（Backend Services）時，所需遵循的SMART on FHIR規範要求與支援能力。
+[SMART App Launch](https://hl7.org/fhir/smart-app-launch/STU2.2){:target="_blank"}實作指引定義了一套基於OAuth 2.0的授權與驗證模式，讓應用程式能與FHIR系統安全地整合。本章節說明TWPAS服務在支援前端應用程式（User-Facing Applications）與後端服務（Backend Services）時，所需遵循的SMART on FHIR規範要求與支援能力。
 
 ### 能力集合 (Capability Sets)
 為了促進互通性，SMART on FHIR定義了一組核心能力。伺服器需公開支援的能力，並組合成「能力集合(Capability Set)」，以因應特定使用情境。
 
 #### 醫院端應用程式 (User-Facing Applications)
 若伺服端需支援醫院端應用程式，至少**建議應該(SHOULD)**支援下列能力集合；若為健保署認證系統，則**必須(SHALL)**支援兩者：
-- [Patient Access for Standalone Apps](http://hl7.org/fhir/smart-app-launch/STU2.2/conformance.html#patient-access-for-standalone-apps){:target="_blank"}
-- [Clinician Access for EHR Launch](http://hl7.org/fhir/smart-app-launch/STU2.2/conformance.html#clinician-access-for-standalone){:target="_blank"}
+- [Patient Access for Standalone Apps](https://hl7.org/fhir/smart-app-launch/STU2.2/conformance.html#patient-access-for-standalone-apps){:target="_blank"}
+- [Clinician Access for EHR Launch](https://hl7.org/fhir/smart-app-launch/STU2.2/conformance.html#clinician-access-for-standalone){:target="_blank"}
 
 #### 後端服務 (Backend Services)
 若伺服端需支援後端服務（例如醫院資訊系統與健保署平台之間的自動介接），則**必須(SHALL)**支援下列能力：
@@ -14,7 +14,7 @@
 - `system/scopes`
 
 ### 存取權限檢驗 (Token Introspection)
-TWPAS伺服端**必須(SHALL)**支援SMART App Launch IG中所定義的[存取權限檢驗 (Token Introspection)](http://hl7.org/fhir/smart-app-launch/STU2.2/token-introspection.html#token-introspection)。
+TWPAS伺服端**必須(SHALL)**支援SMART App Launch IG中所定義的[存取權限檢驗 (Token Introspection)](https://hl7.org/fhir/smart-app-launch/STU2.2/token-introspection.html#token-introspection)。
 
 ### SMART存取範圍 (Scopes)
 
