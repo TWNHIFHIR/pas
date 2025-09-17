@@ -22,7 +22,7 @@ Description: "NHI-健保事前審查-藥品使用頻率，參照至[健保署檔
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2025-09-01"
-* ^version = "1.0.8"
+* ^version = "2025-09-16"
 * ^experimental = false
 * #QW(1) "每週一使用"
 * #QW(2) "每週二使用"
@@ -646,3 +646,8 @@ Description: "NHI-健保事前審查-藥品使用頻率，參照至[健保署檔
 * #Q3WD19 "每3週的第19天"
 * #Q3WD20 "每3週的第20天"
 * #Q3WD21 "每3週的第21天"
+// 2025-9-16 add
+* #Q6WW1 "每6週的第1週"
+* #Q6WW2 "每6週的第2週"
+* #Q6WW3 "每6週的第3週"
+* #Q6WW4 "每6週的第4週"

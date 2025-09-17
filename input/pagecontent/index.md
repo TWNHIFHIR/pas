@@ -6,10 +6,12 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/9/2異動以下內容：
+因考量實作需求，於2025/9/16異動以下內容：
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li> -->
         <li>每個Profile中的<code>meta.profile</code>改為必填。</li>
+        <li>修改<a href="CodeSystem-medication-frequency-nhi-tw.html">CodeSystem: NHI-健保事前審查-藥品使用頻率</a>：新增代碼，<code>Q6WW1</code>(每6週的第1週)~<code>Q6WW4</code>(每6週的第4週)。</li>
+        <li>新增代碼：<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：<code>C91N1</code>(單獨使用於慢性淋巴球白血病(CLL)成人病人)</li>
         <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li>
         <li>修改<a href="StructureDefinition-DiagnosticReport-image-twpas.html">Profile: 影像報告-DiagnosticReport Image TWPAS</a>：<code>code.coding:LOINC</code>(影像報告)取消固定值，綁定<a href="ValueSet-imaging-report.html">LOINC-健保事前審查-影像報告值集</a>。</li>
         <!-- <li>新增<a href="ValueSet-nhi-medical-service-payment.html">ValueSet: NHI-健保事前審查-醫療服務給付項目值集</a>：供手術(或其他處置)項目(Claim.procedure.procedureCodeableConcept.coding[medical-service-payment])綁定。</li>

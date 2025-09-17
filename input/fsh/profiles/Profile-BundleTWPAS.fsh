@@ -219,8 +219,8 @@ Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference)
 Severity:    #error
 
 Invariant:   applyReason-15
-Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 BC28160100，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C83N2、C88N3 或 C82N3"
-Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'BC28160100').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'BC28160100').all(programCode.coding.code.matches('C83N2|C88N3|C82N3'))"
+Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 BC28160100，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C83N2、C88N3、C82N3 或 C91N1"
+Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'BC28160100').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'BC28160100').all(programCode.coding.code.matches('C83N2|C88N3|C82N3|C91N1'))"
 Severity:    #error
 
 Invariant:   applyReason-16
