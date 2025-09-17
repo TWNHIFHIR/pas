@@ -73,7 +73,7 @@ TWPAS伺服端**必須(SHALL)**支援SMART App Launch IG中所定義的[存取�
 - `scopes_supported`
 - `introspection_endpoint`
 
-#### `/.well-known/smart-configuration`範例檔
+#### `/.well-known/smart-configuration`範例
 ~~~http
 HTTP/1.1 200 OK
 Content-Type: application/json
