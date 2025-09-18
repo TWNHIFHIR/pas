@@ -157,6 +157,7 @@ Source: ApplyModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-diagnostic-twpas"
 * gene -> "(基因資訊)"
 * gene.genTestCode -> "component.code.coding.code (基因檢測代碼)"
+* gene.genTestValue -> "component.value[x] (基因檢測實際結果)"
 * gene.mutationType -> "component.where(code.coding.code = '48019-4').valueCodeableConcept.coding.code (基因突變類型)"
 * gene.specimenType -> "specimen.reference(SpecimenTWPAS) (基因檢測檢體類型)"
 * gene.genMethod -> "method.coding.code (基因檢測方法)"

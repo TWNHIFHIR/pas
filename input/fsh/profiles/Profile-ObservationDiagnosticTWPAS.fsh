@@ -33,6 +33,7 @@ Description:    "此基因資訊-Observation Diagnostic TWPAS Profile說明本IG
 * component[gene-test-code].code.coding.system 1..1
 * component[gene-test-code].code.coding.system = "http://loinc.org"
 * component[gene-test-code].value[x] 1.. MS
+* component[gene-test-code].value[x] ^short = "基因檢測實際結果"
 * component[gene-test-code].interpretation 0..1 MS
 * component[gene-test-code].interpretation from DNAChangeType (extensible)
 * component[gene-test-code].interpretation obeys pas-1
