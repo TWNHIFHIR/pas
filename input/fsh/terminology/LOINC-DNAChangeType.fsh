@@ -15,6 +15,8 @@ Description: "LOINC-健保事前審查-基因突變類型值集"
 * $loinc#101397-8 "Copy number variation analysis Sequencing Doc (Bld/Tiss)"
 * $loinc#81695-9 "MSI Ca spec-Imp"
 * $loinc#94077-5 "TMB Tumor-Imp"
+// 2025-09-18 add
+* $loinc#LA11883-8 "Not detected"
 
 
 CodeSystem: INCaOsiris
