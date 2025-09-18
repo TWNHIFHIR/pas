@@ -13,9 +13,10 @@ Usage: #example
 * interpretation.coding = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#POS
 * method = http://loinc.org#LA26418-6
 * specimen.reference = "Specimen/spe-min"
-* component[gene-test-code].code = http://loinc.org#21636-6
-* component[gene-test-code].valueCodeableConcept = http://loinc.org#LA6692-3
-* component[gene-test-code].interpretation = http://loinc.org#LA6692-3 //"Deletion"
+* component[gene-test-code].code = http://loinc.org#21702-6
+* component[gene-test-code].valueString = "KRAS 12 mutation: Not Detected, KRAS 13 mutation: Not Detected, KRAS 61 mutation: Not Detected"
+* component[gene-test-code].interpretation.coding = http://loinc.org#LA11883-8 "Not detected"
+* component[gene-test-code].interpretation.text = "Not detected"
 * derivedFrom.reference = "DocumentReference/doc-gene-min"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
@@ -29,9 +30,11 @@ Usage: #example
     <p><b>基因檢測日期</b>：2024-05-07</p>
 	<blockquote>
 		<p>
-			<b>基因檢測代碼</b>：BRCA1 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> （ <a href=\"http://loinc.org/\">LOINC-基因檢測代碼值集</a>#21636-6） </span>
+			<b>基因檢測代碼</b>：KRAS gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> （ <a href=\"http://loinc.org/\">LOINC-基因檢測代碼值集</a>#21702-6） </span>
 			<br />
-			<b>基因突變類型</b>：Deletion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> （ <a href=\"http://loinc.org/\">LOINC-基因突變類型值集</a>#LA6692-3） </span>
+            <b>基因檢測實際結果</b>：KRAS 12 mutation: Not Detected, KRAS 13 mutation: Not Detected, KRAS 61 mutation: Not Detected
+			<br />
+			<b>基因突變類型</b>：Not detected <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> （ <a href=\"http://loinc.org/\">LOINC-基因突變類型值集</a>#LA11883-8） </span>
 		</p>
 	</blockquote>
     <p><b>基因檢測機構</b>：<a href=\"Organization-org-gene-example.html\">Organization 2023LDTB0002</a></p>
