@@ -10,6 +10,8 @@
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li> -->
         <li>每個Profile中的<code>meta.profile</code>改為必填。</li>
+        <li>修改<a href="StructureDefinition-Practitioner-twpas.html">Profile: 醫事人員-Practitioner TWPAS</a>：醫生的識別碼(<code>identifier</code>)開放使用居留證號碼(<code>identifier:residentNumber</code>)填寫。</li>
+        <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li>
         <li>修改<a href="CodeSystem-medication-frequency-nhi-tw.html">CodeSystem: NHI-健保事前審查-藥品使用頻率</a>：新增代碼，<code>Q6WW1</code>(每6週的第1週)~<code>Q6WW4</code>(每6週的第4週)。</li>
         <li>修改代碼：<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：
             <ol>
@@ -18,7 +20,6 @@
                 <li>修改代碼<code>P072</code>之display：晚期肝細胞癌-1線(併用標靶藥或免疫製劑藥)</li>
             </ol>
         </li>
-        <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li>
         <li>修改<a href="StructureDefinition-DiagnosticReport-image-twpas.html">Profile: 影像報告-DiagnosticReport Image TWPAS</a>：<code>code.coding:LOINC</code>(影像報告)取消固定值，綁定<a href="ValueSet-imaging-report.html">LOINC-健保事前審查-影像報告值集</a>。</li>
     </ol>
     請留意這些異動，以避免影響您的實作。
