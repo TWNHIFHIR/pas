@@ -21,7 +21,7 @@ Description: "NHI-健保事前審查-藥品使用頻率，參照至[健保署檔
 *因原始資料無代碼版本資訊，故使用其「更新日期」作為版本資訊。*"
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2025-09-01"
+* ^date = "2025-10-01"
 * ^version = "2025-09-16"
 * ^experimental = false
 * #QW(1) "每週一使用"
