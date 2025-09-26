@@ -8,7 +8,7 @@
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
 因考量實作需求，於2025/9/25異動以下內容：
     <ol>  
-        <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li> -->
+        <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
         <li>每個Profile中的<code>meta.profile</code>改為必填。</li>
         <li>修改<a href="StructureDefinition-Practitioner-twpas.html">Profile: 醫事人員-Practitioner TWPAS</a>：醫生的識別碼(<code>identifier</code>)開放使用居留證號碼(<code>identifier:residentNumber</code>)填寫。</li>
         <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li>
