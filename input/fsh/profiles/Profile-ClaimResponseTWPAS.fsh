@@ -1,13 +1,18 @@
 Profile:        ClaimResponseSelfAssessmentTWPAS
 Parent:         ClaimResponse
 Id:             ClaimResponse-self-assessment-twpas
-Title:          "自主審查報備-ClaimResponse Self Assessment TWPAS"
-Description:    "此自主審查報備-ClaimResponse TWPAS Profile說明本IG如何進一步定義FHIR的ClaimResponse Resource以呈現自主審查報備之內容。 
+Title:          "自主審查-ClaimResponse Self Assessment TWPAS"
+Description:    "此自主審查-ClaimResponse TWPAS Profile說明本IG如何進一步定義FHIR的ClaimResponse Resource以呈現自主審查之內容。 
   
-現行開放自主事前審查項目僅有心臟及肝臟移植，若醫院要自主事前審查需向健保署申請，通過後，健保署會於署內系統維護，具有此資格之院所才可填報自主審查報備。"
+現行開放自主事前審查項目僅有心臟及肝臟移植，若醫院要自主事前審查需向健保署申請，通過後，健保署會於署內系統維護，具有此資格之院所才可填報自主審查。"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/ClaimResponse-self-assessment-twpas"
+
+* extension contains
+    https://nhicore.nhi.gov.tw/pas/StructureDefinition/extension-claimResponse-requestor named requestor 1..* MS
+* extension[requestor] ^short = "審查委員身分證號"
+
 * status = http://hl7.org/fhir/fm-status#active
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
 * use = http://hl7.org/fhir/claim-use#preauthorization
@@ -21,7 +26,7 @@ Description:    "此自主審查報備-ClaimResponse TWPAS Profile說明本IG如
 * item.detail.adjudication.reason 1..1
 * created and item.adjudication.reason and item.adjudication.value MS
 * created ^short = "核定日期。若申請案件類別為3時須填寫。YYYY-MM-DD，西元年月日。"
-* item.adjudication.value ^short = "核定數量，若申請案件類別為3時須填寫。"
+* item.adjudication.value ^short = "審查結果數量，若申請案件類別為3時須填寫。"
 * item.adjudication.reason ^short = "受理審查案件核定註記。若申請案件類別為3時須填寫。1:同意 | 2:不予同意 | 3:部份同意 | 4:補件 | 5:退件"
 * item.adjudication.category ^short = "【因FHIR設計而需必填】"
 * item.adjudication.category.coding.system ^example[0].valueUri = "http://terminology.hl7.org/CodeSystem/adjudication"

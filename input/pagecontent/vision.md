@@ -22,7 +22,7 @@
 	<li>文件參照-DocumentReference</li>
 	<li>治療後疾病狀態評估-Observation Treatment Assessment TWPAS</li>
 	<li>事前審查品項-MedicationRequest Apply TWPAS</li>
-	<li>自主審查報備-ClaimResponse Self Assessment TWPAS</li>
+	<li>自主審查-ClaimResponse Self Assessment TWPAS</li>
 	<li>醫事人員-Practitioner TWPAS</li>
 	<li>健保事前審查計畫-Coverage</li>
 	<li>臺灣核心-政府機構（TW Core Organization Government）</li>

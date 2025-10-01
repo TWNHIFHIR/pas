@@ -1,7 +1,7 @@
 Instance: bun-uuid-example
 InstanceOf: BundleTWPAS
-Title: "事前審查-自主審查報備、多份影像報告（UUID）"
-Description: "依據事前審查-Bundle TWPAS Profile呈現癌藥事前審查之自主審查報備範例"
+Title: "事前審查-自主審查、多份影像報告（UUID）"
+Description: "依據事前審查-Bundle TWPAS Profile呈現癌藥事前審查之自主審查範例"
 Usage: #example
 * type = http://hl7.org/fhir/bundle-type#collection
 //* timestamp = "2024-05-30T13:50:58.000+08:00"
@@ -112,7 +112,7 @@ Usage: #inline
 * created = "2024-05-30"
 * enterer.reference = "urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020"
 * provider.reference = "urn:uuid:fd1af332-b353-46e6-9a5f-3eec6ac9d9ff"
-* priority = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-tmhb-type#3 "自主審查報備"
+* priority = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-tmhb-type#3 "自主審查"
 * supportingInfo[weight].sequence = 1
 * supportingInfo[weight].valueQuantity.value = 59.65
 * supportingInfo[weight].valueQuantity.code = #kg
@@ -196,7 +196,7 @@ Usage: #inline
     <p><b>申請日期</b>：2024-05-30</p>
     <p><b>申請醫師</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
     <p><b>醫事機構代碼</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-fd1af332-b353-46e6-9a5f-3eec6ac9d9ff\">urn:uuid:fd1af332-b353-46e6-9a5f-3eec6ac9d9ff</a></p>
-    <p><b>申請案件類別</b>：自主審查報備<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-tmhb-type.html\">NHI-申請案件類別值集</a>#3)</span></p>
+    <p><b>申請案件類別</b>：自主審查<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-tmhb-type.html\">NHI-申請案件類別值集</a>#3)</span></p>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：1</p>
@@ -334,6 +334,10 @@ Instance: inline-claRes-self-assessment
 InstanceOf: ClaimResponseSelfAssessmentTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/fm-status#active
+* extension[requestor][+].valueIdentifier.system = "http://www.moi.gov.tw"
+* extension[requestor][0].valueIdentifier.value = "F123456789"
+* extension[requestor][+].valueIdentifier.system = "http://www.moi.gov.tw"
+* extension[requestor][0].valueIdentifier.value = "A123456789"
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
 * use = http://hl7.org/fhir/claim-use#preauthorization
 * patient.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"

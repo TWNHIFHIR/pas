@@ -131,7 +131,7 @@ Description:    "此事前審查-Bundle TWPAS Profile說明本IG如何進一步�
 * entry[coverage].resource 1..1 MS
 * entry[coverage].resource only CoverageTWPAS
 
-* entry[claimResponse] ^short = "自主審查報備。若申請案件類別(Claim.priority)為自主審查報備(#3)時，須填寫。"
+* entry[claimResponse] ^short = "自主審查。若申請案件類別(Claim.priority)為自主審查(#3)時，須填寫。"
 * entry[claimResponse].resource 1..1 MS
 * entry[claimResponse].resource only ClaimResponseSelfAssessmentTWPAS
 
@@ -230,6 +230,6 @@ Severity:    #error
 
 
 Invariant:   claimResponse
-Description: "若申請案件類別(Claim.priority)為自主審查報備(#3)時，須填寫核定日期(ClaimResponse.created)、核定數量(ClaimResponse.item.adjudication.value)及核定註記(ClaimResponse.item.adjudication.reason)。"
+Description: "若申請案件類別(Claim.priority)為自主審查(#3)時，須填寫核定日期(ClaimResponse.created)、審查結果數量(ClaimResponse.item.adjudication.value)及核定註記(ClaimResponse.item.adjudication.reason)。"
 Expression:  "(Bundle.entry.select((resource as ClaimResponse).created).exists()) or (Bundle.entry.select((resource as ClaimResponse).item.adjudication.value).exists()) or (Bundle.entry.select((resource as ClaimResponse).item.adjudication.reason).exists())  implies (Bundle.entry.select((resource as Claim).priority.coding).exists(code='3'))"
 Severity:    #error

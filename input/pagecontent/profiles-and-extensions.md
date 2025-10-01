@@ -9,7 +9,7 @@
 - [事前審查-Claim TWPAS](StructureDefinition-Claim-twpas.html)
 
 #### ClaimResponse
-- [自主審查報備-ClaimResponse Self Assessment TWPAS](StructureDefinition-ClaimResponse-self-assessment-twpas.html)
+- [自主審查-ClaimResponse Self Assessment TWPAS](StructureDefinition-ClaimResponse-self-assessment-twpas.html)
 - [事前審查回覆-ClaimResponse TWPAS](StructureDefinition-ClaimResponse-twpas.html) 
 
 #### Organization

@@ -5,14 +5,14 @@ Usage: #definition
 * experimental = false
 * status = #active
 * date = "2025-10-01"
-* version = "1.0.8"
+* version = "1.0.9"
 * name = "NHISNOMEDCT"
 * title = "臺灣健保署身體部位代碼對應SNOMED CT"
 * description = "此對應表為臺灣健保署身體部位代碼對應SNOMED CT，供實作者於撰寫程式以自動化對應或轉代碼時使用。"
 * sourceCanonical = "https://nhicore.nhi.gov.tw/pas/ValueSet/nhi-body-site"
 * targetCanonical = "https://nhicore.nhi.gov.tw/pas/ValueSet/sct-body-site"
 * group.source = "https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-body-site"
-* group.sourceVersion = "1.0.8"
+* group.sourceVersion = "1.0.9"
 * group.target = "http://snomed.info/sct"
 //* group.targetVersion = "2.77"
 * group.element[0].code = #H
