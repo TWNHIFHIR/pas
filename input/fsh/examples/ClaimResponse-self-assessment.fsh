@@ -3,10 +3,10 @@ InstanceOf: ClaimResponseSelfAssessmentTWPAS
 Title: "自主審查"
 Description: "依據自主審查-ClaimResponse Self Assessment TWPAS Profile呈現自主審查之範例"
 Usage: #example
-* extension[requestor][+].valueIdentifier.system = "http://www.moi.gov.tw"
+* extension[requestor][0].valueIdentifier.system = "http://www.moi.gov.tw"
 * extension[requestor][0].valueIdentifier.value = "F123456789"
-* extension[requestor][+].valueIdentifier.system = "http://www.moi.gov.tw"
-* extension[requestor][0].valueIdentifier.value = "A123456789"
+* extension[requestor][1].valueIdentifier.system = "http://www.moi.gov.tw"
+* extension[requestor][1].valueIdentifier.value = "A123456789"
 * status = http://hl7.org/fhir/fm-status#active
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
 * use = http://hl7.org/fhir/claim-use#preauthorization

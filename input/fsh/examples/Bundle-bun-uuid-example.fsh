@@ -334,10 +334,10 @@ Instance: inline-claRes-self-assessment
 InstanceOf: ClaimResponseSelfAssessmentTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/fm-status#active
-* extension[requestor][+].valueIdentifier.system = "http://www.moi.gov.tw"
+* extension[requestor][0].valueIdentifier.system = "http://www.moi.gov.tw"
 * extension[requestor][0].valueIdentifier.value = "F123456789"
-* extension[requestor][+].valueIdentifier.system = "http://www.moi.gov.tw"
-* extension[requestor][0].valueIdentifier.value = "A123456789"
+* extension[requestor][1].valueIdentifier.system = "http://www.moi.gov.tw"
+* extension[requestor][1].valueIdentifier.value = "A123456789"
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
 * use = http://hl7.org/fhir/claim-use#preauthorization
 * patient.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
