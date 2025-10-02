@@ -10,12 +10,18 @@
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
         <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
-        <li>修改<a href="StructureDefinition-Practitioner-twpas.html">CodeSystem: NHI-健保事前審查-申請案件類別</a>：原「自主審查報備」(<code>3</code>)調整名稱為「自主審查」。</li>
+        <li>修改<a href="CodeSystem-nhi-tmhb-type.html">CodeSystem: NHI-健保事前審查-申請案件類別</a>：原「自主審查報備」(<code>3</code>)調整名稱為「自主審查」。</li>
         <li>修改<a href="StructureDefinition-ClaimResponse-self-assessment-twpas.html">Profile: 自主審查-ClaimResponse Self Assessment TWPAS</a>：
             <ol>
                 <li>原「自主審查報備」調整名稱為「自主審查」。</li>
                 <li>原「核定數量」(<code>item.adjudication.value</code>)調整名稱為「審查結果數量」。</li>
-                <li>新增「審查委員身分證號」(<code>extension[requestor]</code>)欄位</li>
+                <li>新增「審查委員身分證號」(<code>extension[requestor]</code>)欄位。</li>
+            </ol>
+        </li>
+        <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 事前審查-Bundle TWPAS</a>：
+            <ol>
+                <li>修改Constraints: claimResponse-1：若申請案件類別(Claim.priority)為自主審查(#3)時，須填寫核定日期(ClaimResponse.created)、審查結果數量(ClaimResponse.item.adjudication.value)、核定註記(ClaimResponse.item.adjudication.reason)及審查委員身分證號(extension[requestor])。</li>
+                <li>新增Constraints: claimResponse-2：若申請案件類別(Claim.priority)為自主審查(#3)，且國際疾病分類代碼(Claim.diagnosisCodeableConcept)前三碼為C18、C19、C20、C21、C22、C33、C34、C50、C61(五癌)時，則續用註記(Claim.item.modifier:continuation)須為申請再次使用(#2)。</li>
             </ol>
         </li>
     </ol>

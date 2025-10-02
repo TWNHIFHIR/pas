@@ -19,6 +19,7 @@ Description:    "此自主審查-ClaimResponse TWPAS Profile說明本IG如何進
 * patient only Reference(PatientTWPAS)
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
 * insurer only Reference(TWCoreOrganizationGovt)
+* item 1..
 * item.adjudication.reason from NHIApproveClaimComment
 * item.adjudication.value 1..1
 * item.adjudication.reason 1..1

@@ -5,7 +5,10 @@ Context: ClaimResponse
 * . ^short = "審查委員身分證號"
 * value[x] ^short = "審查委員身分證號"
 * value[x] only Identifier
+* valueIdentifier 1..
 * valueIdentifier.use = #official
+* valueIdentifier.system 1..1
+* valueIdentifier.type.coding 1..1
 * valueIdentifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#NNxxx
 * valueIdentifier.system = "http://www.moi.gov.tw"
 * valueIdentifier.value 1..1
