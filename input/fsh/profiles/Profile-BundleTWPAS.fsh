@@ -236,6 +236,6 @@ Severity:    #error
 
 Invariant:   claimResponse-2
 Description: "若申請案件類別(Claim.priority)為自主審查(#3)，且國際疾病分類代碼(Claim.diagnosis.diagnosis)前三碼為C18、C19、C20、C21、C22、C33、C34、C50、C61(五癌)時，則續用註記(Claim.item.modifier:continuation)須為申請再次使用(#2)。"
-Expression:  "(Bundle.entry.select((resource as Claim).priority.coding.code.matches('3'))) and (Bundle.entry.select((resource as Claim).diagnosis.diagnosis.ofType(CodeableConcept).coding.code.matches('C18|C19|C20|C21|C22|C33|C34|C50|C61'))) implies (Bundle.entry.select((resource as Claim).item.modifier.coding.where(system = 'https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-continuation-status').code.matches('2')))"
+Expression:  "(Bundle.entry.select((resource as Claim).priority.coding.code.matches('3'))) and (Bundle.entry.select((resource as Claim).diagnosis.diagnosis.ofType(CodeableConcept).coding.code.matches('^(C18|C19|C20|C21|C22|C33|C34|C50|C61)'))) implies (Bundle.entry.select((resource as Claim).item.modifier.coding.where(system = 'https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-continuation-status').code.matches('2')))"
 Severity:    #error
 
