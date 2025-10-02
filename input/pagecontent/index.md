@@ -24,6 +24,7 @@
                 <li>新增Constraints: claimResponse-2：若申請案件類別(Claim.priority)為自主審查(#3)，且國際疾病分類代碼(Claim.diagnosisCodeableConcept)前三碼為C18、C19、C20、C21、C22、C33、C34、C50、C61(五癌)時，則續用註記(Claim.item.modifier:continuation)須為申請再次使用(#2)。</li>
             </ol>
         </li>
+        <li>修改<a href="StructureDefinition-Observation-pat-assessment-twpas.html">Profile: 病人狀態評估-Observation Patient Assessment TWPAS</a>：「病人狀態評估項目代碼」(<code>code</code>)綁定強度調整為「required」。</li>
     </ol>
     請留意這些異動，以避免影響您的實作。
 </div>
