@@ -289,7 +289,7 @@ Source: ApplyModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/ClaimResponse-self-assessment-twpas"
 * apply -> "(申請項目)"
 * apply.approveDate -> "created (核定日期)"
-* apply.approveNum -> "item.adjudication.value (核定數量)"
+* apply.approveNum -> "item.adjudication.value (審查結果數量)"
 * apply.approveComment -> "item.adjudication.reason.coding.code (核定註記)"
 * apply.acceptanceStatus -> "disposition (案件受理狀態)"
 

@@ -1,8 +1,12 @@
 Instance: self-assessment-example
 InstanceOf: ClaimResponseSelfAssessmentTWPAS
-Title: "自主審查報備"
-Description: "依據自主審查報備-ClaimResponse Self Assessment TWPAS Profile呈現自主審查報備之範例"
+Title: "自主審查"
+Description: "依據自主審查-ClaimResponse Self Assessment TWPAS Profile呈現自主審查之範例"
 Usage: #example
+* extension[requestor][0].valueIdentifier.system = "http://www.moi.gov.tw"
+* extension[requestor][0].valueIdentifier.value = "F123456789"
+* extension[requestor][1].valueIdentifier.system = "http://www.moi.gov.tw"
+* extension[requestor][1].valueIdentifier.value = "A123456789"
 * status = http://hl7.org/fhir/fm-status#active
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
 * use = http://hl7.org/fhir/claim-use#preauthorization
@@ -20,6 +24,7 @@ Usage: #example
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ClaimResponse-twpas.html\">事前審查結果-ClaimResponse TWPAS</a></p>
     </div>
     <p><b>狀態</b>：Active</p>
+    <p><b>審查委員身分證號</b>：F123456789（http://www.moi.gov.tw）、A123456789（http://www.moi.gov.tw）</p>
     <p><b>類型</b>：<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/claim-type institutional}\">Institutional</span></p>
     <p><b>用途</b>：Preauthorization</p>
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a></p>
@@ -35,7 +40,7 @@ Usage: #example
                 <td style=\"display: none\">-</td>
                 <td><b>類型</b></td>
                 <td><b>核定註記</b></td>
-                <td><b>核定數量</b></td>
+                <td><b>審查結果數量</b></td>
             </tr>
             <tr>
                 <td style=\"display: none\">*</td>

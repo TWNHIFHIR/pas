@@ -131,7 +131,7 @@ Description:    "此事前審查-Bundle TWPAS Profile說明本IG如何進一步�
 * entry[coverage].resource 1..1 MS
 * entry[coverage].resource only CoverageTWPAS
 
-* entry[claimResponse] ^short = "自主審查報備。若申請案件類別(Claim.priority)為自主審查報備(#3)時，須填寫。"
+* entry[claimResponse] ^short = "自主審查。若申請案件類別(Claim.priority)為自主審查(#3)時，須填寫。"
 * entry[claimResponse].resource 1..1 MS
 * entry[claimResponse].resource only ClaimResponseSelfAssessmentTWPAS
 
@@ -141,7 +141,7 @@ Description:    "此事前審查-Bundle TWPAS Profile說明本IG如何進一步�
 
 
 
-* . obeys applyReason-1 and applyReason-2 and applyReason-3 and applyReason-4 and applyReason-5 and applyReason-6 and applyReason-7 and applyReason-8 and applyReason-9 and applyReason-10 and applyReason-11 and applyReason-12 and applyReason-13 and applyReason-14 and applyReason-15 and applyReason-16 and claimResponse
+* . obeys applyReason-1 and applyReason-2 and applyReason-3 and applyReason-4 and applyReason-5 and applyReason-6 and applyReason-7 and applyReason-8 and applyReason-9 and applyReason-10 and applyReason-11 and applyReason-12 and applyReason-13 and applyReason-14 and applyReason-15 and applyReason-16 and claimResponse-1 and claimResponse-2
 
 /*Invariant:   oldAcptNo
 Description: "若申報類別(Claim.subType)為申復(#3)，則填寫原送核階段受理編號。"
@@ -229,7 +229,13 @@ Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference)
 Severity:    #error
 
 
-Invariant:   claimResponse
-Description: "若申請案件類別(Claim.priority)為自主審查報備(#3)時，須填寫核定日期(ClaimResponse.created)、核定數量(ClaimResponse.item.adjudication.value)及核定註記(ClaimResponse.item.adjudication.reason)。"
-Expression:  "(Bundle.entry.select((resource as ClaimResponse).created).exists()) or (Bundle.entry.select((resource as ClaimResponse).item.adjudication.value).exists()) or (Bundle.entry.select((resource as ClaimResponse).item.adjudication.reason).exists())  implies (Bundle.entry.select((resource as Claim).priority.coding).exists(code='3'))"
+Invariant:   claimResponse-1
+Description: "若申請案件類別(Claim.priority)為自主審查(#3)時，須填寫核定日期(ClaimResponse.created)、審查結果數量(ClaimResponse.item.adjudication.value)、核定註記(ClaimResponse.item.adjudication.reason)及審查委員身分證號(extension[requestor])。"
+Expression:  "(Bundle.entry.select((resource as Claim).priority.coding.code.matches('3'))) implies (Bundle.entry.select((resource as ClaimResponse).created).exists()) and (Bundle.entry.select((resource as ClaimResponse).item.adjudication.value).exists()) and (Bundle.entry.select((resource as ClaimResponse).item.adjudication.reason).exists()) and (Bundle.entry.select((resource as ClaimResponse).extension.where(url = 'https://nhicore.nhi.gov.tw/pas/StructureDefinition/extension-claimResponse-requestor')).exists())"
 Severity:    #error
+
+Invariant:   claimResponse-2
+Description: "若申請案件類別(Claim.priority)為自主審查(#3)，且國際疾病分類代碼(Claim.diagnosis.diagnosis)前三碼為C18、C19、C20、C21、C22、C33、C34、C50、C61(五癌)時，則續用註記(Claim.item.modifier:continuation)須為申請再次使用(#2)。"
+Expression:  "(Bundle.entry.select((resource as Claim).priority.coding.code.matches('3'))) and (Bundle.entry.select((resource as Claim).diagnosis.diagnosis.ofType(CodeableConcept).coding.code.matches('C18|C19|C20|C21|C22|C33|C34|C50|C61'))) implies (Bundle.entry.select((resource as Claim).item.modifier.coding.where(system = 'https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-continuation-status').code.matches('2')))"
+Severity:    #error
+

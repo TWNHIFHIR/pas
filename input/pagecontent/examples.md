@@ -3,14 +3,14 @@
 <div class="bg-danger">
 因IG設計工具的限制，在IG中的各範例Resource必填<code>id</code>。但醫療機構端實際依據本IG規格於上傳申請資料時，這些Resource.id並不是必填欄位。   <br/> 
 唯需注意的是「Bundle中的<code>fullUrl</code>必須使用UUID，並且應確保<code>Bundle.entry.fullUrl</code>能與同次所傳送的各Resource關聯。」    <br/>
-寫法可參考「<a href="Bundle-bun-uuid-example.html">Bundle：事前審查-自主審查報備、多份影像報告（UUID）範例</a>」。  <br/>
+寫法可參考「<a href="Bundle-bun-uuid-example.html">Bundle：事前審查-自主審查、多份影像報告（UUID）範例</a>」。  <br/>
 <b>(範例內容僅為參考，實際申報內容請以實際資料為主。)</b>
 </div>
 
 #### Bundle
 - [事前審查-送核、套組檢驗、多事前審查癌藥品項](Bundle-bun-1.html)：依據事前審查-Bundle TWPAS Profile呈現癌藥事前審查之範例
 - [事前審查-申復、有共病](Bundle-bun-3.html)：依據事前審查-Bundle TWPAS Profile呈現癌藥事前審查之範例
-- [<span class="bg-success">事前審查-自主審查報備、多份影像報告（UUID）</span>](Bundle-bun-uuid-example.html)：依據事前審查-Bundle TWPAS Profile呈現癌藥事前審查之自主審查報備範例
+- [<span class="bg-success">事前審查-自主審查、多份影像報告（UUID）</span>](Bundle-bun-uuid-example.html)：依據事前審查-Bundle TWPAS Profile呈現癌藥事前審查之自主審查範例
 - [事前審查回覆](Bundle-bun-response.html)：依據事前審查回覆-Bundle Response TWPAS Profile呈現癌藥事前審查回覆之範例
 
 #### Claim
@@ -18,7 +18,7 @@
 - [事前審查-申復、有共病](Claim-cla-3.html)：依據事前審查-Claim TWPAS Profile呈現癌藥事前審查之範例
 
 #### ClaimResponse
-- [事前審查結果-自主審查報備](ClaimResponse-self-assessment-example.html)：依據事前審查結果-ClaimResponse TWPAS Profile呈現事前審查結果之範例
+- [事前審查結果-自主審查](ClaimResponse-self-assessment-example.html)：依據事前審查結果-ClaimResponse TWPAS Profile呈現事前審查結果之範例
 - [事前審查回覆](ClaimResponse-claim-response-example.html)：依據事前審查回覆-ClaimResponse TWPAS Profile呈現事前審查回覆之範例
 
 #### Organization

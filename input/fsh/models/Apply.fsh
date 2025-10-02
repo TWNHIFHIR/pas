@@ -3,7 +3,7 @@ Id: ApplyModel
 Title: "申請(Apply)癌症用藥癌藥事前審查之資料模型"
 Description: "申請(Apply)癌症用藥癌藥事前審查之資料模型，此邏輯模型為定義癌症用藥事前審查情境下使用的所有資料欄位。  
 為了便於實作者快速理解，資料欄位會使用易於理解的命名，實作者再透過邏輯模型中的功能頁籤「Mappings」瞭解各資料欄位實際使用本IG的哪個Profiles的哪個資料項目（element）。亦可配合[視覺化邏輯模型圖](vision.html#bundle%E6%9E%B6%E6%A7%8B%E5%9C%96)進行欄位對應"
-* ^version = "1.0.8"
+* ^version = "1.0.9"
 * hosp 1..1 BackboneElement "院所資訊" "院所資訊"
 * hosp.hospId 1..1 string "醫事機構代碼，必須存在於醫事機構基本資料檔內" "醫事機構代碼，必須存在於醫事機構基本資料檔內"
 * hosp.applType 1..1 CodeableConcept "申報類別" "申報類別"
@@ -134,6 +134,6 @@ Description: "申請(Apply)癌症用藥癌藥事前審查之資料模型，此�
 * apply.useEdate 1..* dateTime "事前審查藥物預定處方終止日期" "事前審查藥物預定處方終止日期"
 * apply.applDrugCycle 0..* CodeableConcept "事前審查藥品療程／週期數" "事前審查藥品療程／週期數"
 * apply.approveDate 0..* dateTime "核定日期" "核定日期"
-* apply.approveNum 0..* decimal "核定數量" "核定數量"
+* apply.approveNum 0..* decimal "審查結果數量" "審查結果數量"
 * apply.approveComment 0..* CodeableConcept "核定註記" "核定註記"
 * apply.acceptanceStatus 0..1 code "案件受理狀態" "案件受理狀態"

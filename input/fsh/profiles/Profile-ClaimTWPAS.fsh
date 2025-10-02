@@ -241,7 +241,7 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
 * extension[encounter] ^short = "就醫科別，為細分科之就醫科別，作為審查分科用。【此為參考Da Vinci PAS IG的extension設計】"
 * enterer ^short = "申請醫師，必須存在於醫事人員基本資料檔內，並於合約生效起迄日內。"
 * created ^short = "申請日期，YYYY-MM-DD，機構自填。健保署收案後另建受理日期，將呈現在ClaimResponse的disposition和created欄位。"
-* priority ^short = "申請案件類別，1:一般事前審查申請 | 3:自主審查報備 | 4:緊急報備；專審系統識別用，對應PXXT_CODE(TMHB,001)。"
+* priority ^short = "申請案件類別，1:一般事前審查申請 | 3:自主審查 | 4:緊急報備；專審系統識別用，對應PXXT_CODE(TMHB,001)。"
 * patient ^short = "病人資訊"
 * supportingInfo.sequence ^short = "因FHIR設計而必填、自動流水號（建議每次加1）、不得重複，作為每筆supportingInfo的唯一識別碼。最後一筆sequence號碼即表示總筆數。"
 * supportingInfo[weight].valueQuantity.value ^short = "體重，整數至多3位數及小數至多2位數。"
@@ -305,7 +305,7 @@ Expression:  "diagnosis.where(sequence = 1).count() = 1"
 Severity:    #error
 
 Invariant:   supportingInfo
-Description: "當Claim.priority(案件類別)為1(一般事前審查申請)、3(自主審查報備)時，至少還需提供檢查報告、影像報告、基因資訊中任一樣資訊。"
+Description: "當Claim.priority(案件類別)為1(一般事前審查申請)、3(自主審查)時，至少還需提供檢查報告、影像報告、基因資訊中任一樣資訊。"
 Expression:  "(priority.coding.code.matches('1|3')) implies (supportingInfo.category.exists(coding.code = 'examinationReport') or supportingInfo.category.exists(coding.code = 'imagingReport') or supportingInfo.category.exists(coding.code = 'geneInfo'))"
 Severity:    #error
 
