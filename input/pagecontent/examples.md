@@ -54,8 +54,9 @@
 - [基因資訊](Observation-obs-diagnostic-min.html)：依據基因資訊-Observation Diagnostic TWPAS Profile呈現基因資訊之範例
 - [檢驗檢查-單項](Observation-obs-lab-min.html)：依據檢驗檢查-Observation Laboratory Result TWPAS Profile呈現單項檢驗檢查之範例 (評估資訊)
 - [檢驗檢查-套組(全套血液檢查)](Observation-obs-lab-cbc.html)：依據檢驗檢查-Observation Laboratory Result TWPAS Profile呈現套組檢驗檢查之範例 (評估資訊)
-- [病人狀態評估-NYHA](Observation-obs-pat-nyha.html)：依據病人狀態評估-Observation Patient Assessment TWPAS Profile呈現病人狀態評估之範例 (評估資訊)
-- [病人狀態評估-PDAI](Observation-obs-pat-pdai.html)：依據病人狀態評估-Observation Patient Assessment TWPAS Profile呈現病人狀態評估之範例 (評估資訊)
+- [病人狀態評估-NYHA](Observation-obs-pat-nyha.html)：依據病人狀態評估-Observation Patient Assessment TWPAS Profile呈現病人狀態評估(NYHA)之範例 (評估資訊)
+- [病人狀態評估-PDAI](Observation-obs-pat-pdai.html)：依據病人狀態評估-Observation Patient Assessment TWPAS Profile呈現病人狀態評估(PDAI)之範例 (評估資訊)
+- [<span class="bg-success">病人狀態評估-CTCAE</span>](Observation-obs-pat-ctcae.html)：依據病人狀態評估-Observation Patient Assessment TWPAS Profile呈現病人狀態評估(CTCAE)之範例 (評估資訊)
 - [治療後疾病狀態評估](Observation-obs-tx-min.html)：依據治療後疾病狀態評估-Observation Treatment Assessment TWPAS Profile呈現治療後疾病狀態評估之範例 (結果資訊)
 
 #### MedicationRequest

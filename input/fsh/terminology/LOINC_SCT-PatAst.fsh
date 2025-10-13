@@ -16,6 +16,9 @@ Description: "LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值�
 * $loinc#75633-8
 * PatAst#HCTCI
 * http://snomed.info/sct#277460003
+* http://snomed.info/sct#711434002
+* PatAst#MPNSAFTSS
+* PatAst#MPN10
 
 CodeSystem: PatAst
 Id: nhi-pat-ast
@@ -30,3 +33,8 @@ Description: "臺灣衛生福利部中央健康保險署「病人狀態評估項
 * #PDAI "Pemphigus Disease Area Index" "PDAI評估指數"
 * #CIRS "Cumulative illness rating scale" "CIRS (cumulative illness rating scale) score"
 * #HCTCI "Hematopoietic Cell Transplantation-specific Comorbidity Index" "HCT-CI"
+* #MPNSAFTSS "MPN-SAF Total Symptom Score" "MPN-SAF-TSS"
+* #MPN10 "Myeloproliferative Neoplasm 10-item Total Symptom Score" "MPN-10"
+* #C143528 "Hearing impaired"
+* #C143750 "Peripheral motor neuropathy"
+* #C143752 "Peripheral sensory neuropathy"
