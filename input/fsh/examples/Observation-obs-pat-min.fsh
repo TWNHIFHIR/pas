@@ -57,14 +57,11 @@ Usage: #example
 * effectiveDateTime = "2025-01-01"
 * performer.reference = "Practitioner/pra-min"
 * subject.reference = "Patient/pat-min"
-* component[hearing-impaired].code.coding.system = "https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-pat-ast"
-* component[hearing-impaired].code.coding.code = "C143528"
+* component[hearing-impaired].code.coding = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-pat-ast#C143528
 * component[hearing-impaired].valueString = "grade3"
-* component[peripheral-motor-neuropathy].code.coding.system = "https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-pat-ast"
-* component[peripheral-motor-neuropathy].code.coding.code = "C143750"
+* component[peripheral-motor-neuropathy].code.coding = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-pat-ast#C143750
 * component[peripheral-motor-neuropathy].valueString = "grade4"
-* component[peripheral-sensory-neuropathy].code.coding.system = "https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-pat-ast"
-* component[peripheral-sensory-neuropathy].code.coding.code = "C143752"
+* component[peripheral-sensory-neuropathy].code.coding = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-pat-ast#C143752
 * component[peripheral-sensory-neuropathy].valueString = "grade5"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
@@ -79,17 +76,14 @@ Usage: #example
     <p><b>病人狀態評估結果</b>：</p>
     <blockquote>
         <p><b>CTCAE項目</b>：Hearing impaired <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pat-ast.html\">LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集 </a>#C143528)</span></p>
-        <p><b>value</b>：grade3</span>
-        </p>
+        <p><b>value</b>：grade3</p>
     </blockquote>
     <blockquote>
         <p><b>CTCAE項目</b>：Peripheral motor neuropathy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pat-ast.html\">LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集 </a>#C143750)</span></p>
-        <p><b>value</b>：grade4</span>
-        </p>
+        <p><b>value</b>：grade4</p>
     </blockquote>
     <blockquote>
         <p><b>CTCAE項目</b>：Peripheral sensory neuropathy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pat-ast.html\">LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集 </a>#C143752)</span></p>
-        <p><b>value</b>：grade5</span>
-        </p>
+        <p><b>value</b>：grade5</p>
     </blockquote>
 </div>"
