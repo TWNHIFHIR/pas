@@ -185,14 +185,14 @@ Usage: #inline
     </div>
     <p><b>狀態</b>：Active</p>
     <p><b>類型</b>：Institutional<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/CodeSystem/claim-type\">ClaimTypeCodes</a>#institutional)</span></p>
-    <p><b>就醫科別</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-9726648a-dd47-431b-a677-3d5e9250d84c\">urn:uuid:9726648a-dd47-431b-a677-3d5e9250d84c</a> &quot;胸腔暨重症加護&quot;</p>
+    <p><b>就醫科別</b>：<a href=\"Bundle-bun-self.html#urn-uuid-9726648a-dd47-431b-a677-3d5e9250d84c\">urn:uuid:9726648a-dd47-431b-a677-3d5e9250d84c</a> &quot;胸腔暨重症加護&quot;</p>
     <p><b>原受理編號</b>：20240831010109051701</p>
     <p><b>申報類別</b>：送核<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-apply-type.html\">NHI-申報類別值集</a>#1)</span></p>
     <p><b>目的</b>：Preauthorization</p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <p><b>申請日期</b>：2024-05-30</p>
-    <p><b>申請醫師</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
-    <p><b>醫事機構代碼</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-fd1af332-b353-46e6-9a5f-3eec6ac9d9ff\">urn:uuid:fd1af332-b353-46e6-9a5f-3eec6ac9d9ff</a></p>
+    <p><b>申請醫師</b>：<a href=\"Bundle-bun-self.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
+    <p><b>醫事機構代碼</b>：<a href=\"Bundle-bun-self.html#urn-uuid-fd1af332-b353-46e6-9a5f-3eec6ac9d9ff\">urn:uuid:fd1af332-b353-46e6-9a5f-3eec6ac9d9ff</a></p>
     <p><b>申請案件類別</b>：自主審查<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-tmhb-type.html\">NHI-申請案件類別值集</a>#3)</span></p>
     <blockquote>
         <p><b>supportingInfo</b></p>
@@ -218,85 +218,85 @@ Usage: #inline
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：4</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type imagingReport}\">影像報告</span></p>
-        <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-75f8540e-ace9-47d4-afd8-0a3ec81ad656\">urn:uuid:75f8540e-ace9-47d4-afd8-0a3ec81ad656</a></p>
+        <p><b>value</b>：<a href=\"Bundle-bun-self.html#urn-uuid-75f8540e-ace9-47d4-afd8-0a3ec81ad656\">urn:uuid:75f8540e-ace9-47d4-afd8-0a3ec81ad656</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：5</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type imagingReport}\">影像報告</span></p>
-        <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-e13ae26f-836f-402b-a40f-b2c19dd1dc06\">urn:uuid:e13ae26f-836f-402b-a40f-b2c19dd1dc06</a></p>
+        <p><b>value</b>：<a href=\"Bundle-bun-self.html#urn-uuid-e13ae26f-836f-402b-a40f-b2c19dd1dc06\">urn:uuid:e13ae26f-836f-402b-a40f-b2c19dd1dc06</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：6</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type imagingReport}\">影像報告</span></p>
-        <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-fd9d86d3-df40-45a9-a636-4f5b1710e1c5\">urn:uuid:fd9d86d3-df40-45a9-a636-4f5b1710e1c5</a></p>
+        <p><b>value</b>：<a href=\"Bundle-bun-self.html#urn-uuid-fd9d86d3-df40-45a9-a636-4f5b1710e1c5\">urn:uuid:fd9d86d3-df40-45a9-a636-4f5b1710e1c5</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：7</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type cancerStage}\">癌症分期量表</span></p>
-        <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-2b42533e-3004-4f1d-abd1-c3e55fa9981f\">urn:uuid:2b42533e-3004-4f1d-abd1-c3e55fa9981f</a></p>
+        <p><b>value</b>：<a href=\"Bundle-bun-self.html#urn-uuid-2b42533e-3004-4f1d-abd1-c3e55fa9981f\">urn:uuid:2b42533e-3004-4f1d-abd1-c3e55fa9981f</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：8</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type examinationReport}\">檢查報告</span></p>
-        <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-96dd114f-c596-4dab-9483-a94300e37e20\">urn:uuid:96dd114f-c596-4dab-9483-a94300e37e20</a></p>
+        <p><b>value</b>：<a href=\"Bundle-bun-self.html#urn-uuid-96dd114f-c596-4dab-9483-a94300e37e20\">urn:uuid:96dd114f-c596-4dab-9483-a94300e37e20</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：9</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type geneInfo}\">基因資訊</span></p>
-        <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-a7f410d8-a646-4ec5-b32a-e4c50dd9db4c\">urn:uuid:a7f410d8-a646-4ec5-b32a-e4c50dd9db4c</a></p>
+        <p><b>value</b>：<a href=\"Bundle-bun-self.html#urn-uuid-a7f410d8-a646-4ec5-b32a-e4c50dd9db4c\">urn:uuid:a7f410d8-a646-4ec5-b32a-e4c50dd9db4c</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：10</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type tests}\">檢驗(查)</span></p>
-        <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-e731f6b1-aac7-4b3f-9a72-1d71f25e664c\">urn:uuid:e731f6b1-aac7-4b3f-9a72-1d71f25e664c</a></p>
+        <p><b>value</b>：<a href=\"Bundle-bun-self.html#urn-uuid-e731f6b1-aac7-4b3f-9a72-1d71f25e664c\">urn:uuid:e731f6b1-aac7-4b3f-9a72-1d71f25e664c</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：11</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type tests}\">檢驗(查)</span></p>
-        <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-e9dfe919-52dd-4691-96bf-1a3d244a30a3\">urn:uuid:e9dfe919-52dd-4691-96bf-1a3d244a30a3</a></p>
+        <p><b>value</b>：<a href=\"Bundle-bun-self.html#urn-uuid-e9dfe919-52dd-4691-96bf-1a3d244a30a3\">urn:uuid:e9dfe919-52dd-4691-96bf-1a3d244a30a3</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：12</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type patientAssessment}\">病人狀態評估</span></p>
-        <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-f08b0bfb-d26b-4118-aa30-5abbd391f762\">urn:uuid:f08b0bfb-d26b-4118-aa30-5abbd391f762</a></p>
+        <p><b>value</b>：<a href=\"Bundle-bun-self.html#urn-uuid-f08b0bfb-d26b-4118-aa30-5abbd391f762\">urn:uuid:f08b0bfb-d26b-4118-aa30-5abbd391f762</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：13</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type medicationRequest}\">用藥品項</span></p>
-        <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-da01d9f1-5945-46d8-b493-18a72a7976a0\">urn:uuid:da01d9f1-5945-46d8-b493-18a72a7976a0</a></p>
+        <p><b>value</b>：<a href=\"Bundle-bun-self.html#urn-uuid-da01d9f1-5945-46d8-b493-18a72a7976a0\">urn:uuid:da01d9f1-5945-46d8-b493-18a72a7976a0</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：14</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type radiotherapy}\">放射治療</span></p>
-        <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-0a37e990-e3ad-4b35-88c7-13b4283bdf10\">urn:uuid:0a37e990-e3ad-4b35-88c7-13b4283bdf10</a></p>
+        <p><b>value</b>：<a href=\"Bundle-bun-self.html#urn-uuid-0a37e990-e3ad-4b35-88c7-13b4283bdf10\">urn:uuid:0a37e990-e3ad-4b35-88c7-13b4283bdf10</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：15</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type carePlanDocument}\">治療計畫文件</span></p>
-        <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-3a625041-5d1f-4e98-81c1-dff54adcc110\">urn:uuid:3a625041-5d1f-4e98-81c1-dff54adcc110</a></p>
+        <p><b>value</b>：<a href=\"Bundle-bun-self.html#urn-uuid-3a625041-5d1f-4e98-81c1-dff54adcc110\">urn:uuid:3a625041-5d1f-4e98-81c1-dff54adcc110</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：16</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type medicalRecord}\">病歷資料</span></p>
-        <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-931cd8ec-705b-4ac7-ad72-43728045f278\">urn:uuid:931cd8ec-705b-4ac7-ad72-43728045f278</a></p>
+        <p><b>value</b>：<a href=\"Bundle-bun-self.html#urn-uuid-931cd8ec-705b-4ac7-ad72-43728045f278\">urn:uuid:931cd8ec-705b-4ac7-ad72-43728045f278</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：17</p>
         <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type treatmentAssessment}\">結果資訊</span></p>
-        <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-63cabc24-a403-4522-9226-1c96968590bd\">urn:uuid:63cabc24-a403-4522-9226-1c96968590bd</a></p>
+        <p><b>value</b>：<a href=\"Bundle-bun-self.html#urn-uuid-63cabc24-a403-4522-9226-1c96968590bd\">urn:uuid:63cabc24-a403-4522-9226-1c96968590bd</a></p>
     </blockquote>
     <h3>Diagnoses</h3>
     <p><b>診斷日期</b>：2024-01-01</p>
@@ -307,10 +307,10 @@ Usage: #inline
     <p><b>手術(或其他處置)項目</b>：2024-01-01<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw\">臺灣健保署2023年中文版ICD-10-PCS值集</a>#3E0Y704)</span></p>
     <h3>Insurances</h3>
     <p><b>sequence</b>：1</p>
-    <p><b>coverage</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-79ee2767-54d9-4682-bbd4-d0add0576388\">urn:uuid:79ee2767-54d9-4682-bbd4-d0add0576388</a></p>
+    <p><b>coverage</b>：<a href=\"Bundle-bun-self.html#urn-uuid-79ee2767-54d9-4682-bbd4-d0add0576388\">urn:uuid:79ee2767-54d9-4682-bbd4-d0add0576388</a></p>
     <h3>申請項目</h3>
     <blockquote>
-        <p><b>事前審查品項</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-46b3230a-d641-4e45-be42-2c84a5c04d67\">urn:uuid:46b3230a-d641-4e45-be42-2c84a5c04d67</a></p>
+        <p><b>事前審查品項</b>：<a href=\"Bundle-bun-self.html#urn-uuid-46b3230a-d641-4e45-be42-2c84a5c04d67\">urn:uuid:46b3230a-d641-4e45-be42-2c84a5c04d67</a></p>
         <p><b>事前審查申請數量(單位)</b>：52 (tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://hl7.org/fhir/R4/valueset-ucum-common.html\">Common UCUM units</a>#{tbl})</span>)</p>
         <p><b>醫令類別</b>：藥品<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-order-type.html\">NHI-健保事前審查-醫令類別值集</a>#1)</span></p>
         <p><b>續用註記</b>：申請再次使用<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-continuation-status.html\">NHI-續用註記值集</a>#2)</span></p>
@@ -318,7 +318,7 @@ Usage: #inline
         <p><b>給付適應症</b>：ALK陽性的晚期非小細胞肺癌第一線治療</p>
     </blockquote>
     <blockquote>
-        <p><b>事前審查品項</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-de63572a-412b-4004-8fd6-93612a22e673\">urn:uuid:de63572a-412b-4004-8fd6-93612a22e673</a></p>
+        <p><b>事前審查品項</b>：<a href=\"Bundle-bun-self.html#urn-uuid-de63572a-412b-4004-8fd6-93612a22e673\">urn:uuid:de63572a-412b-4004-8fd6-93612a22e673</a></p>
         <p><b>事前審查申請數量(單位)</b>：70 (tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://hl7.org/fhir/R4/valueset-ucum-common.html\">Common UCUM units</a>#{tbl})</span>)</p>
         <p><b>醫令類別</b>：藥品<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-order-type.html\">NHI-健保事前審查-醫令類別值集</a>#1)</span></p>
         <p><b>續用註記</b>：申請再次使用<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-continuation-status.html\">NHI-續用註記值集</a>#2)</span></p>
@@ -353,9 +353,9 @@ Usage: #inline
     <p><b>狀態</b>：Active</p>
     <p><b>類型</b>：<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/claim-type institutional}\">Institutional</span></p>
     <p><b>用途</b>：Preauthorization</p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
     <p><b>核定日期</b>：2024-07-30</p>
-    <p><b>保險商</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-70e7e8b6-4605-487e-9626-be645114140f\">Organization 衛生福利部中央健康保險署</a></p>
+    <p><b>保險商</b>：<a href=\"Bundle-bun-self.html#urn-uuid-70e7e8b6-4605-487e-9626-be645114140f\">Organization 衛生福利部中央健康保險署</a></p>
     <p><b>處置狀態</b>：Processing Complete</p>
     <blockquote>
         <p><b>item</b></p>
@@ -526,11 +526,11 @@ Usage: #inline
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DiagnosticReport-image-twpas.html\">影像報告-DiagnosticReport Image TWPAS</a></p>
     </div>
     <p><b>狀態</b>：final</p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <p><b>影像報告</b>：左上肢動脈血管內超音波 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw\">臺灣健保署2023年中文版ICD-10-PCS值集</a>#B34JZZ3)</span></p>
     <p><b>影像報告日期</b>：2024-05-07</p>
-    <p><b>簽發影像報告醫師</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
-    <p><b>影像檢查的身體部位／DICOM影像</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-4213460c-db7c-4a32-8129-157c9f3a4cc3\">urn:uuid:4213460c-db7c-4a32-8129-157c9f3a4cc3</a></p>
+    <p><b>簽發影像報告醫師</b>：<a href=\"Bundle-bun-self.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
+    <p><b>影像檢查的身體部位／DICOM影像</b>：<a href=\"Bundle-bun-self.html#urn-uuid-4213460c-db7c-4a32-8129-157c9f3a4cc3\">urn:uuid:4213460c-db7c-4a32-8129-157c9f3a4cc3</a></p>
     <p><b>影像報告結果</b>：影像報告結果</p>
 </div>"
 
@@ -557,11 +557,11 @@ Usage: #inline
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DiagnosticReport-image-twpas.html\">影像報告-DiagnosticReport Image TWPAS</a></p>
     </div>
     <p><b>狀態</b>：final</p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <p><b>影像報告</b>：左上肢動脈超音波 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw\">臺灣健保署2023年中文版ICD-10-PCS值集</a>#B34JZZZ)</span></p>
     <p><b>影像報告日期</b>：2024-05-07</p>
-    <p><b>簽發影像報告醫師</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
-    <p><b>影像檢查的身體部位／DICOM影像</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-4213460c-db7c-4a32-8129-157c9f3a4cc3\">urn:uuid:4213460c-db7c-4a32-8129-157c9f3a4cc3</a></p>
+    <p><b>簽發影像報告醫師</b>：<a href=\"Bundle-bun-self.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
+    <p><b>影像檢查的身體部位／DICOM影像</b>：<a href=\"Bundle-bun-self.html#urn-uuid-4213460c-db7c-4a32-8129-157c9f3a4cc3\">urn:uuid:4213460c-db7c-4a32-8129-157c9f3a4cc3</a></p>
     <p><b>影像報告結果</b>：影像報告結果</p>
     <blockquote>
         <p><b>影像報告名稱</b>：影像報告</p>
@@ -598,11 +598,11 @@ Usage: #example
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DiagnosticReport-image-twpas.html\">影像報告-DiagnosticReport Image TWPAS</a></p>
     </div>
     <p><b>狀態</b>：final</p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <p><b>影像報告</b>：Diagnostic imaging study <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINCDiagnosticReportCodes </a>#18748-4)</span></p>
     <p><b>影像報告日期</b>：2024-05-07</p>
-    <p><b>簽發影像報告醫師</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
-    <p><b>影像檢查的身體部位／DICOM影像</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-4213460c-db7c-4a32-8129-157c9f3a4cc3\">urn:uuid:4213460c-db7c-4a32-8129-157c9f3a4cc3</a></p>
+    <p><b>簽發影像報告醫師</b>：<a href=\"Bundle-bun-self.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
+    <p><b>影像檢查的身體部位／DICOM影像</b>：<a href=\"Bundle-bun-self.html#urn-uuid-4213460c-db7c-4a32-8129-157c9f3a4cc3\">urn:uuid:4213460c-db7c-4a32-8129-157c9f3a4cc3</a></p>
     <p><b>影像報告結果</b>：影像報告結果</p>
     <blockquote>
         <p><b>影像報告名稱</b>：影像報告</p>
@@ -639,9 +639,9 @@ Usage: #inline
     <p><b>狀態</b>：final</p>
     <p><b>報告類型</b>：Prostate Pathology biopsy report <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org\">EncounterStatus</a>#66117-3)</span></p>
     <p><b>檢體種類</b>：Prostate</p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <p><b>報告日期</b>：2024-05-07</p>
-    <p><b>檢查報告醫師</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
+    <p><b>檢查報告醫師</b>：<a href=\"Bundle-bun-self.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
     <p><b>報告結果-文數字</b>：細胞檢查報告結果</p>
     <blockquote>
         <p><b>檢查報告名稱</b>：病理報告</p>
@@ -674,7 +674,7 @@ Usage: #inline
         <p style=\"margin-bottom: 0px\">Profile：<a href=\"StructureDefinition-ImagingStudy-twpas.html\">DICOM影像-ImagingStudy TWPAS</a></p>
     </div>
     <p><b>狀態</b>：registered</p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <p><b>Study UID</b>：urn:oid:2.16.886.2102.54.4546465747.465465465</p>
     <p><b>Series Instance UID</b>：2.16.886.2102.54.4546465747.465465466</p>
     <p><b>SOP Instance UIDs</b>：2.25.88017001449189502323411118737039844241, 2.25.88017001449189502323411118737039844242</p>
@@ -695,8 +695,8 @@ Usage: #inline
                 TWPAS</a></p>
     </div>
     <p><b>狀態</b>：active</p>
-    <p><b>受益人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
-    <p><b>保險人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-70e7e8b6-4605-487e-9626-be645114140f\">urn:uuid:70e7e8b6-4605-487e-9626-be645114140f</a> &quot;衛生福利部中央健康保險署&quot;</p>
+    <p><b>受益人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
+    <p><b>保險人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-70e7e8b6-4605-487e-9626-be645114140f\">urn:uuid:70e7e8b6-4605-487e-9626-be645114140f</a> &quot;衛生福利部中央健康保險署&quot;</p>
 </div>"
 
 Instance: inline-2-org-nhi
@@ -742,7 +742,7 @@ Usage: #inline
     </div>
     <p><b>狀態</b>：current</p>
     <p><b>報告類型</b>：基因報告 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pdf-type.html\">NHI-文件類型</a>#gene)</span></p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <p><b>基因報告(application/pdf)</b>：file://GenReport01.pdf</p>
     <p><b>基因報告名稱</b>：GenReport01</p>
 </div>"
@@ -764,7 +764,7 @@ Usage: #inline
     </div>
     <p><b>狀態</b>：current</p>
     <p><b>報告類型</b>：治療計畫文件 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pdf-type.html\">NHI-文件類型</a>#careplan)</span></p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <p><b>治療計畫文件名稱</b>：免疫檢查點抑制劑治療計畫</p>
     <p><b>治療計畫文件 (application/pdf)</b>：file://CarePlanReport01.pdf</p>
 </div>"
@@ -789,7 +789,7 @@ Usage: #inline
     </div>
     <p><b>狀態</b>：current</p>
     <p><b>報告類型</b>：檢驗(查)附件 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pdf-type.html\">NHI-文件類型</a>#test)</span></p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <blockquote>
         <p><b>檢驗(查)附件 (application/pdf)</b>：file://TestReport01.pdf</p>
         <p><b>檢驗(查)附件名稱</b>：TestReport01</p>
@@ -840,7 +840,7 @@ Usage: #inline
     <p><b>狀態</b>：On Hold</p>
     <p><b>目的</b>：Plan</p>
     <p><b>事前審查品項代碼</b>：Alunbrig film-coated tablets 30mg<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-medication.html\">NHI-健保事前審查-用藥品項值集</a>#BC27730100)</span></p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <blockquote>
         <p><b>事前審查藥物預定處方起始日期</b>：2024-01-01</p>
         <p><b>事前審查藥物預定處方終止日期</b>：2024-02-11</p>
@@ -890,7 +890,7 @@ Usage: #inline
     <p><b>狀態</b>：On Hold</p>
     <p><b>目的</b>：Plan</p>
     <p><b>事前審查品項代碼</b>：TEMODAL CAPSULES 20MG <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-medication.html\">NHI-健保事前審查-用藥品項值集</a>#KC009612B5)</span></p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <p><b>事前審查藥物預定處方起始日期</b>：2024-03-11</p>
     <p><b>事前審查藥物預定處方終止日期</b>：2024-07-28</p>
     <p><b>事前審查藥品使用頻率及服用時間</b>：每4週的第1天、每4週的第2天、每4週的第3天、每4週的第4天、每4週的第5天、飯前1小時使用<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"ValueSet-medication-frequency-hl7-nhi.html\">HL7 TimingAbbreviation + 臺灣健保署藥品使用頻率值集</a>#Q4WD1、#Q4WD2、#Q4WD3、#Q4WD4、#Q4WD5、#AC1H)</span></p>
@@ -929,7 +929,7 @@ Usage: #inline
     <p><b>意圖</b>：Order <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">( <a href=\"http://hl7.org/fhir/CodeSystem/medicationrequest-intent\">medicationRequest Intent</a>#order)</span></p>
     <p><b>自費註記</b>：健保 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-drug-category.html\">NHI-藥物類型</a>#nhi)</span></p>
     <p><b>藥品代碼</b>：ANTI-CUGH SYRUP 60ML <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-medication.html\">NHI-健保事前審查-用藥品項值集</a>#A000755151)</span></p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;&quot;</p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;&quot;</p>
     <p><b>藥品使用頻率及服用時間</b>：1W3D</p>
     <p><b>藥物每次處方劑量(單位)</b>：4 (tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://hl7.org/fhir/R4/valueset-ucum-common.html\">Common UCUM units</a>#{tbl})</span>)</p>
     <p><b>藥物處方起始日期</b>：2024-05-01</p>
@@ -953,9 +953,9 @@ Usage: #inline
     </div>
     <p><b>狀態</b>：final</p>
     <p><b>癌症分期量表項目</b>：FIGO stage for gynaecological malignancy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://snomed.info/sct/\">SCT + NHI-癌症分期量表項目值集</a>#385361009)</span></p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
     <p><b>癌症分期量表評估日期</b>：2024-05-07</p>
-    <p><b>簽發癌症分期報告醫師</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
+    <p><b>簽發癌症分期報告醫師</b>：<a href=\"Bundle-bun-self.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
     <p><b>癌症分期分數或結果</b>：FIGO Stage I <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nci-thesaurus.html\">NCI Thesaurus</a>#C96244)</span></p>
 </div>"
 
@@ -984,7 +984,7 @@ Usage: #inline
     <p><b>狀態</b>：final</p>
     <p><b>類型</b>：基因資訊<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-supporting-info-type.html/\">NHI-補充資訊類別值集</a>#geneInfo)</span></p>
     <p><b>code</b>：Genetic variant assessment<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINC</a>#69548-6)</span></p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
     <p><b>基因檢測日期</b>：2024-05-07</p>
 	<blockquote>
 		<p>
@@ -993,12 +993,12 @@ Usage: #inline
 			<b>基因突變類型</b>：Deletion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> （ <a href=\"http://loinc.org/\">LOINC-基因突變類型值集</a>#LA6692-3） </span>
 		</p>
 	</blockquote>
-    <p><b>基因檢測機構</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-41d0fbf1-850a-4c96-be9e-54ca2053c6b8\">Organization 2023LDTB0002</a></p>
+    <p><b>基因檢測機構</b>：<a href=\"Bundle-bun-self.html#urn-uuid-41d0fbf1-850a-4c96-be9e-54ca2053c6b8\">Organization 2023LDTB0002</a></p>
     <p><b>基因檢測分析結果</b>：基因檢測報告結果</p>
     <p><b>基因臨床判讀結果</b>：Positive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation/\">ObservationInterpretationCodes  </a>#POS)</span></p>
     <p><b>基因檢測方法</b>：PCR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINC Answer List LL4048-6  </a>#LA26418-6)</span></p>
-    <p><b>基因檢測檢體類型</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-60d143e9-1637-4668-abdb-34fbdfee5d00\">urn:uuid:60d143e9-1637-4668-abdb-34fbdfee5d00</a></p>
-    <p><b>基因報告</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-408f3e21-47c9-4f1f-9eea-1cd2a7841c97\">urn:uuid:408f3e21-47c9-4f1f-9eea-1cd2a7841c97</a></p>
+    <p><b>基因檢測檢體類型</b>：<a href=\"Bundle-bun-self.html#urn-uuid-60d143e9-1637-4668-abdb-34fbdfee5d00\">urn:uuid:60d143e9-1637-4668-abdb-34fbdfee5d00</a></p>
+    <p><b>基因報告</b>：<a href=\"Bundle-bun-self.html#urn-uuid-408f3e21-47c9-4f1f-9eea-1cd2a7841c97\">urn:uuid:408f3e21-47c9-4f1f-9eea-1cd2a7841c97</a></p>
 </div>"
 
 Instance: inline-2-obs-lab
@@ -1025,14 +1025,14 @@ Usage: #inline
     <p><b>狀態</b>：final</p>
     <p><b>類型</b>：檢驗(查)<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-supporting-info-type.html/\">NHI-補充資訊類別值集</a>#tests)</span></p>
     <p><b>檢驗(查)名稱</b>：Platelets [#/volume] in Blood by Automated count <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINCCodes</a>#777-3)</span></p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
     <p><b>檢驗(查)報告日期</b>：2024-01-01</p>
-    <p><b>簽發檢驗(查)報告醫事人員身分證號</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
+    <p><b>簽發檢驗(查)報告醫事人員身分證號</b>：<a href=\"Bundle-bun-self.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
     <p><b>檢驗(查)結果</b>：5.1 mmol/l</p>
     <p><b>檢驗(查)結果判讀</b>：高，High <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation/\">ObservationInterpretationCodes  </a>#H)</span></p>
     <p><b>檢驗(查)結果之參考範圍下限</b>：2.9 mmol/L</p>
     <p><b>檢驗(查)結果之參考範圍上限</b>：4.9 mmol/L</p>
-    <p><b>檢驗(查)附件</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-a1aa65c7-c464-41a5-aa1a-fe5cddf487cf\">urn:uuid:a1aa65c7-c464-41a5-aa1a-fe5cddf487cf</a></p>
+    <p><b>檢驗(查)附件</b>：<a href=\"Bundle-bun-self.html#urn-uuid-a1aa65c7-c464-41a5-aa1a-fe5cddf487cf\">urn:uuid:a1aa65c7-c464-41a5-aa1a-fe5cddf487cf</a></p>
 </div>"
 
 Instance: inline-2-obs-lab-cbc
@@ -1088,10 +1088,10 @@ Usage: #inline
     <p><b>狀態</b>：final</p>
     <p><b>類型</b>：檢驗(查)<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-supporting-info-type.html/\">NHI-補充資訊類別值集</a>#tests)</span></p>
     <p><b>套組代碼</b>：CBC panel - Blood by Automated count <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINCCodes</a>#58410-2)</span></p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
     <p><b>檢驗(查)報告日期</b>：2024-01-01</p>
-    <p><b>簽發檢驗(查)報告醫事人員身分證號</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
-    <p><b>檢驗(查)附件</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-a1aa65c7-c464-41a5-aa1a-fe5cddf487cf\">urn:uuid:a1aa65c7-c464-41a5-aa1a-fe5cddf487cf</a></p>
+    <p><b>簽發檢驗(查)報告醫事人員身分證號</b>：<a href=\"Bundle-bun-self.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
+    <p><b>檢驗(查)附件</b>：<a href=\"Bundle-bun-self.html#urn-uuid-a1aa65c7-c464-41a5-aa1a-fe5cddf487cf\">urn:uuid:a1aa65c7-c464-41a5-aa1a-fe5cddf487cf</a></p>
 	<blockquote>
 		<p>
 			<b>檢驗(查)名稱</b>：Leukocytes [#/volume] in Blood by Automated count <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINCCodes</a>#6690-2)</span>
@@ -1166,9 +1166,9 @@ Usage: #inline
     </div>
     <p><b>狀態</b>：final</p>
     <p><b>病人狀態評估項目代碼</b>：Functional capacity NYHA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org\">LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集 </a>#88020-3)</span></p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
     <p><b>病人狀態評估日期</b>：2024-01-01</p>
-    <p><b>評估項目醫事人員身分證號</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
+    <p><b>評估項目醫事人員身分證號</b>：<a href=\"Bundle-bun-self.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
     <p><b>病人狀態評估結果</b>：class1</p>
 </div>"
 
@@ -1188,7 +1188,7 @@ Usage: #inline
     </div>
     <p><b>狀態</b>：final</p>
     <p><b>治療後疾病狀態評估項目</b>：International Working Group(IWG) Consensus Criteria<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-tx-ast.html\">NHI-治療後疾病狀態評估項目值集</a>#IWGC)</span></p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
     <p><b>治療後疾病狀態評估日期</b>：2024-01-01</p>
     <p><b>治療後疾病狀態評估結果</b>：Partial remission (PR)</p>
 </div>"
@@ -1211,9 +1211,9 @@ Usage: #inline
     <p><b>放射治療項目</b>：骨髓高溫療法 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">
             (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.3.2/CodeSystem-icd-10-pcs-2023-tw.html\">臺灣2023年中文版ICD-10-PCS</a>#D7Y08ZZ)</span>
     </p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <p><b>放射治療日期</b>：2024-05-06 09:00:00+0000</p>
-    <p><b>放射治療總劑量</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-b3c91f1b-14e3-4f44-8fa2-72f27b1d28c8\">urn:uuid:b3c91f1b-14e3-4f44-8fa2-72f27b1d28c8</a> 5000 mg</p>
+    <p><b>放射治療總劑量</b>：<a href=\"Bundle-bun-self.html#urn-uuid-b3c91f1b-14e3-4f44-8fa2-72f27b1d28c8\">urn:uuid:b3c91f1b-14e3-4f44-8fa2-72f27b1d28c8</a> 5000 mg</p>
 </div>"
 
 Instance: inline-2-substance
@@ -1248,7 +1248,7 @@ Usage: #inline
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Specimen-twpas.html\">基因檢測檢體-Specimen TWPAS</a></p>
     </div>
     <p><b>類型</b>：基因資訊<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINC-基因檢測檢體類型值集</a>#LP7057-5)</span></p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
     <p><b>基因檢測日期</b>：2024-05-06T09:00:00.000Z</p>
 </div>"
 
@@ -1271,7 +1271,7 @@ Usage: #inline
     </div>
     <p><b>狀態</b>：current</p>
     <p><b>報告類型</b>：病歷資料 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pdf-type.html\">NHI-文件類型</a>#medrec)</span></p>
-    <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
+    <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <p><b>病歷資料 (application/pdf)</b>：file://王大明病歷.pdf</p>
     <p><b>病歷資料名稱</b>：王大明病歷</p>
 </div>"
