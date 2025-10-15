@@ -10,6 +10,7 @@
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
         <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
+        <li>修改<a href="StructureDefinition-Claim-twpas.html">Profile: 事前審查-Claim TWPAS</a>：修改Constraints: supportingInfo：至少還需提供檢查報告、影像報告、基因資訊中任一樣資訊。</li>
         <li>修改<a href="CodeSystem-medication-frequency-nhi-tw.html">CodeSystem: NHI-健保事前審查-藥品使用頻率</a>：新增代碼<code>HS</code>(睡前一次)、<code>QDHS</code>(每日一次睡前使用)。</li>
         <li>修改<a href="CodeSystem-nhi-tmhb-type.html">CodeSystem: NHI-健保事前審查-申請案件類別</a>：原「自主審查報備」(<code>3</code>)調整名稱為「自主審查」。</li>
         <li>修改<a href="StructureDefinition-ClaimResponse-self-assessment-twpas.html">Profile: 自主審查-ClaimResponse Self Assessment TWPAS</a>：

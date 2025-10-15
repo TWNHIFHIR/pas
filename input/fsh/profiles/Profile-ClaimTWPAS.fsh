@@ -305,8 +305,8 @@ Expression:  "diagnosis.where(sequence = 1).count() = 1"
 Severity:    #error
 
 Invariant:   supportingInfo
-Description: "當Claim.priority(案件類別)為1(一般事前審查申請)、3(自主審查)時，至少還需提供檢查報告、影像報告、基因資訊中任一樣資訊。"
-Expression:  "(priority.coding.code.matches('1|3')) implies (supportingInfo.category.exists(coding.code = 'examinationReport') or supportingInfo.category.exists(coding.code = 'imagingReport') or supportingInfo.category.exists(coding.code = 'geneInfo'))"
+Description: "至少還需提供檢查報告、影像報告、基因資訊中任一樣資訊。"
+Expression:  "supportingInfo.category.exists(coding.code = 'examinationReport') or supportingInfo.category.exists(coding.code = 'imagingReport') or supportingInfo.category.exists(coding.code = 'geneInfo')"
 Severity:    #error
 
 Invariant:   applType
