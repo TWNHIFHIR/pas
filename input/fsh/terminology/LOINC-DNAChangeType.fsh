@@ -17,6 +17,8 @@ Description: "LOINC-健保事前審查-基因突變類型值集"
 * $loinc#94077-5 "TMB Tumor-Imp"
 // 2025-09-18 add
 * $loinc#LA11883-8 "Not detected"
+// 2025-10-20 add
+* $loinc#95123-6 "Gene fusion transcript details in Blood or Tissue by Molecular genetics method Narrative"
 
 
 CodeSystem: INCaOsiris
