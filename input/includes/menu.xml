@@ -24,8 +24,7 @@
 	</li>
  	<li><a href="examples.html">範例</a></li>
 	<li><a href="downloads.html">結構定義與範例檔下載</a></li>
-	<li><a href="security.html">安全性</a></li>
- 	<li class="dropdown">
+	<li class="dropdown">
 		<a href="security.html">安全性<b class="caret"></b></a>
 		<ul class="dropdown-menu">
 			<li>

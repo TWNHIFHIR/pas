@@ -34,9 +34,12 @@ Description: "NHI-健保事前審查-用藥品項，參照自[健保用藥品項
 
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2025-09-26"
-* ^version = "2025-09-26"
+* ^date = "2025-10-23"
+* ^version = "2025-10-23"
 * ^experimental = false
+/*2025-10 add*/
+* #X000353100 "\"MYCOBUTIN 150 MG CAPSULES\""
+
 /*2025-9 add*/
 * #KC01177224 "RYBREVANT CONCENTRATE FOR SOLUTION FOR INFUSION 50MG/ML"
 * #AC36041109 "SUCA GRANULE FOR SUSPENSION 1GM/1.02GM(SUCRALFATE)"
