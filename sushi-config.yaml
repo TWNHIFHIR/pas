@@ -81,7 +81,8 @@ pages:
     title: 驗證教學
   scopes.md:
     title: SMART on FHIR規範要求與支援能力
-
+  cql.md:
+    title: 預檢規則(FHIR CQL)
 
 
 # The parameters property represents IG.definition.parameter. Rather
