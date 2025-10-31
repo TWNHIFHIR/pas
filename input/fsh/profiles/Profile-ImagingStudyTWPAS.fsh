@@ -113,7 +113,7 @@ Description: "原值集因總會工具問題無法正常顯示，故先自建值
 * $DCM#DG "Diaphanography"
 * $DCM#PT "Positron emission tomography"
 * $DCM#EPS "Cardiac Electrophysiology"
-* $DCM#LS "Laser Scan"
+* $DCM#LS "Laser surface scan"
 * $DCM#PX "Panoramic X-Ray"
 * $DCM#OPM "Ophthalmic Mapping"
 * $DCM#OPTBSV "Ophthalmic Tomography B-scan Volume Analysis"
@@ -127,7 +127,7 @@ Description: "原值集因總會工具問題無法正常顯示，故先自建值
 * $DCM#MR "Magnetic Resonance"
 * $DCM#IO "Intra-oral Radiography"
 * $DCM#EEG "Electroencephalography"
-* $DCM#RTIMAGE "RT Image"
+* $DCM#RTIMAGE
 * $DCM#VA "Visual Acuity"
 * $DCM#RESP "Respiratory Waveform"
 * $DCM#ES "Endoscopy"

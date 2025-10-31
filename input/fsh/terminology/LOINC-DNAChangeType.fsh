@@ -12,7 +12,7 @@ Description: "LOINC-健保事前審查-基因突變類型值集"
 * $loinc#LA6689-9 "Inversion"
 * $loinc#LA6690-7 "Substitution"
 * https://nhicore.nhi.gov.tw/pas/CodeSystem/inca-osiris#O55-2 "Delins"
-* $loinc#101397-8 "Copy number variation analysis Sequencing Doc (Bld/Tiss)"
+* $loinc#101397-8 "Copy number variation analysis in Blood or Tissue by Sequencing"
 * $loinc#81695-9 "MSI Ca spec-Imp"
 * $loinc#94077-5 "TMB Tumor-Imp"
 // 2025-09-18 add
