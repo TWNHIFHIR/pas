@@ -6,10 +6,10 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/10/27異動以下內容：
+因考量實作需求，於2025/10/31異動以下內容：
     <ol>  
         <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
-        <!-- <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
+        <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li>
         <li>修改<a href="ValueSet-dna-change-type.html">ValueSet: LOINC-健保事前審查-基因突變類型值集</a>：新增代碼<code>95123-6</code>。</li>
         <li>修改<a href="CodeSystem-medication-frequency-nhi-tw.html">CodeSystem: NHI-健保事前審查-藥品使用頻率</a>：新增代碼<code>HS</code>(睡前一次)、<code>QDHS</code>(每日一次睡前使用)。</li>
         <li>修改<a href="CodeSystem-nhi-tmhb-type.html">CodeSystem: NHI-健保事前審查-申請案件類別</a>：原「自主審查報備」(<code>3</code>)調整名稱為「自主審查」。</li>
