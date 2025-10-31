@@ -1,4 +1,3 @@
-### 預檢規則（FHIR CQL）
 
 <div style="padding-left: 10px;">
   <p>
