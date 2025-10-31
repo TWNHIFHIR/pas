@@ -127,7 +127,7 @@ Description: "原值集因總會工具問題無法正常顯示，故先自建值
 * $DCM#MR "Magnetic Resonance"
 * $DCM#IO "Intra-oral Radiography"
 * $DCM#EEG "Electroencephalography"
-* $DCM#RTIMAGE
+* $DCM#RTIMAGE "Radiotherapy Image"
 * $DCM#VA "Visual Acuity"
 * $DCM#RESP "Respiratory Waveform"
 * $DCM#ES "Endoscopy"
