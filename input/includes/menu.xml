@@ -36,5 +36,5 @@
 		</ul>
 	</li>
 	<li><a href="validate.html">驗證教學</a></li>
-	<li><a href="https://build.fhir.org/ig/TWNHIFHIR/cql/index.html">預檢規則(FHIR CQL)</a></li>
+	<li><a href="https://build.fhir.org/ig/TWNHIFHIR/cql/index.html" target="_blank">預檢規則(FHIR CQL)</a></li>
 </ul>      
