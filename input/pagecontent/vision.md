@@ -17,8 +17,8 @@
 	<li>檢驗檢查-Observation Laboratory Result</li>
 	<li>病人狀態評估-Observation Patient Assessment TWPAS</li>
 	<li>用藥品項-MedicationRequest Treat TWPAS</li>
-	<li>放射治療-Procedure TWPAS</li>
-	<li>放射治療總劑量-Substance TWPAS</li>
+	<li>放射/照光治療-Procedure TWPAS</li>
+	<li>放射/照光治療總劑量-Substance TWPAS</li>
 	<li>文件參照-DocumentReference</li>
 	<li>治療後疾病狀態評估-Observation Treatment Assessment TWPAS</li>
 	<li>事前審查品項-MedicationRequest Apply TWPAS</li>

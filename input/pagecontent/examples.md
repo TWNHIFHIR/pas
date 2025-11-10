@@ -65,10 +65,10 @@
 - [事前審查品項-給付適應症特定代碼](MedicationRequest-medReq-apply-2.html)：依據事前審查品項-MedicationRequest Apply TWPAS Profile呈現特定事前審查品項代碼之範例 (申請項目)
  
 #### Procedure
-- [放射治療](Procedure-pro-min.html)：依據放射治療-Procedure TWPAS Profile呈現放射治療之範例
+- [放射/照光治療](Procedure-pro-min.html)：依據放射/照光治療-Procedure TWPAS Profile呈現放射/照光治療之範例
 
 #### Substance
-- [放射治療總劑量](Substance-sub-min.html)：依據放射治療總劑量-Substance TWPAS Profile呈現放射治療之範例
+- [放射/照光治療總劑量](Substance-sub-min.html)：依據放射/照光治療總劑量-Substance TWPAS Profile呈現放射/照光治療之範例
 
 #### Specimen
 - [基因檢測檢體](Specimen-spe-min.html)：依據基因檢測檢體-Specimen TWPAS Profile呈現基因檢測檢體之範例

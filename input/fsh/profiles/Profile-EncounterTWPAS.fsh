@@ -19,6 +19,7 @@ Description:    "此就醫科別-Encounter TWPAS Profile說明本IG如何進一�
 * subject only Reference(PatientTWPAS)
 
 * class ^short = "就醫分類。【因FHIR設計而需必填】"
-* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB
+* class from ActEncounterCode
+//* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB
 * status ^short = "就醫現況。【因FHIR設計而需必填】"
 * status = http://hl7.org/fhir/encounter-status#planned

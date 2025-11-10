@@ -1,9 +1,8 @@
-Instance: cla-1
-InstanceOf: ClaimTWPAS
-Title: "事前審查-送核、套組檢驗、多事前審查癌藥品項"
-Description: "依據事前審查-Claim TWPAS Profile呈現事前審查之範例，含兩筆檢驗(查)。"
+Instance: cla-imm
+InstanceOf: ClaimImmTWPAS
+Title: "免疫製劑事前審查"
+Description: "依據免疫製劑事前審查-Claim Immunologic Aagent TWPAS Profile呈現免疫製劑事前審查。"
 Usage: #example
-//* identifier.value = "20240831010109051701"
 * extension[encounter].valueReference.reference = "Encounter/enc-min"
 * status = http://hl7.org/fhir/fm-status#active
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
@@ -22,8 +21,8 @@ Usage: #example
 * supportingInfo[height].valueQuantity.value = 170
 * supportingInfo[height].valueQuantity.code = #cm
 * supportingInfo[height].valueQuantity.system = "http://unitsofmeasure.org"
-* supportingInfo[pregnancy].sequence = 3
-* supportingInfo[pregnancy].valueBoolean = false
+/* supportingInfo[bloodgroup].sequence = 3
+* supportingInfo[bloodgroup].valueCodeableConcept = http://snomed.info/sct#58460004*/
 
 * supportingInfo[imagingReport].sequence = 4
 * supportingInfo[imagingReport].valueReference.reference = "DiagnosticReport/diaRep-ima-min" 

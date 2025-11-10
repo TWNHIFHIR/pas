@@ -277,7 +277,7 @@ Usage: #inline
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：14</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type radiotherapy}\">放射治療</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type radiotherapy}\">放射/照光治療</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-self.html#urn-uuid-0a37e990-e3ad-4b35-88c7-13b4283bdf10\">urn:uuid:0a37e990-e3ad-4b35-88c7-13b4283bdf10</a></p>
     </blockquote>
     <blockquote>
@@ -1205,15 +1205,15 @@ Usage: #inline
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <div style=\"display: inline-2-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4;
         border-radius: 5px; line-height: 60%\">
-        <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Procedure-twpas.html\">放射治療-Procedure TWPAS</a></p>
+        <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Procedure-twpas.html\">放射/照光治療-Procedure TWPAS</a></p>
     </div>
-    <p><b>放射治療狀態</b>：completed</p>
-    <p><b>放射治療項目</b>：骨髓高溫療法 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">
+    <p><b>放射/照光治療狀態</b>：completed</p>
+    <p><b>放射/照光治療項目</b>：骨髓高溫療法 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">
             (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.3.2/CodeSystem-icd-10-pcs-2023-tw.html\">臺灣2023年中文版ICD-10-PCS</a>#D7Y08ZZ)</span>
     </p>
     <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
-    <p><b>放射治療日期</b>：2024-05-06 09:00:00+0000</p>
-    <p><b>放射治療總劑量</b>：<a href=\"Bundle-bun-self.html#urn-uuid-b3c91f1b-14e3-4f44-8fa2-72f27b1d28c8\">urn:uuid:b3c91f1b-14e3-4f44-8fa2-72f27b1d28c8</a> 5000 mg</p>
+    <p><b>放射/照光治療日期</b>：2024-05-06 09:00:00+0000</p>
+    <p><b>放射/照光治療總劑量</b>：<a href=\"Bundle-bun-self.html#urn-uuid-b3c91f1b-14e3-4f44-8fa2-72f27b1d28c8\">urn:uuid:b3c91f1b-14e3-4f44-8fa2-72f27b1d28c8</a> 5000 mg</p>
 </div>"
 
 Instance: inline-2-substance
@@ -1229,11 +1229,11 @@ Usage: #inline
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <div style=\"display: inline-2-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4;
         border-radius: 5px; line-height: 60%\">
-        <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Substance-twpas.html\">放射治療總劑量-Substance TWPAS</a></p>
+        <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Substance-twpas.html\">放射/照光治療總劑量-Substance TWPAS</a></p>
     </div>
-    <p><b>放射治療項目</b>：骨髓高溫療法 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">
+    <p><b>放射/照光治療項目</b>：骨髓高溫療法 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">
             (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.3.2/CodeSystem-icd-10-pcs-2023-tw.html\">臺灣2023年中文版ICD-10-PCS</a>#D7Y08ZZ)</span></p>
-    <p><b>放射治療總劑量(單位)</b>：5000 (mg)</p>
+    <p><b>放射/照光治療總劑量(單位)</b>：5000 (mg)</p>
 </div>"
 
 Instance: inline-2-specimen

@@ -107,11 +107,11 @@ Description:    "此事前審查-Bundle TWPAS Profile說明本IG如何進一步�
 * entry[medicationRequestTreat].resource 1..1 MS
 * entry[medicationRequestTreat].resource only MedicationRequestTreatTWPAS
 
-* entry[procedure] ^short = "放射治療"
+* entry[procedure] ^short = "放射/照光治療"
 * entry[procedure].resource 1..1 MS
 * entry[procedure].resource only ProcedureTWPAS
 
-* entry[substance] ^short = "放射治療總劑量"
+* entry[substance] ^short = "放射/照光治療總劑量"
 * entry[substance].resource 1..1 MS
 * entry[substance].resource only SubstanceTWPAS
 

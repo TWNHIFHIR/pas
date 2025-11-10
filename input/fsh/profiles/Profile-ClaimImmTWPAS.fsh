@@ -1,8 +1,8 @@
-Profile:        ClaimTWPAS
+Profile:        ClaimImmTWPAS
 Parent:         Claim
-Id:             Claim-twpas
-Title:          "事前審查-Claim TWPAS"
-Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步定義FHIR的Claim Resource以呈現癌藥事前審查之內容"
+Id:             Claim-immunologic-agent-twpas
+Title:          "免疫製劑事前審查-Claim Immunologic Aagent TWPAS"
+Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Profile說明本IG如何進一步定義FHIR的Claim Resource以呈現免疫製劑事前審查之內容"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-twpas"
@@ -57,6 +57,7 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
 * supportingInfo contains
     weight 1..1 and
     height 1..1 and
+    bloodgroup 0..1 and
     pregnancy 0..1 and
     imagingReport 0..* and
     cancerStage 0..* and
@@ -68,7 +69,8 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
     radiotherapy 0..* and
     carePlanDocument 0..* and
     medicalRecord 0..* and
-    treatmentAssessment 0..*
+    treatmentAssessment 0..* and
+    ci 0..1
 * supportingInfo[weight] ^short = "病人體重"
 * supportingInfo[weight].category = NHIPASSupportingInfoType#weight
 * supportingInfo[weight].timing[x] ..0
@@ -90,6 +92,14 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
 * supportingInfo[height].valueQuantity.value 1.. MS
 * supportingInfo[height].valueQuantity.system 1..
 * supportingInfo[height].valueQuantity.code 1..
+
+* supportingInfo[bloodgroup] ^short = "病人血型"
+* supportingInfo[bloodgroup].category = NHIPASSupportingInfoType#bloodgroup
+* supportingInfo[bloodgroup].timing[x] ..0
+* supportingInfo[bloodgroup].value[x] 1.. MS
+* supportingInfo[bloodgroup].value[x] 1.. MS
+* supportingInfo[bloodgroup].value[x] only Reference(DiagnosticReportImageTWPAS)
+//* supportingInfo[bloodgroup].valueCodeableConcept from http://hl7.org/fhir/uv/ips/ValueSet/results-blood-group-uv-ips
 
 * supportingInfo[pregnancy] ^short = "是否懷孕或哺乳"
 * supportingInfo[pregnancy].category = NHIPASSupportingInfoType#pregnancyBreastfeedingStatus
@@ -165,6 +175,12 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
 * supportingInfo[treatmentAssessment].timing[x] ..0
 * supportingInfo[treatmentAssessment].value[x] 1.. MS
 * supportingInfo[treatmentAssessment].value[x] only Reference(ObservationTreatmentAssessmentTWPAS)
+
+* supportingInfo[ci] ^short = "重大傷病"
+* supportingInfo[ci].category = NHIPASSupportingInfoType#ci
+* supportingInfo[ci].timing[x] ..0
+* supportingInfo[ci].value[x] 1.. MS
+* supportingInfo[ci].value[x] only Reference(ConditionTWPAS)
 
 * procedure.procedure[x] only CodeableConcept
 * procedure.procedureCodeableConcept MS
@@ -280,46 +296,3 @@ Description:    "此事前審查-Claim TWPAS Profile說明本IG如何進一步�
 * diagnosis obeys diagnosis //and sequence-1
 * . obeys sequence-1 and supportingInfo and applType
 * item.programCode obeys pas-1
-
-/* Extension*/
-Extension: RequestedService
-Id: extension-requestedService
-Description: "事前審查品項"
-Context: Claim.item
-* . ^definition = "事前審查品項"
-* value[x] only Reference(MedicationRequestApplyTWPAS)
-
-Invariant:   HTWT
-Description: "整數至多3位數及小數至多2位數"
-Expression:  "value.toString().matches('^[0-9]{1,3}(.[0-9]{1,2})?$')"
-Severity:    #error
-
-Invariant:   diagnosis
-Description: "diagnosis.sequence=1時才需填寫診斷日期、簡要病摘(申請原因)"
-Expression:  "sequence=1 implies (extension.where(url = 'http://hl7.org/fhir/us/davinci-pas/StructureDefinition/extension-diagnosisRecordedDate').value.ofType(date).exists() and type.text.exists() )"
-Severity:    #error
-
-Invariant:   sequence-1
-Description: "diagnosis.sequence一定會有一個「1」，且只能出現一次。"
-Expression:  "diagnosis.where(sequence = 1).count() = 1"
-Severity:    #error
-
-Invariant:   supportingInfo
-Description: "當Claim.priority(案件類別)為1(一般事前審查申請)、3(自主審查)時，至少還需提供檢查報告、影像報告、基因資訊中任一樣資訊。"
-Expression:  "(priority.coding.code.matches('1|3')) implies (supportingInfo.category.exists(coding.code = 'examinationReport') or supportingInfo.category.exists(coding.code = 'imagingReport') or supportingInfo.category.exists(coding.code = 'geneInfo'))"
-Severity:    #error
-
-Invariant:   applType
-Description: "當Claim.subType(申報類別)為2(送核補件)、3(申復)、4(爭議審議)或5(申復補件)時，院所才需於Claim.identifier填寫原送核案件之受理編號。目前IG僅針對申報類別為3(申復)進行檢核。"
-Expression:  "(subType.coding.exists(code='3')) implies (identifier.exists())"
-Severity:    #error
-
-Invariant:   pas-1
-Description: "text、coding至少需存在一個。"
-Expression:  "text.exists() or coding.exists()"
-Severity:    #error
-
-Invariant:   pas-2
-Description: "長度不得超過4000 bytes。"
-Expression:  "toString().length() <= 4000"
-Severity:    #error

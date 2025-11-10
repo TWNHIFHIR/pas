@@ -66,7 +66,7 @@ Id: media-mimetypes
 Title: "HL7-非DICOM影像MimeType值集"
 Description: "HL7-非DICOM影像MimeType值集"
 * ^date = "2025-10-01"
-* ^version = "1.0.9"
+* ^version = "1.1.0"
 * ^experimental = false
 * urn:ietf:bcp:13#image/jpeg
 * urn:ietf:bcp:13#image/jpg
@@ -127,7 +127,7 @@ Description: "原值集因總會工具問題無法正常顯示，故先自建值
 * $DCM#MR "Magnetic Resonance"
 * $DCM#IO "Intra-oral Radiography"
 * $DCM#EEG "Electroencephalography"
-* $DCM#RTIMAGE
+* $DCM#RTIMAGE "Radiotherapy Image"
 * $DCM#VA "Visual Acuity"
 * $DCM#RESP "Respiratory Waveform"
 * $DCM#ES "Endoscopy"

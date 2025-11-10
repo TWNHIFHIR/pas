@@ -48,10 +48,10 @@
 - [事前審查品項-MedicationRequest Apply TWPAS](StructureDefinition-MedicationRequest-apply-twpas.html) (申請項目)
  
 #### Procedure
-- [放射治療-Procedure TWPAS](StructureDefinition-Procedure-twpas.html)
+- [放射/照光治療-Procedure TWPAS](StructureDefinition-Procedure-twpas.html)
 
 #### Substance
-- [放射治療總劑量-Substance TWPAS](StructureDefinition-Substance-twpas.html)
+- [放射/照光治療總劑量-Substance TWPAS](StructureDefinition-Substance-twpas.html)
 
 #### Specimen
 - [基因檢測檢體-Specimen TWPAS](StructureDefinition-Specimen-twpas.html)
