@@ -1,5 +1,5 @@
 Profile:        EncounterTWPAS
-Parent:         TWCoreEncounter
+Parent:         https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Encounter-twcore
 Id:             Encounter-twpas
 Title:          "就醫科別-Encounter TWPAS"
 Description:    "此就醫科別-Encounter TWPAS Profile說明本IG如何進一步定義臺灣核心-就醫事件(TW Core Encounter) Profile以呈現癌藥事前審查中院所資訊之就醫科別"
