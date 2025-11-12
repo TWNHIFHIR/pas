@@ -1,7 +1,7 @@
 <div class="bg-danger" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
 <p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.0.9版內容，因而會比健保署的IG版本V1.0.9(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為114年12月，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
 <br/>
-<b>醫院實作時請以V1.0.8為主進行實例驗證，目前健保署端的伺服器採用V1.0.8版規格。</b></p>
+<b>醫院實作時請以V1.0.9為主進行實例驗證，目前健保署端的伺服器採用V1.0.9版規格。</b></p>
 </div>
 <br/>
 
@@ -10,6 +10,9 @@
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li> -->
         <!-- <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
+        <li>新增<a href="StructureDefinition-Bundle-immunologic-agent-twpas.html">Profile: 免疫製劑事前審查-Bundle Immunologic Aagent TWPAS</a>。</li>
+        <li>新增<a href="StructureDefinition-Claim-immunologic-agent-twpas.html">Profile: 免疫製劑事前審查-Claim Immunologic Aagent TWPAS</a>。</li>
+        <li>新增<a href="StructureDefinition-Condition-twpas.html">Profile: 重大傷病-Condition TWPAS</a>。</li>
         <li>修改<a href="StructureDefinition-Observation-pat-assessment-twpas.html">Profile: 病人狀態評估-Observation Patient Assessment TWPAS</a>：新增病人狀態評估報告及病人狀態評估報告名稱(<code>derivedFrom</code>)。</li>
         <li>修改<a href="StructureDefinition-Encounter-twpas.html">Profile: 就醫科別-Encounter TWPAS</a>：取消綁定就醫分類(<code>class</code>)之固定值。</li>
         <li>修改「放射治療」相關欄位之名稱為「放射/照光治療」。</li>
