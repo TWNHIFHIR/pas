@@ -41,6 +41,10 @@ Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Pro
 	organizationOrg 1..1 MS and
 	condition 0..1 MS
 
+* entry[condition] ^short = "重大傷病"
+* entry[condition].resource 1..1 MS
+* entry[condition].resource only ConditionTWPAS
+
 * entry[claim] ^short = "免疫製劑事前審查(Claim)"
 * entry[claim].resource 1..1 MS
 * entry[claim].resource only ClaimImmTWPAS
