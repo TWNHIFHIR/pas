@@ -23,6 +23,7 @@ Description: "臺灣衛生福利部中央健康保險署「補充資訊類別」
 * #medicalRecord "病歷資料"
 * #treatmentAssessment "結果資訊"
 * #ci "重大傷病"
+* #opdDoctor "門診醫師"
 
 ValueSet: NHIPASSupportingInfoType
 Id: nhi-supporting-info-type

@@ -13,6 +13,7 @@
         <li>新增<a href="StructureDefinition-Bundle-immunologic-agent-twpas.html">Profile: 免疫製劑事前審查-Bundle Immunologic Aagent TWPAS</a>。</li>
         <li>新增<a href="StructureDefinition-Claim-immunologic-agent-twpas.html">Profile: 免疫製劑事前審查-Claim Immunologic Aagent TWPAS</a>。</li>
         <li>新增<a href="StructureDefinition-Condition-twpas.html">Profile: 重大傷病-Condition TWPAS</a>。</li>
+        <li>新增<a href="StructureDefinition-Observation-blood-group-twpas.html">Profile: 血型-Observation Blood Group TWPAS</a>。</li>
         <li>修改<a href="StructureDefinition-Observation-pat-assessment-twpas.html">Profile: 病人狀態評估-Observation Patient Assessment TWPAS</a>：新增病人狀態評估報告及病人狀態評估報告名稱(<code>derivedFrom</code>)。</li>
         <li>修改<a href="StructureDefinition-Encounter-twpas.html">Profile: 就醫科別-Encounter TWPAS</a>：取消綁定就醫分類(<code>class</code>)之固定值。</li>
         <li>修改「放射治療」相關欄位之名稱為「放射/照光治療」。</li>

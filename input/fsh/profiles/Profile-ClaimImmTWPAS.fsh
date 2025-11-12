@@ -68,7 +68,9 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
     carePlanDocument 0..* and
     medicalRecord 0..* and
     treatmentAssessment 0..* and
-    ci 0..1
+    ci 0..1 and
+    opdDoctor 0..1
+
 * supportingInfo[weight] ^short = "病人體重"
 * supportingInfo[weight].category = NHIPASSupportingInfoType#weight
 * supportingInfo[weight].timing[x] ..0
@@ -167,6 +169,12 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * supportingInfo[ci].timing[x] ..0
 * supportingInfo[ci].value[x] 1.. MS
 * supportingInfo[ci].value[x] only Reference(ConditionTWPAS)
+
+* supportingInfo[opdDoctor] ^short = "門診醫師"
+* supportingInfo[opdDoctor].category = NHIPASSupportingInfoType#opdDoctor
+* supportingInfo[opdDoctor].timing[x] ..0
+* supportingInfo[opdDoctor].value[x] 1.. MS
+* supportingInfo[opdDoctor].value[x] only Reference(PractitionerTWPAS)
 
 * procedure.procedure[x] only CodeableConcept
 * procedure.procedureCodeableConcept MS

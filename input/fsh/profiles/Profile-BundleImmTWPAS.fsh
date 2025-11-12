@@ -57,7 +57,7 @@ Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Pro
 * entry[patient].resource 1..1 MS
 * entry[patient].resource only PatientTWPAS
 
-* entry[practitioner] ^short = "醫師(申請醫師／簽發影像報告醫師／檢查報告醫師／簽發檢驗(查)報告醫事人員／評估項目醫事人員)"
+* entry[practitioner] ^short = "醫師(申請醫師／簽發影像報告醫師／檢查報告醫師／簽發檢驗(查)報告醫事人員／評估項目醫事人員／門診醫師)"
 * entry[practitioner].resource 1..1 MS
 * entry[practitioner].resource only PractitionerTWPAS
 
