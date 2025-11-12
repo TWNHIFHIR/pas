@@ -11,6 +11,7 @@ Description: "臺灣衛生福利部中央健康保險署「文件類型」代碼
 * #careplan "治療計畫文件"
 * #test "檢驗(查)附件"
 * #medrec "病歷資料"
+* #patientAssessment "病人狀態評估報告"
 
 ValueSet: NHIPDFType
 Id: nhi-pdf-type

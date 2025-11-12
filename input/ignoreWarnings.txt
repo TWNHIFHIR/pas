@@ -11,9 +11,13 @@ INFORMATION: OperationOutcome/error-example: OperationOutcome.issue[0].details: 
 % Reference to draft CodeSystem%
 
 # 此條件可能回傳多個集合，但Bundle中已限制可填次數故不影響驗證。（WARNING後方的藍色字樣(1 uses) 是指WARNING在此Profile中有被使用到）
-% supportingInfo: The left side is inherently a collection, and so the expression 'coding.code = 'examinationReport'' may fail or return false if there is more than one item in the content being evaluated %
-% supportingInfo: The left side is inherently a collection, and so the expression 'coding.code = 'imagingReport'' may fail or return false if there is more than one item in the content being evaluated %
-% supportingInfo: The left side is inherently a collection, and so the expression 'coding.code = 'geneInfo'' may fail or return false if there is more than one item in the content being evaluated %
+WARNING: StructureDefinition/Claim-immunologic-agent-twpas: StructureDefinition.snapshot.element[0].constraint[6]: supportingInfo: The left side is inherently a collection, and so the expression 'coding.code = 'examinationReport'' may fail or return false if there is more than one item in the content being evaluated
+WARNING: StructureDefinition/Claim-immunologic-agent-twpas: StructureDefinition.snapshot.element[0].constraint[6]: supportingInfo: The left side is inherently a collection, and so the expression 'coding.code = 'imagingReport'' may fail or return false if there is more than one item in the content being evaluated
+WARNING: StructureDefinition/Claim-immunologic-agent-twpas: StructureDefinition.snapshot.element[0].constraint[6]: supportingInfo: The left side is inherently a collection, and so the expression 'coding.code = 'geneInfo'' may fail or return false if there is more than one item in the content being evaluated
+WARNING: StructureDefinition.where(url = 'https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-immunologic-agent-twpas'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition/Claim-twpas: StructureDefinition.snapshot.element[0].constraint[6]: supportingInfo: The left side is inherently a collection, and so the expression 'coding.code = 'examinationReport'' may fail or return false if there is more than one item in the content being evaluated
+WARNING: StructureDefinition/Claim-twpas: StructureDefinition.snapshot.element[0].constraint[6]: supportingInfo: The left side is inherently a collection, and so the expression 'coding.code = 'imagingReport'' may fail or return false if there is more than one item in the content being evaluated
+WARNING: StructureDefinition/Claim-twpas: StructureDefinition.snapshot.element[0].constraint[6]: supportingInfo: The left side is inherently a collection, and so the expression 'coding.code = 'geneInfo'' may fail or return false if there is more than one item in the content being evaluated
 
 # HL7 Publisher 中的程式語法錯誤，造成所有ConceptMaps產生了版本不同的多筆Warnings，此警告訊息不影響實作與實際代碼驗證。（WARNING後方的藍色字樣(1 uses) 是指WARNING在此ConceptMap中有被使用到）
 INFORMATION: ConceptMap/nhi-loinc: ConceptMap: The concept map has too many codes to validate %

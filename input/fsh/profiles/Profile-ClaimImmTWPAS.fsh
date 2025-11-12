@@ -5,7 +5,7 @@ Title:          "免疫製劑事前審查-Claim Immunologic Aagent TWPAS"
 Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Profile說明本IG如何進一步定義FHIR的Claim Resource以呈現免疫製劑事前審查之內容"
 * meta 1..1
 * meta.profile 1..1
-* meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-twpas"
+* meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-immunologic-agent-twpas"
 * identifier and provider and subType and enterer and created and priority and patient MS
 * extension contains
     https://nhicore.nhi.gov.tw/pas/StructureDefinition/extension-claim-encounter named encounter 1..1 MS
@@ -60,9 +60,7 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
     bloodgroup 0..1 and
     pregnancy 0..1 and
     imagingReport 0..* and
-    cancerStage 0..* and
     examinationReport 0..* and
-    geneInfo 0..* and
     tests 0..* and
     patientAssessment 0..* and
     medicationRequest 0..* and
@@ -113,23 +111,11 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * supportingInfo[imagingReport].value[x] 1.. MS
 * supportingInfo[imagingReport].value[x] only Reference(DiagnosticReportImageTWPAS)
 
-* supportingInfo[cancerStage] ^short = "癌症分期量表"
-* supportingInfo[cancerStage].category = NHIPASSupportingInfoType#cancerStage
-* supportingInfo[cancerStage].timing[x] ..0
-* supportingInfo[cancerStage].value[x] 1.. MS
-* supportingInfo[cancerStage].value[x] only Reference(ObservationCancerStageTWPAS)
-
 * supportingInfo[examinationReport] ^short = "檢查報告"
 * supportingInfo[examinationReport].category = NHIPASSupportingInfoType#examinationReport
 * supportingInfo[examinationReport].timing[x] ..0
 * supportingInfo[examinationReport].value[x] 1.. MS
 * supportingInfo[examinationReport].value[x] only Reference(DiagnosticReportTWPAS)
-
-* supportingInfo[geneInfo] ^short = "基因資訊"
-* supportingInfo[geneInfo].category = NHIPASSupportingInfoType#geneInfo
-* supportingInfo[geneInfo].timing[x] ..0
-* supportingInfo[geneInfo].value[x] 1.. MS
-* supportingInfo[geneInfo].value[x] only Reference(ObservationDiagnosticTWPAS)
 
 * supportingInfo[tests] ^short = "檢驗(查)"
 * supportingInfo[tests].category = NHIPASSupportingInfoType#tests
@@ -264,9 +250,7 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * supportingInfo[height].valueQuantity.value ^short = "身高(cm)，整數至多3位數及小數至多2位數。"
 * supportingInfo[pregnancy].valueBoolean ^short = "是否懷孕或哺乳，false:未懷孕或哺乳 | true:有懷孕或哺乳"
 * supportingInfo[imagingReport].valueReference ^short = "影像報告"
-* supportingInfo[cancerStage].valueReference ^short = "癌症分期量表"
 * supportingInfo[examinationReport].valueReference ^short = "檢查報告"
-* supportingInfo[geneInfo].valueReference ^short = "基因資訊"
 * supportingInfo[tests].valueReference ^short = "檢驗(查)"
 * supportingInfo[patientAssessment].valueReference ^short = "病人狀態評估"
 * supportingInfo[medicationRequest].valueReference ^short = "用藥品項"
@@ -294,5 +278,5 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * supportingInfo[weight].valueQuantity.value obeys HTWT
 * supportingInfo[height].valueQuantity.value obeys HTWT
 * diagnosis obeys diagnosis //and sequence-1
-* . obeys sequence-1 and supportingInfo and applType
+* . obeys sequence-1 and applType
 * item.programCode obeys pas-1

@@ -78,6 +78,10 @@
 - [治療計畫文件](DocumentReference-doc-careplan-min.html)：依據文件參照-DocumentReference TWPAS Profile呈現治療計畫文件之範例
 - [檢驗(查)附件](DocumentReference-doc-test-min.html)：依據文件參照-DocumentReference TWPAS Profile呈現檢驗(查)附件之範例
 - [病歷資料](DocumentReference-doc-medicalRecord-min.html)：依據文件參照-DocumentReference TWPAS Profile呈現病歷資料之範例
+- [<span class="bg-success">病人狀態評估報告</span>](DocumentReference-doc-patientAssessment-min.html)：依據文件參照-DocumentReference TWPAS Profile呈現病人狀態評估報告之範例
+
+#### Condition
+- [<span class="bg-success">重大傷病</span>](Condition-con-ci.html)：依據重大傷病-Condition TWPAS Profile呈現重大傷病之範例
 
 #### Coverage
 - [健保事前審查計畫](Coverage-cov-min.html)：依據健保事前審查計畫-Coverage TWPAS Profile呈現健保事前審查計畫之範例
