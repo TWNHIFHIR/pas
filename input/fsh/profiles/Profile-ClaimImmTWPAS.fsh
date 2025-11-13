@@ -98,7 +98,7 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * supportingInfo[bloodgroup].timing[x] ..0
 * supportingInfo[bloodgroup].value[x] 1.. MS
 * supportingInfo[bloodgroup].value[x] 1.. MS
-* supportingInfo[bloodgroup].value[x] only Reference(DiagnosticReportImageTWPAS)
+* supportingInfo[bloodgroup].value[x] only Reference(ObservationBloodGroupTWPAS)
 //* supportingInfo[bloodgroup].valueCodeableConcept from http://hl7.org/fhir/uv/ips/ValueSet/results-blood-group-uv-ips
 
 * supportingInfo[pregnancy] ^short = "是否懷孕或哺乳"
