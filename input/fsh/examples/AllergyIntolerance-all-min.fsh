@@ -1,13 +1,11 @@
-Instance: con-diagnosis
-InstanceOf: ConditionTWPAS
-Title: "診斷"
-Description: "依據診斷-Condition TWPAS Profile呈現診斷之範例"
+Instance: all-min
+InstanceOf: AllergyIntoleranceTWPAS
+Title: "過敏史"
+Description: "依據過敏史-AllergyIntolerance TWPAS Profile呈現過敏史之範例"
 Usage: #example
-* clinicalStatus.coding = http://terminology.hl7.org/CodeSystem/condition-clinical#active
-* category.coding = http://loinc.org#29548-5
-* code.coding = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2023-tw#M17.11
-* subject.reference = "Patient/pat-min"
-* encounter.reference = "Encounter/enc-opd"
+* code.text = "對 A 藥物過敏，過敏反應為全身性皮疹、呼吸喘，約在服用後15分鐘發生。曾於2023年5月因感冒服用過 A 藥，出現上述過敏反應，故此後避免使用。"
+* patient.reference = "Patient/pat-min"
+
 /* text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">

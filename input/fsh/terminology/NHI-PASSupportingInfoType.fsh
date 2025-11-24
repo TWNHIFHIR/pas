@@ -24,6 +24,11 @@ Description: "臺灣衛生福利部中央健康保險署「補充資訊類別」
 * #treatmentAssessment "結果資訊"
 * #opd "門診病歷"
 * #diagnosis "診斷"
+* #allergy "過敏史"
+* #subjective "主觀描述"
+* #objective "客觀描述"
+* #assessment "評估"
+* #plan "計畫"
 
 ValueSet: NHIPASSupportingInfoType
 Id: nhi-supporting-info-type

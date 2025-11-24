@@ -17,12 +17,13 @@ Description:    "此門診病歷-Encounter OPD TWPAS Profile說明本IG如何進
 * serviceType.coding[TWMedicalDepartmentSCT] ^short = "對應至SNOMED CT之就醫科別"
 * subject only Reference(PatientTWPAS)
 * participant.individual only Reference(PractitionerTWPAS)
-
 * serviceProvider only Reference(OrganizationTWPAS)
+
 * serviceProvider ^short = "醫事機構代碼，必須存在於醫事機構基本資料檔內。"
 * period.start ^short = "門診日期，YYYY-MM-DD，西元年月日。"
 * serviceType ^short = "科別，完整代碼對應表請參照就醫科別對應表。"
 * participant.individual ^short = "門診醫師"
+* reasonReference ^short = "主觀描述"
 
 * class ^short = "就醫分類。【因FHIR設計而需必填】"
 * class from ActEncounterCode
@@ -46,3 +47,65 @@ Description:    "此診斷-Condition TWPAS Profile說明本IG如何進一步定�
 * subject only Reference(PatientTWPAS)
 * encounter 1..1
 * encounter only Reference(EncounterOpdTWPAS)
+* code ^short = "診斷"
+
+Profile:        ObservationSubjectiveTWPAS
+Parent:         TWCoreObservationScreeningAssessment
+Id:             Observation-subjective-twpas
+Title:          "主觀描述-Observation Subjective TWPAS"
+Description:    "此主觀描述-Observation Subjective TWPAS Profile說明本IG如何進一步定義臺灣核心-健康狀態篩檢與評估（TW Core Observation Screening Assessment） Profile以呈現免疫製劑事前審查之主觀描述（S）"
+* meta 1..1
+* meta.profile 1..1
+* meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-subjective-twpas"
+* subject only Reference(PatientTWPAS)
+* code = http://loinc.org#61150-9
+* value[x] 1..
+* value[x] ^short = "主觀描述"
+* encounter 1..1
+* encounter only Reference(EncounterOpdTWPAS)
+
+Profile:        ObservationObjectiveTWPAS
+Parent:         TWCoreObservationScreeningAssessment
+Id:             Observation-objective-twpas
+Title:          "客觀描述-Observation Objective TWPAS"
+Description:    "此客觀描述-Observation Objective TWPAS Profile說明本IG如何進一步定義臺灣核心-健康狀態篩檢與評估（TW Core Observation Screening Assessment） Profile以呈現免疫製劑事前審查之客觀描述（O）"
+* meta 1..1
+* meta.profile 1..1
+* meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-objective-twpas"
+* subject only Reference(PatientTWPAS)
+* code = http://loinc.org#61149-1
+* value[x] 1..
+* value[x] ^short = "客觀描述"
+* encounter 1..1
+* encounter only Reference(EncounterOpdTWPAS)
+
+Profile:        ClinicalImpressionTWPAS
+Parent:         ClinicalImpression
+Id:             ClinicalImpression-twpas
+Title:          "評估-ClinicalImpression TWPAS"
+Description:    "此評估-ClinicalImpression TWPAS Profile說明本IG如何進一步定義FHIR的ClinicalImpression Resource以呈現免疫製劑事前審查之評估（A）"
+* meta 1..1
+* meta.profile 1..1
+* meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/ClinicalImpression-twpas"
+* subject only Reference(PatientTWPAS)
+* encounter 1..1
+* encounter only Reference(EncounterOpdTWPAS)
+* code = http://loinc.org#11494-2
+* summary ^short = "評估"
+
+
+Profile:        CarePlanTWPAS
+Parent:         TWCoreCarePlan
+Id:             CarePlan-twpas
+Title:          "計畫-CarePlan TWPAS"
+Description:    "此計畫-CarePlan TWPAS Profile說明本IG如何進一步定義臺灣核心-照護計畫（TW Core CarePlan） Profile以呈現免疫製劑事前審查之計畫（P）"
+* meta 1..1
+* meta.profile 1..1
+* meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/CarePlan-twpas"
+* intent = http://hl7.org/fhir/request-intent#plan
+* subject only Reference(PatientTWPAS)
+* encounter 1..1
+* encounter only Reference(EncounterOpdTWPAS)
+* description ^short = "計畫"
+
+

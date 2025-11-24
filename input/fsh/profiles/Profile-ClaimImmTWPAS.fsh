@@ -70,12 +70,45 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
     bloodgroup 0..1 and
     opd 0..* and
     diagnosis 0..* and
-    opdDoctor 0..*
+    allergy 0..* and
+    subjective 0..* and
+    objective 0..* and
+    assessment 0..* and
+    plan 0..*
 
-* supportingInfo[bloodgroup] ^short = "病人血型"
+* supportingInfo[subjective] ^short = "主觀描述(S)"
+* supportingInfo[subjective].category = NHIPASSupportingInfoType#subjective
+* supportingInfo[subjective].timing[x] ..0
+* supportingInfo[subjective].value[x] 1.. MS
+* supportingInfo[subjective].value[x] only Reference(ObservationSubjectiveTWPAS)
+
+* supportingInfo[objective] ^short = "客觀描述(O)"
+* supportingInfo[objective].category = NHIPASSupportingInfoType#objective
+* supportingInfo[objective].timing[x] ..0
+* supportingInfo[objective].value[x] 1.. MS
+* supportingInfo[objective].value[x] only Reference(ObservationObjectiveTWPAS)
+
+* supportingInfo[assessment] ^short = "評估(A)"
+* supportingInfo[assessment].category = NHIPASSupportingInfoType#assessment
+* supportingInfo[assessment].timing[x] ..0
+* supportingInfo[assessment].value[x] 1.. MS
+* supportingInfo[assessment].value[x] only Reference(ClinicalImpressionTWPAS)
+
+* supportingInfo[plan] ^short = "計畫(P)"
+* supportingInfo[plan].category = NHIPASSupportingInfoType#plan
+* supportingInfo[plan].timing[x] ..0
+* supportingInfo[plan].value[x] 1.. MS
+* supportingInfo[plan].value[x] only Reference(CarePlanTWPAS)
+
+* supportingInfo[allergy] ^short = "過敏史"
+* supportingInfo[allergy].category = NHIPASSupportingInfoType#allergy
+* supportingInfo[allergy].timing[x] ..0
+* supportingInfo[allergy].value[x] 1.. MS
+* supportingInfo[allergy].value[x] only Reference(AllergyIntoleranceTWPAS)
+
+* supportingInfo[bloodgroup] ^short = "血型"
 * supportingInfo[bloodgroup].category = NHIPASSupportingInfoType#bloodgroup
 * supportingInfo[bloodgroup].timing[x] ..0
-* supportingInfo[bloodgroup].value[x] 1.. MS
 * supportingInfo[bloodgroup].value[x] 1.. MS
 * supportingInfo[bloodgroup].value[x] only Reference(ObservationBloodGroupTWPAS)
 

@@ -19,10 +19,19 @@ Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Pro
 * entry ^slicing.rules = #closed
 * entry contains
 	claim 1..1 MS and
+	encounterOpd 0..1 MS and
 	encounter 1..1 MS and
 	patient 1..1 MS and
 	practitioner 1..* MS and
-	organization 1..1 MS and
+	organization 1..* MS and
+	condition 0..1 MS and
+	observationBloodgroup 0..1 MS and
+	allergyIntolerance 0..* MS and
+	observationSubjective 0..* MS and
+	observationObjective 0..* MS and
+	clinicalImpression 0..* MS and
+	carePlan 0..* MS and
+
 	diagnosticReportImage 0..* MS and
 	imageStudy 0..* MS and
 	media 0..* MS and
@@ -38,9 +47,31 @@ Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Pro
 	medicationRequestApply 1..* MS and
 	coverage 1..1 MS and
 	claimResponse 0..1 MS and
-	organizationOrg 1..1 MS and
-	encounterOpd 0..1 MS and
-	condition 0..1 MS
+	organizationOrg 1..1 MS
+
+* entry[observationSubjective] ^short = "主觀描述(S)"
+* entry[observationSubjective].resource 1..1 MS
+* entry[observationSubjective].resource only ObservationSubjectiveTWPAS
+
+* entry[observationObjective] ^short = "客觀描述(O)"
+* entry[observationObjective].resource 1..1 MS
+* entry[observationObjective].resource only ObservationObjectiveTWPAS
+
+* entry[clinicalImpression] ^short = "評估(A)"
+* entry[clinicalImpression].resource 1..1 MS
+* entry[clinicalImpression].resource only ClinicalImpressionTWPAS
+
+* entry[carePlan] ^short = "計畫(P)"
+* entry[carePlan].resource 1..1 MS
+* entry[carePlan].resource only CarePlanTWPAS
+
+* entry[allergyIntolerance] ^short = "過敏史"
+* entry[allergyIntolerance].resource 1..1 MS
+* entry[allergyIntolerance].resource only AllergyIntoleranceTWPAS
+
+* entry[observationBloodgroup] ^short = "血型"
+* entry[observationBloodgroup].resource 1..1 MS
+* entry[observationBloodgroup].resource only ObservationBloodGroupTWPAS
 
 * entry[encounterOpd] ^short = "門診病歷"
 * entry[encounterOpd].resource 1..1 MS
@@ -66,7 +97,7 @@ Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Pro
 * entry[practitioner].resource 1..1 MS
 * entry[practitioner].resource only PractitionerTWPAS
 
-* entry[organization] ^short = "醫事機構"
+* entry[organization] ^short = "醫事機構／門診機構"
 * entry[organization].resource 1..1 MS
 * entry[organization].resource only OrganizationTWPAS
 
@@ -136,4 +167,3 @@ Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Pro
 
 
 
-* . obeys applyReason-1 and applyReason-2 and applyReason-3 and applyReason-4 and applyReason-5 and applyReason-6 and applyReason-7 and applyReason-8 and applyReason-9 and applyReason-10 and applyReason-11 and applyReason-12 and applyReason-13 and applyReason-14 and applyReason-15 and applyReason-16 and claimResponse-1 and claimResponse-2

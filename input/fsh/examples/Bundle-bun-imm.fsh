@@ -8,6 +8,9 @@ Usage: #example
 * entry[claim].fullUrl = "https://nhicore.nhi.gov.tw/pas/Claim/cla-imm"
 * entry[claim].resource = cla-imm
 
+* entry[encounterOpd].fullUrl = "https://nhicore.nhi.gov.tw/pas/Encounter/enc-opd"
+* entry[encounterOpd].resource = enc-opd
+
 * entry[encounter].fullUrl = "https://nhicore.nhi.gov.tw/pas/Encounter/enc-min"
 * entry[encounter].resource = enc-min
 
@@ -19,6 +22,29 @@ Usage: #example
 
 * entry[organization].fullUrl = "https://nhicore.nhi.gov.tw/pas/Organization/org-hosp-example"
 * entry[organization].resource = org-hosp-example
+
+* entry[condition].fullUrl = "https://nhicore.nhi.gov.tw/pas/Condition/con-diagnosis"
+* entry[condition].resource = con-diagnosis
+
+* entry[observationBloodgroup].fullUrl = "https://nhicore.nhi.gov.tw/pas/Observation/obs-blood-group"
+* entry[observationBloodgroup].resource = obs-blood-group
+
+* entry[allergyIntolerance].fullUrl = "https://nhicore.nhi.gov.tw/pas/AllergyIntolerance/all-min"
+* entry[allergyIntolerance].resource = all-min
+
+* entry[observationSubjective].fullUrl = "https://nhicore.nhi.gov.tw/pas/Observation/obs-subjective"
+* entry[observationSubjective].resource = obs-subjective
+
+* entry[observationObjective].fullUrl = "https://nhicore.nhi.gov.tw/pas/Observation/obs-objective"
+* entry[observationObjective].resource = obs-objective
+
+* entry[clinicalImpression].fullUrl = "https://nhicore.nhi.gov.tw/pas/ClinicalImpression/cliImp-min"
+* entry[clinicalImpression].resource = cliImp-min
+
+* entry[carePlan].fullUrl = "https://nhicore.nhi.gov.tw/pas/CarePlan/careplan-min"
+* entry[carePlan].resource = careplan-min
+
+
 
 * entry[diagnosticReportImage].fullUrl = "https://nhicore.nhi.gov.tw/pas/DiagnosticReport/diaRep-ima-min"
 * entry[diagnosticReportImage].resource = diaRep-ima-min
@@ -79,9 +105,3 @@ Usage: #example
 
 * entry[documentReference][3].fullUrl = "https://nhicore.nhi.gov.tw/pas/DocumentReference/doc-patientAssessment-min"
 * entry[documentReference][3].resource = doc-patientAssessment-min
-
-* entry[encounterOpd].fullUrl = "https://nhicore.nhi.gov.tw/pas/Encounter/enc-opd"
-* entry[encounterOpd].resource = enc-opd
-
-* entry[condition].fullUrl = "https://nhicore.nhi.gov.tw/pas/Condition/con-diagnosis"
-* entry[condition].resource = con-diagnosis
