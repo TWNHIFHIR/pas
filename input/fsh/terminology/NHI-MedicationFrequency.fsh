@@ -2,7 +2,7 @@ ValueSet: NHIMedicationFrequencyHL7
 Id: medication-frequency-hl7-nhi
 Title: "HL7 TimingAbbreviation + NHI-健保事前審查-藥品使用頻率值集"
 Description: "HL7 TimingAbbreviation + NHI-健保事前審查-藥品使用頻率值集。為配合專案時程，使用暫時性代碼系統，日後將統一使用TW Core IG的臺灣健保署藥品使用頻率。  
-代碼對應請參照[臺灣健保署藥品使用頻率代碼對應對應HL7 TimingAbbreviation](https://build.fhir.org/ig/cctwFHIRterm/MOHW_TWCoreIG_Build/ConceptMap-medication-frequency-tw.html)"
+代碼對應請參照[臺灣健保署藥品使用頻率代碼對應對應HL7 TimingAbbreviation](https://build.fhir.org/ig/MOHW-TWCoreIG/cctwFHIRterm/ConceptMap-medication-frequency-tw.html)"
 * ^experimental = false
 * ^date = "2024-01-16"
 * ^version = "0.2.3"

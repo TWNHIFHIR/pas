@@ -21,10 +21,8 @@ Usage: #example
 * supportingInfo[height].valueQuantity.value = 170
 * supportingInfo[height].valueQuantity.code = #cm
 * supportingInfo[height].valueQuantity.system = "http://unitsofmeasure.org"
-/* supportingInfo[bloodgroup].sequence = 3
-* supportingInfo[bloodgroup].valueCodeableConcept = http://snomed.info/sct#58460004*/
-* supportingInfo[ci].sequence = 3
-* supportingInfo[ci].valueReference.reference = "Condition/con-ci" 
+* supportingInfo[bloodgroup].sequence = 3
+* supportingInfo[bloodgroup].valueReference.reference = "Observation/obs-blood-group" 
 
 * supportingInfo[imagingReport].sequence = 4
 * supportingInfo[imagingReport].valueReference.reference = "DiagnosticReport/diaRep-ima-min" 
@@ -47,6 +45,10 @@ Usage: #example
 * supportingInfo[medicalRecord].valueReference.reference = "DocumentReference/doc-medicalRecord-min"
 * supportingInfo[treatmentAssessment].sequence = 15
 * supportingInfo[treatmentAssessment].valueReference.reference = "Observation/obs-tx-min"
+* supportingInfo[opd].sequence = 16
+* supportingInfo[opd].valueReference.reference = "Encounter/enc-opd"
+* supportingInfo[diagnosis].sequence = 17
+* supportingInfo[diagnosis].valueReference.reference = "Condition/con-diagnosis"
 * diagnosis.sequence = 1
 * diagnosis.diagnosisCodeableConcept  = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2023-tw#I50.812
 * diagnosis.extension[recordedDate].valueDate = "2024-01-01"

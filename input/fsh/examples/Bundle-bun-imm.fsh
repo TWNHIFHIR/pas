@@ -80,5 +80,8 @@ Usage: #example
 * entry[documentReference][3].fullUrl = "https://nhicore.nhi.gov.tw/pas/DocumentReference/doc-patientAssessment-min"
 * entry[documentReference][3].resource = doc-patientAssessment-min
 
-* entry[condition].fullUrl = "https://nhicore.nhi.gov.tw/pas/Condition/con-ci"
-* entry[condition].resource = con-ci
+* entry[encounterOpd].fullUrl = "https://nhicore.nhi.gov.tw/pas/Encounter/enc-opd"
+* entry[encounterOpd].resource = enc-opd
+
+* entry[condition].fullUrl = "https://nhicore.nhi.gov.tw/pas/Condition/con-diagnosis"
+* entry[condition].resource = con-diagnosis

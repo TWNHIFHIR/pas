@@ -39,9 +39,14 @@ Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Pro
 	coverage 1..1 MS and
 	claimResponse 0..1 MS and
 	organizationOrg 1..1 MS and
+	encounterOpd 0..1 MS and
 	condition 0..1 MS
 
-* entry[condition] ^short = "重大傷病"
+* entry[encounterOpd] ^short = "門診病歷"
+* entry[encounterOpd].resource 1..1 MS
+* entry[encounterOpd].resource only EncounterOpdTWPAS
+
+* entry[condition] ^short = "診斷"
 * entry[condition].resource 1..1 MS
 * entry[condition].resource only ConditionTWPAS
 

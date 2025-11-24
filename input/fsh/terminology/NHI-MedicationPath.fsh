@@ -4,7 +4,7 @@ ValueSet: TWPCSMedicationPathSCT
 Id: medication-path-sct-tw
 Title: "SNOMED CT + 臺灣健保署-健保事前審查-給藥途徑值集"
 Description: "SNOMED CT + 臺灣健保署-健保事前審查-給藥途徑值集。
-代碼對應請參照[臺灣健保署給藥途徑代碼對應SNOMED CT](https://build.fhir.org/ig/cctwFHIRterm/MOHW_TWCoreIG_Build/ConceptMap-medication-path-tw.html)
+代碼對應請參照[臺灣健保署給藥途徑代碼對應SNOMED CT](https://build.fhir.org/ig/MOHW-TWCoreIG/cctwFHIRterm/ConceptMap-medication-path-tw.html)
 
 此值集優先採用國際標準碼，國際標準碼未能表述之概念，則以普遍被使用的臺灣健保署給藥途徑代碼表述，請實作者留意。"
 * ^date = "2024-01-16"

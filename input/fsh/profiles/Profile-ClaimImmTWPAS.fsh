@@ -57,7 +57,6 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * supportingInfo contains
     weight 1..1 and
     height 1..1 and
-    bloodgroup 0..1 and
     pregnancy 0..1 and
     imagingReport 0..* and
     examinationReport 0..* and
@@ -68,8 +67,30 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
     carePlanDocument 0..* and
     medicalRecord 0..* and
     treatmentAssessment 0..* and
-    ci 0..1 and
-    opdDoctor 0..1
+    bloodgroup 0..1 and
+    opd 0..* and
+    diagnosis 0..* and
+    opdDoctor 0..*
+
+* supportingInfo[bloodgroup] ^short = "病人血型"
+* supportingInfo[bloodgroup].category = NHIPASSupportingInfoType#bloodgroup
+* supportingInfo[bloodgroup].timing[x] ..0
+* supportingInfo[bloodgroup].value[x] 1.. MS
+* supportingInfo[bloodgroup].value[x] 1.. MS
+* supportingInfo[bloodgroup].value[x] only Reference(ObservationBloodGroupTWPAS)
+
+* supportingInfo[opd] ^short = "門診病歷"
+* supportingInfo[opd].category = NHIPASSupportingInfoType#opd
+* supportingInfo[opd].timing[x] ..0
+* supportingInfo[opd].value[x] 1.. MS
+* supportingInfo[opd].value[x] only Reference(EncounterOpdTWPAS)
+
+* supportingInfo[diagnosis] ^short = "診斷"
+* supportingInfo[diagnosis].category = NHIPASSupportingInfoType#diagnosis
+* supportingInfo[diagnosis].timing[x] ..0
+* supportingInfo[diagnosis].value[x] 1.. MS
+* supportingInfo[diagnosis].value[x] only Reference(ConditionTWPAS)
+
 
 * supportingInfo[weight] ^short = "病人體重"
 * supportingInfo[weight].category = NHIPASSupportingInfoType#weight
@@ -92,14 +113,6 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * supportingInfo[height].valueQuantity.value 1.. MS
 * supportingInfo[height].valueQuantity.system 1..
 * supportingInfo[height].valueQuantity.code 1..
-
-* supportingInfo[bloodgroup] ^short = "病人血型"
-* supportingInfo[bloodgroup].category = NHIPASSupportingInfoType#bloodgroup
-* supportingInfo[bloodgroup].timing[x] ..0
-* supportingInfo[bloodgroup].value[x] 1.. MS
-* supportingInfo[bloodgroup].value[x] 1.. MS
-* supportingInfo[bloodgroup].value[x] only Reference(ObservationBloodGroupTWPAS)
-//* supportingInfo[bloodgroup].valueCodeableConcept from http://hl7.org/fhir/uv/ips/ValueSet/results-blood-group-uv-ips
 
 * supportingInfo[pregnancy] ^short = "是否懷孕或哺乳"
 * supportingInfo[pregnancy].category = NHIPASSupportingInfoType#pregnancyBreastfeedingStatus
@@ -163,18 +176,6 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * supportingInfo[treatmentAssessment].timing[x] ..0
 * supportingInfo[treatmentAssessment].value[x] 1.. MS
 * supportingInfo[treatmentAssessment].value[x] only Reference(ObservationTreatmentAssessmentTWPAS)
-
-* supportingInfo[ci] ^short = "重大傷病"
-* supportingInfo[ci].category = NHIPASSupportingInfoType#ci
-* supportingInfo[ci].timing[x] ..0
-* supportingInfo[ci].value[x] 1.. MS
-* supportingInfo[ci].value[x] only Reference(ConditionTWPAS)
-
-* supportingInfo[opdDoctor] ^short = "門診醫師"
-* supportingInfo[opdDoctor].category = NHIPASSupportingInfoType#opdDoctor
-* supportingInfo[opdDoctor].timing[x] ..0
-* supportingInfo[opdDoctor].value[x] 1.. MS
-* supportingInfo[opdDoctor].value[x] only Reference(PractitionerTWPAS)
 
 * procedure.procedure[x] only CodeableConcept
 * procedure.procedureCodeableConcept MS

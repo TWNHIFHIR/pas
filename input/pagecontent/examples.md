@@ -81,7 +81,7 @@
 - [<span class="bg-success">病人狀態評估報告</span>](DocumentReference-doc-patientAssessment-min.html)：依據文件參照-DocumentReference TWPAS Profile呈現病人狀態評估報告之範例
 
 #### Condition
-- [<span class="bg-success">重大傷病</span>](Condition-con-ci.html)：依據重大傷病-Condition TWPAS Profile呈現重大傷病之範例
+- [<span class="bg-success">診斷</span>](Condition-con-ci.html)：依據診斷-Condition TWPAS Profile呈現診斷之範例
 
 #### Coverage
 - [健保事前審查計畫](Coverage-cov-min.html)：依據健保事前審查計畫-Coverage TWPAS Profile呈現健保事前審查計畫之範例

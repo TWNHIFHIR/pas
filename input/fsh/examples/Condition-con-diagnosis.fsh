@@ -1,12 +1,13 @@
-Instance: con-ci
+Instance: con-diagnosis
 InstanceOf: ConditionTWPAS
-Title: "重大傷病"
-Description: "依據重大傷病-Condition TWPAS Profile呈現重大傷病之範例"
+Title: "診斷"
+Description: "依據診斷-Condition TWPAS Profile呈現診斷之範例"
 Usage: #example
 * clinicalStatus.coding = http://terminology.hl7.org/CodeSystem/condition-clinical#active
-* category.coding = http://loinc.org#11338-1
-* code.coding = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2023-tw#A15.0
+* category.coding = http://loinc.org#29548-5
+* code.coding = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2023-tw#L40.0
 * subject.reference = "Patient/pat-min"
+* encounter.reference = "Encounter/enc-opd"
 /* text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">
