@@ -69,7 +69,6 @@ Usage: #example
 * status = http://hl7.org/fhir/request-status#completed
 * intent = http://hl7.org/fhir/request-intent#plan
 * category[AssessPlan] = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/careplan-category-tw#assess-plan
-* code = http://loinc.org#11494-2
 * subject.reference = "Patient/pat-min"
 * encounter.reference = "Encounter/enc-opd"
 * description = "1.Arrenge Arthrocentesis of Right knee and synovial fluid analysis (routine, culture and crystal analysis) after patient consent. 2.Analgesics. 3.Bed rest with ice packing if necessary."

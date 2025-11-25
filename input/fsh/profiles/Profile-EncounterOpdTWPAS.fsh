@@ -48,6 +48,11 @@ Description:    "此診斷-Condition TWPAS Profile說明本IG如何進一步定�
 * encounter 1..1
 * encounter only Reference(EncounterOpdTWPAS)
 * code ^short = "診斷"
+* code.coding[icd10-cm-2021] 0..0
+* code.coding[icd9-cm-2001] 0..0
+* code.coding[absentOrUnknownProblem] 0..0
+* code.coding[sct] 0..0
+* code.coding ^slicing.rules = #closed
 
 Profile:        ObservationSubjectiveTWPAS
 Parent:         TWCoreObservationScreeningAssessment
@@ -60,7 +65,7 @@ Description:    "此主觀描述-Observation Subjective TWPAS Profile說明本IG
 * subject only Reference(PatientTWPAS)
 * code = http://loinc.org#61150-9
 * value[x] 1..
-* value[x] ^short = "主觀描述"
+* value[x] ^short = "主觀描述，由醫院自行填寫。"
 * encounter 1..1
 * encounter only Reference(EncounterOpdTWPAS)
 
@@ -75,7 +80,7 @@ Description:    "此客觀描述-Observation Objective TWPAS Profile說明本IG�
 * subject only Reference(PatientTWPAS)
 * code = http://loinc.org#61149-1
 * value[x] 1..
-* value[x] ^short = "客觀描述"
+* value[x] ^short = "客觀描述，由醫院自行填寫。"
 * encounter 1..1
 * encounter only Reference(EncounterOpdTWPAS)
 
@@ -91,7 +96,7 @@ Description:    "此評估-ClinicalImpression TWPAS Profile說明本IG如何進�
 * encounter 1..1
 * encounter only Reference(EncounterOpdTWPAS)
 * code = http://loinc.org#11494-2
-* summary ^short = "評估"
+* summary ^short = "評估，由醫院自行填寫。"
 
 
 Profile:        CarePlanTWPAS
@@ -106,6 +111,6 @@ Description:    "此計畫-CarePlan TWPAS Profile說明本IG如何進一步定�
 * subject only Reference(PatientTWPAS)
 * encounter 1..1
 * encounter only Reference(EncounterOpdTWPAS)
-* description ^short = "計畫"
+* description ^short = "計畫，由醫院自行填寫。"
 
 
