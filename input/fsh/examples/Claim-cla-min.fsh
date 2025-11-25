@@ -1,7 +1,7 @@
 Instance: cla-1
 InstanceOf: ClaimTWPAS
 Title: "事前審查-送核、套組檢驗、多事前審查癌藥品項"
-Description: "依據事前審查-Claim TWPAS Profile呈現事前審查之範例，含兩筆檢驗(查)。"
+Description: "依據事前審查-Claim TWPAS Profile呈現事前審查之範例，含兩筆檢驗(查)"
 Usage: #example
 //* identifier.value = "20240831010109051701"
 * extension[encounter].valueReference.reference = "Encounter/enc-min"

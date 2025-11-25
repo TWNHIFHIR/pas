@@ -66,3 +66,6 @@ WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, s
 
 # 繼承TW Core IG的Profile，無法取消欄位原有的MS(Must Support)註記，不影響驗證。（WARNING後方的 藍色字樣(1uses) 是指WARNING在此Profile中有被使用到）
 % The slice 'medicationReference' on path 'MedicationRequest.medication[x]'%
+
+# 建議Observation皆須要填寫performer，但此專案情境不需要。（WARNING後方的 藍色字樣(1uses) 是指WARNING在此Profile中有被使用到）
+% Best Practice Recommendation: In general, all observations should have a performer%

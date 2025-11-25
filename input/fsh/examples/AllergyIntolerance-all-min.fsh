@@ -5,6 +5,7 @@ Description: "依據過敏史-AllergyIntolerance TWPAS Profile呈現過敏史之
 Usage: #example
 * code.text = "對 A 藥物過敏，過敏反應為全身性皮疹、呼吸喘，約在服用後15分鐘發生。曾於2023年5月因感冒服用過 A 藥，出現上述過敏反應，故此後避免使用。"
 * patient.reference = "Patient/pat-min"
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
 
 /* text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">

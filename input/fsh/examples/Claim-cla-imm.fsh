@@ -1,7 +1,7 @@
 Instance: cla-imm
 InstanceOf: ClaimImmTWPAS
 Title: "免疫製劑事前審查"
-Description: "依據免疫製劑事前審查-Claim Immunologic Aagent TWPAS Profile呈現免疫製劑事前審查。"
+Description: "依據免疫製劑事前審查-Claim Immunologic Aagent TWPAS Profile呈現免疫製劑事前審查"
 Usage: #example
 * extension[encounter].valueReference.reference = "Encounter/enc-min"
 * status = http://hl7.org/fhir/fm-status#active

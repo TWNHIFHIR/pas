@@ -56,7 +56,7 @@ Title: "評估(A)"
 Description: "依據評估-ClinicalImpression TWPAS Profile呈現評估之範例"
 Usage: #example
 * status = http://hl7.org/fhir/event-status#completed
-* code = http://loinc.org#11494-2
+//* code = http://loinc.org#11494-2
 * subject.reference = "Patient/pat-min"
 * encounter.reference = "Encounter/enc-opd"
 * summary = "Right knee . arthritis . active"

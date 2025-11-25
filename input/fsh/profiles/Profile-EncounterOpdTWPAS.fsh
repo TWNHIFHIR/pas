@@ -95,7 +95,7 @@ Description:    "此評估-ClinicalImpression TWPAS Profile說明本IG如何進�
 * subject only Reference(PatientTWPAS)
 * encounter 1..1
 * encounter only Reference(EncounterOpdTWPAS)
-* code = http://loinc.org#11494-2
+//* code = http://loinc.org#11494-2
 * summary ^short = "評估，由醫院自行填寫。"
 
 
