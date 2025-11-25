@@ -3,12 +3,12 @@
 
 #### Bundle
 - [事前審查-Bundle TWPAS](StructureDefinition-Bundle-twpas.html)
-- [<span class="bg-success">免疫製劑事前審查-Bundle Immunologic Aagent TWPAS</span>](StructureDefinition-Bundle-immunologic-agent-twpas.html) (門診病歷)
+- [<span class="bg-success">免疫製劑事前審查-Bundle Immunologic Aagent TWPAS</span>](StructureDefinition-Bundle-immunologic-agent-twpas.html)
 - [事前審查回覆-Bundle Response TWPAS](StructureDefinition-Bundle-response-twpas.html) 
 
 #### Claim
 - [事前審查-Claim TWPAS](StructureDefinition-Claim-twpas.html)
-- [<span class="bg-success">免疫製劑事前審查-Claim Immunologic Aagent TWPAS</span>](StructureDefinition-Claim-immunologic-agent-twpas.html) (門診病歷)
+- [<span class="bg-success">免疫製劑事前審查-Claim Immunologic Aagent TWPAS</span>](StructureDefinition-Claim-immunologic-agent-twpas.html)
 
 #### ClaimResponse
 - [自主審查-ClaimResponse Self Assessment TWPAS](StructureDefinition-ClaimResponse-self-assessment-twpas.html)

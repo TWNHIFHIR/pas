@@ -42,11 +42,15 @@ Description:    "此診斷-Condition TWPAS Profile說明本IG如何進一步定�
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Condition-twpas"
 * clinicalStatus.coding = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* clinicalStatus.coding 1..1
+* category.coding 1..1
 * category.coding = http://loinc.org#29548-5
 * subject 1..1
 * subject only Reference(PatientTWPAS)
 * encounter 1..1
 * encounter only Reference(EncounterOpdTWPAS)
+* code 1..1
+* code.coding 1..1
 * code ^short = "診斷"
 * code.coding[icd10-cm-2021] 0..0
 * code.coding[icd9-cm-2001] 0..0

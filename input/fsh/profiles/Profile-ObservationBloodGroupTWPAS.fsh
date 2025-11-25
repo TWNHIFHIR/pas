@@ -1,5 +1,5 @@
 Profile:        ObservationBloodGroupTWPAS
-Parent:         TWCoreObservationClinicalResult
+Parent:         Observation
 Id:             Observation-blood-group-twpas
 Title:          "血型-Observation Blood Group TWPAS"
 Description:    "此血型-Observation Blood Group TWPAS Profile說明本IG如何進一步定義臺灣核心-臨床檢驗檢查（TW Core Observation Clinical Result） Profile以呈現免疫製劑事前審查之血型資訊"
