@@ -141,7 +141,7 @@ Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Pro
 * entry[substance].resource 1..1 MS
 * entry[substance].resource only SubstanceTWPAS
 
-* entry[documentReference] ^short = "基因報告／治療計畫文件／檢驗(查)附件／病人狀態評估報告"
+* entry[documentReference] ^short = "治療計畫文件／檢驗(查)附件／病人狀態評估報告"
 * entry[documentReference].resource 1..1 MS
 * entry[documentReference].resource only DocumentReferenceTWPAS
 

@@ -48,6 +48,7 @@ The slice definition for Claim.procedure.procedure[x].coding has a maximum of 1 
 The slice definition for MedicationRequest.medication[x]:medicationCodeableConcept.coding has a maximum of 1 but the slices add up to a maximum of 2. Check that this is what is intended
 The slice definition for Patient.identifier has a maximum of 2 but the slices add up to a maximum of 3. Check that this is what is intended
 The slice definition for Practitioner.identifier has a maximum of 2 but the slices add up to a maximum of 3. Check that this is what is intended
+The slice definition for Condition.code.coding has a maximum of 1 but the slices add up to a maximum of 2. Check that this is what is intended
 
 # 提醒slice的pattern寫法將於R5版本不再支援，不影響驗證。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
 % The discriminator type 'pattern' is deprecated in R5%
