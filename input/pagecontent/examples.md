@@ -8,16 +8,16 @@
 </div>
 
 #### Bundle
-- [事前審查-送核、套組檢驗、多事前審查癌藥品項](Bundle-bun-1.html)：依據事前審查-Bundle TWPAS Profile呈現癌藥事前審查之範例
-- [事前審查-申復、有共病](Bundle-bun-3.html)：依據事前審查-Bundle TWPAS Profile呈現癌藥事前審查之範例
-- [事前審查-自主審查、多份影像報告（UUID）](Bundle-bun-uuid-example.html)：依據事前審查-Bundle TWPAS Profile呈現癌藥事前審查之自主審查範例
-- [事前審查-自主審查](Bundle-bun-self.html)：依據事前審查-Bundle TWPAS Profile呈現癌藥事前審查之自主審查範例
+- [事前審查-送核、套組檢驗、多事前審查癌藥品項](Bundle-bun-1.html)：依據癌藥事前審查-Bundle TWPAS Profile呈現癌藥事前審查之範例
+- [事前審查-申復、有共病](Bundle-bun-3.html)：依據癌藥事前審查-Bundle TWPAS Profile呈現癌藥事前審查之範例
+- [事前審查-自主審查、多份影像報告（UUID）](Bundle-bun-uuid-example.html)：依據癌藥事前審查-Bundle TWPAS Profile呈現癌藥事前審查之自主審查範例
+- [事前審查-自主審查](Bundle-bun-self.html)：依據癌藥事前審查-Bundle TWPAS Profile呈現癌藥事前審查之自主審查範例
 - [事前審查回覆](Bundle-bun-response.html)：依據事前審查回覆-Bundle Response TWPAS Profile呈現癌藥事前審查回覆之範例
 - [<span class="bg-success">免疫製劑事前審查</span>](Bundle-bun-imm.html)：依據免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Profile呈現免疫製劑事前審查之範例
 
 #### Claim
-- [事前審查-送核、套組檢驗、多事前審查癌藥品項](Claim-cla-1.html)：依據事前審查-Claim TWPAS Profile呈現事前審查之範例，含兩筆檢驗(查)
-- [事前審查-申復、有共病](Claim-cla-3.html)：依據事前審查-Claim TWPAS Profile呈現癌藥事前審查之範例
+- [事前審查-送核、套組檢驗、多事前審查癌藥品項](Claim-cla-1.html)：依據癌藥事前審查-Claim TWPAS Profile呈現事前審查之範例，含兩筆檢驗(查)
+- [事前審查-申復、有共病](Claim-cla-3.html)：依據癌藥事前審查-Claim TWPAS Profile呈現癌藥事前審查之範例
 - [<span class="bg-success">免疫製劑事前審查</span>](Claim-cla-imm.html)：依據免疫製劑事前審查-Claim Immunologic Aagent TWPAS Profile呈現免疫製劑事前審查
 
 #### ClaimResponse

@@ -1,7 +1,7 @@
 Instance: bun-3
 InstanceOf: BundleTWPAS
 Title: "事前審查-申復、有共病"
-Description: "依據事前審查-Bundle TWPAS Profile呈現癌藥事前審查之範例"
+Description: "依據癌藥事前審查-Bundle TWPAS Profile呈現癌藥事前審查之範例"
 Usage: #example
 * type = http://hl7.org/fhir/bundle-type#collection
 

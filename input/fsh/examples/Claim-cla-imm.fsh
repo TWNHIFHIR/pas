@@ -92,7 +92,7 @@ Usage: #example
 /* text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">
-        <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Claim-twpas.html\">事前審查-Claim TWPAS</a></p>
+        <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Claim-twpas.html\">癌藥事前審查-Claim TWPAS</a></p>
     </div>
     <p><b>狀態</b>：Active</p>
     <p><b>類型</b>：Institutional<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/CodeSystem/claim-type\">ClaimTypeCodes</a>#institutional)</span></p>

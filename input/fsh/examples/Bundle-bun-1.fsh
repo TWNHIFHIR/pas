@@ -1,7 +1,7 @@
 Instance: bun-1
 InstanceOf: BundleTWPAS
 Title: "事前審查-送核、套組檢驗、多事前審查癌藥品項"
-Description: "依據事前審查-Bundle TWPAS Profile呈現癌藥事前審查之範例"
+Description: "依據癌藥事前審查-Bundle TWPAS Profile呈現癌藥事前審查之範例"
 Usage: #example
 * type = http://hl7.org/fhir/bundle-type#collection
 

@@ -1,7 +1,7 @@
 Instance: cla-1
 InstanceOf: ClaimTWPAS
 Title: "事前審查-送核、套組檢驗、多事前審查癌藥品項"
-Description: "依據事前審查-Claim TWPAS Profile呈現事前審查之範例，含兩筆檢驗(查)"
+Description: "依據癌藥事前審查-Claim TWPAS Profile呈現事前審查之範例，含兩筆檢驗(查)"
 Usage: #example
 //* identifier.value = "20240831010109051701"
 * extension[encounter].valueReference.reference = "Encounter/enc-min"
@@ -81,7 +81,7 @@ Usage: #example
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">
-        <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Claim-twpas.html\">事前審查-Claim TWPAS</a></p>
+        <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Claim-twpas.html\">癌藥事前審查-Claim TWPAS</a></p>
     </div>
     <p><b>狀態</b>：Active</p>
     <p><b>類型</b>：Institutional<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/CodeSystem/claim-type\">ClaimTypeCodes</a>#institutional)</span></p>
@@ -217,7 +217,7 @@ Usage: #example
 Instance: cla-3
 InstanceOf: ClaimTWPAS
 Title: "事前審查-申復、有共病"
-Description: "依據事前審查-Claim TWPAS Profile呈現事前審查之範例"
+Description: "依據癌藥事前審查-Claim TWPAS Profile呈現事前審查之範例"
 Usage: #example
 * extension[encounter].valueReference.reference = "Encounter/enc-min"
 * identifier.value = "202405301000002"
@@ -288,7 +288,7 @@ Usage: #example
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">
-        <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Claim-twpas.html\">事前審查-Claim TWPAS</a></p>
+        <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Claim-twpas.html\">癌藥事前審查-Claim TWPAS</a></p>
     </div>
     <p><b>狀態</b>：Active</p>
     <p><b>類型</b>：Institutional<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/CodeSystem/claim-type\">ClaimTypeCodes</a>#institutional)</span></p>

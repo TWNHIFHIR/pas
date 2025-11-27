@@ -2,12 +2,12 @@
 以下為本IG使用到的所有Profiles。
 
 #### Bundle
-- [事前審查-Bundle TWPAS](StructureDefinition-Bundle-twpas.html)
+- [癌藥事前審查-Bundle TWPAS](StructureDefinition-Bundle-twpas.html)
 - [<span class="bg-success">免疫製劑事前審查-Bundle Immunologic Aagent TWPAS</span>](StructureDefinition-Bundle-immunologic-agent-twpas.html)
 - [事前審查回覆-Bundle Response TWPAS](StructureDefinition-Bundle-response-twpas.html) 
 
 #### Claim
-- [事前審查-Claim TWPAS](StructureDefinition-Claim-twpas.html)
+- [癌藥事前審查-Claim TWPAS](StructureDefinition-Claim-twpas.html)
 - [<span class="bg-success">免疫製劑事前審查-Claim Immunologic Aagent TWPAS</span>](StructureDefinition-Claim-immunologic-agent-twpas.html)
 
 #### ClaimResponse

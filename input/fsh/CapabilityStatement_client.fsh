@@ -18,11 +18,20 @@ Usage: #definition
 * description = "臺灣健保癌症用藥事前審查實作指引(TWPAS IG)用戶端(Client)之能力聲明"
 * rest.mode = #client
 * rest.documentation = "臺灣癌藥事前審查-用戶端(TWPAS Client)必須（SHALL）使用臺灣癌藥事前審查伺服端（TWPAS Server）能力聲明中的查詢參數，支援讀取和查詢一個或多個臺灣癌藥事前審查Profile(s)。"
+* rest.security.service[0] = http://terminology.hl7.org/CodeSystem/restful-security-service#SMART-on-FHIR
 * rest.security.description = "有關要求和建議，請參閱[安全性](security.html)。"
+
+* rest.interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.interaction[=].extension.valueCode = #SHOULD
+* rest.interaction[=].code = #transaction
+* rest.interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.interaction[=].extension.valueCode = #SHOULD
+* rest.interaction[=].code = #batch
 
 * rest.resource[+].type = #Bundle
 * rest.resource[=].supportedProfile[0] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Bundle-twpas"
 * rest.resource[=].supportedProfile[1] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Bundle-response-twpas"
+* rest.resource[=].supportedProfile[2] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Bundle-immunologic-agent-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -36,9 +45,15 @@ Usage: #definition
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #update
 * rest.resource[=].referencePolicy = #resolves
+* rest.resource[=].searchParam[0].name = "_id"
+* rest.resource[=].searchParam[=].definition = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Bundle-id"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 
 * rest.resource[+].type = #Claim
-* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-twpas"
+* rest.resource[=].supportedProfile[0] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-twpas"
+* rest.resource[=].supportedProfile[1] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-immunologic-agent-twpass"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -105,6 +120,22 @@ Usage: #definition
 * rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 
+* rest.resource[+].type = #AllergyIntolerance
+* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/AllergyIntolerance-twpas"
+* rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #create
+* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #read
+* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #vread
+* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #update
+* rest.resource[=].referencePolicy = #resolves
+
 * rest.resource[+].type = #Organization
 * rest.resource[=].supportedProfile[0] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Organization-twpas"
 * rest.resource[=].supportedProfile[1] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Organization-genetic-testing-twpas"
@@ -124,7 +155,8 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #Encounter
-* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Encounter-twpas"
+* rest.resource[=].supportedProfile[0] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Encounter-twpas"
+* rest.resource[=].supportedProfile[1] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Encounter-opd-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -241,6 +273,57 @@ Usage: #definition
 * rest.resource[=].supportedProfile[2] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-laboratory-result-twpas"
 * rest.resource[=].supportedProfile[3] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-pat-assessment-twpas"
 * rest.resource[=].supportedProfile[4] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-tx-assessment-twpas"
+* rest.resource[=].supportedProfile[5] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-blood-group-twpas"
+* rest.resource[=].supportedProfile[6] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-subjective-twpas"
+* rest.resource[=].supportedProfile[7] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-objective-twpas"
+* rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #create
+* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #read
+* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #vread
+* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #update
+* rest.resource[=].referencePolicy = #resolves
+
+* rest.resource[+].type = #ClinicalImpression
+* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/ClinicalImpression-twpas"
+* rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #create
+* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #read
+* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #vread
+* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #update
+* rest.resource[=].referencePolicy = #resolves
+
+* rest.resource[+].type = #CarePlan
+* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/CarePlan-twpas"
+* rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #create
+* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #read
+* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #vread
+* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #update
+* rest.resource[=].referencePolicy = #resolves
+
+* rest.resource[+].type = #Condition
+* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Condition-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -397,7 +480,7 @@ Usage: #definition
     </div>
     <h3 id=\"resourcesCap1\">Resources或Profiles的RESTful功能</h3>
     <h4 id=\"resourcesSummary1\">Summary</h4>
-    <p>共有十八類Resources支援查詢，查詢參數如表列：</p>
+    <p>共有二十二類Resources支援查詢，查詢參數如表列：</p>
     <div class=\"table-responsive\">
         <table class=\"table table-condensed table-hover\">
             <thead>
@@ -415,17 +498,22 @@ Usage: #definition
             <tbody>
                 <tr>
                     <td><a href=\"#Bundle1-1\">Bundle</a></td>
-                    <td><a href=\"StructureDefinition-Bundle-twpas.html\">事前審查-Bundle TWPAS</a></td>
+                    <td>支援的Profiles<br />\u00a0\u00a0
+                        <a href=\"StructureDefinition-Bundle-twpas.html\">癌藥事前審查-Bundle TWPAS</a><br />\u00a0\u00a0
+                        <a href=\"StructureDefinition-Bundle-response-twpas.html\">事前審查回覆-Bundle Response TWPAS</a><br /><br />\u00a0\u00a0
+                        <a href=\"StructureDefinition-Bundle-immunologic-agent-twpas.html\">免疫製劑事前審查-Bundle Immunologic Aagent TWPAS</a></td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\"></td>
                     <td class=\"text-center\">y</td>
-                    <td></td>
+                    <td>_id</td>
                 </tr>
                 <tr>
                     <td><a href=\"#Claim1-2\">Claim</a></td>
-                    <td><a href=\"StructureDefinition-Claim-twpas.html\">事前審查-Claim TWPAS</a> </td>
+                    <td>支援的Profiles<br />\u00a0\u00a0
+                        <a href=\"StructureDefinition-Claim-twpas.html\">癌藥事前審查-Claim TWPAS</a><br />\u00a0\u00a0
+                        <a href=\"StructureDefinition-Claim-immunologic-agent-twpas.html\">免疫製劑事前審查-Claim Immunologic Aagent TWPAS</a></td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
@@ -435,13 +523,25 @@ Usage: #definition
                 </tr>
                 <tr>
                     <td><a href=\"#ClaimResponse\">ClaimResponse</a></td>
-                    <td><a href=\"StructureDefinition-ClaimResponse-twpas.html\">事前審查結果-ClaimResponse TWPAS</a> </td>
+                    <td支援的Profiles<br />\u00a0\u00a0
+                        ><a href=\"StructureDefinition-ClaimResponse-twpas.html\">事前審查回覆-ClaimResponse TWPAS</a><br />\u00a0\u00a0
+                        <a href=\"StructureDefinition-ClaimResponse-self-assessment-twpas.html\">自主審查-ClaimResponse Self Assessment TWPAS</a></td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\"></td>
                     <td class=\"text-center\">y</td>
                     <td>adjudication-reason, request.patient.name, request.patient.identifier, request.identifier, request.func-type.service-type, created, disposition</td>
+                </tr>
+                <tr>
+                    <td><a href=\"#AllergyIntolerance\">AllergyIntolerance</a></td>
+                    <td><a href=\"StructureDefinition-AllergyIntolerance-twpas.html\">過敏史-AllergyIntolerance TWPAS</a></td>
+                    <td class=\"text-center\">y</td>
+                    <td class=\"text-center\">y</td>
+                    <td class=\"text-center\">y</td>
+                    <td class=\"text-center\"></td>
+                    <td class=\"text-center\">y</td>
+                    <td>service-type</td>
                 </tr>
                 <tr>
                     <td><a href=\"#Organization1-3\">Organization</a></td>
@@ -458,7 +558,10 @@ Usage: #definition
                 </tr>
                 <tr>
                     <td><a href=\"#Encounter1-4\">Encounter</a></td>
-                    <td><a href=\"StructureDefinition-Encounter-twpas.html\">就醫科別-Encounter TWPAS</a></td>
+                    <td>支援的Profiles<br />\u00a0\u00a0
+                        <a href=\"StructureDefinition-Encounter-twpas.html\">就醫科別-Encounter TWPAS</a><br />\u00a0\u00a0
+                        <a href=\"StructureDefinition-Encounter-opd-twpas.html\">門診病歷-Encounter OPD TWPAS</a></td>
+                    <td></td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
@@ -525,7 +628,40 @@ Usage: #definition
                             <a href=\"StructureDefinition-Observation-diagnostic-twpas.html\">基因資訊-Observation Diagnostic TWPAS</a><br />\u00a0\u00a0
                             <a href=\"StructureDefinition-Observation-laboratory-result-twpas.html\">檢驗檢查-Observation Laboratory Result TWPAS</a> (評估資訊)<br />\u00a0\u00a0
                             <a href=\"StructureDefinition-Observation-pat-assessment-twpas.html\">病人狀態評估-Observation Patient Assessment TWPAS</a> (評估資訊)<br />\u00a0\u00a0
-                            <a href=\"StructureDefinition-Observation-tx-assessment-twpas.html\">治療後疾病狀態評估-Observation Treatment Assessment TWPAS</a> (結果資訊)</td>
+                            <a href=\"StructureDefinition-Observation-tx-assessment-twpas.html\">治療後疾病狀態評估-Observation Treatment Assessment TWPAS</a> (結果資訊)<br />\u00a0\u00a0
+                            <a href=\"StructureDefinition-Observation-blood-group-twpas.html\">血型-Observation Blood Group TWPAS</a> (病人資訊)<br />\u00a0\u00a0
+                            <a href=\"StructureDefinition-Observation-subjective-twpas.html\">主觀描述-Observation Subjective TWPAS</a> (門診病歷)<br />\u00a0\u00a0
+                            <a href=\"StructureDefinition-Observation-objective-twpas.html\">客觀描述-Observation Objective TWPAS</a> (門診病歷)</td>
+                    <td class=\"text-center\">y</td>
+                    <td class=\"text-center\">y</td>
+                    <td class=\"text-center\">y</td>
+                    <td class=\"text-center\"></td>
+                    <td class=\"text-center\">y</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href=\"#ClinicalImpression\">ClinicalImpression</a></td>
+                    <td><a href=\"StructureDefinition-ClinicalImpression-twpas.html\">評估-ClinicalImpression TWPAS</a> (門診病歷)</td>
+                    <td class=\"text-center\">y</td>
+                    <td class=\"text-center\">y</td>
+                    <td class=\"text-center\">y</td>
+                    <td class=\"text-center\"></td>
+                    <td class=\"text-center\">y</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href=\"#CarePlan\">CarePlan</a></td>
+                    <td><a href=\"StructureDefinition-CarePlan-twpas.html\">計畫-CarePlan TWPAS</a> (門診病歷)</td>
+                    <td class=\"text-center\">y</td>
+                    <td class=\"text-center\">y</td>
+                    <td class=\"text-center\">y</td>
+                    <td class=\"text-center\"></td>
+                    <td class=\"text-center\">y</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href=\"#Condition\">Condition</a></td>
+                    <td><a href=\"StructureDefinition-Condition-twpas.html\">診斷-Condition TWPAS</a> (門診病歷)</td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
@@ -616,14 +752,10 @@ Usage: #definition
         <div class=\"panel-body\">
             <div class=\"container\">
                 <div class=\"row\">
-                    <div class=\"col-lg-7\"><span class=\"lead\">Profile</span><br /><a href=\"StructureDefinition-Bundle-twpas.html\">事前審查-Bundle TWPAS</a>
+                    <div class=\"col-lg-3\"><span class=\"lead\">Core FHIR Resource</span><br /><a href=\"https://hl7.org/fhir/R4/Bundle.html\">Bundle</a></div>
+                    <div class=\"col-lg-4\"><span class=\"lead\">支援的參照政策（Reference policy）</span><br /><code>resolves</code>
                     </div>
-                    <div class=\"col-lg-5\"><span class=\"lead\">支援的參照政策（Reference policy）</span><br /><code>resolves</code>
-                    </div>
-                </div>
-                <p />
-                <div class=\"row\">
-                    <div class=\"col-lg-6\"><span class=\"lead\">能力摘要</span><br />
+                    <div class=\"col-lg-5\"><span class=\"lead\">能力摘要</span><br />
                         <ul>
                             <li><strong>必須（SHALL）</strong>支援 <code>create</code>, <code>read</code>,
                                 <code>vread</code>, <code>update</code>.</li>
@@ -631,6 +763,41 @@ Usage: #definition
                     </div>
                 </div>
                 <p />
+                <div class=\"row\">
+                    <div class=\"col-6\"><span class=\"lead\">支援的Profiles</span>
+                        <p><a href=\"StructureDefinition-Bundle-twpas.html\">癌藥事前審查-Bundle TWPAS</a><br />
+                        <a href=\"StructureDefinition-Bundle-response-twpas.html\">事前審查回覆-Bundle Response TWPAS</a><br />
+                        <a href=\"StructureDefinition-Bundle-immunologic-agent-twpas.html\">免疫製劑事前審查-Bundle Immunologic Aagent TWPAS</a>
+                        </p>
+                    </div>
+                </div>
+                <p />
+                <div class=\"row\">
+                    <div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span>
+                        <table class=\"table table-condensed table-hover\">
+                            <thead>
+                                <tr>
+                                    <th>遵從度</th>
+                                    <th>參數</th>
+                                    <th>類型</th>
+                                    <th>範例</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>必須（SHALL）</b></td>
+                                    <td><a href=\"SearchParameter-Bundle-id.html\">_id</a></td>
+                                    <td><code>token</code></td>
+                                    <td>
+                                        <code>GET [base]/Bundle?_id=[id]</code><br/>
+                                        <code>GET [base]/Bundle/[id]</code>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class=\"col-lg-5\">\u00a0</div>
+                </div>
             </div>
         </div>
     </div>
@@ -641,18 +808,22 @@ Usage: #definition
         <div class=\"panel-body\">
             <div class=\"container\">
                 <div class=\"row\">
-                    <div class=\"col-lg-7\"><span class=\"lead\">Profile</span><br /><a href=\"StructureDefinition-Claim-twpas.html\">事前審查-Claim TWPAS</a>
+                    <div class=\"col-lg-3\"><span class=\"lead\">Core FHIR Resource</span><br /><a href=\"https://hl7.org/fhir/R4/Claim.html\">Claim</a></div>
+                    <div class=\"col-lg-4\"><span class=\"lead\">支援的參照政策（Reference policy）</span><br /><code>resolves</code>
                     </div>
-                    <div class=\"col-lg-5\"><span class=\"lead\">支援的參照政策（Reference policy）</span><br /><code>resolves</code>
-                    </div>
-                </div>
-                <p />
-                <div class=\"row\">
-                    <div class=\"col-lg-6\"><span class=\"lead\">能力摘要</span><br />
+                    <div class=\"col-lg-5\"><span class=\"lead\">能力摘要</span><br />
                         <ul>
                             <li><strong>必須（SHALL）</strong>支援 <code>create</code>, <code>read</code>,
                                 <code>vread</code>, <code>update</code>.</li>
                         </ul>
+                    </div>
+                </div>
+                <p />
+                <div class=\"row\">
+                    <div class=\"col-6\"><span class=\"lead\">支援的Profiles</span>
+                        <p><a href=\"StructureDefinition-Claim-twpas.html\">癌藥事前審查-Claim TWPAS</a><br />
+                        <a href=\"StructureDefinition-Claim-immunologic-agent-twpas.html\">免疫製劑事前審查-Claim Immunologic Aagent TWPAS</a>
+                        </p>
                     </div>
                 </div>
                 <p />
@@ -805,6 +976,31 @@ Usage: #definition
     </div>
     <div class=\"panel panel-default\">
         <div class=\"panel-heading\">
+            <h4 id=\"AllergyIntolerance\" class=\"panel-title\"><span style=\"float: right;\">預期的遵從度： 必須（SHALL）</span>AllergyIntolerance</h4>
+        </div>
+        <div class=\"panel-body\">
+            <div class=\"container\">
+                <div class=\"row\">
+                    <div class=\"col-lg-7\"><span class=\"lead\">Profile</span><br /><a href=\"StructureDefinition-AllergyIntolerance-twpas.html\">過敏史-AllergyIntolerance TWPAS</a>
+                    </div>
+                    <div class=\"col-lg-5\"><span class=\"lead\">支援的參照政策（Reference policy）</span><br /><code>resolves</code>
+                    </div>
+                </div>
+                <p />
+                <div class=\"row\">
+                    <div class=\"col-lg-6\"><span class=\"lead\">能力摘要</span><br />
+                        <ul>
+                            <li><strong>必須（SHALL）</strong>支援 <code>create</code>, <code>read</code>,
+                                <code>vread</code>, <code>update</code>.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p />
+            </div>
+        </div>
+    </div>
+    <div class=\"panel panel-default\">
+        <div class=\"panel-heading\">
             <h4 id=\"Organization1-3\" class=\"panel-title\"><span style=\"float: right;\">預期的遵從度： 必須（SHALL）</span>Organization</h4>
         </div>
         <div class=\"panel-body\">
@@ -840,18 +1036,22 @@ Usage: #definition
         <div class=\"panel-body\">
             <div class=\"container\">
                 <div class=\"row\">
-                    <div class=\"col-lg-7\"><span class=\"lead\">Profile</span><br /><a href=\"StructureDefinition-Encounter-twpas.html\">就醫科別-Encounter TWPAS</a>
+                    <div class=\"col-lg-3\"><span class=\"lead\">Core FHIR Resource</span><br /><a href=\"https://hl7.org/fhir/R4/Encounter.html\">Encounter</a></div>
+                    <div class=\"col-lg-4\"><span class=\"lead\">支援的參照政策（Reference policy）</span><br /><code>resolves</code>
                     </div>
-                    <div class=\"col-lg-5\"><span class=\"lead\">支援的參照政策（Reference policy）</span><br /><code>resolves</code>
-                    </div>
-                </div>
-                <p />
-                <div class=\"row\">
-                    <div class=\"col-lg-6\"><span class=\"lead\">能力摘要</span><br />
+                    <div class=\"col-lg-5\"><span class=\"lead\">能力摘要</span><br />
                         <ul>
                             <li><strong>必須（SHALL）</strong>支援 <code>create</code>, <code>read</code>,
                                 <code>vread</code>, <code>update</code>.</li>
                         </ul>
+                    </div>
+                </div>
+                <p />
+                <div class=\"row\">
+                    <div class=\"col-6\"><span class=\"lead\">支援的Profiles</span>
+                        <p><a href=\"StructureDefinition-Encounter-twpas.html\">就醫科別-Encounter TWPAS</a><br />
+                        <a href=\"StructureDefinition-Encounter-opd-twpas.html\">門診病歷-Encounter OPD TWPAS</a> (門診病歷)
+                        </p>
                     </div>
                 </div>
                 <p />
@@ -1074,8 +1274,86 @@ Usage: #definition
                                 href=\"StructureDefinition-Observation-diagnostic-twpas.html\">基因資訊-Observation Diagnostic TWPAS</a><br /><a
                                 href=\"StructureDefinition-Observation-laboratory-result-twpas.html\">檢驗檢查-Observation Laboratory Result TWPAS</a><br /><a
                                 href=\"StructureDefinition-Observation-pat-assessment-twpas.html\">病人狀態評估-Observation Patient Assessment TWPAS</a><br /><a
-                                href=\"StructureDefinition-Observation-tx-assessment-twpas.html\">治療後疾病狀態評估-Observation Treatment Assessment TWPAS</a>
+                                href=\"StructureDefinition-Observation-tx-assessment-twpas.html\">治療後疾病狀態評估-Observation Treatment Assessment TWPAS</a><br /><a
+                                href=\"StructureDefinition-Observation-blood-group-twpas.html\">血型-Observation Blood Group TWPAS</a><br /><a
+                                href=\"StructureDefinition-Observation-subjective-twpas.html\">主觀描述-Observation Subjective TWPAS</a><br /><a
+                                href=\"StructureDefinition-Observation-objective-twpas.html\">客觀描述-Observation Objective TWPAS</a>
                         </p>
+                    </div>
+                </div>
+                <p />
+            </div>
+        </div>
+    </div>
+    <div class=\"panel panel-default\">
+        <div class=\"panel-heading\">
+            <h4 id=\"ClinicalImpression\" class=\"panel-title\"><span style=\"float: right;\">預期的遵從度： 必須（SHALL）</span>ClinicalImpression</h4>
+        </div>
+        <div class=\"panel-body\">
+            <div class=\"container\">
+                <div class=\"row\">
+                    <div class=\"col-lg-7\"><span class=\"lead\">Profile</span><br /><a href=\"StructureDefinition-ClinicalImpression-twpas.html\">評估-ClinicalImpression TWPAS</a>
+                    </div>
+                    <div class=\"col-lg-5\"><span class=\"lead\">支援的參照政策（Reference policy）</span><br /><code>resolves</code>
+                    </div>
+                </div>
+                <p />
+                <div class=\"row\">
+                    <div class=\"col-lg-6\"><span class=\"lead\">能力摘要</span><br />
+                        <ul>
+                            <li><strong>必須（SHALL）</strong>支援 <code>create</code>, <code>read</code>,
+                                <code>vread</code>, <code>update</code>.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p />
+            </div>
+        </div>
+    </div>
+    <div class=\"panel panel-default\">
+        <div class=\"panel-heading\">
+            <h4 id=\"CarePlan\" class=\"panel-title\"><span style=\"float: right;\">預期的遵從度： 必須（SHALL）</span>CarePlan</h4>
+        </div>
+        <div class=\"panel-body\">
+            <div class=\"container\">
+                <div class=\"row\">
+                    <div class=\"col-lg-7\"><span class=\"lead\">Profile</span><br /><a href=\"StructureDefinition-CarePlan-twpas.html\">計畫-CarePlan TWPAS</a>
+                    </div>
+                    <div class=\"col-lg-5\"><span class=\"lead\">支援的參照政策（Reference policy）</span><br /><code>resolves</code>
+                    </div>
+                </div>
+                <p />
+                <div class=\"row\">
+                    <div class=\"col-lg-6\"><span class=\"lead\">能力摘要</span><br />
+                        <ul>
+                            <li><strong>必須（SHALL）</strong>支援 <code>create</code>, <code>read</code>,
+                                <code>vread</code>, <code>update</code>.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p />
+            </div>
+        </div>
+    </div>
+    <div class=\"panel panel-default\">
+        <div class=\"panel-heading\">
+            <h4 id=\"Condition\" class=\"panel-title\"><span style=\"float: right;\">預期的遵從度： 必須（SHALL）</span>Condition</h4>
+        </div>
+        <div class=\"panel-body\">
+            <div class=\"container\">
+                <div class=\"row\">
+                    <div class=\"col-lg-7\"><span class=\"lead\">Profile</span><br /><a href=\"StructureDefinition-Condition-twpas.html\">診斷-Condition TWPAS</a>
+                    </div>
+                    <div class=\"col-lg-5\"><span class=\"lead\">支援的參照政策（Reference policy）</span><br /><code>resolves</code>
+                    </div>
+                </div>
+                <p />
+                <div class=\"row\">
+                    <div class=\"col-lg-6\"><span class=\"lead\">能力摘要</span><br />
+                        <ul>
+                            <li><strong>必須（SHALL）</strong>支援 <code>create</code>, <code>read</code>,
+                                <code>vread</code>, <code>update</code>.</li>
+                        </ul>
                     </div>
                 </div>
                 <p />

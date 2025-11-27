@@ -2,8 +2,8 @@
 <div  style="padding-left: 10px;"> 
 癌藥事前審查申請透過Bundle打包以下資料(相關對應表可以參照申請(Apply)癌藥事前審查之資料模型中的<a href="StructureDefinition-ApplyModel-mappings.html">Mappings</a>)：
 <ul>
-	<li>事前審查-Bundle TWPAS</li>
-	<li>事前審查-Claim TWPAS</li>
+	<li>癌藥事前審查-Bundle TWPAS</li>
+	<li>癌藥事前審查-Claim TWPAS</li>
 	<li>醫事機構-Organization TWPAS</li>
 	<li>基因檢測機構-Organization Genetic Testing TWPAS</li>
 	<li>就醫科別-Encounter TWPAS</li>
