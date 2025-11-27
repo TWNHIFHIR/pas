@@ -512,7 +512,7 @@ Usage: #definition
                     <td><a href=\"#Bundle1-1\">Bundle</a></td>
                     <td>支援的Profiles<br />\u00a0\u00a0
                         <a href=\"StructureDefinition-Bundle-twpas.html\">癌藥事前審查-Bundle TWPAS</a><br />\u00a0\u00a0
-                        <a href=\"StructureDefinition-Bundle-response-twpas.html\">事前審查回覆-Bundle Response TWPAS</a><br /><br />\u00a0\u00a0
+                        <a href=\"StructureDefinition-Bundle-response-twpas.html\">事前審查回覆-Bundle Response TWPAS</a><br />\u00a0\u00a0
                         <a href=\"StructureDefinition-Bundle-immunologic-agent-twpas.html\">免疫製劑事前審查-Bundle Immunologic Aagent TWPAS</a></td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
@@ -536,7 +536,7 @@ Usage: #definition
                 <tr>
                     <td><a href=\"#ClaimResponse\">ClaimResponse</a></td>
                     <td>支援的Profiles<br />\u00a0\u00a0
-                        ><a href=\"StructureDefinition-ClaimResponse-twpas.html\">事前審查回覆-ClaimResponse TWPAS</a><br />\u00a0\u00a0
+                        <a href=\"StructureDefinition-ClaimResponse-twpas.html\">事前審查回覆-ClaimResponse TWPAS</a><br />\u00a0\u00a0
                         <a href=\"StructureDefinition-ClaimResponse-self-assessment-twpas.html\">自主審查-ClaimResponse Self Assessment TWPAS</a></td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
@@ -553,7 +553,7 @@ Usage: #definition
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\"></td>
                     <td class=\"text-center\">y</td>
-                    <td>service-type</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td><a href=\"#Organization1-3\">Organization</a></td>

@@ -77,6 +77,10 @@ pages:
     title: 安全性
   vision.md:
     title: 視覺化邏輯模型
+  vision-cancer.md:
+    title: 視覺化邏輯模型:癌藥事前審查
+  vision-imm.md:
+    title: 視覺化邏輯模型:免疫製劑事前審查
   ImplementationGuide-tw.gov.mohw.nhi.pas.md:
     title: TWPAS ImplementationGuide Resource
   validate.md:

@@ -1,7 +1,17 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
 	<li><a href="index.html">應用說明</a></li>
 	<li><a href="toc.html">目錄</a></li>
-	<li><a href="vision.html">視覺化邏輯模型</a></li>
+	<li class="dropdown">
+		<a href="vision.html">視覺化邏輯模型<b class="caret"></b></a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="vision-cancer.html">癌藥事前審查</a>
+			</li>
+			<li>
+				<a href="vision-imm.html">免疫製劑事前審查</a>
+			</li>
+		</ul>
+	</li>
  	<li class="dropdown">
 		<a href="artifacts.html">規範文件<b class="caret"></b></a>
 		<ul class="dropdown-menu">

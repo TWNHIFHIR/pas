@@ -23,7 +23,6 @@ Description:    "此門診病歷-Encounter OPD TWPAS Profile說明本IG如何進
 * period.start ^short = "門診日期，YYYY-MM-DD，西元年月日。"
 * serviceType ^short = "科別，完整代碼對應表請參照就醫科別對應表。"
 * participant.individual ^short = "門診醫師"
-* reasonReference ^short = "主觀描述"
 
 * class ^short = "就醫分類。【因FHIR設計而需必填】"
 * class from ActEncounterCode
