@@ -29,7 +29,7 @@ Description: "申請(Apply)免疫製劑(Immunologic Aagent)事前審查之資料
 * opd 1..* BackboneElement "門診病歷" "門診病歷"
 * opd.hospId 0..1 string "醫事機構代碼，必須存在於醫事機構基本資料檔內" "醫事機構代碼，必須存在於醫事機構基本資料檔內"
 * opd.funcDate 0..1 dateTime "門診日期" "門診日期"
-* opd.funcDate 0..1 code "科別" "科別"
+* opd.funcType 0..1 code "科別" "科別"
 * opd.prsnIId 0..1 string "門診醫師身分證號" "門診醫師身分證號"
 * opd.icd10cmCode 0..1 code "診斷" "診斷"
 * opd.subjective 0..1 string "主觀描述" "主觀描述"

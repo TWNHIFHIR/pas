@@ -535,7 +535,7 @@ Usage: #definition
                 </tr>
                 <tr>
                     <td><a href=\"#ClaimResponse\">ClaimResponse</a></td>
-                    <td支援的Profiles<br />\u00a0\u00a0
+                    <td>支援的Profiles<br />\u00a0\u00a0
                         ><a href=\"StructureDefinition-ClaimResponse-twpas.html\">事前審查回覆-ClaimResponse TWPAS</a><br />\u00a0\u00a0
                         <a href=\"StructureDefinition-ClaimResponse-self-assessment-twpas.html\">自主審查-ClaimResponse Self Assessment TWPAS</a></td>
                     <td class=\"text-center\">y</td>
@@ -573,7 +573,6 @@ Usage: #definition
                     <td>支援的Profiles<br />\u00a0\u00a0
                         <a href=\"StructureDefinition-Encounter-twpas.html\">就醫科別-Encounter TWPAS</a><br />\u00a0\u00a0
                         <a href=\"StructureDefinition-Encounter-opd-twpas.html\">門診病歷-Encounter OPD TWPAS</a></td>
-                    <td></td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
