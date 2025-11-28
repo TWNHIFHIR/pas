@@ -58,9 +58,6 @@ Usage: #example
 * entry[diagnosticReport].fullUrl = "https://nhicore.nhi.gov.tw/pas/DiagnosticReport/diaRep-min"
 * entry[diagnosticReport].resource = diaRep-min
 
-* entry[specimen].fullUrl = "https://nhicore.nhi.gov.tw/pas/Specimen/spe-min"
-* entry[specimen].resource = spe-min
-
 * entry[observationLaboratoryResult][0].fullUrl = "https://nhicore.nhi.gov.tw/pas/Observation/obs-lab-min"
 * entry[observationLaboratoryResult][0].resource = obs-lab-min
 
