@@ -84,6 +84,6 @@
 - [系統回應訊息-OperationOutcome TWPAS](StructureDefinition-Operationoutcome-twpas.html)
 
 ### Extensions
-以下[Extensions](http://hl7.org/fhir/R4/extensibility.html)已定義為臺灣健保癌症用藥事前審查實作指引(TWPAS IG)的一部分。
+以下[Extensions](http://hl7.org/fhir/R4/extensibility.html)已定義為臺灣健保事前審查實作指引(TWPAS IG)的一部分。
 - [就醫科別(ClaimEncounter)](StructureDefinition-extension-claim-encounter.html)
 - [事前審查品項(RequestedService)](StructureDefinition-extension-requestedService.html)

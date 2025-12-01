@@ -6,8 +6,8 @@
 id: tw.gov.mohw.nhi.pas
 canonical: https://nhicore.nhi.gov.tw/pas
 name: TWPAS
-title: 臺灣健保癌症用藥事前審查實作指引
-description: 臺灣健保癌症用藥事前審查實作指引(Taiwan NHI Cancer Prior Authorization Support Implementation Guide，TWPAS IG)
+title: 臺灣健保事前審查實作指引
+description: 臺灣健保事前審查實作指引(Taiwan NHI Prior Authorization Support Implementation Guide，TWPAS IG)
 status: active
 version: 1.1.0
 fhirVersion: 4.0.1  # https://www.hl7.org/fhir/valueset-FHIR-version.html

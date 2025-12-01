@@ -15,7 +15,7 @@ Usage: #definition
 * format[+] = #application/fhir+xml
 * patchFormat = #application/json-patch+json
 * implementationGuide = "https://nhicore.nhi.gov.tw/pas/ImplementationGuide/tw.gov.mohw.nhi.pas"
-* description = "臺灣健保癌症用藥事前審查實作指引(TWPAS IG)用戶端(Client)之能力聲明"
+* description = "臺灣健保事前審查實作指引(TWPAS IG)用戶端(Client)之能力聲明"
 * rest.mode = #client
 * rest.documentation = "臺灣癌藥事前審查-用戶端(TWPAS Client)必須（SHALL）使用臺灣癌藥事前審查伺服端（TWPAS Server）能力聲明中的查詢參數，支援讀取和查詢一個或多個臺灣癌藥事前審查Profile(s)。"
 * rest.security.service[0] = http://terminology.hl7.org/CodeSystem/restful-security-service#SMART-on-FHIR
@@ -462,7 +462,7 @@ Usage: #definition
     </ul>
     <h3 id=\"shallIGs\">建議應該（SHOULD）支援以下實作指引</h3>
     <ul>
-        <li><a href=\"index.html\">臺灣健保癌症用藥事前審查實作指引(TWPAS IG)</a></li>
+        <li><a href=\"index.html\">臺灣健保事前審查實作指引(TWPAS IG)</a></li>
     </ul>
     <h2 id=\"rest\">Client的FHIR RESTful功能要求</h2>
     <div class=\"panel panel-default\">

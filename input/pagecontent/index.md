@@ -6,7 +6,7 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/11/24異動以下內容：
+擴大事前審查以FHIR送審之範圍至免疫製劑，於2025/11/24異動以下內容：
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li> -->
         <!-- <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
@@ -40,7 +40,7 @@
 
 ### 專案介紹
 <div  style="padding-left: 10px;"> 
-<p>臺灣健保癌症用藥事前審查實作指引(Taiwan NHI Cancer Prior Authorization Support Implementation Guide，TWPAS IG)採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在<a href="http://hl7.org/fhir/R4/">FHIR R4.0.1</a>之標準基礎上，繼承TW Core IG V0.3.2 (2024-12-12)，進一步定義適用於「癌藥事前審查」資料需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..*、1..1或1..*）及資料類型（文字、日期時間、代碼等）等。</p>
+<p>臺灣健保事前審查實作指引(Taiwan NHI Prior Authorization Support Implementation Guide，TWPAS IG)採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在<a href="http://hl7.org/fhir/R4/">FHIR R4.0.1</a>之標準基礎上，繼承TW Core IG V0.3.2 (2024-12-12)，進一步定義適用於「癌藥事前審查」資料需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..*、1..1或1..*）及資料類型（文字、日期時間、代碼等）等。</p>
 </div>
 
 ### 專案背景
