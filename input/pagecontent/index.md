@@ -1,5 +1,5 @@
 <div class="bg-danger" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.0.9版內容，因而會比健保署的IG版本V1.0.9(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為114年12月，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
+<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.0.9版內容，因而會比健保署的IG版本V1.0.9(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為115年1月，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
 <br/>
 <b>醫院實作時請以V1.0.9為主進行實例驗證，目前健保署端的伺服器採用V1.0.9版規格。</b></p>
 </div>
@@ -23,12 +23,6 @@
         <li>修改<a href="StructureDefinition-Observation-pat-assessment-twpas.html">Profile: 病人狀態評估-Observation Patient Assessment TWPAS</a>：新增病人狀態評估報告及病人狀態評估報告名稱(<code>derivedFrom</code>)。</li>
         <li>修改<a href="StructureDefinition-Encounter-twpas.html">Profile: 就醫科別-Encounter TWPAS</a>：取消綁定就醫分類(<code>class</code>)之固定值。</li>
         <li>修改「放射治療」相關欄位之名稱為「放射/照光治療」。</li>
-        <!-- <li>修改<a href="StructureDefinition-Observation-pat-assessment-twpas.html">Profile: 病人狀態評估-Observation Patient Assessment TWPAS</a>：
-            <ol>
-                <li>「病人狀態評估項目代碼」(<code>code</code>)綁定強度調整為「required」。</li>
-                <li>修改Constraints: pat-ast-value：新增「若病人狀態評估項目代碼(code)為MPNSAFTSS，結果值(valueInteger)須填寫0~5其中的值；若病人狀態評估項目代碼(code)為MPN10，結果值(valueInteger)須填寫0~5其中的值；若病人狀態評估項目代碼(code)為711434002，結果值(component.valueString)須填寫grade1/grade2/grade3/grade4/grade5其中一項。」。</li>
-            </ol>
-        </li> -->
     </ol>
     請留意這些異動，以避免影響您的實作。
 </div>
