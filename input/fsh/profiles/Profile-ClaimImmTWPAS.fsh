@@ -320,5 +320,10 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * supportingInfo[weight].valueQuantity.value obeys HTWT
 * supportingInfo[height].valueQuantity.value obeys HTWT
 * diagnosis obeys diagnosis //and sequence-1
-* . obeys sequence-1 and applType
+* . obeys sequence-1 and applType and opd
 * item.programCode obeys pas-1
+
+Invariant:   opd
+Description: "若有填寫Claim.supportingInfo[opd](門診病歷)，亦須填寫Claim.supportingInfo[diagnosis](診斷)、Claim.supportingInfo[subjective](主觀描述)、Claim.supportingInfo[objective](客觀描述)、Claim.supportingInfo[assessment](評估)。"
+Expression:  "supportingInfo.category.coding.exists(code ='opd') implies (supportingInfo.category.coding.exists(code = 'diagnosis') and supportingInfo.category.coding.exists(code = 'subjective') and supportingInfo.category.coding.exists(code = 'objective') and supportingInfo.category.coding.exists(code = 'assessment'))"
+Severity:    #error
