@@ -6,20 +6,28 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-擴大事前審查以FHIR送審之範圍至免疫製劑，於2025/11/24異動以下內容：
+擴大事前審查以FHIR送審之範圍至<b>免疫製劑</b>，於2025/12/5異動以下內容：
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li> -->
         <!-- <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
         <li>新增<a href="StructureDefinition-Bundle-immunologic-agent-twpas.html">Profile: 免疫製劑事前審查-Bundle Immunologic Aagent TWPAS</a>。</li>
         <li>新增<a href="StructureDefinition-Claim-immunologic-agent-twpas.html">Profile: 免疫製劑事前審查-Claim Immunologic Aagent TWPAS</a>。</li>
-        <li>新增<a href="StructureDefinition-AllergyIntolerance-twpas.html">Profile: 過敏史-AllergyIntolerance TWPAS</a>。</li>
-        <li>新增<a href="StructureDefinition-Encounter-opd-twpas.html">Profile: 門診病歷-Encounter OPD TWPAS</a>。</li>
-        <li>新增<a href="StructureDefinition-Observation-blood-group-twpas.html">Profile: 血型-Observation Blood Group TWPAS</a>。</li>
-        <li>新增<a href="StructureDefinition-Observation-subjective-twpas.html">Profile: 主觀描述-Observation Subjective TWPAS</a>。</li>
-        <li>新增<a href="StructureDefinition-Observation-objective-twpas.html">Profile: 客觀描述-Observation Objective TWPAS</a>。</li>
-        <li>新增<a href="StructureDefinition-ClinicalImpression-twpas.html">Profile: 評估-ClinicalImpression TWPAS</a>。</li>
-        <li>新增<a href="StructureDefinition-CarePlan-twpas.html">Profile: 計畫-CarePlan TWPAS</a>。</li>
-        <li>新增<a href="StructureDefinition-Condition-twpas.html">Profile: 診斷-Condition TWPAS</a>。</li>
+        <li>病人資訊：
+            <ol>
+                <li>新增<a href="StructureDefinition-AllergyIntolerance-twpas.html">Profile: 過敏史-AllergyIntolerance TWPAS</a>。</li>
+                <li>新增<a href="StructureDefinition-Observation-blood-group-twpas.html">Profile: 血型-Observation Blood Group TWPAS</a>。</li>
+            </ol>
+        </li>
+        <li>門診病歷：
+            <ol>
+                <li>新增<a href="StructureDefinition-Encounter-opd-twpas.html">Profile: 門診病歷-Encounter OPD TWPAS</a>。</li>
+                <li>新增<a href="StructureDefinition-Condition-twpas.html">Profile: 診斷-Condition TWPAS</a>。</li>
+                <li>新增<a href="StructureDefinition-Observation-subjective-twpas.html">Profile: 主觀描述-Observation Subjective TWPAS</a>。</li>
+                <li>新增<a href="StructureDefinition-Observation-objective-twpas.html">Profile: 客觀描述-Observation Objective TWPAS</a>。</li>
+                <li>新增<a href="StructureDefinition-ClinicalImpression-twpas.html">Profile: 評估-ClinicalImpression TWPAS</a>。</li>
+                <li>新增<a href="StructureDefinition-CarePlan-twpas.html">Profile: 計畫-CarePlan TWPAS</a>。</li>
+            </ol>
+        </li>
         <li>修改<a href="StructureDefinition-Observation-pat-assessment-twpas.html">Profile: 病人狀態評估-Observation Patient Assessment TWPAS</a>：新增病人狀態評估報告及病人狀態評估報告名稱(<code>derivedFrom</code>)。</li>
         <li>修改<a href="StructureDefinition-Encounter-twpas.html">Profile: 就醫科別-Encounter TWPAS</a>：取消綁定就醫分類(<code>class</code>)之固定值。</li>
         <li>修改「放射治療」相關欄位之名稱為「放射/照光治療」。</li>
