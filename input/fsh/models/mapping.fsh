@@ -37,8 +37,8 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-twpas"
 * treat.medicationRequest -> "(用藥品項)"
 * treat.medicationRequest.drugCode -> "supportingInfo.where(category.coding.code = 'medicationRequest').valueReference.reference(MedicationRequestTreatTWPAS) (藥品代碼)"
 //* treat.medicationRequest.lot -> "supportingInfo.where(category.coding.code = 'medicationRequest').code.coding.code (用藥線別)"
-* treat.radiotherapy -> "(放射治療)"
-* treat.radiotherapy.rt -> "supportingInfo.where(category.coding.code = 'radiotherapy').valueReference.reference(ProcedureTWPAS) (放射治療項目)"
+* treat.radiotherapy -> "(放射/照光治療)"
+* treat.radiotherapy.rt -> "supportingInfo.where(category.coding.code = 'radiotherapy').valueReference.reference(ProcedureTWPAS) (放射/照光治療項目)"
 * treat.carePlanDocument -> "supportingInfo.where(category.coding.code = 'carePlanDocument').valueReference.reference(DocumentReferenceTWPAS) (治療計畫文件)"
 * result -> "(結果資訊)"
 * result.txAst -> "supportingInfo.where(category.coding.code = 'treatmentAssessment').valueReference.reference(ObservationTreatmentAssessmentTWPAS) (治療後疾病狀態評估項目)"
@@ -222,11 +222,11 @@ Title: "Mapping to TWPAS Procedure"
 Source: ApplyModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Procedure-twpas"
 * treat -> "(治療資訊)"
-* treat.radiotherapy -> "(放射治療)"
-* treat.radiotherapy.rtStatus -> "status (放射治療狀態)"
-* treat.radiotherapy.rt -> "code.coding.code (放射治療項目)"
-* treat.radiotherapy.realInspectTime -> "performedDateTime (放射治療日期)"
-* treat.radiotherapy.rtDose -> "usedReference.reference(SubstanceTWPAS) (放射治療總劑量)"
+* treat.radiotherapy -> "(放射/照光治療)"
+* treat.radiotherapy.rtStatus -> "status (放射/照光治療狀態)"
+* treat.radiotherapy.rt -> "code.coding.code (放射/照光治療項目)"
+* treat.radiotherapy.realInspectTime -> "performedDateTime (放射/照光治療日期)"
+* treat.radiotherapy.rtDose -> "usedReference.reference(SubstanceTWPAS) (放射/照光治療總劑量)"
 
 Mapping: TWPASSubstance
 Id: TWPASSubstance
@@ -234,9 +234,9 @@ Title: "Mapping to TWPAS Substance"
 Source: ApplyModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Substance-twpas"
 * treat -> "(治療資訊)"
-* treat.radiotherapy -> "(放射治療)"
-* treat.radiotherapy.rtDose -> "ingredient.quantity.numerator.value (放射治療總劑量)"
-* treat.radiotherapy.rtUnit -> "ingredient.quantity.numerator.unit (放射治療總劑量單位)"
+* treat.radiotherapy -> "(放射/照光治療)"
+* treat.radiotherapy.rtDose -> "ingredient.quantity.numerator.value (放射/照光治療總劑量)"
+* treat.radiotherapy.rtUnit -> "ingredient.quantity.numerator.unit (放射/照光治療總劑量單位)"
 
 Mapping: TWPASDocumentReference
 Id: TWPASDocumentReference

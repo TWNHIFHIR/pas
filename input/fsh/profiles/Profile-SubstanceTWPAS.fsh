@@ -1,8 +1,8 @@
 Profile:        SubstanceTWPAS
 Parent:         Substance
 Id:             Substance-twpas
-Title:          "放射治療總劑量-Substance TWPAS"
-Description:    "此放射治療總劑量-Substance TWPAS Profile說明本IG如何進一步定義FHIR的Substance Resource以呈現癌藥事前審查中治療資訊之放射治療總劑量"
+Title:          "放射/照光治療總劑量-Substance TWPAS"
+Description:    "此放射/照光治療總劑量-Substance TWPAS Profile說明本IG如何進一步定義FHIR的Substance Resource以呈現事前審查中治療資訊之「放射治療」及「照光治療」總劑量"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Substance-twpas"
@@ -11,7 +11,7 @@ Description:    "此放射治療總劑量-Substance TWPAS Profile說明本IG如�
 * ingredient.quantity.numerator.value 1..1 MS
 * ingredient.quantity.numerator.code 1..1 MS
 * ingredient.quantity.numerator.code from http://hl7.org/fhir/ValueSet/ucum-units
-* ingredient.quantity.numerator.code ^binding.description = "放射治療總劑量單位的代碼範圍請參考[Common UCUM units](https://hl7.org/fhir/R4/valueset-ucum-common.html)。"
+* ingredient.quantity.numerator.code ^binding.description = "放射/照光治療總劑量單位的代碼範圍請參考[Common UCUM units](https://hl7.org/fhir/R4/valueset-ucum-common.html)。"
 * ingredient.quantity.numerator.system 1..1
 * ingredient.quantity.numerator.system = "http://unitsofmeasure.org"
 * code from ICD10PCS2023Radiotherapy (preferred)
@@ -34,10 +34,10 @@ Description:    "此放射治療總劑量-Substance TWPAS Profile說明本IG如�
 * code.coding[ICD10PCS2023Radiotherapy].code 1..1 MS
 * code.coding[ICD10PCS2023Radiotherapy] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
 
-* code ^short = "放射治療項目。ICD-10-PCS。"
-* ingredient.quantity.numerator.value ^short = "放射治療總劑量"
-* ingredient.quantity.numerator.code ^short = "放射治療總劑量單位"
-* ingredient.quantity.numerator.system ^short = "放射治療總劑量單位之代碼系統，固定為「http://unitsofmeasure.org」。"
+* code ^short = "放射/照光治療項目。ICD-10-PCS。"
+* ingredient.quantity.numerator.value ^short = "放射/照光治療總劑量"
+* ingredient.quantity.numerator.code ^short = "放射/照光治療總劑量單位"
+* ingredient.quantity.numerator.system ^short = "放射/照光治療總劑量單位之代碼系統，固定為「http://unitsofmeasure.org」。"
 * ingredient.substance[x] ^short = "因FHIR設計而需必填"
 * ingredient.substance[x] from ICD10PCS2023Radiotherapy (preferred)
 * ingredient.substance[x] ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"

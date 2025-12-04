@@ -2,7 +2,7 @@ Profile:        ObservationPatientAssessmentTWPAS
 Parent:         Observation
 Id:             Observation-pat-assessment-twpas
 Title:          "病人狀態評估-Observation Patient Assessment TWPAS"
-Description:    "此病人狀態評估-Observation Patient Assessment TWPAS Profile說明本IG如何進一步定義FHIR的Observation Resource以呈現癌藥事前審查中評估資訊之病人狀態評估"
+Description:    "此病人狀態評估-Observation Patient Assessment TWPAS Profile說明本IG如何進一步定義FHIR的Observation Resource以呈現事前審查中評估資訊之病人狀態評估"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-pat-assessment-twpas"
@@ -67,6 +67,9 @@ Description:    "此病人狀態評估-Observation Patient Assessment TWPAS Prof
 * component[peripheral-sensory-neuropathy].value[x] 1..1 MS
 * component[peripheral-sensory-neuropathy].value[x] only string
 * component[peripheral-sensory-neuropathy].value[x] ^short = "grade1~5"
+
+* derivedFrom only Reference(DocumentReferenceTWPAS)
+* derivedFrom ^short = "病人狀態評估報告及病人狀態評估報告名稱（檔案路徑）"
 
 Invariant:   pat-ast-value
 Description: "若病人狀態評估項目代碼(code)為88020-3，結果值(valueString)須填寫class1/class2/class3/class4其中一項；若病人狀態評估項目代碼(code)為98153-0，結果值(valueString)須填寫A/B/C其中一項；若病人狀態評估項目代碼(code)為89247-1，結果值(valueInteger)須填寫0~5其中的值；若病人狀態評估項目代碼(code)為89243-0，結果值(valueInteger)須填寫0~100其中的值；若病人狀態評估項目代碼(code)為IPS，結果值(valueInteger)須填寫0~7其中的值；若病人狀態評估項目代碼(code)為PDAI，結果值(valueInteger)須填寫0~263其中的值；若病人狀態評估項目代碼(code)為CIRS，結果值(valueInteger)須填寫0~56其中的值；若病人狀態評估項目代碼(code)為75633-8，結果值(valueInteger)須填寫0~10其中的值；若病人狀態評估項目代碼(code)為HCTCI，結果值(valueInteger)須填寫0~26其中的值；若病人狀態評估項目代碼(code)為MPNSAFTSS，結果值(valueInteger)須填寫0~5其中的值；若病人狀態評估項目代碼(code)為MPN10，結果值(valueInteger)須填寫0~5其中的值；若病人狀態評估項目代碼(code)為711434002，結果值(component.valueString)須填寫grade1/grade2/grade3/grade4/grade5其中一項。"

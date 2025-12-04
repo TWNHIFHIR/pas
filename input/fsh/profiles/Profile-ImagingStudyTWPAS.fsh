@@ -2,7 +2,7 @@ Profile:        ImagingStudyTWPAS
 Parent:         TWCoreImagingStudy
 Id:             ImagingStudy-twpas
 Title:          "DICOM影像-ImagingStudy TWPAS"
-Description:    "此DICOM影像-ImagingStudy TWPAS Profile說明本IG如何進一步定義臺灣核心-影像檢查(TW Core ImagingStudy) Profile以呈現癌藥事前審查中疾病資訊之影像報告的影像檢查的身體部位及DICOM影像"
+Description:    "此DICOM影像-ImagingStudy TWPAS Profile說明本IG如何進一步定義臺灣核心-影像檢查(TW Core ImagingStudy) Profile以呈現事前審查中疾病資訊之影像報告的影像檢查的身體部位及DICOM影像"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/ImagingStudy-twpas"
@@ -40,7 +40,7 @@ Profile:        MediaTWPAS
 Parent:         TWCoreMedia
 Id:             Media-twpas
 Title:          "非DICOM影像-Media TWPAS"
-Description:    "此非DICOM影像-Media TWPAS Profile說明本IG如何進一步定義臺灣核心-多媒體(TW Core Media) Profile以呈現癌藥事前審查中疾病資訊之影像報告的非DICOM影像"
+Description:    "此非DICOM影像-Media TWPAS Profile說明本IG如何進一步定義臺灣核心-多媒體(TW Core Media) Profile以呈現事前審查中疾病資訊之影像報告的非DICOM影像"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Media-twpas"
@@ -66,7 +66,7 @@ Id: media-mimetypes
 Title: "HL7-非DICOM影像MimeType值集"
 Description: "HL7-非DICOM影像MimeType值集"
 * ^date = "2025-10-01"
-* ^version = "1.0.9"
+* ^version = "1.1.0"
 * ^experimental = false
 * urn:ietf:bcp:13#image/jpeg
 * urn:ietf:bcp:13#image/jpg

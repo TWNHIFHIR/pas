@@ -1,56 +1,53 @@
 <div class="bg-danger" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.0.8版內容，因而會比健保署的IG版本V1.0.8(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為114年11月7日，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
+<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.0.9版內容，因而會比健保署的IG版本V1.0.9(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為115年1月，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
 <br/>
-<b>醫院實作時請以V1.0.8為主進行實例驗證，目前健保署端的伺服器採用V1.0.8版規格。</b></p>
+<b>醫院實作時請以V1.0.9為主進行實例驗證，目前健保署端的伺服器採用V1.0.9版規格。</b></p>
 </div>
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/10/31異動以下內容：
+擴大事前審查以FHIR送審之範圍至<b>免疫製劑</b>，於2025/12/5異動以下內容：
     <ol>  
-        <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
-        <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li>
-        <li>修改<a href="ValueSet-dna-change-type.html">ValueSet: LOINC-健保事前審查-基因突變類型值集</a>：新增代碼<code>95123-6</code>。</li>
-        <li>修改<a href="CodeSystem-medication-frequency-nhi-tw.html">CodeSystem: NHI-健保事前審查-藥品使用頻率</a>：新增代碼<code>HS</code>(睡前一次)、<code>QDHS</code>(每日一次睡前使用)。</li>
-        <li>修改<a href="CodeSystem-nhi-tmhb-type.html">CodeSystem: NHI-健保事前審查-申請案件類別</a>：原「自主審查報備」(<code>3</code>)調整名稱為「自主審查」。</li>
-        <li>修改<a href="StructureDefinition-ClaimResponse-self-assessment-twpas.html">Profile: 自主審查-ClaimResponse Self Assessment TWPAS</a>：
+        <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li> -->
+        <!-- <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
+        <li>新增<a href="StructureDefinition-Bundle-immunologic-agent-twpas.html">Profile: 免疫製劑事前審查-Bundle Immunologic Aagent TWPAS</a>。</li>
+        <li>新增<a href="StructureDefinition-Claim-immunologic-agent-twpas.html">Profile: 免疫製劑事前審查-Claim Immunologic Aagent TWPAS</a>。</li>
+        <li>病人資訊：
             <ol>
-                <li>原「自主審查報備」調整名稱為「自主審查」。</li>
-                <li>原「核定數量」(<code>item.adjudication.value</code>)調整名稱為「審查結果數量」。</li>
-                <li>新增「審查委員身分證號」(<code>extension[requestor]</code>)欄位。</li>
+                <li>新增<a href="StructureDefinition-AllergyIntolerance-twpas.html">Profile: 過敏史-AllergyIntolerance TWPAS</a>。</li>
+                <li>新增<a href="StructureDefinition-Observation-blood-group-twpas.html">Profile: 血型-Observation Blood Group TWPAS</a>。</li>
             </ol>
         </li>
-        <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 事前審查-Bundle TWPAS</a>：
+        <li>門診病歷：
             <ol>
-                <li>修改Constraints: claimResponse-1：若申請案件類別(Claim.priority)為自主審查(#3)時，須填寫核定日期(ClaimResponse.created)、審查結果數量(ClaimResponse.item.adjudication.value)、核定註記(ClaimResponse.item.adjudication.reason)及審查委員身分證號(extension[requestor])。</li>
-                <li>新增Constraints: claimResponse-2：若申請案件類別(Claim.priority)為自主審查(#3)，且國際疾病分類代碼(Claim.diagnosisCodeableConcept)前三碼為C18、C19、C20、C21、C22、C33、C34、C50、C61(五癌)時，則續用註記(Claim.item.modifier:continuation)須為申請再次使用(#2)。</li>
+                <li>新增<a href="StructureDefinition-Encounter-opd-twpas.html">Profile: 門診病歷-Encounter OPD TWPAS</a>。</li>
+                <li>新增<a href="StructureDefinition-Condition-twpas.html">Profile: 診斷-Condition TWPAS</a>。</li>
+                <li>新增<a href="StructureDefinition-Observation-subjective-twpas.html">Profile: 主觀描述-Observation Subjective TWPAS</a>。</li>
+                <li>新增<a href="StructureDefinition-Observation-objective-twpas.html">Profile: 客觀描述-Observation Objective TWPAS</a>。</li>
+                <li>新增<a href="StructureDefinition-ClinicalImpression-twpas.html">Profile: 評估-ClinicalImpression TWPAS</a>。</li>
+                <li>新增<a href="StructureDefinition-CarePlan-twpas.html">Profile: 計畫-CarePlan TWPAS</a>。</li>
             </ol>
         </li>
-        <li>修改<a href="StructureDefinition-Observation-pat-assessment-twpas.html">Profile: 病人狀態評估-Observation Patient Assessment TWPAS</a>：
-            <ol>
-                <li>「病人狀態評估項目代碼」(<code>code</code>)綁定強度調整為「required」。</li>
-                <li>修改Constraints: pat-ast-value：新增「若病人狀態評估項目代碼(code)為MPNSAFTSS，結果值(valueInteger)須填寫0~5其中的值；若病人狀態評估項目代碼(code)為MPN10，結果值(valueInteger)須填寫0~5其中的值；若病人狀態評估項目代碼(code)為711434002，結果值(component.valueString)須填寫grade1/grade2/grade3/grade4/grade5其中一項。」。</li>
-            </ol>
-        </li>
-        <li>修改<a href="CodeSystem-nhi-pat-ast.html">CodeSystem: NHI-健保事前審查-病人狀態評估項目</a>：新增代碼<code>MPNSAFTSS</code>、<code>MPN10</code>、<code>C143528</code>、<code>C143750</code>、<code>C143752</code>。</li>
-        <li>修改<a href="ValueSet-pat-ast.html">ValueSet: LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集</a>：新增代碼<code>711434002</code>、<code>MPNSAFTSS</code>、<code>MPN10</code>。</li>
+        <li>修改<a href="StructureDefinition-Observation-pat-assessment-twpas.html">Profile: 病人狀態評估-Observation Patient Assessment TWPAS</a>：新增病人狀態評估報告及病人狀態評估報告名稱(<code>derivedFrom</code>)。</li>
+        <li>修改<a href="StructureDefinition-Encounter-twpas.html">Profile: 就醫科別-Encounter TWPAS</a>：取消綁定就醫分類(<code>class</code>)之固定值。</li>
+        <li>修改「放射治療」相關欄位之名稱為「放射/照光治療」。</li>
     </ol>
     請留意這些異動，以避免影響您的實作。
 </div>
 <br/>
 
 <div class="bg-success" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-<p><b>相關資訊可參考衛生福利部中央健康保險署的<a href="https://www.nhi.gov.tw/ch/np-3787-1.html" target="_blank">癌藥事前審查以電子病歷申請專區</a>。</b></p>
+<p><b>相關資訊可參考衛生福利部中央健康保險署的<a href="https://www.nhi.gov.tw/ch/np-3787-1.html" target="_blank">事前審查以電子病歷申請專區</a>。</b></p>
 </div>
 
 ### 專案介紹
 <div  style="padding-left: 10px;"> 
-<p>臺灣健保癌症用藥事前審查實作指引(Taiwan NHI Cancer Prior Authorization Support Implementation Guide，TWPAS IG)採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在<a href="http://hl7.org/fhir/R4/">FHIR R4.0.1</a>之標準基礎上，繼承TW Core IG V0.3.2 (2024-12-12)，進一步定義適用於「癌藥事前審查」資料需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..*、1..1或1..*）及資料類型（文字、日期時間、代碼等）等。</p>
+<p>臺灣健保事前審查實作指引(Taiwan NHI Prior Authorization Support Implementation Guide，TWPAS IG)採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在<a href="http://hl7.org/fhir/R4/">FHIR R4.0.1</a>之標準基礎上，繼承TW Core IG V0.3.2 (2024-12-12)，進一步定義適用於「事前審查」資料需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..*、1..1或1..*）及資料類型（文字、日期時間、代碼等）等。</p>
 </div>
 
 ### 專案背景
 <div  style="padding-left: 10px;"> 
-<p>衛生福利部中央健康保險署規劃事前審查癌症用藥上傳機制。為扣合賴總統於健康台灣之「國家癌症防治計畫」政策，本署刻正規劃NGS申報資料收載、癌症重大傷病申請、癌藥事前審查申請及癌症個案療效追蹤等癌症醫療資訊之數位轉型，期透過資料有效互通，達成以病人為中心之完整照護。</p>
+<p>衛生福利部中央健康保險署規劃事前審查癌症用藥上傳機制。為扣合賴總統於健康台灣之「國家癌症防治計畫」政策，本署刻正規劃NGS申報資料收載、癌症重大傷病申請、事前審查申請及癌症個案療效追蹤等癌症醫療資訊之數位轉型，期透過資料有效互通，達成以病人為中心之完整照護。</p>
 </div>
 
 <div  style="padding-left: 10px;"> 
@@ -63,7 +60,7 @@
 
 #### 使用案例(Use Case)
 <div  style="padding-left: 10px;"> 
-<p>本專案之主要實作者為醫院，醫院透過事前審查系統建立癌藥事前審查資料，透過共通傳輸平台批次上傳癌藥事前審查相關文件，並送至衛生福利部中央健康保險署審核。</p>
+<p>本專案之主要實作者為醫院，醫院透過事前審查系統建立事前審查資料，透過共通傳輸平台批次上傳事前審查相關文件，並送至衛生福利部中央健康保險署審核。</p>
 <img class="figure-img img-responsive img-rounded center-block" src="usecase.png" alt="IG use case" style="display: block;margin-left: auto;margin-right: auto;width: 45%;"/>
 </div>
 
@@ -71,7 +68,7 @@
 送核、送核補件、申復及申復補件之作業流程皆相同，依該個案是首次送審或不同意後再次送審等之狀態進行選擇不同的申請類別，以做為行政程序之判斷。
 
 送核、送核補件、申復及申復補件作業流程如下：
-1. 醫院開發癌藥事前審查系統產生癌藥事前審查報告（Bundle TWPAS）
+1. 醫院開發事前審查系統產生事前審查報告（Bundle TWPAS）
 2. 醫院將已產生之事前審查相關文件上傳至健保署
 3. 若資料符合格式，健保署回覆上傳成功訊息，由醫院查詢上傳結果
 4. 若資料不符合格式，健保署回覆上傳失敗訊息，由醫院查詢上傳結果

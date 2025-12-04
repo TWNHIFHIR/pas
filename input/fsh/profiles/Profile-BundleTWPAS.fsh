@@ -1,8 +1,8 @@
 Profile:        BundleTWPAS
 Parent:         TWCoreBundle
 Id:             Bundle-twpas
-Title:          "事前審查-Bundle TWPAS"
-Description:    "此事前審查-Bundle TWPAS Profile說明本IG如何進一步定義資料交換基本單位(TW Core Bundle) Profile以呈現癌藥事前審查之內容"
+Title:          "癌藥事前審查-Bundle TWPAS"
+Description:    "此癌藥事前審查-Bundle TWPAS Profile說明本IG如何進一步定義資料交換基本單位(TW Core Bundle) Profile以呈現癌藥事前審查之內容"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Bundle-twpas"
@@ -23,7 +23,6 @@ Description:    "此事前審查-Bundle TWPAS Profile說明本IG如何進一步�
 	patient 1..1 MS and
 	practitioner 1..* MS and
 	organization 1..1 MS and
-	organizationGen 0..* MS and
 	diagnosticReportImage 0..* MS and
 	imageStudy 0..* MS and
 	media 0..* MS and
@@ -31,6 +30,7 @@ Description:    "此事前審查-Bundle TWPAS Profile說明本IG如何進一步�
 	diagnosticReport 0..* MS and
 	observationDiagnostic 0..* MS and
 	specimen 0..* MS and
+	organizationGen 0..* MS and
 	documentReference 0..* MS and
 	observationLaboratoryResult 0..* MS and
 	observationPatientAssessment 0..* MS and
@@ -41,7 +41,16 @@ Description:    "此事前審查-Bundle TWPAS Profile說明本IG如何進一步�
 	medicationRequestApply 1..* MS and
 	coverage 1..1 MS and
 	claimResponse 0..1 MS and
-	organizationOrg 1..1 MS
+	organizationOrg 1..1 MS and
+
+	encounterOpd 0..1 MS and
+	condition 0..1 MS and
+	observationBloodgroup 0..1 MS and
+	allergyIntolerance 0..* MS and
+	observationSubjective 0..* MS and
+	observationObjective 0..* MS and
+	clinicalImpression 0..* MS and
+	carePlan 0..* MS
 
 * entry[claim] ^short = "事前審查(Claim)"
 * entry[claim].resource 1..1 MS
@@ -107,15 +116,15 @@ Description:    "此事前審查-Bundle TWPAS Profile說明本IG如何進一步�
 * entry[medicationRequestTreat].resource 1..1 MS
 * entry[medicationRequestTreat].resource only MedicationRequestTreatTWPAS
 
-* entry[procedure] ^short = "放射治療"
+* entry[procedure] ^short = "放射/照光治療"
 * entry[procedure].resource 1..1 MS
 * entry[procedure].resource only ProcedureTWPAS
 
-* entry[substance] ^short = "放射治療總劑量"
+* entry[substance] ^short = "放射/照光治療總劑量"
 * entry[substance].resource 1..1 MS
 * entry[substance].resource only SubstanceTWPAS
 
-* entry[documentReference] ^short = "基因報告／治療計畫文件／檢驗(查)附件"
+* entry[documentReference] ^short = "基因報告／治療計畫文件／檢驗(查)附件／病人狀態評估報告"
 * entry[documentReference].resource 1..1 MS
 * entry[documentReference].resource only DocumentReferenceTWPAS
 
@@ -138,6 +147,38 @@ Description:    "此事前審查-Bundle TWPAS Profile說明本IG如何進一步�
 * entry[organizationOrg] ^short = "政府機構"
 * entry[organizationOrg].resource 1..1 MS
 * entry[organizationOrg].resource only TWCoreOrganizationGovt
+
+* entry[observationSubjective] ^short = "主觀描述(S)"
+* entry[observationSubjective].resource 1..1 MS
+* entry[observationSubjective].resource only ObservationSubjectiveTWPAS
+
+* entry[observationObjective] ^short = "客觀描述(O)"
+* entry[observationObjective].resource 1..1 MS
+* entry[observationObjective].resource only ObservationObjectiveTWPAS
+
+* entry[clinicalImpression] ^short = "評估(A)"
+* entry[clinicalImpression].resource 1..1 MS
+* entry[clinicalImpression].resource only ClinicalImpressionTWPAS
+
+* entry[carePlan] ^short = "計畫(P)"
+* entry[carePlan].resource 1..1 MS
+* entry[carePlan].resource only CarePlanTWPAS
+
+* entry[allergyIntolerance] ^short = "過敏史"
+* entry[allergyIntolerance].resource 1..1 MS
+* entry[allergyIntolerance].resource only AllergyIntoleranceTWPAS
+
+* entry[observationBloodgroup] ^short = "血型"
+* entry[observationBloodgroup].resource 1..1 MS
+* entry[observationBloodgroup].resource only ObservationBloodGroupTWPAS
+
+* entry[encounterOpd] ^short = "門診病歷"
+* entry[encounterOpd].resource 1..1 MS
+* entry[encounterOpd].resource only EncounterOpdTWPAS
+
+* entry[condition] ^short = "診斷"
+* entry[condition].resource 1..1 MS
+* entry[condition].resource only ConditionTWPAS
 
 
 

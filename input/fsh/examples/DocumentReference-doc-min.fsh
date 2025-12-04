@@ -102,3 +102,27 @@ Usage: #example
     <p><b>病歷資料 (application/pdf)</b>：file://王大明病歷.pdf</p>
     <p><b>病歷資料名稱</b>：王大明病歷</p>
 </div>"
+
+Instance: doc-patientAssessment-min
+InstanceOf: DocumentReferenceTWPAS
+Title: "病人狀態評估報告"
+Description: "依據文件參照-DocumentReference TWPAS Profile呈現病人狀態評估報告之範例"
+Usage: #example
+* category = NHIPDFType#patientAssessment
+* status = http://hl7.org/fhir/document-reference-status#current
+* subject.reference = "Patient/pat-min"
+* content.attachment.contentType = #application/pdf
+* content.attachment.url =  "file://病人狀態評估報告.pdf"
+* content.attachment.title = "病人狀態評估報告名稱"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+    <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4;
+        border-radius: 5px; line-height: 60%\">
+        <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReference-twpas.html\">文件參照-DocumentReference TWPAS</a></p>
+    </div>
+    <p><b>狀態</b>：current</p>
+    <p><b>報告類型</b>：病人狀態評估報告 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pdf-type.html\">NHI-文件類型</a>#patientAssessment)</span></p>
+    <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a> &quot;王大明&quot;</p>
+    <p><b>病人狀態評估報告 (application/pdf)</b>：file://病人狀態評估報告.pdf</p>
+    <p><b>病人狀態評估報告名稱</b>：病人狀態評估報告名稱</p>
+</div>"

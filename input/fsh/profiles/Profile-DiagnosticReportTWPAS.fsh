@@ -3,7 +3,7 @@ Parent:         DiagnosticReport
 //Parent:         TWCoreDiagnosticReport
 Id:             DiagnosticReport-twpas
 Title:          "檢查報告-DiagnosticReport TWPAS"
-Description:    "此檢查報告-DiagnosticReport TWPAS Profile說明本IG如何進一步定義臺灣核心-診斷報告(TW Core DiagnosticReport) Profile以呈現癌藥事前審查中疾病資訊之檢查報告"
+Description:    "此檢查報告-DiagnosticReport TWPAS Profile說明本IG如何進一步定義臺灣核心-診斷報告(TW Core DiagnosticReport) Profile以呈現事前審查中疾病資訊之檢查報告"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/DiagnosticReport-twpas"
