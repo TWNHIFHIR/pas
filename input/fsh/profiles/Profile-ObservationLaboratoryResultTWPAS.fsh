@@ -3,7 +3,7 @@ Parent:         Observation
 //Parent:         TWCoreObservationLaboratoryResult
 Id:             Observation-laboratory-result-twpas
 Title:          "檢驗檢查-Observation Laboratory Result TWPAS"
-Description:    "此檢驗檢查-Observation Laboratory Result TWPAS Profile說明本IG如何進一步定義臺灣核心-檢驗檢查(TW Core Observation Laboratory Result) Profile以呈現癌藥事前審查中評估資訊之檢驗(查)相關資料"
+Description:    "此檢驗檢查-Observation Laboratory Result TWPAS Profile說明本IG如何進一步定義臺灣核心-檢驗檢查(TW Core Observation Laboratory Result) Profile以呈現事前審查中評估資訊之檢驗(查)相關資料"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-laboratory-result-twpas"

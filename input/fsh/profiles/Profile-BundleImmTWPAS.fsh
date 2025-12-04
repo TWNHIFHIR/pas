@@ -35,7 +35,11 @@ Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Pro
 	diagnosticReportImage 0..* MS and
 	imageStudy 0..* MS and
 	media 0..* MS and
+	observationCancerStage 0..* MS and
 	diagnosticReport 0..* MS and
+	observationDiagnostic 0..* MS and
+	specimen 0..* MS and
+	organizationGen 0..* MS and
 	documentReference 0..* MS and
 	observationLaboratoryResult 0..* MS and
 	observationPatientAssessment 0..* MS and
@@ -112,9 +116,21 @@ Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Pro
 * entry[media].resource 1..1 MS
 * entry[media].resource only MediaTWPAS
 
+* entry[observationCancerStage] ^short = "癌症分期量表"
+* entry[observationCancerStage].resource 1..1 MS
+* entry[observationCancerStage].resource only ObservationCancerStageTWPAS
+
 * entry[diagnosticReport] ^short = "檢查報告"
 * entry[diagnosticReport].resource 1..1 MS
 * entry[diagnosticReport].resource only DiagnosticReportTWPAS
+
+* entry[observationDiagnostic] ^short = "基因資訊"
+* entry[observationDiagnostic].resource 1..1 MS
+* entry[observationDiagnostic].resource only ObservationDiagnosticTWPAS
+
+* entry[specimen] ^short = "檢體"
+* entry[specimen].resource 1..1 MS
+* entry[specimen].resource only SpecimenTWPAS
 
 * entry[observationLaboratoryResult] ^short = "檢驗(查)"
 * entry[observationLaboratoryResult].resource 1..1 MS
@@ -159,6 +175,10 @@ Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Pro
 * entry[organizationOrg] ^short = "政府機構"
 * entry[organizationOrg].resource 1..1 MS
 * entry[organizationOrg].resource only TWCoreOrganizationGovt
+
+* entry[organizationGen] ^short = "基因檢測機構"
+* entry[organizationGen].resource 1..1 MS
+* entry[organizationGen].resource only OrganizationGeneticTestingTWPAS
 
 
 

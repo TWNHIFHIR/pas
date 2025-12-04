@@ -37,17 +37,17 @@
 <br/>
 
 <div class="bg-success" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-<p><b>相關資訊可參考衛生福利部中央健康保險署的<a href="https://www.nhi.gov.tw/ch/np-3787-1.html" target="_blank">癌藥事前審查以電子病歷申請專區</a>。</b></p>
+<p><b>相關資訊可參考衛生福利部中央健康保險署的<a href="https://www.nhi.gov.tw/ch/np-3787-1.html" target="_blank">事前審查以電子病歷申請專區</a>。</b></p>
 </div>
 
 ### 專案介紹
 <div  style="padding-left: 10px;"> 
-<p>臺灣健保事前審查實作指引(Taiwan NHI Prior Authorization Support Implementation Guide，TWPAS IG)採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在<a href="http://hl7.org/fhir/R4/">FHIR R4.0.1</a>之標準基礎上，繼承TW Core IG V0.3.2 (2024-12-12)，進一步定義適用於「癌藥事前審查」資料需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..*、1..1或1..*）及資料類型（文字、日期時間、代碼等）等。</p>
+<p>臺灣健保事前審查實作指引(Taiwan NHI Prior Authorization Support Implementation Guide，TWPAS IG)採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在<a href="http://hl7.org/fhir/R4/">FHIR R4.0.1</a>之標準基礎上，繼承TW Core IG V0.3.2 (2024-12-12)，進一步定義適用於「事前審查」資料需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..*、1..1或1..*）及資料類型（文字、日期時間、代碼等）等。</p>
 </div>
 
 ### 專案背景
 <div  style="padding-left: 10px;"> 
-<p>衛生福利部中央健康保險署規劃事前審查癌症用藥上傳機制。為扣合賴總統於健康台灣之「國家癌症防治計畫」政策，本署刻正規劃NGS申報資料收載、癌症重大傷病申請、癌藥事前審查申請及癌症個案療效追蹤等癌症醫療資訊之數位轉型，期透過資料有效互通，達成以病人為中心之完整照護。</p>
+<p>衛生福利部中央健康保險署規劃事前審查癌症用藥上傳機制。為扣合賴總統於健康台灣之「國家癌症防治計畫」政策，本署刻正規劃NGS申報資料收載、癌症重大傷病申請、事前審查申請及癌症個案療效追蹤等癌症醫療資訊之數位轉型，期透過資料有效互通，達成以病人為中心之完整照護。</p>
 </div>
 
 <div  style="padding-left: 10px;"> 
@@ -60,7 +60,7 @@
 
 #### 使用案例(Use Case)
 <div  style="padding-left: 10px;"> 
-<p>本專案之主要實作者為醫院，醫院透過事前審查系統建立癌藥事前審查資料，透過共通傳輸平台批次上傳癌藥事前審查相關文件，並送至衛生福利部中央健康保險署審核。</p>
+<p>本專案之主要實作者為醫院，醫院透過事前審查系統建立事前審查資料，透過共通傳輸平台批次上傳事前審查相關文件，並送至衛生福利部中央健康保險署審核。</p>
 <img class="figure-img img-responsive img-rounded center-block" src="usecase.png" alt="IG use case" style="display: block;margin-left: auto;margin-right: auto;width: 45%;"/>
 </div>
 
@@ -68,7 +68,7 @@
 送核、送核補件、申復及申復補件之作業流程皆相同，依該個案是首次送審或不同意後再次送審等之狀態進行選擇不同的申請類別，以做為行政程序之判斷。
 
 送核、送核補件、申復及申復補件作業流程如下：
-1. 醫院開發癌藥事前審查系統產生癌藥事前審查報告（Bundle TWPAS）
+1. 醫院開發事前審查系統產生事前審查報告（Bundle TWPAS）
 2. 醫院將已產生之事前審查相關文件上傳至健保署
 3. 若資料符合格式，健保署回覆上傳成功訊息，由醫院查詢上傳結果
 4. 若資料不符合格式，健保署回覆上傳失敗訊息，由醫院查詢上傳結果

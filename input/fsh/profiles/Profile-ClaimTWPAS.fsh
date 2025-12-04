@@ -68,7 +68,16 @@ Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進�
     radiotherapy 0..* and
     carePlanDocument 0..* and
     medicalRecord 0..* and
-    treatmentAssessment 0..*
+    treatmentAssessment 0..* and
+    bloodgroup 0..1 and
+    opd 0..* and
+    diagnosis 0..* and
+    allergy 0..* and
+    subjective 0..* and
+    objective 0..* and
+    assessment 0..* and
+    plan 0..*
+
 * supportingInfo[weight] ^short = "病人體重"
 * supportingInfo[weight].category = NHIPASSupportingInfoType#weight
 * supportingInfo[weight].timing[x] ..0
@@ -165,6 +174,63 @@ Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進�
 * supportingInfo[treatmentAssessment].timing[x] ..0
 * supportingInfo[treatmentAssessment].value[x] 1.. MS
 * supportingInfo[treatmentAssessment].value[x] only Reference(ObservationTreatmentAssessmentTWPAS)
+
+
+* supportingInfo[subjective] ^short = "主觀描述(S)"
+* supportingInfo[subjective].category = NHIPASSupportingInfoType#subjective
+* supportingInfo[subjective].timing[x] ..0
+* supportingInfo[subjective].value[x] 1.. MS
+* supportingInfo[subjective].value[x] only Reference(ObservationSubjectiveTWPAS)
+* supportingInfo[subjective].valueReference ^short = "主觀描述(S)"
+
+* supportingInfo[objective] ^short = "客觀描述(O)"
+* supportingInfo[objective].category = NHIPASSupportingInfoType#objective
+* supportingInfo[objective].timing[x] ..0
+* supportingInfo[objective].value[x] 1.. MS
+* supportingInfo[objective].value[x] only Reference(ObservationObjectiveTWPAS)
+* supportingInfo[objective].valueReference ^short = "客觀描述(O)"
+
+* supportingInfo[assessment] ^short = "評估(A)"
+* supportingInfo[assessment].category = NHIPASSupportingInfoType#assessment
+* supportingInfo[assessment].timing[x] ..0
+* supportingInfo[assessment].value[x] 1.. MS
+* supportingInfo[assessment].value[x] only Reference(ClinicalImpressionTWPAS)
+* supportingInfo[assessment].valueReference ^short = "評估(A)"
+
+* supportingInfo[plan] ^short = "計畫(P)"
+* supportingInfo[plan].category = NHIPASSupportingInfoType#plan
+* supportingInfo[plan].timing[x] ..0
+* supportingInfo[plan].value[x] 1.. MS
+* supportingInfo[plan].value[x] only Reference(CarePlanTWPAS)
+* supportingInfo[plan].valueReference ^short = "計畫(P)"
+
+* supportingInfo[allergy] ^short = "過敏史"
+* supportingInfo[allergy].category = NHIPASSupportingInfoType#allergy
+* supportingInfo[allergy].timing[x] ..0
+* supportingInfo[allergy].value[x] 1.. MS
+* supportingInfo[allergy].value[x] only Reference(AllergyIntoleranceTWPAS)
+* supportingInfo[allergy].valueReference ^short = "過敏史"
+
+* supportingInfo[bloodgroup] ^short = "血型"
+* supportingInfo[bloodgroup].category = NHIPASSupportingInfoType#bloodgroup
+* supportingInfo[bloodgroup].timing[x] ..0
+* supportingInfo[bloodgroup].value[x] 1.. MS
+* supportingInfo[bloodgroup].value[x] only Reference(ObservationBloodGroupTWPAS)
+* supportingInfo[bloodgroup].valueReference ^short = "血型"
+
+* supportingInfo[opd] ^short = "門診病歷"
+* supportingInfo[opd].category = NHIPASSupportingInfoType#opd
+* supportingInfo[opd].timing[x] ..0
+* supportingInfo[opd].value[x] 1.. MS
+* supportingInfo[opd].value[x] only Reference(EncounterOpdTWPAS)
+* supportingInfo[opd].valueReference ^short = "門診病歷"
+
+* supportingInfo[diagnosis] ^short = "診斷"
+* supportingInfo[diagnosis].category = NHIPASSupportingInfoType#diagnosis
+* supportingInfo[diagnosis].timing[x] ..0
+* supportingInfo[diagnosis].value[x] 1.. MS
+* supportingInfo[diagnosis].value[x] only Reference(ConditionTWPAS)
+* supportingInfo[diagnosis].valueReference ^short = "診斷"
 
 * procedure.procedure[x] only CodeableConcept
 * procedure.procedureCodeableConcept MS

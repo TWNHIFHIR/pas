@@ -55,7 +55,7 @@ Profile:        ClaimResponseTWPAS
 Parent:         ClaimResponse
 Id:             ClaimResponse-twpas
 Title:          "事前審查回覆-ClaimResponse TWPAS"
-Description:    "此事前審查回覆-ClaimResponse TWPAS Profile說明本IG如何進一步定義FHIR的ClaimResponse Resource以呈現癌藥事前審查回覆之內容"
+Description:    "此事前審查回覆-ClaimResponse TWPAS Profile說明本IG如何進一步定義FHIR的ClaimResponse Resource以呈現事前審查回覆之內容"
 
 * status = http://hl7.org/fhir/fm-status#active
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional

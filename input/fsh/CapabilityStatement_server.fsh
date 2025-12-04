@@ -4,7 +4,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/CapabilityStatement/CapabilityStatementTWPASServer"
 * version = "1.1.0"
 * name = "CapabilityStatementTWPASServer"
-* title = "臺灣癌藥事前審查-伺服端(TWPAS Server)"
+* title = "臺灣事前審查-伺服端(TWPAS Server)"
 * status = #active
 * experimental = false
 * publisher = "衛生福利部中央健康保險署"
@@ -17,7 +17,7 @@ Usage: #definition
 * implementationGuide = "https://nhicore.nhi.gov.tw/pas/ImplementationGuide/tw.gov.mohw.nhi.pas"
 * description = "臺灣健保事前審查實作指引(TWPAS IG)伺服端(Server)之能力聲明"
 * rest.mode = #server
-* rest.documentation = "臺灣癌藥事前審查-伺服端(TWPAS Server)必須(SHALL)：(1)支援本實作指引中所有profiles (2)根據FHIR規範實作RESTful (3)回傳狀態碼-①(Status 400)：無效參數(invalid parameter)、②(Status 401/4xx)：未經授權的請求(unauthorized request)、③(Status 403)：未充分授權的資料存取範圍(insufficient premission scope)、④(Status 404)：未知的resource(unknown resource) (4)支援JSON格式 (5)可識別每個新增到Server的實例(instance)之meta.profile是否為臺灣癌藥事前審查Profiles Defining URL，並確認實例是否依循Profile製作。臺灣癌藥事前審查-伺服端建議應該(SHOULD)：(1)支援XML格式。"
+* rest.documentation = "臺灣事前審查-伺服端(TWPAS Server)必須(SHALL)：(1)支援本實作指引中所有profiles (2)根據FHIR規範實作RESTful (3)回傳狀態碼-①(Status 400)：無效參數(invalid parameter)、②(Status 401/4xx)：未經授權的請求(unauthorized request)、③(Status 403)：未充分授權的資料存取範圍(insufficient premission scope)、④(Status 404)：未知的resource(unknown resource) (4)支援JSON格式 (5)可識別每個新增到Server的實例(instance)之meta.profile是否為臺灣事前審查Profiles Defining URL，並確認實例是否依循Profile製作。臺灣事前審查-伺服端建議應該(SHOULD)：(1)支援XML格式。"
 * rest.security.service[0] = http://terminology.hl7.org/CodeSystem/restful-security-service#SMART-on-FHIR
 * rest.security.description = "Server必須(SHALL)透過回傳 HTTP 401「未授權」， HTTP 403「禁止」，或 HTTP 404 「未找到」，來拒絕任何未經授權的請求。"
 
@@ -452,7 +452,7 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 * text.status = #extensions
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-    <h2 id=\"title\">臺灣癌藥事前審查-伺服端(TWPAS Server)</h2>
+    <h2 id=\"title\">臺灣事前審查-伺服端(TWPAS Server)</h2>
     <ul>
         <li>實作指引版本：1.1.0</li>
         <li>FHIR版本：4.0.1</li>
@@ -471,7 +471,7 @@ Usage: #definition
         </div>
         <div class=\"panel-body\">
             <div>
-                <p>臺灣癌藥事前審查-伺服端(TWPAS Server)<b>必須(SHALL)</b>：<br/>
+                <p>臺灣事前審查-伺服端(TWPAS Server)<b>必須(SHALL)</b>：<br/>
                     (1)可透過FHIR RESTful API查詢、新增及刪除Resources<br/>
                     (2)根據FHIR規範實作RESTful API<br/>
                     (3)HTTP回傳狀態碼<br/>
@@ -483,7 +483,7 @@ Usage: #definition
                     (4)Server提供的API操作皆支援JSON格式<br/>
                     (5)可識別每個新增到Server的實例（instance）之meta.profile是否為TWPAS Profiles Defining
                     URL，並確認實例是否依循Profile製作。<br/>【註：實例是指依據Profile實作，將真實資料以JSON、XML或Turtle格式存放的檔案】</p>
-                    <p>臺灣癌藥事前審查-伺服端(TWPAS Server)<b>建議應該(SHOULD)</b>：<br/>
+                    <p>臺灣事前審查-伺服端(TWPAS Server)<b>建議應該(SHOULD)</b>：<br/>
                         (1)Server提供的API操作皆支援XML格式</p>
                 <p>安全性：<br/>
                     (1)Server<b>必須(SHALL)</b>透過回傳 HTTP 401「未授權」， HTTP 403「禁止」，或 HTTP 404 「未找到」，來拒絕任何未經授權的請求。</p>

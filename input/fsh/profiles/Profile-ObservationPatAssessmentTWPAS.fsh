@@ -2,7 +2,7 @@ Profile:        ObservationPatientAssessmentTWPAS
 Parent:         Observation
 Id:             Observation-pat-assessment-twpas
 Title:          "病人狀態評估-Observation Patient Assessment TWPAS"
-Description:    "此病人狀態評估-Observation Patient Assessment TWPAS Profile說明本IG如何進一步定義FHIR的Observation Resource以呈現癌藥事前審查中評估資訊之病人狀態評估"
+Description:    "此病人狀態評估-Observation Patient Assessment TWPAS Profile說明本IG如何進一步定義FHIR的Observation Resource以呈現事前審查中評估資訊之病人狀態評估"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-pat-assessment-twpas"

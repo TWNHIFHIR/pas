@@ -4,7 +4,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/CapabilityStatement/CapabilityStatementTWPASClient"
 * version = "1.1.0"
 * name = "CapabilityStatementTWPASClient"
-* title = "臺灣癌藥事前審查-用戶端(TWPAS Client)"
+* title = "臺灣事前審查-用戶端(TWPAS Client)"
 * status = #active
 * experimental = false
 * publisher = "衛生福利部中央健康保險署"
@@ -17,7 +17,7 @@ Usage: #definition
 * implementationGuide = "https://nhicore.nhi.gov.tw/pas/ImplementationGuide/tw.gov.mohw.nhi.pas"
 * description = "臺灣健保事前審查實作指引(TWPAS IG)用戶端(Client)之能力聲明"
 * rest.mode = #client
-* rest.documentation = "臺灣癌藥事前審查-用戶端(TWPAS Client)必須（SHALL）使用臺灣癌藥事前審查伺服端（TWPAS Server）能力聲明中的查詢參數，支援讀取和查詢一個或多個臺灣癌藥事前審查Profile(s)。"
+* rest.documentation = "臺灣事前審查-用戶端(TWPAS Client)必須（SHALL）使用臺灣事前審查伺服端（TWPAS Server）能力聲明中的查詢參數，支援讀取和查詢一個或多個臺灣事前審查Profile(s)。"
 * rest.security.service[0] = http://terminology.hl7.org/CodeSystem/restful-security-service#SMART-on-FHIR
 * rest.security.description = "有關要求和建議，請參閱[安全性](security.html)。"
 
@@ -452,7 +452,7 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 * text.status = #extensions
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-    <h2 id=\"title\">臺灣癌藥事前審查-用戶端(TWPAS Client)</h2>
+    <h2 id=\"title\">臺灣事前審查-用戶端(TWPAS Client)</h2>
     <ul>
         <li>實作指引版本：1.1.0</li>
         <li>FHIR版本：4.0.1</li>
@@ -471,8 +471,8 @@ Usage: #definition
         </div>
         <div class=\"panel-body\">
             <div>
-                <p>臺灣癌藥事前審查-用戶端(TWPAS Client)<b>必須(SHALL)</b>：<br/>
-                    (1)使用臺灣癌藥事前審查伺服端（TWPAS Server）能力聲明中的查詢參數，支援讀取和查詢一個或多個臺灣癌藥事前審查Profile（s）</p>
+                <p>臺灣事前審查-用戶端(TWPAS Client)<b>必須(SHALL)</b>：<br/>
+                    (1)使用臺灣事前審查伺服端（TWPAS Server）能力聲明中的查詢參數，支援讀取和查詢一個或多個臺灣事前審查Profile（s）</p>
                 <p>安全性：<br/>
                     (1)有關要求和建議，請參閱<a href=\"security.html\">安全性</a>。</p>
             </div>
