@@ -131,3 +131,16 @@ Description: "申請(Apply)免疫製劑(Immunologic Aagent)事前審查之資料
 * apply.approveNum 0..* decimal "審查結果數量" "審查結果數量"
 * apply.approveComment 0..* CodeableConcept "核定註記" "核定註記"
 * apply.acceptanceStatus 0..1 code "案件受理狀態" "案件受理狀態"
+
+
+Mapping: TWPASImmPatient
+Id: TWPASImmPatient
+Title: "Mapping to TWPAS Patient"
+Source: ApplyImmModel
+Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Patient-twpas"
+* patient -> "Patient"
+* patient.name -> "Patient.name.text"
+* patient.idCard -> "Patient.identifier.where(type.coding.code = 'NNxxx').value"
+* patient.patId -> "Patient.identifier.where(type.coding.code = 'MR').value"
+* patient.birthday -> "Patient.birthDate"
+* patient.gender -> "Patient.gender"

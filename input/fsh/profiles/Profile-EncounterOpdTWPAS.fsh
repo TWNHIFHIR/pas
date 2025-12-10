@@ -18,6 +18,11 @@ Description:    "此門診病歷-Encounter OPD TWPAS Profile說明本IG如何進
 * subject only Reference(PatientTWPAS)
 * participant.individual only Reference(PractitionerTWPAS)
 * serviceProvider only Reference(OrganizationTWPAS)
+* period 1..1
+* period.start 1..1
+* serviceProvider 1..1
+* participant 1..
+* participant.individual 1..
 
 * serviceProvider ^short = "醫事機構代碼，必須存在於醫事機構基本資料檔內。"
 * period.start ^short = "門診日期，YYYY-MM-DD，西元年月日。"
@@ -98,7 +103,7 @@ Description:    "此評估-ClinicalImpression TWPAS Profile說明本IG如何進�
 * subject only Reference(PatientTWPAS)
 * encounter 1..1
 * encounter only Reference(EncounterOpdTWPAS)
-//* code = http://loinc.org#11494-2
+* summary 1..1
 * summary ^short = "評估，由醫院自行填寫。"
 
 
