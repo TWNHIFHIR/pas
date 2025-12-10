@@ -132,13 +132,54 @@ Description: "申請(Apply)免疫製劑(Immunologic Aagent)事前審查之資料
 * apply.approveComment 0..* CodeableConcept "核定註記" "核定註記"
 * apply.acceptanceStatus 0..1 code "案件受理狀態" "案件受理狀態"
 
+Mapping: TWPASImmClaim
+Id: TWPASImmClaim
+Title: "Mapping to TWPAS Claim Immunologic Aagent"
+Source: ApplyImmModel
+Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-immunologic-agent-twpas"
+* hosp.hospId -> "Claim.provider.reference"
+* hosp.applType -> "Claim.subType.coding.code"
+* hosp.funcType -> "Claim.extension.where(url = 'https://nhicore.nhi.gov.tw/pas/StructureDefinition/extension-claim-encounter').valueReference.reference"
+* hosp.applPrsnId -> "Claim.enterer.reference"
+* hosp.applDate -> "Claim.created"
+* hosp.tmhbType -> "Claim.priority.coding.code"
+* hosp.oldAcptNo -> "Claim.identifier.value"
+
+* patient.idCard -> "Claim.patient.reference"
+* patient.weight -> "Claim.supportingInfo.where(category.coding.code = 'weight').valueQuantity.value"
+* patient.height -> "Claim.supportingInfo.where(category.coding.code = 'height').valueQuantity.value"
+* patient.pregnant -> "Claim.supportingInfo.where(category.coding.code = 'pregnancyBreastfeedingStatus').valueBoolean"
+
+* diagnosis.imageStudy.imgItem -> "Claim.supportingInfo.where(category.coding.code = 'imagingReport').valueReference.reference"
+* diagnosis.examinationReport.reportResult.reportResultPdf -> "Claim.supportingInfo.where(category.coding.code = 'examinationReport').valueReference.reference"
+* diagnosis.medrec -> "Claim.supportingInfo.where(category.coding.code = 'medicalRecord').valueReference.reference"
+* evaluate.tests.inspect -> "Claim.supportingInfo.where(category.coding.code = 'tests').valueReference.reference"
+* evaluate.patientAssessment.patAst -> "Claim.supportingInfo.where(category.coding.code = 'patientAssessment').valueReference.reference"
+
+* treat.medicationRequest.drugCode -> "Claim.supportingInfo.where(category.coding.code = 'medicationRequest').valueReference.reference"
+* treat.radiotherapy.rt -> "Claim.supportingInfo.where(category.coding.code = 'radiotherapy').valueReference.reference"
+* treat.carePlanDocument -> "Claim.supportingInfo.where(category.coding.code = 'carePlanDocument').valueReference.reference"
+* result.txAst -> "Claim.supportingInfo.where(category.coding.code = 'treatmentAssessment').valueReference.reference"
+* diagnosis.icd10cmCode -> "Claim.diagnosis.diagnosisCodeableConcept.coding.code"
+* diagnosis.diagDate -> "Claim.diagnosis.extension.where(url = 'http://hl7.org/fhir/us/davinci-pas/StructureDefinition/extension-diagnosisRecordedDate').valueDate"
+* diagnosis.diagCurrentStatus -> "Claim.diagnosis.type.text"
+* treat.opCode -> "Claim.procedure.procedureCodeableConcept.coding"
+* treat.opDate -> "Claim.procedure.date"
+* apply.orderType -> "Claim.item.productOrService.coding.code"
+* apply.continuation -> "Claim.item.modifier.where(coding.system = 'https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-continuation-status').coding.code"
+* apply.lot -> "Claim.item.modifier.where(coding.system = 'https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-line-of-therapy').coding.code"
+* apply.cancerDrugType -> "Claim.item.extension.where(url = 'https://nhicore.nhi.gov.tw/pas/StructureDefinition/extension-requestedService').valueReference.reference"
+* apply.applyReason -> "Claim.item.programCode"
+* apply.applySide -> "Claim.item.bodySite"
+* apply.applQty -> "Claim.item.quantity.value"
+* apply.applQtyUnit -> "Claim.item.quantity.unit"
+
 
 Mapping: TWPASImmPatient
 Id: TWPASImmPatient
 Title: "Mapping to TWPAS Patient"
 Source: ApplyImmModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Patient-twpas"
-* patient -> "Patient"
 * patient.name -> "Patient.name.text"
 * patient.idCard -> "Patient.identifier.where(type.coding.code = 'NNxxx').value"
 * patient.patId -> "Patient.identifier.where(type.coding.code = 'MR').value"
