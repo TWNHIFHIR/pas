@@ -58,7 +58,7 @@ Description:    "此非DICOM影像-Media TWPAS Profile說明本IG如何進一步
 
 Invariant:   UploadContent
 Description: "填寫格式：file://檔名.副檔名，例如：file://US01.jpg、file://PathologyReport01.pdf、file://GenReport01.pdf、file://王大明病歷.pdf"
-Expression:  "url.matches('^file://[a-zA-Z0-9_\u4e00-\u9fa5()（）\uFF0D\-]+.[a-zA-Z]{2,5}$')"
+Expression:  "url.matches('^file://[a-zA-Z0-9_\u4e00-\u9fa5()（）\uFF0D-]+.[a-zA-Z]{2,5}$')"
 Severity:    #error
 
 ValueSet: MediaMimeTypes

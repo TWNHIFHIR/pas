@@ -40,7 +40,7 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-twpas"
 * apply.applyReason -> "Claim.item.programCode"
 * apply.applySide -> "Claim.item.bodySite"
 * apply.applQty -> "Claim.item.quantity.value"
-* apply.applQtyUnit -> "Claim.item.quantity.unit"
+* apply.applQtyUnit -> "Claim.item.quantity.code"
 
 
 Mapping: TWPASPatient
@@ -198,7 +198,7 @@ Title: "Mapping to TWPAS Substance"
 Source: ApplyModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Substance-twpas"
 * treat.radiotherapy.rtDose -> "Substance.ingredient.quantity.numerator.value"
-* treat.radiotherapy.rtUnit -> "Substance.ingredient.quantity.numerator.unit"
+* treat.radiotherapy.rtUnit -> "Substance.ingredient.quantity.numerator.code"
 
 Mapping: TWPASDocumentReference
 Id: TWPASDocumentReference
@@ -243,9 +243,10 @@ Title: "Mapping to TWPAS ClaimResponse Self Assessment"
 Source: ApplyModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/ClaimResponse-self-assessment-twpas"
 * apply.approveDate -> "ClaimResponse.created"
+* apply.approver -> "ClaimResponse.extension:requestor"
+* apply.approveComment -> "ClaimResponse.item.adjudication.reason"
 * apply.approveNum -> "ClaimResponse.item.adjudication.value"
-* apply.approveComment -> "ClaimResponse.item.adjudication.reason.coding.code"
-* apply.acceptanceStatus -> "ClaimResponse.disposition"
+* apply.acceptanceStatus -> "ClaimResponse.detail.adjudication.reason"
 
 Mapping: TWPASPractitioner
 Id: TWPASPractitioner

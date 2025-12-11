@@ -172,7 +172,7 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-immunologic-ag
 * apply.applyReason -> "Claim.item.programCode"
 * apply.applySide -> "Claim.item.bodySite"
 * apply.applQty -> "Claim.item.quantity.value"
-* apply.applQtyUnit -> "Claim.item.quantity.unit"
+* apply.applQtyUnit -> "Claim.item.quantity.code"
 
 
 Mapping: TWPASImmPatient
