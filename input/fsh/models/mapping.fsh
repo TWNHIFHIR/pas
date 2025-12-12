@@ -48,7 +48,6 @@ Id: TWPASPatient
 Title: "Mapping to TWPAS Patient"
 Source: ApplyModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Patient-twpas"
-* patient -> "Patient"
 * patient.name -> "Patient.name.text"
 * patient.idCard -> "Patient.identifier.where(type.coding.code = 'NNxxx').value"
 * patient.patId -> "Patient.identifier.where(type.coding.code = 'MR').value"
@@ -60,7 +59,6 @@ Id: TWPASOrganization
 Title: "Mapping to TWPAS Organization"
 Source: ApplyModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Organization-twpas"
-
 * hosp.hospId -> "Organization.identifier.value"
 * gene.genOrg -> "Organization.identifier.value"
 
@@ -229,11 +227,11 @@ Title: "Mapping to TWPAS MedicationRequestApply"
 Source: ApplyModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/MedicationRequest-apply-twpas"
 * apply.cancerDrugType -> "MedicationRequest.medicationCodeableConcept.coding.code"
-* apply.applDrugFre -> "MedicationRequest.dosageInstruction.timing.code.coding.code"
-* apply.applDosage -> "MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.value"
-* apply.applDosageUnit -> "MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.unit"
-* apply.useSdate -> "MedicationRequest.dosageInstruction.timing.repeat.boundsPeriod.start"
-* apply.useEdate -> "MedicationRequest.dosageInstruction.timing.repeat.boundsPeriod.end"
+* apply.applDrugFre -> "MedicationRequest.dosageInstruction.timing.code.coding"
+* apply.applDosage -> "MedicationRequest.dosageInstruction.doseAndRate.dose[x].value"
+* apply.applDosageUnit -> "MedicationRequest.dosageInstruction.doseAndRate.dose[x].unit"
+* apply.useSdate -> "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].start"
+* apply.useEdate -> "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].end"
 * apply.applDrugCycle -> "MedicationRequest.dosageInstruction.timing.repeat.count"
 * apply.applDrugRoute -> "MedicationRequest.dosageInstruction.route"
 
@@ -246,7 +244,7 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/ClaimResponse-self-a
 * apply.approver -> "ClaimResponse.extension:requestor"
 * apply.approveComment -> "ClaimResponse.item.adjudication.reason"
 * apply.approveNum -> "ClaimResponse.item.adjudication.value"
-* apply.acceptanceStatus -> "ClaimResponse.detail.adjudication.reason"
+* apply.acceptanceStatus -> "ClaimResponse.item.detail.adjudication.reason"
 
 Mapping: TWPASPractitioner
 Id: TWPASPractitioner

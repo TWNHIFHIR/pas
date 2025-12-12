@@ -149,6 +149,17 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-immunologic-ag
 * patient.weight -> "Claim.supportingInfo.where(category.coding.code = 'weight').valueQuantity.value"
 * patient.height -> "Claim.supportingInfo.where(category.coding.code = 'height').valueQuantity.value"
 * patient.pregnant -> "Claim.supportingInfo.where(category.coding.code = 'pregnancyBreastfeedingStatus').valueBoolean"
+* patient.blood -> "Claim.supportingInfo.where(category.coding.code = 'bloodgroup').valueReference"
+* patient.allergy -> "Claim.supportingInfo.where(category.coding.code = 'allergy').valueReference"
+
+
+* opd.funcDate -> "Claim.supportingInfo.where(category.coding.code = 'opd').valueReference"
+* opd.icd10cmCode -> "Claim.supportingInfo.where(category.coding.code = 'diagnosis').valueReference"
+* opd.subjective -> "Claim.supportingInfo.where(category.coding.code = 'subjective').valueReference"
+* opd.objective -> "Claim.supportingInfo.where(category.coding.code = 'objective').valueReference"
+* opd.assessment -> "Claim.supportingInfo.where(category.coding.code = 'assessment').valueReference"
+* opd.plan -> "Claim.supportingInfo.where(category.coding.code = 'plan').valueReference"
+
 
 * diagnosis.imageStudy.imgItem -> "Claim.supportingInfo.where(category.coding.code = 'imagingReport').valueReference.reference"
 * diagnosis.examinationReport.reportResult.reportResultPdf -> "Claim.supportingInfo.where(category.coding.code = 'examinationReport').valueReference.reference"
@@ -185,3 +196,19 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Patient-twpas"
 * patient.patId -> "Patient.identifier.where(type.coding.code = 'MR').value"
 * patient.birthday -> "Patient.birthDate"
 * patient.gender -> "Patient.gender"
+
+
+Mapping: TWPASObservationBloodGroup
+Id: TWPASObservationBloodGroup
+Title: "Mapping to TWPAS ObservationBloodGroupTWPAS"
+Source: ApplyModel
+Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-blood-group-twpas"
+* patient.blood -> "Observation.value[x]"
+
+
+Mapping: TWPASAllergyIntolerance
+Id: TWPASAllergyIntolerance
+Title: "Mapping to TWPAS AllergyIntolerance"
+Source: ApplyModel
+Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/AllergyIntolerance-twpas"
+* patient.allergy -> "AllergyIntolerance.code"

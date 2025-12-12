@@ -15,7 +15,7 @@ Description: "申請(Apply)癌症用藥癌藥事前審查之資料模型，此�
 * hosp.oldAcptNo 0..1 string "原受理編號" "原受理編號"
 
 * patient 1..1 BackboneElement "病人資訊" "病人資訊"
-* patient.name 1..1 HumanName "姓名" "姓名"
+* patient.name 1..1 string "姓名" "姓名"
 * patient.idCard 1..1 string "身分證字號" "身分證字號"
 * patient.patId 0..1 string "病歷號" "病歷號 (參與醫院必須註冊命名系統)"
 * patient.birthday 1..1 date "出生日期" "出生日期"
