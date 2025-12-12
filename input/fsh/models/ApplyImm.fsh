@@ -201,7 +201,7 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Patient-twpas"
 Mapping: TWPASObservationBloodGroup
 Id: TWPASObservationBloodGroup
 Title: "Mapping to TWPAS ObservationBloodGroupTWPAS"
-Source: ApplyModel
+Source: ApplyImmModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-blood-group-twpas"
 * patient.blood -> "Observation.value[x]"
 
@@ -209,6 +209,6 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-blood-gr
 Mapping: TWPASAllergyIntolerance
 Id: TWPASAllergyIntolerance
 Title: "Mapping to TWPAS AllergyIntolerance"
-Source: ApplyModel
+Source: ApplyImmModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/AllergyIntolerance-twpas"
 * patient.allergy -> "AllergyIntolerance.code"
