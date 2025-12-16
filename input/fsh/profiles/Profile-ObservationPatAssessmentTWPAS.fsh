@@ -69,7 +69,7 @@ Description:    "此病人狀態評估-Observation Patient Assessment TWPAS Prof
 * component[peripheral-sensory-neuropathy].value[x] ^short = "grade1~5"
 
 * derivedFrom only Reference(DocumentReferenceTWPAS)
-* derivedFrom ^short = "病人狀態評估報告及病人狀態評估報告名稱（檔案路徑）"
+* derivedFrom ^short = "病人狀態評估報告（檔案路徑）及病人狀態評估報告名稱"
 
 Invariant:   pat-ast-value
 Description: "若病人狀態評估項目代碼(code)為88020-3，結果值(valueString)須填寫class1/class2/class3/class4其中一項；若病人狀態評估項目代碼(code)為98153-0，結果值(valueString)須填寫A/B/C其中一項；若病人狀態評估項目代碼(code)為89247-1，結果值(valueInteger)須填寫0~5其中的值；若病人狀態評估項目代碼(code)為89243-0，結果值(valueInteger)須填寫0~100其中的值；若病人狀態評估項目代碼(code)為IPS，結果值(valueInteger)須填寫0~7其中的值；若病人狀態評估項目代碼(code)為PDAI，結果值(valueInteger)須填寫0~263其中的值；若病人狀態評估項目代碼(code)為CIRS，結果值(valueInteger)須填寫0~56其中的值；若病人狀態評估項目代碼(code)為75633-8，結果值(valueInteger)須填寫0~10其中的值；若病人狀態評估項目代碼(code)為HCTCI，結果值(valueInteger)須填寫0~26其中的值；若病人狀態評估項目代碼(code)為MPNSAFTSS，結果值(valueInteger)須填寫0~5其中的值；若病人狀態評估項目代碼(code)為MPN10，結果值(valueInteger)須填寫0~5其中的值；若病人狀態評估項目代碼(code)為711434002，結果值(component.valueString)須填寫grade1/grade2/grade3/grade4/grade5其中一項。"

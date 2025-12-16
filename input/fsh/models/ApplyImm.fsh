@@ -79,8 +79,8 @@ Description: "申請(Apply)免疫製劑(Immunologic Aagent)事前審查之資料
 * evaluate.patientAssessment.patAst 1..1 CodeableConcept "病人狀態評估項目代碼" "病人狀態評估項目代碼"
 * evaluate.patientAssessment.patAstResult 1..1 string "病人狀態評估結果" "病人狀態評估結果"
 * evaluate.patientAssessment.patAstDate 1..1 dateTime "病人狀態評估日期" "病人狀態評估日期"
-* evaluate.patientAssessment.patAstPdf 0..* base64Binary "病人狀態評估報告" "病人狀態評估報告"
-* evaluate.patientAssessment.patAstPdfTitle 0..* string "病人狀態評估報告名稱（檔案路徑）" "病人狀態評估報告名稱（檔案路徑）"
+* evaluate.patientAssessment.patAstPdf 0..* base64Binary "病人狀態評估報告（檔案路徑）" "病人狀態評估報告（檔案路徑）"
+* evaluate.patientAssessment.patAstPdfTitle 0..* string "病人狀態評估報告名稱" "病人狀態評估報告名稱"
 * evaluate.patientAssessment.patAstPerformer 1..1 string "評估項目醫事人員身分證號" "評估項目醫事人員身分證號"
 
 * treat 0..* BackboneElement "治療資訊" "治療資訊"
