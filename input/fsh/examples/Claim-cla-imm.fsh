@@ -52,14 +52,14 @@ Usage: #example
 * supportingInfo[allergy].sequence = 17
 * supportingInfo[allergy].valueReference.reference = "AllergyIntolerance/all-min"
 
-* supportingInfo[subjective].sequence = 18
+/* supportingInfo[subjective].sequence = 18
 * supportingInfo[subjective].valueReference.reference = "Observation/obs-subjective"
 * supportingInfo[objective].sequence = 19
 * supportingInfo[objective].valueReference.reference = "Observation/obs-objective"
 * supportingInfo[assessment].sequence = 20
 * supportingInfo[assessment].valueReference.reference = "ClinicalImpression/cliImp-min"
 * supportingInfo[plan].sequence = 21
-* supportingInfo[plan].valueReference.reference = "CarePlan/careplan-min"
+* supportingInfo[plan].valueReference.reference = "CarePlan/careplan-min"*/
 
 * diagnosis.sequence = 1
 * diagnosis.diagnosisCodeableConcept  = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2023-tw#I50.812

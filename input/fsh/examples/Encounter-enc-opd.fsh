@@ -10,6 +10,10 @@ Usage: #example
 * serviceProvider.reference = "Organization/org-hosp-example" 
 * participant.individual.reference = "Practitioner/pra-min"
 * diagnosis.condition.reference = "Condition/con-diagnosis"
+* extension[subjective].valueReference.reference = "Observation/obs-subjective"
+* extension[objective].valueReference.reference = "Observation/obs-objective"
+* extension[assessment].valueReference.reference = "ClinicalImpression/cliImp-min"
+* extension[plan].valueReference.reference = "CarePlan/careplan-min"
 
 
 Instance: obs-subjective
