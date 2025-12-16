@@ -21,13 +21,16 @@ Description:    "此門診病歷-Encounter OPD TWPAS Profile說明本IG如何進
 * period 1..1
 * period.start 1..1
 * serviceProvider 1..1
-* participant 1..
+* participant 1..1
 * participant.individual 1..
+* diagnosis 1..1
 
 * serviceProvider ^short = "醫事機構代碼，必須存在於醫事機構基本資料檔內。"
 * period.start ^short = "門診日期，YYYY-MM-DD，西元年月日。"
 * serviceType ^short = "科別，完整代碼對應表請參照就醫科別對應表。"
 * participant.individual ^short = "門診醫師"
+* diagnosis.condition ^short = "診斷"
+* diagnosis.condition only Reference(ConditionTWPAS)
 
 * class ^short = "就醫分類。【因FHIR設計而需必填】"
 * class from ActEncounterCode
@@ -51,8 +54,6 @@ Description:    "此診斷-Condition TWPAS Profile說明本IG如何進一步定�
 * category.coding = http://loinc.org#29548-5
 * subject 1..1
 * subject only Reference(PatientTWPAS)
-* encounter 1..1
-* encounter only Reference(EncounterOpdTWPAS)
 * code 1..1
 * code.coding 1..1
 * code ^short = "診斷"

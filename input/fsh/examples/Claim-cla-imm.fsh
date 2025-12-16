@@ -47,18 +47,18 @@ Usage: #example
 * supportingInfo[treatmentAssessment].valueReference.reference = "Observation/obs-tx-min"
 * supportingInfo[opd].sequence = 16
 * supportingInfo[opd].valueReference.reference = "Encounter/enc-opd"
-* supportingInfo[diagnosis].sequence = 17
-* supportingInfo[diagnosis].valueReference.reference = "Condition/con-diagnosis"
-* supportingInfo[allergy].sequence = 18
+/* supportingInfo[diagnosis].sequence = 17
+* supportingInfo[diagnosis].valueReference.reference = "Condition/con-diagnosis"*/
+* supportingInfo[allergy].sequence = 17
 * supportingInfo[allergy].valueReference.reference = "AllergyIntolerance/all-min"
 
-* supportingInfo[subjective].sequence = 19
+* supportingInfo[subjective].sequence = 18
 * supportingInfo[subjective].valueReference.reference = "Observation/obs-subjective"
-* supportingInfo[objective].sequence = 20
+* supportingInfo[objective].sequence = 19
 * supportingInfo[objective].valueReference.reference = "Observation/obs-objective"
-* supportingInfo[assessment].sequence = 21
+* supportingInfo[assessment].sequence = 20
 * supportingInfo[assessment].valueReference.reference = "ClinicalImpression/cliImp-min"
-* supportingInfo[plan].sequence = 22
+* supportingInfo[plan].sequence = 21
 * supportingInfo[plan].valueReference.reference = "CarePlan/careplan-min"
 
 * diagnosis.sequence = 1
