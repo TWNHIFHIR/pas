@@ -1,8 +1,8 @@
-Mapping: TWPASClaim
-Id: TWPASClaim
-Title: "Mapping to TWPAS Claim"
-Source: ApplyModel
-Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-twpas"
+Mapping: TWPASImmClaim
+Id: TWPASImmClaim
+Title: "Mapping to TWPAS Claim Immunologic Aagent"
+Source: ApplyImmModel
+Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-immunologic-agent-twpas"
 * hosp.hospId -> "Claim.provider.reference"
 * hosp.applType -> "Claim.subType.coding.code"
 * hosp.funcType -> "Claim.extension.where(url = 'https://nhicore.nhi.gov.tw/pas/StructureDefinition/extension-claim-encounter').valueReference.reference"
@@ -15,12 +15,19 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-twpas"
 * patient.weight -> "Claim.supportingInfo.where(category.coding.code = 'weight').valueQuantity.value"
 * patient.height -> "Claim.supportingInfo.where(category.coding.code = 'height').valueQuantity.value"
 * patient.pregnant -> "Claim.supportingInfo.where(category.coding.code = 'pregnancyBreastfeedingStatus').valueBoolean"
+* patient.blood -> "Claim.supportingInfo.where(category.coding.code = 'bloodgroup').valueReference"
+* patient.allergy -> "Claim.supportingInfo.where(category.coding.code = 'allergy').valueReference"
+
+* opd.funcDate -> "Claim.supportingInfo.where(category.coding.code = 'opd').valueReference"
+* opd.icd10cmCode -> "Claim.supportingInfo.where(category.coding.code = 'diagnosis').valueReference"
+* opd.subjective -> "Claim.supportingInfo.where(category.coding.code = 'subjective').valueReference"
+* opd.objective -> "Claim.supportingInfo.where(category.coding.code = 'objective').valueReference"
+* opd.assessment -> "Claim.supportingInfo.where(category.coding.code = 'assessment').valueReference"
+* opd.plan -> "Claim.supportingInfo.where(category.coding.code = 'plan').valueReference"
 
 * diagnosis.imageStudy.imgItem -> "Claim.supportingInfo.where(category.coding.code = 'imagingReport').valueReference.reference"
-* diagnosis.cancerStage.assessItem -> "Claim.supportingInfo.where(category.coding.code = 'cancerStage').valueReference.reference"
 * diagnosis.examinationReport.reportResult.reportResultPdf -> "Claim.supportingInfo.where(category.coding.code = 'examinationReport').valueReference.reference"
 * diagnosis.medrec -> "Claim.supportingInfo.where(category.coding.code = 'medicalRecord').valueReference.reference"
-* gene.genTestCode -> "Claim.supportingInfo.where(category.coding.code = 'geneInfo').valueReference.reference"
 * evaluate.tests.inspect -> "Claim.supportingInfo.where(category.coding.code = 'tests').valueReference.reference"
 * evaluate.patientAssessment.patAst -> "Claim.supportingInfo.where(category.coding.code = 'patientAssessment').valueReference.reference"
 
@@ -43,10 +50,10 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-twpas"
 * apply.applQtyUnit -> "Claim.item.quantity.code"
 
 
-Mapping: TWPASPatient
-Id: TWPASPatient
+Mapping: TWPASImmPatient
+Id: TWPASImmPatient
 Title: "Mapping to TWPAS Patient"
-Source: ApplyModel
+Source: ApplyImmModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Patient-twpas"
 * patient.name -> "Patient.name.text"
 * patient.idCard -> "Patient.identifier.where(type.coding.code = 'NNxxx').value"
@@ -54,25 +61,78 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Patient-twpas"
 * patient.birthday -> "Patient.birthDate"
 * patient.gender -> "Patient.gender"
 
-Mapping: TWPASOrganization
-Id: TWPASOrganization
-Title: "Mapping to TWPAS Organization"
-Source: ApplyModel
-Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Organization-twpas"
-* hosp.hospId -> "Organization.identifier.value"
-* gene.genOrg -> "Organization.identifier.value"
 
-Mapping: TWPASEncounter
-Id: TWPASEncounter
-Title: "Mapping to TWPAS Encounter"
-Source: ApplyModel
-Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Encounter-twpas"
-* hosp.funcType -> "Encounter.serviceType.coding.code"
+Mapping: TWPASObservationBloodGroup
+Id: TWPASObservationBloodGroup
+Title: "Mapping to TWPAS ObservationBloodGroupTWPAS"
+Source: ApplyImmModel
+Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-blood-group-twpas"
+* patient.blood -> "Observation.value[x]"
 
-Mapping: TWPASDiagnosticReportImage
-Id: TWPASDiagnosticReportImage
+
+Mapping: TWPASAllergyIntolerance
+Id: TWPASAllergyIntolerance
+Title: "Mapping to TWPAS AllergyIntolerance"
+Source: ApplyImmModel
+Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/AllergyIntolerance-twpas"
+* patient.allergy -> "AllergyIntolerance.code"
+
+
+Mapping: TWPASEncounterOpd
+Id: TWPASEncounterOpd
+Title: "Mapping to TWPAS Encounter OPD"
+Source: ApplyImmModel
+Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Encounter-opd-twpas"
+* opd.hospId -> "Encounter.serviceProvider"
+* opd.funcDate -> "Encounter.period.start"
+* opd.funcType -> "Encounter.serviceType"
+* opd.prsnId -> "Encounter.participant.individual"
+
+
+Mapping: TWPASCondition
+Id: TWPASCondition
+Title: "Mapping to TWPAS Condition"
+Source: ApplyImmModel
+Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Condition-twpas"
+* opd.icd10cmCode -> "Condition.code"
+
+
+Mapping: TWPASObservationSubjective
+Id: TWPASObservationSubjective
+Title: "Mapping to TWPAS Observation Subjective"
+Source: ApplyImmModel
+Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-subjective-twpas"
+* opd.subjective -> "Observation.value[x]"
+
+
+Mapping: TWPASObservationObjective
+Id: TWPASObservationObjective
+Title: "Mapping to TWPAS Observation Objective"
+Source: ApplyImmModel
+Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-objective-twpas"
+* opd.objective -> "Observation.value[x]"
+
+
+Mapping: TWPASClinicalImpression
+Id: TWPASClinicalImpression
+Title: "Mapping to TWPAS ClinicalImpression"
+Source: ApplyImmModel
+Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/ClinicalImpression-twpas"
+* opd.assessment -> "ClinicalImpression.summary"
+
+
+Mapping: TWPASCarePlan
+Id: TWPASCarePlan
+Title: "Mapping to TWPAS CarePlan"
+Source: ApplyImmModel
+Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/CarePlan-twpas"
+* opd.plan -> "CarePlan.description"
+
+
+Mapping: TWPASImmDiagnosticReportImage
+Id: TWPASImmDiagnosticReportImage
 Title: "Mapping to TWPAS DiagnosticReportImage"
-Source: ApplyModel
+Source: ApplyImmModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/DiagnosticReport-image-twpas"
 * diagnosis.imageStudy.imgInterpreter -> "DiagnosticReport.performer.reference"
 * diagnosis.imageStudy.imgItem -> "DiagnosticReport.code.coding.code"
@@ -82,36 +142,26 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/DiagnosticReport-ima
 * diagnosis.imageStudy.imgDate -> "DiagnosticReport.effectiveDateTime"
 * diagnosis.imageStudy.imgNonDicom -> "DiagnosticReport.media.link.reference"
 
-Mapping: TWPASImagingStudy
-Id: TWPASImagingStudy
+Mapping: TWPASImmImagingStudy
+Id: TWPASImmImagingStudy
 Title: "Mapping to TWPAS ImagingStudy"
-Source: ApplyModel
+Source: ApplyImmModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/ImagingStudy-twpas"
 * diagnosis.imageStudy.imgBodySite -> "ImagingStudy.series.bodySite.code"
 * diagnosis.imageStudy.imgDicom -> "ImagingStudy.series.instance.uid"
 
-Mapping: TWPASMedia
-Id: TWPASMedia
+Mapping: TWPASImmMedia
+Id: TWPASImmMedia
 Title: "Mapping to TWPAS Media"
-Source: ApplyModel
+Source: ApplyImmModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Media-twpas"
 * diagnosis.imageStudy.imgBodySite -> "Media.bodySite.coding.code"
 * diagnosis.imageStudy.imgNonDicom -> "Media.contnet.url"
 
-Mapping: TWPASObservationCancerStage
-Id: TWPASObservationCancerStage
-Title: "Mapping to TWPAS ObservationCancerStage"
-Source: ApplyModel
-Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-cancer-stage-twpas"
-* diagnosis.cancerStage.assessItem  -> "Observation.code.coding.code"
-* diagnosis.cancerStage.assessDate -> "Observation.effectiveDateTime"
-* diagnosis.cancerStage.assessPerformer -> "Observation.performer.reference"
-* diagnosis.cancerStage.assessScore -> "Observation.valueCodeableConcept.coding.code"
-
-Mapping: TWPASDiagnosticReport
-Id: TWPASDiagnosticReport
+Mapping: TWPASImmDiagnosticReport
+Id: TWPASImmDiagnosticReport
 Title: "Mapping to TWPAS DiagnosticReport"
-Source: ApplyModel
+Source: ApplyImmModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/DiagnosticReport-twpas"
 * diagnosis.examinationReport.reportType -> "DiagnosticReport.code.coding.code"
 * diagnosis.examinationReport.speType -> "DiagnosticReport.code.text"
@@ -121,26 +171,13 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/DiagnosticReport-twp
 * diagnosis.examinationReport.reportResult.reportResultPdf -> "DiagnosticReport.presentedForm.url"
 * diagnosis.examinationReport.reportResult.reportResultPdfTitle -> "DiagnosticReport.presentedForm.title"
 
-Mapping: TWPASObservationDiagnostic
-Id: TWPASObservationDiagnostic
-Title: "Mapping to TWPAS ObservationDiagnostic"
-Source: ApplyModel
-Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-diagnostic-twpas"
-* gene.genTestCode -> "Observation.component.code.coding.code"
-* gene.genTestValue -> "Observation.component.value[x]"
-* gene.mutationType -> "Observation.component.where(code.coding.code = '48019-4').valueCodeableConcept.coding.code"
-* gene.specimenType -> "Observation.specimen.reference"
-* gene.genMethod -> "Observation.method.coding.code"
-* gene.genDate -> "Observation.effectiveDateTime"
-* gene.genOrg -> "Observation.performer.reference"
-* gene.genResult -> "Observation.valueCodeableConcept.coding.code"
-* gene.genInterpretation  -> "Observation.interpretation.coding.code"
-* gene.genPdf -> "Observation.derivedFrom.reference"
 
-Mapping: TWPASObservationLaboratoryResult
-Id: TWPASObservationLaboratoryResult
+
+
+Mapping: TWPASImmObservationLaboratoryResult
+Id: TWPASImmObservationLaboratoryResult
 Title: "Mapping to TWPAS ObservationLaboratoryResult"
-Source: ApplyModel
+Source: ApplyImmModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-laboratory-result-twpas"
 * evaluate.tests.inspect -> "Observation.code.coding.code"
 * evaluate.tests.inspectResultTxt -> "Observation.interpretation.coding.code"
@@ -154,20 +191,20 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-laborato
 * evaluate.tests.inspectPerformer -> "Observation.performer.reference"
 * evaluate.tests.inspectPdf -> "Observation.derivedFrom.reference"
 
-Mapping: TWPASObservationPatientAssessment
-Id: TWPASObservationPatientAssessment
+Mapping: TWPASImmObservationPatientAssessment
+Id: TWPASImmObservationPatientAssessment
 Title: "Mapping to TWPAS ObservationPatientAssessment"
-Source: ApplyModel
+Source: ApplyImmModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-pat-assessment-twpas"
 * evaluate.patientAssessment.patAst -> "Observation.code.coding.code"
 * evaluate.patientAssessment.patAstResult -> "Observation.value"
 * evaluate.patientAssessment.patAstDate -> "Observation.effectiveDateTime"
 * evaluate.patientAssessment.patAstPerformer -> "Observation.performer.reference"
 
-Mapping: TWPASMedicationRequestTreat
-Id: TWPASMedicationRequestTreat
+Mapping: TWPASImmMedicationRequestTreat
+Id: TWPASImmMedicationRequestTreat
 Title: "Mapping to TWPAS MedicationRequestTreatTWPAS"
-Source: ApplyModel
+Source: ApplyImmModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/MedicationRequest-treat-twpas"
 * treat.medicationRequest.drugStatus -> "MedicationRequest.status"
 * treat.medicationRequest.drugCode -> "MedicationRequest.medicationCodeableConcept.coding.code"
@@ -180,51 +217,49 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/MedicationRequest-tr
 * treat.medicationRequest.eReason -> "MedicationRequest.statusReason"
 * treat.medicationRequest.drugRoute -> "MedicationRequest.dosageInstruction.route"
 
-Mapping: TWPASProcedure
-Id: TWPASProcedure
+Mapping: TWPASImmProcedure
+Id: TWPASImmProcedure
 Title: "Mapping to TWPAS Procedure"
-Source: ApplyModel
+Source: ApplyImmModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Procedure-twpas"
 * treat.radiotherapy.rtStatus -> "Procedure.status"
 * treat.radiotherapy.rt -> "Procedure.code.coding.code"
 * treat.radiotherapy.realInspectTime -> "Procedure.performedDateTime"
 * treat.radiotherapy.rtDose -> "Procedure.usedReference.reference"
 
-Mapping: TWPASSubstance
-Id: TWPASSubstance
+Mapping: TWPASImmSubstance
+Id: TWPASImmSubstance
 Title: "Mapping to TWPAS Substance"
-Source: ApplyModel
+Source: ApplyImmModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Substance-twpas"
 * treat.radiotherapy.rtDose -> "Substance.ingredient.quantity.numerator.value"
 * treat.radiotherapy.rtUnit -> "Substance.ingredient.quantity.numerator.code"
 
-Mapping: TWPASDocumentReference
-Id: TWPASDocumentReference
+Mapping: TWPASImmDocumentReference
+Id: TWPASImmDocumentReference
 Title: "Mapping to TWPAS DocumentReference"
-Source: ApplyModel
+Source: ApplyImmModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/DocumentReference-twpas"
-* gene.genPdf -> "DocumentReference.content.attachment.url"
 * treat.carePlanDocument -> "DocumentReference.content.attachment.url"
 * diagnosis.medrec -> "DocumentReference.content.attachment.url"
 * evaluate.tests.inspectPdf -> "DocumentReference.content.attachment.url"
-* gene.genPdfTitle -> "DocumentReference.content.attachment.title"
 * treat.carePlanDocumentTitle -> "DocumentReference.content.attachment.title"
 * diagnosis.medrecTitle -> "DocumentReference.content.attachment.title"
 * evaluate.tests.inspectPdfTitle -> "DocumentReference.content.attachment.title"
 
-Mapping: TWPASObservationTreatmentAssessment
-Id: TWPASObservationTreatmentAssessment
+Mapping: TWPASImmObservationTreatmentAssessment
+Id: TWPASImmObservationTreatmentAssessment
 Title: "Mapping to TWPAS ObservationTreatmentAssessment"
-Source: ApplyModel
+Source: ApplyImmModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-tx-assessment-twpas"
 * result.txAst -> "Observation.code.coding.code"
 * result.txAstResult -> "Observation.valueString"
 * result.txAstDate -> "Observation.effectiveDateTime"
 
-Mapping: TWPASMedicationRequestApply
-Id: TWPASMedicationRequestApply
+Mapping: TWPASImmMedicationRequestApply
+Id: TWPASImmMedicationRequestApply
 Title: "Mapping to TWPAS MedicationRequestApply"
-Source: ApplyModel
+Source: ApplyImmModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/MedicationRequest-apply-twpas"
 * apply.cancerDrugType -> "MedicationRequest.medicationCodeableConcept.coding.code"
 * apply.applDrugFre -> "MedicationRequest.dosageInstruction.timing.code.coding"
@@ -235,10 +270,10 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/MedicationRequest-ap
 * apply.applDrugCycle -> "MedicationRequest.dosageInstruction.timing.repeat.count"
 * apply.applDrugRoute -> "MedicationRequest.dosageInstruction.route"
 
-Mapping: TWPASClaimResponseSelfAssessment
-Id: TWPASClaimResponseSelfAssessment
+Mapping: TWPASImmClaimResponseSelfAssessment
+Id: TWPASImmClaimResponseSelfAssessment
 Title: "Mapping to TWPAS ClaimResponse Self Assessment"
-Source: ApplyModel
+Source: ApplyImmModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/ClaimResponse-self-assessment-twpas"
 * apply.approveDate -> "ClaimResponse.created"
 * apply.approver -> "ClaimResponse.extension:requestor"
@@ -246,21 +281,20 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/ClaimResponse-self-a
 * apply.approveNum -> "ClaimResponse.item.adjudication.value"
 * apply.acceptanceStatus -> "ClaimResponse.item.detail.adjudication.reason"
 
-Mapping: TWPASPractitioner
-Id: TWPASPractitioner
+Mapping: TWPASImmPractitioner
+Id: TWPASImmPractitioner
 Title: "Mapping to TWPAS Practitioner"
-Source: ApplyModel
+Source: ApplyImmModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Practitioner-twpas"
 * hosp.applPrsnId -> "Practitioner.identifier.value"
 * diagnosis.imageStudy.imgInterpreter -> "Practitioner.identifier.value"
-* diagnosis.cancerStage.assessPerformer -> "Practitioner.identifier.value"
 * diagnosis.examinationReport.reportPerformer -> "Practitioner.identifier.value"
 * evaluate.tests.inspectPerformer -> "Practitioner.identifier.value"
 * evaluate.patientAssessment.patAstPerformer -> "Practitioner.identifier.value"
 
-Mapping: TWPASBundle
-Id: TWPASBundle
-Title: "Mapping to TWPAS Bundle"
-Source: ApplyModel
-Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Bundle-twpas"
+Mapping: TWPASImmBundle
+Id: TWPASImmBundle
+Title: "Mapping to TWPAS Bundle Immunologic Aagent"
+Source: ApplyImmModel
+Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Bundle-immunologic-agent-twpas"
 * hosp.immediateDate -> "Bundle.timestamp"

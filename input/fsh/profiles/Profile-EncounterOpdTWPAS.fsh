@@ -119,6 +119,7 @@ Description:    "此計畫-CarePlan TWPAS Profile說明本IG如何進一步定�
 * subject only Reference(PatientTWPAS)
 * encounter 1..1
 * encounter only Reference(EncounterOpdTWPAS)
+* description 1..1
 * description ^short = "計畫，由醫院自行填寫。"
 
 
