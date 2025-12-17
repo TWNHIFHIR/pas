@@ -71,14 +71,14 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
     treatmentAssessment 0..* and
     bloodgroup 0..1 and
     opd 0..* and
+    allergy 0..* /* and
     diagnosis 0..* and
-    allergy 0..* and
     subjective 0..* and
     objective 0..* and
     assessment 0..* and
-    plan 0..*
+    plan 0..* */
 
-* supportingInfo[subjective] ^short = "主觀描述(S)"
+/* * supportingInfo[subjective] ^short = "主觀描述(S)"
 * supportingInfo[subjective].category = NHIPASSupportingInfoType#subjective
 * supportingInfo[subjective].timing[x] ..0
 * supportingInfo[subjective].value[x] 1.. MS
@@ -104,7 +104,7 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * supportingInfo[plan].timing[x] ..0
 * supportingInfo[plan].value[x] 1.. MS
 * supportingInfo[plan].value[x] only Reference(CarePlanTWPAS)
-* supportingInfo[plan].valueReference ^short = "計畫(P)"
+* supportingInfo[plan].valueReference ^short = "計畫(P)" */
 
 * supportingInfo[allergy] ^short = "過敏史"
 * supportingInfo[allergy].category = NHIPASSupportingInfoType#allergy
@@ -127,12 +127,12 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * supportingInfo[opd].value[x] only Reference(EncounterOpdTWPAS)
 * supportingInfo[opd].valueReference ^short = "門診病歷"
 
-* supportingInfo[diagnosis] ^short = "診斷"
+/* supportingInfo[diagnosis] ^short = "診斷"
 * supportingInfo[diagnosis].category = NHIPASSupportingInfoType#diagnosis
 * supportingInfo[diagnosis].timing[x] ..0
 * supportingInfo[diagnosis].value[x] 1.. MS
 * supportingInfo[diagnosis].value[x] only Reference(ConditionTWPAS)
-* supportingInfo[diagnosis].valueReference ^short = "診斷"
+* supportingInfo[diagnosis].valueReference ^short = "診斷"*/
 
 
 * supportingInfo[weight] ^short = "病人體重"
@@ -344,10 +344,11 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * supportingInfo[weight].valueQuantity.value obeys HTWT
 * supportingInfo[height].valueQuantity.value obeys HTWT
 * diagnosis obeys diagnosis //and sequence-1
-* . obeys sequence-1 and applType and opd
+* . obeys sequence-1 and applType //and opd
 * item.programCode obeys pas-1
 
-Invariant:   opd
-Description: "若有填寫Claim.supportingInfo[opd](門診病歷)，亦須填寫Claim.supportingInfo[diagnosis](診斷)、Claim.supportingInfo[subjective](主觀描述)、Claim.supportingInfo[objective](客觀描述)、Claim.supportingInfo[assessment](評估)。"
-Expression:  "supportingInfo.category.coding.exists(code ='opd') implies (supportingInfo.category.coding.exists(code = 'diagnosis') and supportingInfo.category.coding.exists(code = 'subjective') and supportingInfo.category.coding.exists(code = 'objective') and supportingInfo.category.coding.exists(code = 'assessment'))"
+/*Invariant:   opd
+Description: "若有填寫Claim.supportingInfo[opd](門診病歷)，亦須填寫Claim.supportingInfo[subjective](主觀描述)、Claim.supportingInfo[objective](客觀描述)、Claim.supportingInfo[assessment](評估)。"
+Expression:  "supportingInfo.category.coding.exists(code ='opd') implies (supportingInfo.category.coding.exists(code = 'subjective') and supportingInfo.category.coding.exists(code = 'objective') and supportingInfo.category.coding.exists(code = 'assessment'))"
 Severity:    #error
+*/

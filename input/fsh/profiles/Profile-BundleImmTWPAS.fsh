@@ -19,12 +19,12 @@ Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Pro
 * entry ^slicing.rules = #closed
 * entry contains
 	claim 1..1 MS and
-	encounterOpd 0..1 MS and
+	encounterOpd 0..* MS and
 	encounter 1..1 MS and
 	patient 1..1 MS and
 	practitioner 1..* MS and
 	organization 1..* MS and
-	condition 0..1 MS and
+	condition 0..* MS and
 	observationBloodgroup 0..1 MS and
 	allergyIntolerance 0..* MS and
 	observationSubjective 0..* MS and

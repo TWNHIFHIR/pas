@@ -43,8 +43,8 @@ Description:    "此癌藥事前審查-Bundle TWPAS Profile說明本IG如何進�
 	claimResponse 0..1 MS and
 	organizationOrg 1..1 MS and
 
-	encounterOpd 0..1 MS and
-	condition 0..1 MS and
+	encounterOpd 0..* MS and
+	condition 0..* MS and
 	observationBloodgroup 0..1 MS and
 	allergyIntolerance 0..* MS and
 	observationSubjective 0..* MS and

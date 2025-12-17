@@ -71,12 +71,12 @@ Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進�
     treatmentAssessment 0..* and
     bloodgroup 0..1 and
     opd 0..* and
+    allergy 0..* /*and
     diagnosis 0..* and
-    allergy 0..* and
     subjective 0..* and
     objective 0..* and
     assessment 0..* and
-    plan 0..*
+    plan 0..**/
 
 * supportingInfo[weight] ^short = "病人體重"
 * supportingInfo[weight].category = NHIPASSupportingInfoType#weight
@@ -176,7 +176,7 @@ Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進�
 * supportingInfo[treatmentAssessment].value[x] only Reference(ObservationTreatmentAssessmentTWPAS)
 
 
-* supportingInfo[subjective] ^short = "主觀描述(S)"
+/* * supportingInfo[subjective] ^short = "主觀描述(S)"
 * supportingInfo[subjective].category = NHIPASSupportingInfoType#subjective
 * supportingInfo[subjective].timing[x] ..0
 * supportingInfo[subjective].value[x] 1.. MS
@@ -202,7 +202,7 @@ Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進�
 * supportingInfo[plan].timing[x] ..0
 * supportingInfo[plan].value[x] 1.. MS
 * supportingInfo[plan].value[x] only Reference(CarePlanTWPAS)
-* supportingInfo[plan].valueReference ^short = "計畫(P)"
+* supportingInfo[plan].valueReference ^short = "計畫(P)" */
 
 * supportingInfo[allergy] ^short = "過敏史"
 * supportingInfo[allergy].category = NHIPASSupportingInfoType#allergy
@@ -225,12 +225,12 @@ Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進�
 * supportingInfo[opd].value[x] only Reference(EncounterOpdTWPAS)
 * supportingInfo[opd].valueReference ^short = "門診病歷"
 
-* supportingInfo[diagnosis] ^short = "診斷"
+/* * supportingInfo[diagnosis] ^short = "診斷"
 * supportingInfo[diagnosis].category = NHIPASSupportingInfoType#diagnosis
 * supportingInfo[diagnosis].timing[x] ..0
 * supportingInfo[diagnosis].value[x] 1.. MS
 * supportingInfo[diagnosis].value[x] only Reference(ConditionTWPAS)
-* supportingInfo[diagnosis].valueReference ^short = "診斷"
+* supportingInfo[diagnosis].valueReference ^short = "診斷" */
 
 * procedure.procedure[x] only CodeableConcept
 * procedure.procedureCodeableConcept MS
@@ -344,7 +344,7 @@ Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進�
 * supportingInfo[weight].valueQuantity.value obeys HTWT
 * supportingInfo[height].valueQuantity.value obeys HTWT
 * diagnosis obeys diagnosis //and sequence-1
-* . obeys sequence-1 and supportingInfo and applType
+* . obeys sequence-1 and supportingInfo and supportingInfo-tests and applType
 * item.programCode obeys pas-1
 
 /* Extension*/
@@ -371,8 +371,13 @@ Expression:  "diagnosis.where(sequence = 1).count() = 1"
 Severity:    #error
 
 Invariant:   supportingInfo
-Description: "當Claim.priority(案件類別)為1(一般事前審查申請)、3(自主審查)時，至少還需提供檢查報告、影像報告、基因資訊中任一樣資訊。"
-Expression:  "(priority.coding.code.matches('1|3')) implies (supportingInfo.category.exists(coding.code = 'examinationReport') or supportingInfo.category.exists(coding.code = 'imagingReport') or supportingInfo.category.exists(coding.code = 'geneInfo'))"
+Description: "當Claim.priority(案件類別)為1(一般事前審查申請)、3(自主審查)時，至少還需提供檢查報告、影像報告、基因資訊中任一樣資訊。如果Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代碼)為C61，且Claim.item.modifier:continuation(續用註記)為2，則可排除此條件。"
+Expression:  "(priority.coding.code.matches('1|3')) implies (supportingInfo.category.exists(coding.code = 'examinationReport') or supportingInfo.category.exists(coding.code = 'imagingReport') or supportingInfo.category.exists(coding.code = 'geneInfo') or (diagnosis.diagnosis.ofType(CodeableConcept).coding.where(code.matches('^(C61)')).exists() and item.modifier.where(coding.system = 'https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-continuation-status').coding.code = '2'))"
+Severity:    #error
+
+Invariant:   supportingInfo-tests
+Description: "當Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代碼)為C61，且Claim.item.modifier:continuation(續用註記)為2，需提供檢驗(查)。"
+Expression:  "(diagnosis.diagnosis.ofType(CodeableConcept).coding.where(code.matches('^(C61)')).exists() and item.modifier.where(coding.system = 'https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-continuation-status').coding.code = '2') implies (supportingInfo.category.exists(coding.code = 'tests'))"
 Severity:    #error
 
 Invariant:   applType
