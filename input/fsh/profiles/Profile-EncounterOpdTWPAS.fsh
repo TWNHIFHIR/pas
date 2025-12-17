@@ -23,7 +23,7 @@ Description:    "此門診病歷-Encounter OPD TWPAS Profile說明本IG如何進
 * serviceProvider 1..1
 * participant 1..1
 * participant.individual 1..
-* diagnosis 1..1
+* diagnosis 1..*
 * diagnosis.condition only Reference(ConditionTWPAS)
 * extension contains
     https://nhicore.nhi.gov.tw/pas/StructureDefinition/extension-encounter-subjective named subjective 1..1 MS and

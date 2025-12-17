@@ -71,12 +71,12 @@ Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進�
     treatmentAssessment 0..* and
     bloodgroup 0..1 and
     opd 0..* and
+    allergy 0..* /*and
     diagnosis 0..* and
-    allergy 0..* and
     subjective 0..* and
     objective 0..* and
     assessment 0..* and
-    plan 0..*
+    plan 0..**/
 
 * supportingInfo[weight] ^short = "病人體重"
 * supportingInfo[weight].category = NHIPASSupportingInfoType#weight
@@ -176,7 +176,7 @@ Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進�
 * supportingInfo[treatmentAssessment].value[x] only Reference(ObservationTreatmentAssessmentTWPAS)
 
 
-* supportingInfo[subjective] ^short = "主觀描述(S)"
+/* * supportingInfo[subjective] ^short = "主觀描述(S)"
 * supportingInfo[subjective].category = NHIPASSupportingInfoType#subjective
 * supportingInfo[subjective].timing[x] ..0
 * supportingInfo[subjective].value[x] 1.. MS
@@ -202,7 +202,7 @@ Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進�
 * supportingInfo[plan].timing[x] ..0
 * supportingInfo[plan].value[x] 1.. MS
 * supportingInfo[plan].value[x] only Reference(CarePlanTWPAS)
-* supportingInfo[plan].valueReference ^short = "計畫(P)"
+* supportingInfo[plan].valueReference ^short = "計畫(P)" */
 
 * supportingInfo[allergy] ^short = "過敏史"
 * supportingInfo[allergy].category = NHIPASSupportingInfoType#allergy
@@ -225,12 +225,12 @@ Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進�
 * supportingInfo[opd].value[x] only Reference(EncounterOpdTWPAS)
 * supportingInfo[opd].valueReference ^short = "門診病歷"
 
-* supportingInfo[diagnosis] ^short = "診斷"
+/* * supportingInfo[diagnosis] ^short = "診斷"
 * supportingInfo[diagnosis].category = NHIPASSupportingInfoType#diagnosis
 * supportingInfo[diagnosis].timing[x] ..0
 * supportingInfo[diagnosis].value[x] 1.. MS
 * supportingInfo[diagnosis].value[x] only Reference(ConditionTWPAS)
-* supportingInfo[diagnosis].valueReference ^short = "診斷"
+* supportingInfo[diagnosis].valueReference ^short = "診斷" */
 
 * procedure.procedure[x] only CodeableConcept
 * procedure.procedureCodeableConcept MS
