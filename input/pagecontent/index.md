@@ -37,7 +37,6 @@
                 <li>新增Constraint: supportingInfo-tests：當Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代碼)為C61，且Claim.item.modifier:continuation(續用註記)為2，需提供檢驗(查)。</li>
             </ol>
         </li>
-        <li>修改Constraint: supportingInfo：當Claim.priority(案件類別)為1(一般事前審查申請)、3(自主審查)時，至少還需提供檢查報告、影像報告、基因資訊中任一樣資訊。如果Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代碼)為C61，且Claim.item.modifier:continuation(續用註記)為2，則可排除此條件。</li>
         <li>修改<a href="StructureDefinition-Observation-pat-assessment-twpas.html">Profile: 病人狀態評估-Observation Patient Assessment TWPAS</a>：新增病人狀態評估報告及病人狀態評估報告名稱(<code>derivedFrom</code>)。</li>
         <li>修改<a href="StructureDefinition-Encounter-twpas.html">Profile: 就醫科別-Encounter TWPAS</a>：取消綁定就醫分類(<code>class</code>)之固定值。</li>
         <li>修改「放射治療」相關欄位之名稱為「放射/照光治療」。</li>
