@@ -31,7 +31,7 @@ Description: "申請(Apply)免疫製劑(Immunologic Aagent)事前審查之資料
 * opd.funcDate 1..1 dateTime "門診日期" "門診日期"
 * opd.funcType 1..1 code "科別" "科別"
 * opd.prsnId 1..1 string "門診醫師身分證號" "門診醫師身分證號"
-* opd.icd10cmCode 1..1 code "診斷" "診斷"
+* opd.icd10cmCode 1..* code "診斷" "診斷"
 * opd.subjective 1..1 string "主觀描述" "主觀描述"
 * opd.objective 1..1 string "客觀描述" "客觀描述"
 * opd.assessment 1..1 string "評估" "評估"

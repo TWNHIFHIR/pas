@@ -18,12 +18,7 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-immunologic-ag
 * patient.blood -> "Claim.supportingInfo.where(category.coding.code = 'bloodgroup').valueReference"
 * patient.allergy -> "Claim.supportingInfo.where(category.coding.code = 'allergy').valueReference"
 
-* opd.funcDate -> "Claim.supportingInfo.where(category.coding.code = 'opd').valueReference"
-* opd.icd10cmCode -> "Claim.supportingInfo.where(category.coding.code = 'diagnosis').valueReference"
-* opd.subjective -> "Claim.supportingInfo.where(category.coding.code = 'subjective').valueReference"
-* opd.objective -> "Claim.supportingInfo.where(category.coding.code = 'objective').valueReference"
-* opd.assessment -> "Claim.supportingInfo.where(category.coding.code = 'assessment').valueReference"
-* opd.plan -> "Claim.supportingInfo.where(category.coding.code = 'plan').valueReference"
+* opd -> "Claim.supportingInfo.where(category.coding.code = 'opd').valueReference"
 
 * diagnosis.imageStudy.imgItem -> "Claim.supportingInfo.where(category.coding.code = 'imagingReport').valueReference.reference"
 * diagnosis.examinationReport.reportResult.reportResultPdf -> "Claim.supportingInfo.where(category.coding.code = 'examinationReport').valueReference.reference"
@@ -87,6 +82,11 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Encounter-opd-twpas"
 * opd.funcDate -> "Encounter.period.start"
 * opd.funcType -> "Encounter.serviceType"
 * opd.prsnId -> "Encounter.participant.individual"
+* opd.icd10cmCode -> "Encounter.diagnosis.condition"
+* opd.subjective -> "Encounter.extension:subjective"
+* opd.objective -> "Encounter.extension:objective"
+* opd.assessment -> "Encounter.extension:assessment"
+* opd.plan -> "Encounter.extension:plan"
 
 
 Mapping: TWPASCondition
