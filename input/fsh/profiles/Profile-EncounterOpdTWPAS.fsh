@@ -15,6 +15,7 @@ Description:    "此門診病歷-Encounter OPD TWPAS Profile說明本IG如何進
 * serviceType.coding[TWMedicalConsultationDepartment] ^short = "無法對應至SNOMED CT之臺灣健保署就醫科別"
 * serviceType.coding[TWMedicalTreatmentDepartment] ^short = "無法對應至SNOMED CT之臺灣健保署診療科別"
 * serviceType.coding[TWMedicalDepartmentSCT] ^short = "對應至SNOMED CT之就醫科別"
+* subject 1..
 * subject only Reference(PatientTWPAS)
 * participant.individual only Reference(PractitionerTWPAS)
 * serviceProvider only Reference(OrganizationTWPAS)

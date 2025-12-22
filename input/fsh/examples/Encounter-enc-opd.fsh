@@ -9,6 +9,7 @@ Usage: #example
 * period.start = "2025-11-11"
 * serviceProvider.reference = "Organization/org-hosp-example" 
 * participant.individual.reference = "Practitioner/pra-min"
+* subject.reference = "Patient/pat-min"
 * diagnosis.condition.reference = "Condition/con-diagnosis"
 * extension[subjective].valueReference.reference = "Observation/obs-subjective"
 * extension[objective].valueReference.reference = "Observation/obs-objective"

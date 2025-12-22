@@ -38,7 +38,7 @@ Description:    "此影像報告-DiagnosticReport Image TWPAS Profile說明本IG
 * code.coding[LOINC].system 1..1 MS
 * code.coding[LOINC].system = "http://loinc.org"
 //* code.coding[LOINC].code = #18748-4 
-* code.coding[LOINC] from ImagingReport (extensible)
+* code.coding[LOINC] from ImagingReport //202512 delete (extensible)
 * code.text 0..1 MS
 * performer 1..1 MS
 * performer only Reference(PractitionerTWPAS) 
