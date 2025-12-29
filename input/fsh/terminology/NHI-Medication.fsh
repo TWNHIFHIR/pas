@@ -3,8 +3,8 @@ Id: nhi-medication-fda
 Title: "NHI-健保事前審查-臺灣食藥署藥品及醫療器材代碼值集"
 Description: "NHI-健保事前審查-臺灣食藥署藥品及醫療器材代碼值集。  
 此值集所涵蓋代碼量較大會使載入頁面時間較長，完整代碼可至[全國專門術語服務平臺－值集(Value Set)](https://fhir.mohw.gov.tw/ts/valueset.jsp)查閱。"
-* ^date = "2025-10-01"
-* ^version = "2025-10-01"
+* ^date = "2026-01-05"
+* ^version = "2026-01-05"
 * ^experimental = false
 * include codes from system https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-fda-tw
 * include codes from system https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-device-fda-tw
@@ -37,6 +37,16 @@ Description: "NHI-健保事前審查-用藥品項，參照自[健保用藥品項
 * ^date = "2025-11-25"
 * ^version = "2025-11-25"
 * ^experimental = false
+/*2025-12 add*/
+* #BC27994100 "PIQRAY 50 mg Film-Coated Tablets"
+* #BC27995100 "PIQRAY 150 mg Film-Coated Tablets"
+* #BC27996100 "PIQRAY 200 mg Film-Coated Tablets"
+* #AC61825221 "FUSTRON SOLUTION FOR INJECTION 50 MG/ML"
+* #BC27927351 "Enstilar 50 micrograms/g + 0.5 mg/g Cutaneous Foam"
+* #BC27090109 "Peyona 20mg/ml solution for infusion and oral solution"
+* #YC00056229 "Elfabrio 2 mg/mL concentrate for solution for infusion"
+* #X000355100 "PACREA 25000 IU HARD CAPSULES"
+
 /*2025-11 add*/
 * #YC00051206 "UPSTAZA 2.8 × 10^11 VECTOR GENOMES (VG)/0.5 ML SOLUTION FOR INFUSION"
 * #AC61819238 "Opasamide 10mg/ml for Injection"

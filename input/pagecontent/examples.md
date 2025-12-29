@@ -24,6 +24,9 @@
 - [事前審查結果-自主審查](ClaimResponse-self-assessment-example.html)：依據事前審查結果-ClaimResponse TWPAS Profile呈現事前審查結果之範例
 - [事前審查回覆](ClaimResponse-claim-response-example.html)：依據事前審查回覆-ClaimResponse TWPAS Profile呈現事前審查回覆之範例
 
+#### Composition
+- [<span class="bg-success">門診病歷-Composition</span>](Composition-opd.html)：依據門診病歷-Composition OPD TWPAS Profile呈現門診病歷
+
 #### AllergyIntolerance
 - [<span class="bg-success">過敏史</span>](AllergyIntolerance-all-min.html)：依據過敏史-AllergyIntolerance TWPAS Profile呈現過敏史之範例
 
@@ -34,7 +37,7 @@
 
 #### Encounter
 - [就醫科別](Encounter-enc-min.html)：依據就醫科別-Encounter TWPAS Profile呈現就醫科別之範例
-- [<span class="bg-success">門診病歷</span>](Encounter-enc-opd.html)：依據門診病歷-Encounter OPD TWPAS Profile呈現門診病歷之範例
+- [<span class="bg-success">門診病歷-Encounter</span>](Encounter-enc-opd.html)：依據門診病歷-Encounter OPD TWPAS Profile呈現門診病歷之範例
 
 #### Patient
 - [病人資訊](Patient-pat-min.html)：依據病人資訊-Patient TWPAS Profile呈現病人資訊之範例

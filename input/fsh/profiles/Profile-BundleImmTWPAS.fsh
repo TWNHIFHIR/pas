@@ -19,6 +19,7 @@ Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Pro
 * entry ^slicing.rules = #closed
 * entry contains
 	claim 1..1 MS and
+	compositionOpd 0..* MS and
 	encounterOpd 0..* MS and
 	encounter 1..1 MS and
 	patient 1..1 MS and
@@ -75,6 +76,10 @@ Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Pro
 * entry[observationBloodgroup] ^short = "血型"
 * entry[observationBloodgroup].resource 1..1 MS
 * entry[observationBloodgroup].resource only ObservationBloodGroupTWPAS
+
+* entry[compositionOpd] ^short = "門診病歷"
+* entry[compositionOpd].resource 1..1 MS
+* entry[compositionOpd].resource only CompositionOpdTWPAS
 
 * entry[encounterOpd] ^short = "門診病歷"
 * entry[encounterOpd].resource 1..1 MS

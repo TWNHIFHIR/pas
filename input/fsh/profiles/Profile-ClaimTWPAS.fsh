@@ -222,7 +222,7 @@ Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進�
 * supportingInfo[opd].category = NHIPASSupportingInfoType#opd
 * supportingInfo[opd].timing[x] ..0
 * supportingInfo[opd].value[x] 1.. MS
-* supportingInfo[opd].value[x] only Reference(EncounterOpdTWPAS)
+* supportingInfo[opd].value[x] only Reference(CompositionOpdTWPAS)
 * supportingInfo[opd].valueReference ^short = "門診病歷"
 
 /* * supportingInfo[diagnosis] ^short = "診斷"
@@ -343,7 +343,7 @@ Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進�
 
 * supportingInfo[weight].valueQuantity.value obeys HTWT
 * supportingInfo[height].valueQuantity.value obeys HTWT
-* diagnosis obeys diagnosis //and sequence-1
+* diagnosis obeys diagnosis
 * . obeys sequence-1 and supportingInfo and supportingInfo-tests and applType
 * item.programCode obeys pas-1
 

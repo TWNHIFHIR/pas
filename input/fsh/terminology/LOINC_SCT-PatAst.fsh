@@ -3,7 +3,7 @@ ValueSet: PatAst
 Id: pat-ast
 Title: "LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集"
 Description: "LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集"
-* ^date = "2025-10-01"
+* ^date = "2026-01-05"
 * ^version = "1.1.0"
 * ^experimental = false
 * $loinc#88020-3
@@ -20,13 +20,25 @@ Description: "LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值�
 * PatAst#MPNSAFTSS
 * PatAst#MPN10
 
+* $loinc#8277-6
+* PatAst#PASI
+* http://snomed.info/sct#429712009
+* PatAst#PsARC
+* PatAst#GPPGA
+* http://snomed.info/sct#273364009
+* PatAst#PCDAI
+* PatAst#Mayo
+* PatAst#MayoE
+* PatAst#PUCAI
+* PatAst#PPPASI
+
 CodeSystem: PatAst
 Id: nhi-pat-ast
 Title: "NHI-健保事前審查-病人狀態評估項目"
-Description: "臺灣衛生福利部中央健康保險署「病人狀態評估項目」代碼，代碼出版日期：2025-10-01；資料所屬單位：臺灣衛生福利部中央健康保險署。"
+Description: "臺灣衛生福利部中央健康保險署「病人狀態評估項目」代碼，代碼出版日期：2026-01-05；資料所屬單位：臺灣衛生福利部中央健康保險署。"
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2025-10-01"
+* ^date = "2026-01-05"
 * ^version = "1.1.0"
 * ^experimental = false
 * #IPS "International Prognostic Score" "IPS (International Prognostic Score)"
@@ -38,3 +50,12 @@ Description: "臺灣衛生福利部中央健康保險署「病人狀態評估項
 * #C143528 "Hearing impaired"
 * #C143750 "Peripheral motor neuropathy"
 * #C143752 "Peripheral sensory neuropathy"
+
+* #PASI "Psoriasis area severity index(PASI)"
+* #PsARC "Psoriatic Arthritis Response Criteria(PsARC)"
+* #GPPGA "Generalized Pustular Psoriasis Physician Global Assessment(GPPGA)"
+* #PCDAI "Pediatric Crohn’s disease activity index( PCDAI)"
+* #Mayo "Mayo Score"
+* #MayoE "Mayo endoscopic subscore"
+* #PUCAI "Pediatric Ulcerative Colitis Activity Index (PUCAI)"
+* #PPPASI "Palmoplantar Pustulosis Area and Severity Index"

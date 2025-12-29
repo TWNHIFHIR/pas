@@ -100,7 +100,8 @@ pages:
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
-#parameters:
+parameters:
+  default-version: false
 #  version-comparison-master: 1.0.4
 #  version-comparison:
 #    - 1.0.4

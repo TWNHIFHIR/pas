@@ -43,6 +43,7 @@ Description:    "此癌藥事前審查-Bundle TWPAS Profile說明本IG如何進�
 	claimResponse 0..1 MS and
 	organizationOrg 1..1 MS and
 
+	compositionOpd 0..* MS and
 	encounterOpd 0..* MS and
 	condition 0..* MS and
 	observationBloodgroup 0..1 MS and
@@ -171,6 +172,10 @@ Description:    "此癌藥事前審查-Bundle TWPAS Profile說明本IG如何進�
 * entry[observationBloodgroup] ^short = "血型"
 * entry[observationBloodgroup].resource 1..1 MS
 * entry[observationBloodgroup].resource only ObservationBloodGroupTWPAS
+
+* entry[compositionOpd] ^short = "門診病歷"
+* entry[compositionOpd].resource 1..1 MS
+* entry[compositionOpd].resource only CompositionOpdTWPAS
 
 * entry[encounterOpd] ^short = "門診病歷"
 * entry[encounterOpd].resource 1..1 MS

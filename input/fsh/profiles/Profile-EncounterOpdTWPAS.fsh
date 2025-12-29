@@ -25,60 +25,35 @@ Description:    "此門診病歷-Encounter OPD TWPAS Profile說明本IG如何進
 * participant 1..1
 * participant.individual 1..
 * diagnosis 1..*
+* diagnosis.rank 1..1
 * diagnosis.condition only Reference(ConditionTWPAS)
-* extension contains
+/* extension contains
     https://nhicore.nhi.gov.tw/pas/StructureDefinition/extension-encounter-subjective named subjective 1..1 MS and
     https://nhicore.nhi.gov.tw/pas/StructureDefinition/extension-encounter-objective named objective 1..1 MS and
     https://nhicore.nhi.gov.tw/pas/StructureDefinition/extension-encounter-clinicalImpression named assessment 1..1 MS and
-    https://nhicore.nhi.gov.tw/pas/StructureDefinition/extension-encounter-carePlan named plan 1..1 MS
+    https://nhicore.nhi.gov.tw/pas/StructureDefinition/extension-encounter-carePlan named plan 1..1 MS*/
 
 * serviceProvider ^short = "醫事機構代碼，必須存在於醫事機構基本資料檔內。"
 * period.start ^short = "門診日期，YYYY-MM-DD，西元年月日。"
 * serviceType ^short = "科別，完整代碼對應表請參照就醫科別對應表。"
 * participant.individual ^short = "門診醫師"
 * diagnosis.condition ^short = "診斷"
-* extension[subjective] ^short = "主觀描述(S)"
+* diagnosis.rank ^short = "rank=1時為主要疾病；rank>=2代表共病。"
+/* extension[subjective] ^short = "主觀描述(S)"
 * extension[objective] ^short = "客觀描述(O)"
 * extension[assessment] ^short = "評估(A)"
-* extension[plan] ^short = "計畫(P)"
-
-
+* extension[plan] ^short = "計畫(P)"*/
 * class ^short = "就醫分類。【因FHIR設計而需必填】"
 * class from ActEncounterCode
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB
 * status ^short = "就醫現況。【因FHIR設計而需必填】"
 * status = http://hl7.org/fhir/encounter-status#finished
+* . obeys rank-1
 
-
-Extension: EncounterSubjective
-Id: extension-encounter-subjective
-Description: "主觀描述"
-Context: Encounter
-* . ^definition = "主觀描述"
-* value[x] only Reference(ObservationSubjectiveTWPAS)
-
-Extension: EncounterObjective
-Id: extension-encounter-objective
-Description: "客觀描述"
-Context: Encounter
-* . ^definition = "客觀描述"
-* value[x] only Reference(ObservationObjectiveTWPAS)
-
-Extension: EncounterClinicalImpression
-Id: extension-encounter-clinicalImpression
-Description: "評估"
-Context: Encounter
-* . ^definition = "評估"
-* value[x] only Reference(ClinicalImpressionTWPAS)
-
-Extension: EncounterCarePlan
-Id: extension-encounter-carePlan
-Description: "計畫"
-Context: Encounter
-* . ^definition = "計畫"
-* value[x] only Reference(CarePlanTWPAS)
-
-
+Invariant:   rank-1
+Description: "diagnosis.rank一定會有一個「1」，且只能出現一次。"
+Expression:  "diagnosis.where(rank = 1).count() = 1"
+Severity:    #error
 
 Profile:        ConditionTWPAS
 Parent:         https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Condition-twcore
@@ -163,4 +138,34 @@ Description:    "此計畫-CarePlan TWPAS Profile說明本IG如何進一步定�
 * description 1..1
 * description ^short = "計畫，由醫院自行填寫。"
 
+
+/*
+Extension: EncounterSubjective
+Id: extension-encounter-subjective
+Description: "主觀描述"
+Context: Encounter
+* . ^definition = "主觀描述"
+* value[x] only Reference(ObservationSubjectiveTWPAS)
+
+Extension: EncounterObjective
+Id: extension-encounter-objective
+Description: "客觀描述"
+Context: Encounter
+* . ^definition = "客觀描述"
+* value[x] only Reference(ObservationObjectiveTWPAS)
+
+Extension: EncounterClinicalImpression
+Id: extension-encounter-clinicalImpression
+Description: "評估"
+Context: Encounter
+* . ^definition = "評估"
+* value[x] only Reference(ClinicalImpressionTWPAS)
+
+Extension: EncounterCarePlan
+Id: extension-encounter-carePlan
+Description: "計畫"
+Context: Encounter
+* . ^definition = "計畫"
+* value[x] only Reference(CarePlanTWPAS)
+*/
 
