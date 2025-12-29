@@ -73,6 +73,17 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/AllergyIntolerance-t
 * patient.allergy -> "AllergyIntolerance.code"
 
 
+Mapping: TWPASCompositionOpd
+Id: TWPASCompositionOpd
+Title: "Mapping to TWPAS Composition OPD"
+Source: ApplyImmModel
+Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Composition-opd-twpas"
+* opd.subjective -> "Composition.section[subjective].entry"
+* opd.objective -> "Composition.section[subjective].entry"
+* opd.assessment -> "Composition.section[subjective].entry"
+* opd.plan -> "Composition.section[subjective].entry"
+
+
 Mapping: TWPASEncounterOpd
 Id: TWPASEncounterOpd
 Title: "Mapping to TWPAS Encounter OPD"
@@ -83,10 +94,6 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Encounter-opd-twpas"
 * opd.funcType -> "Encounter.serviceType"
 * opd.prsnId -> "Encounter.participant.individual"
 * opd.icd10cmCode -> "Encounter.diagnosis.condition"
-* opd.subjective -> "Encounter.extension:subjective"
-* opd.objective -> "Encounter.extension:objective"
-* opd.assessment -> "Encounter.extension:assessment"
-* opd.plan -> "Encounter.extension:plan"
 
 
 Mapping: TWPASCondition

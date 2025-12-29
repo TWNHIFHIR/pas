@@ -102,6 +102,7 @@ pages:
 #
 parameters:
   default-version: false
+  apply-version: false
 #  version-comparison-master: 1.0.4
 #  version-comparison:
 #    - 1.0.4
