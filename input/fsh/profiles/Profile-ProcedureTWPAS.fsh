@@ -4,6 +4,7 @@ Parent:         Procedure
 Id:             Procedure-twpas
 Title:          "放射/照光治療-Procedure TWPAS"
 Description:    "此放射/照光治療-Procedure TWPAS Profile說明本IG如何進一步定義FHIR的Procedure Resource以呈現事前審查中治療資訊之「放射治療」及「照光治療」等相關資訊"
+* ^version = "1.1.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Procedure-twpas"

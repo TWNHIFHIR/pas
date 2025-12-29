@@ -3,6 +3,7 @@ Parent:         TWCoreBundle
 Id:             Bundle-immunologic-agent-twpas
 Title:          "免疫製劑事前審查-Bundle Immunologic Aagent TWPAS"
 Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Profile說明本IG如何進一步定義資料交換基本單位(TW Core Bundle) Profile以呈現免疫製劑事前審查之內容"
+* ^version = "1.1.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Bundle-immunologic-agent-twpas"

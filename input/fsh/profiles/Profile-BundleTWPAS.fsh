@@ -3,6 +3,7 @@ Parent:         TWCoreBundle
 Id:             Bundle-twpas
 Title:          "癌藥事前審查-Bundle TWPAS"
 Description:    "此癌藥事前審查-Bundle TWPAS Profile說明本IG如何進一步定義資料交換基本單位(TW Core Bundle) Profile以呈現癌藥事前審查之內容"
+* ^version = "1.1.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Bundle-twpas"
