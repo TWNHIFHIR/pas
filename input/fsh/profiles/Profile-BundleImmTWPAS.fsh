@@ -3,6 +3,7 @@ Parent:         TWCoreBundle
 Id:             Bundle-immunologic-agent-twpas
 Title:          "免疫製劑事前審查-Bundle Immunologic Aagent TWPAS"
 Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Profile說明本IG如何進一步定義資料交換基本單位(TW Core Bundle) Profile以呈現免疫製劑事前審查之內容"
+* ^version = "1.1.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Bundle-immunologic-agent-twpas"
@@ -19,6 +20,7 @@ Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Pro
 * entry ^slicing.rules = #closed
 * entry contains
 	claim 1..1 MS and
+	compositionOpd 0..* MS and
 	encounterOpd 0..* MS and
 	encounter 1..1 MS and
 	patient 1..1 MS and
@@ -75,6 +77,10 @@ Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Pro
 * entry[observationBloodgroup] ^short = "血型"
 * entry[observationBloodgroup].resource 1..1 MS
 * entry[observationBloodgroup].resource only ObservationBloodGroupTWPAS
+
+* entry[compositionOpd] ^short = "門診病歷"
+* entry[compositionOpd].resource 1..1 MS
+* entry[compositionOpd].resource only CompositionOpdTWPAS
 
 * entry[encounterOpd] ^short = "門診病歷"
 * entry[encounterOpd].resource 1..1 MS

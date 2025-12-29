@@ -3,6 +3,7 @@ Parent:         Claim
 Id:             Claim-twpas
 Title:          "癌藥事前審查-Claim TWPAS"
 Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進一步定義FHIR的Claim Resource以呈現癌藥事前審查之內容"
+* ^version = "1.1.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-twpas"
@@ -222,7 +223,7 @@ Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進�
 * supportingInfo[opd].category = NHIPASSupportingInfoType#opd
 * supportingInfo[opd].timing[x] ..0
 * supportingInfo[opd].value[x] 1.. MS
-* supportingInfo[opd].value[x] only Reference(EncounterOpdTWPAS)
+* supportingInfo[opd].value[x] only Reference(CompositionOpdTWPAS)
 * supportingInfo[opd].valueReference ^short = "門診病歷"
 
 /* * supportingInfo[diagnosis] ^short = "診斷"
@@ -343,7 +344,7 @@ Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進�
 
 * supportingInfo[weight].valueQuantity.value obeys HTWT
 * supportingInfo[height].valueQuantity.value obeys HTWT
-* diagnosis obeys diagnosis //and sequence-1
+* diagnosis obeys diagnosis
 * . obeys sequence-1 and supportingInfo and supportingInfo-tests and applType
 * item.programCode obeys pas-1
 
@@ -352,6 +353,7 @@ Extension: RequestedService
 Id: extension-requestedService
 Description: "事前審查品項"
 Context: Claim.item
+* ^version = "1.1.0"
 * . ^definition = "事前審查品項"
 * value[x] only Reference(MedicationRequestApplyTWPAS)
 

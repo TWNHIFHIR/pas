@@ -1,6 +1,6 @@
 Instance: enc-opd
 InstanceOf: EncounterOpdTWPAS
-Title: "門診病歷"
+Title: "門診病歷-Encounter"
 Description: "依據門診病歷-Encounter OPD TWPAS Profile呈現門診病歷之範例"
 Usage: #example
 * status = http://hl7.org/fhir/encounter-status#finished
@@ -9,11 +9,11 @@ Usage: #example
 * period.start = "2025-11-11"
 * serviceProvider.reference = "Organization/org-hosp-example" 
 * participant.individual.reference = "Practitioner/pra-min"
-* diagnosis.condition.reference = "Condition/con-diagnosis"
-* extension[subjective].valueReference.reference = "Observation/obs-subjective"
-* extension[objective].valueReference.reference = "Observation/obs-objective"
-* extension[assessment].valueReference.reference = "ClinicalImpression/cliImp-min"
-* extension[plan].valueReference.reference = "CarePlan/careplan-min"
+* subject.reference = "Patient/pat-min"
+* diagnosis[0].condition.reference = "Condition/con-diagnosis"
+* diagnosis[=].rank = 1
+* diagnosis[1].condition.reference = "Condition/con-comorbidity"
+* diagnosis[=].rank = 2
 
 
 Instance: obs-subjective

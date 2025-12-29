@@ -8,7 +8,7 @@ Usage: #definition
 * status = #active
 * experimental = false
 * publisher = "衛生福利部中央健康保險署"
-* date = "2025-10-01"
+* date = "2026-01-05"
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+json
@@ -119,6 +119,22 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+
+* rest.resource[+].type = #Composition
+* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Composition-opd-twpas"
+* rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #create
+* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #read
+* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #vread
+* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #update
+* rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #AllergyIntolerance
 * rest.resource[=].profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/AllergyIntolerance-twpas"
@@ -457,7 +473,7 @@ Usage: #definition
         <li>實作指引版本：1.1.0</li>
         <li>FHIR版本：4.0.1</li>
         <li>支援格式：<code>json</code></li>
-        <li>發佈日：2025-10-01</li>
+        <li>發佈日：2026-01-05</li>
         <li>發佈者：衛生福利部中央健康保險署</li>
     </ul>
     <h3 id=\"shallIGs\">必須（SHALL）支援以下實作指引</h3>
@@ -492,7 +508,7 @@ Usage: #definition
     </div>
     <h3 id=\"resourcesCap1\">Resources或Profiles的RESTful功能</h3>
     <h4 id=\"resourcesSummary1\">Summary</h4>
-    <p>共有二十二類Resources支援查詢，查詢參數如表列：</p>
+    <p>共有二十三類Resources支援查詢，查詢參數如表列：</p>
     <div class=\"table-responsive\">
         <table class=\"table table-condensed table-hover\">
             <thead>
@@ -544,6 +560,16 @@ Usage: #definition
                     <td class=\"text-center\"></td>
                     <td class=\"text-center\">y</td>
                     <td>adjudication-reason, request.patient.name, request.patient.identifier, request.identifier, request.func-type.service-type, created, disposition</td>
+                </tr>
+                <tr>
+                    <td><a href=\"#Composition\">Composition</a></td>
+                    <td><a href=\"StructureDefinition-Composition-opd-twpas.html\">門診病歷-Composition OPD TWPAS</a></td>
+                    <td class=\"text-center\">y</td>
+                    <td class=\"text-center\">y</td>
+                    <td class=\"text-center\">y</td>
+                    <td class=\"text-center\"></td>
+                    <td class=\"text-center\">y</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td><a href=\"#AllergyIntolerance\">AllergyIntolerance</a></td>
@@ -982,6 +1008,31 @@ Usage: #definition
                     </div>
                     <div class=\"col-lg-5\">\u00a0</div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class=\"panel panel-default\">
+        <div class=\"panel-heading\">
+            <h4 id=\"Composition\" class=\"panel-title\"><span style=\"float: right;\">預期的遵從度： 必須（SHALL）</span>Composition</h4>
+        </div>
+        <div class=\"panel-body\">
+            <div class=\"container\">
+                <div class=\"row\">
+                    <div class=\"col-lg-7\"><span class=\"lead\">Profile</span><br /><a href=\"StructureDefinition-Composition-opd-twpas.html\">門診病歷-Composition OPD TWPAS</a>
+                    </div>
+                    <div class=\"col-lg-5\"><span class=\"lead\">支援的參照政策（Reference policy）</span><br /><code>resolves</code>
+                    </div>
+                </div>
+                <p />
+                <div class=\"row\">
+                    <div class=\"col-lg-6\"><span class=\"lead\">能力摘要</span><br />
+                        <ul>
+                            <li><strong>必須（SHALL）</strong>支援 <code>create</code>, <code>read</code>,
+                                <code>vread</code>, <code>update</code>.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p />
             </div>
         </div>
     </div>

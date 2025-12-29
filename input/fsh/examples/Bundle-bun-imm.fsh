@@ -8,6 +8,9 @@ Usage: #example
 * entry[claim].fullUrl = "https://nhicore.nhi.gov.tw/pas/Claim/cla-imm"
 * entry[claim].resource = cla-imm
 
+* entry[compositionOpd].fullUrl = "https://nhicore.nhi.gov.tw/pas/Composition/opd"
+* entry[compositionOpd].resource = opd
+
 * entry[encounterOpd].fullUrl = "https://nhicore.nhi.gov.tw/pas/Encounter/enc-opd"
 * entry[encounterOpd].resource = enc-opd
 

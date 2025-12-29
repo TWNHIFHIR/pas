@@ -1,10 +1,10 @@
 CodeSystem: NHIApproveComment
 Id: nhi-approve-comment
 Title: "NHI-健保事前審查-核定註記"
-Description: "臺灣衛生福利部中央健康保險署「核定註記」代碼，代碼出版日期：2025-10-01；資料所屬單位：臺灣衛生福利部中央健康保險署。"
+Description: "臺灣衛生福利部中央健康保險署「核定註記」代碼，代碼出版日期：2026-01-05；資料所屬單位：臺灣衛生福利部中央健康保險署。"
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2025-10-01"
+* ^date = "2026-01-05"
 * ^version = "1.1.0"
 * ^experimental = false
 * #0 "審核中"
@@ -20,7 +20,7 @@ ValueSet: NHIApproveItemComment
 Id: nhi-approve-item-comment
 Title: "NHI-健保事前審查-個別醫令核定註記值集"
 Description: "NHI-健保事前審查-個別醫令核定註記值集"
-* ^date = "2025-10-01"
+* ^date = "2026-01-05"
 * ^version = "1.1.0"
 * ^experimental = false
 * include codes from system NHIApproveComment
@@ -29,7 +29,7 @@ ValueSet: NHIApproveClaimComment
 Id: nhi-approve-claim-comment
 Title: "NHI-健保事前審查-受理審查案件核定註記值集"
 Description: "NHI-健保事前審查-受理審查案件核定註記值集"
-* ^date = "2025-10-01"
+* ^date = "2026-01-05"
 * ^version = "1.1.0"
 * ^experimental = false
 * https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-approve-comment#1 "同意"

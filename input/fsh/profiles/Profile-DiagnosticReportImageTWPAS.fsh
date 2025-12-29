@@ -4,6 +4,7 @@ Parent:         DiagnosticReport
 Id:             DiagnosticReport-image-twpas
 Title:          "影像報告-DiagnosticReport Image TWPAS"
 Description:    "此影像報告-DiagnosticReport Image TWPAS Profile說明本IG如何進一步定義臺灣核心-診斷報告(TW Core DiagnosticReport) Profile以呈現事前審查之影像報告"
+* ^version = "1.1.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/DiagnosticReport-image-twpas"
@@ -38,7 +39,7 @@ Description:    "此影像報告-DiagnosticReport Image TWPAS Profile說明本IG
 * code.coding[LOINC].system 1..1 MS
 * code.coding[LOINC].system = "http://loinc.org"
 //* code.coding[LOINC].code = #18748-4 
-* code.coding[LOINC] from ImagingReport (extensible)
+* code.coding[LOINC] from ImagingReport //202512 delete (extensible)
 * code.text 0..1 MS
 * performer 1..1 MS
 * performer only Reference(PractitionerTWPAS) 
