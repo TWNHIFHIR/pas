@@ -3,7 +3,7 @@ Parent:         https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Composi
 Id:             Composition-opd-twpas
 Title:          "門診病歷-Composition OPD TWPAS"
 Description:    "此門診病歷-Composition OPD TWPAS Profile說明本IG如何進一步定義臺灣核心-臨床文件架構（TW Core Composition） Profile以呈現免疫製劑事前審查"
-* ^version = "1.1.0"
+* ^version = "1.1.1"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Composition-opd-twpas"

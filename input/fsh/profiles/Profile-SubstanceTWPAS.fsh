@@ -3,7 +3,7 @@ Parent:         Substance
 Id:             Substance-twpas
 Title:          "放射/照光治療總劑量-Substance TWPAS"
 Description:    "此放射/照光治療總劑量-Substance TWPAS Profile說明本IG如何進一步定義FHIR的Substance Resource以呈現事前審查中治療資訊之「放射治療」及「照光治療」總劑量"
-* ^version = "1.1.0"
+* ^version = "1.1.1"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Substance-twpas"

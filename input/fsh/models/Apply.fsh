@@ -3,7 +3,7 @@ Id: ApplyModel
 Title: "申請(Apply)癌症用藥癌藥事前審查之資料模型"
 Description: "申請(Apply)癌症用藥癌藥事前審查之資料模型，此邏輯模型為定義癌症用藥事前審查情境下使用的所有資料欄位。  
 為了便於實作者快速理解，資料欄位會使用易於理解的命名，實作者再透過邏輯模型中的功能頁籤「Mappings」瞭解各資料欄位實際使用本IG的哪個Profiles的哪個資料項目（element）。亦可配合[視覺化邏輯模型圖](vision-cancer.html)進行欄位對應"
-* ^version = "1.1.0"
+* ^version = "1.1.1"
 * hosp 1..1 BackboneElement "院所資訊" "院所資訊"
 * hosp.hospId 1..1 string "醫事機構代碼，必須存在於醫事機構基本資料檔內" "醫事機構代碼，必須存在於醫事機構基本資料檔內"
 * hosp.applType 1..1 CodeableConcept "申報類別" "申報類別"
