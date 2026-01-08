@@ -3,7 +3,7 @@ Parent:         TWCoreMedicationRequest
 Id:             MedicationRequest-treat-twpas
 Title:          "用藥品項-MedicationRequest Treat TWPAS"
 Description:    "此用藥品項-MedicationRequest Treat TWPAS Profile說明本IG如何進一步定義臺灣核心-藥品請求(TW Core MedicationRequest) Profile以呈現事前審查中治療資訊之用藥品項"
-* ^version = "1.1.0"
+* ^version = "1.1.1"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/MedicationRequest-treat-twpas"

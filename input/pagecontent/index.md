@@ -1,51 +1,16 @@
 <div class="bg-danger" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.0.9版內容，因而會比健保署的IG版本V1.0.9(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為115年1月5日，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
+<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.1.0版內容，因而會比健保署的IG版本V1.1.0(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為115年1月5日，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
 <br/>
-<b>醫院實作時請以V1.0.9為主進行實例驗證，目前健保署端的伺服器採用V1.0.9版規格。</b></p>
+<b>醫院實作時請以V1.1.0為主進行實例驗證，目前健保署端的伺服器採用V1.1.0版規格。</b></p>
 </div>
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-擴大事前審查以FHIR送審之範圍至<b>免疫製劑</b>，於2025/12/25新增以下內容：
+因考量實作需求，於2025/1/5異動以下內容：
     <ol>  
-        <li>新增<a href="StructureDefinition-Bundle-immunologic-agent-twpas.html">Profile: 免疫製劑事前審查-Bundle Immunologic Aagent TWPAS</a>。</li>
-        <li>新增<a href="StructureDefinition-Claim-immunologic-agent-twpas.html">Profile: 免疫製劑事前審查-Claim Immunologic Aagent TWPAS</a>。</li>
-        <li>病人資訊：
-            <ol>
-                <li>新增<a href="StructureDefinition-AllergyIntolerance-twpas.html">Profile: 過敏史-AllergyIntolerance TWPAS</a>。</li>
-                <li>新增<a href="StructureDefinition-Observation-blood-group-twpas.html">Profile: 血型-Observation Blood Group TWPAS</a>。</li>
-            </ol>
-        </li>
-        <li>門診病歷：
-            <ol>
-                <li>新增<a href="StructureDefinition-Composition-opd-twpas.html">Profile: 門診病歷-Composition OPD TWPAS</a>。</li>
-                <li>新增<a href="StructureDefinition-Encounter-opd-twpas.html">Profile: 門診病歷-Encounter OPD TWPAS</a>。</li>
-                <li>新增<a href="StructureDefinition-Condition-twpas.html">Profile: 診斷-Condition TWPAS</a>。</li>
-                <li>新增<a href="StructureDefinition-Observation-subjective-twpas.html">Profile: 主觀描述-Observation Subjective TWPAS</a>。</li>
-                <li>新增<a href="StructureDefinition-Observation-objective-twpas.html">Profile: 客觀描述-Observation Objective TWPAS</a>。</li>
-                <li>新增<a href="StructureDefinition-ClinicalImpression-twpas.html">Profile: 評估-ClinicalImpression TWPAS</a>。</li>
-                <li>新增<a href="StructureDefinition-CarePlan-twpas.html">Profile: 計畫-CarePlan TWPAS</a>。</li>
-            </ol>
-        </li>
-    </ol>
-因考量實作需求，於2025/12/29異動以下內容：
-    <ol>  
-        <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
-        <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li>
-        <li>修改<a href="StructureDefinition-Claim-twpas.html">Profile: 癌藥事前審查-Claim TWPAS</a>：
-            <ol>
-                <li>修改Constraint: supportingInfo：當Claim.priority(案件類別)為1(一般事前審查申請)、3(自主審查)時，至少還需提供檢查報告、影像報告、基因資訊中任一樣資訊。如果Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代碼)為C61，且Claim.item.modifier:continuation(續用註記)為2，則可排除此條件。</li>
-                <li>新增Constraint: supportingInfo-tests：當Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代碼)為C61，且Claim.item.modifier:continuation(續用註記)為2，需提供檢驗(查)。</li>
-            </ol>
-        </li>
-        <li>修改<a href="StructureDefinition-Observation-pat-assessment-twpas.html">Profile: 病人狀態評估-Observation Patient Assessment TWPAS</a>：
-            <ol>
-                <li>新增病人狀態評估報告及病人狀態評估報告名稱(<code>derivedFrom</code>)。</li>
-                <li>更新<a href="ValueSet-pat-ast.html">ValueSet: LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集</a></li>
-            </ol>
-        </li>
-        <li>修改<a href="StructureDefinition-Encounter-twpas.html">Profile: 就醫科別-Encounter TWPAS</a>：取消綁定就醫分類(<code>class</code>)之固定值。</li>
-        <li>修改「放射治療」相關欄位之名稱為「放射/照光治療」。</li>
+<!--         <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
+        <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
+        <li>更新值集：<a href="ValueSet-cancer-stage.html">ValueSet: SCT + NCI-健保事前審查-癌症分期量表項目值集</a></li>
     </ol>
     請留意這些異動，以避免影響您的實作。
 </div>

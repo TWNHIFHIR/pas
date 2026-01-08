@@ -2,7 +2,7 @@ Extension: ClaimResponseRequestor
 Id: extension-claimResponse-requestor
 Description: "審查委員身分證號"
 Context: ClaimResponse
-* ^version = "1.1.0"
+* ^version = "1.1.1"
 * . ^short = "審查委員身分證號"
 * value[x] ^short = "審查委員身分證號"
 * value[x] only Identifier
