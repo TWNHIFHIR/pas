@@ -26,8 +26,11 @@ Usage: #example
 * entry[organization].fullUrl = "https://nhicore.nhi.gov.tw/pas/Organization/org-hosp-example"
 * entry[organization].resource = org-hosp-example
 
-* entry[condition].fullUrl = "https://nhicore.nhi.gov.tw/pas/Condition/con-diagnosis"
-* entry[condition].resource = con-diagnosis
+* entry[condition][0].fullUrl = "https://nhicore.nhi.gov.tw/pas/Condition/con-diagnosis"
+* entry[condition][0].resource = con-diagnosis
+
+* entry[condition][1].fullUrl = "https://nhicore.nhi.gov.tw/pas/Condition/con-diagnosis"
+* entry[condition][1].resource = con-comorbidity
 
 * entry[observationBloodgroup].fullUrl = "https://nhicore.nhi.gov.tw/pas/Observation/obs-blood-group"
 * entry[observationBloodgroup].resource = obs-blood-group
