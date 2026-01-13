@@ -306,6 +306,11 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * . obeys sequence-1 and applType //and opd
 * item.programCode obeys pas-1
 
+Invariant:   opd
+Description: "當Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代碼)第一碼不等於C，才可上傳。"
+Expression:  "(diagnosis.diagnosis.ofType(CodeableConcept).coding.where(code.matches('^(C)')).exists()).not()"
+Severity:    #error
+
 /*Invariant:   opd
 Description: "若有填寫Claim.supportingInfo[opd](門診病歷)，亦須填寫Claim.supportingInfo[subjective](主觀描述)、Claim.supportingInfo[objective](客觀描述)、Claim.supportingInfo[assessment](評估)。"
 Expression:  "supportingInfo.category.coding.exists(code ='opd') implies (supportingInfo.category.coding.exists(code = 'subjective') and supportingInfo.category.coding.exists(code = 'objective') and supportingInfo.category.coding.exists(code = 'assessment'))"
