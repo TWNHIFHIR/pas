@@ -17,7 +17,7 @@
             </ol>
         </li>
         <li>修改<a href="StructureDefinition-Claim-immunologic-agent-twpas.html">Profile: 癌藥事前審查-Claim TWPAS</a>：新增Constraint: diagnosis：當Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代碼)第一碼不等於C，才可上傳。</li>
-        <li>更新代碼：<a href="CodeSystem-medication-frequency-nhi-tw.html">CodeSystem: NHI-健保事前審查-藥品使用頻率</a>：新增代碼<code>QODHS</code>(隔天一次，睡前)。</li>
+        <!-- <li>更新代碼：<a href="CodeSystem-medication-frequency-nhi-tw.html">CodeSystem: NHI-健保事前審查-藥品使用頻率</a>：新增代碼<code>QODHS</code>(隔天一次，睡前)。</li> -->
         <li>更新值集：<a href="ValueSet-cancer-stage.html">ValueSet: SCT + NCI-健保事前審查-癌症分期量表項目值集</a></li>
     </ol>
     請留意這些異動，以避免影響您的實作。
