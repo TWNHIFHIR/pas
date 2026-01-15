@@ -6,10 +6,11 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/1/13異動以下內容：
+因考量實作需求，於2025/1/15異動以下內容：
     <ol>  
 <!--         <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
         <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
+        <li>更新值集：<a href="ValueSet-imaging-report.html">ValueSet: LOINC-健保事前審查-影像報告值集</a>：新增LOINC代碼<code>28012-3</code>、<code>28014-9</code>、<code>18746-8</code>、<code>28018-0</code>。</li>
         <li>修改<a href="StructureDefinition-Claim-twpas.html">Profile: 癌藥事前審查-Claim TWPAS</a>：
             <ol>
                 <li>新增Constraint: supportingInfo-2：當Claim.priority(案件類別)為1(一般事前審查申請)、3(自主審查)時，至少還需提供檢查報告、影像報告、基因資訊中任一樣資訊。如果Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代碼)為C90或C92，則可排除此條件。</li>
