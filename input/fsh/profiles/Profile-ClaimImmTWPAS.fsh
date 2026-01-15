@@ -303,8 +303,13 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * supportingInfo[weight].valueQuantity.value obeys HTWT
 * supportingInfo[height].valueQuantity.value obeys HTWT
 * diagnosis obeys diagnosis //and sequence-1
-* . obeys sequence-1 and applType //and opd
+* . obeys sequence-1 and applType and diagnosis-imm
 * item.programCode obeys pas-1
+
+Invariant:   diagnosis-imm
+Description: "當Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代碼)第一碼不等於C，才可上傳。"
+Expression:  "(diagnosis.diagnosis.ofType(CodeableConcept).coding.where(code.matches('^(C)')).exists()).not()"
+Severity:    #error
 
 /*Invariant:   opd
 Description: "若有填寫Claim.supportingInfo[opd](門診病歷)，亦須填寫Claim.supportingInfo[subjective](主觀描述)、Claim.supportingInfo[objective](客觀描述)、Claim.supportingInfo[assessment](評估)。"

@@ -29,7 +29,7 @@ Usage: #example
 * entry[condition][0].fullUrl = "https://nhicore.nhi.gov.tw/pas/Condition/con-diagnosis"
 * entry[condition][0].resource = con-diagnosis
 
-* entry[condition][1].fullUrl = "https://nhicore.nhi.gov.tw/pas/Condition/con-diagnosis"
+* entry[condition][1].fullUrl = "https://nhicore.nhi.gov.tw/pas/Condition/con-comorbidity"
 * entry[condition][1].resource = con-comorbidity
 
 * entry[observationBloodgroup].fullUrl = "https://nhicore.nhi.gov.tw/pas/Observation/obs-blood-group"

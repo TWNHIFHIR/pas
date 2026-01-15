@@ -5,7 +5,7 @@ Description: "HL7 TimingAbbreviation + NHI-健保事前審查-藥品使用頻率
 代碼對應請參照[臺灣健保署藥品使用頻率代碼對應對應HL7 TimingAbbreviation](https://build.fhir.org/ig/MOHW-TWCoreIG/cctwFHIRterm/ConceptMap-medication-frequency-tw.html)"
 * ^experimental = false
 * ^date = "2024-01-16"
-* ^version = "0.2.3"
+* ^version = "1.1.1"
 * ^copyright = "衛生福利部"
 * ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation
@@ -22,7 +22,7 @@ Description: "NHI-健保事前審查-藥品使用頻率，參照至[健保署檔
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2026-01-05"
-* ^version = "2025-09-16"
+* ^version = "2026-01-13"
 * ^experimental = false
 * #QW(1) "每週一使用"
 * #QW(2) "每週二使用"
@@ -654,3 +654,5 @@ Description: "NHI-健保事前審查-藥品使用頻率，參照至[健保署檔
 // 2025-10-15 add
 * #HS "睡前一次"
 * #QDHS "每日一次睡前使用"
+// 2026-01-15 add
+* #QODHS "隔日一次睡前使用"
