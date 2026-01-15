@@ -10,6 +10,7 @@
     <ol>  
 <!--         <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
         <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
+        <li>更新代碼：<a href="CodeSystem-medication-frequency-nhi-tw.html">CodeSystem: NHI-健保事前審查-藥品使用頻率</a>：新增代碼<code>QODHS</code>(隔日一次睡前使用)。</li>
         <li>更新值集：<a href="ValueSet-imaging-report.html">ValueSet: LOINC-健保事前審查-影像報告值集</a>：新增LOINC代碼<code>28012-3</code>、<code>28014-9</code>、<code>18746-8</code>、<code>28018-0</code>。</li>
         <li>修改<a href="StructureDefinition-Claim-twpas.html">Profile: 癌藥事前審查-Claim TWPAS</a>：
             <ol>
@@ -18,7 +19,6 @@
             </ol>
         </li>
         <li>修改<a href="StructureDefinition-Claim-immunologic-agent-twpas.html">Profile: 癌藥事前審查-Claim TWPAS</a>：新增Constraint: diagnosis：當Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代碼)第一碼不等於C，才可上傳。</li>
-        <!-- <li>更新代碼：<a href="CodeSystem-medication-frequency-nhi-tw.html">CodeSystem: NHI-健保事前審查-藥品使用頻率</a>：新增代碼<code>QODHS</code>(隔天一次，睡前)。</li> -->
         <li>更新值集：<a href="ValueSet-cancer-stage.html">ValueSet: SCT + NCI-健保事前審查-癌症分期量表項目值集</a></li>
     </ol>
     請留意這些異動，以避免影響您的實作。
