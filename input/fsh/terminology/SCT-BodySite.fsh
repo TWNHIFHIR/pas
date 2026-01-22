@@ -23,6 +23,7 @@ Description: "SNOMEDCT-健保事前審查-身體部位值集，代碼對應請�
 * http://snomed.info/sct#87141009
 * http://snomed.info/sct#3058005
 * http://snomed.info/sct#243928005
+* http://snomed.info/sct#86762007
 
 
 
