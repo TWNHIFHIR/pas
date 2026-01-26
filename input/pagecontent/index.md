@@ -6,10 +6,10 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/1/22異動以下內容：
+因考量實作需求，於2025/1/26異動以下內容：
     <ol>  
-<!--         <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
-        <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
+        <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
+        <!-- <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
         <li>更新值集：<a href="ValueSet-sct-body-site.html">ValueSet: SNOMEDCT-健保事前審查-身體部位值集</a>：新增SCT代碼<code>86762007</code>。</li>
         <li>更新代碼：<a href="CodeSystem-medication-frequency-nhi-tw.html">CodeSystem: NHI-健保事前審查-藥品使用頻率</a>：新增代碼<code>QODHS</code>(隔日一次睡前使用)。</li>
         <li>更新值集：<a href="ValueSet-imaging-report.html">ValueSet: LOINC-健保事前審查-影像報告值集</a>：新增LOINC代碼<code>28012-3</code>、<code>28014-9</code>、<code>18746-8</code>、<code>28018-0</code>。</li>
