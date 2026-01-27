@@ -21,8 +21,8 @@ Description: "NHI-健保事前審查-藥品使用頻率，參照至[健保署檔
 *因原始資料無代碼版本資訊，故使用其「更新日期」作為版本資訊。*"
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2026-01-05"
-* ^version = "2026-01-13"
+* ^date = "2026-01-27"
+* ^version = "2026-01-27"
 * ^experimental = false
 * #QW(1) "每週一使用"
 * #QW(2) "每週二使用"
@@ -656,3 +656,8 @@ Description: "NHI-健保事前審查-藥品使用頻率，參照至[健保署檔
 * #QDHS "每日一次睡前使用"
 // 2026-01-15 add
 * #QODHS "隔日一次睡前使用"
+// 2026-01-27 add
+* #BIDPRN "需要時每日2次"
+* #HSPRN "需要時睡前1次"
+* #QDPRN "需要時每日1次"
+* #TIDPRN "需要時每日3次"
