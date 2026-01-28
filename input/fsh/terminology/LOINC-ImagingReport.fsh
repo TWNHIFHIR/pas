@@ -2,7 +2,7 @@ ValueSet: ImagingReport
 Id: imaging-report
 Title: "LOINC-健保事前審查-影像報告值集"
 Description: "LOINC-健保事前審查-影像報告值集"
-* ^date = "2026-01-05"
+* ^date = "2026-02-03"
 * ^version = "1.1.1"
 * ^experimental = false
 * $loinc#18748-4

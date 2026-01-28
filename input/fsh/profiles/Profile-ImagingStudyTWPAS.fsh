@@ -60,14 +60,14 @@ Description:    "此非DICOM影像-Media TWPAS Profile說明本IG如何進一步
 
 Invariant:   UploadContent
 Description: "填寫格式：file://檔名.副檔名，例如：file://US01.jpg、file://PathologyReport01.pdf、file://GenReport01.pdf、file://王大明病歷.pdf"
-Expression:  "url.matches('^file://[a-zA-Z0-9_\u4e00-\u9fa5()-]+.[a-zA-Z]{2,5}$')"
+Expression:  "url.matches('^file://[a-zA-Z0-9_\u4e00-\u9fa5()-]+.[a-zA-Z]{2,5}$') and url.contains('.')"
 Severity:    #error
 
 ValueSet: MediaMimeTypes
 Id: media-mimetypes
 Title: "HL7-非DICOM影像MimeType值集"
 Description: "HL7-非DICOM影像MimeType值集"
-* ^date = "2026-01-05"
+* ^date = "2026-02-03"
 * ^version = "1.1.1"
 * ^experimental = false
 * urn:ietf:bcp:13#image/jpeg
