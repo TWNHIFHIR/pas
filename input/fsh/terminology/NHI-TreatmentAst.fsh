@@ -5,7 +5,7 @@ Description: "臺灣衛生福利部中央健康保險署「治療後疾病狀態
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2026-02-03"
-* ^version = "1.1.1"
+* ^version = "1.1.2"
 * ^experimental = false
 * #ICLL "iwCLL (International Workshop on CLL)"
 * #IREC "i-RECIST criteria"
@@ -19,6 +19,6 @@ Id: nhi-tx-ast
 Title: "NHI-健保事前審查-治療後疾病狀態評估項目值集"
 Description: "NHI-健保事前審查-治療後疾病狀態評估項目值集"
 * ^date = "2026-02-03"
-* ^version = "1.1.1"
+* ^version = "1.1.2"
 * ^experimental = false
 * include codes from system NHITreatmentAst

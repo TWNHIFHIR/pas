@@ -3,7 +3,7 @@ Parent:         Claim
 Id:             Claim-twpas
 Title:          "癌藥事前審查-Claim TWPAS"
 Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進一步定義FHIR的Claim Resource以呈現癌藥事前審查之內容"
-* ^version = "1.1.1"
+* ^version = "1.1.2"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-twpas"
@@ -353,7 +353,7 @@ Extension: RequestedService
 Id: extension-requestedService
 Description: "事前審查品項"
 Context: Claim.item
-* ^version = "1.1.1"
+* ^version = "1.1.2"
 * . ^definition = "事前審查品項"
 * value[x] only Reference(MedicationRequestApplyTWPAS)
 

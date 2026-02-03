@@ -5,7 +5,7 @@ Description: "臺灣衛生福利部中央健康保險署「用藥線別」代碼
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2026-02-03"
-* ^version = "1.1.1"
+* ^version = "1.1.2"
 * ^experimental = false
 * #0 "不適用"
 * #1 "第一線治療"
@@ -19,6 +19,6 @@ Id: nhi-line-of-therapy
 Title: "NHI-健保事前審查-用藥線別值集"
 Description: "NHI-健保事前審查-用藥線別值集"
 * ^date = "2026-02-03"
-* ^version = "1.1.1"
+* ^version = "1.1.2"
 * ^experimental = false
 * include codes from system NHILOT
