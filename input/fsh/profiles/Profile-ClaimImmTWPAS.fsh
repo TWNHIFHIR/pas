@@ -3,7 +3,7 @@ Parent:         Claim
 Id:             Claim-immunologic-agent-twpas
 Title:          "免疫製劑事前審查-Claim Immunologic Aagent TWPAS"
 Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Profile說明本IG如何進一步定義FHIR的Claim Resource以呈現免疫製劑事前審查之內容"
-* ^version = "1.1.1"
+* ^version = "1.1.2"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-immunologic-agent-twpas"

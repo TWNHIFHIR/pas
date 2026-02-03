@@ -5,7 +5,7 @@ Description: "HL7 TimingAbbreviation + NHI-健保事前審查-藥品使用頻率
 代碼對應請參照[臺灣健保署藥品使用頻率代碼對應對應HL7 TimingAbbreviation](https://build.fhir.org/ig/MOHW-TWCoreIG/cctwFHIRterm/ConceptMap-medication-frequency-tw.html)"
 * ^experimental = false
 * ^date = "2024-01-16"
-* ^version = "1.1.1"
+* ^version = "1.1.2"
 * ^copyright = "衛生福利部"
 * ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation

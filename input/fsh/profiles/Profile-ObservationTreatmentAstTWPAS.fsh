@@ -3,7 +3,7 @@ Parent:         Observation
 Id:             Observation-tx-assessment-twpas
 Title:          "治療後疾病狀態評估-Observation Treatment Assessment TWPAS"
 Description:    "此治療後疾病狀態評估-Observation Treatment Assessment TWPAS Profile說明本IG如何進一步定義FHIR的Observation Resource以呈現事前審查中結果資訊之治療後疾病狀態評估"
-* ^version = "1.1.1"
+* ^version = "1.1.2"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-tx-assessment-twpas"
