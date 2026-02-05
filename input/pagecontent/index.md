@@ -6,12 +6,13 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/2/3異動以下內容：
+因考量實作需求，於2025/2/5異動以下內容：
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
         <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
         <li>更新代碼：<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：新增代碼<code>P044</code>、<code>P102</code>。</li>
         <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 癌藥事前審查-Bundle TWPAS</a>：修改Constraint: applyReason-8：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01013230，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P001、P011、P012、P031、P041、P044、P052、P061、P081、P101、P102 或 P111</li>
+        <li>修改<a href="StructureDefinition-ClaimResponse-self-assessment-twpas.html">Profile: 自主審查-ClaimResponse Self Assessment TWPAS</a>：修改requestor為必填。</li>
         <!-- <li>修改<a href="StructureDefinition-Claim-twpas.html">Profile: 癌藥事前審查-Claim TWPAS</a>：
             <ol>
                 <li>新增Constraint: supportingInfo-2：當Claim.priority(案件類別)為1(一般事前審查申請)、3(自主審查)時，至少還需提供檢查報告、影像報告、基因資訊中任一樣資訊。如果Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代碼)為C90或C92，則可排除此條件。</li>

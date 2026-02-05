@@ -93,3 +93,5 @@ Description:    "此事前審查回覆-ClaimResponse TWPAS Profile說明本IG如
 * disposition ^short = "案件受理狀態。待處理 | 處理中 | 處理中(等待附件檔) | 處理中(檔案檢核中) | 處理中(等待檢查申報資料) | 資料檢核失敗 | 檔案傳送失敗 | 附件檔轉檔失敗 | 影像檔轉檔失敗 | 電子病歷檔轉檔失敗 | 申請檔案檢核失敗 | 申請檔案未備齊 | 已受理 | 審查中 | 審畢結果"
 * request 1.. MS
 * request only Reference(ClaimTWPAS)
+* requestor 1.. MS
+* requestor only Reference(OrganizationTWPAS)
