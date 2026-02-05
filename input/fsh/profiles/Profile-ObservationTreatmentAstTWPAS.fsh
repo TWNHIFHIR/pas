@@ -23,7 +23,7 @@ Description:    "此治療後疾病狀態評估-Observation Treatment Assessment
 * subject 1.. MS
 
 * code ^short = "治療後疾病狀態評估項目"
-* value[x] ^short = "治療後疾病狀態評估結果"
+* value[x] ^short = "治療後疾病狀態評估結果。請依評估項目填寫特定代碼。"
 * effectiveDateTime ^short = "治療後疾病狀態評估日期，YYYY-MM-DD，西元年月日。"
 
 * . obeys nhi-tx-ast-value //-ICLL and nhi-tx-ast-value-IREC and nhi-tx-ast-value-MREC-REC1 and nhi-tx-ast-value-IWGC
