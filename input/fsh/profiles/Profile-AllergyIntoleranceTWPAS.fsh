@@ -8,4 +8,5 @@ Description:    "此過敏史-AllergyIntolerance TWPAS Profile說明本IG如何�
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/AllergyIntolerance-twpas"
 * patient only Reference(PatientTWPAS)
+* recorder only Reference(PractitionerTWPAS or PatientTWPAS or TWCorePractitionerRole or TWCoreRelatedPerson)
 * code ^short = "過敏史，由醫院自行填寫。"
