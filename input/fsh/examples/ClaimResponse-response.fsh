@@ -8,6 +8,7 @@ Usage: #example
 * use = http://hl7.org/fhir/claim-use#preauthorization
 * patient.reference = "Patient/pat-min"
 * request.reference = "Claim/cla-1"
+* requestor.reference = "Organization/org-hosp-example"
 * created = "2024-07-30"
 * insurer.reference = "Organization/org-nhi"
 * outcome = http://hl7.org/fhir/remittance-outcome#complete
@@ -37,6 +38,7 @@ Usage: #example
     <p><b>核定日期</b>：2024-07-30</p>
     <p><b>關聯的事前審查</b>：<a href=\"Claim-cla-1.html\">Claim/cla-1</a></p>
     <p><b>保險商</b>：<a href=\"Organization-org-nhi.html\">Organization 衛生福利部中央健康保險署</a></p>
+    <p><b>requestor</b>：<a href=\"Organization-org-hosp-example.html\">Organization 醫事機構</a></p>
     <p><b>處置狀態</b>：Processing Complete</p>
     <p><b>案件受理狀態</b>：審畢結果</p>
     <blockquote>
