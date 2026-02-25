@@ -19,7 +19,7 @@ Description:    "此病人狀態評估-Observation Patient Assessment TWPAS Prof
 * category ^short = "因設計而須必填。"
 * category = NHIPASSupportingInfoType#patientAssessment
 * value[x] MS
-* value[x] only string or integer
+* value[x] only string or integer or Quantity
 * performer 1..1 MS
 * performer only Reference(PractitionerTWPAS)
 * subject only Reference(PatientTWPAS)
@@ -80,7 +80,7 @@ Description: "若病人狀態評估項目代碼(code)為88020-3，結果值(valu
 若病人狀態評估項目代碼(code)為IPS，結果值(valueInteger)須填寫0~7其中的值；
 若病人狀態評估項目代碼(code)為PDAI，結果值(valueInteger)須填寫0~263其中的值；
 若病人狀態評估項目代碼(code)為CIRS，結果值(valueInteger)須填寫0~56其中的值；
-若病人狀態評估項目代碼(code)為75633-8，結果值(valueInteger)須填寫0~10其中的值；
+若病人狀態評估項目代碼(code)為75633-8，結果值(valueQuantity)須填寫0~10其中的值，可包含小數點下兩位；
 若病人狀態評估項目代碼(code)為HCTCI，結果值(valueInteger)須填寫0~26其中的值；
 若病人狀態評估項目代碼(code)為MPNSAFTSS，結果值(valueInteger)須填寫0~100其中的值；
 若病人狀態評估項目代碼(code)為MPN10，結果值(valueInteger)須填寫0~100其中的值；
@@ -96,7 +96,7 @@ Expression:  "((code.coding.exists(code='88020-3')) implies (value.ofType(string
 ((code.coding.exists(code='IPS')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 7)) and 
 ((code.coding.exists(code='PDAI')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 263)) and 
 ((code.coding.exists(code='CIRS')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 56)) and 
-((code.coding.exists(code='75633-8')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 10)) and 
+((code.coding.exists(code='75633-8')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 10 and (value.ofType(Quantity).value * 100).round() = value.ofType(Quantity).value * 100)) and 
 ((code.coding.exists(code='HCTCI')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 26)) and 
 ((code.coding.exists(code='MPNSAFTSS')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 100)) and 
 ((code.coding.exists(code='MPN10')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 100)) and 
@@ -108,3 +108,5 @@ Expression:  "((code.coding.exists(code='88020-3')) implies (value.ofType(string
 ((code.coding.exists(code='MayoE')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 12)) and 
 ((code.coding.exists(code='PUCAI')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 90))"
 Severity:    #error
+
+(code.coding.exists(code='75633-8')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 10 and (value.ofType(Quantity).value * 100).round() = value.ofType(Quantity).value * 100)

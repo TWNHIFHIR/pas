@@ -6,10 +6,11 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/2/5異動以下內容：
+因考量實作需求，於2025/2/25異動以下內容：
     <ol>  
-        <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
-        <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
+        <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li> -->
+        <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li>
+        <li>修改<a href="StructureDefinition-Observation-pat-assessment-twpas.html">Profile: 病人狀態評估-Observation Patient Assessment TWPAS</a>：修改Constraint: pat-ast-value：若病人狀態評估項目代碼(code)為75633-8，結果值(valueQuantity)須填寫0~10其中的值，可包含小數點下兩位</li>
         <li>更新代碼：<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：新增代碼<code>P044</code>、<code>P102</code>。</li>
         <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 癌藥事前審查-Bundle TWPAS</a>：修改Constraint: applyReason-8：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01013230，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P001、P011、P012、P031、P041、P044、P052、P061、P081、P101、P102 或 P111</li>
         <li>修改<a href="StructureDefinition-ClaimResponse-self-assessment-twpas.html">Profile: 自主審查-ClaimResponse Self Assessment TWPAS</a>：修改requestor為必填。</li>
