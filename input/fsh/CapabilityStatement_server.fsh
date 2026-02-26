@@ -2,7 +2,7 @@ Instance: CapabilityStatementTWPASServer
 InstanceOf: CapabilityStatement
 Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/CapabilityStatement/CapabilityStatementTWPASServer"
-* version = "1.1.2"
+* version = "1.2.0"
 * name = "CapabilityStatementTWPASServer"
 * title = "臺灣事前審查-伺服端(TWPAS Server)"
 * status = #active
@@ -372,7 +372,8 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #Procedure
-* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Procedure-twpas"
+* rest.resource[=].supportedProfile[0] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Procedure-twpas"
+* rest.resource[=].supportedProfile[1] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Procedure-phototherapy-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -388,7 +389,8 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #Substance
-* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Substance-twpas"
+* rest.resource[=].supportedProfile[0] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Substance-twpas"
+* rest.resource[=].supportedProfile[1] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Substance-phototherapy-twpas"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -470,7 +472,7 @@ Usage: #definition
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <h2 id=\"title\">臺灣事前審查-伺服端(TWPAS Server)</h2>
     <ul>
-        <li>實作指引版本：1.1.2</li>
+        <li>實作指引版本：1.2.0</li>
         <li>FHIR版本：4.0.1</li>
         <li>支援格式：<code>json</code></li>
         <li>發佈日：2026-02-03</li>
@@ -720,7 +722,9 @@ Usage: #definition
                 </tr>
                 <tr>
                     <td><a href=\"#Procedure1-12\">Procedure</a></td>
-                    <td><a href=\"StructureDefinition-Procedure-twpas.html\">放射/照光治療-Procedure TWPAS</a></td>
+                    <td>支援的Profiles<br />\u00a0\u00a0
+                        <a href=\"StructureDefinition-Procedure-twpas.html\">放射治療-Procedure TWPAS</a><br />\u00a0\u00a0
+                        <a href=\"StructureDefinition-Procedure-phototherapy-twpas.html\">照光治療-Procedure Phototherapy TWPAS</a></td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
@@ -730,7 +734,9 @@ Usage: #definition
                 </tr>
                 <tr>
                     <td><a href=\"#Substance1-13\">Substance</a></td>
-                    <td><a href=\"StructureDefinition-Substance-twpas.html\">放射/照光治療總劑量-Substance TWPAS</a></td>
+                    <td>支援的Profiles<br />\u00a0\u00a0
+                        <a href=\"StructureDefinition-Substance-twpas.html\">放射治療總劑量-Substance TWPAS</a><br />\u00a0\u00a0
+                        <a href=\"StructureDefinition-Substance-phototherapy-twpas.html\">照光治療總次數-Substance Phototherapy TWPAS</a></td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
@@ -1459,18 +1465,22 @@ Usage: #definition
         <div class=\"panel-body\">
             <div class=\"container\">
                 <div class=\"row\">
-                    <div class=\"col-lg-7\"><span class=\"lead\">Profile</span><br /><a href=\"StructureDefinition-Procedure-twpas.html\">放射/照光治療-Procedure TWPAS</a>
+                    <div class=\"col-lg-3\"><span class=\"lead\">Core FHIR Resource</span><br /><a href=\"http://hl7.org/fhir/R4/procedure.html\">Procedure</a></div>
+                    <div class=\"col-lg-4\"><span class=\"lead\">支援的參照政策（Reference policy）</span><br /><code>resolves</code>
                     </div>
-                    <div class=\"col-lg-5\"><span class=\"lead\">支援的參照政策（Reference policy）</span><br /><code>resolves</code>
-                    </div>
-                </div>
-                <p />
-                <div class=\"row\">
-                    <div class=\"col-lg-6\"><span class=\"lead\">能力摘要</span><br />
+                    <div class=\"col-lg-5\"><span class=\"lead\">能力摘要</span><br />
                         <ul>
                             <li><strong>必須（SHALL）</strong>支援 <code>create</code>, <code>read</code>,
                                 <code>vread</code>, <code>update</code>.</li>
                         </ul>
+                    </div>
+                </div>
+                <p />
+                <div class=\"row\">
+                    <div class=\"col-6\"><span class=\"lead\">支援的Profiles</span>
+                        <p><a href=\"StructureDefinition-Procedure-twpas.html\">放射治療-Procedure TWPAS</a><br /><a
+                                href=\"StructureDefinition-Procedure-phototherapy-twpas.html\">照光治療-Procedure Phototherapy TWPAS</a>
+                        </p>
                     </div>
                 </div>
                 <p />
@@ -1484,18 +1494,22 @@ Usage: #definition
         <div class=\"panel-body\">
             <div class=\"container\">
                 <div class=\"row\">
-                    <div class=\"col-lg-7\"><span class=\"lead\">Profile</span><br /><a href=\"StructureDefinition-Substance-twpas.html\">放射/照光治療總劑量-Substance TWPAS</a>
+                    <div class=\"col-lg-3\"><span class=\"lead\">Core FHIR Resource</span><br /><a href=\"http://hl7.org/fhir/R4/substance.html\">Substance</a></div>
+                    <div class=\"col-lg-4\"><span class=\"lead\">支援的參照政策（Reference policy）</span><br /><code>resolves</code>
                     </div>
-                    <div class=\"col-lg-5\"><span class=\"lead\">支援的參照政策（Reference policy）</span><br /><code>resolves</code>
-                    </div>
-                </div>
-                <p />
-                <div class=\"row\">
-                    <div class=\"col-lg-6\"><span class=\"lead\">能力摘要</span><br />
+                    <div class=\"col-lg-5\"><span class=\"lead\">能力摘要</span><br />
                         <ul>
                             <li><strong>必須（SHALL）</strong>支援 <code>create</code>, <code>read</code>,
                                 <code>vread</code>, <code>update</code>.</li>
                         </ul>
+                    </div>
+                </div>
+                <p />
+                <div class=\"row\">
+                    <div class=\"col-6\"><span class=\"lead\">支援的Profiles</span>
+                        <p><a href=\"StructureDefinition-Substance-twpas.html\">放射治療總劑量-Substance TWPAS</a><br /><a
+                                href=\"StructureDefinition-Substance-phototherapy-twpas.html\">照光治療總次數-Substance Phototherapy TWPAS</a>
+                        </p>
                     </div>
                 </div>
                 <p />

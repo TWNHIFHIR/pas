@@ -3,7 +3,7 @@ Parent:         OperationOutcome
 Id:             Operationoutcome-twpas
 Title:          "系統回應訊息-OperationOutcome TWPAS"
 Description:    "此系統回應訊-OperationOutcome TWPAS Profile說明本IG如何進一步定義FHIR的OperationOutcome Resource以呈現系統回應訊息之內容"
-* ^version = "1.1.2"
+* ^version = "1.2.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Operationoutcome-twpas"

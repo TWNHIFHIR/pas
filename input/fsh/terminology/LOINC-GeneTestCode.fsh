@@ -4,7 +4,7 @@ Id: gene-test-code
 Title: "LOINC-健保事前審查-基因檢測代碼值集"
 Description: "LOINC-健保事前審查-基因檢測代碼值集"
 * ^date = "2026-02-03"
-* ^version = "1.1.2"
+* ^version = "1.2.0"
 * ^experimental = false
 * $loinc#99965-6
 * $loinc#21795-0

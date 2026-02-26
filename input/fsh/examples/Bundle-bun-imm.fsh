@@ -79,11 +79,17 @@ Usage: #example
 * entry[medicationRequestTreat].fullUrl = "https://nhicore.nhi.gov.tw/pas/MedicationRequest/medReq-treat"
 * entry[medicationRequestTreat].resource = medReq-treat
 
-* entry[procedure].fullUrl = "https://nhicore.nhi.gov.tw/pas/Procedure/pro-min"
-* entry[procedure].resource = pro-min
+* entry[procedureRadiotherapy].fullUrl = "https://nhicore.nhi.gov.tw/pas/Procedure/pro-min"
+* entry[procedureRadiotherapy].resource = pro-min
 
-* entry[substance].fullUrl = "https://nhicore.nhi.gov.tw/pas/Substance/sub-min"
-* entry[substance].resource = sub-min
+* entry[substanceRadiotherapy].fullUrl = "https://nhicore.nhi.gov.tw/pas/Substance/sub-min"
+* entry[substanceRadiotherapy].resource = sub-min
+
+* entry[procedurePhototherapy].fullUrl = "https://nhicore.nhi.gov.tw/pas/Procedure/pro-phototherapy"
+* entry[procedurePhototherapy].resource = pro-phototherapy
+
+* entry[substancePhototherapy].fullUrl = "https://nhicore.nhi.gov.tw/pas/Substance/sub-phototherapy"
+* entry[substancePhototherapy].resource = sub-phototherapy
 
 * entry[documentReference][1].fullUrl = "https://nhicore.nhi.gov.tw/pas/DocumentReference/doc-careplan-min"
 * entry[documentReference][1].resource = doc-careplan-min

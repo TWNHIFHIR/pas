@@ -28,6 +28,7 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-immunologic-ag
 
 * treat.medicationRequest.drugCode -> "Claim.supportingInfo.where(category.coding.code = 'medicationRequest').valueReference.reference"
 * treat.radiotherapy.rt -> "Claim.supportingInfo.where(category.coding.code = 'radiotherapy').valueReference.reference"
+* treat.phototherapy.ptCode -> "Claim.supportingInfo.where(category.coding.code = 'phototherapy').valueReference.reference"
 * treat.carePlanDocument -> "Claim.supportingInfo.where(category.coding.code = 'carePlanDocument').valueReference.reference"
 * result.txAst -> "Claim.supportingInfo.where(category.coding.code = 'treatmentAssessment').valueReference.reference"
 * diagnosis.icd10cmCode -> "Claim.diagnosis.diagnosisCodeableConcept.coding.code"
@@ -242,6 +243,25 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Substance-twpas"
 * treat.radiotherapy.rtDose -> "Substance.ingredient.quantity.numerator.value"
 * treat.radiotherapy.rtUnit -> "Substance.ingredient.quantity.numerator.code"
 
+Mapping: TWPASImmProcedurePhototherapy
+Id: TWPASImmProcedurePhototherapy
+Title: "Mapping to TWPAS Procedure Phototherapy"
+Source: ApplyImmModel
+Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Procedure-phototherapy-twpas"
+* treat.phototherapy.ptCode -> "Procedure.code.coding.code"
+* treat.phototherapy.ptSdate -> "Procedure.performedPeriod.start"
+* treat.phototherapy.ptEdate -> "Procedure.performedPeriod.end"
+* treat.phototherapy.ptNumber -> "Procedure.usedReference.reference"
+* treat.phototherapy.ptDocPdf -> "Procedure.report.reference"
+
+Mapping: TWPASImmSubstancePhototherapy
+Id: TWPASImmSubstancePhototherapy
+Title: "Mapping to TWPAS Substance Phototherapy"
+Source: ApplyImmModel
+Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Substance-phototherapy-twpas"
+* treat.phototherapy.ptNumber -> "Substance.ingredient.quantity.numerator.value"
+
+
 Mapping: TWPASImmDocumentReference
 Id: TWPASImmDocumentReference
 Title: "Mapping to TWPAS DocumentReference"
@@ -250,9 +270,11 @@ Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/DocumentReference-tw
 * treat.carePlanDocument -> "DocumentReference.content.attachment.url"
 * diagnosis.medrec -> "DocumentReference.content.attachment.url"
 * evaluate.tests.inspectPdf -> "DocumentReference.content.attachment.url"
+* treat.phototherapy.ptDocPdf -> "DocumentReference.content.attachment.url"
 * treat.carePlanDocumentTitle -> "DocumentReference.content.attachment.title"
 * diagnosis.medrecTitle -> "DocumentReference.content.attachment.title"
 * evaluate.tests.inspectPdfTitle -> "DocumentReference.content.attachment.title"
+* treat.phototherapy.ptDocTitle -> "DocumentReference.content.attachment.title"
 
 Mapping: TWPASImmObservationTreatmentAssessment
 Id: TWPASImmObservationTreatmentAssessment

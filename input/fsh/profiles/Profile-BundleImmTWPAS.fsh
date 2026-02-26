@@ -3,7 +3,7 @@ Parent:         TWCoreBundle
 Id:             Bundle-immunologic-agent-twpas
 Title:          "免疫製劑事前審查-Bundle Immunologic Aagent TWPAS"
 Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Profile說明本IG如何進一步定義資料交換基本單位(TW Core Bundle) Profile以呈現免疫製劑事前審查之內容"
-* ^version = "1.1.2"
+* ^version = "1.2.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Bundle-immunologic-agent-twpas"
@@ -46,8 +46,10 @@ Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Pro
 	observationLaboratoryResult 0..* MS and
 	observationPatientAssessment 0..* MS and
 	medicationRequestTreat 0..* MS and
-	procedure 0..* MS and
-	substance 0..* MS and
+	procedureRadiotherapy 0..* MS and
+	substanceRadiotherapy 0..* MS and
+	procedurePhototherapy 0..* MS and
+	substancePhototherapy 0..* MS and
 	observationTreatmentAssessment 0..* MS and
 	medicationRequestApply 1..* MS and
 	coverage 1..1 MS and
@@ -150,13 +152,21 @@ Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Pro
 * entry[medicationRequestTreat].resource 1..1 MS
 * entry[medicationRequestTreat].resource only MedicationRequestTreatTWPAS
 
-* entry[procedure] ^short = "放射/照光治療"
-* entry[procedure].resource 1..1 MS
-* entry[procedure].resource only ProcedureTWPAS
+* entry[procedureRadiotherapy] ^short = "放射治療"
+* entry[procedureRadiotherapy].resource 1..1 MS
+* entry[procedureRadiotherapy].resource only ProcedureTWPAS
 
-* entry[substance] ^short = "放射/照光治療總劑量"
-* entry[substance].resource 1..1 MS
-* entry[substance].resource only SubstanceTWPAS
+* entry[procedurePhototherapy] ^short = "照光治療"
+* entry[procedurePhototherapy].resource 1..1 MS
+* entry[procedurePhototherapy].resource only ProcedurePhototherapyTWPAS
+
+* entry[substanceRadiotherapy] ^short = "放射治療總劑量"
+* entry[substanceRadiotherapy].resource 1..1 MS
+* entry[substanceRadiotherapy].resource only SubstanceTWPAS
+
+* entry[substancePhototherapy] ^short = "照光治療總次數"
+* entry[substancePhototherapy].resource 1..1 MS
+* entry[substancePhototherapy].resource only SubstancePhototherapyTWPAS
 
 * entry[documentReference] ^short = "治療計畫文件／檢驗(查)附件／病人狀態評估報告"
 * entry[documentReference].resource 1..1 MS

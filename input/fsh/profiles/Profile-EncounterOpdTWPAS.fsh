@@ -3,7 +3,7 @@ Parent:         https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Encount
 Id:             Encounter-opd-twpas
 Title:          "門診病歷-Encounter OPD TWPAS"
 Description:    "此門診病歷-Encounter OPD TWPAS Profile說明本IG如何進一步定義臺灣核心-就醫事件(TW Core Encounter) Profile以呈現免疫製劑事前審查中門診病歷之醫事機構、門診日期、科別、門診醫師"
-* ^version = "1.1.2"
+* ^version = "1.2.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Encounter-opd-twpas"
@@ -61,7 +61,7 @@ Parent:         https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Conditi
 Id:             Condition-twpas
 Title:          "診斷-Condition TWPAS"
 Description:    "此診斷-Condition TWPAS Profile說明本IG如何進一步定義臺灣核心-病情、問題或診斷（TW Core Condition）Profile以呈現免疫製劑事前審查之診斷"
-* ^version = "1.1.2"
+* ^version = "1.2.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Condition-twpas"
@@ -85,7 +85,7 @@ Parent:         TWCoreObservationScreeningAssessment
 Id:             Observation-subjective-twpas
 Title:          "主觀描述-Observation Subjective TWPAS"
 Description:    "此主觀描述-Observation Subjective TWPAS Profile說明本IG如何進一步定義臺灣核心-健康狀態篩檢與評估（TW Core Observation Screening Assessment） Profile以呈現免疫製劑事前審查之主觀描述（S）"
-* ^version = "1.1.2"
+* ^version = "1.2.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-subjective-twpas"
@@ -101,7 +101,7 @@ Parent:         TWCoreObservationScreeningAssessment
 Id:             Observation-objective-twpas
 Title:          "客觀描述-Observation Objective TWPAS"
 Description:    "此客觀描述-Observation Objective TWPAS Profile說明本IG如何進一步定義臺灣核心-健康狀態篩檢與評估（TW Core Observation Screening Assessment） Profile以呈現免疫製劑事前審查之客觀描述（O）"
-* ^version = "1.1.2"
+* ^version = "1.2.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-objective-twpas"
@@ -117,7 +117,7 @@ Parent:         ClinicalImpression
 Id:             ClinicalImpression-twpas
 Title:          "評估-ClinicalImpression TWPAS"
 Description:    "此評估-ClinicalImpression TWPAS Profile說明本IG如何進一步定義FHIR的ClinicalImpression Resource以呈現免疫製劑事前審查之評估（A）"
-* ^version = "1.1.2"
+* ^version = "1.2.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/ClinicalImpression-twpas"
@@ -133,7 +133,7 @@ Parent:         TWCoreCarePlan
 Id:             CarePlan-twpas
 Title:          "計畫-CarePlan TWPAS"
 Description:    "此計畫-CarePlan TWPAS Profile說明本IG如何進一步定義臺灣核心-照護計畫（TW Core CarePlan） Profile以呈現免疫製劑事前審查之計畫（P）"
-* ^version = "1.1.2"
+* ^version = "1.2.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/CarePlan-twpas"
