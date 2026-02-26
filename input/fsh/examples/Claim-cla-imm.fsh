@@ -48,6 +48,8 @@ Usage: #example
 * supportingInfo[opd].valueReference.reference = "Composition/opd"
 * supportingInfo[allergy].sequence = 17
 * supportingInfo[allergy].valueReference.reference = "AllergyIntolerance/all-min"
+* supportingInfo[phototherapy].sequence = 18
+* supportingInfo[phototherapy].valueReference.reference = "Procedure/pro-phototherapy" 
 
 * diagnosis.sequence = 1
 * diagnosis.diagnosisCodeableConcept  = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2023-tw#I50.812

@@ -13,22 +13,22 @@
 - [事前審查-自主審查、多份影像報告（UUID）](Bundle-bun-uuid-example.html)：依據癌藥事前審查-Bundle TWPAS Profile呈現癌藥事前審查之自主審查範例
 - [事前審查-自主審查](Bundle-bun-self.html)：依據癌藥事前審查-Bundle TWPAS Profile呈現癌藥事前審查之自主審查範例
 - [事前審查回覆](Bundle-bun-response.html)：依據事前審查回覆-Bundle Response TWPAS Profile呈現癌藥事前審查回覆之範例
-- [<span class="bg-success">免疫製劑事前審查</span>](Bundle-bun-imm.html)：依據免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Profile呈現免疫製劑事前審查之範例
+- [免疫製劑事前審查](Bundle-bun-imm.html)：依據免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Profile呈現免疫製劑事前審查之範例
 
 #### Claim
 - [事前審查-送核、套組檢驗、多事前審查癌藥品項](Claim-cla-1.html)：依據癌藥事前審查-Claim TWPAS Profile呈現事前審查之範例，含兩筆檢驗(查)
 - [事前審查-申復、有共病](Claim-cla-3.html)：依據癌藥事前審查-Claim TWPAS Profile呈現癌藥事前審查之範例
-- [<span class="bg-success">免疫製劑事前審查</span>](Claim-cla-imm.html)：依據免疫製劑事前審查-Claim Immunologic Aagent TWPAS Profile呈現免疫製劑事前審查
+- [免疫製劑事前審查](Claim-cla-imm.html)：依據免疫製劑事前審查-Claim Immunologic Aagent TWPAS Profile呈現免疫製劑事前審查
 
 #### ClaimResponse
 - [事前審查結果-自主審查](ClaimResponse-self-assessment-example.html)：依據事前審查結果-ClaimResponse TWPAS Profile呈現事前審查結果之範例
 - [事前審查回覆](ClaimResponse-claim-response-example.html)：依據事前審查回覆-ClaimResponse TWPAS Profile呈現事前審查回覆之範例
 
 #### Composition
-- [<span class="bg-success">門診病歷-Composition</span>](Composition-opd.html)：依據門診病歷-Composition OPD TWPAS Profile呈現門診病歷
+- [門診病歷-Composition](Composition-opd.html)：依據門診病歷-Composition OPD TWPAS Profile呈現門診病歷
 
 #### AllergyIntolerance
-- [<span class="bg-success">過敏史</span>](AllergyIntolerance-all-min.html)：依據過敏史-AllergyIntolerance TWPAS Profile呈現過敏史之範例
+- [過敏史](AllergyIntolerance-all-min.html)：依據過敏史-AllergyIntolerance TWPAS Profile呈現過敏史之範例
 
 #### Organization
 - [醫事機構](Organization-org-hosp-example.html)：依據機構-Organization TWPAS Profile呈現醫事機構之範例
@@ -37,7 +37,7 @@
 
 #### Encounter
 - [就醫科別](Encounter-enc-min.html)：依據就醫科別-Encounter TWPAS Profile呈現就醫科別之範例
-- [<span class="bg-success">門診病歷-Encounter</span>](Encounter-enc-opd.html)：依據門診病歷-Encounter OPD TWPAS Profile呈現門診病歷之範例
+- [門診病歷-Encounter](Encounter-enc-opd.html)：依據門診病歷-Encounter OPD TWPAS Profile呈現門診病歷之範例
 
 #### Patient
 - [病人資訊](Patient-pat-min.html)：依據病人資訊-Patient TWPAS Profile呈現病人資訊之範例
@@ -67,18 +67,18 @@
 - [病人狀態評估-PDAI](Observation-obs-pat-pdai.html)：依據病人狀態評估-Observation Patient Assessment TWPAS Profile呈現病人狀態評估(PDAI)之範例 (評估資訊)
 - [病人狀態評估-CTCAE](Observation-obs-pat-ctcae.html)：依據病人狀態評估-Observation Patient Assessment TWPAS Profile呈現病人狀態評估(CTCAE)之範例 (評估資訊)
 - [治療後疾病狀態評估](Observation-obs-tx-min.html)：依據治療後疾病狀態評估-Observation Treatment Assessment TWPAS Profile呈現治療後疾病狀態評估之範例 (結果資訊)
-- [<span class="bg-success">血型</span>](Observation-obs-blood-group.html)：依據血型-Observation Blood Group TWPAS Profile呈現血型之範例 (病人資訊)
-- [<span class="bg-success">主觀描述(S)</span>](Observation-obs-subjective.html)：依據主觀描述-Observation Subjective TWPAS Profile呈現主觀描述之範例 (門診病歷)
-- [<span class="bg-success">客觀描述(O)</span>](Observation-obs-objective.html)：依據客觀描述-Observation Objective TWPAS Profile呈現客觀描述之範例 (門診病歷)
+- [血型](Observation-obs-blood-group.html)：依據血型-Observation Blood Group TWPAS Profile呈現血型之範例 (病人資訊)
+- [主觀描述(S)](Observation-obs-subjective.html)：依據主觀描述-Observation Subjective TWPAS Profile呈現主觀描述之範例 (門診病歷)
+- [客觀描述(O)](Observation-obs-objective.html)：依據客觀描述-Observation Objective TWPAS Profile呈現客觀描述之範例 (門診病歷)
 
 #### ClinicalImpression
-- [<span class="bg-success">評估(A)</span>](ClinicalImpression-cliImp-min.html)：依據評估-ClinicalImpression TWPAS Profile呈現評估之範例 (門診病歷)
+- [評估(A)](ClinicalImpression-cliImp-min.html)：依據評估-ClinicalImpression TWPAS Profile呈現評估之範例 (門診病歷)
 
 #### CarePlan
-- [<span class="bg-success">計畫(P)</span>](CarePlan-careplan-min.html)：依據計畫-CarePlan TWPAS Profile呈現計畫之範例 (門診病歷)
+- [計畫(P)](CarePlan-careplan-min.html)：依據計畫-CarePlan TWPAS Profile呈現計畫之範例 (門診病歷)
 
 #### Condition
-- [<span class="bg-success">診斷</span>](Condition-con-diagnosis.html)：依據診斷-Condition TWPAS Profile呈現診斷之範例 (門診病歷)
+- [診斷](Condition-con-diagnosis.html)：依據診斷-Condition TWPAS Profile呈現診斷之範例 (門診病歷)
 
 #### MedicationRequest
 - [用藥品項](MedicationRequest-medReq-treat.html)：依據用藥品項-MedicationRequest Treat TWPAS Profile呈現用藥品項之範例 (治療資訊)
@@ -86,10 +86,12 @@
 - [事前審查品項-給付適應症特定代碼](MedicationRequest-medReq-apply-2.html)：依據事前審查品項-MedicationRequest Apply TWPAS Profile呈現特定事前審查品項代碼之範例 (申請項目)
  
 #### Procedure
-- [放射/照光治療](Procedure-pro-min.html)：依據放射/照光治療-Procedure TWPAS Profile呈現放射/照光治療之範例
+- [放射治療](Procedure-pro-min.html)：依據放射治療-Procedure TWPAS Profile呈現放射治療之範例
+- [<span class="bg-success">照光治療</span>](Procedure-pro-phototherapy.html)：依據照光治療-Procedure Phototherapy TWPAS Profile呈現照光治療之範例
 
 #### Substance
-- [放射/照光治療總劑量](Substance-sub-min.html)：依據放射/照光治療總劑量-Substance TWPAS Profile呈現放射/照光治療之範例
+- [放射治療總劑量](Substance-sub-min.html)：依據放射治療總劑量-Substance TWPAS Profile呈現放射治療之範例
+- [<span class="bg-success">照光治療總次數</span>](Substance-sub-phototherapy.html)：依據照光治療總次數-Substance Phototherapy TWPAS Profile呈現照光治療總次數之範例
 
 #### Specimen
 - [基因檢測檢體](Specimen-spe-min.html)：依據基因檢測檢體-Specimen TWPAS Profile呈現基因檢測檢體之範例

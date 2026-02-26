@@ -35,7 +35,7 @@ body{font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !impor
 <p>Package Cache檔案路徑如下：</p>
 <li>Windows：c:\users\&lt;username&gt;\.fhir\packages</li>
 <li>Unix/Linux：/~/.fhir/packages</li>
-<p>在packages路徑下創建一個資料夾並命名為「tw.gov.mohw.nhi.pas#1.1.2」，將package.tgz解壓縮後的package資料夾放置於「tw.gov.mohw.nhi.pas#1.1.2」中。</p>
+<p>在packages路徑下創建一個資料夾並命名為「tw.gov.mohw.nhi.pas#1.2.0」，將package.tgz解壓縮後的package資料夾放置於「tw.gov.mohw.nhi.pas#1.2.0」中。</p>
 <div class="bg-warning"><p><b>若是第一次執行，須自行新增「.fhir」資料夾及其項下的「packages」資料夾。</b></p></div>
 <img src="validate/2.png" alt="Put the Pacakge" style="display: block;margin-left: auto;margin-right: auto;width: 60%;" class="figure-img img-responsive img-rounded center-block"/>
 <div style="clear:both;"></div>
@@ -79,8 +79,8 @@ body{font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !impor
 <p>請於「命令提示字元」依序輸入以下語法：<br/>
 　1. FHIR提供的驗證程式－<b style="color: red;">紅色①</b>『<code>java -jar validator_cli.jar</code>』<br/>
 　2. 要驗證的Profile實例(即JSON檔)－<b style="color: #4D82B8;">藍色②</b>『<code>Bundle-bun-1.json</code>』(即為您於Step5所放置於C:\的JSON檔案名稱)<br/>
-　3. 驗證的IG及其版本號－<b style="color: #E78E46;">橘色③</b>『<code>-ig tw.gov.mohw.nhi.pas#1.1.2</code>』，鍵入Enter，即可查看驗證結果<br />
-　<b style="color: red;">①</b>、<b style="color: #4D82B8;">②</b>、<b style="color: #E78E46;">③</b>之間需有空格，完整語法即：<code>java -jar validator_cli.jar Bundle-bun-1.json -ig tw.gov.mohw.nhi.pas#1.1.2</code></p>
+　3. 驗證的IG及其版本號－<b style="color: #E78E46;">橘色③</b>『<code>-ig tw.gov.mohw.nhi.pas#1.2.0</code>』，鍵入Enter，即可查看驗證結果<br />
+　<b style="color: red;">①</b>、<b style="color: #4D82B8;">②</b>、<b style="color: #E78E46;">③</b>之間需有空格，完整語法即：<code>java -jar validator_cli.jar Bundle-bun-1.json -ig tw.gov.mohw.nhi.pas#1.2.0</code></p>
   <img src="validate/6-2.png" alt="validate" style="display: block;margin-left: auto;margin-right: auto;width: 80%;margin-bottom: 15px;" class="figure-img img-responsive img-rounded center-block"/>
   <div style="clear:both;"></div>
 <p>若驗證「通過」，可看到「Success: 0 errors, 0 warnings, 3 notes」，原則上看到0 errors即代表通過驗證，warning及note可參考就好，不影響實作。後續的更版可能會解決其中幾個notes (即Information)。</p>

@@ -126,3 +126,27 @@ Usage: #example
     <p><b>病人狀態評估報告 (application/pdf)</b>：file://病人狀態評估報告.pdf</p>
     <p><b>病人狀態評估報告名稱</b>：病人狀態評估報告名稱</p>
 </div>"
+
+Instance: doc-phototherapy-min
+InstanceOf: DocumentReferenceTWPAS
+Title: "照光治療紀錄"
+Description: "依據文件參照-DocumentReference TWPAS Profile呈現照光治療紀錄之範例"
+Usage: #example
+* category = NHIPDFType#phototherapy
+* status = http://hl7.org/fhir/document-reference-status#current
+* subject.reference = "Patient/pat-min"
+* content.attachment.contentType = #application/pdf
+* content.attachment.url =  "file://ptReport01.pdf"
+* content.attachment.title = "ptReport01"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+    <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4;
+        border-radius: 5px; line-height: 60%\">
+        <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReference-twpas.html\">文件參照-DocumentReference TWPAS</a></p>
+    </div>
+    <p><b>狀態</b>：current</p>
+    <p><b>報告類型</b>：照光治療紀錄 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pdf-type.html\">NHI-文件類型</a>#phototherapy)</span></p>
+    <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a> &quot;王大明&quot;</p>
+    <p><b>照光治療紀錄 (application/pdf)</b>：file://ptReport01.pdf</p>
+    <p><b>照光治療紀錄名稱</b>：ptReport01</p>
+</div>"

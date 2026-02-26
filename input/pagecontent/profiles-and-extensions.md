@@ -3,22 +3,22 @@
 
 #### Bundle
 - [癌藥事前審查-Bundle TWPAS](StructureDefinition-Bundle-twpas.html)
-- [<span class="bg-success">免疫製劑事前審查-Bundle Immunologic Aagent TWPAS</span>](StructureDefinition-Bundle-immunologic-agent-twpas.html)
+- [免疫製劑事前審查-Bundle Immunologic Aagent TWPAS](StructureDefinition-Bundle-immunologic-agent-twpas.html)
 - [事前審查回覆-Bundle Response TWPAS](StructureDefinition-Bundle-response-twpas.html) 
 
 #### Claim
 - [癌藥事前審查-Claim TWPAS](StructureDefinition-Claim-twpas.html)
-- [<span class="bg-success">免疫製劑事前審查-Claim Immunologic Aagent TWPAS</span>](StructureDefinition-Claim-immunologic-agent-twpas.html)
+- [免疫製劑事前審查-Claim Immunologic Aagent TWPAS](StructureDefinition-Claim-immunologic-agent-twpas.html)
 
 #### ClaimResponse
 - [自主審查-ClaimResponse Self Assessment TWPAS](StructureDefinition-ClaimResponse-self-assessment-twpas.html)
 - [事前審查回覆-ClaimResponse TWPAS](StructureDefinition-ClaimResponse-twpas.html) 
 
 #### Composition
-- [<span class="bg-success">門診病歷-Composition OPD TWPAS</span>](StructureDefinition-Composition-opd-twpas.html)
+- [門診病歷-Composition OPD TWPAS](StructureDefinition-Composition-opd-twpas.html)
 
 #### AllergyIntolerance
-- [<span class="bg-success">過敏史-AllergyIntolerance TWPAS</span>](StructureDefinition-AllergyIntolerance-twpas.html)
+- [過敏史-AllergyIntolerance TWPAS](StructureDefinition-AllergyIntolerance-twpas.html)
 
 #### Organization
 - [醫事機構-Organization TWPAS](StructureDefinition-Organization-twpas.html)
@@ -27,7 +27,7 @@
 
 #### Encounter
 - [就醫科別-Encounter TWPAS](StructureDefinition-Encounter-twpas.html)
-- [<span class="bg-success">門診病歷-Encounter OPD TWPAS</span>](StructureDefinition-Encounter-opd-twpas.html) (門診病歷)
+- [門診病歷-Encounter OPD TWPAS](StructureDefinition-Encounter-opd-twpas.html) (門診病歷)
 
 #### Patient
 - [病人資訊-Patient TWPAS](StructureDefinition-Patient-twpas.html)
@@ -51,28 +51,30 @@
 - [檢驗檢查-Observation Laboratory Result TWPAS](StructureDefinition-Observation-laboratory-result-twpas.html) (評估資訊)
 - [病人狀態評估-Observation Patient Assessment TWPAS](StructureDefinition-Observation-pat-assessment-twpas.html) (評估資訊)
 - [治療後疾病狀態評估-Observation Treatment Assessment TWPAS](StructureDefinition-Observation-tx-assessment-twpas.html) (結果資訊)
-- [<span class="bg-success">血型-Observation Blood Group TWPAS</span>](StructureDefinition-Observation-blood-group-twpas.html) (病人資訊)
-- [<span class="bg-success">主觀描述-Observation Subjective TWPAS</span>](StructureDefinition-Observation-subjective-twpas.html) (門診病歷)
-- [<span class="bg-success">客觀描述-Observation Objective TWPAS</span>](StructureDefinition-Observation-objective-twpas.html) (門診病歷)
+- [血型-Observation Blood Group TWPAS](StructureDefinition-Observation-blood-group-twpas.html) (病人資訊)
+- [主觀描述-Observation Subjective TWPAS](StructureDefinition-Observation-subjective-twpas.html) (門診病歷)
+- [客觀描述-Observation Objective TWPAS](StructureDefinition-Observation-objective-twpas.html) (門診病歷)
 
 #### ClinicalImpression
-- [<span class="bg-success">評估-ClinicalImpression TWPAS</span>](StructureDefinition-ClinicalImpression-twpas.html) (門診病歷)
+- [評估-ClinicalImpression TWPAS](StructureDefinition-ClinicalImpression-twpas.html) (門診病歷)
 
 #### CarePlan
-- [<span class="bg-success">計畫-CarePlan TWPAS</span>](StructureDefinition-CarePlan-twpas.html) (門診病歷)
+- [計畫-CarePlan TWPAS](StructureDefinition-CarePlan-twpas.html) (門診病歷)
 
 #### Condition
-- [<span class="bg-success">診斷-Condition TWPAS</span>](StructureDefinition-Condition-twpas.html) (門診病歷)
+- [診斷-Condition TWPAS](StructureDefinition-Condition-twpas.html) (門診病歷)
 
 #### MedicationRequest
 - [用藥品項-MedicationRequest Treat TWPAS](StructureDefinition-MedicationRequest-treat-twpas.html) (治療資訊)
 - [事前審查品項-MedicationRequest Apply TWPAS](StructureDefinition-MedicationRequest-apply-twpas.html) (申請項目)
  
 #### Procedure
-- [放射/照光治療-Procedure TWPAS](StructureDefinition-Procedure-twpas.html)
+- [放射治療-Procedure TWPAS](StructureDefinition-Procedure-twpas.html)
+- [<span class="bg-success">照光治療-Procedure Phototherapy TWPAS</span>](StructureDefinition-Procedure-phototherapy-twpas.html)
 
 #### Substance
-- [放射/照光治療總劑量-Substance TWPAS](StructureDefinition-Substance-twpas.html)
+- [放射治療總劑量-Substance TWPAS](StructureDefinition-Substance-twpas.html)
+- [<span class="bg-success">Profile: 照光治療總次數-Substance Phototherapy TWPAS</span>](StructureDefinition-Substance-phototherapy-twpas.html)
 
 #### Specimen
 - [基因檢測檢體-Specimen TWPAS](StructureDefinition-Specimen-twpas.html)

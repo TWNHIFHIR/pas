@@ -3,7 +3,7 @@ Parent:         Claim
 Id:             Claim-twpas
 Title:          "癌藥事前審查-Claim TWPAS"
 Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進一步定義FHIR的Claim Resource以呈現癌藥事前審查之內容"
-* ^version = "1.1.2"
+* ^version = "1.2.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-twpas"
@@ -152,7 +152,7 @@ Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進�
 * supportingInfo[medicationRequest].code from NHILOT
 * supportingInfo[medicationRequest].code ^short = "用藥線別，0:不適用 | 1:第一線治療 | 2:第二線治療 | 3:第三線治療 | 4:第四線治療 | 5:第五線治療"*/
 
-* supportingInfo[radiotherapy] ^short = "放射/照光治療"
+* supportingInfo[radiotherapy] ^short = "放射治療"
 * supportingInfo[radiotherapy].category = NHIPASSupportingInfoType#radiotherapy
 * supportingInfo[radiotherapy].timing[x] ..0
 * supportingInfo[radiotherapy].value[x] 1.. MS
@@ -321,7 +321,7 @@ Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進�
 * supportingInfo[tests].valueReference ^short = "檢驗(查)"
 * supportingInfo[patientAssessment].valueReference ^short = "病人狀態評估"
 * supportingInfo[medicationRequest].valueReference ^short = "用藥品項"
-* supportingInfo[radiotherapy].valueReference ^short = "放射/照光治療"
+* supportingInfo[radiotherapy].valueReference ^short = "放射治療"
 * supportingInfo[carePlanDocument].valueReference ^short = "治療計畫文件"
 * supportingInfo[treatmentAssessment].valueReference ^short = "結果資訊"
 * diagnosis.diagnosisCodeableConcept ^short = "國際疾病分類代碼(含共病)，當前疾病狀態。ICD-10-CM。"
@@ -342,8 +342,8 @@ Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進�
 * item.quantity.code ^short = "事前審查申請數量單位"
 * item.quantity.system ^short = "事前審查申請數量單位之代碼系統，固定為「http://unitsofmeasure.org」。"
 
-* supportingInfo[weight].valueQuantity.value obeys HTWT
-* supportingInfo[height].valueQuantity.value obeys HTWT
+* supportingInfo[weight] obeys HTWT
+* supportingInfo[height] obeys HTWT
 * diagnosis obeys diagnosis
 * . obeys sequence-1 and applType and supportingInfo and supportingInfo-tests and supportingInfo-tests-2
 * item.programCode obeys pas-1
@@ -353,13 +353,13 @@ Extension: RequestedService
 Id: extension-requestedService
 Description: "事前審查品項"
 Context: Claim.item
-* ^version = "1.1.2"
+* ^version = "1.2.0"
 * . ^definition = "事前審查品項"
 * value[x] only Reference(MedicationRequestApplyTWPAS)
 
 Invariant:   HTWT
 Description: "整數至多3位數及小數至多2位數"
-Expression:  "value.toString().matches('^[0-9]{1,3}(.[0-9]{1,2})?$')"
+Expression:  "value.ofType(Quantity).value < 1000 and (value.ofType(Quantity).value * 100).round() = value.ofType(Quantity).value * 100"
 Severity:    #error
 
 Invariant:   diagnosis

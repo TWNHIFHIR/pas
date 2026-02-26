@@ -3,7 +3,7 @@ Parent:         Observation
 Id:             Observation-pat-assessment-twpas
 Title:          "病人狀態評估-Observation Patient Assessment TWPAS"
 Description:    "此病人狀態評估-Observation Patient Assessment TWPAS Profile說明本IG如何進一步定義FHIR的Observation Resource以呈現事前審查中評估資訊之病人狀態評估"
-* ^version = "1.1.2"
+* ^version = "1.2.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-pat-assessment-twpas"
@@ -85,12 +85,13 @@ Description: "若病人狀態評估項目代碼(code)為88020-3，結果值(valu
 若病人狀態評估項目代碼(code)為MPNSAFTSS，結果值(valueInteger)須填寫0~100其中的值；
 若病人狀態評估項目代碼(code)為MPN10，結果值(valueInteger)須填寫0~100其中的值；
 若病人狀態評估項目代碼(code)為711434002，結果值(component.valueString)須填寫grade1/grade2/grade3/grade4/grade5其中一項；
-若病人狀態評估項目代碼(code)為429712009，結果值(valueInteger)須填寫0~10其中的值；
+若病人狀態評估項目代碼(code)為429712009，結果值(valueQuantity)須填寫0~10其中的值，可包含小數點下兩位；
 若病人狀態評估項目代碼(code)為GPPGA，結果值(valueInteger)須填寫0~4其中的值；
 若病人狀態評估項目代碼(code)為273364009，結果值(valueInteger)須填寫0~600其中的值；
 若病人狀態評估項目代碼(code)為Mayo，結果值(valueInteger)須填寫0~12其中的值；
 若病人狀態評估項目代碼(code)為MayoE，結果值(valueInteger)須填寫0~12其中的值；
-若病人狀態評估項目代碼(code)為PUCAI，結果值(valueInteger)須填寫0~90其中的值。"
+若病人狀態評估項目代碼(code)為PUCAI，結果值(valueInteger)須填寫0~90其中的值；
+若病人狀態評估項目代碼(code)為PASI，結果值(valueQuantity)須填寫0~72其中的值，可包含小數點下兩位。"
 Expression:  "((code.coding.exists(code='88020-3')) implies (value.ofType(string) = 'class1' or value.ofType(string) = 'class2' or value.ofType(string) = 'class3' or value.ofType(string) = 'class4')) and ((code.coding.exists(code='98153-0')) implies (value.ofType(string) =  'A' or value.ofType(string) = 'B' or value.ofType(string) = 'C')) and 
 ((code.coding.exists(code='89247-1')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 5)) and 
 ((code.coding.exists(code='IPS')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 7)) and 
@@ -101,12 +102,11 @@ Expression:  "((code.coding.exists(code='88020-3')) implies (value.ofType(string
 ((code.coding.exists(code='MPNSAFTSS')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 100)) and 
 ((code.coding.exists(code='MPN10')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 100)) and 
 ((code.coding.exists(code='711434002')) implies (component.all(value.ofType(string) = 'grade1' or value.ofType(string) = 'grade2' or value.ofType(string) = 'grade3' or value.ofType(string) = 'grade4' or value.ofType(string) = 'grade5'))) and 
-((code.coding.exists(code='429712009')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 10)) and 
+((code.coding.exists(code='429712009')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 10 and (value.ofType(Quantity).value * 100).round() = value.ofType(Quantity).value * 100)) and 
 ((code.coding.exists(code='GPPGA')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 4)) and 
 ((code.coding.exists(code='273364009')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 600)) and 
 ((code.coding.exists(code='Mayo')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 12)) and 
 ((code.coding.exists(code='MayoE')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 12)) and 
-((code.coding.exists(code='PUCAI')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 90))"
+((code.coding.exists(code='PUCAI')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 90)) and
+((code.coding.exists(code='PASI')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 72 and (value.ofType(Quantity).value * 100).round() = value.ofType(Quantity).value * 100))"
 Severity:    #error
-
-(code.coding.exists(code='75633-8')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 10 and (value.ofType(Quantity).value * 100).round() = value.ofType(Quantity).value * 100)

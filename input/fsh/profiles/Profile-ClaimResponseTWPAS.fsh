@@ -5,7 +5,7 @@ Title:          "自主審查-ClaimResponse Self Assessment TWPAS"
 Description:    "此自主審查-ClaimResponse TWPAS Profile說明本IG如何進一步定義FHIR的ClaimResponse Resource以呈現自主審查之內容。 
   
 現行開放自主事前審查項目僅有心臟及肝臟移植，若醫院要自主事前審查需向健保署申請，通過後，健保署會於署內系統維護，具有此資格之院所才可填報自主審查。"
-* ^version = "1.1.2"
+* ^version = "1.2.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/ClaimResponse-self-assessment-twpas"
@@ -57,7 +57,7 @@ Parent:         ClaimResponse
 Id:             ClaimResponse-twpas
 Title:          "事前審查回覆-ClaimResponse TWPAS"
 Description:    "此事前審查回覆-ClaimResponse TWPAS Profile說明本IG如何進一步定義FHIR的ClaimResponse Resource以呈現事前審查回覆之內容"
-* ^version = "1.1.2"
+* ^version = "1.2.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/ClaimResponse-twpas"

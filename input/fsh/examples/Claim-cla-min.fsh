@@ -164,7 +164,7 @@ Usage: #example
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：12</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type radiotherapy}\">放射/照光治療</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type radiotherapy}\">放射治療</span></p>
         <p><b>value</b>：<a href=\"Procedure-pro-min.html\">Procedure/pro-min</a></p>
     </blockquote>
     <blockquote>
@@ -366,7 +366,7 @@ Usage: #example
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：11</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type radiotherapy}\">放射/照光治療</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type radiotherapy}\">放射治療</span></p>
         <p><b>value</b>：<a href=\"Procedure-pro-min.html\">Procedure/pro-min</a></p>
     </blockquote>
     <blockquote>

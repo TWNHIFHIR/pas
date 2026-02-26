@@ -5,7 +5,7 @@ Description: "臺灣衛生福利部中央健康保險署「醫令類別」代碼
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2026-02-03"
-* ^version = "1.1.2"
+* ^version = "1.2.0"
 * ^experimental = false
 * #1 "藥品"
 * #2 "醫療服務"
@@ -17,6 +17,6 @@ Id: nhi-order-type
 Title: "NHI-健保事前審查-醫令類別值集"
 Description: "NHI-健保事前審查-醫令類別值集"
 * ^date = "2026-02-03"
-* ^version = "1.1.2"
+* ^version = "1.2.0"
 * ^experimental = false
 * include codes from system NHIOrderType
