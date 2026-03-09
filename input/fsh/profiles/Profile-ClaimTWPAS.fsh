@@ -3,7 +3,7 @@ Parent:         Claim
 Id:             Claim-twpas
 Title:          "癌藥事前審查-Claim TWPAS"
 Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進一步定義FHIR的Claim Resource以呈現癌藥事前審查之內容"
-* ^version = "1.2.0"
+* ^version = "1.2.1"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-twpas"
@@ -353,13 +353,13 @@ Extension: RequestedService
 Id: extension-requestedService
 Description: "事前審查品項"
 Context: Claim.item
-* ^version = "1.2.0"
+* ^version = "1.2.1"
 * . ^definition = "事前審查品項"
 * value[x] only Reference(MedicationRequestApplyTWPAS)
 
 Invariant:   HTWT
 Description: "整數至多3位數及小數至多2位數"
-Expression:  "value.ofType(Quantity).value < 1000 and (value.ofType(Quantity).value * 100).round() = value.ofType(Quantity).value * 100"
+Expression:  "value.ofType(Quantity).value < 1000 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value"
 Severity:    #error
 
 Invariant:   diagnosis

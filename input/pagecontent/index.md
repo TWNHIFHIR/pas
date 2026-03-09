@@ -1,21 +1,17 @@
 <div class="bg-danger" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.1.1版內容，因而會比健保署的IG版本V1.1.1(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為115年3月，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
+<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.2.0版內容，因而會比健保署的IG版本V1.2.0(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為115年3月，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
 <br/>
-<b>醫院實作時請以V1.1.1為主進行實例驗證，目前健保署端的伺服器採用V1.1.1版規格。</b></p>
+<b>醫院實作時請以V1.2.0為主進行實例驗證，目前健保署端的伺服器採用V1.2.0版規格。</b></p>
 </div>
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/2/26異動以下內容：
+因考量實作需求，於2025/3/9異動以下內容：
     <ol>  
-        <li>新增<a href="StructureDefinition-Procedure-phototherapy-twpas.html">Profile: 照光治療-Procedure Phototherapy TWPAS</a>及<a href="StructureDefinition-Substance-phototherapy-twpas.html">Profile: 照光治療總次數-Substance Phototherapy TWPAS。</a></li>
-        <li>修改「放射治療」相關欄位之名稱為「放射/照光治療」。</li>
-        <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
-        <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li>
-        <li>更新代碼：<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：新增代碼<code>P044</code>、<code>P102</code>。</li>
-        <li>修改<a href="StructureDefinition-Observation-pat-assessment-twpas.html">Profile: 病人狀態評估-Observation Patient Assessment TWPAS</a>：修改Constraint: pat-ast-value：若病人狀態評估項目代碼(code)為<code>75633-8</code>，結果值(valueQuantity)須填寫0~10其中的值，可包含小數點下兩位；若病人狀態評估項目代碼(code)為<code>429712009</code>，結果值(valueQuantity)須填寫0~10其中的值，可包含小數點下兩位；若病人狀態評估項目代碼(code)為<code>PASI</code>，結果值(valueQuantity)須填寫0~72其中的值，可包含小數點下兩位。</li>
-        <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 癌藥事前審查-Bundle TWPAS</a>：修改Constraint: applyReason-8：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01013230，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P001、P011、P012、P031、P041、P044、P052、P061、P081、P101、P102 或 P111</li>
-        <li>修改<a href="StructureDefinition-ClaimResponse-self-assessment-twpas.html">Profile: 自主審查-ClaimResponse Self Assessment TWPAS</a>：修改requestor為必填。</li>
+        <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li> -->
+        <!-- <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
+        <!-- <li>更新代碼：<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：新增代碼<code>P044</code>、<code>P102</code>。</li> -->
+        <li>修改<a href="StructureDefinition-Claim-twpas.html">Profile: 癌藥事前審查-Claim TWPAS</a>：修改Constraint: HTWT之Expression。</li>
     </ol>
     請留意這些異動，以避免影響您的實作。
 </div>
