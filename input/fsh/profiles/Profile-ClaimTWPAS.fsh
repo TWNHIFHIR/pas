@@ -359,7 +359,7 @@ Context: Claim.item
 
 Invariant:   HTWT
 Description: "整數至多3位數及小數至多2位數"
-Expression:  "value.ofType(Quantity).value.toString().matches('^[0-9]{1,3}([.][0-9]{1,2})?$')"
+Expression:  "value.ofType(Quantity).value < 1000 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value"
 Severity:    #error
 
 Invariant:   diagnosis
