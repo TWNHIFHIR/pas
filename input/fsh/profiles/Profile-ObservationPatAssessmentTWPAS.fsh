@@ -97,16 +97,16 @@ Expression:  "((code.coding.exists(code='88020-3')) implies (value.ofType(string
 ((code.coding.exists(code='IPS')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 7)) and 
 ((code.coding.exists(code='PDAI')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 263)) and 
 ((code.coding.exists(code='CIRS')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 56)) and 
-((code.coding.exists(code='75633-8')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 10 and (value.ofType(Quantity).value * 100).round() = value.ofType(Quantity).value * 100)) and 
+((code.coding.exists(code='75633-8')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 10 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value)) and 
 ((code.coding.exists(code='HCTCI')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 26)) and 
 ((code.coding.exists(code='MPNSAFTSS')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 100)) and 
 ((code.coding.exists(code='MPN10')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 100)) and 
 ((code.coding.exists(code='711434002')) implies (component.all(value.ofType(string) = 'grade1' or value.ofType(string) = 'grade2' or value.ofType(string) = 'grade3' or value.ofType(string) = 'grade4' or value.ofType(string) = 'grade5'))) and 
-((code.coding.exists(code='429712009')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 10 and (value.ofType(Quantity).value * 100).round() = value.ofType(Quantity).value * 100)) and 
+((code.coding.exists(code='429712009')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 10 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value)) and 
 ((code.coding.exists(code='GPPGA')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 4)) and 
 ((code.coding.exists(code='273364009')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 600)) and 
 ((code.coding.exists(code='Mayo')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 12)) and 
 ((code.coding.exists(code='MayoE')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 12)) and 
 ((code.coding.exists(code='PUCAI')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 90)) and
-((code.coding.exists(code='PASI')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 72 and (value.ofType(Quantity).value * 100).round() = value.ofType(Quantity).value * 100))"
+((code.coding.exists(code='PASI')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 72 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value))"
 Severity:    #error
