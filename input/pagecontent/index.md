@@ -6,12 +6,13 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/3/9異動以下內容：
+因考量實作需求，於2025/3/10異動以下內容：
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li> -->
         <!-- <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：新增代碼<code>P044</code>、<code>P102</code>。</li> -->
         <li>修改<a href="StructureDefinition-Claim-twpas.html">Profile: 癌藥事前審查-Claim TWPAS</a>：修改Constraint: HTWT之Expression。</li>
+        <li>修改<a href="StructureDefinition-Observation-pat-assessment-twpas.html">Profile: 病人狀態評估-Observation Patient Assessment TWPAS</a>：修改Constraint: pat-ast-value之Expression。</li>
     </ol>
     請留意這些異動，以避免影響您的實作。
 </div>
