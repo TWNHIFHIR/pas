@@ -119,6 +119,11 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+* rest.resource[=].searchParam[+].name = "requestor"
+* rest.resource[=].searchParam[=].definition = "https://nhicore.nhi.gov.tw/pas/SearchParameter/ClaimResponse-requestor"
+* rest.resource[=].searchParam[=].type = #reference
+* rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 
 * rest.resource[+].type = #Composition
 * rest.resource[=].profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Composition-opd-twpas"
@@ -169,6 +174,11 @@ Usage: #definition
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #update
 * rest.resource[=].referencePolicy = #resolves
+* rest.resource[=].searchParam[0].name = "identifier"
+* rest.resource[=].searchParam[=].definition = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Organization-identifier"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 
 * rest.resource[+].type = #Encounter
 * rest.resource[=].supportedProfile[0] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Encounter-twpas"
@@ -561,7 +571,7 @@ Usage: #definition
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\"></td>
                     <td class=\"text-center\">y</td>
-                    <td>adjudication-reason, request.patient.name, request.patient.identifier, request.identifier, request.func-type.service-type, created, disposition</td>
+                    <td>adjudication-reason, request.patient.name, request.patient.identifier, request.identifier, request.func-type.service-type, created, disposition, requestor.identifier</td>
                 </tr>
                 <tr>
                     <td><a href=\"#Composition\">Composition</a></td>
@@ -594,7 +604,7 @@ Usage: #definition
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\"></td>
                     <td class=\"text-center\">y</td>
-                    <td></td>
+                    <td>identifier</td>
                 </tr>
                 <tr>
                     <td><a href=\"#Encounter1-4\">Encounter</a></td>
@@ -1009,6 +1019,15 @@ Usage: #definition
                                         <p>實作請參考<a href=\"searchparameters.html#以查詢欄位分類\">查詢參數</a></p>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td><b>必須（SHALL）</b></td>
+                                    <td><a href=\"SearchParameter-ClaimResponse-requestor.html\">requestor</a>.<a href=\"SearchParameter-Organization-identifier.html\">identifier</a></td>
+                                    <td><code>reference, token</code></td>
+                                    <td>
+                                        <code>GET [base]/ClaimResponse?requestor.identifier=[code]</code><br/>
+                                        <p>實作請參考<a href=\"searchparameters.html#以查詢欄位分類\">查詢參數</a></p>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -1094,6 +1113,32 @@ Usage: #definition
                     </div>
                 </div>
                 <p />
+                <div class=\"row\">
+                    <div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span>
+                        <table class=\"table table-condensed table-hover\">
+                            <thead>
+                                <tr>
+                                    <th>遵從度</th>
+                                    <th>參數</th>
+                                    <th>類型</th>
+                                    <th>範例</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>必須（SHALL）</b></td>
+                                    <td><a href=\"SearchParameter-Organization-identifier.html\">identifier</a></td>
+                                    <td><code>token</code></td>
+                                    <td>
+                                        <code>GET [base]/Organization?identifier={system|}[code]</code><br/>
+                                        <p>實作請參考<a href=\"searchparameters.html#以查詢欄位分類\">查詢參數</a></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class=\"col-lg-5\">\u00a0</div>
+                </div>
             </div>
         </div>
     </div>

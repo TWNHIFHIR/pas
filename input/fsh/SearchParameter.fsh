@@ -112,6 +112,38 @@ Usage: #definition
 * chain[1] = "patient"
 * chain[2] = "func-type"
 
+Instance: ClaimResponse-requestor
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/ClaimResponse-requestor"
+* name = "ClaimResponseRequestor"
+* status = #active
+* version = "1.2.1"
+* date = "2026-03-31"
+* publisher = "HL7 International"
+* description = "事前審查回覆(ClaimResponse)關聯的醫事機構(Organization)"
+* code = #requestor
+* base = #ClaimResponse
+* expression = "ClaimResponse.requestor"
+* type = #reference
+* chain[0] = "identifier"
+
+//-------------------------Organization-------------------------
+Instance: Organization-identifier
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Organization-identifier"
+* name = "OrganizationIdentifier"
+* status = #active
+* version = "1.2.1"
+* date = "2026-03-31"
+* publisher = "HL7 International"
+* description = "醫事機構代碼"
+* code = #identifier
+* base = #Organization
+* expression = "Organization.identifier"
+* type = #token
+
 //-------------------------Claim-------------------------
 Instance: Claim-patient
 InstanceOf: SearchParameter
@@ -210,22 +242,6 @@ Usage: #definition
 * code = #_id
 * base = #Claim
 * expression = "Claim.id"
-* type = #token
-
-//-------------------------Organization-------------------------
-Instance: Organization-id
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Organization-id"
-* name = "OrganizationID"
-* status = #active
-* version = "1.2.1"
-* date = "2024-08-31"
-* publisher = "HL7 International"
-* description = "機構的邏輯性ID"
-* code = #_id
-* base = #Organization
-* expression = "Organization.id"
 * type = #token
 
 //-------------------------Encounter-------------------------

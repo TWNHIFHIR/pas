@@ -50,3 +50,11 @@
 
     例子：  
       (1) GET [base]/ClaimResponse?created=gt2024-08-01&created=lt2024-08-24&disposition=審畢結果
+
+7. **必須（SHALL）** 支援透過查詢參數 **[`requestor`](SearchParameter-ClaimResponse-requestor.html)**.**[`identifier`](SearchParameter-Organization-identifier.html)**  查詢所有ClaimResponse：               
+    ([如何透過reference查詢](http://hl7.org/fhir/R4/search.html#reference))   
+    ([如何透過token查詢](http://hl7.org/fhir/R4/search.html#token))    
+    `GET [base]/ClaimResponse?requestor.identifier=[code]`  
+
+    例子：  
+      (1) GET [base]/ClaimResponse?requestor.identifier=0101090517
