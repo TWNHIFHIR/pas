@@ -14,10 +14,14 @@
 - [disposition](SearchParameter-ClaimResponse-disposition.html)
 - [request](SearchParameter-ClaimResponse-request.html)
 - [adjudication-reason](SearchParameter-ClaimResponse-adjudication-reason.html)
+- [<span class="bg-success">requestor</span>](SearchParameter-ClaimResponse-requestor.html)
 
 ##### Patient
 - [name](SearchParameter-Patient-name.html)
 - [identifier](SearchParameter-Patient-identifier.html)
+
+##### Organization
+- [<span class="bg-success">identifier</span>](SearchParameter-Organization-identifier.html)
 
 ##### Encounter
 - [service-type](SearchParameter-Encounter-service-type.html)
@@ -58,6 +62,11 @@
 `GET [base]/ClaimResponse?created={gt|lt|ge|le}[date]{&created={gt|lt|ge|le}[date]}&disposition=審畢結果`    
 例子：  
       (1) GET [base]/ClaimResponse?created=gt2024-08-01&created=lt2024-08-24&disposition=審畢結果 
+
+##### <span class="bg-success">醫事機構代碼：[ClaimResponse.requestor](SearchParameter-ClaimResponse-requestor.html) + [Organization.identifier](SearchParameter-Organization-identifier.html)</span>
+`GET [base]/ClaimResponse?requestor.identifier=[醫事機構代碼]`  
+例子：  
+      (1) GET [base]/ClaimResponse?requestor.identifier=0101090517
 
 ### 未對外服務之API
 
