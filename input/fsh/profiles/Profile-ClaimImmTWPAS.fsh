@@ -260,10 +260,10 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * item.quantity 1..1 MS
 * item.quantity.value 1..1 MS
 * item.quantity.system 1..1
-* item.quantity.system = "http://unitsofmeasure.org"
+//* item.quantity.system = "http://unitsofmeasure.org"
 * item.quantity.code 1..1 MS
-* item.quantity.code from http://hl7.org/fhir/ValueSet/ucum-units
-* item.quantity.code ^binding.description = "事前審查申請數量單位的代碼範圍請參考[Common UCUM units](https://hl7.org/fhir/R4/valueset-ucum-common.html)。"
+* item.quantity.code from ApplQtyUnit
+* item.quantity.code ^binding.description = "事前審查申請數量單位及包裝類型。"
 * insurance.sequence = 1
 * insurance.coverage only Reference(CoverageTWPAS) 
 
@@ -305,8 +305,8 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * item.bodySite ^short = "申請部位，R:右側 | L:左側 | B:兩側。(此專案暫不檢核，未來待確認)"
 
 * item.quantity.value ^short = "事前審查申請數量"
-* item.quantity.code ^short = "事前審查申請數量單位"
-* item.quantity.system ^short = "事前審查申請數量單位之代碼系統，固定為「http://unitsofmeasure.org」。"
+* item.quantity.code ^short = "事前審查申請數量單位及包裝類型"
+* item.quantity.system ^short = "事前審查申請數量單位及包裝類型之代碼系統"
 
 * supportingInfo[weight] obeys HTWT
 * supportingInfo[height] obeys HTWT

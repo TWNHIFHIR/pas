@@ -86,7 +86,7 @@ Id: dicom-cid-29-AcquisitionModality
 Title: "HL7-AcquisitionModality值集"
 Description: "原值集因總會工具問題無法正常顯示，故先自建值集。"
 
-* ^version = "2024.2.20240331"
+* ^version = "2022.4.20221006"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-03-31"

@@ -32,6 +32,7 @@ INFORMATION: ConceptMap/nhi-sct-body-site: ConceptMap.group[0].target: Target Co
 % The value set expansion is too large, and only a subset has been displayed%
 % expansion (local) took too long to process (>60sec) (and Error from https://tx.fhir.org/r4%
 % The value set include has too many concepts to validate %
+% could not be expanded%
 
 # Misleadeable UCUM codes，不影響驗證。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
 WARNING: Bundle/bun-1: Bundle.entry[17].resource/*MedicationRequest/medReq-treat*/.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): UCUM Codes that contain human readable annotations like {tbl} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit 'tablets' SHOULD contain the annotation (it does not)
@@ -63,6 +64,7 @@ WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, s
 # validated無法辨識URL，不影響驗證。（WARNING後方的 藍色字樣(1uses) 是指WARNING在此Profile中有被使用到）
 % Canonical URL%
 % URL value%
+A definition for CodeSystem 'urn:ietf:rfc:3986' could not be found, so the code cannot be validated
 
 # 繼承TW Core IG的Profile，無法取消欄位原有的MS(Must Support)註記，不影響驗證。（WARNING後方的 藍色字樣(1uses) 是指WARNING在此Profile中有被使用到）
 % The slice 'medicationReference' on path 'MedicationRequest.medication[x]'%
@@ -75,3 +77,6 @@ WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, s
 
 # 最新版本的代碼不齊全，無法直接繼承，故先繼續使用0.3.2版
 % The ImplementationGuide uses package tw.gov.mohw.twcore#0.3.2%
+
+# Publisher自動選擇代碼系統版本，不影響驗證。
+% Pinned the version of %

@@ -6,20 +6,21 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/3/17異動以下內容：
+因考量實作需求，於2025/3/20異動以下內容：
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li> -->
         <!-- <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：新增代碼<code>P044</code>、<code>P102</code>。</li> -->
-        <li>修改<a href="StructureDefinition-Observation-pat-assessment-twpas.html">Profile: 病人狀態評估-Observation Patient Assessment TWPAS</a>：修改Constraint: pat-ast-value之Expression，所有數值型結果皆可填至小數點下兩位。</li>
-        <li>新增ClaimResponse之查詢參數：<a href="SearchParameter-ClaimResponse-requestor.html">requestor</a>.<a href="SearchParameter-Organization-identifier.html">identifier</a>，以供透過醫事機構代碼查詢相關內容。</li>
         <li>修改<a href="StructureDefinition-Claim-twpas.html">Profile: 癌藥事前審查-Claim TWPAS</a>：
             <ol>
                 <li>修改Constraint: HTWT之Expression。</li>
-                <li>修改Constraint: supportingInfo，移除「當Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代碼)為C90或C92，可排除至少還需提供檢查報告、影像報告、基因資訊中任一樣資訊」之條件。</li>
-                <li>新增Constraint: supportingInfo-c90-c92：當Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代碼)為C90或C92，需提供檢驗(查)、影像報告、基因資訊、檢驗檢查中任一項資訊。</li>
+                <li>修改Constraint: supportingInfo，當Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代碼)為C90、C91或C92，可排除至少還需提供檢查報告、影像報告、基因資訊中任一樣資訊</li>
+                <li>新增Constraint: supportingInfo-c90-c91-c92：當Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代碼)為C90、C91或C92，需提供檢驗(查)、影像報告、基因資訊、檢驗檢查中任一項資訊。</li>
             </ol>
         </li>
+        <li>新增<a href="ValueSet-apply-quantity-unit.html">ValueSet: NHI-健保事前審查-事前審查申請數量單位及包裝類型值集</a>，供「事前審查申請數量單位及包裝類型(Claim.item.quantity.code)」綁定。</li>
+        <li>修改<a href="StructureDefinition-Observation-pat-assessment-twpas.html">Profile: 病人狀態評估-Observation Patient Assessment TWPAS</a>：修改Constraint: pat-ast-value之Expression，所有數值型結果皆可填至小數點下兩位。</li>
+        <li>新增ClaimResponse之查詢參數：<a href="SearchParameter-ClaimResponse-requestor.html">requestor</a>.<a href="SearchParameter-Organization-identifier.html">identifier</a>，以供透過醫事機構代碼查詢相關內容。</li>
     </ol>
     請留意這些異動，以避免影響您的實作。
 </div>
