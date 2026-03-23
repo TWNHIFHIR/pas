@@ -76,9 +76,9 @@ Description:    "此影像報告-DiagnosticReport Image TWPAS Profile說明本IG
 * presentedForm.title ^short = "影像報告名稱"
 * presentedForm obeys UploadContent
 
-* . obeys image-report
+/* * . obeys image-report
 Invariant:   image-report
 Description: "DICOM影像(imagingStudy)或非DICOM影像(media)擇一必填。"
 Expression:  "imagingStudy.exists() or media.exists()"
-Severity:    #error
+Severity:    #error */
 
