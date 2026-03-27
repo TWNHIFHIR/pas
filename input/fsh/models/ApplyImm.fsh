@@ -126,7 +126,7 @@ Description: "申請(Apply)免疫製劑(Immunologic Aagent)事前審查之資料
 * apply.applyReason 1..* CodeableConcept "給付適應症條件" "給付適應症條件"
 * apply.applySide 0..* CodeableConcept "申請部位" "申請部位"
 * apply.applQty 1..* decimal "事前審查申請數量" "事前審查申請數量"
-* apply.applQtyUnit 1..* code "事前審查申請數量單位" "事前審查申請數量單位"
+* apply.applQtyUnit 1..* code "事前審查申請數量單位及包裝類型" "事前審查申請數量單位及包裝類型"
 * apply.applDrugFre 1..* CodeableConcept "事前審查藥品使用頻率及服用時間" "事前審查藥品使用頻率及服用時間"
 * apply.applDrugRoute 1..* CodeableConcept "給藥途徑／作用部位" "給藥途徑／作用部位"
 * apply.applDosage 1..* decimal "事前審查藥品每次處方劑量" "事前審查藥品每次處方劑量"

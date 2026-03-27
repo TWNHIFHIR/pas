@@ -19,7 +19,7 @@ Description:    "此病人狀態評估-Observation Patient Assessment TWPAS Prof
 * category ^short = "因設計而須必填。"
 * category = NHIPASSupportingInfoType#patientAssessment
 * value[x] MS
-* value[x] only string or integer or Quantity
+* value[x] only string or Quantity
 * performer 1..1 MS
 * performer only Reference(PractitionerTWPAS)
 * subject only Reference(PatientTWPAS)
@@ -75,38 +75,39 @@ Description:    "此病人狀態評估-Observation Patient Assessment TWPAS Prof
 Invariant:   pat-ast-value
 Description: "若病人狀態評估項目代碼(code)為88020-3，結果值(valueString)須填寫class1/class2/class3/class4其中一項；
 若病人狀態評估項目代碼(code)為98153-0，結果值(valueString)須填寫A/B/C其中一項；
-若病人狀態評估項目代碼(code)為89247-1，結果值(valueInteger)須填寫0~5其中的值；
-若病人狀態評估項目代碼(code)為89243-0，結果值(valueInteger)須填寫0~100其中的值；
-若病人狀態評估項目代碼(code)為IPS，結果值(valueInteger)須填寫0~7其中的值；
-若病人狀態評估項目代碼(code)為PDAI，結果值(valueInteger)須填寫0~263其中的值；
-若病人狀態評估項目代碼(code)為CIRS，結果值(valueInteger)須填寫0~56其中的值；
+若病人狀態評估項目代碼(code)為89247-1，結果值(valueQuantity)須填寫0~5其中的值，可包含小數點下兩位；
+若病人狀態評估項目代碼(code)為89243-0，結果值(valueQuantity)須填寫0~100其中的值，可包含小數點下兩位；
+若病人狀態評估項目代碼(code)為IPS，結果值(valueQuantity)須填寫0~7其中的值，可包含小數點下兩位；
+若病人狀態評估項目代碼(code)為PDAI，結果值(valueQuantity)須填寫0~263其中的值，可包含小數點下兩位；
+若病人狀態評估項目代碼(code)為CIRS，結果值(valueQuantity)須填寫0~56其中的值，可包含小數點下兩位；
 若病人狀態評估項目代碼(code)為75633-8，結果值(valueQuantity)須填寫0~10其中的值，可包含小數點下兩位；
-若病人狀態評估項目代碼(code)為HCTCI，結果值(valueInteger)須填寫0~26其中的值；
-若病人狀態評估項目代碼(code)為MPNSAFTSS，結果值(valueInteger)須填寫0~100其中的值；
-若病人狀態評估項目代碼(code)為MPN10，結果值(valueInteger)須填寫0~100其中的值；
+若病人狀態評估項目代碼(code)為HCTCI，結果值(valueQuantity)須填寫0~26其中的值，可包含小數點下兩位；
+若病人狀態評估項目代碼(code)為MPNSAFTSS，結果值(valueQuantity)須填寫0~100其中的值，可包含小數點下兩位；
+若病人狀態評估項目代碼(code)為MPN10，結果值(valueQuantity)須填寫0~100其中的值，可包含小數點下兩位；
 若病人狀態評估項目代碼(code)為711434002，結果值(component.valueString)須填寫grade1/grade2/grade3/grade4/grade5其中一項；
 若病人狀態評估項目代碼(code)為429712009，結果值(valueQuantity)須填寫0~10其中的值，可包含小數點下兩位；
-若病人狀態評估項目代碼(code)為GPPGA，結果值(valueInteger)須填寫0~4其中的值；
-若病人狀態評估項目代碼(code)為273364009，結果值(valueInteger)須填寫0~600其中的值；
-若病人狀態評估項目代碼(code)為Mayo，結果值(valueInteger)須填寫0~12其中的值；
-若病人狀態評估項目代碼(code)為MayoE，結果值(valueInteger)須填寫0~12其中的值；
-若病人狀態評估項目代碼(code)為PUCAI，結果值(valueInteger)須填寫0~90其中的值；
+若病人狀態評估項目代碼(code)為GPPGA，結果值(valueQuantity)須填寫0~4其中的值，可包含小數點下兩位；
+若病人狀態評估項目代碼(code)為273364009，結果值(valueQuantity)須填寫0~600其中的值，可包含小數點下兩位；
+若病人狀態評估項目代碼(code)為Mayo，結果值(valueQuantity)須填寫0~12其中的值，可包含小數點下兩位；
+若病人狀態評估項目代碼(code)為MayoE，結果值(valueQuantity)須填寫0~12其中的值，可包含小數點下兩位；
+若病人狀態評估項目代碼(code)為PUCAI，結果值(valueQuantity)須填寫0~90其中的值，可包含小數點下兩位；
 若病人狀態評估項目代碼(code)為PASI，結果值(valueQuantity)須填寫0~72其中的值，可包含小數點下兩位。"
 Expression:  "((code.coding.exists(code='88020-3')) implies (value.ofType(string) = 'class1' or value.ofType(string) = 'class2' or value.ofType(string) = 'class3' or value.ofType(string) = 'class4')) and ((code.coding.exists(code='98153-0')) implies (value.ofType(string) =  'A' or value.ofType(string) = 'B' or value.ofType(string) = 'C')) and 
-((code.coding.exists(code='89247-1')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 5)) and 
-((code.coding.exists(code='IPS')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 7)) and 
-((code.coding.exists(code='PDAI')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 263)) and 
-((code.coding.exists(code='CIRS')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 56)) and 
+((code.coding.exists(code='89247-1')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 5 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value)) and 
+((code.coding.exists(code='89243-0')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 100 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value)) and 
+((code.coding.exists(code='IPS')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 7 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value)) and 
+((code.coding.exists(code='PDAI')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 263 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value)) and 
+((code.coding.exists(code='CIRS')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 56 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value)) and 
 ((code.coding.exists(code='75633-8')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 10 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value)) and 
-((code.coding.exists(code='HCTCI')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 26)) and 
-((code.coding.exists(code='MPNSAFTSS')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 100)) and 
-((code.coding.exists(code='MPN10')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 100)) and 
+((code.coding.exists(code='HCTCI')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 26 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value)) and 
+((code.coding.exists(code='MPNSAFTSS')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 100 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value)) and 
+((code.coding.exists(code='MPN10')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 100 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value)) and 
 ((code.coding.exists(code='711434002')) implies (component.all(value.ofType(string) = 'grade1' or value.ofType(string) = 'grade2' or value.ofType(string) = 'grade3' or value.ofType(string) = 'grade4' or value.ofType(string) = 'grade5'))) and 
 ((code.coding.exists(code='429712009')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 10 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value)) and 
-((code.coding.exists(code='GPPGA')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 4)) and 
-((code.coding.exists(code='273364009')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 600)) and 
-((code.coding.exists(code='Mayo')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 12)) and 
-((code.coding.exists(code='MayoE')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 12)) and 
-((code.coding.exists(code='PUCAI')) implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 90)) and
+((code.coding.exists(code='GPPGA')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 4 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value)) and 
+((code.coding.exists(code='273364009')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 600 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value)) and 
+((code.coding.exists(code='Mayo')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 12 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value)) and 
+((code.coding.exists(code='MayoE')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 12 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value)) and 
+((code.coding.exists(code='PUCAI')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 90 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value)) and
 ((code.coding.exists(code='PASI')) implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 72 and ((value.ofType(Quantity).value * 100).round() / 100) = value.ofType(Quantity).value))"
 Severity:    #error

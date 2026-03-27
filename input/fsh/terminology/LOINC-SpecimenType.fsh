@@ -2,7 +2,7 @@ ValueSet: SpecimenType
 Id: specime-type
 Title: "LOINC-健保事前審查-基因檢測檢體類型值集"
 Description: "LOINC-健保事前審查-基因檢測檢體類型值集"
-* ^date = "2026-02-03"
+* ^date = "2026-04-01"
 * ^version = "1.2.1"
 * ^experimental = false
 /* BLOOD */

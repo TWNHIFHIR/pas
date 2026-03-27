@@ -33,7 +33,7 @@ Usage: #example
 * effectiveDateTime = "2024-01-01"
 * performer.reference = "Practitioner/pra-min"
 * subject.reference = "Patient/pat-min"
-* valueInteger = 260
+* valueQuantity.value = 260.02
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">
@@ -44,7 +44,7 @@ Usage: #example
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a></p>
     <p><b>病人狀態評估日期</b>：2024-01-01</p>
     <p><b>評估項目醫事人員身分證號</b>：<a href=\"Practitioner-pra-min.html\">Practitioner/pra-min</a></p>
-    <p><b>病人狀態評估結果</b>：260</p>
+    <p><b>病人狀態評估結果</b>：260.02</p>
 </div>"
 
 Instance: obs-pat-ctcae

@@ -67,7 +67,7 @@ ValueSet: MediaMimeTypes
 Id: media-mimetypes
 Title: "HL7-非DICOM影像MimeType值集"
 Description: "HL7-非DICOM影像MimeType值集"
-* ^date = "2026-02-03"
+* ^date = "2026-04-01"
 * ^version = "1.2.1"
 * ^experimental = false
 * urn:ietf:bcp:13#image/jpeg
@@ -86,7 +86,7 @@ Id: dicom-cid-29-AcquisitionModality
 Title: "HL7-AcquisitionModality值集"
 Description: "原值集因總會工具問題無法正常顯示，故先自建值集。"
 
-* ^version = "2024.2.20240331"
+* ^version = "2022.4.20221006"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-03-31"
