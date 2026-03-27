@@ -3,8 +3,8 @@ Id: nhi-medication-fda
 Title: "NHI-健保事前審查-臺灣食藥署藥品及醫療器材代碼值集"
 Description: "NHI-健保事前審查-臺灣食藥署藥品及醫療器材代碼值集。  
 此值集所涵蓋代碼量較大會使載入頁面時間較長，完整代碼可至[全國專門術語服務平臺－值集(Value Set)](https://fhir.mohw.gov.tw/ts/valueset.jsp)查閱。"
-* ^date = "2026-02-03"
-* ^version = "2026-02-03"
+* ^date = "2026-04-01"
+* ^version = "2026-04-01"
 * ^experimental = false
 * include codes from system https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-fda-tw
 * include codes from system https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-device-fda-tw
@@ -34,9 +34,22 @@ Description: "NHI-健保事前審查-用藥品項，參照自[健保用藥品項
 
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2026-02-25"
-* ^version = "2026-02-25"
+* ^date = "2026-03-27"
+* ^version = "2026-03-27"
 * ^experimental = false
+/*2026-03 add*/
+* #BC28477100 "VAFSEO Tablets 150 mg"
+* #BC28478100 "VAFSEO Tablets 300 mg"
+* #AC375861G0 "\"GINKOBA F.C.TABLETS 9.6MG (GINKGOFLAVONGLYCOSIDE) \"ROYAL\"(鋁箔/膠箔)\""
+* #AC25768100 "\"COUGHTININ TABLETS 100MG \"PANBIOTIC\" (OXOLAMINE CITRATE)\""
+* #AC236831G0 "\"REPACIN F.C TABLETS (BETA-AESCIN) \"ROYAL\"(鋁箔/膠箔)\""
+* #BC28924100 "CAMZYOS CAPSULES 2.5 MG"
+* #BC28926100 "CAMZYOS CAPSULES 10 MG"
+* #BC28927100 "CAMZYOS CAPSULES 15 MG"
+* #KC011442CR "NUCALA SOLUTION FOR INJECTION 40MG/0.4ML"
+* #KC01278255 "VYLOY POWDER FOR CONCENTRATE FOR SOLUTION FOR INFUSION 100 MG"
+* #X000369158 "ACYCLOVIR 200MG/5ML SUSPENSION"
+
 /*2026-02 add*/
 * #BC28490457 "TRIMBOW 200/6/12.5 MICROGRAMS PRESSURIED INHALATION, SOLUTION"
 * #VC00097100 "Voydeya 100 mg Film-coated Tablets"

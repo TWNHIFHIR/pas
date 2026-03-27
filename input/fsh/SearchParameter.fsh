@@ -119,7 +119,7 @@ Usage: #definition
 * name = "ClaimResponseRequestor"
 * status = #active
 * version = "1.2.1"
-* date = "2026-03-31"
+* date = "2026-04-01"
 * publisher = "HL7 International"
 * description = "事前審查回覆(ClaimResponse)關聯的醫事機構(Organization)"
 * code = #requestor
@@ -136,7 +136,7 @@ Usage: #definition
 * name = "OrganizationIdentifier"
 * status = #active
 * version = "1.2.1"
-* date = "2026-03-31"
+* date = "2026-04-01"
 * publisher = "HL7 International"
 * description = "醫事機構代碼"
 * code = #identifier
