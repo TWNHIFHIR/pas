@@ -3,7 +3,7 @@ Parent:         Observation
 Id:             Observation-diagnostic-twpas
 Title:          "基因資訊-Observation Diagnostic TWPAS"
 Description:    "此基因資訊-Observation Diagnostic TWPAS Profile說明本IG如何進一步定義FHIR的Observation Resource以呈現事前審查之基因資訊"
-* ^version = "1.2.1"
+* ^version = "1.2.2"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-diagnostic-twpas"
@@ -75,4 +75,6 @@ Description:    "此基因資訊-Observation Diagnostic TWPAS Profile說明本IG
 * specimen ^short = "基因檢測檢體類型"
 * derivedFrom ^short = "基因報告"
 * method ^short = "基因檢測方法"
+* method.coding.code ^short = "基因檢測方法。若值集中的代碼不夠用，可用其他LOINC代碼或是於text呈現。"
+* method.text ^short = "基因檢測方法。若值集中的代碼不夠用，可用其他LOINC代碼或是於text呈現。"
 * effectiveDateTime ^short = "基因檢測日期"
