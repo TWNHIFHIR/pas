@@ -60,6 +60,10 @@ A definition for CodeSystem 'urn:ietf:rfc:3986' could not be found, so the code 
 # 繼承TW Core IG的Profile，無法取消欄位原有的MS(Must Support)註記，不影響驗證。（WARNING後方的 藍色字樣(1uses) 是指WARNING在此Profile中有被使用到）
 % The slice 'medicationReference' on path 'MedicationRequest.medication[x]'%
 
+# TW Core IG的代碼問題，可先手動修改.fhir中的Package相關內容。
+& A definition for CodeSystem 'https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2023-tw' could not be found, so the code cannot be validated&
+& A definition for CodeSystem 'https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw' could not be found, so the code cannot be validated&
+
 # 建議Observation皆須要填寫performer，但此專案情境不需要。（WARNING後方的 藍色字樣(1uses) 是指WARNING在此Profile中有被使用到）
 % Best Practice Recommendation: In general, all observations should have a performer%
 
