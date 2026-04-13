@@ -896,7 +896,7 @@ Usage: #definition
                 </div>
                 <p />
                 <div class=\"row\">
-                    <div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span>
+                    <div class=\"col-lg-12\"><span class=\"lead\">Search Parameters</span>
                         <table class=\"table table-condensed table-hover\">
                             <thead>
                                 <tr>
@@ -921,7 +921,7 @@ Usage: #definition
                                     <td><a href=\"SearchParameter-Claim-lastUpdated.html\">_lastUpdated</a></td>
                                     <td><code>token</code></td>
                                     <td>
-                                        <code>GET [base]/Claim?_lastUpdated={gt|lt|ge|le}[date]{&amp;_lastUpdated={gt|lt|ge|le}[date]}&amp;</code><br/>
+                                        <code>GET [base]/Claim?_lastUpdated={gt|lt|ge|le}[date]{&amp;_lastUpdated={gt|lt|ge|le}[date]}</code><br/>
                                         <p>實作請參考<a href=\"searchparameters.html#以查詢欄位分類\">查詢參數</a></p>
                                     </td>
                                 </tr>

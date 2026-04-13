@@ -62,7 +62,7 @@
 8. **必須（SHALL）** 支援透過查詢參數 **[`request`](SearchParameter-ClaimResponse-request.html)**.**[`_lastUpdated`](SearchParameter-Claim-lastUpdated.html)** 及 **[`_include`](SearchParameter-ClaimResponse-include.html)** 查詢所有ClaimResponse及Claim：        
     ([如何透過reference查詢](http://hl7.org/fhir/R4/search.html#reference))   
     ([如何透過date查詢](https://hl7.org/fhir/R4/search.html#date))     
-    `GET [base]/ClaimResponse?request._lastUpdated={gt|lt|ge|le}[date]{&request._lastUpdated={gt|lt|ge|le}&_include=ClaimResponse:request`  
+    `GET [base]/ClaimResponse?request._lastUpdated={gt|lt|ge|le}[date]{&request._lastUpdated={gt|lt|ge|le}[date]&_include=ClaimResponse:request`  
 
     例子：  
       (1) GET [base]/ClaimResponse?request._lastUpdated=gt2026-04-01T14:17&_include=ClaimResponse:request
@@ -71,7 +71,7 @@
     ([如何透過reference查詢](http://hl7.org/fhir/R4/search.html#reference))   
     ([如何透過token查詢](http://hl7.org/fhir/R4/search.html#token))  
     ([如何透過date查詢](https://hl7.org/fhir/R4/search.html#date))     
-    `GET [base]/ClaimResponse?request.patient.identifier=[code]&request._lastUpdated={gt|lt|ge|le}[date]{&request._lastUpdated={gt|lt|ge|le}&_include=ClaimResponse:request`  
+    `GET [base]/ClaimResponse?request.patient.identifier=[code]&request._lastUpdated={gt|lt|ge|le}[date]{&request._lastUpdated={gt|lt|ge|le}[date]&_include=ClaimResponse:request`  
 
     例子：  
       (1) GET [base]/ClaimResponse?request.patient.identifier=A123456789&request._lastUpdated=gt2026-04-01&_include=ClaimResponse:request
