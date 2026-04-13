@@ -5,28 +5,52 @@
 #### 以Profile分類
 
 ##### Claim
+- [<span class="bg-success">id</span>](SearchParameter-Claim-id.html)
+- [<span class="bg-success">_lastUpdated</span>](SearchParameter-Claim-lastUpdated.html)
 - [identifier](SearchParameter-Claim-identifier.html)
 - [patient](SearchParameter-Claim-patient.html)
 - [func-type](SearchParameter-Claim-func-type.html)
 
 ##### ClaimResponse
+- [<span class="bg-success">_include</span>](SearchParameter-ClaimResponse-include.html)
 - [created](SearchParameter-ClaimResponse-created.html)
 - [disposition](SearchParameter-ClaimResponse-disposition.html)
 - [request](SearchParameter-ClaimResponse-request.html)
 - [adjudication-reason](SearchParameter-ClaimResponse-adjudication-reason.html)
-- [<span class="bg-success">requestor</span>](SearchParameter-ClaimResponse-requestor.html)
+- [requestor](SearchParameter-ClaimResponse-requestor.html)
 
 ##### Patient
 - [name](SearchParameter-Patient-name.html)
 - [identifier](SearchParameter-Patient-identifier.html)
 
 ##### Organization
-- [<span class="bg-success">identifier</span>](SearchParameter-Organization-identifier.html)
+- [identifier](SearchParameter-Organization-identifier.html)
 
 ##### Encounter
 - [service-type](SearchParameter-Encounter-service-type.html)
 
 #### 以查詢欄位分類
+
+##### <span class="bg-success">上傳日期時間：[ClaimResponse.request](SearchParameter-ClaimResponse-request.html) + [Claim._lastUpdated](SearchParameter-Claim-lastUpdated.html)</span>
+`GET [base]/ClaimResponse?request._lastUpdated={gt|lt|ge|le}[date]{&request._lastUpdated={gt|lt|ge|le}[date]}&_include=ClaimResponse:request`  
+例子：  
+      (1) GET [base]/ClaimResponse?request._lastUpdated=gt2026-04-01&_include=ClaimResponse:request
+
+##### <span class="bg-success">身分證號 + 上傳日期時間：[ClaimResponse.request](SearchParameter-ClaimResponse-request.html) + [Claim.patient](SearchParameter-Claim-patient.html) + [Patient.identifier](SearchParameter-Patient-identifier.html) + [Claim._lastUpdated](SearchParameter-Claim-lastUpdated.html)</span>
+`GET [base]/ClaimResponse?request.patient.identifier=[身分證號]&request._lastUpdated={gt|lt|ge|le}[date]{&request._lastUpdated={gt|lt|ge|le}[date]}&_include=ClaimResponse:request`  
+例子：  
+      (1) GET [base]/ClaimResponse?request.patient.identifier=A123456789&request._lastUpdated=gt2026-04-01&_include=ClaimResponse:request
+
+##### <span class="bg-success">收件序號/案件編號：[ClaimResponse.request](SearchParameter-ClaimResponse-request.html) + [Claim.id](SearchParameter-Claim-id.html)</span>
+`GET [base]/ClaimResponse?request=Claim/[收件序號/案件編號]&_include=ClaimResponse:request`  
+例子：  
+      (1) GET [base]/ClaimResponse?request=Claim/2025021200111484&_include=ClaimResponse:request
+
+##### <span class="bg-success">原始檔名：[ClaimResponse.request](SearchParameter-ClaimResponse-request.html) + [Claim.identifier](SearchParameter-Claim-identifier.html)
+`GET [base]/ClaimResponse?request.identifier=[原始檔名]&_include=ClaimResponse:request`  
+例子：  
+      (1) GET [base]/ClaimResponse?request.identifier=FHR3501200000_2016101000000001.JSON&_include=ClaimResponse:request
+
 ##### 核定註記：[ClaimResponse.adjudication-reason](SearchParameter-ClaimResponse-adjudication-reason.html)
 `GET [base]/ClaimResponse?adjudication-reason=[核定註記]`  
 例子：  
@@ -63,7 +87,7 @@
 例子：  
       (1) GET [base]/ClaimResponse?created=gt2024-08-01&created=lt2024-08-24&disposition=審畢結果 
 
-##### <span class="bg-success">醫事機構代碼：[ClaimResponse.requestor](SearchParameter-ClaimResponse-requestor.html) + [Organization.identifier](SearchParameter-Organization-identifier.html)</span>
+##### 醫事機構代碼：[ClaimResponse.requestor](SearchParameter-ClaimResponse-requestor.html) + [Organization.identifier](SearchParameter-Organization-identifier.html)
 `GET [base]/ClaimResponse?requestor.identifier=[醫事機構代碼]`  
 例子：  
       (1) GET [base]/ClaimResponse?requestor.identifier=0101090517
