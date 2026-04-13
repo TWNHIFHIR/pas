@@ -7,6 +7,7 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Claim-immunologic-agent-twpas"
+* meta.lastUpdated ^short = "上傳日期時間。供案件追蹤與識別使用，醫院上傳時無須填寫。"
 * identifier and provider and subType and enterer and created and priority and patient MS
 * extension contains
     https://nhicore.nhi.gov.tw/pas/StructureDefinition/extension-claim-encounter named encounter 1..1 MS
