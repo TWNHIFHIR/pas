@@ -220,7 +220,10 @@ Title: "事前審查-申復、有共病"
 Description: "依據癌藥事前審查-Claim TWPAS Profile呈現事前審查之範例"
 Usage: #example
 * extension[encounter].valueReference.reference = "Encounter/enc-min"
-* identifier.value = "202405301000002"
+
+* identifier[acpt_no].value = "202505301000002"
+* identifier[orig_file_name].value = "FHR3501200000_2016101000000001.JSON"
+* identifier[old_acpt_no].value = "202405301000002"
 * status = http://hl7.org/fhir/fm-status#active
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
 * subType = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-apply-type#3 "申復"
@@ -293,6 +296,8 @@ Usage: #example
     <p><b>狀態</b>：Active</p>
     <p><b>類型</b>：Institutional<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/CodeSystem/claim-type\">ClaimTypeCodes</a>#institutional)</span></p>
     <p><b>就醫科別</b>：<a href=\"Encounter-enc-min.html\">Encounter/enc-min</a> &quot;胸腔暨重症加護&quot;</p>
+    <p><b>受理編號</b>：202505301000002</p>
+    <p><b>原始檔名</b>：FHR3501200000_2016101000000001.JSON</p>
     <p><b>原受理編號</b>：202405301000002</p>
     <p><b>申報類別</b>：申復<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-apply-type.html\">NHI-申報類別值集</a>#3)</span></p>
     <p><b>目的</b>：Preauthorization</p>

@@ -82,6 +82,16 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #reference
 * rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+* rest.resource[=].searchParam[+].name = "id"
+* rest.resource[=].searchParam[=].definition = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Claim-id"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+* rest.resource[=].searchParam[+].name = "_lastUpdated"
+* rest.resource[=].searchParam[=].definition = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Claim-lastUpdated"
+* rest.resource[=].searchParam[=].type = #date
+* rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 
 * rest.resource[+].type = #ClaimResponse
 * rest.resource[=].supportedProfile[0] = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/ClaimResponse-self-assessment-twpas"
@@ -122,6 +132,11 @@ Usage: #definition
 * rest.resource[=].searchParam[+].name = "requestor"
 * rest.resource[=].searchParam[=].definition = "https://nhicore.nhi.gov.tw/pas/SearchParameter/ClaimResponse-requestor"
 * rest.resource[=].searchParam[=].type = #reference
+* rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+* rest.resource[=].searchParam[+].name = "_include"
+* rest.resource[=].searchParam[=].definition = "https://nhicore.nhi.gov.tw/pas/SearchParameter/ClaimResponse-include"
+* rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 
@@ -559,7 +574,7 @@ Usage: #definition
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\"></td>
                     <td class=\"text-center\">y</td>
-                    <td>identifier, patient, func-type</td>
+                    <td>id, _lastUpdated, identifier, patient, func-type</td>
                 </tr>
                 <tr>
                     <td><a href=\"#ClaimResponse\">ClaimResponse</a></td>
@@ -571,7 +586,7 @@ Usage: #definition
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\"></td>
                     <td class=\"text-center\">y</td>
-                    <td>adjudication-reason, request.patient.name, request.patient.identifier, request.identifier, request.func-type.service-type, created, disposition, requestor.identifier</td>
+                    <td>adjudication-reason, request.patient.name, request.patient.identifier, request.identifier, request.func-type.service-type, created, disposition, requestor.identifier, _include, request._lastUpdated</td>
                 </tr>
                 <tr>
                     <td><a href=\"#Composition\">Composition</a></td>
@@ -894,6 +909,24 @@ Usage: #definition
                             <tbody>
                                 <tr>
                                     <td><b>必須（SHALL）</b></td>
+                                    <td><a href=\"SearchParameter-Claim-id.html\">id</a></td>
+                                    <td><code>token</code></td>
+                                    <td>
+                                        <code>GET [base]/Claim?id=[id]</code><br/>
+                                        <p>實作請參考<a href=\"searchparameters.html#以查詢欄位分類\">查詢參數</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>必須（SHALL）</b></td>
+                                    <td><a href=\"SearchParameter-Claim-lastUpdated.html\">_lastUpdated</a></td>
+                                    <td><code>token</code></td>
+                                    <td>
+                                        <code>GET [base]/Claim?_lastUpdated={gt|lt|ge|le}[date]{&amp;_lastUpdated={gt|lt|ge|le}[date]}&amp;</code><br/>
+                                        <p>實作請參考<a href=\"searchparameters.html#以查詢欄位分類\">查詢參數</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>必須（SHALL）</b></td>
                                     <td><a href=\"SearchParameter-Claim-identifier.html\">identifier</a></td>
                                     <td><code>token</code></td>
                                     <td>
@@ -965,6 +998,42 @@ Usage: #definition
                                 </tr>
                             </thead>
                             <tbody>
+                                <tr>
+                                    <td><b>必須（SHALL）</b></td>
+                                    <td><a href=\"SearchParameter-ClaimResponse-request.html\">request</a>.<a href=\"SearchParameter-Claim-lastUpdated.html\">_lastUpdated</a> + <a href=\"SearchParameter-ClaimResponse-include.html\">_include</a></td>
+                                    <td><code>reference, date</code></td>
+                                    <td>
+                                        <code>GET [base]/ClaimResponse?request._lastUpdated={gt|lt|ge|le}[date]{&amp;request._lastUpdated={gt|lt|ge|le}&amp;_include=ClaimResponse:request</code><br/>
+                                        <p>實作請參考<a href=\"searchparameters.html#以查詢欄位分類\">查詢參數</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>必須（SHALL）</b></td>
+                                    <td><a href=\"SearchParameter-ClaimResponse-request.html\">request</a>.<a href=\"SearchParameter-Claim-patient.html\">patient</a>.<a href=\"SearchParameter-Patient-identifier.html\">identifier</a> + <a href=\"SearchParameter-ClaimResponse-request.html\">request</a>.<a href=\"SearchParameter-Claim-lastUpdated.html\">_lastUpdated</a> + <a href=\"SearchParameter-ClaimResponse-include.html\">_include</a></td>
+                                    <td><code>reference, token, date</code></td>
+                                    <td>
+                                        <code>GET [base]/ClaimResponse?request.patient.identifier=[code]&amp;request._lastUpdated={gt|lt|ge|le}[date]{&amp;request._lastUpdated={gt|lt|ge|le}&amp;_include=ClaimResponse:request</code><br/>
+                                        <p>實作請參考<a href=\"searchparameters.html#以查詢欄位分類\">查詢參數</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>必須（SHALL）</b></td>
+                                    <td><a href=\"SearchParameter-ClaimResponse-request.html\">request</a>.<a href=\"SearchParameter-Claim-id.html\">id</a> + <a href=\"SearchParameter-ClaimResponse-include.html\">_include</a></td>
+                                    <td><code>reference, token</code></td>
+                                    <td>
+                                        <code>GET [base]/ClaimResponse?request=Claim/[id]&amp;_include=ClaimResponse:request</code><br/>
+                                        <p>實作請參考<a href=\"searchparameters.html#以查詢欄位分類\">查詢參數</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>必須（SHALL）</b></td>
+                                    <td><a href=\"SearchParameter-ClaimResponse-request.html\">request</a>.<a href=\"SearchParameter-Claim-identifier.html\">identifier</a> + <a href=\"SearchParameter-ClaimResponse-include.html\">_include</a></td>
+                                    <td><code>reference, token</code></td>
+                                    <td>
+                                        <code>GET [base]/ClaimResponse?request.identifier=[code]&amp;_include=ClaimResponse:request</code><br/>
+                                        <p>實作請參考<a href=\"searchparameters.html#以查詢欄位分類\">查詢參數</a></p>
+                                    </td>
+                                </tr>
                                 <tr>
                                     <td><b>必須（SHALL）</b></td>
                                     <td><a href=\"SearchParameter-ClaimResponse-adjudication-reason.html\">adjudication-reason</a></td>

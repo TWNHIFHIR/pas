@@ -58,3 +58,34 @@
 
     例子：  
       (1) GET [base]/ClaimResponse?requestor.identifier=0101090517
+
+8. **必須（SHALL）** 支援透過查詢參數 **[`request`](SearchParameter-ClaimResponse-request.html)**.**[`_lastUpdated`](SearchParameter-Claim-lastUpdated.html)** 及 **[`_include`](SearchParameter-ClaimResponse-include.html)** 查詢所有ClaimResponse及Claim：        
+    ([如何透過reference查詢](http://hl7.org/fhir/R4/search.html#reference))   
+    ([如何透過date查詢](https://hl7.org/fhir/R4/search.html#date))     
+    `GET [base]/ClaimResponse?request._lastUpdated={gt|lt|ge|le}[date]{&request._lastUpdated={gt|lt|ge|le}&_include=ClaimResponse:request`  
+
+    例子：  
+      (1) GET [base]/ClaimResponse?request._lastUpdated=gt2026-04-01T14:17&_include=ClaimResponse:request
+
+9. **必須（SHALL）** 支援透過查詢參數 **[`request`](SearchParameter-ClaimResponse-request.html)**.**[`patient`](SearchParameter-Claim-patient.html)**.**[`identifier`](SearchParameter-Patient-identifier.html)** 及 **[`request`](SearchParameter-ClaimResponse-request.html)**.**[`_lastUpdated`](SearchParameter-Claim-lastUpdated.html)** 及 **[`_include`](SearchParameter-ClaimResponse-include.html)** 查詢所有ClaimResponse及Claim：        
+    ([如何透過reference查詢](http://hl7.org/fhir/R4/search.html#reference))   
+    ([如何透過token查詢](http://hl7.org/fhir/R4/search.html#token))  
+    ([如何透過date查詢](https://hl7.org/fhir/R4/search.html#date))     
+    `GET [base]/ClaimResponse?request.patient.identifier=[code]&request._lastUpdated={gt|lt|ge|le}[date]{&request._lastUpdated={gt|lt|ge|le}&_include=ClaimResponse:request`  
+
+    例子：  
+      (1) GET [base]/ClaimResponse?request.patient.identifier=A123456789&request._lastUpdated=gt2026-04-01&_include=ClaimResponse:request
+
+10. **必須（SHALL）** 支援透過查詢參數 **[`request`](SearchParameter-ClaimResponse-request.html)**.**[`id`](SearchParameter-Claim-id.html)** 及 **[`_include`](SearchParameter-ClaimResponse-include.html)** 查詢所有ClaimResponse及Claim：        
+    ([如何透過reference查詢](http://hl7.org/fhir/R4/search.html#reference))   
+    ([如何透過token查詢](http://hl7.org/fhir/R4/search.html#token))       
+    `GET [base]/ClaimResponse?request=Claim/[id]&_include=ClaimResponse:request`  
+    例子：  
+      (1) GET [base]/ClaimResponse?request=Claim/2025021200111484&_include=ClaimResponse:request
+
+11. **必須（SHALL）** 支援透過查詢參數 **[`request`](SearchParameter-ClaimResponse-request.html)**.**[`identifier`](SearchParameter-Claim-identifier.html)** 及 **[`_include`](SearchParameter-ClaimResponse-include.html)** 查詢所有ClaimResponse及Claim：        
+    ([如何透過reference查詢](http://hl7.org/fhir/R4/search.html#reference))   
+    ([如何透過token查詢](http://hl7.org/fhir/R4/search.html#token))       
+    `GET [base]/ClaimResponse?request.identifier=[code]&_include=ClaimResponse:request`  
+    例子：  
+      (1) GET [base]/ClaimResponse?request.identifier=FHR3501200000_2016101000000001.JSON&_include=ClaimResponse:request

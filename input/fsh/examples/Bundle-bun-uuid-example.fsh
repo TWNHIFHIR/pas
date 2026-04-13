@@ -102,7 +102,9 @@ Usage: #example
 Instance: inline-claim
 InstanceOf: ClaimTWPAS
 Usage: #inline
-* identifier.value = "20240831010109051701"
+* identifier[acpt_no].value = "202409301000002"
+* identifier[orig_file_name].value = "FHR3501200000_2024080300000001.JSON"
+* identifier[old_acpt_no].value = "20240831010109051701"
 * extension[encounter].valueReference.reference = "urn:uuid:9726648a-dd47-431b-a677-3d5e9250d84c"
 * status = http://hl7.org/fhir/fm-status#active
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
@@ -189,6 +191,8 @@ Usage: #inline
     <p><b>狀態</b>：Active</p>
     <p><b>類型</b>：Institutional<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/CodeSystem/claim-type\">ClaimTypeCodes</a>#institutional)</span></p>
     <p><b>就醫科別</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-9726648a-dd47-431b-a677-3d5e9250d84c\">urn:uuid:9726648a-dd47-431b-a677-3d5e9250d84c</a> &quot;胸腔暨重症加護&quot;</p>
+    <p><b>受理編號</b>：202409301000002</p>
+    <p><b>原始檔名</b>：FHR3501200000_2024080300000001.JSON</p>
     <p><b>原受理編號</b>：20240831010109051701</p>
     <p><b>申報類別</b>：送核<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-apply-type.html\">NHI-申報類別值集</a>#1)</span></p>
     <p><b>目的</b>：Preauthorization</p>

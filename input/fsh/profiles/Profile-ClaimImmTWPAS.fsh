@@ -11,7 +11,21 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * extension contains
     https://nhicore.nhi.gov.tw/pas/StructureDefinition/extension-claim-encounter named encounter 1..1 MS
 
-* identifier 0..1
+* identifier 0..*
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "use"
+* identifier ^slicing.rules = #open
+* identifier contains
+    acpt_no 0..* MS and
+    orig_file_name 0..1 MS and
+    old_acpt_no 0..1 MS
+* identifier[acpt_no] ^short = "受理編號。供案件追蹤與識別使用，醫院上傳時無須填寫。"
+* identifier[acpt_no].use = #official
+* identifier[orig_file_name] ^short = "原始檔名。供案件追蹤與識別使用，醫院上傳時無須填寫。"
+* identifier[orig_file_name].use = #usual
+* identifier[old_acpt_no] ^short = "原受理編號。院所上傳送核(subType = #1)案件時，不需填寫「原受理編號」資訊，受理成功後會由系統自動產生受理編號。當Claim.subType(申報類別)為2(送核補件)、3(申復)、4(爭議審議)或5(申復補件)時，院所才需於Claim.identifier:old_acpt_no填寫原送核案件之受理編號。"
+* identifier[old_acpt_no].use = #secondary
+
 * provider 1..1
 * provider only Reference(OrganizationTWPAS)
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
@@ -267,9 +281,9 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * insurance.sequence = 1
 * insurance.coverage only Reference(CoverageTWPAS) 
 
-* identifier ^short = "原受理編號。院所上傳送核(subType = #1)案件時，不需填寫「原受理編號」資訊，受理成功後會由系統自動產生受理編號。當Claim.subType(申報類別)為2(送核補件)、3(申復)、4(爭議審議)或5(申復補件)時，院所才需於Claim.identifier填寫原送核案件之受理編號。"
+* id ^short = "收件序號/案件編號，供案件追蹤與識別使用，醫院上傳時無須填寫。"
 * provider ^short = "醫事機構代碼，必須存在於醫事機構基本資料檔內。"
-* subType ^short = "申報類別，1:送核 | 2:送核補件 | 3:申復 | 4:爭議審議 | 5:申復補件 。院所上傳送核(subType = #1)案件時，不需填寫「原受理編號」資訊，受理成功後會由系統自動產生受理編號。當Claim.subType(申報類別)為2(送核補件)、3(申復)、4(爭議審議)或5(申復補件)時，院所才需於Claim.identifier填寫原送核案件之受理編號。"
+* subType ^short = "申報類別，1:送核 | 2:送核補件 | 3:申復 | 4:爭議審議 | 5:申復補件 。院所上傳送核(subType = #1)案件時，不需填寫「原受理編號」資訊，受理成功後會由系統自動產生受理編號。當Claim.subType(申報類別)為2(送核補件)、3(申復)、4(爭議審議)或5(申復補件)時，院所才需於Claim.identifier:old_acpt_no填寫原送核案件之受理編號。"
 * extension[encounter] ^short = "就醫科別，為細分科之就醫科別，作為審查分科用。【此為參考Da Vinci PAS IG的extension設計】"
 * enterer ^short = "申請醫師，必須存在於醫事人員基本資料檔內，並於合約生效起迄日內。"
 * created ^short = "申請日期，YYYY-MM-DD，機構自填。健保署收案後另建受理日期，將呈現在ClaimResponse的disposition和created欄位。"

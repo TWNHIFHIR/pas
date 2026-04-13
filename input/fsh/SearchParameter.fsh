@@ -1,3 +1,5 @@
+
+
 //-------------------------Bundle-------------------------
 Instance: Bundle-id
 InstanceOf: SearchParameter
@@ -14,21 +16,23 @@ Usage: #definition
 * expression = "Bundle.id"
 * type = #token
 
-//-------------------------受理編號-------------------------
-/*Instance: Bundle-identifier
+//-------------------------Claim-------------------------
+Instance: Claim-patient
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Bundle-identifier"
-* name = "BundleIdentifier"
+* url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Claim-patient"
+* name = "ClaimID"
 * status = #active
 * version = "1.2.2"
 * date = "2024-08-31"
 * publisher = "HL7 International"
-* description = "事前審查(Bundle)的受理編號(identifier)"
-* code = #identifier
-* base = #Bundle
-* expression = "Bundle.identifier"
-* type = #token*/
+* description = "事前審查(Claim)的病人資訊(patient)"
+* code = #patient
+* base = #Claim
+* expression = "Claim.id"
+* type = #reference
+* chain[0] = "name"
+* chain[1] = "identifier"
 
 Instance: Claim-identifier
 InstanceOf: SearchParameter
@@ -44,6 +48,36 @@ Usage: #definition
 * base = #Claim
 * expression = "Claim.identifier"
 * type = #token
+
+Instance: Claim-id
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Claim-id"
+* name = "ClaimId"
+* status = #active
+* version = "1.2.2"
+* date = "2026-04-01"
+* publisher = "HL7 International"
+* description = "事前審查(Claim)的收件序號/案件編號(id)"
+* code = #id
+* base = #Claim
+* expression = "Claim.id"
+* type = #token
+
+Instance: Claim-lastUpdated 
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Claim-lastUpdated"
+* name = "ClaimLastUpdated"
+* status = #active
+* version = "1.2.2"
+* date = "2026-04-01"
+* publisher = "HL7 International"
+* description = "事前審查(Claim)的上傳日期時間(lastUpdated)"
+* code = #_lastUpdated
+* base = #Claim
+* expression = "Claim.meta.lastUpdated"
+* type = #date
 
 //-------------------------ClaimResponse-------------------------
 
@@ -128,6 +162,21 @@ Usage: #definition
 * type = #reference
 * chain[0] = "identifier"
 
+Instance: ClaimResponse-include
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/ClaimResponse-include"
+* name = "ClaimResponseInclude"
+* status = #active
+* version = "1.2.2"
+* date = "2026-04-01"
+* publisher = "HL7 International"
+* description = "事前審查回覆(ClaimResponse)關聯的事前審查(Claim)"
+* code = #_include
+* base = #ClaimResponse
+* type = #special
+
+
 //-------------------------Organization-------------------------
 Instance: Organization-identifier
 InstanceOf: SearchParameter
@@ -143,24 +192,6 @@ Usage: #definition
 * base = #Organization
 * expression = "Organization.identifier"
 * type = #token
-
-//-------------------------Claim-------------------------
-Instance: Claim-patient
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Claim-patient"
-* name = "ClaimID"
-* status = #active
-* version = "1.2.2"
-* date = "2024-08-31"
-* publisher = "HL7 International"
-* description = "事前審查(Claim)的病人資訊(patient)"
-* code = #patient
-* base = #Claim
-* expression = "Claim.id"
-* type = #reference
-* chain[0] = "name"
-* chain[1] = "identifier"
 
 //-------------------Patient-------------------
 //--------------------姓名-------------------
