@@ -6,12 +6,12 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/4/10異動以下內容：
+因考量實作需求，於2025/4/13異動以下內容：
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
         <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
         <li>更新值集：<a href="ValueSet-dicom-cid-29-AcquisitionModality.html">ValueSet: DICOM-AcquisitionModality值集</a>：新增<code>SC</code>、<code>OT</code></li>
-        <li>修改：<a href="StructureDefinition-Claim-twpas.html">Profile: 癌藥事前審查-Claim TWPAS</a>：新增欄位「收件序號/案件編號」、「受理編號」及「原始檔名」，供案件追蹤與識別使用，醫院上傳時無須填寫。</li>
+        <li>修改：<a href="StructureDefinition-Claim-twpas.html">Profile: 癌藥事前審查-Claim TWPAS</a>：新增欄位「收件序號/案件編號」、「受理編號」、「原始檔名」及「上傳日期時間」，供案件追蹤與識別使用，醫院上傳時無須填寫。</li>
     </ol>
     請留意這些異動，以避免影響您的實作。
 </div>
