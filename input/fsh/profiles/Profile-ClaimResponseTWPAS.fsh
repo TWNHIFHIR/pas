@@ -20,21 +20,21 @@ Description:    "此自主審查-ClaimResponse TWPAS Profile說明本IG如何進
 * patient only Reference(PatientTWPAS)
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
 * insurer only Reference(TWCoreOrganizationGovt)
-* item 1..
+/* item 1..
 * item.adjudication.reason from NHIApproveClaimComment
 * item.adjudication.value 1..1
-* item.adjudication.reason 1..1
+* item.adjudication.reason 1..1*/
 * item.detail.adjudication.reason from NHIApproveItemComment
-* item.detail.adjudication.reason 1..1
+* item.detail.adjudication.reason 1..1 MS
 * created and item.adjudication.reason and item.adjudication.value MS
 * created ^short = "核定日期。若申請案件類別為3時須填寫。YYYY-MM-DD，西元年月日。"
-* item.adjudication.value ^short = "審查結果數量，若申請案件類別為3時須填寫。"
+/* item.adjudication.value ^short = "審查結果數量，若申請案件類別為3時須填寫。"
 * item.adjudication.reason ^short = "受理審查案件核定註記。若申請案件類別為3時須填寫。1:同意 | 2:不予同意 | 3:部份同意 | 4:補件 | 5:退件"
 * item.adjudication.category ^short = "【因FHIR設計而需必填】"
 * item.adjudication.category.coding.system ^example[0].valueUri = "http://terminology.hl7.org/CodeSystem/adjudication"
 * item.adjudication.category.coding.system ^example[=].label = "General"
 * item.adjudication.category.coding.code ^example[0].valueString = "submitted"
-* item.adjudication.category.coding.code ^example[=].label = "General"
+* item.adjudication.category.coding.code ^example[=].label = "General"*/
 * item.detail.adjudication.reason ^short = "個別醫令核定註記。0:審核中 | 1:同意 | 2:不予同意 | 3:部份同意 | 4:補件 | 5:退件 | 6:不予同意:對應手術亦不支付 | 7:改核:如審查核定意見"
 * item.detail.detailSequence ^short = "請填寫對應的Claim.item.sequence"
 * item.detail.adjudication.category ^short = "【因FHIR設計而需必填】"
