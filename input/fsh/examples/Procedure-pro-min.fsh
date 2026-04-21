@@ -4,7 +4,7 @@ Title: "放射治療"
 Description: "依據放射治療-Procedure TWPAS Profile呈現放射治療之範例"
 Usage: #example
 * status = http://hl7.org/fhir/event-status#completed
-* code.coding = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw#D0000ZZ
+* code.coding[ICD10PCS2023Radiotherapy] = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw#D0000ZZ
 * subject.reference = "Patient/pat-min"
 * performedDateTime = "2024-05-06T09:00:00.000Z"
 * usedReference.reference = "Substance/sub-min"
@@ -15,7 +15,7 @@ Usage: #example
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Procedure-twpas.html\">放射治療-Procedure TWPAS</a></p>
     </div>
     <p><b>放射治療狀態</b>：completed</p>
-    <p><b>放射治療項目</b>：腦部光子<1MeV之光束放射治療 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">
+    <p><b>放射治療項目</b>：腦部光子&lt;1MeV之光束放射治療 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">
             (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.3.2/CodeSystem-icd-10-pcs-2023-tw.html\">臺灣2023年中文版ICD-10-PCS</a>#D0000ZZ)</span>
     </p>
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a> &quot;王大明&quot;</p>
@@ -29,7 +29,7 @@ InstanceOf: SubstanceTWPAS
 Title: "放射治療總劑量"
 Description: "依據放射治療總劑量-Substance TWPAS Profile呈現放射治療之範例"
 Usage: #example
-* code.coding = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw#D0000ZZ
+* code.coding[ICD10PCS2023Radiotherapy] = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw#D0000ZZ
 * ingredient.quantity.numerator.value = 5000
 * ingredient.quantity.numerator.code = #mg
 * ingredient.quantity.numerator.system = "http://unitsofmeasure.org"
@@ -41,7 +41,7 @@ Usage: #example
         border-radius: 5px; line-height: 60%\">
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Substance-twpas.html\">放射治療總劑量-Substance TWPAS</a></p>
     </div>
-    <p><b>放射治療項目</b>：腦部光子<1MeV之光束放射治療 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">
+    <p><b>放射治療項目</b>：腦部光子&lt;1MeV之光束放射治療 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">
             (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.3.2/CodeSystem-icd-10-pcs-2023-tw.html\">臺灣2023年中文版ICD-10-PCS</a>#D0000ZZ)</span></p>
     <p><b>放射治療總劑量(單位)</b>：5000 (/mg)</p>
 </div>"

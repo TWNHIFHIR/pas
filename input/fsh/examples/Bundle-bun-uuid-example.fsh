@@ -1215,7 +1215,7 @@ Usage: #inline
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Procedure-twpas.html\">放射治療-Procedure TWPAS</a></p>
     </div>
     <p><b>放射治療狀態</b>：completed</p>
-    <p><b>放射治療項目</b>：腦部光子<1MeV之光束放射治療 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">
+    <p><b>放射治療項目</b>：腦部光子&lt;1MeV之光束放射治療 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">
             (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.3.2/CodeSystem-icd-10-pcs-2023-tw.html\">臺灣2023年中文版ICD-10-PCS</a>#D0000ZZ)</span>
     </p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
@@ -1238,7 +1238,7 @@ Usage: #inline
         border-radius: 5px; line-height: 60%\">
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Substance-twpas.html\">放射治療總劑量-Substance TWPAS</a></p>
     </div>
-    <p><b>放射治療項目</b>：腦部光子<1MeV之光束放射治療 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">
+    <p><b>放射治療項目</b>：腦部光子&lt;1MeV之光束放射治療 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">
             (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.3.2/CodeSystem-icd-10-pcs-2023-tw.html\">臺灣2023年中文版ICD-10-PCS</a>#D0000ZZ)</span></p>
     <p><b>放射治療總劑量(單位)</b>：5000 (mg)</p>
 </div>"
