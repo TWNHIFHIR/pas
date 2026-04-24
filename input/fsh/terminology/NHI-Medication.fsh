@@ -34,9 +34,17 @@ Description: "NHI-健保事前審查-用藥品項，參照自[健保用藥品項
 
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2026-03-27"
-* ^version = "2026-03-27"
+* ^date = "2026-04-24"
+* ^version = "2026-04-24"
 * ^experimental = false
+/*2026-04 add*/
+* #BC28352100 "BRAFTOVI 75 MG HARD CAPSULES"
+* #BC28775100 "OPSYNVI FILM-COATED TABLETS 10/20MG"
+* #BC28776100 "OPSYNVI Film-Coated Tablets 10/40mg"
+* #KC01289209 "BIMZELX SOLUTION FOR INJECTION 160 MG/ML"
+* #KC01233224 "Libtayo concentrate for solution for infusion"
+* #X000370265 "VAXCEL ACYCLOVIR 250MG I.V. FOR INFUSION"
+
 /*2026-03 add*/
 * #BC28477100 "VAFSEO Tablets 150 mg"
 * #BC28478100 "VAFSEO Tablets 300 mg"

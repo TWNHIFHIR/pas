@@ -14,14 +14,14 @@ Usage: #example
 * created = "2024-07-30"
 * insurer.reference = "Organization/org-nhi"
 * outcome = http://hl7.org/fhir/remittance-outcome#complete
-* item.itemSequence = 1
+/* item.itemSequence = 1
 * item.adjudication.category = http://terminology.hl7.org/CodeSystem/adjudication#submitted
 * item.adjudication.reason = NHIApproveComment#1
-* item.adjudication.value = 5
+* item.adjudication.value = 5*/
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">
-        <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ClaimResponse-twpas.html\">事前審查結果-ClaimResponse TWPAS</a></p>
+        <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ClaimResponse-self-assessment-twpas.html\">自主審查-ClaimResponse Self Assessment TWPAS</a></p>
     </div>
     <p><b>狀態</b>：Active</p>
     <p><b>審查委員身分證號</b>：F123456789（http://www.moi.gov.tw）、A123456789（http://www.moi.gov.tw）</p>
@@ -31,23 +31,4 @@ Usage: #example
     <p><b>核定日期</b>：2024-07-30</p>
     <p><b>保險商</b>：<a href=\"Organization-org-nhi.html\">Organization 衛生福利部中央健康保險署</a></p>
     <p><b>處置狀態</b>：Processing Complete</p>
-    <blockquote>
-        <p><b>item</b></p>
-        <p><b>itemSequence</b>：1</p>
-        <h3>Adjudications</h3>
-        <table class=\"grid\">
-            <tr>
-                <td style=\"display: none\">-</td>
-                <td><b>類型</b></td>
-                <td><b>核定註記</b></td>
-                <td><b>審查結果數量</b></td>
-            </tr>
-            <tr>
-                <td style=\"display: none\">*</td>
-                <td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/adjudication submitted}\">Submitted Amount</span></td>
-                <td><span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-approve-comment 1}\">同意備查</span></td>
-                <td>5</td>
-            </tr>
-        </table>
-    </blockquote>
 </div>"
