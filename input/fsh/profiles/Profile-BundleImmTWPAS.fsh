@@ -8,7 +8,7 @@ Description:    "此免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Pro
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Bundle-immunologic-agent-twpas"
 * type = #collection
-//* identifier ^short = "原受理編號"
+* identifier ^short = "收件序號/案件編號，供案件追蹤與識別使用，醫院上傳時無須填寫。"
 * timestamp ^short = "緊急報備日期，YYYY-MM-DDTHH:MM:SS (需包含時區)；若本案件前已緊急報備過，本次為檢送完整資訊申請送件者，由機構將前次緊急報備時所填之申請日期，自填為緊急報備日期。"
 * timestamp ^example.label = "緊急報備日期"
 * timestamp ^example.valueDateTime = "2024-05-30T13:50:58.000+08:00"
