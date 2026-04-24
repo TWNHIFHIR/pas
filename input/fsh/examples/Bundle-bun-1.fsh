@@ -4,7 +4,7 @@ Title: "事前審查-送核、套組檢驗、多事前審查癌藥品項"
 Description: "依據癌藥事前審查-Bundle TWPAS Profile呈現癌藥事前審查之範例"
 Usage: #example
 * type = http://hl7.org/fhir/bundle-type#collection
-
+* identifier.value = "2025021200111484"
 * entry[0].fullUrl = "https://nhicore.nhi.gov.tw/pas/Claim/cla-1"
 * entry[0].resource = cla-1
 
