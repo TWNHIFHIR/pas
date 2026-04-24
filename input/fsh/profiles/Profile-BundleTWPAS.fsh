@@ -277,7 +277,7 @@ Severity:    #error
 
 Invariant:   applyReason-17
 Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01233224，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P013"
-Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01233224').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01242235').all(programCode.coding.code.matches('P013'))"
+Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01233224').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01233224').all(programCode.coding.code.matches('P013'))"
 Severity:    #error
 
 
