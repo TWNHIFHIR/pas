@@ -3,7 +3,7 @@ Parent:         Substance
 Id:             Substance-phototherapy-twpas
 Title:          "照光治療總次數-Substance Phototherapy TWPAS"
 Description:    "此照光治療總次數-Substance Phototherapy TWPAS Profile說明本IG如何進一步定義FHIR的Substance Resource以呈現事前審查中治療資訊之照光治療總次數"
-* ^version = "1.2.2"
+* ^version = "1.2.3"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Substance-phototherapy-twpas"

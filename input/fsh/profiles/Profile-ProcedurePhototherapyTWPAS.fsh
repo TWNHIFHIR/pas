@@ -3,7 +3,7 @@ Parent:         Procedure
 Id:             Procedure-phototherapy-twpas
 Title:          "照光治療-Procedure Phototherapy TWPAS"
 Description:    "此照光治療-Procedure Phototherapy TWPAS Profile說明本IG如何進一步定義FHIR的Procedure Resource以呈現事前審查中治療資訊之照光治療相關資訊"
-* ^version = "1.2.2"
+* ^version = "1.2.3"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Procedure-phototherapy-twpas"
