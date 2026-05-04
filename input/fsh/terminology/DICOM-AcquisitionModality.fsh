@@ -3,11 +3,11 @@ Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
 /*CodeSystem: NHIStandardSOPClasses
 Id: standard-sop-classes
 Title: "NHI-健保事前審查-Standard SOP Classes"
-Description: "臺灣衛生福利部中央健康保險署「Standard SOP Classes」代碼，代碼出版日期：2026-04-01；資料所屬單位：臺灣衛生福利部中央健康保險署。參照自DICOM網站(https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html)中的「Table B.5-1. Standard SOP Classes」"
+Description: "臺灣衛生福利部中央健康保險署「Standard SOP Classes」代碼，代碼出版日期：2026-05-04；資料所屬單位：臺灣衛生福利部中央健康保險署。參照自DICOM網站(https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html)中的「Table B.5-1. Standard SOP Classes」"
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2026-04-01"
-* ^version = "2026-04-01"
+* ^date = "2026-05-04"
+* ^version = "2026-05-04"
 * ^experimental = false
 * #SC "Secondary Capture Image Storage"*/
 
@@ -18,7 +18,7 @@ Description: "原值集因總會工具問題無法正常顯示，故先自建值
 * ^version = "2022.4.20221006"
 * ^status = #active
 * ^experimental = false
-* ^date = "2026-04-01"
+* ^date = "2026-05-04"
 * ^publisher = "NEMA MITA DICOM"
 * ^copyright = "© 2024 NEMA"
 * $DCM#BMD "Bone Mineral Densitometry"

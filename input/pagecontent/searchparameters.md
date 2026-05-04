@@ -34,12 +34,12 @@
 ##### <span class="bg-success">上傳日期時間：[ClaimResponse.request](SearchParameter-ClaimResponse-request.html) + [Claim._lastUpdated](SearchParameter-Claim-lastUpdated.html)</span>
 `GET [base]/ClaimResponse?request._lastUpdated={gt|lt|ge|le}[date]{&request._lastUpdated={gt|lt|ge|le}[date]}&_include=ClaimResponse:request`  
 例子：  
-      (1) GET [base]/ClaimResponse?request._lastUpdated=gt2026-04-01&_include=ClaimResponse:request
+      (1) GET [base]/ClaimResponse?request._lastUpdated=gt2026-05-04&_include=ClaimResponse:request
 
 ##### <span class="bg-success">身分證號 + 上傳日期時間：[ClaimResponse.request](SearchParameter-ClaimResponse-request.html) + [Claim.patient](SearchParameter-Claim-patient.html) + [Patient.identifier](SearchParameter-Patient-identifier.html) + [Claim._lastUpdated](SearchParameter-Claim-lastUpdated.html)</span>
 `GET [base]/ClaimResponse?request.patient.identifier=[身分證號]&request._lastUpdated={gt|lt|ge|le}[date]{&request._lastUpdated={gt|lt|ge|le}[date]}&_include=ClaimResponse:request`  
 例子：  
-      (1) GET [base]/ClaimResponse?request.patient.identifier=A123456789&request._lastUpdated=gt2026-04-01&_include=ClaimResponse:request
+      (1) GET [base]/ClaimResponse?request.patient.identifier=A123456789&request._lastUpdated=gt2026-05-04&_include=ClaimResponse:request
 
 ##### <span class="bg-success">收件序號/案件編號：[ClaimResponse.request](SearchParameter-ClaimResponse-request.html) + [Claim.id](SearchParameter-Claim-id.html)</span>
 `GET [base]/ClaimResponse?request=Claim/[收件序號/案件編號]&_include=ClaimResponse:request`  
