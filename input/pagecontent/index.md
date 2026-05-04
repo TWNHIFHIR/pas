@@ -1,19 +1,16 @@
 <div class="bg-danger" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.2.1版內容，因而會比健保署的IG版本V1.2.1(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為115年5月4日，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
+<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.2.2版內容，因而會比健保署的IG版本V1.2.2(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為115年5月4日，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
 <br/>
-<b>醫院實作時請以V1.2.1為主進行實例驗證，目前健保署端的伺服器採用V1.2.1版規格。</b></p>
+<b>醫院實作時請以V1.2.2為主進行實例驗證，目前健保署端的伺服器採用V1.2.2版規格。</b></p>
 </div>
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/4/24異動以下內容：
+因考量實作需求，於2025/5/4異動以下內容：
     <ol>  
-        <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
-        <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li>
-        <li>新增Constraints: applyReason-17：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為<code>KC01233224</code>，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為<code>P013</code>。</li>
-        <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 癌藥事前審查-Bundle TWPAS</a>、<a href="StructureDefinition-Bundle-immunologic-agent-twpas.html">Profile: 免疫製劑事前審查-Bundle Immunologic Aagent TWPAS</a>：新增欄位「收件序號/案件編號」，供案件追蹤與識別使用，醫院上傳時無須填寫。</li>
-        <li>修改<a href="StructureDefinition-Claim-twpas.html">Profile: 癌藥事前審查-Claim TWPAS</a>、<a href="StructureDefinition-Claim-immunologic-agent-twpas.html">Profile: 免疫製劑事前審查-Claim Immunologic Aagent TWPAS</a>：新增欄位「收件序號/案件編號」、「受理編號」、「原始檔名」及「上傳日期時間」，供案件追蹤與識別使用，醫院上傳時無須填寫。</li>
-        <li>修改<a href="StructureDefinition-ClaimResponse-self-assessment-twpas.html">Profile: 自主審查-ClaimResponse Self Assessment TWPAS</a>：移除「受理審查案件核定註記」(<code>item.adjudication.reason</code>)、「審查結果數量」(<code>item.adjudication.value</code>)欄位。</li>
+        <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
+        <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
+        <li>修改<a href="StructureDefinition-ClaimResponse-self-assessment-twpas.html">Profile: 自主審查-ClaimResponse Self Assessment TWPAS</a>：新增「核定意見」(<code>item.adjudication.reason.text</code>)欄位。</li>
     </ol>
     請留意這些異動，以避免影響您的實作。
 </div>
