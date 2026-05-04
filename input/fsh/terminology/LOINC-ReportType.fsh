@@ -3,7 +3,7 @@ ValueSet: ReportType
 Id: report-type
 Title: "LOINC-健保事前審查-報告類型值集"
 Description: "LOINC-健保事前審查-報告類型值集"
-* ^date = "2026-04-01"
+* ^date = "2026-05-04"
 * ^version = "1.2.3"
 * ^experimental = false
 * $loinc#47522-8
