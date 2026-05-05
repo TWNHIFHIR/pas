@@ -79,7 +79,7 @@ Description:    "此事前審查回覆-ClaimResponse TWPAS Profile說明本IG如
 * item.adjudication.category.coding.system ^example[=].label = "General"
 * item.adjudication.category.coding.code ^example[0].valueString = "submitted"
 * item.adjudication.category.coding.code ^example[=].label = "General"
-* item.adjudication.value ^short = "核定數量。"
+* item.adjudication.value ^short = "核定數量"
 * item.adjudication.reason ^short = "受理審查案件核定註記。1:同意 | 2:不予同意 | 3:部份同意 | 4:補件 | 5:退件"
 * item.adjudication.reason.text ^short = "核定意見"
 * item.detail.adjudication.reason ^short = "個別醫令核定註記。0:審核中 | 1:同意 | 2:不予同意 | 3:部份同意 | 4:補件 | 5:退件 | 6:不予同意:對應手術亦不支付 | 7:改核:如審查核定意見"

@@ -10,7 +10,7 @@
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
         <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
-        <li>修改<a href="StructureDefinition-ClaimResponse-self-assessment-twpas.html">Profile: 自主審查-ClaimResponse Self Assessment TWPAS</a>：新增「核定意見」(<code>item.adjudication.reason.text</code>)欄位。</li>
+        <li>修改<a href="StructureDefinition-ClaimResponse-twpas.html">Profile: 事前審查回覆-ClaimResponse TWPAS</a>：新增「核定意見」(<code>item.adjudication.reason.text</code>)欄位。</li>
     </ol>
     請留意這些異動，以避免影響您的實作。
 </div>
