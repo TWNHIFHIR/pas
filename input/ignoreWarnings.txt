@@ -43,7 +43,7 @@ The slice definition for Condition.code.coding has a maximum of 1 but the slices
 # 提醒slice的pattern寫法將於R5版本不再支援，不影響驗證。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
 % The discriminator type 'pattern' is deprecated in R5%
 
-# deprecated extension，IG中未使用，不影響驗證。（後方的藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
+# deprecated extension，IG中未使用，不影響驗證。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
 % The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0-ballot-tc1 is deprecated%
 % The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0-ballot-tc1 is deprecated%
 
@@ -70,3 +70,6 @@ A definition for CodeSystem 'https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd
 
 # Publisher自動選擇代碼系統版本，不影響驗證。
 % Pinned the version of %
+
+# 建議使用的值集，但為符合情境使用其他代碼系統的代碼，不影響驗證。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
+% and a coding is recommended to come from this value set%
