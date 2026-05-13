@@ -282,7 +282,7 @@ Severity:    #error
 
 
 Invariant:   claimResponse-1
-Description: "若申請案件類別(Claim.priority)為自主審查(#3)時，須填寫核定日期(ClaimResponse.created)、審查結果數量(ClaimResponse.item.adjudication.value)、核定註記(ClaimResponse.item.adjudication.reason)及審查委員身分證號(extension[requestor])。"
+Description: "若申請案件類別(Claim.priority)為自主審查(#3)時，須填寫核定日期(ClaimResponse.created)、個別審查結果數量(ClaimResponse.item.adjudication.value)、個別醫令核定註記(ClaimResponse.item.adjudication.reason)及審查委員身分證號(extension[requestor])。"
 Expression:  "(Bundle.entry.select((resource as Claim).priority.coding.code.matches('3'))) implies (Bundle.entry.select((resource as ClaimResponse).created).exists()) and (Bundle.entry.select((resource as ClaimResponse).item.adjudication.value).exists()) and (Bundle.entry.select((resource as ClaimResponse).item.adjudication.reason).exists()) and (Bundle.entry.select((resource as ClaimResponse).extension.where(url = 'https://nhicore.nhi.gov.tw/pas/StructureDefinition/extension-claimResponse-requestor')).exists())"
 Severity:    #error
 
