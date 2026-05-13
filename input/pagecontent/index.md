@@ -10,7 +10,7 @@
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
         <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
-        <li>修改<a href="StructureDefinition-Organization-genetic-testing-twpas.html">Profile: 基因檢測機構-Organization Genetic Testing TWPAS</a>：修改Constraint: ngs-org：基因檢測機構(<code>identifier.value</code>)可填11碼或<b>13</b>碼，或4個文字擇一(CAP、TAF、TFDA、TSP)。</li>
+        <li>修改<a href="StructureDefinition-Organization-genetic-testing-twpas.html">Profile: 基因檢測機構-Organization Genetic Testing TWPAS</a>：修改Constraint: ngs-org：基因檢測機構(identifier.value)可填包含LDT之文字，或4個文字擇一(CAP、TAF、TFDA、TSP)。</li>
         <li>修改<a href="StructureDefinition-ClaimResponse-self-assessment-twpas.html">Profile: 自主審查-ClaimResponse Self Assessment TWPAS</a>：新增「個別審查結果數量」(<code>item.detail.adjudication.value</code>)、「個別醫令核定註記」(<code>item.detail.adjudication.reason</code>)欄位。</li>
         <li>修改<a href="StructureDefinition-ClaimResponse-twpas.html">Profile: 事前審查回覆-ClaimResponse TWPAS</a>：新增「核定意見」(<code>item.adjudication.reason.text</code>)欄位。</li>
     </ol>

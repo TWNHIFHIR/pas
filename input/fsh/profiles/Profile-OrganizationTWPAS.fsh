@@ -51,7 +51,7 @@ Description:    "此基因檢測機構-Organization Genetic Testing TWPAS Profil
 * identifier obeys ngs-org
 
 Invariant:   ngs-org
-Description: "基因檢測機構(identifier.value)可填11碼或13碼，或4個文字擇一(CAP、TAF、TFDA、TSP)"
-Expression:  "value.toString().matches('^(?!CAP$|TAF$|TFDA$|TSP$)[A-Za-z0-9]{11,13}$|^(CAP|TAF|TFDA|TSP)$')"
+Description: "基因檢測機構(identifier.value)可填包含LDT之文字，或4個文字擇一(CAP、TAF、TFDA、TSP)"
+Expression:  "value.toString().matches('^(CAP|TAF|TFDA|TSP)$|^.*LDT.*$')"
 Severity:    #error
 
