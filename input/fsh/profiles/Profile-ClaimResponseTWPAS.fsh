@@ -24,6 +24,9 @@ Description:    "此自主審查-ClaimResponse TWPAS Profile說明本IG如何進
 * created and item.adjudication.reason and item.adjudication.value MS
 * created ^short = "核定日期。若申請案件類別為3時須填寫。YYYY-MM-DD，西元年月日。"
 
+* disposition MS
+* disposition ^short = "核定意見"
+
 * item 1..*
 * item.itemSequence ^short = "請填寫對應的Claim.item.sequence"
 * item.adjudication 1..1
