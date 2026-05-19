@@ -6,10 +6,12 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/5/18異動以下內容：
+因考量實作需求，於2025/5/19異動以下內容：
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
         <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
+        <li>更新代碼：<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：新增代碼<code>P016</code>(非小細胞肺癌術前輔助治療，事前審查品項代碼為KC01013230才可填寫)。</li>
+        <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 癌藥事前審查-Bundle TWPAS</a>：修改Constraint: applyReason-8：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01013230，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P001、P011、P012、<b>P016</b>、P031、P041、P044、P052、P061、P081、P101、P102 或 P111</li>
         <li>修改<a href="StructureDefinition-Organization-genetic-testing-twpas.html">Profile: 基因檢測機構-Organization Genetic Testing TWPAS</a>：修改Constraint: ngs-org：基因檢測機構(identifier.value)可填包含LDT之文字，或4個文字擇一(CAP、TAF、TFDA、TSP)。</li>
         <li>修改<a href="StructureDefinition-ClaimResponse-self-assessment-twpas.html">Profile: 自主審查-ClaimResponse Self Assessment TWPAS</a>：新增「個別審查結果數量」(<code>item.detail.adjudication.value</code>)、「個別醫令核定註記」(<code>item.detail.adjudication.reason</code>)、「核定意見」(<code>disposition</code>)欄位。</li>
         <li>修改<a href="StructureDefinition-ClaimResponse-twpas.html">Profile: 事前審查回覆-ClaimResponse TWPAS</a>：新增「核定意見」(<code>item.adjudication.reason.text</code>)欄位。</li>
