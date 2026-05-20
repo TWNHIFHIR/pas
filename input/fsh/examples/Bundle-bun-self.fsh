@@ -345,11 +345,16 @@ Usage: #inline
 * patient.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * created = "2024-07-30"
 * insurer.reference = "urn:uuid:70e7e8b6-4605-487e-9626-be645114140f"
+* request.reference = "urn:uuid:ee37d6e5-26c4-43b3-a036-6675c739a340"
 * outcome = http://hl7.org/fhir/remittance-outcome#complete
-* item.itemSequence = 1
-* item.adjudication.category = http://terminology.hl7.org/CodeSystem/adjudication#submitted
-* item.adjudication.reason = NHIApproveComment#1
-* item.adjudication.value = 5
+* item[0].itemSequence = 1
+* item[0].adjudication.category = http://terminology.hl7.org/CodeSystem/adjudication#submitted
+* item[0].adjudication.reason = NHIApproveComment#1
+* item[0].adjudication.value = 52
+* item[1].itemSequence = 2
+* item[1].adjudication.category = http://terminology.hl7.org/CodeSystem/adjudication#submitted
+* item[1].adjudication.reason = NHIApproveComment#1
+* item[1].adjudication.value = 70
 /** text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <div style=\"display: inline-2-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">

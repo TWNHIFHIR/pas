@@ -231,8 +231,8 @@ Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference)
 Severity:    #error
 
 Invariant:   applyReason-8
-Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01013230，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P001、P011、P012、P031、P041、P044、P052、P061、P081、P101、P102 或 P111"
-Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01013230').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01013230').all(programCode.coding.code.matches('P001|P011|P012|P031|P041|P044|P052|P061|P081|P101|P102|P111'))"
+Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01013230，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P001、P011、P012、P016、P031、P041、P044、P052、P061、P081、P101、P102 或 P111"
+Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01013230').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01013230').all(programCode.coding.code.matches('P001|P011|P012|P016|P031|P041|P044|P052|P061|P081|P101|P102|P111'))"
 Severity:    #error
 
 Invariant:   applyReason-9
@@ -282,7 +282,7 @@ Severity:    #error
 
 
 Invariant:   claimResponse-1
-Description: "若申請案件類別(Claim.priority)為自主審查(#3)時，須填寫核定日期(ClaimResponse.created)、審查結果數量(ClaimResponse.item.adjudication.value)、核定註記(ClaimResponse.item.adjudication.reason)及審查委員身分證號(extension[requestor])。"
+Description: "若申請案件類別(Claim.priority)為自主審查(#3)時，須填寫核定日期(ClaimResponse.created)、個別審查結果數量(ClaimResponse.item.adjudication.value)、個別醫令核定註記(ClaimResponse.item.adjudication.reason)及審查委員身分證號(extension[requestor])。"
 Expression:  "(Bundle.entry.select((resource as Claim).priority.coding.code.matches('3'))) implies (Bundle.entry.select((resource as ClaimResponse).created).exists()) and (Bundle.entry.select((resource as ClaimResponse).item.adjudication.value).exists()) and (Bundle.entry.select((resource as ClaimResponse).item.adjudication.reason).exists()) and (Bundle.entry.select((resource as ClaimResponse).extension.where(url = 'https://nhicore.nhi.gov.tw/pas/StructureDefinition/extension-claimResponse-requestor')).exists())"
 Severity:    #error
 

@@ -33,6 +33,9 @@ Description:    "此基因檢測機構-Organization Genetic Testing TWPAS Profil
 * identifier.system = "https://dep.mohw.gov.tw"
 
 * identifier.system ^example[0].valueUri = "https://dep.mohw.gov.tw/DOMA/ngs-org"
+* identifier.value ^example[0].valueString = "2025LDTS00035"
+* identifier.value ^example[=].label = "13碼"
+* identifier.system ^example[0].valueUri = "https://dep.mohw.gov.tw/DOMA/ngs-org"
 * identifier.value ^example[0].valueString = "2023LDTB0002"
 * identifier.value ^example[=].label = "12碼"
 * identifier.value ^example[+].valueString = "2024LDT2717"
@@ -48,7 +51,7 @@ Description:    "此基因檢測機構-Organization Genetic Testing TWPAS Profil
 * identifier obeys ngs-org
 
 Invariant:   ngs-org
-Description: "可填11碼或12碼，或4個文字擇一(CAP、TAF、TFDA、TSP)"
-Expression:  "value.toString().matches('^(?!CAP$|TAF$|TFDA$|TSP$)[A-Za-z0-9]{11,12}$|^(CAP|TAF|TFDA|TSP)$')"
+Description: "基因檢測機構(identifier.value)可填包含LDT之文字，或4個文字擇一(CAP、TAF、TFDA、TSP)"
+Expression:  "value.toString().matches('^(CAP|TAF|TFDA|TSP)$|^.*LDT.*$')"
 Severity:    #error
 
