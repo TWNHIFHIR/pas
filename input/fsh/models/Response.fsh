@@ -7,16 +7,18 @@ Description: "回覆(Response)事前審查之資料模型，此邏輯模型為�
 * approveDate 1..1 dateTime "核定日期" "核定日期"
 * acptNo 1..1 string "案件受理狀態" "案件受理狀態"
 * approveClaimComment 0..1 CodeableConcept "受理審查案件核定註記" "受理審查案件核定註記。1:同意 | 2:不予同意 | 3:部份同意 | 4:補件 | 5:退件"
+* approveComment 0..1 string "核定意見" "核定意見"
 * approveNum 0..1 decimal "核定數量" "核定數量"
 * approveItemComment 0..1 CodeableConcept "個別醫令核定註記" "個別醫令核定註記。0:審核中 | 1:同意 | 2:不予同意 | 3:部份同意 | 4:補件 | 5:退件 | 6:不予同意:對應手術亦不支付 | 7:改核:如審查核定意見"
 
-/*Mapping: TWPASClaimResponse
+Mapping: TWPASClaimResponse
 Id: TWPASClaimResponse
 Title: "Mapping to TWPAS ClaimResponse"
 Source: ResponseModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/ClaimResponse-twpas"
-* approveDate -> "created (核定日期)"
-* acptNo -> "disposition (案件受理狀態)"
-* approveClaimComment -> "item.adjudication.reason (受理審查案件核定註記)"
-* approveNum -> "item.adjudication.value (核定數量)"
-* approveItemComment -> "item.detail.adjudication.reason (個別醫令核定註記)"*/
+* approveDate -> "ClaimResponse.created"
+* acptNo -> "ClaimResponse.disposition"
+* approveClaimComment -> "ClaimResponse.item.adjudication.reason.coding.code"
+* approveComment -> "ClaimResponse.item.adjudication.reason.text"
+* approveNum -> "ClaimResponse.item.adjudication.value"
+* approveItemComment -> "ClaimResponse.item.detail.adjudication.reason"
