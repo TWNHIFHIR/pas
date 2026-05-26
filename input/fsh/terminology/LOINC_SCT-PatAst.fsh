@@ -31,6 +31,7 @@ Description: "LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值�
 * PatAst#MayoE
 * PatAst#PUCAI
 * PatAst#PPPASI
+* http://snomed.info/sct#443728000
 
 CodeSystem: PatAst
 Id: nhi-pat-ast
