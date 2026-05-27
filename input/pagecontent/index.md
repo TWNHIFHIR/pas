@@ -6,9 +6,10 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/5/26異動以下內容：
+因考量實作需求，於2025/5/27異動以下內容：
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li> -->
+        <li>更新代碼：<a href="ValueSet-pat-ast.html">ValueSet: DICOM-AcquisitionModality值集</a>：移除代碼<code>EOG</code>、<code>DMS</code><code>OPTENF</code><code>OPTBSV</code><code>EMG</code><code>EEG</code><code>RESP</code><code>POS</code>，因總會代碼系統暫不支援以上代碼。</li>
         <li>更新代碼：<a href="ValueSet-pat-ast.html">ValueSet: LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集</a>：新增代碼<code>443728000</code>(http://snomed.info/sct)。</li>
         <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li>
         <li>更新代碼：<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：新增代碼<code>P016</code>(非小細胞肺癌術前輔助治療，事前審查品項代碼為KC01013230才可填寫)。</li>
