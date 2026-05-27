@@ -135,8 +135,9 @@ Description: "申請(Apply)癌症用藥癌藥事前審查之資料模型，此�
 * apply.useSdate 1..* dateTime "事前審查藥物預定處方起始日期" "事前審查藥物預定處方起始日期"
 * apply.useEdate 1..* dateTime "事前審查藥物預定處方終止日期" "事前審查藥物預定處方終止日期"
 * apply.applDrugCycle 0..* CodeableConcept "事前審查藥品療程／週期數" "事前審查藥品療程／週期數"
-* apply.approver 0..* Identifier "審查委員身分證號" "審查委員身分證號"
+
+* apply.approver 1..* Identifier "審查委員身分證號" "審查委員身分證號"
 * apply.approveDate 0..* dateTime "核定日期" "核定日期"
-* apply.approveComment 0..* CodeableConcept "受理審查案件核定註記" "受理審查案件核定註記"
-* apply.approveNum 0..* decimal "審查結果數量" "審查結果數量"
+* apply.approveComment 0..* string "核定意見" "核定意見"
 * apply.acceptanceStatus 0..1 CodeableConcept "個別醫令核定註記" "個別醫令核定註記"
+* apply.approveNum 0..* decimal "個別審查結果數量" "個別審查結果數量"

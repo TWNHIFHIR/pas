@@ -240,11 +240,11 @@ Id: TWPASClaimResponseSelfAssessment
 Title: "Mapping to TWPAS ClaimResponse Self Assessment"
 Source: ApplyModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/ClaimResponse-self-assessment-twpas"
-* apply.approveDate -> "ClaimResponse.created"
 * apply.approver -> "ClaimResponse.extension:requestor"
-* apply.approveComment -> "ClaimResponse.item.adjudication.reason"
+* apply.approveDate -> "ClaimResponse.created"
+* apply.approveComment -> "ClaimResponse.disposition"
+* apply.acceptanceStatus -> "ClaimResponse.item.adjudication.reason"
 * apply.approveNum -> "ClaimResponse.item.adjudication.value"
-* apply.acceptanceStatus -> "ClaimResponse.item.detail.adjudication.reason"
 
 Mapping: TWPASPractitioner
 Id: TWPASPractitioner
