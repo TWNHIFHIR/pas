@@ -40,6 +40,13 @@ Description:    "此自主審查-ClaimResponse TWPAS Profile說明本IG如何進
 * item.adjudication.category.coding.system ^example[=].label = "General"
 * item.adjudication.category.coding.code ^example[0].valueString = "submitted"
 * item.adjudication.category.coding.code ^example[=].label = "General"
+
+Invariant:   acceptanceStatus
+Description: "若個別醫令核定註記(item.adjudication.reason)為2、3、4、5、6、7時，核定意見(disposition)為必填。"
+Expression:  "item.adjudication.reason.coding.where(code in ('2' | '3' | '4' | '5' | '6' | '7')).exists() implies disposition.exists()"
+Severity:    #error
+
+
 /*
 * disposition ^short = "案件受理狀態。待處理 | 處理中 | 處理中(等待附件檔) | 處理中(檔案檢核中) | 處理中(等待檢查申報資料) | 資料檢核失敗 | 檔案傳送失敗 | 附件檔轉檔失敗 | 影像檔轉檔失敗 | 電子病歷檔轉檔失敗 | 申請檔案檢核失敗 | 申請檔案未備齊 | 已受理 | 審查中 | 審畢結果"
 * . obeys case-acceptance-status
