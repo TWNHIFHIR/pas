@@ -41,6 +41,8 @@ Description:    "此自主審查-ClaimResponse TWPAS Profile說明本IG如何進
 * item.adjudication.category.coding.code ^example[0].valueString = "submitted"
 * item.adjudication.category.coding.code ^example[=].label = "General"
 
+* . obeys acceptanceStatus
+
 Invariant:   acceptanceStatus
 Description: "若個別醫令核定註記(item.adjudication.reason)為2、3、4、5、6、7時，核定意見(disposition)為必填。"
 Expression:  "item.adjudication.reason.coding.where(code in ('2' | '3' | '4' | '5' | '6' | '7')).exists() implies disposition.exists()"

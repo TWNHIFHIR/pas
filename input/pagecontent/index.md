@@ -1,22 +1,16 @@
 <div class="bg-danger" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.2.2版內容，因而會比健保署的IG版本V1.2.2(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為115年6月1日，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
+<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.2.2版內容，因而會比健保署的IG版本V1.2.2(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為115年7月，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
 <br/>
 <b>醫院實作時請以V1.2.2為主進行實例驗證，目前健保署端的伺服器採用V1.2.2版規格。</b></p>
 </div>
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/5/27異動以下內容：
+因考量實作需求，於2025/6/16異動以下內容：
     <ol>  
-        <li>更新代碼：<a href="ValueSet-pat-ast.html">ValueSet: LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集</a>：新增代碼<code>443728000</code>(http://snomed.info/sct)。</li>
-        <li>更新代碼：<a href="ValueSet-pat-ast.html">ValueSet: DICOM-AcquisitionModality值集</a>：移除代碼<code>EOG</code>、<code>DMS</code><code>OPTENF</code><code>OPTBSV</code><code>EMG</code><code>EEG</code><code>RESP</code><code>POS</code>，因總會代碼系統暫不支援以上代碼。</li>
-        <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
-        <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li>
-        <li>更新代碼：<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：新增代碼<code>P016</code>(非小細胞肺癌術前輔助治療，事前審查品項代碼為KC01013230才可填寫)。</li>
-        <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 癌藥事前審查-Bundle TWPAS</a>：修改Constraint: applyReason-8：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01013230，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P001、P011、P012、<b>P016</b>、P031、P041、P044、P052、P061、P081、P101、P102 或 P111</li>
-        <li>修改<a href="StructureDefinition-Organization-genetic-testing-twpas.html">Profile: 基因檢測機構-Organization Genetic Testing TWPAS</a>：修改Constraint: ngs-org：基因檢測機構(identifier.value)可填包含LDT之文字，或4個文字擇一(CAP、TAF、TFDA、TSP)。</li>
-        <li>修改<a href="StructureDefinition-ClaimResponse-self-assessment-twpas.html">Profile: 自主審查-ClaimResponse Self Assessment TWPAS</a>：新增「個別審查結果數量」(<code>item.adjudication.value</code>)、「個別醫令核定註記」(<code>item.adjudication.reason</code>)、「核定意見」(<code>disposition</code>)欄位。</li>
-        <li>修改<a href="StructureDefinition-ClaimResponse-twpas.html">Profile: 事前審查回覆-ClaimResponse TWPAS</a>：新增「核定意見」(<code>item.adjudication.reason.text</code>)欄位。</li>
+        <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
+        <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
+        <li>修改<a href="StructureDefinition-ClaimResponse-self-assessment-twpas.html">Profile: 自主審查-ClaimResponse Self Assessment TWPAS</a>：新增Constraints: acceptanceStatus：若個別醫令核定註記(item.adjudication.reason)為2、3、4、5、6、7時，核定意見(disposition)為必填。</li>
     </ol>
     請留意這些異動，以避免影響您的實作。
 </div>
