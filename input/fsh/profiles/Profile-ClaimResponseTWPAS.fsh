@@ -5,7 +5,7 @@ Title:          "自主審查-ClaimResponse Self Assessment TWPAS"
 Description:    "此自主審查-ClaimResponse TWPAS Profile說明本IG如何進一步定義FHIR的ClaimResponse Resource以呈現自主審查之內容。 
   
 現行開放自主事前審查項目僅有心臟及肝臟移植，若醫院要自主事前審查需向健保署申請，通過後，健保署會於署內系統維護，具有此資格之院所才可填報自主審查。"
-* ^version = "1.2.3"
+* ^version = "1.2.4"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/ClaimResponse-self-assessment-twpas"
@@ -40,6 +40,15 @@ Description:    "此自主審查-ClaimResponse TWPAS Profile說明本IG如何進
 * item.adjudication.category.coding.system ^example[=].label = "General"
 * item.adjudication.category.coding.code ^example[0].valueString = "submitted"
 * item.adjudication.category.coding.code ^example[=].label = "General"
+
+* . obeys acceptanceStatus
+
+Invariant:   acceptanceStatus
+Description: "若個別醫令核定註記(item.adjudication.reason)為2、3、4、5、6、7時，核定意見(disposition)為必填。"
+Expression:  "item.adjudication.reason.coding.where(code in ('2' | '3' | '4' | '5' | '6' | '7')).exists() implies disposition.exists()"
+Severity:    #error
+
+
 /*
 * disposition ^short = "案件受理狀態。待處理 | 處理中 | 處理中(等待附件檔) | 處理中(檔案檢核中) | 處理中(等待檢查申報資料) | 資料檢核失敗 | 檔案傳送失敗 | 附件檔轉檔失敗 | 影像檔轉檔失敗 | 電子病歷檔轉檔失敗 | 申請檔案檢核失敗 | 申請檔案未備齊 | 已受理 | 審查中 | 審畢結果"
 * . obeys case-acceptance-status
@@ -55,7 +64,7 @@ Parent:         ClaimResponse
 Id:             ClaimResponse-twpas
 Title:          "事前審查回覆-ClaimResponse TWPAS"
 Description:    "此事前審查回覆-ClaimResponse TWPAS Profile說明本IG如何進一步定義FHIR的ClaimResponse Resource以呈現事前審查回覆之內容"
-* ^version = "1.2.3"
+* ^version = "1.2.4"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/ClaimResponse-twpas"

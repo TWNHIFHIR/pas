@@ -44,8 +44,8 @@ The slice definition for Condition.code.coding has a maximum of 1 but the slices
 % The discriminator type 'pattern' is deprecated in R5%
 
 # deprecated extension，IG中未使用，不影響驗證。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
-% The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0-ballot-tc1 is deprecated%
-% The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0-ballot-tc1 is deprecated%
+% The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated%
+% The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0 is deprecated%
 
 # validated無法辨識URL，不影響驗證。（WARNING後方的 藍色字樣(1uses) 是指WARNING在此Profile中有被使用到）
 % Canonical URL%
