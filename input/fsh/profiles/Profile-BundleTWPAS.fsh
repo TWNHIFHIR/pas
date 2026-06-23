@@ -281,8 +281,8 @@ Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference)
 Severity:    #error
 
 Invariant:   applyReason-18
-Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 JC001602DE，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C50P3、C50P4 或 C50P5"
-Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'JC001602DE').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'JC001602DE').all(programCode.coding.code.matches('C50P3|C50P4|C50P5'))"
+Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 JC001602DE，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C50P1、C50P2、C50P3、C50P4、C50P5、C50R1 或 C16R1"
+Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'JC001602DE').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'JC001602DE').all(programCode.coding.code.matches('C50P1|C50P2|C50P3|C50P4|C50P5|C50R1|C16R1'))"
 Severity:    #error
 
 
