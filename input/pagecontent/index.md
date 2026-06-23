@@ -6,12 +6,12 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/6/17異動以下內容：
+因考量實作需求，於2025/6/23異動以下內容：
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
         <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
-        <li>更新代碼：<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：新增代碼<code>C50P3</code>、<code>C50P4</code>、<code>C50P5</code></li>
-        <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 癌藥事前審查-Bundle TWPAS</a>：新增Constraints: applyReason-18：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 JC001602DE，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C50P3、C50P4 或 C50P5</li>
+        <li>更新代碼：<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：新增代碼<code>C50P3</code>、<code>C50P4</code>、<code>C50P5</code>，並修改代碼<code>C50P1</code>、<code>C50P2</code>、<code>C50R1</code>、<code>C16R1</code>之說明(Definition)</li>
+        <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 癌藥事前審查-Bundle TWPAS</a>：新增Constraints: applyReason-18：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 JC001602DE，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C50P1、C50P2、C50P3、C50P4、C50P5、C50R1 或 C16R1</li>
         <li>修改<a href="StructureDefinition-ClaimResponse-self-assessment-twpas.html">Profile: 自主審查-ClaimResponse Self Assessment TWPAS</a>：新增Constraints: acceptanceStatus：若個別醫令核定註記(item.adjudication.reason)為2、3、4、5、6、7時，核定意見(disposition)為必填。</li>
     </ol>
     請留意這些異動，以避免影響您的實作。
