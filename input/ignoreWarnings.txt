@@ -73,3 +73,6 @@ A definition for CodeSystem 'https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd
 
 # 建議使用的值集，但為符合情境使用其他代碼系統的代碼，不影響驗證。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
 % and a coding is recommended to come from this value set%
+
+# 建議使用OID，但目前暫無需求，不影響驗證
+% have an OID%
