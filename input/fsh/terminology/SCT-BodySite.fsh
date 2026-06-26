@@ -2,7 +2,7 @@ ValueSet: SNOMEDCTBodySite
 Id: sct-body-site
 Title: "SNOMEDCT-健保事前審查-身體部位值集"
 Description: "SNOMEDCT-健保事前審查-身體部位值集，代碼對應請參考[臺灣健保署身體部位代碼對應SNOMED CT](ConceptMap-nhi-sct-body-site.html)。"
-* ^date = "2026-06-01"
+* ^date = "2026-07-01"
 * ^version = "1.2.4"
 * ^experimental = false
 * http://snomed.info/sct#69536005
@@ -30,10 +30,10 @@ Description: "SNOMEDCT-健保事前審查-身體部位值集，代碼對應請�
 CodeSystem: NHIBodySite
 Id: nhi-body-site
 Title: "NHI-健保事前審查-身體部位"
-Description: "臺灣衛生福利部中央健康保險署「身體部位」代碼，代碼出版日期：2026-06-01；資料所屬單位：臺灣衛生福利部中央健康保險署。"
+Description: "臺灣衛生福利部中央健康保險署「身體部位」代碼，代碼出版日期：2026-07-01；資料所屬單位：臺灣衛生福利部中央健康保險署。"
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2026-06-01"
+* ^date = "2026-07-01"
 * ^version = "1.2.4"
 * ^experimental = false
 * #H "頭部"
@@ -58,7 +58,7 @@ ValueSet: NHIBodySite
 Id: nhi-body-site
 Title: "NHI-健保事前審查-身體部位值集"
 Description: "NHI-健保事前審查-身體部位值集，代碼對應請參考[臺灣健保署身體部位代碼對應SNOMED CT](ConceptMap-nhi-sct-body-site.html)。"
-* ^date = "2026-06-01"
+* ^date = "2026-07-01"
 * ^version = "1.2.4"
 * ^experimental = false
 * include codes from system NHIBodySite
