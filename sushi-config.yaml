@@ -9,10 +9,10 @@ name: TWPAS
 title: 臺灣健保事前審查實作指引
 description: 臺灣健保事前審查實作指引(Taiwan NHI Prior Authorization Support Implementation Guide，TWPAS IG)
 status: active
-version: 1.2.4
+version: 1.2.5
 fhirVersion: 4.0.1  # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
-#releaseLabel: STU1.2.4
+#releaseLabel: STU1.2.5
 releaseLabel: ci-build # release | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 publisher:
@@ -29,7 +29,7 @@ dependencies:
     id: TWCore
     uri: https://twcore.mohw.gov.tw/ig/twcore/ImplementationGuide/tw.gov.mohw.twcore
     version: 0.3.2
-  tw.gov.mohw.emr: 0.2.0
+  #tw.gov.mohw.emr: 0.2.0
   #   uri: https://twcore.mohw.gov.tw/ig/emr/ImplementationGuide/tw.gov.mohw.emr
 #   hl7.fhir.us.mcode:
 #    id: MinimalCommonOncologyDataElements

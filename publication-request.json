@@ -1,11 +1,11 @@
 {
   "package-id": "tw.gov.mohw.nhi.pas",
-  "version": "1.2.4",
-  "path": "https://nhicore.nhi.gov.tw/pas/1.2.4",
+  "version": "1.2.5",
+  "path": "https://nhicore.nhi.gov.tw/pas/1.2.5",
   "mode": "milestone",
   "status": "ci-build",
-  "sequence": "STU1.2.4",
+  "sequence": "STU1.2.5",
   "ci-build" : "https://build.fhir.org/ig/TWNHIFHIR/pas",
   "desc": "修改Profiles及CodeSystems",
-  "descmd": "詳細說明請參照[應用說明](https://nhicore.nhi.gov.tw/pas/1.2.4/index.html)"
+  "descmd": "詳細說明請參照[應用說明](https://nhicore.nhi.gov.tw/pas/1.2.5/index.html)"
 }
