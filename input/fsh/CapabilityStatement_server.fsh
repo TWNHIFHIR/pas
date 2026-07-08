@@ -2,13 +2,13 @@ Instance: CapabilityStatementTWPASServer
 InstanceOf: CapabilityStatement
 Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/CapabilityStatement/CapabilityStatementTWPASServer"
-* version = "1.2.4"
+* version = "1.2.5"
 * name = "CapabilityStatementTWPASServer"
 * title = "臺灣事前審查-伺服端(TWPAS Server)"
 * status = #active
 * experimental = false
 * publisher = "衛生福利部中央健康保險署"
-* date = "2026-06-01"
+* date = "2026-07-01"
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+json
@@ -497,10 +497,10 @@ Usage: #definition
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <h2 id=\"title\">臺灣事前審查-伺服端(TWPAS Server)</h2>
     <ul>
-        <li>實作指引版本：1.2.4</li>
+        <li>實作指引版本：1.2.5</li>
         <li>FHIR版本：4.0.1</li>
         <li>支援格式：<code>json</code></li>
-        <li>發佈日：2026-06-01</li>
+        <li>發佈日：2026-07-01</li>
         <li>發佈者：衛生福利部中央健康保險署</li>
     </ul>
     <h3 id=\"shallIGs\">必須（SHALL）支援以下實作指引</h3>

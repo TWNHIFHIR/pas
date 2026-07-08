@@ -3,8 +3,8 @@ Id: nhi-medication-fda
 Title: "NHI-健保事前審查-臺灣食藥署藥品及醫療器材代碼值集"
 Description: "NHI-健保事前審查-臺灣食藥署藥品及醫療器材代碼值集。  
 此值集所涵蓋代碼量較大會使載入頁面時間較長，完整代碼可至[全國專門術語服務平臺－值集(Value Set)](https://fhir.mohw.gov.tw/ts/valueset.jsp)查閱。"
-* ^date = "2026-06-01"
-* ^version = "2026-06-01"
+* ^date = "2026-07-01"
+* ^version = "2026-07-01"
 * ^experimental = false
 * include codes from system https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-fda-tw
 * include codes from system https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-device-fda-tw
@@ -15,8 +15,8 @@ Id: nhi-medication
 Title: "NHI-健保事前審查-用藥品項值集"
 Description: "NHI-健保事前審查-用藥品項值集。  
 此值集所涵蓋代碼量較大會使載入頁面時間較長，為方便使用者瀏覽，此處(本頁、XML、JSON、TTL)僅擷取部分代碼，完整代碼可至[健保用藥品項網路查詢服務](https://info.nhi.gov.tw/INAE3000/INAE3000S01)查閱。"
-* ^date = "2025-05-26"
-* ^version = "2025-05-26"
+* ^date = "2026-07-01"
+* ^version = "2026-07-01"
 * ^experimental = false
 * include codes from system NHIMedicationCodes
 
@@ -34,10 +34,20 @@ Description: "NHI-健保事前審查-用藥品項，參照自[健保用藥品項
 
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2026-04-24"
-* ^version = "2026-04-24"
+* ^date = "2026-06-25"
+* ^version = "2026-06-25"
 * ^experimental = false
+/*2026-06 add*/
+* #X000371238 "GABLOFEN SOLUTION FOR INTRATHECAL INJECTION"
+* #BC29158100 "PMS-DASATINIB FILM-COATED TABLETS 50 MG"
+* #X000375100 "\"\"瑩碩\"欣晴錠10毫克(甲基芬尼特)\""
+* #X000376255 "NEXVIAZYME"
+
 /*2026-05 add*/
+* #VC00103100 "RAXONE FILM-COATED TABLET"
+* #X000373212 "CADEN 6MG/2ML SOLUTION FOR INJECTION (ADENOSINE)"
+* #X000374100 "VEPESID CAPSULES 50MG"
+
 * #KC01265212 "EBGLYSS INJECTION"
 * #YC00054248 "Myozyme 50 mg powder for concentrate for solution for infusion"
 * #AC17014321 "FLUDEX CREAM (FLUOCINONIDE) \"CBC\""

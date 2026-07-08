@@ -1,11 +1,11 @@
 /*CodeSystem: CancerStage
 Id: cancer-stage
 Title: "NHI-健保事前審查-癌症分期量表項目"
-Description: "臺灣衛生福利部中央健康保險署「癌症分期量表項目」代碼，代碼出版日期：2026-06-01；資料所屬單位：臺灣衛生福利部中央健康保險署。"
+Description: "臺灣衛生福利部中央健康保險署「癌症分期量表項目」代碼，代碼出版日期：2026-07-01；資料所屬單位：臺灣衛生福利部中央健康保險署。"
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2026-06-01"
-* ^version = "1.2.4"
+* ^date = "2026-07-01"
+* ^version = "1.2.5"
 * ^experimental = false
 * #GLES "Gleason grade finding for prostatic cancer" "葛里森分數(Gleason score)"
 * #RAIS "Rai staging system for chronic lymphocytic leukemia (tumor staging)" "Rai Stage"
@@ -19,8 +19,8 @@ ValueSet: CancerStage
 Id: cancer-stage
 Title: "SCT + NCI-健保事前審查-癌症分期量表項目值集"
 Description: "SCT + NCI-健保事前審查-癌症分期量表項目值集"
-* ^date = "2026-06-01"
-* ^version = "1.2.4"
+* ^date = "2026-07-01"
+* ^version = "1.2.5"
 * ^experimental = false
 * http://snomed.info/sct#385377005
 * http://snomed.info/sct#372278000
@@ -67,8 +67,8 @@ ValueSet: CancerStageScore
 Id: cancer-stage-score
 Title: "NCI-健保事前審查-FIGO癌症分期量表結果值集"
 Description: "NCI-健保事前審查-FIGO癌症分期量表結果值集"
-* ^date = "2026-06-01"
-* ^version = "1.2.4"
+* ^date = "2026-07-01"
+* ^version = "1.2.5"
 * ^experimental = false
 * include codes from system NciThesaurus
 
@@ -79,8 +79,8 @@ Description: "NCI 健保事前審查-Thesaurus，參照至http://ncicb.nci.nih.g
 代碼出版日期：2022-10-13。"
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2026-06-01"
-* ^version = "1.2.4"
+* ^date = "2026-07-01"
+* ^version = "1.2.5"
 * ^experimental = false
 * #C96243 "FIGO Stage 0"
 * #C96244 "FIGO Stage I"

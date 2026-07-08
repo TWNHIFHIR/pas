@@ -3,7 +3,7 @@ Parent:         TWCoreMedicationRequest
 Id:             MedicationRequest-treat-twpas
 Title:          "用藥品項-MedicationRequest Treat TWPAS"
 Description:    "此用藥品項-MedicationRequest Treat TWPAS Profile說明本IG如何進一步定義臺灣核心-藥品請求(TW Core MedicationRequest) Profile以呈現事前審查中治療資訊之用藥品項"
-* ^version = "1.2.4"
+* ^version = "1.2.5"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/MedicationRequest-treat-twpas"
@@ -43,8 +43,7 @@ Description:    "此用藥品項-MedicationRequest Treat TWPAS Profile說明本I
 * dosageInstruction.doseAndRate.doseQuantity.system 1..1
 * dosageInstruction.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 * dosageInstruction.doseAndRate.doseQuantity.code 1..1 MS
-* dosageInstruction.doseAndRate.doseQuantity.code from http://hl7.org/fhir/ValueSet/ucum-units
-* dosageInstruction.doseAndRate.doseQuantity.code ^binding.description = "用藥單位的代碼範圍請參考[Common UCUM units](https://hl7.org/fhir/R4/valueset-ucum-common.html)。"
+* dosageInstruction.doseAndRate.doseQuantity.code from ApplQtyUnit
 
 * dosageInstruction.timing.repeat MS
 * dosageInstruction.timing.repeat.boundsPeriod 1..1 MS
@@ -64,8 +63,8 @@ Description:    "此用藥品項-MedicationRequest Treat TWPAS Profile說明本I
 * dosageInstruction.timing.code.text ^short = "藥品使用頻率及服用時間。"
 
 * dosageInstruction.doseAndRate.doseQuantity.value ^short = "藥物每次處方劑量，數字，每次使用之顆數、支數等，依產品規格。"
-* dosageInstruction.doseAndRate.doseQuantity.code ^short = "藥物每次處方劑量單位"
-* dosageInstruction.doseAndRate.doseQuantity.system ^short = "藥物每次處方劑量單位之代碼系統，固定為「http://unitsofmeasure.org」。"
+* dosageInstruction.doseAndRate.doseQuantity.code ^short = "藥物每次處方劑量單位及包裝類型"
+* dosageInstruction.doseAndRate.doseQuantity.system ^short = "藥物每次處方劑量單位及包裝類型之代碼系統"
 * dosageInstruction.timing.repeat.boundsPeriod.start ^short = "藥物處方起始日期，YYYY-MM-DD。"
 * dosageInstruction.timing.repeat.boundsPeriod.end ^short = "藥物處方終止日期，YYYY-MM-DD。"
 * dosageInstruction.route  ^short = "給藥途徑／作用部位。"

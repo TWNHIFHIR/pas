@@ -79,10 +79,10 @@ Id: TWPASCompositionOpd
 Title: "Mapping to TWPAS Composition OPD"
 Source: ApplyImmModel
 Target: "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Composition-opd-twpas"
-* opd.subjective -> "Composition.section[subjective].entry"
-* opd.objective -> "Composition.section[subjective].entry"
-* opd.assessment -> "Composition.section[subjective].entry"
-* opd.plan -> "Composition.section[subjective].entry"
+* opd.subjective -> "Composition.section:subjective.entry"
+* opd.objective -> "Composition.section:objective.entry"
+* opd.assessment -> "Composition.section:assessment.entry"
+* opd.plan -> "Composition.section:plan.entry"
 
 
 Mapping: TWPASEncounterOpd

@@ -2,8 +2,8 @@ ValueSet: ICD10PCSImage
 Id: icd-10-pcs-2014-image
 Title: "NHI-臺灣健保署2014年中文版ICD 10 PCS-影像報告值集"
 Description: "NHI-臺灣健保署2014年中文版ICD 10 PCS-影像報告值集"
-* ^date = "2026-06-01"
-* ^version = "1.2.4"
+* ^date = "2026-07-01"
+* ^version = "1.2.5"
 * ^experimental = false
 * TW2014ICD10PCS#B00BZZZ "脊髓一般放射線攝影"
 * TW2014ICD10PCS#B01BZZZ "脊髓透視攝影"

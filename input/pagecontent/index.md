@@ -1,22 +1,22 @@
 <div class="bg-danger" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.2.3版內容，因而會比健保署的IG版本V1.2.3(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為115年7月1日，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
+<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.2.4版內容，因而會比健保署的IG版本V1.2.4(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為115年7月1日，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
 <br/>
-<b>醫院實作時請以V1.2.3為主進行實例驗證，目前健保署端的伺服器採用V1.2.3版規格。</b></p>
+<b>醫院實作時請以V1.2.4為主進行實例驗證，目前健保署端的伺服器採用V1.2.4版規格。</b></p>
 </div>
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2025/6/23異動以下內容：
+因考量實作需求，於2026/7/8異動以下內容：
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
         <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
-        <li>更新代碼：<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：新增代碼<code>C50P3</code>、<code>C50P4</code>、<code>C50P5</code>，並修改代碼<code>C50P1</code>、<code>C50P2</code>、<code>C50R1</code>、<code>C16R1</code>之說明(Definition)</li>
-        <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 癌藥事前審查-Bundle TWPAS</a>：新增Constraints: applyReason-18：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 JC001602DE，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C50P1、C50P2、C50P3、C50P4、C50P5、C50R1 或 C16R1</li>
-        <li>修改<a href="StructureDefinition-ClaimResponse-self-assessment-twpas.html">Profile: 自主審查-ClaimResponse Self Assessment TWPAS</a>：新增Constraints: acceptanceStatus：若個別醫令核定註記(item.adjudication.reason)為2、3、4、5、6、7時，核定意見(disposition)為必填。</li>
+        <li>修改值集：原「事前審查申請數量單位及包裝類型值集」，重新命名為「<a href="ValueSet-apply-quantity-unit.html">藥品劑量單位及包裝類型值集</a>」。</li>
+        <li>修改欄位：原「藥物每次處方劑量單位」，重新命名為「藥物每次處方劑量單位及包裝類型」。</li>
+        <li>修改<a href="StructureDefinition-MedicationRequest-treat-twpas.html">Profile: 用藥品項-MedicationRequest Treat TWPAS</a>：「藥物每次處方劑量單位及包裝類型(dosageInstruction.doseAndRate.doseQuantity.code)」改綁定<a href="ValueSet-apply-quantity-unit.html">藥品劑量單位及包裝類型值集</a>。</li>
     </ol>
     請留意這些異動，以避免影響您的實作。
 </div>
-<br/> 
+<br/>
 
 <div class="bg-success" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
 <p><b>相關資訊可參考衛生福利部中央健康保險署的<a href="https://www.nhi.gov.tw/ch/np-3787-1.html" target="_blank">事前審查以電子病歷申請專區</a>。</b></p>
