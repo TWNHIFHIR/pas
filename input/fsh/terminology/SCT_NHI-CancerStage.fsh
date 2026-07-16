@@ -63,6 +63,17 @@ Description: "SCT + NCI-健保事前審查-癌症分期量表項目值集"
 * NciThesaurus#C198826
 
 
+ValueSet: CancerStageScoreMyelomaISS
+Id: cancer-stage-score-myeloma-iss
+Title: "NCI-健保事前審查-Myeloma_ISS癌症分期量表結果值集"
+Description: "NCI-健保事前審查-Myeloma_ISS癌症分期量表結果值集"
+* ^date = "2026-07-01"
+* ^version = "1.2.5"
+* ^experimental = false
+* NciThesaurus#C70658 "ISS Stage I Plasma Cell Myeloma"
+* NciThesaurus#C70659 "ISS Stage II Plasma Cell Myeloma"
+* NciThesaurus#C70660 "ISS Stage III Plasma Cell Myeloma"
+
 ValueSet: CancerStageScore
 Id: cancer-stage-score
 Title: "NCI-健保事前審查-FIGO癌症分期量表結果值集"
@@ -70,7 +81,38 @@ Description: "NCI-健保事前審查-FIGO癌症分期量表結果值集"
 * ^date = "2026-07-01"
 * ^version = "1.2.5"
 * ^experimental = false
-* include codes from system NciThesaurus
+* NciThesaurus#C96243 "FIGO Stage 0"
+* NciThesaurus#C96244 "FIGO Stage I"
+* NciThesaurus#C96245 "FIGO Stage IA"
+* NciThesaurus#C96246 "FIGO Stage IA1"
+* NciThesaurus#C96247 "FIGO Stage IA2"
+* NciThesaurus#C96248 "FIGO Stage IB"
+* NciThesaurus#C96249 "FIGO Stage IB1"
+* NciThesaurus#C96250 "FIGO Stage IB2"
+* NciThesaurus#C162222 "FIGO Stage IB3"
+* NciThesaurus#C96251 "FIGO Stage IC"
+* NciThesaurus#C128099 "FIGO Stage IC1"
+* NciThesaurus#C128100 "FIGO Stage IC2"
+* NciThesaurus#C128101 "FIGO Stage IC3"
+* NciThesaurus#C96252 "FIGO Stage II"
+* NciThesaurus#C96253 "FIGO Stage IIA"
+* NciThesaurus#C162223 "FIGO Stage IIA1"
+* NciThesaurus#C128103 "FIGO Stage IIA1(i)"
+* NciThesaurus#C128104 "FIGO Stage IIA1(ii)"
+* NciThesaurus#C162224 "FIGO Stage IIA2"
+* NciThesaurus#C96254 "FIGO Stage IIB"
+* NciThesaurus#C188300 "FIGO Stage IIC1"
+* NciThesaurus#C96255 "FIGO Stage III"
+* NciThesaurus#C96256 "FIGO Stage IIIA"
+* NciThesaurus#C128102 "FIGO Stage IIIA1"
+* NciThesaurus#C128105 "FIGO Stage IIIA2"
+* NciThesaurus#C96257 "FIGO Stage IIIB"
+* NciThesaurus#C96258 "FIGO Stage IIIC"
+* NciThesaurus#C96259 "FIGO Stage IIIC1"
+* NciThesaurus#C96260 "FIGO Stage IIIC2"
+* NciThesaurus#C96261 "FIGO Stage IV"
+* NciThesaurus#C96262 "FIGO Stage IVA"
+* NciThesaurus#C96263 "FIGO Stage IVB"
 
 CodeSystem: NciThesaurus
 Id: nci-thesaurus
@@ -128,3 +170,8 @@ Description: "NCI 健保事前審查-Thesaurus，參照至http://ncicb.nci.nih.g
 * #C146847 "Mediastinal Malignant Germ Cell Tumor Stage"
 * #C123333 "Reese-Ellsworth Staging System"
 * #C198826 "Modified Chang's Staging of Medulloblastoma"
+
+// 2026/7 added
+* #C70658 "ISS Stage I Plasma Cell Myeloma"
+* #C70659 "ISS Stage II Plasma Cell Myeloma"
+* #C70660 "ISS Stage III Plasma Cell Myeloma"

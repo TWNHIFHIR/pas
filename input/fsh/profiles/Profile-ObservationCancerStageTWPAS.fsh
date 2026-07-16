@@ -22,10 +22,27 @@ Description:    "此癌症分期量表-Observation Cancer Stage TWPAS Profile說
 * category = NHIPASSupportingInfoType#cancerStage
 * value[x] 1..1
 * value[x] only CodeableConcept or string or integer
-* valueCodeableConcept from CancerStageScore
+* valueCodeableConcept from CancerStageScore (example)
+* valueCodeableConcept.coding 1..1
 * valueCodeableConcept.coding.code 1..1
 * valueCodeableConcept.coding.system 1..1
 * valueCodeableConcept MS
+
+* valueCodeableConcept ^binding.extension[+].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+* valueCodeableConcept ^binding.extension[=].extension[+].url = "key"
+* valueCodeableConcept ^binding.extension[=].extension[=].valueId = "cancer-stage-score-figo"
+* valueCodeableConcept ^binding.extension[=].extension[+].url = "purpose"
+* valueCodeableConcept ^binding.extension[=].extension[=].valueCode = #candidate
+* valueCodeableConcept ^binding.extension[=].extension[+].url = "valueSet"
+* valueCodeableConcept ^binding.extension[=].extension[=].valueCanonical = "https://nhicore.nhi.gov.tw/pas/ValueSet/cancer-stage-score"
+* valueCodeableConcept ^binding.extension[+].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+* valueCodeableConcept ^binding.extension[=].extension[+].url = "key"
+* valueCodeableConcept ^binding.extension[=].extension[=].valueId = "cancer-stage-score-myeloma-iss"
+* valueCodeableConcept ^binding.extension[=].extension[+].url = "purpose"
+* valueCodeableConcept ^binding.extension[=].extension[=].valueCode = #candidate
+* valueCodeableConcept ^binding.extension[=].extension[+].url = "valueSet"
+* valueCodeableConcept ^binding.extension[=].extension[=].valueCanonical = "https://nhicore.nhi.gov.tw/pas/ValueSet/cancer-stage-score-myeloma-iss"
+
 * valueString MS
 * valueInteger MS
 * performer 1..1
