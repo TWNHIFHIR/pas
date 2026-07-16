@@ -32,6 +32,9 @@ Description: "LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值�
 * PatAst#PUCAI
 * PatAst#PPPASI
 * http://snomed.info/sct#443728000
+* PatAst#EASI
+* http://snomed.info/sct#273863009
+* PatAst#CLASI
 
 CodeSystem: PatAst
 Id: nhi-pat-ast
@@ -60,3 +63,5 @@ Description: "臺灣衛生福利部中央健康保險署「病人狀態評估項
 * #MayoE "Mayo endoscopic subscore"
 * #PUCAI "Pediatric Ulcerative Colitis Activity Index (PUCAI)"
 * #PPPASI "Palmoplantar Pustulosis Area and Severity Index"
+* #EASI "Palmoplantar Pustulosis Area and Severity Index"
+* #CLASI "Cutaneous Lupus Erythematosus Disease Area and Severity Index"
