@@ -10,7 +10,7 @@
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
         <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
-        <li>更新代碼：<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: "NHI-健保事前審查-給付適應症</a>：新增代碼<code>P151</code></li>
+        <li>修改<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：新增代碼<code>P151</code>。</li>
         <li>修改<a href="StructureDefinition-Bundle-twpas.html">Profile: 癌藥事前審查-Bundle TWPAS</a>：新增Constraint: applyReason-19，若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01310229，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P151 。</li>
         <li>修改<a href="StructureDefinition-Observation-cancer-stage-twpas.html">Profile: 癌症分期量表-Observation Cancer Stage TWPAS</a>：「癌症分期分數或結果(valueCodeableConcept)」額外綁定<a href="ValueSet-cancer-stage-score-myeloma-iss.html">NCI-健保事前審查-Myeloma_ISS癌症分期量表結果值集</a>。</li>
         <li>修改<a href="ValueSet-pat-ast.html">ValueSet: LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集</a>：新增代碼<code>EASI</code>、<code>273863009</code>、<code>CLASI</code>。</li>
