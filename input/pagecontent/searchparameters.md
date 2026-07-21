@@ -66,10 +66,10 @@
 例子：  
       (1) GET [base]/ClaimResponse?request.patient.identifier=A123456789
 
-##### 受理編號：[ClaimResponse.request](SearchParameter-ClaimResponse-request.html) + [Claim.identifier](SearchParameter-Claim-identifier.html)
-`GET [base]/ClaimResponse?request.identifier=[受理編號]`  
+##### <span class="bg-success">受理編號：[ClaimResponse.identifier](SearchParameter-ClaimResponse-identifier.html)</span>
+`GET [base]/ClaimResponse?identifier=[受理編號]`  
 例子：  
-      (1) GET [base]/ClaimResponse?request.identifier=20240831010109051701
+      (1) GET [base]/ClaimResponse?identifier=20240831010109051701
 
 ##### 就醫科別：[ClaimResponse.request](SearchParameter-ClaimResponse-request.html) + [Claim.func-type](SearchParameter-Claim-func-type.html) + [Encounter.service-type](SearchParameter-Encounter-service-type.html)
 `GET [base]/ClaimResponse?request.func-type.service-type=[就醫科別]`  
