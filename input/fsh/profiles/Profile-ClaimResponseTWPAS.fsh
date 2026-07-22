@@ -83,7 +83,7 @@ Description:    "此事前審查回覆-ClaimResponse TWPAS Profile說明本IG如
 * item.detail.adjudication.reason from NHIApproveItemComment
 * item.detail.adjudication.reason 1..1
 * item.detail.adjudication.value 1..1
-* created and item.adjudication.reason and item.adjudication.reason.text and item.adjudication.value and item.detail.adjudication.reason and disposition MS
+* created and item.adjudication.reason and item.adjudication.reason.text and item.detail.adjudication.value and item.detail.adjudication.reason and disposition MS
 * created ^short = "核定日期或受理日期，即為案件受理狀態(disposition)之異動日期，依據其狀態不同而有不同日期，例如案件受理狀態為已受理，此日期則為受理日期；若為審畢結果則為核定日期。"
 * item.adjudication.category ^short = "【因FHIR設計而需必填】"
 * item.adjudication.category.coding.system ^example[0].valueUri = "http://terminology.hl7.org/CodeSystem/adjudication"
