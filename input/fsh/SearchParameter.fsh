@@ -34,6 +34,21 @@ Usage: #definition
 * chain[0] = "name"
 * chain[1] = "identifier"
 
+Instance: Claim-identifier
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Claim-identifier"
+* name = "ClaimIdentifier"
+* status = #active
+* version = "1.2.5"
+* date = "2024-08-31"
+* publisher = "HL7 International"
+* description = "事前審查(Claim)的受理編號(identifier)"
+* code = #identifier
+* base = #Claim
+* expression = "Claim.identifier"
+* type = #token
+
 Instance: Claim-id
 InstanceOf: SearchParameter
 Usage: #definition

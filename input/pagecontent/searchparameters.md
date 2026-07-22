@@ -12,6 +12,7 @@
 - [func-type](SearchParameter-Claim-func-type.html)
 
 ##### ClaimResponse
+- [<span class="bg-success">identifier</span>](SearchParameter-ClaimResponse-identifier.html)
 - [<span class="bg-success">_include</span>](SearchParameter-ClaimResponse-include.html)
 - [created](SearchParameter-ClaimResponse-created.html)
 - [disposition](SearchParameter-ClaimResponse-disposition.html)
@@ -67,9 +68,9 @@
       (1) GET [base]/ClaimResponse?request.patient.identifier=A123456789
 
 ##### <span class="bg-success">受理編號：[ClaimResponse.identifier](SearchParameter-ClaimResponse-identifier.html)</span>
-`GET [base]/ClaimResponse?identifier=[受理編號]`  
+`GET [base]/ClaimResponse?identifier=[受理編號]&_include=ClaimResponse:request`  
 例子：  
-      (1) GET [base]/ClaimResponse?identifier=20240831010109051701
+      (1) GET [base]/ClaimResponse?identifier=20240831010109051701&_include=ClaimResponse:request
 
 ##### 就醫科別：[ClaimResponse.request](SearchParameter-ClaimResponse-request.html) + [Claim.func-type](SearchParameter-Claim-func-type.html) + [Encounter.service-type](SearchParameter-Encounter-service-type.html)
 `GET [base]/ClaimResponse?request.func-type.service-type=[就醫科別]`  
