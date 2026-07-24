@@ -40,5 +40,5 @@
     `GET [base]/Claim?_lastUpdated={gt|lt|ge|le}[date]{&_lastUpdated={gt|lt|ge|le}[date]`  
 
     例子：  
-      (1) GET [base]/Claim?_lastUpdated=gt2026-07-01T14:17
+      (1) GET [base]/Claim?_lastUpdated=gt2026-08-03T14:17
 

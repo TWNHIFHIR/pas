@@ -56,7 +56,7 @@ Usage: #definition
 * name = "ClaimId"
 * status = #active
 * version = "1.2.5"
-* date = "2026-07-01"
+* date = "2026-08-03"
 * publisher = "HL7 International"
 * description = "事前審查(Claim)的收件序號/案件編號(id)"
 * code = #id
@@ -71,7 +71,7 @@ Usage: #definition
 * name = "ClaimLastUpdated"
 * status = #active
 * version = "1.2.5"
-* date = "2026-07-01"
+* date = "2026-08-03"
 * publisher = "HL7 International"
 * description = "事前審查(Claim)的上傳日期時間(lastUpdated)"
 * code = #_lastUpdated
@@ -153,7 +153,7 @@ Usage: #definition
 * name = "ClaimResponseRequestor"
 * status = #active
 * version = "1.2.5"
-* date = "2026-07-01"
+* date = "2026-08-03"
 * publisher = "HL7 International"
 * description = "事前審查回覆(ClaimResponse)關聯的醫事機構(Organization)"
 * code = #requestor
@@ -169,7 +169,7 @@ Usage: #definition
 * name = "ClaimResponseInclude"
 * status = #active
 * version = "1.2.5"
-* date = "2026-07-01"
+* date = "2026-08-03"
 * publisher = "HL7 International"
 * description = "事前審查回覆(ClaimResponse)關聯的事前審查(Claim)"
 * code = #_include
@@ -183,7 +183,7 @@ Usage: #definition
 * name = "ClaimResponseIdentifier"
 * status = #active
 * version = "1.2.5"
-* date = "2026-07-01"
+* date = "2026-08-03"
 * publisher = "HL7 International"
 * description = "事前審查回覆(ClaimResponse)的受理編號(identifier)"
 * code = #identifier
@@ -200,7 +200,7 @@ Usage: #definition
 * name = "OrganizationIdentifier"
 * status = #active
 * version = "1.2.5"
-* date = "2026-07-01"
+* date = "2026-08-03"
 * publisher = "HL7 International"
 * description = "醫事機構代碼"
 * code = #identifier

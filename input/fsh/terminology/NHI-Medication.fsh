@@ -3,8 +3,8 @@ Id: nhi-medication-fda
 Title: "NHI-健保事前審查-臺灣食藥署藥品及醫療器材代碼值集"
 Description: "NHI-健保事前審查-臺灣食藥署藥品及醫療器材代碼值集。  
 此值集所涵蓋代碼量較大會使載入頁面時間較長，完整代碼可至[全國專門術語服務平臺－值集(Value Set)](https://fhir.mohw.gov.tw/ts/valueset.jsp)查閱。"
-* ^date = "2026-07-01"
-* ^version = "2026-07-01"
+* ^date = "2026-08-03"
+* ^version = "2026-08-03"
 * ^experimental = false
 * include codes from system https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-fda-tw
 * include codes from system https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-device-fda-tw
@@ -15,8 +15,8 @@ Id: nhi-medication
 Title: "NHI-健保事前審查-用藥品項值集"
 Description: "NHI-健保事前審查-用藥品項值集。  
 此值集所涵蓋代碼量較大會使載入頁面時間較長，為方便使用者瀏覽，此處(本頁、XML、JSON、TTL)僅擷取部分代碼，完整代碼可至[健保用藥品項網路查詢服務](https://info.nhi.gov.tw/INAE3000/INAE3000S01)查閱。"
-* ^date = "2026-07-01"
-* ^version = "2026-07-01"
+* ^date = "2026-08-03"
+* ^version = "2026-08-03"
 * ^experimental = false
 * include codes from system NHIMedicationCodes
 

@@ -3,7 +3,7 @@ ValueSet: PatAst
 Id: pat-ast
 Title: "LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集"
 Description: "LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集"
-* ^date = "2026-07-01"
+* ^date = "2026-08-03"
 * ^version = "1.2.5"
 * ^experimental = false
 * $loinc#88020-3
@@ -19,7 +19,6 @@ Description: "LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值�
 * http://snomed.info/sct#711434002
 * PatAst#MPNSAFTSS
 * PatAst#MPN10
-
 * $loinc#8277-6
 * PatAst#PASI
 * http://snomed.info/sct#429712009
@@ -36,13 +35,17 @@ Description: "LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值�
 * http://snomed.info/sct#273863009
 * PatAst#CLASI
 
+* http://snomed.info/sct#273903006
+* http://snomed.info/sct#273904000
+
+
 CodeSystem: PatAst
 Id: nhi-pat-ast
 Title: "NHI-健保事前審查-病人狀態評估項目"
-Description: "臺灣衛生福利部中央健康保險署「病人狀態評估項目」代碼，代碼出版日期：2026-07-01；資料所屬單位：臺灣衛生福利部中央健康保險署。"
+Description: "臺灣衛生福利部中央健康保險署「病人狀態評估項目」代碼，代碼出版日期：2026-08-03；資料所屬單位：臺灣衛生福利部中央健康保險署。"
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2026-07-01"
+* ^date = "2026-08-03"
 * ^version = "1.2.5"
 * ^experimental = false
 * #IPS "International Prognostic Score" "IPS (International Prognostic Score)"
