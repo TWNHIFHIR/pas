@@ -6,6 +6,7 @@ Usage: #example
 * status = http://hl7.org/fhir/fm-status#active
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
 * use = http://hl7.org/fhir/claim-use#preauthorization
+* identifier.value = "202505301000002"
 * patient.reference = "Patient/pat-min"
 * request.reference = "Claim/cla-1"
 * requestor.reference = "Organization/org-hosp-example"
@@ -15,14 +16,16 @@ Usage: #example
 * item.itemSequence = 1
 * item.adjudication.category = http://terminology.hl7.org/CodeSystem/adjudication#submitted
 * item.adjudication.reason = NHIApproveComment#1
-* item.adjudication.value = 2
+
 
 * item.detail[0].detailSequence = 1
 * item.detail[=].adjudication.category = http://terminology.hl7.org/CodeSystem/adjudication#submitted
 * item.detail[=].adjudication.reason = NHIApproveComment#1
+* item.detail[=].adjudication.value = 2
 * item.detail[+].detailSequence = 2
 * item.detail[=].adjudication.category = http://terminology.hl7.org/CodeSystem/adjudication#submitted
 * item.detail[=].adjudication.reason = NHIApproveComment#1
+* item.detail[=].adjudication.value = 2
 * disposition = "審畢結果"
 
 
@@ -35,6 +38,7 @@ Usage: #example
     <p><b>類型</b>：<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/claim-type institutional}\">Institutional</span></p>
     <p><b>用途</b>：Preauthorization</p>
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a></p>
+    <p><b>受理編號</b>：202505301000002</p>
     <p><b>核定日期</b>：2024-07-30</p>
     <p><b>關聯的事前審查</b>：<a href=\"Claim-cla-1.html\">Claim/cla-1</a></p>
     <p><b>保險商</b>：<a href=\"Organization-org-nhi.html\">Organization 衛生福利部中央健康保險署</a></p>
@@ -50,13 +54,11 @@ Usage: #example
                 <td style=\"display: none\">-</td>
                 <td><b>類型</b></td>
                 <td><b>受理審查案件核定註記</b></td>
-                <td><b>核定數量</b></td>
             </tr>
             <tr>
                 <td style=\"display: none\">*</td>
                 <td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/adjudication submitted}\">Submitted Amount</span></td>
                 <td>同意備查 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">( <a href=\"CodeSystem-nhi-approve-comment.html\">NHI-健保事前審查-核定註記</a>#1) </span>)</td>
-                <td>2</td>
             </tr>
         </table>
         <h3>個別醫令核定註記</h3>
@@ -66,18 +68,21 @@ Usage: #example
                 <td><b>類型</b></td>
                 <td><b>Claim.item.sequence</b></td>
                 <td><b>個別醫令核定註記</b></td>
+                <td><b>核定數量</b></td>
             </tr>
             <tr>
                 <td style=\"display: none\">*</td>
                 <td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/adjudication submitted}\">Submitted Amount</span></td>
                 <td>1</td>
                 <td>同意備查 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">( <a href=\"CodeSystem-nhi-approve-comment.html\">NHI-健保事前審查-核定註記</a>#1) </span>)</td>
+                <td>2</td>
             </tr>
             <tr>
                 <td style=\"display: none\">*</td>
                 <td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/adjudication submitted}\">Submitted Amount</span></td>
                 <td>2</td>
                 <td>同意備查 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">( <a href=\"CodeSystem-nhi-approve-comment.html\">NHI-健保事前審查-核定註記</a>#1) </span>)</td>
+                <td>2</td>
             </tr>
         </table>
     </blockquote>

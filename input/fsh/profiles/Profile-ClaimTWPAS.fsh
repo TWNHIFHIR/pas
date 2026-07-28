@@ -17,11 +17,11 @@ Description:    "此癌藥事前審查-Claim TWPAS Profile說明本IG如何進�
 * identifier ^slicing.discriminator.path = "use"
 * identifier ^slicing.rules = #open
 * identifier contains
-    acpt_no 0..* MS and
+    //acpt_no 0..* MS and
     orig_file_name 0..1 MS and
     old_acpt_no 0..1 MS
-* identifier[acpt_no] ^short = "受理編號。供案件追蹤與識別使用，醫院上傳時無須填寫。"
-* identifier[acpt_no].use = #official
+/* identifier[acpt_no] ^short = "受理編號。供案件追蹤與識別使用，醫院上傳時無須填寫。"
+* identifier[acpt_no].use = #official*/
 * identifier[orig_file_name] ^short = "原始檔名。供案件追蹤與識別使用，醫院上傳時無須填寫。"
 * identifier[orig_file_name].use = #usual
 * identifier[old_acpt_no] ^short = "原受理編號。院所上傳送核(subType = #1)案件時，不需填寫「原受理編號」資訊，受理成功後會由系統自動產生受理編號。當Claim.subType(申報類別)為2(送核補件)、3(申復)、4(爭議審議)或5(申復補件)時，院所才需於Claim.identifier:old_acpt_no填寫原送核案件之受理編號。"

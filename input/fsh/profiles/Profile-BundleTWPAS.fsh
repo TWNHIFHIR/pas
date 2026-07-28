@@ -7,6 +7,7 @@ Description:    "此癌藥事前審查-Bundle TWPAS Profile說明本IG如何進�
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Bundle-twpas"
+* meta.source ^short = "原始檔名。供案件追蹤與識別使用，醫院上傳時無須填寫。"
 * type = #collection
 * identifier ^short = "收件序號/案件編號，供案件追蹤與識別使用，醫院上傳時無須填寫。"
 * timestamp ^short = "緊急報備日期，YYYY-MM-DDTHH:MM:SS (需包含時區)；若本案件前已緊急報備過，本次為檢送完整資訊申請送件者，由機構將前次緊急報備時所填之申請日期，自填為緊急報備日期。"
@@ -188,7 +189,7 @@ Description:    "此癌藥事前審查-Bundle TWPAS Profile說明本IG如何進�
 
 
 
-* . obeys applyReason-1 and applyReason-2 and applyReason-3 and applyReason-4 and applyReason-5 and applyReason-6 and applyReason-7 and applyReason-8 and applyReason-9 and applyReason-10 and applyReason-11 and applyReason-12 and applyReason-13 and applyReason-14 and applyReason-15 and applyReason-16 and applyReason-17 and applyReason-18 and claimResponse-1 and claimResponse-2
+* . obeys applyReason-1 and applyReason-2 and applyReason-3 and applyReason-4 and applyReason-5 and applyReason-6 and applyReason-7 and applyReason-8 and applyReason-9 and applyReason-10 and applyReason-11 and applyReason-12 and applyReason-13 and applyReason-14 and applyReason-15 and applyReason-16 and applyReason-17 and applyReason-18 and applyReason-19 and claimResponse-1 and claimResponse-2
 
 /*Invariant:   oldAcptNo
 Description: "若申報類別(Claim.subType)為申復(#3)，則填寫原送核階段受理編號。"
@@ -283,6 +284,11 @@ Severity:    #error
 Invariant:   applyReason-18
 Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 JC001602DE，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C50P1、C50P2、C50P3、C50P4、C50P5、C50R1 或 C16R1"
 Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'JC001602DE').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'JC001602DE').all(programCode.coding.code.matches('C50P1|C50P2|C50P3|C50P4|C50P5|C50R1|C16R1'))"
+Severity:    #error
+
+Invariant:   applyReason-19
+Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01310229，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P151"
+Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01310229').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01310229').all(programCode.coding.code.matches('P151'))"
 Severity:    #error
 
 

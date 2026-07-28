@@ -74,22 +74,26 @@ Description:    "此事前審查回覆-ClaimResponse TWPAS Profile說明本IG如
 * patient only Reference(PatientTWPAS)
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
 * insurer only Reference(TWCoreOrganizationGovt)
+* item 1..1
+* item.adjudication 1..1
 * item.adjudication.reason from NHIApproveClaimComment
-* item.adjudication.value 1..1
 * item.adjudication.reason 1..1
+* item.detail 1..
+* item.detail.adjudication 1..
 * item.detail.adjudication.reason from NHIApproveItemComment
 * item.detail.adjudication.reason 1..1
-* created and item.adjudication.reason and item.adjudication.reason.text and item.adjudication.value and item.detail.adjudication.reason and disposition MS
+* item.detail.adjudication.value 1..1
+* created and item.adjudication.reason and item.adjudication.reason.text and item.detail.adjudication.value and item.detail.adjudication.reason and disposition MS
 * created ^short = "核定日期或受理日期，即為案件受理狀態(disposition)之異動日期，依據其狀態不同而有不同日期，例如案件受理狀態為已受理，此日期則為受理日期；若為審畢結果則為核定日期。"
 * item.adjudication.category ^short = "【因FHIR設計而需必填】"
 * item.adjudication.category.coding.system ^example[0].valueUri = "http://terminology.hl7.org/CodeSystem/adjudication"
 * item.adjudication.category.coding.system ^example[=].label = "General"
 * item.adjudication.category.coding.code ^example[0].valueString = "submitted"
 * item.adjudication.category.coding.code ^example[=].label = "General"
-* item.adjudication.value ^short = "核定數量"
 * item.adjudication.reason ^short = "受理審查案件核定註記。1:同意 | 2:不予同意 | 3:部份同意 | 4:補件 | 5:退件"
 * item.adjudication.reason.text ^short = "核定意見"
 * item.detail.adjudication.reason ^short = "個別醫令核定註記。0:審核中 | 1:同意 | 2:不予同意 | 3:部份同意 | 4:補件 | 5:退件 | 6:不予同意:對應手術亦不支付 | 7:改核:如審查核定意見"
+* item.detail.adjudication.value ^short = "個別醫令核定數量"
 * item.detail.detailSequence ^short = "請填寫對應的Claim.item.sequence"
 * item.detail.adjudication.category ^short = "【因FHIR設計而需必填】"
 * item.detail.adjudication.category.coding.system ^example[0].valueUri = "http://terminology.hl7.org/CodeSystem/adjudication"
@@ -103,3 +107,5 @@ Description:    "此事前審查回覆-ClaimResponse TWPAS Profile說明本IG如
 * request only Reference(ClaimTWPAS)
 * requestor 1.. MS
 * requestor only Reference(OrganizationTWPAS)
+* identifier ^short = "受理編號。供案件追蹤與識別使用，醫院上傳時無須填寫。"
+* identifier.use = #official

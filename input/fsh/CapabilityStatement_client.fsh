@@ -8,7 +8,7 @@ Usage: #definition
 * status = #active
 * experimental = false
 * publisher = "衛生福利部中央健康保險署"
-* date = "2026-07-01"
+* date = "2026-08-03"
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+json
@@ -137,6 +137,11 @@ Usage: #definition
 * rest.resource[=].searchParam[+].name = "_include"
 * rest.resource[=].searchParam[=].definition = "https://nhicore.nhi.gov.tw/pas/SearchParameter/ClaimResponse-include"
 * rest.resource[=].searchParam[=].type = #special
+* rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+* rest.resource[=].searchParam[+].name = "identifier"
+* rest.resource[=].searchParam[=].definition = "https://nhicore.nhi.gov.tw/pas/SearchParameter/ClaimResponse-identifier"
+* rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 
@@ -500,7 +505,7 @@ Usage: #definition
         <li>實作指引版本：1.2.5</li>
         <li>FHIR版本：4.0.1</li>
         <li>支援格式：<code>json</code></li>
-        <li>發佈日：2026-07-01</li>
+        <li>發佈日：2026-08-03</li>
         <li>發佈者：衛生福利部中央健康保險署</li>
     </ul>
     <h3 id=\"shallIGs\">建議應該（SHOULD）支援以下實作指引</h3>
@@ -574,7 +579,7 @@ Usage: #definition
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\"></td>
                     <td class=\"text-center\">y</td>
-                    <td>adjudication-reason, request.patient.name, request.patient.identifier, request.identifier, request.func-type.service-type, created, disposition, requestor.identifier, _include, request._lastUpdated</td>
+                    <td>identifier, adjudication-reason, request.patient.name, request.patient.identifier, request.identifier, request.func-type.service-type, created, disposition, requestor.identifier, _include, request._lastUpdated</td>
                 </tr>
                 <tr>
                     <td><a href=\"#Composition\">Composition</a></td>
@@ -986,6 +991,15 @@ Usage: #definition
                                 </tr>
                             </thead>
                             <tbody>
+                                <tr>
+                                    <td><b>必須（SHALL）</b></td>
+                                    <td><a href=\"SearchParameter-ClaimResponse-identifier.html\">identifier</a> + <a href=\"SearchParameter-ClaimResponse-include.html\">_include</a></td>
+                                    <td><code>token, reference</code></td>
+                                    <td>
+                                        <code>GET [base]/ClaimResponse?identifier=[code]&amp;_include=ClaimResponse:request</code><br/>
+                                        <p>實作請參考<a href=\"searchparameters.html#以查詢欄位分類\">查詢參數</a></p>
+                                    </td>
+                                </tr>
                                 <tr>
                                     <td><b>必須（SHALL）</b></td>
                                     <td><a href=\"SearchParameter-ClaimResponse-request.html\">request</a>.<a href=\"SearchParameter-Claim-lastUpdated.html\">_lastUpdated</a> + <a href=\"SearchParameter-ClaimResponse-include.html\">_include</a></td>
