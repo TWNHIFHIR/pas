@@ -8,8 +8,8 @@ Description: "臺灣衛生福利部中央健康保險署「特約醫事機構」
 *因原始資料無代碼版本資訊，故使用其「更新日期」作為版本資訊。*"
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2026-06-26"
-* ^version = "2026-06-26"
+* ^date = "2026-07-28"
+* ^version = "2026-07-28"
 * ^experimental = false
 * #0101090517 "臺北市立聯合醫院"
 * #0111070010 "衛生福利部基隆醫院"
