@@ -7,7 +7,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Bundle-id"
 * name = "BundleID"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "事前審查(Bundle)的邏輯性ID"
@@ -23,7 +23,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Claim-patient"
 * name = "ClaimID"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "事前審查(Claim)的病人資訊(patient)"
@@ -40,7 +40,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Claim-identifier"
 * name = "ClaimIdentifier"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "事前審查(Claim)的受理編號(identifier)"
@@ -55,7 +55,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Claim-id"
 * name = "ClaimId"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2026-08-03"
 * publisher = "HL7 International"
 * description = "事前審查(Claim)的收件序號/案件編號(id)"
@@ -70,7 +70,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Claim-lastUpdated"
 * name = "ClaimLastUpdated"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2026-08-03"
 * publisher = "HL7 International"
 * description = "事前審查(Claim)的上傳日期時間(lastUpdated)"
@@ -88,7 +88,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/ClaimResponse-adjudication-reason"
 * name = "ClaimResponseAdjudicationReason"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "衛生福利部中央健康保險署"
 * description = "事前審查回覆(ClaimResponse)的核定註記(item.adjudication.reason)"
@@ -104,7 +104,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/ClaimResponse-created"
 * name = "ClaimResponseCreated"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "事前審查回覆(ClaimResponse)的受理日期或核定日期(Claim)"
@@ -119,7 +119,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/ClaimResponse-disposition"
 * name = "ClaimResponseDisposition"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "事前審查回覆(ClaimResponse)的案件受理狀態(disposition)"
@@ -134,7 +134,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/ClaimResponse-request"
 * name = "ClaimResponseRequest"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "事前審查回覆(ClaimResponse)關聯的事前審查(Claim)"
@@ -152,7 +152,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/ClaimResponse-requestor"
 * name = "ClaimResponseRequestor"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2026-08-03"
 * publisher = "HL7 International"
 * description = "事前審查回覆(ClaimResponse)關聯的醫事機構(Organization)"
@@ -168,7 +168,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/ClaimResponse-include"
 * name = "ClaimResponseInclude"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2026-08-03"
 * publisher = "HL7 International"
 * description = "事前審查回覆(ClaimResponse)關聯的事前審查(Claim)"
@@ -182,7 +182,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/ClaimResponse-identifier"
 * name = "ClaimResponseIdentifier"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2026-08-03"
 * publisher = "HL7 International"
 * description = "事前審查回覆(ClaimResponse)的受理編號(identifier)"
@@ -199,7 +199,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Organization-identifier"
 * name = "OrganizationIdentifier"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2026-08-03"
 * publisher = "HL7 International"
 * description = "醫事機構代碼"
@@ -216,7 +216,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Patient-name"
 * name = "PatientName"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "病人的姓名(name)，該查詢可能與 HumanName 中的任何字串匹配，包括完整的中文姓名(text)、英文姓(family)、英文名(given)、姓名前面的頭銜(prefix)、姓名後面的稱謂(suffix)。"
@@ -231,7 +231,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Patient-identifier"
 * name = "PatientIdentifier"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "病人的身分證號(identifier)"
@@ -247,7 +247,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Claim-func-type"
 * name = "ClaimFuncType"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "衛生福利部中央健康保險署"
 * description = "事前審查(Claim)的就醫科別(extension: encounter)"
@@ -264,7 +264,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Encounter-service-type"
 * name = "EncounterServiceType"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "衛生福利部中央健康保險署"
 * description = "就醫科別(serviceType)"
@@ -281,7 +281,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Claim-id"
 * name = "ClaimID"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "事前審查(Claim)的邏輯性ID"
@@ -297,7 +297,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Encounter-id"
 * name = "EncounterID"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "就醫科別的邏輯性ID"
@@ -314,7 +314,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Patient-id"
 * name = "PatientID"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "病人的邏輯性ID"
@@ -330,7 +330,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Practitioner-id"
 * name = "PractitioneID"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "醫事人員的邏輯性ID"
@@ -346,7 +346,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/ImagingStudy-id"
 * name = "ImagingStudyID"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "DICOM影像的邏輯性ID"
@@ -362,7 +362,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Media-id"
 * name = "MediaID"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "非DICOM影像的邏輯性ID"
@@ -378,7 +378,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/DiagnosticReport-id"
 * name = "DiagnosticReportID"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "影像報告/檢查報告的邏輯性ID"
@@ -394,7 +394,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Observation-id"
 * name = "ObservationID"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "癌症分期量表/基因資訊/檢驗檢查/病人狀態評估/治療後疾病狀態評估的邏輯性ID"
@@ -410,7 +410,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/MedicationRequest-id"
 * name = "MedicationRequestID"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "用藥品項/事前審查品項的邏輯性ID"
@@ -426,7 +426,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Procedure-id"
 * name = "ProcedureID"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "放射治療的邏輯性ID"
@@ -442,7 +442,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Substance-id"
 * name = "SubstanceID"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "放射治療總劑量的邏輯性ID"
@@ -458,7 +458,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Specimen-id"
 * name = "SpecimenID"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "檢體的邏輯性ID"
@@ -474,7 +474,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/DocumentReference-id"
 * name = "DocumentReferenceID"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "文件參照的邏輯性ID"
@@ -490,7 +490,7 @@ Usage: #definition
 * url = "https://nhicore.nhi.gov.tw/pas/SearchParameter/Coverage-id"
 * name = "CoverageID"
 * status = #active
-* version = "1.2.5"
+* version = "1.2.6"
 * date = "2024-08-31"
 * publisher = "HL7 International"
 * description = "健保事前審查計畫的邏輯性ID"

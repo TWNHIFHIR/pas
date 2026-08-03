@@ -315,7 +315,7 @@ Usage: #inline
     <h3>申請項目</h3>
     <blockquote>
         <p><b>事前審查品項</b>：<a href=\"Bundle-bun-self.html#urn-uuid-46b3230a-d641-4e45-be42-2c84a5c04d67\">urn:uuid:46b3230a-d641-4e45-be42-2c84a5c04d67</a></p>
-        <p><b>事前審查申請數量(單位)</b>：52 (tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://hl7.org/fhir/R4/valueset-ucum-common.html\">Common UCUM units</a>#{tbl})</span>)</p>
+        <p><b>事前審查申請數量單位及包裝類型</b>：52 (tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://hl7.org/fhir/R4/valueset-ucum-common.html\">Common UCUM units</a>#{tbl})</span>)</p>
         <p><b>醫令類別</b>：藥品<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-order-type.html\">NHI-健保事前審查-醫令類別值集</a>#1)</span></p>
         <p><b>續用註記</b>：申請再次使用<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-continuation-status.html\">NHI-續用註記值集</a>#2)</span></p>
         <p><b>用藥線別</b>：第一線治療<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-line-of-therapy.html\">NHI-用藥線別值集</a>#1)</span></p>
@@ -323,7 +323,7 @@ Usage: #inline
     </blockquote>
     <blockquote>
         <p><b>事前審查品項</b>：<a href=\"Bundle-bun-self.html#urn-uuid-de63572a-412b-4004-8fd6-93612a22e673\">urn:uuid:de63572a-412b-4004-8fd6-93612a22e673</a></p>
-        <p><b>事前審查申請數量(單位)</b>：70 (tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://hl7.org/fhir/R4/valueset-ucum-common.html\">Common UCUM units</a>#{tbl})</span>)</p>
+        <p><b>事前審查申請數量單位及包裝類型</b>：70 (tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://hl7.org/fhir/R4/valueset-ucum-common.html\">Common UCUM units</a>#{tbl})</span>)</p>
         <p><b>醫令類別</b>：藥品<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-order-type.html\">NHI-健保事前審查-醫令類別值集</a>#1)</span></p>
         <p><b>續用註記</b>：申請再次使用<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-continuation-status.html\">NHI-續用註記值集</a>#2)</span></p>
         <p><b>用藥線別</b>：第一線治療<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-line-of-therapy.html\">NHI-用藥線別值集</a>#1)</span></p>

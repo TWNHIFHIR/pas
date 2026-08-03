@@ -3,7 +3,7 @@ Id: specime-type
 Title: "LOINC-健保事前審查-基因檢測檢體類型值集"
 Description: "LOINC-健保事前審查-基因檢測檢體類型值集"
 * ^date = "2026-08-03"
-* ^version = "1.2.5"
+* ^version = "1.2.6"
 * ^experimental = false
 /* BLOOD */
 * $loinc#LP7057-5

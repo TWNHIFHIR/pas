@@ -51,6 +51,6 @@ Id: nhi-apply-reason
 Title: "NHI-健保事前審查-給付適應症值集"
 Description: "NHI-健保事前審查-給付適應症值集"
 * ^date = "2026-08-03"
-* ^version = "1.2.5"
+* ^version = "1.2.6"
 * ^experimental = false
 * include codes from system NHIApplyReason
