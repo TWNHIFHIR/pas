@@ -13,7 +13,7 @@
         <li>修改：<a href="StructureDefinition-Bundle-twpas.html">Profile: 癌藥事前審查-Bundle TWPAS</a>
             <ol> 
                 <li>修改Constraint: applyReason-2，若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC010892B5，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C50P1、C50P2、<b>C50P3</b>、<b>C50P4</b>、<b>C50P5</b>、C50R1 或 C16R1</li>
-                <li>修改Constraint: applyReason-4，若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC011162B5，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C50P1、C50P2<b>C50P3</b>、<b>C50P4</b>、<b>C50P5</b>、C50R1 或 C16R1</li>
+                <li>修改Constraint: applyReason-4，若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC011162B5，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C50P1、C50P2、<b>C50P3</b>、<b>C50P4</b>、<b>C50P5</b>、C50R1 或 C16R1</li>
             </ol> 
         </li>
         <li>更新代碼：<a href="CodeSystem-nhi-apply-reason.html">CodeSystem: NHI-健保事前審查-給付適應症</a>：修改代碼說明。</li>
