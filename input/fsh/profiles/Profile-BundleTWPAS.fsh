@@ -202,8 +202,8 @@ Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference)
 Severity:    #error
 
 Invariant:   applyReason-2
-Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC010892B5，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C50P1、C50P2、C50R1 或 C16R1"
-Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC010892B5').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC010892B5').all(programCode.coding.code.matches('C50P1|C50P2|C50R1|C16R1'))"
+Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC010892B5，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C50P1、C50P2、C50P3、C50P4、C50P5、C50R1 或 C16R1"
+Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC010892B5').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC010892B5').all(programCode.coding.code.matches('C50P1|C50P2|C50P3|C50P4|C50P5|C50R1|C16R1'))"
 Severity:    #error
 
 Invariant:   applyReason-3
@@ -212,8 +212,8 @@ Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference)
 Severity:    #error
 
 Invariant:   applyReason-4
-Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC011162B5，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C50P1、C50P2、C50R1 或 C16R1"
-Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC011162B5').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC011162B5').all(programCode.coding.code.matches('C50P1|C50P2|C50R1|C16R1'))"
+Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC011162B5，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C50P1、C50P2、C50P3、C50P4、C50P5、C50R1 或 C16R1"
+Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC011162B5').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC011162B5').all(programCode.coding.code.matches('C50P1|C50P2|C50P3|C50P4|C50P5|C50R1|C16R1'))"
 Severity:    #error
 
 Invariant:   applyReason-5

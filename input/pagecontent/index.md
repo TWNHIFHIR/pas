@@ -5,15 +5,21 @@
 </div>
 <br/>
 
-<!-- <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
+<div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
 因考量實作需求，於2026/7/28異動以下內容：
     <ol>  
-        <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
-        <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li>
+        <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
+        <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
+        <li>修改：<a href="StructureDefinition-Bundle-twpas.html">Profile: 癌藥事前審查-Bundle TWPAS</a>
+            <ol> 
+                <li>修改Constraint: applyReason-2，若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC010892B5，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C50P1、C50P2、<b>C50P3</b>、<b>C50P4</b>、<b>C50P5</b>、C50R1 或 C16R1</li>
+                <li>修改Constraint: applyReason-4，若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC011162B5，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C50P1、C50P2<b>C50P3</b>、<b>C50P4</b>、<b>C50P5</b>、C50R1 或 C16R1</li>
+            </ol> 
+        </li>
     </ol>
     請留意這些異動，以避免影響您的實作。
 </div>
-<br/> -->
+<br/>
 
 <div class="bg-success" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
 <p><b>相關資訊可參考衛生福利部中央健康保險署的<a href="https://www.nhi.gov.tw/ch/np-3787-1.html" target="_blank">事前審查以電子病歷申請專區</a>。</b></p>
