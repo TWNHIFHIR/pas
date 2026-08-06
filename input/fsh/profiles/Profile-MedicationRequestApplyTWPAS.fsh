@@ -53,10 +53,8 @@ Description:    "此事前審查品項-MedicationRequest Apply TWPAS Profile說�
 * dosageInstruction.doseAndRate.doseQuantity 1..1 MS
 * dosageInstruction.doseAndRate.doseQuantity.value 1..1 MS
 * dosageInstruction.doseAndRate.doseQuantity.system 1..1
-* dosageInstruction.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 * dosageInstruction.doseAndRate.doseQuantity.code 1..1 MS
-* dosageInstruction.doseAndRate.doseQuantity.code from http://hl7.org/fhir/ValueSet/ucum-units
-* dosageInstruction.doseAndRate.doseQuantity.code ^binding.description = "用藥單位的代碼範圍請參考[Common UCUM units](https://hl7.org/fhir/R4/valueset-ucum-common.html)。"
+* dosageInstruction.doseAndRate.doseQuantity.code from ApplQtyUnit
 * dosageInstruction.timing.repeat MS
 * dosageInstruction.timing.repeat.boundsPeriod 1..1 MS
 * dosageInstruction.timing.repeat.boundsPeriod.start 1..1 MS
@@ -72,9 +70,9 @@ Description:    "此事前審查品項-MedicationRequest Apply TWPAS Profile說�
 * dosageInstruction.timing.code ^short = "事前審查藥品使用頻率及服用時間。"
 * dosageInstruction.timing.code.coding ^short = "事前審查藥品使用頻率及服用時間。"
 
-* dosageInstruction.doseAndRate.doseQuantity.value ^short = "事前審查藥品每次處方劑量，數字。"
-* dosageInstruction.doseAndRate.doseQuantity.code ^short = "事前審查藥品每次處方劑量單位，每次使用之顆數、mL數、支數等。"
-* dosageInstruction.doseAndRate.doseQuantity.system ^short = "事前審查藥品每次處方劑量單位之代碼系統，固定為「http://unitsofmeasure.org」。"
+* dosageInstruction.doseAndRate.doseQuantity.value ^short = "事前審查藥物每次處方劑量，數字，每次使用之顆數、mL數、支數等。"
+* dosageInstruction.doseAndRate.doseQuantity.code ^short = "事前審查藥物每次處方劑量單位及包裝類型"
+* dosageInstruction.doseAndRate.doseQuantity.system ^short = "事前審查藥物每次處方劑量單位及包裝類型之代碼系統"
 * dosageInstruction.timing.repeat.boundsPeriod.start ^short = "事前審查藥物預定處方起始日期，YYYY-MM-DD，西元年月日。"
 * dosageInstruction.timing.repeat.boundsPeriod.end ^short = "事前審查藥物預定處方終止日期，YYYY-MM-DD，西元年月日。"
 * dosageInstruction.route  ^short = "給藥途徑／作用部位。"

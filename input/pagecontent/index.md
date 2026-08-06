@@ -6,10 +6,12 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2026/8/4異動以下內容：
+因考量實作需求，於2026/8/6異動以下內容：
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
         <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
+        <li>修改<a href="StructureDefinition-MedicationRequest-apply-twpas.html">Profile: 事前審查品項-MedicationRequest Apply TWPAS</a>：「事前審查藥物每次處方劑量單位及包裝類型(dosageInstruction.doseAndRate.doseQuantity.code)」改綁定<a href="ValueSet-apply-quantity-unit.html">藥品劑量單位及包裝類型值集</a>。</li>
+        <li>修改<a href="StructureDefinition-MedicationRequest-treat-twpas.html">Profile: 用藥品項-MedicationRequest Treat TWPAS</a>：移除dosageInstruction.doseAndRate.doseQuantity.system之固定值設定。</li>
         <li>修改：<a href="StructureDefinition-Bundle-twpas.html">Profile: 癌藥事前審查-Bundle TWPAS</a>
             <ol> 
                 <li>修改Constraint: applyReason-2，若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC010892B5，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C50P1、C50P2、<b>C50P3</b>、<b>C50P4</b>、<b>C50P5</b>、C50R1 或 C16R1</li>
