@@ -42,7 +42,7 @@ Description:    "此用藥品項-MedicationRequest Treat TWPAS Profile說明本I
 * dosageInstruction.doseAndRate.doseQuantity.value 1..1 MS
 * dosageInstruction.doseAndRate.doseQuantity.system 1..1
 * dosageInstruction.doseAndRate.doseQuantity.code 1..1 MS
-* dosageInstruction.doseAndRate.doseQuantity.code from ApplQtyUnit
+* dosageInstruction.doseAndRate.doseQuantity from ApplQtyUnit
 
 * dosageInstruction.timing.repeat MS
 * dosageInstruction.timing.repeat.boundsPeriod 1..1 MS
