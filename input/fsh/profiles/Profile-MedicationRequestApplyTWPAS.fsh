@@ -54,7 +54,7 @@ Description:    "此事前審查品項-MedicationRequest Apply TWPAS Profile說�
 * dosageInstruction.doseAndRate.doseQuantity.value 1..1 MS
 * dosageInstruction.doseAndRate.doseQuantity.system 1..1
 * dosageInstruction.doseAndRate.doseQuantity.code 1..1 MS
-* dosageInstruction.doseAndRate.doseQuantity.code from ApplQtyUnit
+* dosageInstruction.doseAndRate.doseQuantity from ApplQtyUnit
 * dosageInstruction.timing.repeat MS
 * dosageInstruction.timing.repeat.boundsPeriod 1..1 MS
 * dosageInstruction.timing.repeat.boundsPeriod.start 1..1 MS
