@@ -41,7 +41,6 @@ Description:    "此用藥品項-MedicationRequest Treat TWPAS Profile說明本I
 * dosageInstruction.doseAndRate.doseQuantity 1..1 MS
 * dosageInstruction.doseAndRate.doseQuantity.value 1..1 MS
 * dosageInstruction.doseAndRate.doseQuantity.system 1..1
-* dosageInstruction.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 * dosageInstruction.doseAndRate.doseQuantity.code 1..1 MS
 * dosageInstruction.doseAndRate.doseQuantity.code from ApplQtyUnit
 
