@@ -394,8 +394,10 @@ Severity:    #error
 
 Invariant:   supportingInfo-tests
 Description: "當Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代碼)為C61，且Claim.item.modifier:continuation(續用註記)為2，需提供檢驗(查)。"
-Expression:  "(diagnosis.diagnosis.ofType(CodeableConcept).coding.where(code.matches('^(C61)')).exists() and (item.modifier.where(coding.system = 'https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-continuation-status').coding.code = '2').exists()) implies (supportingInfo.category.exists(coding.code = 'tests'))"
+Expression:  "(diagnosis.diagnosis.ofType(CodeableConcept).coding.where(code.matches('^(C61)')).exists() and (item.modifier.where(coding.system = 'https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-continuation-status').coding.exists(code = '2'))) implies (supportingInfo.category.exists(coding.code = 'tests'))"
 Severity:    #error
+
+
 
 Invariant:   supportingInfo-c90-c91-c92
 Description: "當Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代碼)為C90、C91或C92，需提供檢驗(查)、影像報告、基因資訊、檢驗檢查中任一項資訊。"
