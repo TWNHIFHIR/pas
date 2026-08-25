@@ -37,6 +37,7 @@ Description: "LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值�
 
 * http://snomed.info/sct#273903006
 * http://snomed.info/sct#273904000
+* PatAst#Hurley_stage
 
 
 CodeSystem: PatAst
@@ -68,3 +69,4 @@ Description: "臺灣衛生福利部中央健康保險署「病人狀態評估項
 * #PPPASI "Palmoplantar Pustulosis Area and Severity Index"
 * #EASI "Palmoplantar Pustulosis Area and Severity Index"
 * #CLASI "Cutaneous Lupus Erythematosus Disease Area and Severity Index"
+* #Hurley_stage "Hurley stage"

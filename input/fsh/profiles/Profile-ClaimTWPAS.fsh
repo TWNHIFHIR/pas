@@ -397,8 +397,6 @@ Description: "當Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代�
 Expression:  "(diagnosis.diagnosis.ofType(CodeableConcept).coding.where(code.matches('^(C61)')).exists() and (item.modifier.where(coding.system = 'https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-continuation-status').coding.exists(code = '2'))) implies (supportingInfo.category.exists(coding.code = 'tests'))"
 Severity:    #error
 
-
-
 Invariant:   supportingInfo-c90-c91-c92
 Description: "當Claim.diagnosis.diagnosisCodeableConcept(國際疾病分類代碼)為C90、C91或C92，需提供檢驗(查)、影像報告、基因資訊、檢驗檢查中任一項資訊。"
 Expression:  "(diagnosis.diagnosis.ofType(CodeableConcept).coding.where(code.matches('^(C90|C91|C92)')).exists()) implies (supportingInfo.category.exists(coding.code = 'tests') or supportingInfo.category.exists(coding.code = 'imagingReport') or supportingInfo.category.exists(coding.code = 'geneInfo') or supportingInfo.category.exists(coding.code = 'examinationReport'))"
@@ -418,6 +416,3 @@ Invariant:   pas-2
 Description: "長度不得超過4000 bytes。"
 Expression:  "toString().length() <= 4000"
 Severity:    #error
-
-
-

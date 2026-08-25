@@ -45,3 +45,4 @@ Description: "LOINC-健保事前審查-報告類型值集"
 * $loinc#66121-5
 * $loinc#66125-6
 * $loinc#66119-9
+* $loinc#28615-3
