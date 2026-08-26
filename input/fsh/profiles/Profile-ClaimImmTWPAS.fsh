@@ -277,8 +277,7 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * item.quantity.system 1..1
 //* item.quantity.system = "http://unitsofmeasure.org"
 * item.quantity.code 1..1 MS
-* item.quantity from ApplQtyUnit
-* item.quantity.code ^binding.description = "事前審查申請數量單位及包裝類型。"
+* item.quantity from ApplQtyUnit (required)
 * insurance.sequence = 1
 * insurance.coverage only Reference(CoverageTWPAS) 
 
