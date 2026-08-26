@@ -6,10 +6,10 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2026/8/24異動以下內容：
+因考量實作需求，於2026/8/26異動以下內容：
     <ol>  
-        <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
-        <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
+        <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
+        <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li>
         <li>更新值集：<a href="ValueSet-pat-ast.html">ValueSet: LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集</a>：新增代碼<code>Hurley_stage</code>。</li>
         <li>更新值集：<a href="ValueSet-report-type.html">ValueSet: LOINC-健保事前審查-報告類型值集</a>：新增代碼<code>28615-3</code>(Audiology study)。</li>
         <li>修改<a href="StructureDefinition-MedicationRequest-apply-twpas.html">Profile: 事前審查品項-MedicationRequest Apply TWPAS</a>：「事前審查藥物每次處方劑量單位及包裝類型(dosageInstruction.doseAndRate.doseQuantity.code)」改綁定<a href="ValueSet-apply-quantity-unit.html">藥品劑量單位及包裝類型值集</a>。</li>
