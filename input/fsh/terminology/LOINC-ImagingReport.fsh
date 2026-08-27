@@ -11,3 +11,4 @@ Description: "LOINC-健保事前審查-影像報告值集"
 * $loinc#28014-9
 * $loinc#18746-8
 * $loinc#28018-0
+* $loinc#28615-3
