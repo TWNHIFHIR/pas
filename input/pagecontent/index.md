@@ -10,7 +10,6 @@
     <ol>  
         <!-- <li>更新代碼：<a href="CodeSystem-nhi-medication.html">CodeSystem: NHI-健保事前審查-用藥品項</a></li>
         <li>更新代碼：<a href="CodeSystem-organization-identifier-tw.html">CodeSystem: NHI-健保事前審查-特約醫事機構</a></li> -->
-        <li>更新代碼：<a href="ValueSet-dicom-cid-29-AcquisitionModality.html">ValueSet: DICOM-AcquisitionModality值集</a>：修改代碼display。</li>
         <li>更新代碼：<a href="CodeSystem-nhi-pat-ast.html">CodeSystem: NHI-健保事前審查-病人狀態評估項目</a>：修改EASI代碼之Display。</li>
     </ol>
     請留意這些異動，以避免影響您的實作。

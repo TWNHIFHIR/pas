@@ -34,7 +34,7 @@ Description: "原值集因總會工具問題無法正常顯示，故先自建值
 * $DCM#CR "Computed Radiography"
 * $DCM#CT "Computed Tomography"
 //* $DCM#PA "Photoacoustic"
-* $DCM#OSS //"Optical Survace Scanner"
+* $DCM#OSS "Optical Survace Scanner"
 * $DCM#TG "Thermography"
 * $DCM#LEN "Lensometry"
 //* $DCM#OPTENF "Ophthalmic Tomography En Face"
