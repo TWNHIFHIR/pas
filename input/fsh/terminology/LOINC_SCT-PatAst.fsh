@@ -4,7 +4,7 @@ Id: pat-ast
 Title: "LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集"
 Description: "LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集"
 * ^date = "2026-09-01"
-* ^version = "1.2.6"
+* ^version = "1.2.7"
 * ^experimental = false
 * $loinc#88020-3
 * $loinc#98153-0
@@ -47,7 +47,7 @@ Description: "臺灣衛生福利部中央健康保險署「病人狀態評估項
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2026-09-01"
-* ^version = "1.2.6"
+* ^version = "1.2.7"
 * ^experimental = false
 * #IPS "International Prognostic Score" "IPS (International Prognostic Score)"
 * #PDAI "Pemphigus Disease Area Index" "PDAI評估指數"
@@ -67,6 +67,6 @@ Description: "臺灣衛生福利部中央健康保險署「病人狀態評估項
 * #MayoE "Mayo endoscopic subscore"
 * #PUCAI "Pediatric Ulcerative Colitis Activity Index (PUCAI)"
 * #PPPASI "Palmoplantar Pustulosis Area and Severity Index"
-* #EASI "Palmoplantar Pustulosis Area and Severity Index"
+* #EASI "Eczema Area and Severity Index  (EASI)"
 * #CLASI "Cutaneous Lupus Erythematosus Disease Area and Severity Index"
 * #Hurley_stage "Hurley stage"
