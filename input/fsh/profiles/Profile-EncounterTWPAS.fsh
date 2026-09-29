@@ -3,14 +3,14 @@ Parent:         https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Encount
 Id:             Encounter-twpas
 Title:          "就醫科別-Encounter TWPAS"
 Description:    "此就醫科別-Encounter TWPAS Profile說明本IG如何進一步定義臺灣核心-就醫事件(TW Core Encounter) Profile以呈現事前審查中院所資訊之就醫科別"
-* ^version = "1.2.6"
+* ^version = "1.2.7"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Encounter-twpas"
 * serviceType 1..1
 * serviceType ^short = "就醫科別，完整代碼對應表請參照就醫科別對應表。"
 * serviceType from TWMedicalDepartmentSCT (preferred)
-* serviceType ^binding.description = "完整代碼對應表請參照[就醫科別對應表](https://build.fhir.org/ig/MOHW-TWCoreIG/cctwFHIRterm/ValueSet-medical-department-sct-tw.html#%E5%B0%B1%E9%86%AB%E7%A7%91%E5%88%A5%E5%B0%8D%E6%87%89%E8%A1%A8)。"
+* serviceType ^binding.description = "完整代碼對應表請參照[就醫科別對應表](https://twcore.mohw.gov.tw/ig/twcore/ValueSet-medical-department-sct-tw.html#%E5%B0%B1%E9%86%AB%E7%A7%91%E5%88%A5%E5%B0%8D%E6%87%89%E8%A1%A8)。"
 * serviceType.coding 1..1
 * serviceType.coding.code 1..1
 * serviceType.coding ^slicing.rules = #closed
