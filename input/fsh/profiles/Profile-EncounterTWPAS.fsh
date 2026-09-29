@@ -10,7 +10,7 @@ Description:    "此就醫科別-Encounter TWPAS Profile說明本IG如何進一�
 * serviceType 1..1
 * serviceType ^short = "就醫科別，完整代碼對應表請參照就醫科別對應表。"
 * serviceType from TWMedicalDepartmentSCT (preferred)
-* serviceType ^binding.description = "完整代碼對應表請參照[就醫科別對應表](https://build.fhir.org/ig/MOHW-TWCoreIG/cctwFHIRterm/ValueSet-medical-department-sct-tw.html#%E5%B0%B1%E9%86%AB%E7%A7%91%E5%88%A5%E5%B0%8D%E6%87%89%E8%A1%A8)。"
+* serviceType ^binding.description = "完整代碼對應表請參照[就醫科別對應表](https://twcore.mohw.gov.tw/ig/twcore/ValueSet-medical-department-sct-tw.html#%E5%B0%B1%E9%86%AB%E7%A7%91%E5%88%A5%E5%B0%8D%E6%87%89%E8%A1%A8)。"
 * serviceType.coding 1..1
 * serviceType.coding.code 1..1
 * serviceType.coding ^slicing.rules = #closed

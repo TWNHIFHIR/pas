@@ -44,6 +44,7 @@ Description:    "此檢驗檢查-Observation Laboratory Result TWPAS Profile說�
 * category = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type#tests
 * category ^short = "因FHIR設計而需必填"
 
+
 * effectiveDateTime 1..1
 * effectiveDateTime ^short = "檢驗(查)報告日期"
 * code ^short = "檢驗(查)名稱或套組代碼"
