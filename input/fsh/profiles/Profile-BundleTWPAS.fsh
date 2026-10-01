@@ -293,7 +293,7 @@ Severity:    #error
 
 Invariant:   applyReason-20
 Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01299229，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P011、P012、P013、P014 或 P101"
-Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01299229').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01310229').all(programCode.coding.code.matches('P011|P012|P013|P014|P101'))"
+Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01299229').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01299229').all(programCode.coding.code.matches('P011|P012|P013|P014|P101'))"
 Severity:    #error
 
 
