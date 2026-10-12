@@ -74,7 +74,7 @@
 
 #### Substance
 - [放射治療總劑量-Substance TWPAS](StructureDefinition-Substance-twpas.html)
-- [<span class="bg-success">Profile: 照光治療總次數-Substance Phototherapy TWPAS</span>](StructureDefinition-Substance-phototherapy-twpas.html)
+- [<span class="bg-success">照光治療總次數-Substance Phototherapy TWPAS</span>](StructureDefinition-Substance-phototherapy-twpas.html)
 
 #### Specimen
 - [基因檢測檢體-Specimen TWPAS](StructureDefinition-Specimen-twpas.html)
