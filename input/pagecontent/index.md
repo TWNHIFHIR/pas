@@ -112,8 +112,7 @@
     <tbody>
         <tr>
             <td>作者-IG</td>
-            <td>曾鈺珈</td>
-            <td style="vertical-align: middle;">資拓宏宇國際股份有限公司</td>
+            <td colspan="2">資拓宏宇國際股份有限公司</td>
         </tr>
         <tr>
             <td>貢獻者-IG</td>
