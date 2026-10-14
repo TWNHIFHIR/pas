@@ -29,9 +29,9 @@ Description:    "此用藥品項-MedicationRequest Treat TWPAS Profile說明本I
 * dosageInstruction 1..*
 * dosageInstruction.timing 1..1
 * dosageInstruction.timing.code 1..
-* dosageInstruction.timing.code from https://nhicore.nhi.gov.tw/pas/ValueSet/medication-frequency-hl7-nhi (extensible)
+* dosageInstruction.timing.code from https://fhir.nhi.gov.tw/nhi_tsfhir/ValueSet/medication-frequency-hl7-nhi (extensible)
 * dosageInstruction.timing.code.coding MS
-* dosageInstruction.timing.code.coding from https://nhicore.nhi.gov.tw/pas/ValueSet/medication-frequency-hl7-nhi
+* dosageInstruction.timing.code.coding from https://fhir.nhi.gov.tw/nhi_tsfhir/ValueSet/medication-frequency-hl7-nhi
 * dosageInstruction.timing.repeat 1..1
 * dosageInstruction.timing.repeat.bounds[x] only Period
 

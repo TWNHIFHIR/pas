@@ -20,6 +20,13 @@
                     </div>
                 </li>
                 <li>
+                    <strong>LOINC-健保署-基因檢測檢體類型值集</strong>
+                    <div style="margin-left: 20px;">
+                        • 適用欄位：
+                        <a href="StructureDefinition-Specimen-twpas.html">基因檢測檢體類型</a>
+                    </div>
+                </li>
+                <li>
                     <strong>LOINC-健保事前審查-基因突變類型值集</strong>
                     <div style="margin-left: 20px;">
                         • 適用欄位：
@@ -52,8 +59,8 @@
                     <strong>NHI-健保事前審查-給付適應症值集</strong>
                     <div style="margin-left: 20px;">
                         • 適用欄位：
-                        <a href="Claim-twpas">給付適應症條件</a> (癌藥事前審查)、
-                        <a href="Claim-immunologic-agent-twpas">給付適應症條件</a> (免疫製劑事前審查)
+                        <a href="StructureDefinition-Claim-twpas.html">給付適應症條件</a> (癌藥事前審查)、
+                        <a href="StructureDefinition-Claim-immunologic-agent-twpas.html">給付適應症條件</a> (免疫製劑事前審查)
                         <div style="margin-top: 5px;">
                             • 代碼系統異動：
                             <div style="margin-left: 20px;">
@@ -67,8 +74,8 @@
                     <strong>NHI-健保事前審查-申報類別值集</strong>
                     <div style="margin-left: 20px;">
                         • 適用欄位：
-                        <a href="Claim-twpas">申報類別</a> (癌藥事前審查)、
-                        <a href="Claim-immunologic-agent-twpas">申報類別</a> (免疫製劑事前審查)
+                        <a href="StructureDefinition-Claim-twpas.html">申報類別</a> (癌藥事前審查)、
+                        <a href="StructureDefinition-Claim-immunologic-agent-twpas.html">申報類別</a> (免疫製劑事前審查)
                         <div style="margin-top: 5px;">
                             • 代碼系統異動：
                             <div style="margin-left: 20px;">
@@ -82,8 +89,8 @@
                     <strong>NHI-健保事前審查-用藥品項值集</strong>
                     <div style="margin-left: 20px;">
                         • 適用欄位：
-                        <a href="MedicationRequest-apply-twpas">藥品代碼</a> (事前審查品項)、
-                        <a href="MedicationRequest-treat-twpas">藥品代碼</a> (用藥品項)
+                        <a href="StructureDefinition-MedicationRequest-apply-twpas.html">藥品代碼</a> (事前審查品項)、
+                        <a href="StructureDefinition-MedicationRequest-treat-twpas.html">藥品代碼</a> (用藥品項)
                         <div style="margin-top: 5px;">
                             • 代碼系統異動：
                             <div style="margin-left: 20px;">
@@ -97,7 +104,7 @@
                     <strong>NHI-健保事前審查-特約醫事機構值集</strong>
                     <div style="margin-left: 20px;">
                         • 適用欄位：
-                        <a href="Organization-twpas">醫事機構代碼</a>
+                        <a href="StructureDefinition-Organization-twpas.html">醫事機構代碼</a>
                         <div style="margin-top: 5px;">
                             • 代碼系統異動：
                             <div style="margin-left: 20px;">
@@ -111,7 +118,7 @@
                     <strong>NHI-健保事前審查-文件類型值集</strong>
                     <div style="margin-left: 20px;">
                         • 適用欄位：
-                        <a href="DocumentReference-twpas">DocumentReference.category</a>
+                        <a href="StructureDefinition-DocumentReference-twpas.html">DocumentReference.category</a>
                         <div style="margin-top: 5px;">
                             • 代碼系統異動：
                             <div style="margin-left: 20px;">
@@ -125,15 +132,15 @@
                     <strong>NHI-健保事前審查-補充資訊類別值集</strong>
                     <div style="margin-left: 20px;">
                         • 適用欄位：
-                        <a href="Claim-twpas">Claim.supportingInfo.category</a> (癌藥事前審查)、
-                        <a href="Claim-immunologic-agent-twpas">Claim.supportingInfo.category</a> (免疫製劑事前審查)、
-                        <a href="DiagnosticReport-image-twpas">DiagnosticReport.category</a> (影像報告)、
-                        <a href="DiagnosticReport-twpas">DiagnosticReport.category</a> (檢查報告)、
-                        <a href="Observation-blood-group-twpas">Observation.category</a> (血型)、
-                        <a href="Observation-cancer-stage-twpas">Observation.category</a> (癌症分期量表)、
-                        <a href="Observation-diagnostic-twpas">Observation.category</a> (基因資訊)、
-                        <a href="Observation-laboratory-result-twpas">Observation.category</a> (檢驗檢查)、
-                        <a href="Observation-pat-assessment-twpas">Observation.category</a> (病人狀態評估)、
+                        <a href="StructureDefinition-Claim-twpas.html">Claim.supportingInfo.category</a> (癌藥事前審查)、
+                        <a href="StructureDefinition-Claim-immunologic-agent-twpas.html">Claim.supportingInfo.category</a> (免疫製劑事前審查)、
+                        <a href="StructureDefinition-DiagnosticReport-image-twpas.html">DiagnosticReport.category</a> (影像報告)、
+                        <a href="StructureDefinition-DiagnosticReport-twpas.html">DiagnosticReport.category</a> (檢查報告)、
+                        <a href="StructureDefinition-Observation-blood-group-twpas.html">Observation.category</a> (血型)、
+                        <a href="StructureDefinition-Observation-cancer-stage-twpas.html">Observation.category</a> (癌症分期量表)、
+                        <a href="StructureDefinition-Observation-diagnostic-twpas.html">Observation.category</a> (基因資訊)、
+                        <a href="StructureDefinition-Observation-laboratory-result-twpas.html">Observation.category</a> (檢驗檢查)、
+                        <a href="StructureDefinition-Observation-pat-assessment-twpas.html">Observation.category</a> (病人狀態評估)、
                         <div style="margin-top: 5px;">
                             • 代碼系統異動：
                             <div style="margin-left: 20px;">
@@ -147,8 +154,8 @@
                     <strong>NHI-健保事前審查-申請案件類別值集</strong>
                     <div style="margin-left: 20px;">
                         • 適用欄位：
-                        <a href="Claim-twpas">申請案件類別</a> (癌藥事前審查)、
-                        <a href="Claim-immunologic-agent-twpas">申請案件類別</a> (免疫製劑事前審查)
+                        <a href="StructureDefinition-Claim-twpas.html">申請案件類別</a> (癌藥事前審查)、
+                        <a href="StructureDefinition-Claim-immunologic-agent-twpas.html">申請案件類別</a> (免疫製劑事前審查)
                         <div style="margin-top: 5px;">
                             • 代碼系統異動：
                             <div style="margin-left: 20px;">
@@ -156,13 +163,6 @@
                                 異動後：<code>https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-tmhb-type</code>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <strong>LOINC-健保署-基因檢測檢體類型值集</strong>
-                    <div style="margin-left: 20px;">
-                        • 適用欄位：
-                        <a href="Specimen-twpas">基因檢測檢體類型</a>
                     </div>
                 </li>
             </ol>
