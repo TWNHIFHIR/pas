@@ -853,7 +853,7 @@ Usage: #inline
     <blockquote>
         <p><b>事前審查藥物預定處方起始日期</b>：2024-01-01</p>
         <p><b>事前審查藥物預定處方終止日期</b>：2024-02-11</p>
-        <p><b>事前審查藥品使用頻率及服用時間</b>：Every day at institution specified times.、飯前1小時使用<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"ValueSet-medication-frequency-hl7-nhi.html\">HL7 TimingAbbreviation + 臺灣健保署藥品使用頻率值集</a>#BIW、#AC1H)</span></p>
+        <p><b>事前審查藥品使用頻率及服用時間</b>：Every day at institution specified times.、飯前1小時使用<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/ValueSet/medication-frequency-hl7-nhi\">HL7 TimingAbbreviation + 臺灣健保署藥品使用頻率值集</a>#BIW、#AC1H)</span></p>
         <p><b>事前審查藥品每次處方劑量</b>：75 mg/m2</p>
         <p><b>事前審查藥品療程／週期數</b>：42</p>
         <p><b>給藥途徑／作用部位</b>：Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://snomed.info/sct/\">SNOMED CT + 臺灣健保署給藥途徑值集</a>#26643006)</span></p>
@@ -861,7 +861,7 @@ Usage: #inline
     <blockquote>
         <p><b>事前審查藥物預定處方起始日期</b>：2024-02-12</p>
         <p><b>事前審查藥物預定處方終止日期</b>：2024-03-10</p>
-        <p><b>事前審查藥品使用頻率及服用時間</b>：每4週的第1天、每4週的第2天、每4週的第3天、每4週的第4天、每4週的第5天、飯前1小時使用<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"ValueSet-medication-frequency-hl7-nhi.html\">HL7 TimingAbbreviation + 臺灣健保署藥品使用頻率值集</a>#Q4WD1、#Q4WD2、#Q4WD3、#Q4WD4、#Q4WD5、#AC1H)</span></p>
+        <p><b>事前審查藥品使用頻率及服用時間</b>：每4週的第1天、每4週的第2天、每4週的第3天、每4週的第4天、每4週的第5天、飯前1小時使用<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/ValueSet/medication-frequency-hl7-nhi\">HL7 TimingAbbreviation + 臺灣健保署藥品使用頻率值集</a>#Q4WD1、#Q4WD2、#Q4WD3、#Q4WD4、#Q4WD5、#AC1H)</span></p>
         <p><b>事前審查藥品每次處方劑量</b>：150 mg/m2</p>
         <p><b>事前審查藥品療程／週期數</b>：1</p>
         <p><b>給藥途徑／作用部位</b>：Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://snomed.info/sct/\">SNOMED CT + 臺灣健保署給藥途徑值集</a>#26643006)</span></p>
@@ -902,7 +902,7 @@ Usage: #inline
     <p><b>病人</b>：<a href=\"Bundle-bun-self.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <p><b>事前審查藥物預定處方起始日期</b>：2024-03-11</p>
     <p><b>事前審查藥物預定處方終止日期</b>：2024-07-28</p>
-    <p><b>事前審查藥品使用頻率及服用時間</b>：每4週的第1天、每4週的第2天、每4週的第3天、每4週的第4天、每4週的第5天、飯前1小時使用<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"ValueSet-medication-frequency-hl7-nhi.html\">HL7 TimingAbbreviation + 臺灣健保署藥品使用頻率值集</a>#Q4WD1、#Q4WD2、#Q4WD3、#Q4WD4、#Q4WD5、#AC1H)</span></p>
+    <p><b>事前審查藥品使用頻率及服用時間</b>：每4週的第1天、每4週的第2天、每4週的第3天、每4週的第4天、每4週的第5天、飯前1小時使用<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/ValueSet/medication-frequency-hl7-nhi\">HL7 TimingAbbreviation + 臺灣健保署藥品使用頻率值集</a>#Q4WD1、#Q4WD2、#Q4WD3、#Q4WD4、#Q4WD5、#AC1H)</span></p>
     <p><b>事前審查藥品每次處方劑量</b>：200 mg/m2</p>
     <p><b>事前審查藥品療程／週期數</b>：1</p>
     <p><b>給藥途徑／作用部位</b>：Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://snomed.info/sct/\">SNOMED CT + 臺灣健保署給藥途徑值集</a>#26643006)</span></p>

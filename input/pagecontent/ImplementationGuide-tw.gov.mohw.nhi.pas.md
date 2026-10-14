@@ -14,21 +14,21 @@
 - [XML](ImplementationGuide-tw.gov.mohw.nhi.pas.xml)
 - [JSON](ImplementationGuide-tw.gov.mohw.nhi.pas.json)
 
-#### Cross Version Analysis
+### Cross Version Analysis
 
 {% capture cross-version-analysis %}{% include cross-version-analysis.xhtml %}{% endcapture %}{{ cross-version-analysis | remove: '<p>' | remove: '</p>'}}
 
-#### IG Dependencies
+### IG Dependencies
 
 This IG Contains the following dependencies on other IGs.
 
 {% include dependency-table.xhtml %}
 
-#### Global Profiles
+### Global Profiles
 
 {% include globals-table.xhtml %}
 
-#### Copyrights
+### Copyrights
 
 {% capture ip-statement %}{% include ip-statements.xhtml %}{% endcapture %}
 
