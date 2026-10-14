@@ -29,7 +29,7 @@ Description:    "此檢查報告-DiagnosticReport TWPAS Profile說明本IG如何
 //* presentedForm.title = "病理報告"
 * category 1..1
 * category.coding 1..1
-* category = NHIPASSupportingInfoType#examinationReport
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#examinationReport
 * conclusion 1..1 MS
 //* conclusion obeys pas-2
 * presentedForm obeys UploadContent

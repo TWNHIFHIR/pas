@@ -11,7 +11,7 @@ Description:    "此文件參照-DocumentReference TWPAS Profile說明本IG如�
 * category 1..1
 * category.coding 1..1
 * category.coding.code 1..1
-* category from NHIPDFType
+* category from https://fhir.nhi.gov.tw/nhi_tsfhir/ValueSet/nhi-pdf-type
 * content.attachment MS 
 //* content.attachment.data 0..1
 * content.attachment.url 1..1 MS

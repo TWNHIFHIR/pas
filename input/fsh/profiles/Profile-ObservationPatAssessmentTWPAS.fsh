@@ -17,7 +17,7 @@ Description:    "此病人狀態評估-Observation Patient Assessment TWPAS Prof
 * code.coding.system 1..1
 * category 1..1
 * category ^short = "因設計而須必填。"
-* category = NHIPASSupportingInfoType#patientAssessment
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#patientAssessment
 * value[x] MS
 * value[x] only string or Quantity
 * performer 1..1 MS

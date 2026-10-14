@@ -7,13 +7,13 @@ Usage: #example
 * extension[encounter].valueReference.reference = "Encounter/enc-min"
 * status = http://hl7.org/fhir/fm-status#active
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
-* subType = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-apply-type#1 "送核"
+* subType = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-apply-type#1 "送核"
 * use = http://hl7.org/fhir/claim-use#preauthorization
 * patient.reference = "Patient/pat-min"
 * created = "2024-05-30"
 * enterer.reference = "Practitioner/pra-min"
 * provider.reference = "Organization/org-hosp-example"
-* priority = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-tmhb-type#1 "一般事前審查申請"
+* priority = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-tmhb-type#1 "一般事前審查申請"
 * supportingInfo[weight].sequence = 1
 * supportingInfo[weight].valueQuantity.value = 59.65
 * supportingInfo[weight].valueQuantity.code = #kg
@@ -71,7 +71,7 @@ Usage: #example
 * item[=].extension[requestedService].valueReference.reference = "MedicationRequest/medReq-apply-2" 
 * item[=].modifier[continuation] = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-continuation-status#1 "初次使用"
 * item[=].modifier[lot] = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-line-of-therapy#1 "第一線治療"
-* item[=].programCode.coding = NHIApplyReason#C50P1
+* item[=].programCode.coding = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-apply-reason#C50P1
 * item[=].quantity.value = 70
 * item[=].quantity.code = #{tbl}
 * item[=].quantity.system = "http://unitsofmeasure.org"
@@ -86,103 +86,103 @@ Usage: #example
     <p><b>狀態</b>：Active</p>
     <p><b>類型</b>：Institutional<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/CodeSystem/claim-type\">ClaimTypeCodes</a>#institutional)</span></p>
     <p><b>就醫科別</b>：<a href=\"Encounter-enc-min.html\">Encounter/enc-min</a> &quot;胸腔暨重症加護&quot;</p>
-    <p><b>申報類別</b>：送核<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-apply-type.html\">NHI-申報類別值集</a>#1)</span></p>
+    <p><b>申報類別</b>：送核<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-apply-type\">NHI-申報類別值集</a>#1)</span></p>
     <p><b>目的</b>：Preauthorization</p>
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a> &quot;王大明&quot;</p>
     <p><b>申請日期</b>：2024-05-30</p>
     <p><b>申請醫師</b>：<a href=\"Practitioner-pra-min.html\">Practitioner/pra-min</a></p>
     <p><b>醫事機構代碼</b>：<a href=\"Organization-org-hosp-example.html\">Organization/org-hosp-example</a></p>
-    <p><b>申請案件類別</b>：一般事前審查申請<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-tmhb-type.html\">NHI-申請案件類別值集</a>#1)</span></p>
+    <p><b>申請案件類別</b>：一般事前審查申請<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-tmhb-type\">NHI-申請案件類別值集</a>#1)</span></p>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：1</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type weight}\">病人體重</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type weight}\">病人體重</span></p>
         <p><b>value</b>：59.65 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM codekg = 'kg')</span>
         </p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：2</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type height}\">病人身高</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type height}\">病人身高</span></p>
         <p><b>value</b>：170 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM codecm = 'cm')</span>
         </p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：3</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type pregnancyBreastfeedingStatus}\">是否懷孕或哺乳</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type pregnancyBreastfeedingStatus}\">是否懷孕或哺乳</span></p>
         <p><b>value</b>：false</p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：4</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type imagingReport}\">影像報告</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type imagingReport}\">影像報告</span></p>
         <p><b>value</b>：<a href=\"DiagnosticReport-diaRep-ima-min.html\">DiagnosticReport/diaRep-ima-min</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：5</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type cancerStage}\">癌症分期量表</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type cancerStage}\">癌症分期量表</span></p>
         <p><b>value</b>：<a href=\"Observation-obs-cancer-figo.html\">Observation/obs-cancer-figo</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：6</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type examinationReport}\">檢查報告</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type examinationReport}\">檢查報告</span></p>
         <p><b>value</b>：<a href=\"DiagnosticReport-diaRep-min.html\">DiagnosticReport/diaRep-min</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：7</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type geneInfo}\">基因資訊</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type geneInfo}\">基因資訊</span></p>
         <p><b>value</b>：<a href=\"Observation-obs-diagnostic-min.html\">Observation/obs-diagnostic-min</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：8</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type tests}\">檢驗檢查-單項</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type tests}\">檢驗檢查-單項</span></p>
         <p><b>value</b>：<a href=\"Observation-obs-lab-min.html\">Observation/obs-lab-min</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：9</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type tests}\">檢驗檢查-套組(全套血液檢查)</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type tests}\">檢驗檢查-套組(全套血液檢查)</span></p>
         <p><b>value</b>：<a href=\"Observation-obs-lab-cbc.html\">Observation/obs-lab-cbc</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：10</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type patientAssessment}\">病人狀態評估</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type patientAssessment}\">病人狀態評估</span></p>
         <p><b>value</b>：<a href=\"Observation-obs-pat-nyha.html\">Observation/obs-pat-nyha</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：11</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type medicationRequest}\">用藥品項</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type medicationRequest}\">用藥品項</span></p>
         <p><b>value</b>：<a href=\"MedicationRequest-medReq-treat.html\">MedicationRequest/medReq-treat</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：12</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type radiotherapy}\">放射治療</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type radiotherapy}\">放射治療</span></p>
         <p><b>value</b>：<a href=\"Procedure-pro-min.html\">Procedure/pro-min</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：13</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type carePlanDocument}\">治療計畫文件</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type carePlanDocument}\">治療計畫文件</span></p>
         <p><b>value</b>：<a href=\"DocumentReference-doc-careplan-min.html\">DocumentReference/doc-careplan-min</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：14</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type medicalRecord}\">病歷資料</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type medicalRecord}\">病歷資料</span></p>
         <p><b>value</b>：<a href=\"DocumentReference-doc-medicalRecord-min.html\">DocumentReference/doc-medicalRecord-min</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：15</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type treatmentAssessment}\">結果資訊</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type treatmentAssessment}\">結果資訊</span></p>
         <p><b>value</b>：<a href=\"Observation-obs-tx-min.html\">Observation/obs-tx-min</a></p>
     </blockquote>
     <h3>Diagnoses</h3>
@@ -210,7 +210,7 @@ Usage: #example
         <p><b>醫令類別</b>：藥品<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-order-type.html\">NHI-健保事前審查-醫令類別值集</a>#1)</span></p>
         <p><b>續用註記</b>：初次使用<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-continuation-status.html\">NHI-續用註記值集</a>#1)</span></p>
         <p><b>用藥線別</b>：第一線治療<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-line-of-therapy.html\">NHI-用藥線別值集</a>#1)</span></p>
-        <p><b>給付適應症</b>：C50P1<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-apply-reason.html\">NHI-給付適應症值集</a>#C50P1)</span></p>
+        <p><b>給付適應症</b>：C50P1<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-apply-reason\">NHI-給付適應症值集</a>#C50P1)</span></p>
     </blockquote>    
 </div>"
 
@@ -224,13 +224,13 @@ Usage: #example
 * identifier[old_acpt_no].value = "202405301000002"
 * status = http://hl7.org/fhir/fm-status#active
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
-* subType = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-apply-type#3 "申復"
+* subType = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-apply-type#3 "申復"
 * use = http://hl7.org/fhir/claim-use#preauthorization
 * patient.reference = "Patient/pat-min"
 * created = "2024-05-30"
 * enterer.reference = "Practitioner/pra-min"
 * provider.reference = "Organization/org-hosp-example"
-* priority = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-tmhb-type#1 "一般事前審查申請"
+* priority = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-tmhb-type#1 "一般事前審查申請"
 * supportingInfo[weight].sequence = 1
 * supportingInfo[weight].valueQuantity.value = 59.65
 * supportingInfo[weight].valueQuantity.code = #kg
@@ -277,7 +277,7 @@ Usage: #example
 * item.sequence = 1
 * item.productOrService = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-order-type#1 "藥品"
 * item.extension[requestedService].valueReference.reference = "MedicationRequest/medReq-apply-2" 
-* item.programCode.coding = NHIApplyReason#C50P1
+* item.programCode.coding = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-apply-reason#C50P1
 * item.modifier[continuation] = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-continuation-status#1 "初次使用"
 * item.modifier[lot] = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-line-of-therapy#1 "第一線治療"
 * item.quantity.value = 70
@@ -296,97 +296,97 @@ Usage: #example
     <p><b>就醫科別</b>：<a href=\"Encounter-enc-min.html\">Encounter/enc-min</a> &quot;胸腔暨重症加護&quot;</p>
     <p><b>原始檔名</b>：FHR3501200000_2016101000000001.JSON</p>
     <p><b>原受理編號</b>：202405301000002</p>
-    <p><b>申報類別</b>：申復<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-apply-type.html\">NHI-申報類別值集</a>#3)</span></p>
+    <p><b>申報類別</b>：申復<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-apply-type\">NHI-申報類別值集</a>#3)</span></p>
     <p><b>目的</b>：Preauthorization</p>
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a> &quot;王大明&quot;</p>
     <p><b>申請日期</b>：2024-05-30</p>
     <p><b>申請醫師</b>：<a href=\"Practitioner-pra-min.html\">Practitioner/pra-min</a></p>
     <p><b>醫事機構代碼</b>：<a href=\"Organization-org-hosp-example.html\">Organization/org-hosp-example</a></p>
-    <p><b>申請案件類別</b>：一般事前審查申請<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-tmhb-type.html\">NHI-申請案件類別值集</a>#1)</span></p>
+    <p><b>申請案件類別</b>：一般事前審查申請<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-tmhb-type\">NHI-申請案件類別值集</a>#1)</span></p>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：1</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type weight}\">病人體重</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type weight}\">病人體重</span></p>
         <p><b>value</b>：59.65 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM codekg = 'kg')</span>
         </p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：2</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type height}\">病人身高</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type height}\">病人身高</span></p>
         <p><b>value</b>：170 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM codecm = 'cm')</span>
         </p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：3</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type pregnancyBreastfeedingStatus}\">是否懷孕或哺乳</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type pregnancyBreastfeedingStatus}\">是否懷孕或哺乳</span></p>
         <p><b>value</b>：false</p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：4</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type imagingReport}\">影像報告</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type imagingReport}\">影像報告</span></p>
         <p><b>value</b>：<a href=\"DiagnosticReport-diaRep-ima-min.html\">DiagnosticReport/diaRep-ima-min</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：5</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type cancerStage}\">癌症分期量表</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type cancerStage}\">癌症分期量表</span></p>
         <p><b>value</b>：<a href=\"Observation-obs-cancer-figo.html\">Observation/obs-cancer-figo</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：6</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type examinationReport}\">檢查報告</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type examinationReport}\">檢查報告</span></p>
         <p><b>value</b>：<a href=\"DiagnosticReport-diaRep-min.html\">DiagnosticReport/diaRep-min</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：7</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type geneInfo}\">基因資訊</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type geneInfo}\">基因資訊</span></p>
         <p><b>value</b>：<a href=\"Observation-obs-diagnostic-min.html\">Observation/obs-diagnostic-min</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：8</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type tests}\">檢驗(查)</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type tests}\">檢驗(查)</span></p>
         <p><b>value</b>：<a href=\"Observation-obs-lab-min.html\">Observation/obs-lab-min</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：9</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type patientAssessment}\">病人狀態評估</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type patientAssessment}\">病人狀態評估</span></p>
         <p><b>value</b>：<a href=\"Observation-obs-pat-nyha.html\">Observation/obs-pat-nyha</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：10</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type medicationRequest}\">用藥品項</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type medicationRequest}\">用藥品項</span></p>
         <p><b>value</b>：<a href=\"MedicationRequest-medReq-treat.html\">MedicationRequest/medReq-treat</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：11</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type radiotherapy}\">放射治療</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type radiotherapy}\">放射治療</span></p>
         <p><b>value</b>：<a href=\"Procedure-pro-min.html\">Procedure/pro-min</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：12</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type carePlanDocument}\">治療計畫文件</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type carePlanDocument}\">治療計畫文件</span></p>
         <p><b>value</b>：<a href=\"DocumentReference-doc-careplan-min.html\">DocumentReference/doc-careplan-min</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：13</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type medicalRecord}\">病歷資料</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type medicalRecord}\">病歷資料</span></p>
         <p><b>value</b>：<a href=\"DocumentReference-doc-medicalRecord-min.html\">DocumentReference/doc-medicalRecord-min</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：14</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type treatmentAssessment}\">結果資訊</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type treatmentAssessment}\">結果資訊</span></p>
         <p><b>value</b>：<a href=\"Observation-obs-tx-min.html\">Observation/obs-tx-min</a></p>
     </blockquote>
     <h3>Diagnoses</h3>
@@ -406,5 +406,5 @@ Usage: #example
     <p><b>醫令類別</b>：藥品<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-order-type.html\">NHI-健保事前審查-醫令類別值集</a>#1)</span></p>
     <p><b>續用註記</b>：初次使用<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-continuation-status.html\">NHI-續用註記值集</a>#1)</span></p>
     <p><b>用藥線別</b>：第一線治療<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-line-of-therapy.html\">NHI-用藥線別值集</a>#1)</span></p>
-    <p><b>給付適應症</b>：C50P1<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-apply-reason.html\">NHI-給付適應症值集</a>#C50P1)</span></p>
+    <p><b>給付適應症</b>：C50P1<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-apply-reason\">NHI-給付適應症值集</a>#C50P1)</span></p>
 </div>"

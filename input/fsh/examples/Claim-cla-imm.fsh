@@ -6,13 +6,13 @@ Usage: #example
 * extension[encounter].valueReference.reference = "Encounter/enc-min"
 * status = http://hl7.org/fhir/fm-status#active
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
-* subType = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-apply-type#1 "送核"
+* subType = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-apply-type#1 "送核"
 * use = http://hl7.org/fhir/claim-use#preauthorization
 * patient.reference = "Patient/pat-min"
 * created = "2024-05-30"
 * enterer.reference = "Practitioner/pra-min"
 * provider.reference = "Organization/org-hosp-example"
-* priority = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-tmhb-type#1 "一般事前審查申請"
+* priority = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-tmhb-type#1 "一般事前審查申請"
 * supportingInfo[weight].sequence = 1
 * supportingInfo[weight].valueQuantity.value = 59.65
 * supportingInfo[weight].valueQuantity.code = #kg
@@ -72,7 +72,7 @@ Usage: #example
 * item[=].extension[requestedService].valueReference.reference = "MedicationRequest/medReq-apply-2" 
 * item[=].modifier[continuation] = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-continuation-status#1 "初次使用"
 * item[=].modifier[lot] = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-line-of-therapy#1 "第一線治療"
-* item[=].programCode.coding = NHIApplyReason#C50P1
+* item[=].programCode.coding = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-apply-reason#C50P1
 * item[=].quantity.value = 70
 * item[=].quantity.code = #{tbl}
 * item[=].quantity.system = "http://unitsofmeasure.org"

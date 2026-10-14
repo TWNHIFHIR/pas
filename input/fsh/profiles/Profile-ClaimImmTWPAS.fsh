@@ -31,15 +31,15 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * provider only Reference(OrganizationTWPAS)
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
 * subType 1..1
-* subType from NHIApplyType
+* subType from https://fhir.nhi.gov.tw/nhi_tsfhir/ValueSet/nhi-apply-type
 * subType.coding 1..1
 * subType.coding.system 1..1
-* subType.coding.system = "https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-apply-type"
+* subType.coding.system = "https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-apply-type"
 * subType.coding.code 1..1
 * subType.coding.code ^short = "申報類別，1:送核 | 2:送核補件 | 3:申復 | 4:爭議審議 | 5:申復補件 。當申報類別為2(送核補件)、3(申復)、4(爭議審議)、5(申復補件)時，院所才需於Claim.identifier填寫原送核案件之受理編號。"
 * enterer 1..1
 * enterer only Reference(PractitionerTWPAS)
-* priority from NHITMHBType
+* priority from https://fhir.nhi.gov.tw/nhi_tsfhir/ValueSet/nhi-tmhb-type
 * status = http://hl7.org/fhir/fm-status#active
 * use = http://hl7.org/fhir/claim-use#preauthorization
 * patient only Reference(PatientTWPAS)
@@ -69,7 +69,7 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * supportingInfo ^slicing.discriminator.type = #value
 * supportingInfo ^slicing.discriminator.path = "category"
 * supportingInfo ^slicing.rules = #closed
-* supportingInfo.category from NHIPASSupportingInfoType
+* supportingInfo.category from https://fhir.nhi.gov.tw/nhi_tsfhir/ValueSet/nhi-supporting-info-type
 * supportingInfo contains
     weight 1..1 and
     height 1..1 and
@@ -91,28 +91,28 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
     allergy 0..*
 
 * supportingInfo[allergy] ^short = "過敏史"
-* supportingInfo[allergy].category = NHIPASSupportingInfoType#allergy
+* supportingInfo[allergy].category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#allergy
 * supportingInfo[allergy].timing[x] ..0
 * supportingInfo[allergy].value[x] 1.. MS
 * supportingInfo[allergy].value[x] only Reference(AllergyIntoleranceTWPAS)
 * supportingInfo[allergy].valueReference ^short = "過敏史"
 
 * supportingInfo[bloodgroup] ^short = "血型"
-* supportingInfo[bloodgroup].category = NHIPASSupportingInfoType#bloodgroup
+* supportingInfo[bloodgroup].category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#bloodgroup
 * supportingInfo[bloodgroup].timing[x] ..0
 * supportingInfo[bloodgroup].value[x] 1.. MS
 * supportingInfo[bloodgroup].value[x] only Reference(ObservationBloodGroupTWPAS)
 * supportingInfo[bloodgroup].valueReference ^short = "血型"
 
 * supportingInfo[opd] ^short = "門診病歷"
-* supportingInfo[opd].category = NHIPASSupportingInfoType#opd
+* supportingInfo[opd].category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#opd
 * supportingInfo[opd].timing[x] ..0
 * supportingInfo[opd].value[x] 1.. MS
 * supportingInfo[opd].value[x] only Reference(CompositionOpdTWPAS)
 * supportingInfo[opd].valueReference ^short = "門診病歷"
 
 * supportingInfo[weight] ^short = "病人體重"
-* supportingInfo[weight].category = NHIPASSupportingInfoType#weight
+* supportingInfo[weight].category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#weight
 * supportingInfo[weight].timing[x] ..0
 * supportingInfo[weight].value[x] 1.. MS
 * supportingInfo[weight].value[x] only Quantity
@@ -123,7 +123,7 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * supportingInfo[weight].valueQuantity.code 1..
 
 * supportingInfo[height] ^short = "病人身高"
-* supportingInfo[height].category = NHIPASSupportingInfoType#height
+* supportingInfo[height].category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#height
 * supportingInfo[height].timing[x] ..0
 * supportingInfo[height].value[x] 1.. MS
 * supportingInfo[height].value[x] only Quantity
@@ -134,49 +134,49 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * supportingInfo[height].valueQuantity.code 1..
 
 * supportingInfo[pregnancy] ^short = "是否懷孕或哺乳"
-* supportingInfo[pregnancy].category = NHIPASSupportingInfoType#pregnancyBreastfeedingStatus
+* supportingInfo[pregnancy].category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#pregnancyBreastfeedingStatus
 * supportingInfo[pregnancy].timing[x] ..0
 * supportingInfo[pregnancy].value[x] 1.. MS
 * supportingInfo[pregnancy].value[x] only boolean
 
 * supportingInfo[imagingReport] ^short = "影像報告"
-* supportingInfo[imagingReport].category = NHIPASSupportingInfoType#imagingReport
+* supportingInfo[imagingReport].category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#imagingReport
 * supportingInfo[imagingReport].timing[x] ..0
 * supportingInfo[imagingReport].value[x] 1.. MS
 * supportingInfo[imagingReport].value[x] only Reference(DiagnosticReportImageTWPAS)
 
 * supportingInfo[cancerStage] ^short = "癌症分期量表"
-* supportingInfo[cancerStage].category = NHIPASSupportingInfoType#cancerStage
+* supportingInfo[cancerStage].category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#cancerStage
 * supportingInfo[cancerStage].timing[x] ..0
 * supportingInfo[cancerStage].value[x] 1.. MS
 * supportingInfo[cancerStage].value[x] only Reference(ObservationCancerStageTWPAS)
 
 * supportingInfo[examinationReport] ^short = "檢查報告"
-* supportingInfo[examinationReport].category = NHIPASSupportingInfoType#examinationReport
+* supportingInfo[examinationReport].category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#examinationReport
 * supportingInfo[examinationReport].timing[x] ..0
 * supportingInfo[examinationReport].value[x] 1.. MS
 * supportingInfo[examinationReport].value[x] only Reference(DiagnosticReportTWPAS)
 
 * supportingInfo[geneInfo] ^short = "基因資訊"
-* supportingInfo[geneInfo].category = NHIPASSupportingInfoType#geneInfo
+* supportingInfo[geneInfo].category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#geneInfo
 * supportingInfo[geneInfo].timing[x] ..0
 * supportingInfo[geneInfo].value[x] 1.. MS
 * supportingInfo[geneInfo].value[x] only Reference(ObservationDiagnosticTWPAS)
 
 * supportingInfo[tests] ^short = "檢驗(查)"
-* supportingInfo[tests].category = NHIPASSupportingInfoType#tests
+* supportingInfo[tests].category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#tests
 * supportingInfo[tests].timing[x] ..0
 * supportingInfo[tests].value[x] 1.. MS
 * supportingInfo[tests].value[x] only Reference(ObservationLaboratoryResultTWPAS)
 
 * supportingInfo[patientAssessment] ^short = "病人狀態評估"
-* supportingInfo[patientAssessment].category = NHIPASSupportingInfoType#patientAssessment
+* supportingInfo[patientAssessment].category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#patientAssessment
 * supportingInfo[patientAssessment].timing[x] ..0
 * supportingInfo[patientAssessment].value[x] 1.. MS
 * supportingInfo[patientAssessment].value[x] only Reference(ObservationPatientAssessmentTWPAS)
 
 * supportingInfo[medicationRequest] ^short = "用藥品項"
-* supportingInfo[medicationRequest].category = NHIPASSupportingInfoType#medicationRequest
+* supportingInfo[medicationRequest].category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#medicationRequest
 * supportingInfo[medicationRequest].timing[x] ..0
 * supportingInfo[medicationRequest].value[x] 1.. MS
 * supportingInfo[medicationRequest].value[x] only Reference(MedicationRequestTreatTWPAS)
@@ -185,31 +185,31 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
 * supportingInfo[medicationRequest].code ^short = "用藥線別，0:不適用 | 1:第一線治療 | 2:第二線治療 | 3:第三線治療 | 4:第四線治療 | 5:第五線治療"*/
 
 * supportingInfo[radiotherapy] ^short = "放射治療"
-* supportingInfo[radiotherapy].category = NHIPASSupportingInfoType#radiotherapy
+* supportingInfo[radiotherapy].category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#radiotherapy
 * supportingInfo[radiotherapy].timing[x] ..0
 * supportingInfo[radiotherapy].value[x] 1.. MS
 * supportingInfo[radiotherapy].value[x] only Reference(ProcedureTWPAS)
 
 * supportingInfo[phototherapy] ^short = "照光治療"
-* supportingInfo[phototherapy].category = NHIPASSupportingInfoType#phototherapy
+* supportingInfo[phototherapy].category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#phototherapy
 * supportingInfo[phototherapy].timing[x] ..0
 * supportingInfo[phototherapy].value[x] 1.. MS
 * supportingInfo[phototherapy].value[x] only Reference(ProcedurePhototherapyTWPAS)
 
 * supportingInfo[carePlanDocument] ^short = "治療計畫文件，P-IO(免疫檢查點抑制劑治療計畫)、P-CART(CAR-T多團隊會議紀錄)、P-STEMCELL(造血幹細胞移植計畫書)，附件形式PDF"
-* supportingInfo[carePlanDocument].category = NHIPASSupportingInfoType#carePlanDocument
+* supportingInfo[carePlanDocument].category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#carePlanDocument
 * supportingInfo[carePlanDocument].timing[x] ..0
 * supportingInfo[carePlanDocument].value[x] 1.. MS
 * supportingInfo[carePlanDocument].value[x] only Reference(DocumentReferenceTWPAS)
 
 * supportingInfo[medicalRecord] ^short = "病歷資料（非屬影像報告檢查驗報告部分），可檢附其他佐證癌藥治療必要性之非結構化病歷。"
-* supportingInfo[medicalRecord].category = NHIPASSupportingInfoType#medicalRecord
+* supportingInfo[medicalRecord].category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#medicalRecord
 * supportingInfo[medicalRecord].timing[x] ..0
 * supportingInfo[medicalRecord].value[x] 1.. MS
 * supportingInfo[medicalRecord].value[x] only Reference(DocumentReferenceTWPAS)
 
 * supportingInfo[treatmentAssessment] ^short = "結果資訊"
-* supportingInfo[treatmentAssessment].category = NHIPASSupportingInfoType#treatmentAssessment
+* supportingInfo[treatmentAssessment].category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#treatmentAssessment
 * supportingInfo[treatmentAssessment].timing[x] ..0
 * supportingInfo[treatmentAssessment].value[x] 1.. MS
 * supportingInfo[treatmentAssessment].value[x] only Reference(ObservationTreatmentAssessmentTWPAS)
@@ -246,7 +246,7 @@ Description:    "此免疫製劑事前審查-Claim Immunologic Aagent TWPAS Prof
     https://nhicore.nhi.gov.tw/pas/StructureDefinition/extension-requestedService named requestedService 1..1 MS
 * item.programCode 1..1 MS
 * item.programCode.coding 0..1
-* item.programCode.coding from NHIApplyReason
+* item.programCode.coding from https://fhir.nhi.gov.tw/nhi_tsfhir/ValueSet/nhi-apply-reason
 * item.programCode ^condition[0] = "applyReason-1"
 * item.programCode ^condition[1] = "applyReason-2"
 * item.programCode ^condition[2] = "applyReason-3"

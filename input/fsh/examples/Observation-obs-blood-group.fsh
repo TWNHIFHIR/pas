@@ -5,7 +5,7 @@ Description: "依據血型-Observation Blood Group TWPAS Profile呈現血型之�
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code.coding = http://loinc.org#882-1
-* category = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type#bloodgroup
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#bloodgroup
 * effectiveDateTime = "2024-05-07"
 * subject.reference = "Patient/pat-min"
 * valueCodeableConcept = http://snomed.info/sct#112144000
@@ -15,7 +15,7 @@ Usage: #example
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-diagnostic-twpas.html\">基因資訊-Observation Diagnostic TWPAS</a></p>
     </div>
     <p><b>狀態</b>：final</p>
-    <p><b>類型</b>：基因資訊<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-supporting-info-type.html/\">NHI-補充資訊類別值集</a>#geneInfo)</span></p>
+    <p><b>類型</b>：基因資訊<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type/\">NHI-補充資訊類別值集</a>#geneInfo)</span></p>
     <p><b>code</b>：Genetic variant assessment<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINC</a>#69548-6)</span></p>
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a></p>
     <p><b>基因檢測日期</b>：2024-05-07</p>

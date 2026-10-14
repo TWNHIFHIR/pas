@@ -108,13 +108,13 @@ Usage: #inline
 * extension[encounter].valueReference.reference = "urn:uuid:9726648a-dd47-431b-a677-3d5e9250d84c"
 * status = http://hl7.org/fhir/fm-status#active
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
-* subType = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-apply-type#1 "送核"
+* subType = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-apply-type#1 "送核"
 * use = http://hl7.org/fhir/claim-use#preauthorization
 * patient.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * created = "2024-05-30"
 * enterer.reference = "urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020"
 * provider.reference = "urn:uuid:fd1af332-b353-46e6-9a5f-3eec6ac9d9ff"
-* priority = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-tmhb-type#3 "自主審查"
+* priority = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-tmhb-type#3 "自主審查"
 * supportingInfo[weight].sequence = 1
 * supportingInfo[weight].valueQuantity.value = 59.65
 * supportingInfo[weight].valueQuantity.code = #kg
@@ -176,7 +176,7 @@ Usage: #inline
 * item[=].extension[requestedService].valueReference.reference = "urn:uuid:de63572a-412b-4004-8fd6-93612a22e673" 
 * item[=].modifier[continuation] = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-continuation-status#1 "初次使用"
 * item[=].modifier[lot] = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-line-of-therapy#1 "第一線治療"
-* item[=].programCode.coding = NHIApplyReason#C50P2
+* item[=].programCode.coding = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-apply-reason#C50P2
 * item[=].quantity.value = 70
 * item[=].quantity.code = #{tbl}
 * item[=].quantity.system = "http://unitsofmeasure.org"
@@ -193,115 +193,115 @@ Usage: #inline
     <p><b>就醫科別</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-9726648a-dd47-431b-a677-3d5e9250d84c\">urn:uuid:9726648a-dd47-431b-a677-3d5e9250d84c</a> &quot;胸腔暨重症加護&quot;</p>
     <p><b>原始檔名</b>：FHR3501200000_2024080300000001.JSON</p>
     <p><b>原受理編號</b>：20240831010109051701</p>
-    <p><b>申報類別</b>：送核<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-apply-type.html\">NHI-申報類別值集</a>#1)</span></p>
+    <p><b>申報類別</b>：送核<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-apply-type\">NHI-申報類別值集</a>#1)</span></p>
     <p><b>目的</b>：Preauthorization</p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <p><b>申請日期</b>：2024-05-30</p>
     <p><b>申請醫師</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
     <p><b>醫事機構代碼</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-fd1af332-b353-46e6-9a5f-3eec6ac9d9ff\">urn:uuid:fd1af332-b353-46e6-9a5f-3eec6ac9d9ff</a></p>
-    <p><b>申請案件類別</b>：自主審查<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-tmhb-type.html\">NHI-申請案件類別值集</a>#3)</span></p>
+    <p><b>申請案件類別</b>：自主審查<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-tmhb-type\">NHI-申請案件類別值集</a>#3)</span></p>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：1</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type weight}\">病人體重</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type weight}\">病人體重</span></p>
         <p><b>value</b>：59.65 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM codekg = 'kg')</span>
         </p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：2</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type height}\">病人身高</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type height}\">病人身高</span></p>
         <p><b>value</b>：170 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM codecm = 'cm')</span>
         </p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：3</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type pregnancyBreastfeedingStatus}\">是否懷孕或哺乳</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type pregnancyBreastfeedingStatus}\">是否懷孕或哺乳</span></p>
         <p><b>value</b>：false</p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：4</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type imagingReport}\">影像報告</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type imagingReport}\">影像報告</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-75f8540e-ace9-47d4-afd8-0a3ec81ad656\">urn:uuid:75f8540e-ace9-47d4-afd8-0a3ec81ad656</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：5</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type imagingReport}\">影像報告</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type imagingReport}\">影像報告</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-e13ae26f-836f-402b-a40f-b2c19dd1dc06\">urn:uuid:e13ae26f-836f-402b-a40f-b2c19dd1dc06</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：6</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type imagingReport}\">影像報告</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type imagingReport}\">影像報告</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-fd9d86d3-df40-45a9-a636-4f5b1710e1c5\">urn:uuid:fd9d86d3-df40-45a9-a636-4f5b1710e1c5</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：7</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type cancerStage}\">癌症分期量表</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type cancerStage}\">癌症分期量表</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-2b42533e-3004-4f1d-abd1-c3e55fa9981f\">urn:uuid:2b42533e-3004-4f1d-abd1-c3e55fa9981f</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：8</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type examinationReport}\">檢查報告</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type examinationReport}\">檢查報告</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-96dd114f-c596-4dab-9483-a94300e37e20\">urn:uuid:96dd114f-c596-4dab-9483-a94300e37e20</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：9</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type geneInfo}\">基因資訊</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type geneInfo}\">基因資訊</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-a7f410d8-a646-4ec5-b32a-e4c50dd9db4c\">urn:uuid:a7f410d8-a646-4ec5-b32a-e4c50dd9db4c</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：10</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type tests}\">檢驗(查)</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type tests}\">檢驗(查)</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-e731f6b1-aac7-4b3f-9a72-1d71f25e664c\">urn:uuid:e731f6b1-aac7-4b3f-9a72-1d71f25e664c</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：11</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type tests}\">檢驗(查)</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type tests}\">檢驗(查)</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-e9dfe919-52dd-4691-96bf-1a3d244a30a3\">urn:uuid:e9dfe919-52dd-4691-96bf-1a3d244a30a3</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：12</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type patientAssessment}\">病人狀態評估</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type patientAssessment}\">病人狀態評估</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-f08b0bfb-d26b-4118-aa30-5abbd391f762\">urn:uuid:f08b0bfb-d26b-4118-aa30-5abbd391f762</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：13</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type medicationRequest}\">用藥品項</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type medicationRequest}\">用藥品項</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-da01d9f1-5945-46d8-b493-18a72a7976a0\">urn:uuid:da01d9f1-5945-46d8-b493-18a72a7976a0</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：14</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type radiotherapy}\">放射治療</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type radiotherapy}\">放射治療</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-0a37e990-e3ad-4b35-88c7-13b4283bdf10\">urn:uuid:0a37e990-e3ad-4b35-88c7-13b4283bdf10</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：15</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type carePlanDocument}\">治療計畫文件</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type carePlanDocument}\">治療計畫文件</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-3a625041-5d1f-4e98-81c1-dff54adcc110\">urn:uuid:3a625041-5d1f-4e98-81c1-dff54adcc110</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：16</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type medicalRecord}\">病歷資料</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type medicalRecord}\">病歷資料</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-931cd8ec-705b-4ac7-ad72-43728045f278\">urn:uuid:931cd8ec-705b-4ac7-ad72-43728045f278</a></p>
     </blockquote>
     <blockquote>
         <p><b>supportingInfo</b></p>
         <p><b>sequence</b>：17</p>
-        <p><b>category</b>：<span title=\"Codes:{https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type treatmentAssessment}\">結果資訊</span></p>
+        <p><b>category</b>：<span title=\"Codes:{https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type treatmentAssessment}\">結果資訊</span></p>
         <p><b>value</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-63cabc24-a403-4522-9226-1c96968590bd\">urn:uuid:63cabc24-a403-4522-9226-1c96968590bd</a></p>
     </blockquote>
     <h3>Diagnoses</h3>
@@ -329,7 +329,7 @@ Usage: #inline
         <p><b>醫令類別</b>：藥品<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-order-type.html\">NHI-健保事前審查-醫令類別值集</a>#1)</span></p>
         <p><b>續用註記</b>：初次使用<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-continuation-status.html\">NHI-續用註記值集</a>#1)</span></p>
         <p><b>用藥線別</b>：第一線治療<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-line-of-therapy.html\">NHI-用藥線別值集</a>#1)</span></p>
-        <p><b>給付適應症</b>：C50P2<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-apply-reason.html\">NHI-給付適應症值集</a>#C50P2)</span></p>
+        <p><b>給付適應症</b>：C50P2<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-apply-reason\">NHI-給付適應症值集</a>#C50P2)</span></p>
     </blockquote>    
 </div>"
 
@@ -472,7 +472,7 @@ Instance: inline-org-hosp
 InstanceOf: OrganizationTWPAS
 Usage: #inline
 * identifier.use = #official
-* identifier.system = "https://nhicore.nhi.gov.tw/pas/CodeSystem/organization-identifier-tw"
+* identifier.system = "https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/organization-identifier-tw"
 * identifier.value = "0101090517"
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN
 * type = http://terminology.hl7.org/CodeSystem/organization-type#prov
@@ -490,7 +490,7 @@ Usage: #inline
   </p>
   <p>
     <b>識別碼型別</b>：Provider number<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">（ <a href=\"http://terminology.hl7.org/CodeSystem/v2-0203\">IdentifierType</a>#PRN） </span>   <br/>
-    <b>機構代碼（official）</b>：0101090517 (https://nhicore.nhi.gov.tw/pas/CodeSystem/organization-identifier-tw)
+    <b>機構代碼（official）</b>：0101090517 (https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/organization-identifier-tw)
   </p>
   <p>
     <b>機構種類</b>：Healthcare Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">( <a href=\"http://hl7.org/fhir/R4/codesystem-organization-type.html\">OrganizationType</a>#prov) </span>
@@ -519,7 +519,7 @@ Instance: inline-diaRep-ima
 InstanceOf: DiagnosticReportImageTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/diagnostic-report-status#final
-* category = NHIPASSupportingInfoType#imagingReport
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#imagingReport
 * code.coding[TW2023ICD10PCS] = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw#B34JZZ3
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * effectiveDateTime = "2024-05-07"
@@ -544,7 +544,7 @@ Instance: inline-diaRep-ima-2
 InstanceOf: DiagnosticReportImageTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/diagnostic-report-status#final
-* category = NHIPASSupportingInfoType#imagingReport
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#imagingReport
 * code.coding[TW2023ICD10PCS] = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw#B34JZZZ
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * effectiveDateTime = "2024-05-07"
@@ -585,7 +585,7 @@ Title: "影像報告-使用LOINC代碼"
 Description: "依據影像報告-DiagnosticReport Image TWPAS Profile呈現外院報告無法對應ICD-10-PCS之影像報告之範例"
 Usage: #example
 * status = http://hl7.org/fhir/diagnostic-report-status#final
-* category = NHIPASSupportingInfoType#imagingReport
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#imagingReport
 * code.coding[LOINC] = http://loinc.org#18748-4
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * effectiveDateTime = "2024-05-07"
@@ -624,7 +624,7 @@ Instance: inline-diaRep
 InstanceOf: DiagnosticReportTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/diagnostic-report-status#final
-* category = NHIPASSupportingInfoType#examinationReport
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#examinationReport
 * code.coding = http://loinc.org#66117-3
 * code.text = "Prostate"
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
@@ -734,7 +734,7 @@ Usage: #inline
 Instance: inline-doc-gene
 InstanceOf: DocumentReferenceTWPAS
 Usage: #inline
-* category = NHIPDFType#gene
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type#gene
 * status = http://hl7.org/fhir/document-reference-status#current
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * content.attachment.contentType = #application/pdf
@@ -747,7 +747,7 @@ Usage: #inline
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReference-twpas.html\">文件參照-DocumentReference TWPAS</a></p>
     </div>
     <p><b>狀態</b>：current</p>
-    <p><b>報告類型</b>：基因報告 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pdf-type.html\">NHI-文件類型</a>#gene)</span></p>
+    <p><b>報告類型</b>：基因報告 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type\">NHI-文件類型</a>#gene)</span></p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <p><b>基因報告(application/pdf)</b>：file://GenReport01.pdf</p>
     <p><b>基因報告名稱</b>：GenReport01</p>
@@ -756,7 +756,7 @@ Usage: #inline
 Instance: inline-doc-careplan
 InstanceOf: DocumentReferenceTWPAS
 Usage: #inline
-* category = NHIPDFType#careplan
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type#careplan
 * status = http://hl7.org/fhir/document-reference-status#current
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * content.attachment.contentType = #application/pdf
@@ -769,7 +769,7 @@ Usage: #inline
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReference-twpas.html\">文件參照-DocumentReference TWPAS</a></p>
     </div>
     <p><b>狀態</b>：current</p>
-    <p><b>報告類型</b>：治療計畫文件 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pdf-type.html\">NHI-文件類型</a>#careplan)</span></p>
+    <p><b>報告類型</b>：治療計畫文件 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type\">NHI-文件類型</a>#careplan)</span></p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <p><b>治療計畫文件名稱</b>：免疫檢查點抑制劑治療計畫</p>
     <p><b>治療計畫文件 (application/pdf)</b>：file://CarePlanReport01.pdf</p>
@@ -778,7 +778,7 @@ Usage: #inline
 Instance: inline-doc-test
 InstanceOf: DocumentReferenceTWPAS
 Usage: #inline
-* category = NHIPDFType#test
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type#test
 * status = http://hl7.org/fhir/document-reference-status#current
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * content[0].attachment.contentType = #application/pdf
@@ -794,7 +794,7 @@ Usage: #inline
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReference-twpas.html\">文件參照-DocumentReference TWPAS</a></p>
     </div>
     <p><b>狀態</b>：current</p>
-    <p><b>報告類型</b>：檢驗(查)附件 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pdf-type.html\">NHI-文件類型</a>#test)</span></p>
+    <p><b>報告類型</b>：檢驗(查)附件 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type\">NHI-文件類型</a>#test)</span></p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <blockquote>
         <p><b>檢驗(查)附件 (application/pdf)</b>：file://TestReport01.pdf</p>
@@ -811,13 +811,13 @@ InstanceOf: MedicationRequestApplyTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/CodeSystem/medicationrequest-status#on-hold
 * intent = #plan
-* medicationCodeableConcept = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-medication#BC27730100
+* medicationCodeableConcept = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-medication#BC27730100
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * dosageInstruction[0].timing.repeat.boundsPeriod.start = "2024-01-01"
 * dosageInstruction[=].timing.repeat.boundsPeriod.end = "2024-02-11"
 * dosageInstruction[=].timing.repeat.count = 42
 * dosageInstruction[=].timing.code[0].coding[0] = http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation#QD
-* dosageInstruction[=].timing.code[=].coding[+] = https://nhicore.nhi.gov.tw/pas/CodeSystem/medication-frequency-nhi-tw#AC1H
+* dosageInstruction[=].timing.code[=].coding[+] = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/medication-frequency-nhi-tw#AC1H
 * dosageInstruction[=].doseAndRate.doseQuantity.value = 75
 * dosageInstruction[=].doseAndRate.doseQuantity.code = #mg/m2
 * dosageInstruction[=].doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
@@ -826,12 +826,12 @@ Usage: #inline
 * dosageInstruction[1].timing.repeat.boundsPeriod.start = "2024-02-12"
 * dosageInstruction[=].timing.repeat.boundsPeriod.end = "2024-03-10"
 * dosageInstruction[=].timing.repeat.count = 1
-* dosageInstruction[=].timing.code[0].coding[0] = https://nhicore.nhi.gov.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD1
-* dosageInstruction[=].timing.code[=].coding[+] = https://nhicore.nhi.gov.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD2
-* dosageInstruction[=].timing.code[=].coding[+] = https://nhicore.nhi.gov.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD3
-* dosageInstruction[=].timing.code[=].coding[+] = https://nhicore.nhi.gov.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD4
-* dosageInstruction[=].timing.code[=].coding[+] = https://nhicore.nhi.gov.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD5
-* dosageInstruction[=].timing.code[=].coding[+] = https://nhicore.nhi.gov.tw/pas/CodeSystem/medication-frequency-nhi-tw#AC1H
+* dosageInstruction[=].timing.code[0].coding[0] = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/medication-frequency-nhi-tw#Q4WD1
+* dosageInstruction[=].timing.code[=].coding[+] = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/medication-frequency-nhi-tw#Q4WD2
+* dosageInstruction[=].timing.code[=].coding[+] = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/medication-frequency-nhi-tw#Q4WD3
+* dosageInstruction[=].timing.code[=].coding[+] = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/medication-frequency-nhi-tw#Q4WD4
+* dosageInstruction[=].timing.code[=].coding[+] = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/medication-frequency-nhi-tw#Q4WD5
+* dosageInstruction[=].timing.code[=].coding[+] = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/medication-frequency-nhi-tw#AC1H
 * dosageInstruction[=].doseAndRate.doseQuantity.value = 150
 * dosageInstruction[=].doseAndRate.doseQuantity.code = #mg/m2
 * dosageInstruction[=].doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
@@ -845,7 +845,7 @@ Usage: #inline
     </div>
     <p><b>狀態</b>：On Hold</p>
     <p><b>目的</b>：Plan</p>
-    <p><b>事前審查品項代碼</b>：Alunbrig film-coated tablets 30mg<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-medication.html\">NHI-健保事前審查-用藥品項值集</a>#BC27730100)</span></p>
+    <p><b>事前審查品項代碼</b>：Alunbrig film-coated tablets 30mg<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-medication\">NHI-健保事前審查-用藥品項值集</a>#BC27730100)</span></p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <blockquote>
         <p><b>事前審查藥物預定處方起始日期</b>：2024-01-01</p>
@@ -870,17 +870,17 @@ InstanceOf: MedicationRequestApplyTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/CodeSystem/medicationrequest-status#on-hold
 * intent = #plan
-* medicationCodeableConcept = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-medication#KC009612B5
+* medicationCodeableConcept = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-medication#KC009612B5
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * dosageInstruction.timing.repeat.boundsPeriod.start = "2024-03-11"
 * dosageInstruction.timing.repeat.boundsPeriod.end = "2024-07-28"
 * dosageInstruction.timing.repeat.count = 1
-* dosageInstruction.timing.code[0].coding[0] = https://nhicore.nhi.gov.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD1
-* dosageInstruction.timing.code[=].coding[+] = https://nhicore.nhi.gov.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD2
-* dosageInstruction.timing.code[=].coding[+] = https://nhicore.nhi.gov.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD3
-* dosageInstruction.timing.code[=].coding[+] = https://nhicore.nhi.gov.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD4
-* dosageInstruction.timing.code[=].coding[+] = https://nhicore.nhi.gov.tw/pas/CodeSystem/medication-frequency-nhi-tw#Q4WD5
-* dosageInstruction.timing.code[=].coding[+] = https://nhicore.nhi.gov.tw/pas/CodeSystem/medication-frequency-nhi-tw#AC1H
+* dosageInstruction.timing.code[0].coding[0] = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/medication-frequency-nhi-tw#Q4WD1
+* dosageInstruction.timing.code[=].coding[+] = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/medication-frequency-nhi-tw#Q4WD2
+* dosageInstruction.timing.code[=].coding[+] = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/medication-frequency-nhi-tw#Q4WD3
+* dosageInstruction.timing.code[=].coding[+] = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/medication-frequency-nhi-tw#Q4WD4
+* dosageInstruction.timing.code[=].coding[+] = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/medication-frequency-nhi-tw#Q4WD5
+* dosageInstruction.timing.code[=].coding[+] = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/medication-frequency-nhi-tw#AC1H
 * dosageInstruction.route = http://snomed.info/sct#26643006
 * dosageInstruction.doseAndRate.doseQuantity.value = 200
 * dosageInstruction.doseAndRate.doseQuantity.code = #mg/m2
@@ -895,7 +895,7 @@ Usage: #inline
     </div>
     <p><b>狀態</b>：On Hold</p>
     <p><b>目的</b>：Plan</p>
-    <p><b>事前審查品項代碼</b>：TEMODAL CAPSULES 20MG <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-medication.html\">NHI-健保事前審查-用藥品項值集</a>#KC009612B5)</span></p>
+    <p><b>事前審查品項代碼</b>：TEMODAL CAPSULES 20MG <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-medication\">NHI-健保事前審查-用藥品項值集</a>#KC009612B5)</span></p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <p><b>事前審查藥物預定處方起始日期</b>：2024-03-11</p>
     <p><b>事前審查藥物預定處方終止日期</b>：2024-07-28</p>
@@ -913,7 +913,7 @@ Usage: #inline
 * statusReason = http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason#altchoice
 * intent = #order
 * category = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-drug-category#nhi
-* medicationCodeableConcept = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-medication#A000755151
+* medicationCodeableConcept = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-medication#A000755151
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * dosageInstruction.timing.code.text = "1W3D"
 * dosageInstruction.doseAndRate.doseQuantity.value = 4
@@ -934,7 +934,7 @@ Usage: #inline
     <p><b>藥物處方終止原因</b>：Try another treatment first <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://hl7.org/fhir/R4/codesystem-medicationrequest-status-reason.html\">MedicationRequest Status Reason Codes</a>#altchoice)</span></p>
     <p><b>意圖</b>：Order <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">( <a href=\"http://hl7.org/fhir/CodeSystem/medicationrequest-intent\">medicationRequest Intent</a>#order)</span></p>
     <p><b>自費註記</b>：健保 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-drug-category.html\">NHI-藥物類型</a>#nhi)</span></p>
-    <p><b>藥品代碼</b>：ANTI-CUGH SYRUP 60ML <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-medication.html\">NHI-健保事前審查-用藥品項值集</a>#A000755151)</span></p>
+    <p><b>藥品代碼</b>：ANTI-CUGH SYRUP 60ML <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-medication\">NHI-健保事前審查-用藥品項值集</a>#A000755151)</span></p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;&quot;</p>
     <p><b>藥品使用頻率及服用時間</b>：1W3D</p>
     <p><b>藥物每次處方劑量(單位)</b>：4 (tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://hl7.org/fhir/R4/valueset-ucum-common.html\">Common UCUM units</a>#{tbl})</span>)</p>
@@ -970,7 +970,7 @@ InstanceOf: ObservationDiagnosticTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
 * code.coding = http://loinc.org#69548-6
-* category = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type#geneInfo
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#geneInfo
 * effectiveDateTime = "2024-05-07"
 * performer.reference = "urn:uuid:41d0fbf1-850a-4c96-be9e-54ca2053c6b8"
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
@@ -988,7 +988,7 @@ Usage: #inline
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-diagnostic-twpas.html\">基因資訊-Observation Diagnostic TWPAS</a></p>
     </div>
     <p><b>狀態</b>：final</p>
-    <p><b>類型</b>：基因資訊<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-supporting-info-type.html/\">NHI-補充資訊類別值集</a>#geneInfo)</span></p>
+    <p><b>類型</b>：基因資訊<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type/\">NHI-補充資訊類別值集</a>#geneInfo)</span></p>
     <p><b>code</b>：Genetic variant assessment<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINC</a>#69548-6)</span></p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
     <p><b>基因檢測日期</b>：2024-05-07</p>
@@ -1021,7 +1021,7 @@ Usage: #inline
 * interpretation.text = "高"
 * referenceRange.low = 2.9 'mmol/L' "mmol/l"
 * referenceRange.high = 4.9 'mmol/L' "mmol/l"
-* category = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type#tests
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#tests
 * derivedFrom.reference = "urn:uuid:a1aa65c7-c464-41a5-aa1a-fe5cddf487cf"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
@@ -1029,7 +1029,7 @@ Usage: #inline
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-laboratory-result-twpas.html\">檢驗檢查-Observation Laboratory Result TWPAS</a></p>
     </div>
     <p><b>狀態</b>：final</p>
-    <p><b>類型</b>：檢驗(查)<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-supporting-info-type.html/\">NHI-補充資訊類別值集</a>#tests)</span></p>
+    <p><b>類型</b>：檢驗(查)<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type/\">NHI-補充資訊類別值集</a>#tests)</span></p>
     <p><b>檢驗(查)名稱</b>：Platelets [#/volume] in Blood by Automated count <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINCCodes</a>#777-3)</span></p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
     <p><b>檢驗(查)報告日期</b>：2024-01-01</p>
@@ -1045,7 +1045,7 @@ Instance: inline-obs-lab-cbc
 InstanceOf: ObservationLaboratoryResultTWPAS
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* category = https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type#tests
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#tests
 * code.coding = http://loinc.org#58410-2
 * component[0].code.coding = http://loinc.org#6690-2
 * component[=].valueQuantity.value = 3.6
@@ -1092,7 +1092,7 @@ Usage: #inline
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-laboratory-result-twpas.html\">檢驗檢查-Observation Laboratory Result TWPAS</a></p>
     </div>
     <p><b>狀態</b>：final</p>
-    <p><b>類型</b>：檢驗(查)<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-supporting-info-type.html/\">NHI-補充資訊類別值集</a>#tests)</span></p>
+    <p><b>類型</b>：檢驗(查)<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type/\">NHI-補充資訊類別值集</a>#tests)</span></p>
     <p><b>套組代碼</b>：CBC panel - Blood by Automated count <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINCCodes</a>#58410-2)</span></p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
     <p><b>檢驗(查)報告日期</b>：2024-01-01</p>
@@ -1263,7 +1263,7 @@ InstanceOf: DocumentReferenceTWPAS
 Title: "病歷資料"
 Description: "依據文件參照-DocumentReference TWPAS Profile呈現病歷資料之範例"
 Usage: #inline
-* category = NHIPDFType#medrec
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type#medrec
 * status = http://hl7.org/fhir/document-reference-status#current
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * content.attachment.contentType = #application/pdf
@@ -1276,7 +1276,7 @@ Usage: #inline
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReference-twpas.html\">文件參照-DocumentReference TWPAS</a></p>
     </div>
     <p><b>狀態</b>：current</p>
-    <p><b>報告類型</b>：病歷資料 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pdf-type.html\">NHI-文件類型</a>#medrec)</span></p>
+    <p><b>報告類型</b>：病歷資料 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type\">NHI-文件類型</a>#medrec)</span></p>
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a> &quot;王大明&quot;</p>
     <p><b>病歷資料 (application/pdf)</b>：file://王大明病歷.pdf</p>
     <p><b>病歷資料名稱</b>：王大明病歷</p>

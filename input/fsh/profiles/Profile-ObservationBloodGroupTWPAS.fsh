@@ -14,7 +14,7 @@ Description:    "此血型-Observation Blood Group TWPAS Profile說明本IG如�
 * code.coding.code = #882-1
 * category  1..1
 * category.coding  1..1
-* category.coding.system = "https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type"
+* category.coding.system = "https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type"
 * category.coding.code = #bloodgroup
 * category ^short = "因FHIR設計而需必填"
 

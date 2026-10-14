@@ -4,7 +4,7 @@ Title: "影像報告"
 Description: "依據影像報告-DiagnosticReport Image TWPAS Profile呈現影像報告之範例"
 Usage: #example
 * status = http://hl7.org/fhir/diagnostic-report-status#final
-* category = NHIPASSupportingInfoType#imagingReport
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#imagingReport
 * code.coding[TW2023ICD10PCS] = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw#B34JZZ3
 * subject.reference = "Patient/pat-min"
 * effectiveDateTime = "2024-05-07"
@@ -45,7 +45,7 @@ Title: "影像報告-使用LOINC代碼"
 Description: "依據影像報告-DiagnosticReport Image TWPAS Profile呈現外院報告無法對應ICD-10-PCS之影像報告之範例"
 Usage: #example
 * status = http://hl7.org/fhir/diagnostic-report-status#final
-* category = NHIPASSupportingInfoType#imagingReport
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#imagingReport
 * code.coding[LOINC] = http://loinc.org#18748-4
 * subject.reference = "Patient/pat-min"
 * effectiveDateTime = "2024-05-07"

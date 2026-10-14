@@ -1,4 +1,4 @@
-CodeSystem: NHIPASSupportingInfoType
+/*CodeSystem: NHIPASSupportingInfoType
 Id: nhi-supporting-info-type
 Title: "NHI-健保事前審查-補充資訊類別"
 Description: "臺灣衛生福利部中央健康保險署「補充資訊類別」代碼，代碼出版日期：2026-10-01；資料所屬單位：臺灣衛生福利部中央健康保險署。"
@@ -38,4 +38,4 @@ Description: "NHI-健保事前審查-補充資訊類別值集"
 * ^date = "2026-10-01"
 * ^version = "1.2.8"
 * ^experimental = false
-* include codes from system NHIPASSupportingInfoType
+* include codes from system NHIPASSupportingInfoType*/

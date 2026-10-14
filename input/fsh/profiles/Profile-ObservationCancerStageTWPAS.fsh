@@ -19,7 +19,7 @@ Description:    "此癌症分期量表-Observation Cancer Stage TWPAS Profile說
 * code.coding.system 1..1
 * category 1..1
 * category ^short = "因設計而須必填。"
-* category = NHIPASSupportingInfoType#cancerStage
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#cancerStage
 * value[x] 1..1
 * value[x] only CodeableConcept or string or integer
 * valueCodeableConcept from CancerStageScore (example)

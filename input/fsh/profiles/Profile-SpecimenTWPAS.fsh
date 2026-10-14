@@ -11,6 +11,6 @@ Description:    "此基因檢測檢體-Specimen TWPAS Profile說明本IG如何�
 * receivedTime and type MS
 * type 1..1
 * receivedTime 1..1
-* type from SpecimenType
+* type from https://fhir.nhi.gov.tw/nhi_tsfhir/ValueSet/specime-type
 * receivedTime ^short = "基因檢測日期"
 * type ^short = "基因檢測檢體類型"
