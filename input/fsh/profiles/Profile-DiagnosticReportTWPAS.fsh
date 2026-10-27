@@ -4,7 +4,7 @@ Parent:         DiagnosticReport
 Id:             DiagnosticReport-twpas
 Title:          "檢查報告-DiagnosticReport TWPAS"
 Description:    "此檢查報告-DiagnosticReport TWPAS Profile說明本IG如何進一步定義臺灣核心-診斷報告(TW Core DiagnosticReport) Profile以呈現事前審查中疾病資訊之檢查報告"
-* ^version = "1.2.8"
+* ^version = "1.3.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/DiagnosticReport-twpas"
@@ -29,7 +29,7 @@ Description:    "此檢查報告-DiagnosticReport TWPAS Profile說明本IG如何
 //* presentedForm.title = "病理報告"
 * category 1..1
 * category.coding 1..1
-* category = NHIPASSupportingInfoType#examinationReport
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#examinationReport
 * conclusion 1..1 MS
 //* conclusion obeys pas-2
 * presentedForm obeys UploadContent

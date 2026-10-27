@@ -1,11 +1,11 @@
 {
   "package-id": "tw.gov.mohw.nhi.pas",
-  "version": "1.2.8",
-  "path": "https://nhicore.nhi.gov.tw/pas/1.2.8",
+  "version": "1.3.0",
+  "path": "https://nhicore.nhi.gov.tw/pas/1.3.0",
   "mode": "milestone",
   "status": "ci-build",
-  "sequence": "STU1.2.8",
+  "sequence": "STU1.3.0",
   "ci-build" : "https://build.fhir.org/ig/TWNHIFHIR/pas",
-  "desc": "修改CodeSystems",
-  "descmd": "詳細說明請參照[應用說明](https://nhicore.nhi.gov.tw/pas/1.2.8/index.html)"
+  "desc": "改為引用健保署專門術語平臺提供之值集及代碼系統，並修改Profile。",
+  "descmd": "詳細說明請參照[應用說明](https://nhicore.nhi.gov.tw/pas/1.3.0/index.html)"
 }

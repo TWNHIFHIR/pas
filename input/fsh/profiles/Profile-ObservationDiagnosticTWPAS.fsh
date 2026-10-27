@@ -3,7 +3,7 @@ Parent:         Observation
 Id:             Observation-diagnostic-twpas
 Title:          "基因資訊-Observation Diagnostic TWPAS"
 Description:    "此基因資訊-Observation Diagnostic TWPAS Profile說明本IG如何進一步定義FHIR的Observation Resource以呈現事前審查之基因資訊"
-* ^version = "1.2.8"
+* ^version = "1.3.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-diagnostic-twpas"
@@ -14,7 +14,7 @@ Description:    "此基因資訊-Observation Diagnostic TWPAS Profile說明本IG
 * code.coding.code = #69548-6
 * category  1..1
 * category.coding  1..1
-* category.coding.system = "https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type"
+* category.coding.system = "https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type"
 * category.coding.code = #geneInfo
 * category ^short = "因FHIR設計而需必填"
 
@@ -28,7 +28,8 @@ Description:    "此基因資訊-Observation Diagnostic TWPAS Profile說明本IG
 * component[gene-test-code] ^short = "基因檢測代碼"
 * component[gene-test-code].code ^short = "基因檢測代碼"
 * component[gene-test-code].code MS
-* component[gene-test-code].code from GeneTestCode (extensible)
+//* component[gene-test-code].code from GeneTestCode (extensible)
+* component[gene-test-code].code from https://fhir.nhi.gov.tw/nhi_tsfhir/ValueSet/gene-test-code (extensible)
 * component[gene-test-code].code ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
 * component[gene-test-code].code.coding 1..1
 * component[gene-test-code].code.coding.system 1..1
@@ -36,7 +37,8 @@ Description:    "此基因資訊-Observation Diagnostic TWPAS Profile說明本IG
 * component[gene-test-code].value[x] 1.. MS
 * component[gene-test-code].value[x] ^short = "基因檢測實際結果"
 * component[gene-test-code].interpretation 0..1 MS
-* component[gene-test-code].interpretation from DNAChangeType (extensible)
+//* component[gene-test-code].interpretation from DNAChangeType (extensible)
+* component[gene-test-code].interpretation from https://fhir.nhi.gov.tw/nhi_tsfhir/ValueSet/dna-change-type (extensible)
 * component[gene-test-code].interpretation obeys pas-1
 * component[gene-test-code].interpretation.coding.code 1..1
 * component[gene-test-code].interpretation ^short = "基因突變類型"

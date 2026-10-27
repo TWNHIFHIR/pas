@@ -1,11 +1,11 @@
 CodeSystem: NHIApplySide
 Id: nhi-apply-side
 Title: "NHI-健保事前審查-申請部位"
-Description: "臺灣衛生福利部中央健康保險署「申請部位」代碼，代碼出版日期：2026-10-01；資料所屬單位：臺灣衛生福利部中央健康保險署。"
+Description: "臺灣衛生福利部中央健康保險署「申請部位」代碼，代碼出版日期：2026-11-04；資料所屬單位：臺灣衛生福利部中央健康保險署。"
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2026-10-01"
-* ^version = "1.2.8"
+* ^date = "2026-11-04"
+* ^version = "1.3.0"
 * ^experimental = false
 * #R "右側"
 * #L "左側"
@@ -15,7 +15,7 @@ ValueSet: NHIApplySide
 Id: nhi-apply-side
 Title: "NHI-健保事前審查-申請部位值集"
 Description: "NHI-健保事前審查-申請部位值集"
-* ^date = "2026-10-01"
-* ^version = "1.2.8"
+* ^date = "2026-11-04"
+* ^version = "1.3.0"
 * ^experimental = false
 * include codes from system NHIApplySide

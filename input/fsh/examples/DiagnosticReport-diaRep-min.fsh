@@ -6,7 +6,7 @@ Usage: #example
 * status = http://hl7.org/fhir/diagnostic-report-status#final
 * code.coding = http://loinc.org#66117-3
 * code.text = "Prostate"
-* category = NHIPASSupportingInfoType#examinationReport
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#examinationReport
 * subject.reference = "Patient/pat-min"
 * effectiveDateTime = "2024-05-07"
 * performer.reference = "Practitioner/pra-min"

@@ -4,7 +4,7 @@ Parent:         Observation
 Id:             Observation-cancer-stage-twpas
 Title:          "癌症分期量表-Observation Cancer Stage TWPAS"
 Description:    "此癌症分期量表-Observation Cancer Stage TWPAS Profile說明本IG如何進一步定義FHIR的Observation Resource以呈現事前審查中疾病資訊之癌症分期量表相關資料"
-* ^version = "1.2.8"
+* ^version = "1.3.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Observation-cancer-stage-twpas"
@@ -19,7 +19,7 @@ Description:    "此癌症分期量表-Observation Cancer Stage TWPAS Profile說
 * code.coding.system 1..1
 * category 1..1
 * category ^short = "因設計而須必填。"
-* category = NHIPASSupportingInfoType#cancerStage
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#cancerStage
 * value[x] 1..1
 * value[x] only CodeableConcept or string or integer
 * valueCodeableConcept from CancerStageScore (example)

@@ -3,7 +3,7 @@ Parent:         TWCoreMedicationRequest
 Id:             MedicationRequest-treat-twpas
 Title:          "用藥品項-MedicationRequest Treat TWPAS"
 Description:    "此用藥品項-MedicationRequest Treat TWPAS Profile說明本IG如何進一步定義臺灣核心-藥品請求(TW Core MedicationRequest) Profile以呈現事前審查中治療資訊之用藥品項"
-* ^version = "1.2.8"
+* ^version = "1.3.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/MedicationRequest-treat-twpas"
@@ -11,10 +11,10 @@ Description:    "此用藥品項-MedicationRequest Treat TWPAS Profile說明本I
 * category from NHIDrugCategory
 * category 0..1
 * medication[x] only CodeableConceptTW
-* medication[x] from https://nhicore.nhi.gov.tw/pas/ValueSet/nhi-medication (example)
+* medication[x] from https://fhir.nhi.gov.tw/nhi_tsfhir/ValueSet/nhi-medication (example)
 * medicationReference 0..0
 * medicationCodeableConcept 1.. MS
-* medicationCodeableConcept from https://nhicore.nhi.gov.tw/pas/ValueSet/nhi-medication (example)
+* medicationCodeableConcept from https://fhir.nhi.gov.tw/nhi_tsfhir/ValueSet/nhi-medication (example)
 * medicationCodeableConcept.coding 1..1
 * medicationCodeableConcept.coding contains nhi-medication 0..1 MS
 * medicationCodeableConcept.coding ^slicing.rules = #closed
@@ -23,15 +23,15 @@ Description:    "此用藥品項-MedicationRequest Treat TWPAS Profile說明本I
 * medicationCodeableConcept.coding[snomedct-medication-codes] 0..0
 * medicationCodeableConcept.coding[nhi-medication-tw] 0..0
 * medicationCodeableConcept.coding[nhi-medication-ch-herb-tw] 0..0
-* medicationCodeableConcept.coding[nhi-medication] from https://nhicore.nhi.gov.tw/pas/ValueSet/nhi-medication
+* medicationCodeableConcept.coding[nhi-medication] from https://fhir.nhi.gov.tw/nhi_tsfhir/ValueSet/nhi-medication
 * medicationCodeableConcept.coding[fda-medication-tw] from https://nhicore.nhi.gov.tw/pas/ValueSet/nhi-medication-fda
 * subject only Reference(PatientTWPAS)
 * dosageInstruction 1..*
 * dosageInstruction.timing 1..1
 * dosageInstruction.timing.code 1..
-* dosageInstruction.timing.code from https://nhicore.nhi.gov.tw/pas/ValueSet/medication-frequency-hl7-nhi (extensible)
+* dosageInstruction.timing.code from https://fhir.nhi.gov.tw/nhi_tsfhir/ValueSet/medication-frequency-hl7-nhi (extensible)
 * dosageInstruction.timing.code.coding MS
-* dosageInstruction.timing.code.coding from https://nhicore.nhi.gov.tw/pas/ValueSet/medication-frequency-hl7-nhi
+* dosageInstruction.timing.code.coding from https://fhir.nhi.gov.tw/nhi_tsfhir/ValueSet/medication-frequency-hl7-nhi
 * dosageInstruction.timing.repeat 1..1
 * dosageInstruction.timing.repeat.bounds[x] only Period
 

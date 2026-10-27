@@ -1,11 +1,11 @@
-ValueSet: NHIMedicationFrequencyHL7
+/*ValueSet: NHIMedicationFrequencyHL7
 Id: medication-frequency-hl7-nhi
 Title: "HL7 TimingAbbreviation + NHI-健保事前審查-藥品使用頻率值集"
 Description: "HL7 TimingAbbreviation + NHI-健保事前審查-藥品使用頻率值集。為配合專案時程，使用暫時性代碼系統，日後將統一使用TW Core IG的臺灣健保署藥品使用頻率。  
 代碼對應請參照[臺灣健保署藥品使用頻率代碼對應對應HL7 TimingAbbreviation](https://twcore.mohw.gov.tw/ig/twcore/ConceptMap-medication-frequency-tw.html)"
 * ^experimental = false
 * ^date = "2024-01-16"
-* ^version = "1.2.8"
+* ^version = "1.3.0"
 * ^copyright = "衛生福利部"
 * ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation
@@ -660,4 +660,4 @@ Description: "NHI-健保事前審查-藥品使用頻率，參照至[健保署檔
 * #BIDPRN "需要時每日2次"
 * #HSPRN "需要時睡前1次"
 * #QDPRN "需要時每日1次"
-* #TIDPRN "需要時每日3次"
+* #TIDPRN "需要時每日3次"*/

@@ -3,7 +3,7 @@ Parent:         TWCoreDocumentReference
 Id:             DocumentReference-twpas
 Title:          "文件參照-DocumentReference TWPAS"
 Description:    "此文件參照-DocumentReference TWPAS Profile說明本IG如何進一步定義臺灣核心-文件參照(TW Core DocumentReference) Profile以呈現事前審查之治療計畫文件及基因報告"
-* ^version = "1.2.8"
+* ^version = "1.3.0"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/DocumentReference-twpas"
@@ -11,7 +11,7 @@ Description:    "此文件參照-DocumentReference TWPAS Profile說明本IG如�
 * category 1..1
 * category.coding 1..1
 * category.coding.code 1..1
-* category from NHIPDFType
+* category from https://fhir.nhi.gov.tw/nhi_tsfhir/ValueSet/nhi-pdf-type
 * content.attachment MS 
 //* content.attachment.data 0..1
 * content.attachment.url 1..1 MS

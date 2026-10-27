@@ -3,7 +3,7 @@ InstanceOf: DocumentReferenceTWPAS
 Title: "基因報告"
 Description: "依據文件參照-DocumentReference TWPAS Profile呈現基因報告之範例"
 Usage: #example
-* category = NHIPDFType#gene
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type#gene
 * status = http://hl7.org/fhir/document-reference-status#current
 * subject.reference = "Patient/pat-min"
 * content.attachment.contentType = #application/pdf
@@ -16,7 +16,7 @@ Usage: #example
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReference-twpas.html\">文件參照-DocumentReference TWPAS</a></p>
     </div>
     <p><b>狀態</b>：current</p>
-    <p><b>報告類型</b>：基因報告 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pdf-type.html\">NHI-文件類型</a>#gene)</span></p>
+    <p><b>報告類型</b>：基因報告 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type\">NHI-文件類型</a>#gene)</span></p>
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a> &quot;王大明&quot;</p>
     <p><b>基因報告(application/pdf)</b>：file://GenReport01.pdf</p>
     <p><b>基因報告名稱</b>：GenReport01</p>
@@ -27,7 +27,7 @@ InstanceOf: DocumentReferenceTWPAS
 Title: "治療計畫文件"
 Description: "依據文件參照-DocumentReference TWPAS Profile呈現治療計畫文件之範例"
 Usage: #example
-* category = NHIPDFType#careplan
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type#careplan
 * status = http://hl7.org/fhir/document-reference-status#current
 * subject.reference = "Patient/pat-min"
 * content.attachment.contentType = #application/pdf
@@ -40,7 +40,7 @@ Usage: #example
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReference-twpas.html\">文件參照-DocumentReference TWPAS</a></p>
     </div>
     <p><b>狀態</b>：current</p>
-    <p><b>報告類型</b>：治療計畫文件 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pdf-type.html\">NHI-文件類型</a>#careplan)</span></p>
+    <p><b>報告類型</b>：治療計畫文件 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type\">NHI-文件類型</a>#careplan)</span></p>
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a> &quot;王大明&quot;</p>
     <p><b>治療計畫文件名稱</b>：免疫檢查點抑制劑治療計畫</p>
     <p><b>治療計畫文件 (application/pdf)</b>：file://CarePlanReport01.pdf</p>
@@ -51,7 +51,7 @@ InstanceOf: DocumentReferenceTWPAS
 Title: "檢驗(查)附件"
 Description: "依據文件參照-DocumentReference TWPAS Profile呈現檢驗(查)附件之範例"
 Usage: #example
-* category = NHIPDFType#test
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type#test
 * status = http://hl7.org/fhir/document-reference-status#current
 * subject.reference = "Patient/pat-min"
 * content[0].attachment.contentType = #application/pdf
@@ -67,7 +67,7 @@ Usage: #example
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReference-twpas.html\">文件參照-DocumentReference TWPAS</a></p>
     </div>
     <p><b>狀態</b>：current</p>
-    <p><b>報告類型</b>：檢驗(查)附件 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pdf-type.html\">NHI-文件類型</a>#test)</span></p>
+    <p><b>報告類型</b>：檢驗(查)附件 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type\">NHI-文件類型</a>#test)</span></p>
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a> &quot;王大明&quot;</p>
     <blockquote>
         <p><b>檢驗(查)附件 (application/pdf)</b>：file://TestReport01.pdf</p>
@@ -84,7 +84,7 @@ InstanceOf: DocumentReferenceTWPAS
 Title: "病歷資料"
 Description: "依據文件參照-DocumentReference TWPAS Profile呈現病歷資料之範例"
 Usage: #example
-* category = NHIPDFType#medrec
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type#medrec
 * status = http://hl7.org/fhir/document-reference-status#current
 * subject.reference = "Patient/pat-min"
 * content.attachment.contentType = #application/pdf
@@ -97,7 +97,7 @@ Usage: #example
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReference-twpas.html\">文件參照-DocumentReference TWPAS</a></p>
     </div>
     <p><b>狀態</b>：current</p>
-    <p><b>報告類型</b>：病歷資料 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pdf-type.html\">NHI-文件類型</a>#medrec)</span></p>
+    <p><b>報告類型</b>：病歷資料 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type\">NHI-文件類型</a>#medrec)</span></p>
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a> &quot;王大明&quot;</p>
     <p><b>病歷資料 (application/pdf)</b>：file://王大明病歷.pdf</p>
     <p><b>病歷資料名稱</b>：王大明病歷</p>
@@ -108,7 +108,7 @@ InstanceOf: DocumentReferenceTWPAS
 Title: "病人狀態評估報告"
 Description: "依據文件參照-DocumentReference TWPAS Profile呈現病人狀態評估報告之範例"
 Usage: #example
-* category = NHIPDFType#patientAssessment
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type#patientAssessment
 * status = http://hl7.org/fhir/document-reference-status#current
 * subject.reference = "Patient/pat-min"
 * content.attachment.contentType = #application/pdf
@@ -121,7 +121,7 @@ Usage: #example
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReference-twpas.html\">文件參照-DocumentReference TWPAS</a></p>
     </div>
     <p><b>狀態</b>：current</p>
-    <p><b>報告類型</b>：病人狀態評估報告 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pdf-type.html\">NHI-文件類型</a>#patientAssessment)</span></p>
+    <p><b>報告類型</b>：病人狀態評估報告 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type\">NHI-文件類型</a>#patientAssessment)</span></p>
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a> &quot;王大明&quot;</p>
     <p><b>病人狀態評估報告 (application/pdf)</b>：file://病人狀態評估報告.pdf</p>
     <p><b>病人狀態評估報告名稱</b>：病人狀態評估報告名稱</p>
@@ -132,7 +132,7 @@ InstanceOf: DocumentReferenceTWPAS
 Title: "照光治療紀錄"
 Description: "依據文件參照-DocumentReference TWPAS Profile呈現照光治療紀錄之範例"
 Usage: #example
-* category = NHIPDFType#phototherapy
+* category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type#phototherapy
 * status = http://hl7.org/fhir/document-reference-status#current
 * subject.reference = "Patient/pat-min"
 * content.attachment.contentType = #application/pdf
@@ -145,7 +145,7 @@ Usage: #example
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReference-twpas.html\">文件參照-DocumentReference TWPAS</a></p>
     </div>
     <p><b>狀態</b>：current</p>
-    <p><b>報告類型</b>：照光治療紀錄 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nhi-pdf-type.html\">NHI-文件類型</a>#phototherapy)</span></p>
+    <p><b>報告類型</b>：照光治療紀錄 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type\">NHI-文件類型</a>#phototherapy)</span></p>
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a> &quot;王大明&quot;</p>
     <p><b>照光治療紀錄 (application/pdf)</b>：file://ptReport01.pdf</p>
     <p><b>照光治療紀錄名稱</b>：ptReport01</p>

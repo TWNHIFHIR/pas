@@ -76,3 +76,9 @@ A definition for CodeSystem 'https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd
 
 # 建議使用OID，但目前暫無需求，不影響驗證
 % have an OID%
+
+# FHIR Choice Type（[x]）包含多種資料型別，而 Binding 約束僅適用於可使用代碼的資料型別，不適用於 Reference 型別。此為 FHIR 資料結構及驗證機制所產生之提示，不影響目前 Profile 的設計與使用，因此予以抑制。
+% The Binding on the type slicer%
+
+# 查無en-US的Display Name，不影響驗證。
+% the code system https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-medication has no Display Names for the language en-US%
