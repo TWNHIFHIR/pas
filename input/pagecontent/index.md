@@ -1,173 +1,19 @@
 <div class="bg-danger" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.2.7版內容，因而會比健保署的IG版本V1.2.7(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為115年10月1日，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
+<p><b>請注意</b>：您目前所看到的IG為持續建置(ci-build)版，主要依據實作者及健保署端的業務需求即時調整V1.3.0版內容，因而會比健保署的IG版本V1.3.0(https://nhicore.nhi.gov.tw/pas/)內容新，僅供未來想以最新版本規格進行資料上傳的人員參考，下次更新版本號時間預計為115年12月1日上午10點至12點，屆時才會調整相應版本的健保署FHIR伺服器規格。<br/>
 <br/>
-<b>醫院實作時請以V1.2.7為主進行實例驗證，目前健保署端的伺服器採用V1.2.7版規格。</b></p>
+<b>醫院實作時請以V1.3.0為主進行實例驗證，目前健保署端的伺服器採用V1.3.0版規格。</b></p>
 </div>
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2026/11/4異動以下內容：
+因考量實作需求，於2026/11/13異動以下內容：
     <ol>  
-        <li>
-            以下值集已調整為引用
-            <a href="https://fhir.nhi.gov.tw/nhiTS/vs/valueset.jsp">健保署專門術語平臺</a>所提供之值集及代碼系統。請實作者留意，<span style="color: red;">若既有實例中有使用到相關值集，須同步檢查並調整對應的代碼系統（system）。</span>
+        <li>修改：<a href="StructureDefinition-Bundle-twpas.html">Profile: 癌藥事前審查-Bundle TWPAS</a>：
             <ol>
-                <li>
-                    <strong>LOINC-健保事前審查-基因檢測代碼值集</strong>
-                    <div style="margin-left: 20px;">
-                        • 適用欄位：
-                        <a href="StructureDefinition-Observation-diagnostic-twpas.html">基因檢測代碼</a>
-                    </div>
-                </li>
-                <li>
-                    <strong>LOINC-健保署-基因檢測檢體類型值集</strong>
-                    <div style="margin-left: 20px;">
-                        • 適用欄位：
-                        <a href="StructureDefinition-Specimen-twpas.html">基因檢測檢體類型</a>
-                    </div>
-                </li>
-                <li>
-                    <strong>LOINC-健保事前審查-基因突變類型值集</strong>
-                    <div style="margin-left: 20px;">
-                        • 適用欄位：
-                        <a href="StructureDefinition-Observation-diagnostic-twpas.html">基因突變類型</a>
-                        <div style="margin-top: 5px;">
-                            • 代碼系統異動：
-                            <div style="margin-left: 20px;">
-                                異動前：<code>https://nhicore.nhi.gov.tw/pas/CodeSystem/inca-osiris</code><br>
-                                異動後：<code>https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/inca-osiris</code>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <strong>HL7 TimingAbbreviation + NHI-健保事前審查-藥品使用頻率值集</strong>
-                    <div style="margin-left: 20px;">
-                        • 適用欄位：
-                        <a href="StructureDefinition-MedicationRequest-apply-twpas.html">事前審查藥品使用頻率及服用時間</a>、
-                        <a href="StructureDefinition-MedicationRequest-treat-twpas.html">藥品使用頻率及服用時間</a>
-                        <div style="margin-top: 5px;">
-                            • 代碼系統異動：
-                            <div style="margin-left: 20px;">
-                                異動前：<code>https://nhicore.nhi.gov.tw/pas/CodeSystem/medication-frequency-nhi-tw</code><br>
-                                異動後：<code>https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/medication-frequency-nhi-tw</code>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <strong>NHI-健保事前審查-給付適應症值集</strong>
-                    <div style="margin-left: 20px;">
-                        • 適用欄位：
-                        <a href="StructureDefinition-Claim-twpas.html">給付適應症條件</a> (癌藥事前審查)、
-                        <a href="StructureDefinition-Claim-immunologic-agent-twpas.html">給付適應症條件</a> (免疫製劑事前審查)
-                        <div style="margin-top: 5px;">
-                            • 代碼系統異動：
-                            <div style="margin-left: 20px;">
-                                異動前：<code>https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-apply-reason</code><br>
-                                異動後：<code>https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-apply-reason</code>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <strong>NHI-健保事前審查-申報類別值集</strong>
-                    <div style="margin-left: 20px;">
-                        • 適用欄位：
-                        <a href="StructureDefinition-Claim-twpas.html">申報類別</a> (癌藥事前審查)、
-                        <a href="StructureDefinition-Claim-immunologic-agent-twpas.html">申報類別</a> (免疫製劑事前審查)
-                        <div style="margin-top: 5px;">
-                            • 代碼系統異動：
-                            <div style="margin-left: 20px;">
-                                異動前：<code>https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-apply-type</code><br>
-                                異動後：<code>https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-apply-type</code>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <strong>NHI-健保事前審查-用藥品項值集</strong>
-                    <div style="margin-left: 20px;">
-                        • 適用欄位：
-                        <a href="StructureDefinition-MedicationRequest-apply-twpas.html">藥品代碼</a> (事前審查品項)、
-                        <a href="StructureDefinition-MedicationRequest-treat-twpas.html">藥品代碼</a> (用藥品項)
-                        <div style="margin-top: 5px;">
-                            • 代碼系統異動：
-                            <div style="margin-left: 20px;">
-                                異動前：<code>https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-medication</code><br>
-                                異動後：<code>https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-medication</code>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <strong>NHI-健保事前審查-特約醫事機構值集</strong>
-                    <div style="margin-left: 20px;">
-                        • 適用欄位：
-                        <a href="StructureDefinition-Organization-twpas.html">醫事機構代碼</a>
-                        <div style="margin-top: 5px;">
-                            • 代碼系統異動：
-                            <div style="margin-left: 20px;">
-                                異動前：<code>https://nhicore.nhi.gov.tw/pas/CodeSystem/organization-identifier-tw</code><br>
-                                異動後：<code>https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/organization-identifier-tw</code>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <strong>NHI-健保事前審查-文件類型值集</strong>
-                    <div style="margin-left: 20px;">
-                        • 適用欄位：
-                        <a href="StructureDefinition-DocumentReference-twpas.html">DocumentReference.category</a>
-                        <div style="margin-top: 5px;">
-                            • 代碼系統異動：
-                            <div style="margin-left: 20px;">
-                                異動前：<code>https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-pdf-type</code><br>
-                                異動後：<code>https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-pdf-type</code>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <strong>NHI-健保事前審查-補充資訊類別值集</strong>
-                    <div style="margin-left: 20px;">
-                        • 適用欄位：
-                        <a href="StructureDefinition-Claim-twpas.html">Claim.supportingInfo.category</a> (癌藥事前審查)、
-                        <a href="StructureDefinition-Claim-immunologic-agent-twpas.html">Claim.supportingInfo.category</a> (免疫製劑事前審查)、
-                        <a href="StructureDefinition-DiagnosticReport-image-twpas.html">DiagnosticReport.category</a> (影像報告)、
-                        <a href="StructureDefinition-DiagnosticReport-twpas.html">DiagnosticReport.category</a> (檢查報告)、
-                        <a href="StructureDefinition-Observation-blood-group-twpas.html">Observation.category</a> (血型)、
-                        <a href="StructureDefinition-Observation-cancer-stage-twpas.html">Observation.category</a> (癌症分期量表)、
-                        <a href="StructureDefinition-Observation-diagnostic-twpas.html">Observation.category</a> (基因資訊)、
-                        <a href="StructureDefinition-Observation-laboratory-result-twpas.html">Observation.category</a> (檢驗檢查)、
-                        <a href="StructureDefinition-Observation-pat-assessment-twpas.html">Observation.category</a> (病人狀態評估)、
-                        <div style="margin-top: 5px;">
-                            • 代碼系統異動：
-                            <div style="margin-left: 20px;">
-                                異動前：<code>https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-supporting-info-type</code><br>
-                                異動後：<code>https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type</code>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <strong>NHI-健保事前審查-申請案件類別值集</strong>
-                    <div style="margin-left: 20px;">
-                        • 適用欄位：
-                        <a href="StructureDefinition-Claim-twpas.html">申請案件類別</a> (癌藥事前審查)、
-                        <a href="StructureDefinition-Claim-immunologic-agent-twpas.html">申請案件類別</a> (免疫製劑事前審查)
-                        <div style="margin-top: 5px;">
-                            • 代碼系統異動：
-                            <div style="margin-left: 20px;">
-                                異動前：<code>https://nhicore.nhi.gov.tw/pas/CodeSystem/nhi-tmhb-type</code><br>
-                                異動後：<code>https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-tmhb-type</code>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ol>
+				<li>新增Constraint: applyReason-21：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 BC26968100，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C34P1、C34R1 或 C34R2</li>
+				<li>新增Constraint: applyReason-22：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 BC27320100，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C50P1、C50R1 或 C50R2</li>
+			</ol>
         </li>
-        <li>修改：<a href="StructureDefinition-Bundle-twpas.html">Profile: 癌藥事前審查-Bundle TWPAS</a>：新增Constraints: applyReason-20：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01299229，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P011、P012、P013、P014 或 P101。</li>
     </ol>
     請留意這些異動，以避免影響您的實作。
 </div>
