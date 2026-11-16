@@ -6,12 +6,14 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2026/11/13異動以下內容：
+因考量實作需求，於2026/11/16異動以下內容：
     <ol>  
         <li>修改：<a href="StructureDefinition-Bundle-twpas.html">Profile: 癌藥事前審查-Bundle TWPAS</a>：
             <ol>
 				<li>新增Constraint: applyReason-21：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 BC26968100，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C34P1、C34R1 或 C34R2</li>
 				<li>新增Constraint: applyReason-22：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 BC27320100，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C50P1、C50R1 或 C50R2</li>
+				<li>修改Constraint: applyReason-8：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01013230，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P001、P011、P012、<b>P013</b>、<b>P014</b>、P016、P031、P041、P044、P052、P061、<b>P072</b>、P081、P101、P102、P111 或 <b>P141</b></li>
+				<li>修改Constraint: applyReason-13：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC00958229，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P111、<b>P013</b>、<b>P014</b>、<b>P072</b> 或 <b>P141</b></li>
 			</ol>
         </li>
     </ol>
