@@ -3,7 +3,7 @@ Parent:         TWCoreBundle
 Id:             Bundle-twpas
 Title:          "癌藥事前審查-Bundle TWPAS"
 Description:    "此癌藥事前審查-Bundle TWPAS Profile說明本IG如何進一步定義資料交換基本單位(TW Core Bundle) Profile以呈現癌藥事前審查之內容"
-* ^version = "1.3.0"
+* ^version = "1.3.1"
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Bundle-twpas"
@@ -189,7 +189,7 @@ Description:    "此癌藥事前審查-Bundle TWPAS Profile說明本IG如何進�
 
 
 
-* . obeys applyReason-1 and applyReason-2 and applyReason-3 and applyReason-4 and applyReason-5 and applyReason-6 and applyReason-7 and applyReason-8 and applyReason-9 and applyReason-10 and applyReason-11 and applyReason-12 and applyReason-13 and applyReason-14 and applyReason-15 and applyReason-16 and applyReason-17 and applyReason-18 and applyReason-19 and applyReason-20 and claimResponse-1 and claimResponse-2
+* . obeys applyReason-1 and applyReason-2 and applyReason-3 and applyReason-4 and applyReason-5 and applyReason-6 and applyReason-7 and applyReason-8 and applyReason-9 and applyReason-10 and applyReason-11 and applyReason-12 and applyReason-13 and applyReason-14 and applyReason-15 and applyReason-16 and applyReason-17 and applyReason-18 and applyReason-19 and applyReason-20 and applyReason-21 and applyReason-22 and claimResponse-1 and claimResponse-2
 
 /*Invariant:   oldAcptNo
 Description: "若申報類別(Claim.subType)為申復(#3)，則填寫原送核階段受理編號。"
@@ -232,8 +232,8 @@ Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference)
 Severity:    #error
 
 Invariant:   applyReason-8
-Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01013230，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P001、P011、P012、P016、P031、P041、P044、P052、P061、P081、P101、P102 或 P111"
-Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01013230').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01013230').all(programCode.coding.code.matches('P001|P011|P012|P016|P031|P041|P044|P052|P061|P081|P101|P102|P111'))"
+Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01013230，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P001、P011、P012、P013、P014、P016、P031、P041、P044、P052、P061、P072、P081、P101、P102、P111 或 P141"
+Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01013230').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01013230').all(programCode.coding.code.matches('P001|P011|P012|P013|P014|P016|P031|P041|P044|P052|P061|P072|P081|P101|P102|P111|P141'))"
 Severity:    #error
 
 Invariant:   applyReason-9
@@ -257,8 +257,8 @@ Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference)
 Severity:    #error
 
 Invariant:   applyReason-13
-Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC00958229，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P111"
-Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC00958229').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC00958229').all(programCode.coding.code.matches('P111'))"
+Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC00958229，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P111、P013、P014、P072 或 P141"
+Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC00958229').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC00958229').all(programCode.coding.code.matches('P111|P013|P014'))"
 Severity:    #error
 
 Invariant:   applyReason-14
@@ -294,6 +294,16 @@ Severity:    #error
 Invariant:   applyReason-20
 Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 KC01299229，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 P011、P012、P013、P014 或 P101"
 Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01299229').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'KC01299229').all(programCode.coding.code.matches('P011|P012|P013|P014|P101'))"
+Severity:    #error
+
+Invariant:   applyReason-21
+Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 BC26968100，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C34P1、C34R1 或 C34R2"
+Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'BC26968100').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'BC26968100').all(programCode.coding.code.matches('C34P1|C34R1|C34R2'))"
+Severity:    #error
+
+Invariant:   applyReason-22
+Description: "若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 BC27320100，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C50P1、C50R1 或 C50R2"
+Expression:  "Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'BC27320100').exists() implies Bundle.entry.resource.item.where(extension.value.ofType(Reference).resolve().medication.coding.code = 'BC27320100').all(programCode.coding.code.matches('C50P1|C34R1|C50R2'))"
 Severity:    #error
 
 
