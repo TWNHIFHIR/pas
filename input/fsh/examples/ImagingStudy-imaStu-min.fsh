@@ -9,7 +9,7 @@ Usage: #example
 * subject.reference = "Patient/pat-min"
 * series.uid = "2.16.886.2102.54.4546465747.465465466"
 * series.modality = http://dicom.nema.org/resources/ontology/DCM#CT
-* series.bodySite = http://snomed.info/sct#774007 "Head and neck structure"
+* series.bodySite = http://snomed.info/sct#774007 "Structure of head and/or neck"
 * series.instance[0].uid = "2.25.88017001449189502323411118737039844241"
 * series.instance[=].sopClass = urn:ietf:rfc:3986#urn:oid:1.3.140.10008.5.1.4.1.1.2
 * series.instance[+].uid = "2.25.88017001449189502323411118737039844242"
@@ -24,6 +24,6 @@ Usage: #example
     <p><b>Study UID</b>：urn:oid:2.16.886.2102.54.4546465747.465465465</p>
     <p><b>Series Instance UID</b>：2.16.886.2102.54.4546465747.465465466</p>
     <p><b>SOP Instance UIDs</b>：2.25.88017001449189502323411118737039844241, 2.25.88017001449189502323411118737039844242</p>
-    <p><b>影像檢查的身體部位</b>：Head and neck structure<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://snomed.info/sct\">SNOMED CT</a>#774007)</span></p>
+    <p><b>影像檢查的身體部位</b>：Structure of head and/or neck<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://snomed.info/sct\">SNOMED CT</a>#774007)</span></p>
     <p><b>儀器</b>：CT Image Storage<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_D.html\">DICOM</a>#CT)</span></p>
 </div>"

@@ -10,7 +10,7 @@
 #### Bundle
 - [事前審查-送核、套組檢驗、多事前審查癌藥品項](Bundle-bun-1.html)：依據癌藥事前審查-Bundle TWPAS Profile呈現癌藥事前審查之範例
 - [事前審查-申復、有共病](Bundle-bun-3.html)：依據癌藥事前審查-Bundle TWPAS Profile呈現癌藥事前審查之範例
-- [事前審查-自主審查、多份影像報告（UUID）](Bundle-bun-uuid-example.html)：依據癌藥事前審查-Bundle TWPAS Profile呈現癌藥事前審查之自主審查範例
+- [事前審查-自主審查、多份影像報告、多筆基因檢測（UUID）](Bundle-bun-uuid-example.html)：依據癌藥事前審查-Bundle TWPAS Profile呈現癌藥事前審查之自主審查範例
 - [事前審查-自主審查](Bundle-bun-self.html)：依據癌藥事前審查-Bundle TWPAS Profile呈現癌藥事前審查之自主審查範例
 - [事前審查回覆](Bundle-bun-response.html)：依據事前審查回覆-Bundle Response TWPAS Profile呈現癌藥事前審查回覆之範例
 - [免疫製劑事前審查](Bundle-bun-imm.html)：依據免疫製劑事前審查-Bundle Immunologic Aagent TWPAS Profile呈現免疫製劑事前審查之範例
@@ -60,7 +60,7 @@
 - [癌症分期量表-FIGO](Observation-obs-cancer-figo.html)：依據癌症分期量表-Observation Cancer Stage TWPAS Profile呈現癌症分期量表FIGO之範例 (疾病資訊)
 - [癌症分期量表-CNS](Observation-obs-cancer-cns.html)：依據癌症分期量表-Observation Cancer Stage TWPAS Profile呈現癌症分期量表CNS之範例 (疾病資訊)
 - [癌症分期量表-TNM](Observation-obs-cancer-tnm.html)：依據癌症分期量表-Observation Cancer Stage TWPAS Profile呈現癌症分期量表TNM之範例 (疾病資訊)
-- [基因資訊](Observation-obs-diagnostic-min.html)：依據基因資訊-Observation Diagnostic TWPAS Profile呈現基因資訊之範例
+- [<span class="bg-success">基因資訊</span>](Observation-obs-diagnostic-min.html)：依據基因資訊-Observation Diagnostic TWPAS Profile呈現基因資訊之範例
 - [檢驗檢查-單項](Observation-obs-lab-min.html)：依據檢驗檢查-Observation Laboratory Result TWPAS Profile呈現單項檢驗檢查之範例 (評估資訊)
 - [檢驗檢查-套組(全套血液檢查)](Observation-obs-lab-cbc.html)：依據檢驗檢查-Observation Laboratory Result TWPAS Profile呈現套組檢驗檢查之範例 (評估資訊)
 - [病人狀態評估-NYHA](Observation-obs-pat-nyha.html)：依據病人狀態評估-Observation Patient Assessment TWPAS Profile呈現病人狀態評估(NYHA)之範例 (評估資訊)
@@ -87,11 +87,11 @@
  
 #### Procedure
 - [放射治療](Procedure-pro-min.html)：依據放射治療-Procedure TWPAS Profile呈現放射治療之範例
-- [<span class="bg-success">照光治療</span>](Procedure-pro-phototherapy.html)：依據照光治療-Procedure Phototherapy TWPAS Profile呈現照光治療之範例
+- [照光治療](Procedure-pro-phototherapy.html)：依據照光治療-Procedure Phototherapy TWPAS Profile呈現照光治療之範例
 
 #### Substance
 - [放射治療總劑量](Substance-sub-min.html)：依據放射治療總劑量-Substance TWPAS Profile呈現放射治療之範例
-- [<span class="bg-success">照光治療總次數</span>](Substance-sub-phototherapy.html)：依據照光治療總次數-Substance Phototherapy TWPAS Profile呈現照光治療總次數之範例
+- [照光治療總次數](Substance-sub-phototherapy.html)：依據照光治療總次數-Substance Phototherapy TWPAS Profile呈現照光治療總次數之範例
 
 #### Specimen
 - [基因檢測檢體](Specimen-spe-min.html)：依據基因檢測檢體-Specimen TWPAS Profile呈現基因檢測檢體之範例
