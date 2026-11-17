@@ -1021,6 +1021,7 @@ Usage: #inline
 * valueQuantity.value = 5.1
 * valueQuantity.unit = "10*3/uL"
 * valueQuantity.code = #10*3/uL
+* valueQuantity.system = "http://unitsofmeasure.org"
 * interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#H
 * interpretation.text = "高"
 * referenceRange.low = 2.9 '10*3/uL' "10*3/uL"
