@@ -669,7 +669,7 @@ Usage: #inline
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * series.uid = "2.16.886.2102.54.4546465747.465465466"
 * series.modality = http://dicom.nema.org/resources/ontology/DCM#CT
-* series.bodySite = http://snomed.info/sct#774007 "Head and neck structure"
+* series.bodySite = http://snomed.info/sct#774007 "Structure of head and/or neck"
 * series.instance[0].uid = "2.25.88017001449189502323411118737039844241"
 * series.instance[=].sopClass = urn:ietf:rfc:3986#urn:oid:1.3.140.10008.5.1.4.1.1.2
 * series.instance[+].uid = "2.25.88017001449189502323411118737039844242"
@@ -684,7 +684,7 @@ Usage: #inline
     <p><b>Study UID</b>：urn:oid:2.16.886.2102.54.4546465747.465465465</p>
     <p><b>Series Instance UID</b>：2.16.886.2102.54.4546465747.465465466</p>
     <p><b>SOP Instance UIDs</b>：2.25.88017001449189502323411118737039844241, 2.25.88017001449189502323411118737039844242</p>
-    <p><b>影像檢查的身體部位</b>：Head and neck structure<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://snomed.info/sct\">SNOMED CT</a>#774007)</span></p>
+    <p><b>影像檢查的身體部位</b>：Structure of head and/or neck<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://snomed.info/sct\">SNOMED CT</a>#774007)</span></p>
     <p><b>儀器</b>：CT Image Storage<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_D.html\">DICOM</a>#CT)</span></p>
 </div>"
 
@@ -1016,11 +1016,13 @@ Usage: #inline
 * performer.reference = "urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020"
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"
 * valueQuantity.value = 5.1
-* valueQuantity.unit = "mmol/l"
+* valueQuantity.unit = "10*3/uL"
+* valueQuantity.code = #10*3/uL
+* valueQuantity.system = "http://unitsofmeasure.org"
 * interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#H
 * interpretation.text = "高"
-* referenceRange.low = 2.9 'mmol/L' "mmol/l"
-* referenceRange.high = 4.9 'mmol/L' "mmol/l"
+* referenceRange.low = 2.9 '10*3/uL' "10*3/uL"
+* referenceRange.high = 4.9 '10*3/uL' "10*3/uL"
 * category = https://fhir.nhi.gov.tw/nhi_tsfhir/CodeSystem/nhi-supporting-info-type#tests
 * derivedFrom.reference = "urn:uuid:a1aa65c7-c464-41a5-aa1a-fe5cddf487cf"
 * text.status = #generated
@@ -1034,10 +1036,10 @@ Usage: #inline
     <p><b>病人</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-047422b2-0c18-4707-801d-465833e6d65d\">urn:uuid:047422b2-0c18-4707-801d-465833e6d65d</a></p>
     <p><b>檢驗(查)報告日期</b>：2024-01-01</p>
     <p><b>簽發檢驗(查)報告醫事人員身分證號</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-1cf37d4c-1fd2-43c5-8b4e-277c0fef5020\">urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020</a></p>
-    <p><b>檢驗(查)結果</b>：5.1 mmol/l</p>
+    <p><b>檢驗(查)結果</b>：5.1 10*3/uL</p>
     <p><b>檢驗(查)結果判讀</b>：高，High <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation/\">ObservationInterpretationCodes  </a>#H)</span></p>
-    <p><b>檢驗(查)結果之參考範圍下限</b>：2.9 mmol/L</p>
-    <p><b>檢驗(查)結果之參考範圍上限</b>：4.9 mmol/L</p>
+    <p><b>檢驗(查)結果之參考範圍下限</b>：2.9 10*3/uL</p>
+    <p><b>檢驗(查)結果之參考範圍上限</b>：4.9 10*3/uL</p>
     <p><b>檢驗(查)附件</b>：<a href=\"Bundle-bun-uuid-example.html#urn-uuid-a1aa65c7-c464-41a5-aa1a-fe5cddf487cf\">urn:uuid:a1aa65c7-c464-41a5-aa1a-fe5cddf487cf</a></p>
 </div>"
 
@@ -1050,38 +1052,38 @@ Usage: #inline
 * component[0].code.coding = http://loinc.org#6690-2
 * component[=].valueQuantity.value = 3.6
 * component[=].valueQuantity.unit = "10*3/uL"
-* component[=].referenceRange.low.value = 3.9
-* component[=].referenceRange.low.unit = "10*3/uL"
-* component[=].referenceRange.high.value = 10.6
-* component[=].referenceRange.high.unit = "10*3/uL"
+* component[=].valueQuantity.code = #10*3/uL
+* component[=].valueQuantity.system = "http://unitsofmeasure.org"
+* component[=].referenceRange.low = 3.9 '10*3/uL' "10*3/uL"
+* component[=].referenceRange.high = 10.6 '10*3/uL' "10*3/uL"
 * component[+].code.coding = http://loinc.org#789-8
 * component[=].valueQuantity.value = 4.7
+* component[=].valueQuantity.code = #10*6/uL
 * component[=].valueQuantity.unit = "10*6/uL"
-* component[=].referenceRange.low.value = 4.5
-* component[=].referenceRange.low.unit = "10*6/uL"
-* component[=].referenceRange.high.value = 5.9
-* component[=].referenceRange.high.unit = "10*6/uL"
+* component[=].valueQuantity.system = "http://unitsofmeasure.org"
+* component[=].referenceRange.low = 4.5 '10*6/uL' "10*6/uL"
+* component[=].referenceRange.high = 5.9 '10*6/uL' "10*6/uL"
 * component[+].code.coding = http://loinc.org#718-7
 * component[=].valueQuantity.value = 14
+* component[=].valueQuantity.code = #g/dL
 * component[=].valueQuantity.unit = "g/dL"
-* component[=].referenceRange.low.value = 13.5
-* component[=].referenceRange.low.unit = "g/dL"
-* component[=].referenceRange.high.value = 17.5
-* component[=].referenceRange.high.unit = "g/dL"
+* component[=].valueQuantity.system = "http://unitsofmeasure.org"
+* component[=].referenceRange.low = 13.5 'g/dL' "g/dL"
+* component[=].referenceRange.high = 17.5 'g/dL' "g/dL"
 * component[+].code.coding = http://loinc.org#4544-3
 * component[=].valueQuantity.value = 45
+* component[=].valueQuantity.code = #%
 * component[=].valueQuantity.unit = "%"
-* component[=].referenceRange.low.value = 41
-* component[=].referenceRange.low.unit = "%"
-* component[=].referenceRange.high.value = 53
-* component[=].referenceRange.high.unit = "%"
+* component[=].valueQuantity.system = "http://unitsofmeasure.org"
+* component[=].referenceRange.low = 41 '%' "%"
+* component[=].referenceRange.high = 53 '%' "%"
 * component[+].code.coding = http://loinc.org#777-3
 * component[=].valueQuantity.value = 101
+* component[=].valueQuantity.code = #10*3/uL
 * component[=].valueQuantity.unit = "10*3/uL"
-* component[=].referenceRange.low.value = 150
-* component[=].referenceRange.low.unit = "10*3/uL"
-* component[=].referenceRange.high.value = 400
-* component[=].referenceRange.high.unit = "10*3/uL"
+* component[=].valueQuantity.system = "http://unitsofmeasure.org"
+* component[=].referenceRange.low = 150 '10*3/uL' "10*3/uL"
+* component[=].referenceRange.high = 400 '10*3/uL' "10*3/uL"
 * effectiveDateTime = "2024-01-01"
 * performer.reference = "urn:uuid:1cf37d4c-1fd2-43c5-8b4e-277c0fef5020"
 * subject.reference = "urn:uuid:047422b2-0c18-4707-801d-465833e6d65d"

@@ -3,7 +3,7 @@ ValueSet: PatAst
 Id: pat-ast
 Title: "LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集"
 Description: "LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集"
-* ^date = "2026-11-04"
+* ^date = "2026-12-01"
 * ^version = "1.3.1"
 * ^experimental = false
 * $loinc#88020-3
@@ -38,15 +38,16 @@ Description: "LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值�
 * http://snomed.info/sct#273903006
 * http://snomed.info/sct#273904000
 * PatAst#Hurley_stage
+* PatAst#ASDAS
 
 
 CodeSystem: PatAst
 Id: nhi-pat-ast
 Title: "NHI-健保事前審查-病人狀態評估項目"
-Description: "臺灣衛生福利部中央健康保險署「病人狀態評估項目」代碼，代碼出版日期：2026-11-04；資料所屬單位：臺灣衛生福利部中央健康保險署。"
+Description: "臺灣衛生福利部中央健康保險署「病人狀態評估項目」代碼，代碼出版日期：2026-12-01；資料所屬單位：臺灣衛生福利部中央健康保險署。"
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2026-11-04"
+* ^date = "2026-12-01"
 * ^version = "1.3.1"
 * ^experimental = false
 * #IPS "International Prognostic Score" "IPS (International Prognostic Score)"
@@ -70,3 +71,4 @@ Description: "臺灣衛生福利部中央健康保險署「病人狀態評估項
 * #EASI "Eczema Area and Severity Index  (EASI)"
 * #CLASI "Cutaneous Lupus Erythematosus Disease Area and Severity Index"
 * #Hurley_stage "Hurley stage"
+* #ASDAS "Ankylosing Spondylitis Disease Activity Score" "ASDAS"

@@ -6,8 +6,10 @@
 <br/>
 
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-因考量實作需求，於2026/11/16異動以下內容：
+因考量實作需求，於2026/12/1異動以下內容：
     <ol>  
+        <li>修改：<a href="ValueSet-pat-ast.html">ValueSet: LOINC + SCT + NHI-健保事前審查-病人狀態評估項目值集</a>：新增代碼<code>ASDAS</code>(Ankylosing Spondylitis Disease Activity Score)。</li>
+        <li>修改：<a href="Observation-obs-diagnostic-min.html">Example Observation: 基因資訊</a>：新增多筆基因檢測範例。</li>
         <li>修改：<a href="StructureDefinition-Bundle-twpas.html">Profile: 癌藥事前審查-Bundle TWPAS</a>：
             <ol>
 				<li>新增Constraint: applyReason-21：若事前審查品項代碼(MedicationRequest.medicationCodeableConcept)為 BC26968100，則給付適應症條件代碼(Claim.item.programCode.coding) 僅可為 C34P1、C34R1 或 C34R2</li>

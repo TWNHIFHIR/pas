@@ -2,7 +2,7 @@ ValueSet: ApplQtyUnit
 Id: apply-quantity-unit
 Title: "NHI-健保事前審查-藥品劑量單位及包裝類型值集"
 Description: "NHI-健保事前審查-藥品劑量單位及包裝類型值集"
-* ^date = "2026-11-04"
+* ^date = "2026-12-01"
 * ^version = "1.3.1"
 * ^experimental = false
 * http://snomed.info/sct#733006000
